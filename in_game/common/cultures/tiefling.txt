@@ -1,0 +1,26 @@
+﻿torrentor_tieflings_culture = {
+	language = south_torrentor_dialect
+	
+	color = tiefling_red
+	
+	tags = { tiefling_gfx south_german_gfx german_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		torrenter_group
+		tiefling_group
+	}
+}
+nephion_tieflings_culture = {
+	language = adnkhalan_language
+	
+	color = map_khorasani
+	
+	tags = { tiefling_gfx  persian_gfx persianate_gfx middle_east_gfx }
+
+	culture_groups = {
+		adnkhalan_group
+		tiefling_group
+	}
+}
+
+

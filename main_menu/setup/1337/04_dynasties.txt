@@ -1,0 +1,195 @@
+dynasty_manager = {
+
+	atrius_dynasty = {
+		name = { name = atrius_dynasty }
+		home = eternalcity1
+		dynasty_name_type = default
+	}
+	
+	ossivalt_dynasty = {
+			name = { name = ossivalt_dynasty }
+		home = eternalcity1
+		dynasty_name_type = default
+	}
+	
+	salvius_dynasty  = {
+		name = { name = salvius_dynasty }
+		home = eternalcity2
+		dynasty_name_type = default
+	}
+	
+	noctivus_dynasty = {
+		name = { name = noctivus_dynasty }
+		home = godhand13
+		dynasty_name_type = default
+	}
+	caladrix_dynasty = {
+		name = { name = caladrix_dynasty }
+		home = godhand1
+		dynasty_name_type = default
+	}
+	sepulchor_dynasty ={
+		name = { name = sepulchor_dynasty }
+		home = eternalcity2
+		dynasty_name_type = default
+	}
+	
+	draconis_dynasty = {
+		name = { name = draconis_dynasty }
+		home = eternalcity1
+		dynasty_name_type = default
+	}
+	
+	verminus_dynasty = {
+		name = { name = verminus_dynasty }
+		home = freehold72
+		dynasty_name_type = default
+		male_names = {
+			name_ratticar
+		}
+
+	}
+	pantegan_dynasty = {
+		name = { name = pantegan_dynasty }
+		home = freehold72
+		dynasty_name_type = default
+	}
+	sunbreaker_dynasty = {
+		name = { name = sunbreaker_dynasty }
+		home = testprovince86
+		dynasty_name_type = location
+	}
+	strongjaw_dynasty = {
+		name = { name = strongjaw_dynasty }
+		home = testprovince86
+		dynasty_name_type = location
+	}	
+	honestcook_dynasty = {
+		name = { name = honestcook_dynasty }
+		home = testprovince86
+		dynasty_name_type = location
+	}
+	thunderlord_dynasty = {
+		name = { name = thunderlord_dynasty }
+		home = testprovince86
+		dynasty_name_type = location
+	}
+	stonewake_dynasty = {
+		name = { name = stonewake_dynasty }
+		home = testprovince86
+		dynasty_name_type = location
+	}
+	lastoath_dynasty = {
+		name = { name = lastoath_dynasty }
+		home = testprovince86
+		dynasty_name_type = location
+	}	
+	valfaren_dynasty = {
+		name = { name = valfaren_dynasty }
+		home = testprovince89
+	}
+	wryne_dynasty = {
+		name = { name = wryne_dynasty }
+		home = ardraine1
+	}
+	hauteclaire_dynasty = {
+		name = { name = hauteclaire_dynasty }
+		home = ardraine218
+		dynasty_name_type = default
+		male_names = {
+			name_armand
+			name_theobald
+			name_valerand
+		}
+	}
+	tuluin_dynasty = {
+		name = { name = tuluin_dynasty }
+		home = torrent238
+		dynasty_name_type = default
+	}
+	serpentar_dynasty = {
+		name = { name = serpentar_dynasty }
+		home = torrent308
+		dynasty_name_type = default
+	}
+	
+	caiyndor_dynasty = {
+		name = { name = caiyndor_dynasty }
+		home = adune85
+		dynasty_name_type = default
+	}
+
+	asiiriil_dynasty = {
+		name = { name = asiiriil_dynasty }
+		home = adune72
+		dynasty_name_type = default
+	}
+
+	# Iborros imperial house (A378) — Yuan Borjigin analogue
+	coraino_dynasty = {
+		name = { name = coraino_dynasty }
+		home = etra1159
+		dynasty_name_type = default
+		male_names = {
+			name_odonar
+			name_alarico
+			name_rinaldo
+		}
+	}
+
+	# Powerful court house (A378) — Yuan Merkid / Toqto analogue
+	matalon_dynasty = {
+		name = { name = matalon_dynasty }
+		home = etra1172
+		dynasty_name_type = default
+		male_names = {
+			name_ginzerio
+			name_bayardo
+			name_majaro
+			name_tocardo
+		}
+	}
+
+	# Iborric noble house destroyed during crisis; survivor founds Tajjev
+	izem_dynasty = {
+		name = { name = izem_dynasty }
+		home = etra1173
+		dynasty_name_type = default
+		male_names = {
+			name_massin
+			name_aghilas
+			name_udaden
+		}
+	}
+
+	# Naiha (A325) — Companion house holding Phaetheon's tombs; not his blood
+	kynarides_dynasty = {
+		name = { name = kynarides_dynasty }
+		home = etra304
+		dynasty_name_type = default
+		male_names = {
+			name_pyrrhion
+			name_alkaion
+			name_menesthion
+			name_phaetheon
+		}
+	}
+	pyrrhaides_dynasty = {
+		name = { name = pyrrhaides_dynasty }
+		home = etra66
+		dynasty_name_type = default
+		male_names = {
+			name_orthirion
+			name_pyrrhion
+		}
+	}
+	kallinides_dynasty = {
+		name = { name = kallinides_dynasty }
+		home = etra176
+		dynasty_name_type = default
+		male_names = {
+			name_kallinor
+			name_chrysion
+		}
+	}
+}

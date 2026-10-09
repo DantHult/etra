@@ -1,0 +1,22 @@
+﻿##############################################
+xenophile_vs_xenophobe = {
+	left_modifier = { #xenophile
+		legislative_efficiency = -0.10 #Other Kindred have to be accounted for, slows down law making processes
+		cultures_capacity = 3
+		
+		cultural_tradition_modifier = -0.25
+		global_merchant_capacity_modifier = 0.2 #Friendly
+		global_pop_assimilation_speed_modifier = -0.25
+	}
+	
+	right_modifier = { #xenophobe
+		prestige_decay = -0.002
+		stability_cost_efficiency = 0.33
+
+		cultural_tradition_modifier = 0.5
+		global_merchant_capacity_modifier = -0.2
+
+
+	}
+	
+}

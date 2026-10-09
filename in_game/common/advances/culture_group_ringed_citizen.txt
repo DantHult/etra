@@ -1,0 +1,116 @@
+﻿
+# Age of Traditions #
+
+ringed_citizen_protoindustry = {
+	age = age_1_traditions
+	icon = serbian_mining
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_production_efficiency = medium_production_efficiency_bonus
+	requires = legalism_advance
+}
+
+ringed_citizen_urban_guilds = {
+	age = age_1_traditions
+	icon = guilds
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_merchant_power = 0.10
+	requires = feudalism_advance
+}
+
+# Age of Renaissance #
+
+ringed_citizen_dynamic_society = {
+	age = age_2_renaissance
+	icon = improved_foraging
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_pop_promotion_speed_modifier = 0.2
+	requires = diplomatic_range_age_1
+}
+
+# Age of Discovery #
+
+ringed_citizen_early_urbanization = {
+	age = age_3_discovery
+	icon = renaissance_development
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_monthly_development = 0.001
+	requires = merchant_power_from_maritime_discovery_advance
+}
+
+ringed_citizen_trading_spirit = {
+	age = age_3_discovery
+	icon = merchant_power_from_maritime_discovery_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	trade_range_modifier = 0.25
+	requires = merchant_power_from_maritime_discovery_advance
+}
+
+ringed_citizen_bustling_quarters = {
+	age = age_3_discovery
+	icon = rudimentary_coastal_ship_repair
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_construction_speed = 0.10
+	requires = crown_power_advance_discovery
+}
+
+# Age of Reformation #
+
+ringed_citizen_city_learning = {
+	age = age_4_reformation
+	icon = printing_press_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_max_literacy = 5
+	research_speed_modifier = 0.05
+	requires = crown_power_advance_reformation
+}
+
+# Age of Absolutism #
+
+ringed_citizen_trading_hub = {
+	age = age_5_absolutism
+	icon = zmw_merchant_taxes
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	export_efficiency = small_trade_efficiency_bonus
+	requires = construction_speed_absolutism
+}
+
+ringed_citizen_golden_age_art = {
+	age = age_5_absolutism
+	icon = patron_of_art
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	num_possible_artists = 1
+	global_monthly_art_start_chance = 0.1
+	requires = newspapers_advance
+}
+
+# Age of Revolutions #
+
+ringed_citizen_concentration_of_commerce = {
+	age = age_6_revolutions
+	icon = global_trade_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ringed_citizen_group }
+	}
+	global_crown_estate_power = 0.10
+	parliament_base_support = 0.1
+	export_efficiency = small_trade_efficiency_bonus
+	requires = rights_of_man
+}

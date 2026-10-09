@@ -1,0 +1,17 @@
+﻿######################
+# Etra Climates
+######################
+
+subterranean = {
+	winter = none
+	color = climate_subterranean
+	has_precipitation = no
+	
+	location_modifier = { 
+		# EU5 continental effects baseline
+		local_population_capacity_modifier = 0.50
+		free_capacity_attracts_pops = yes
+	}
+	
+	debug_color = rgb { 24 26 27 } #
+}

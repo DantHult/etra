@@ -1,0 +1,31 @@
+# Ardrainic culture group units — gated by culture_group:ardrainic_group and advances
+
+# Sword Maidens — Sisterhood of the Sword Maiden advance (age 2)
+a_ardrainien_sword_maiden = {
+	is_special = yes
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
+	buildable = yes
+
+	morale_damage_done = 0.15
+	strength_damage_taken = -0.10
+	initiative = 1
+
+	country_potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+		}
+	}
+
+	limit = {
+		value = {
+			value = 7
+			desc = "SUBUNIT_LIMIT_MAX"
+		}
+	}
+
+	gfx_tags = { sword_tag heavy_tag }
+}

@@ -1,0 +1,48 @@
+﻿# ===== Pwasciards culture — unlocked by pwasciards_maritime_horizons advance =====
+
+# Peninsula Marines (Buildable) - Age 3
+# Infantry raised from sailors and dockworkers; trained for amphibious landings and coastal warfare.
+# Base age 3 infantry: max_strength=1.5, combat_power=1
+a_pwasciards_marines = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	buildable = yes
+
+	morale_damage_done = 0.05
+	strength_damage_taken = -0.05
+
+	combat = {
+		wetlands = 0.10
+	}
+
+	country_potential = {
+		culture = culture:pwasciards_culture
+		has_unlocked_unit_trigger = { type = a_pwasciards_marines }
+	}
+
+	upgrades_to = a_age_4_reformation_light_infantry
+
+	gfx_tags = { light_tag sword_tag }
+}
+
+# ===== Pwasciards culture — unique ship unlocked by pwasciards_naval_glory advance =====
+
+# Peninsula Galley (Buildable) - Age 2
+# Galleys built in Pwasciards ports for coastal dominance and escort duty.
+n_pwasciards_peninsula_galley = {
+	is_special = yes
+	category = navy_galley
+	copy_from = n_age_2_renaissance_galley
+	buildable = yes
+
+	movement_speed = 5
+	crew_size = 0.07
+
+	country_potential = {
+		culture = culture:pwasciards_culture
+		has_unlocked_unit_trigger = { type = n_pwasciards_peninsula_galley }
+	}
+
+	upgrades_to = n_age_3_discovery_galley
+}

@@ -1,0 +1,43 @@
+﻿verminus_wars_can_start_trigger = {
+	game_is_initialized = yes
+	current_date > 1337.4.4
+}
+
+verminus_wars_end_trigger = {
+	OR = {
+		AND = {
+			custom_tooltip = {
+				situation:verminus_wars = { has_variable = verminus_wars_timers_initialized }
+				NOT = { situation:verminus_wars = { has_variable = verminus_wars_max_duration_timer } }
+			
+					text = verminus_wars_end_forced_tt
+					always = yes
+			}
+		}
+	}
+	AND = {
+		custom_tooltip = {
+			situation:verminus_wars = { has_variable = verminus_wars_timers_initialized }
+			NOT = { situation:verminus_wars = { has_variable = verminus_wars_minimum_duration_timer } }
+			exists = international_organization:verminus_realms
+				text = verminus_wars_end_decisive_tt
+				OR = {
+					international_organization:verminus_realms = { total_members <= 1 }
+					international_organization:verminus_realms = {
+						any_international_organization_member = {
+							is_verminus_wars_unifier = yes
+						}
+					}
+				}
+		}
+	}
+}
+
+is_verminus_wars_unifier = {
+	international_organization:verminus_realms = {
+		any_international_organization_owned_location = {
+			is_owned_or_owned_by_subjects_or_below_of = root
+			percent >= 0.75
+		}
+	}
+}

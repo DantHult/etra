@@ -1,0 +1,13 @@
+﻿# Receives data from /genes
+# Ethnicity templates are used in other ethnicities and templates in this folder
+
+undead_ethnicity = {
+	template = "mediterranean_italian_ethnicity"
+	eyes = {
+		1 = { name = purple_glowing		range = { 1.0 1.0 } }
+	}
+	hair_color = {
+		# White
+		100 = { 0.0 0.0 0.0 0.0 }
+	}
+}

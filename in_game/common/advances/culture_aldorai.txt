@@ -1,0 +1,12 @@
+# ############################
+# # age_1_traditions
+# ############################
+aldorai_greenwood_ways = {
+	age = age_1_traditions
+	icon = defensive_mentality
+	potential = {
+		culture = culture:aldorai_culture
+	}
+	global_hostile_attrition = 1
+	requires = typheraii_the_first_murder
+}

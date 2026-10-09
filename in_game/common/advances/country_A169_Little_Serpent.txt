@@ -1,0 +1,25 @@
+﻿#Age of Traditions#
+A169_serpents_bay = {
+	age = age_1_traditions
+	icon = efficient_mining
+	potential = {
+		has_or_had_tag = A169
+	}
+
+	global_sand_output_modifier = 0.50
+
+	requires = mining_advance
+}
+
+#Age of Renaissance#
+
+
+
+#Age of Discovery#
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#

@@ -1,0 +1,169 @@
+﻿accepting_elf_gov_reform = {
+	age = age_1_traditions
+	
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:elven_group }
+		} 	
+	}
+	
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:elven_group
+		}
+	}
+
+	country_modifier = {
+		cultural_tradition_modifier = 0.1
+		global_life_expectancy = 5
+		legislative_efficiency = 0.1
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}
+
+accepting_undead_gov_reform = {
+	age = age_1_traditions
+
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:undead_group }
+		}
+	}
+
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:undead_group
+		}
+	}
+
+	country_modifier = {
+		stability_decay = -0.00025
+		cultural_tradition_modifier = 0.1
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}
+
+accepting_human_gov_reform = {
+	age = age_1_traditions
+
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:human_group }
+		}
+	}
+
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:human_group
+		}
+	}
+
+	country_modifier = {
+		cultures_capacity = 1
+		global_pop_assimilation_speed_modifier = 0.2
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}
+
+accepting_giantsborn_gov_reform = {
+	age = age_1_traditions
+
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:giantsborn_group }
+		}
+	}
+
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:giantsborn_group
+		}
+	}
+
+	country_modifier = {
+		global_construction_speed = 0.1
+		expand_rgo_mining_cost_modifier = -0.33
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}
+
+accepting_tiefling_gov_reform = {
+	age = age_1_traditions
+
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:tiefling_group }
+		}
+	}
+
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:tiefling_group	
+		}
+	}
+
+	country_modifier = {
+		global_max_rgo_size_modifier = 0.10
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}
+
+accepting_aasimar_gov_reform = {
+	age = age_1_traditions
+
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:aasimar_group }
+		}
+	}
+
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:aasimar_group
+		}
+	}
+
+	country_modifier = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}
+
+
+accepting_ratfolk_gov_reform = {
+	age = age_1_traditions
+
+	potential = {
+		NOT = {
+			culture = { has_culture_group = culture_group:ratfolk_group }
+		}
+	}
+
+	allow = {
+		any_accepted_culture = {
+			has_culture_group = culture_group:ratfolk_group
+		}
+	}
+
+	country_modifier = {
+		global_disease_resistance = 0.05
+		global_iron_output_modifier = 0.1
+		global_copper_output_modifier = 0.1
+		monthly_towards_xenophile = societal_value_minor_monthly_move
+	}
+
+	years = 2
+}

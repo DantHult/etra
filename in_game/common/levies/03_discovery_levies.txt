@@ -1,0 +1,125 @@
+﻿# Unique Levies
+levy_a_elven_matchlock_levy = {
+	size = levy_generic_infantry_size
+	unit = a_elven_matchlock_levy
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+	allow = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+}
+
+levy_a_giantsborn_matchlock_levy = {
+	size = levy_generic_infantry_size
+	unit = a_giantsborn_matchlock_levy
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+	allow = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+}
+
+levy_a_ratfolk_matchlock_levy = {
+	size = levy_generic_infantry_size
+	unit = a_ratfolk_matchlock_levy
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+	allow = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+}
+
+levy_a_moran_matchlock_levy = {
+	size = levy_generic_infantry_size
+	unit = a_moran_matchlock_levy
+	
+	allowed_culture = novus_moran_culture
+	allowed_culture = late_moran_culture
+	allowed_culture = high_moran_culture
+	allowed_culture = early_moran_culture
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+
+}
+
+
+levy_a_a331_gloom_stalker_3 = {
+	size = levy_generic_infantry_size
+	allowed_pop_type = peasants
+	country_allow = {
+		has_or_had_tag = A331
+	}
+	unit = a_a331_gloom_stalker_3
+}
+
+levy_a_elven_late_longbowmen = {
+	size = levy_generic_infantry_size
+	allowed_pop_type = peasants
+	country_allow = {
+		NOT = { has_or_had_tag = A331 }
+	}
+	allow = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	unit = a_elven_late_longbowmen
+}
+
+levy_a_late_longbowmen = {
+	size = levy_generic_infantry_size
+	
+	allowed_pop_type = peasants
+
+	allow = {
+		unit_longbowmen_pop_trigger = yes
+	}
+	
+	unit = a_late_longbowmen
+}
+
+# levy_a_late_gallowglass = {
+	# size = levy_generic_infantry_size
+	
+	# allow = {
+		# unit_gallowglass_pop_trigger = yes
+	# }
+	
+	# unit = a_late_gallowglass
+# }
+
+# levy_a_paik = {
+	# size = levy_generic_infantry_size
+	# allow = {
+		# unit_indian_paik_location_levy_trigger = yes
+	# }
+	# unit = a_paik
+# }
+
+# Unlockable Levies
+
+levy_a_matchlock_levy = {
+	size = levy_generic_infantry_size
+	unit = a_matchlock_levy
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+
+}
+
+levy_cavaliers = {
+	size = levy_generic_noble_cavalry_size
+	
+	allowed_pop_type = nobles
+	
+	unit = a_cavaliers
+}

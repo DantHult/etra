@@ -1,0 +1,290 @@
+﻿verminus_wars_init_timers = {
+	if = {
+		limit = {
+			NOT = { has_variable = verminus_wars_timers_initialized }
+		}
+		set_variable = verminus_wars_timers_initialized
+		set_variable = { name = verminus_wars_minimum_duration_timer value = 1 years = 10 }
+		set_variable = { name = verminus_wars_max_duration_timer value = 1 years = 25 }
+	}
+}
+
+verminus_wars_reevaluate_contenders = {
+	clear_global_variable_list = verminus_strong_contenders_list
+	remove_variable = verminus_strongest_contender
+	remove_variable = verminus_threatening_contender
+	remove_variable = verminus_second_contender
+	remove_variable = verminus_third_contender
+	remove_variable = verminus_fourth_contender
+	remove_variable = verminus_fifth_contender
+
+	international_organization:verminus_realms ?= {
+		ordered_international_organization_member = {
+			order_by = {
+				add = {
+					value = country_total_army_levy_size
+				}
+				multiply = country_rank_level
+				add = {
+					value = army_size
+					multiply = 10
+				}
+				add = {
+					value = country_total_navy_levy_size
+					divide = 2
+				}
+				add = {
+					value = monthly_income_trade_and_tax
+					divide = 10
+				}
+				if = {
+					limit = { is_great_power = yes }
+					add = 100
+				}
+			}
+			max = 1
+			check_range_bounds = no
+			situation:verminus_wars = {
+				set_variable = {
+					name = verminus_strongest_contender
+					value = prev
+				}
+			}
+		}
+		if = {
+			limit = { total_members > 1 }
+			ordered_international_organization_member = {
+				order_by = {
+					add = {
+						value = country_total_army_levy_size
+					}
+					multiply = country_rank_level
+					add = {
+						value = army_size
+						multiply = 10
+					}
+					add = {
+						value = country_total_navy_levy_size
+						divide = 2
+					}
+					add = {
+						value = monthly_income_trade_and_tax
+						divide = 10
+					}
+					if = {
+						limit = { is_great_power = yes }
+						add = 100
+					}
+				}
+				limit = {
+					this != international_organization:verminus_realms.leader_country
+				}
+				max = 1
+				check_range_bounds = no
+				situation:verminus_wars = {
+					set_variable = {
+						name = verminus_threatening_contender
+						value = prev
+					}
+				}
+				add_to_global_variable_list = {
+					name = verminus_strong_contenders_list
+					target = this
+				}
+			}
+		}
+		if = {
+			limit = { total_members > 2 }
+			ordered_international_organization_member = {
+				order_by = {
+					add = {
+						value = country_total_army_levy_size
+					}
+					multiply = country_rank_level
+					add = {
+						value = army_size
+						multiply = 10
+					}
+					add = {
+						value = country_total_navy_levy_size
+						divide = 2
+					}
+					add = {
+						value = monthly_income_trade_and_tax
+						divide = 10
+					}
+					if = {
+						limit = { is_great_power = yes }
+						add = 100
+					}
+				}
+				limit = {
+					this != international_organization:verminus_realms.leader_country
+				}
+				position = 1
+				check_range_bounds = no
+				situation:verminus_wars = {
+					set_variable = {
+						name = verminus_second_contender
+						value = prev
+					}
+				}
+				add_to_global_variable_list = {
+					name = verminus_strong_contenders_list
+					target = this
+				}
+			}
+		}
+		if = {
+			limit = { total_members > 3 }
+			ordered_international_organization_member = {
+				order_by = {
+					add = {
+						value = country_total_army_levy_size
+					}
+					multiply = country_rank_level
+					add = {
+						value = army_size
+						multiply = 10
+					}
+					add = {
+						value = country_total_navy_levy_size
+						divide = 2
+					}
+					add = {
+						value = monthly_income_trade_and_tax
+						divide = 10
+					}
+					if = {
+						limit = { is_great_power = yes }
+						add = 100
+					}
+				}
+				limit = {
+					this != international_organization:verminus_realms.leader_country
+				}
+				position = 2
+				check_range_bounds = no
+				situation:verminus_wars = {
+					set_variable = {
+						name = verminus_third_contender
+						value = prev
+					}
+				}
+				add_to_global_variable_list = {
+					name = verminus_strong_contenders_list
+					target = this
+				}
+			}
+		}
+		if = {
+			limit = { total_members > 4 }
+			ordered_international_organization_member = {
+				order_by = {
+					add = {
+						value = country_total_army_levy_size
+					}
+					multiply = country_rank_level
+					add = {
+						value = army_size
+						multiply = 10
+					}
+					add = {
+						value = country_total_navy_levy_size
+						divide = 2
+					}
+					add = {
+						value = monthly_income_trade_and_tax
+						divide = 10
+					}
+					if = {
+						limit = { is_great_power = yes }
+						add = 100
+					}
+				}
+				limit = {
+					this != international_organization:verminus_realms.leader_country
+				}
+				position = 3
+				check_range_bounds = no
+				situation:verminus_wars = {
+					set_variable = {
+						name = verminus_fourth_contender
+						value = prev
+					}
+				}
+				add_to_global_variable_list = {
+					name = verminus_strong_contenders_list
+					target = this
+				}
+			}
+		}
+		if = {
+			limit = { total_members > 5 }
+			ordered_international_organization_member = {
+				order_by = {
+					add = {
+						value = country_total_army_levy_size
+					}
+					multiply = country_rank_level
+					add = {
+						value = army_size
+						multiply = 10
+					}
+					add = {
+						value = country_total_navy_levy_size
+						divide = 2
+					}
+					add = {
+						value = monthly_income_trade_and_tax
+						divide = 10
+					}
+					if = {
+						limit = { is_great_power = yes }
+						add = 100
+					}
+				}
+				limit = {
+					this != international_organization:verminus_realms.leader_country
+				}
+				position = 4
+				check_range_bounds = no
+				situation:verminus_wars = {
+					set_variable = {
+						name = verminus_fifth_contender
+						value = prev
+					}
+				}
+				add_to_global_variable_list = {
+					name = verminus_strong_contenders_list
+					target = this
+				}
+			}
+		}
+	}
+}
+
+verminus_wars_unify_winner = {
+	situation:verminus_wars = {
+		set_variable = {
+			name = verminus_wars_winner
+			value = this
+		}
+	}
+	form_country = formable_country:Rattopaese_f
+}
+
+verminus_wars_save_losers_list = {
+	clear_global_variable_list = verminus_wars_losers_list
+	international_organization:verminus_realms ?= {
+		every_international_organization_member = {
+			limit = {
+				this != situation:verminus_wars.var:verminus_wars_winner
+			}
+			add_to_global_variable_list = {
+				name = verminus_wars_losers_list
+				target = this
+			}
+		}
+	}
+}

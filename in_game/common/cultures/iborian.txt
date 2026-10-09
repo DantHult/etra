@@ -1,0 +1,152 @@
+﻿selorian_culture = { 
+	
+	language = selorian_dialect
+	
+	color = map_CAS
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		iborian_group
+	}
+}
+andaean_culture = {
+	language = selorian_dialect
+	
+	color = map_morocco
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}		
+	
+	
+	culture_groups = {
+		human_group
+		iborian_group
+	}
+
+}
+
+vocera_culture = { #Vocera
+	language = selorian_dialect
+	
+	color = map_LON
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}		
+	
+	
+	culture_groups = {
+		human_group
+		iborian_group
+	}
+
+}
+
+anerrian_culture = { 
+	language = selorian_dialect
+	
+	color = map_NAV
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}		
+	
+	
+	culture_groups = {
+		human_group
+		iborian_group
+	}
+
+} 
+
+sioran_culture  = {
+	language = selorian_dialect
+	
+	color = RGB { 82 126 148 }
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}		
+	
+	
+	culture_groups = {
+		human_group
+		iborian_group
+	}
+
+} 
+
+besban_culture  = { #Vocera
+	language = selorian_dialect
+	
+	color = RGB { 115 155 70 }
+	
+	tags = { castilian_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}		
+	
+	
+	culture_groups = {
+		human_group
+		iborian_group
+	}
+
+} 
+
+ebaran_culture = { 
+	language = selorian_dialect
+	
+	color = RGB { 125 110 25 }
+	
+	tags = { basque_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}
+
+	use_patronym = yes
+	
+	culture_groups = {
+		giantsborn_group
+		iborian_group
+	}
+}
+
+
+shurari_culture = { 
+	language = selorian_dialect
+	
+	color = RGB { 55 5 25 }
+	
+	tags = { basque_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	opinions = {
+	}
+
+	use_patronym = yes
+	
+	culture_groups = {
+		giantsborn_group
+		iborian_group
+	}
+}
+
+infernling_culture = {
+	language = selorian_dialect
+	
+	color = RGB  { 125  25  25 }
+	
+	tags = { tiefling_gfx catalan_gfx iberian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		iborian_group
+		tiefling_group
+	}
+}

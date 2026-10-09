@@ -1,0 +1,45 @@
+﻿# Sorlkol culture units (from nd_tib; gated by culture = culture:sorlkol_culture)
+
+# Dob-dob Warrior Monks - Age 1 levy infantry
+a_sorlkol_warrior_monk = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_light_infantry
+	buildable = no
+	levy = yes
+
+	morale_damage_done = 0.1
+	strength_damage_taken = -0.05
+
+	combat = {
+		mountains = 0.15
+	}
+
+	country_potential = {
+		culture = culture:sorlkol_culture
+	}
+
+	gfx_tags = { light_tag }
+}
+
+a_sorlkol_lynx_goat_riders = {
+	is_special = yes
+	category = army_heavy_cavalry
+	copy_from = a_age_4_reformation_heavy_cavalry
+	buildable = yes
+
+	movement_speed = 0.1
+	morale_damage_done = 0.1
+	strength_damage_done = 0.05
+
+	combat = {
+		mountains = 0.1
+		hills = 0.1
+	}
+
+	country_potential = {
+		culture = culture:sorlkol_culture
+	}
+
+	gfx_tags = { medium_tag }
+}

@@ -1,0 +1,40 @@
+﻿#Age of Traditions#
+
+rising_from_ruins = {
+	age = age_1_traditions
+	
+	potential = { 
+		culture = culture:rovina_culture
+	}
+
+	icon = river_trade
+
+	requires = feudalism_advance
+	
+	global_monthly_prosperity = 0.001
+}
+
+
+#Age of Renaissance#
+rovina_ruined_no_longer = {
+	age = age_2_renaissance
+	potential = { 
+		culture = culture:rovina_culture
+	}
+	cultural_tradition_modifier = 0.1
+	monthly_prestige = 0.1
+	monthly_legitimacy = 0.1
+
+	requires = renaissance_court
+	
+}
+
+#Age of Discovery# 
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

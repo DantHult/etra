@@ -1,0 +1,46 @@
+﻿# etra: vanilla lordship_of_ireland interactions disabled — Ireland not on custom map
+
+lordship_of_ireland_bestow_lieutenant_status = {
+	type = diplomacy
+	category = CATEGORY_FRIENDLY_ACTIONS
+
+	potential = {
+		always = no
+	}
+}
+
+lordship_of_ireland_rescind_lieutenant_status = {
+	type = diplomacy
+	category = CATEGORY_HOSTILE_ACTIONS
+
+	potential = {
+		always = no
+	}
+}
+
+lordship_of_ireland_assert_regency = {
+	type = diplomacy
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+		always = no
+	}
+}
+
+lordship_of_ireland_enfeoff_regency = {
+	type = diplomacy
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+		always = no
+	}
+}
+
+lordship_of_ireland_surrender_and_regrant = {
+	type = diplomacy
+	category = CATEGORY_FRIENDLY_ACTIONS
+
+	potential = {
+		always = no
+	}
+}

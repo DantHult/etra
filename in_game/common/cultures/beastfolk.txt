@@ -1,0 +1,68 @@
+﻿hoggish_culture = {
+	language = hoggish_dialect
+	
+	color = map_ENG
+	
+	tags = { english_gfx british_gfx western_european_gfx european_gfx }
+
+	country_modifier = {
+	}
+	character_modifier = {
+	}
+	location_modifier = {
+	}
+
+	opinions = {
+
+	}
+
+	culture_groups = {
+		pigmen_group
+		beastfolk_group
+	}
+	
+	noun_keys = {
+		adder
+		falcon
+		baron
+	}
+	
+	adjective_keys = {
+		black
+		red
+		yellow
+	}
+}
+
+hundvarian_culture = {
+	language = vothivrian_language
+	
+	color = map_BOH
+	
+	tags = { czech_gfx west_slavic_gfx slavic_gfx western_european_gfx european_gfx }
+
+	opinions = {		
+
+	}	
+	culture_groups = {
+		beastfolk_group
+		lupusfolk_group
+		vothivrian_group
+	}
+}
+
+
+koth_culture = {
+	language = vothivrian_language
+	
+	color = map_lucayo
+	
+	tags = { czech_gfx west_slavic_gfx slavic_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		vothivrian_group
+		catfolk_group
+		beastfolk_group
+	}
+
+}

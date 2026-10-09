@@ -1,0 +1,794 @@
+﻿# Light infantry: units with barely any armor. Usually ranged attackers too, though not guaranteed to be in the early ages
+# Heavy infantry: robust units in heavy armor. Usually melee attackers
+# Light cavalry: mounted units which strength is speed and which use barely any armor. Good for flanking
+# Heavy cavalry: mounted units which breach frontal into the enemy rows and can withstand a lot of punishment. Become obsolete with Age of Revolutions
+# Artillery: currently all the cannons and mortar units which are used for siege and combat alike
+# Auxiliary: currently all the supply units which ensure that your troops do not starve
+
+
+a_age_1_traditions_undead_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_light_infantry
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+	buildable = no
+
+}
+
+a_age_1_traditions_undead_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_1_traditions_heavy_infantry
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+	buildable = no
+
+}
+
+a_age_1_traditions_undead_heavy_cavalry = {
+	
+	category = army_heavy_cavalry
+	copy_from = a_age_1_traditions_heavy_cavalry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+
+a_age_1_traditions_undead_auxiliary = {
+	category = army_auxiliary
+	copy_from = a_age_1_traditions_auxiliary
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+# a_age_1_traditions_undead_artillery = {
+	# copy_from = a_age_1_traditions_artillery
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+##################################################
+
+a_age_2_renaissance_undead_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+a_age_2_renaissance_undead_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+# a_age_2_renaissance_undead_cavalry = {
+	# copy_from = a_age_2_renaissance_cavalry
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_2_renaissance_undead_auxiliary = {
+	# copy_from = a_age_2_renaissance_auxiliary
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_2_renaissance_undead_artillery = {
+	# copy_from = a_age_2_renaissance_artillery
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+##################################################
+
+a_age_3_discovery_undead_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_3_discovery_heavy_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+a_age_3_discovery_undead_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+
+# a_age_3_discovery_undead_cavalry = {
+	# copy_from = a_age_3_discovery_cavalry
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_3_discovery_undead_auxiliary = {
+	# copy_from = a_age_3_discovery_auxiliary
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_3_discovery_undead_artillery = {
+	# copy_from = a_age_3_discovery_artillery
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+##################################################
+
+a_age_4_reformation_undead_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_light_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+a_age_4_reformation_undead_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_4_reformation_heavy_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+# a_age_4_reformation_undead_cavalry = {
+	# copy_from = a_age_4_reformation_cavalry
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_4_reformation_undead_auxiliary = {
+	# copy_from = a_age_4_reformation_auxiliary
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_4_reformation_undead_artillery = {
+	# copy_from = a_age_4_reformation_artillery
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+
+
+##################################################
+#Heavy and light infantry merge into a single infantry type as gunpowder weapons now dominate the battlefield
+a_age_5_absolutism_undead_light_infantry = {	
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_light_infantry
+	buildable = no
+	
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+a_age_5_absolutism_undead_heavy_infantry = {	
+	category = army_heavy_infantry
+	copy_from = a_age_5_absolutism_heavy_infantry
+	buildable = no
+	
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+}
+
+# a_age_5_absolutism_undead_cavalry = {
+	# copy_from = a_age_5_reformation_cavalry
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_5_absolutism_undead_auxiliary = {
+	# copy_from = a_age_5_reformation_auxiliary
+	# buildable = no
+	
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_5_absolutism__undead_artillery = {
+	# copy_from = a_age_5_reformation_artillery
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+##################################################
+
+a_age_6_undead_revolutions_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_heavy_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+	
+}
+a_age_6_undead_revolutions_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_light_infantry
+	buildable = no
+
+	morale_damage_taken = -0.80
+	movement_speed = -1.5
+	initiative = -0.5
+	food_consumption_per_strength = -1
+	
+}
+
+# a_age_6_revolutions_undead_cavalry = {
+	# copy_from = a_age_6_revolutions_cavalry
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_6_revolutions_undead_auxiliary = {
+	# copy_from = a_age_6_revolutions_auxiliary
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+# a_age_6_revolutions_undead_artillery = {
+	# copy_from = a_age_6_revolutions_artillery
+	# buildable = no
+
+	# morale_damage_taken = -0.80
+	# movement_speed = -1.5
+	# initiative = -0.5
+	# food_consumption_per_strength = -1
+# }
+
+##################################################
+# Elven templates — half max_strength, double combat_power
+# (same regiment combat mass as vanilla; keep inherited maintenance/construction)
+##################################################
+
+a_age_1_traditions_elven_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.25
+	combat_power = 2
+	maintenance_demand =  early_infantry_maintenance
+	construction_demand = early_infantry_construction
+	age = "age_1_traditions"
+}
+
+a_age_1_traditions_elven_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.25
+	combat_power = 2
+	maintenance_demand =  early_infantry_maintenance
+	construction_demand = early_infantry_construction
+	age = "age_1_traditions"
+}
+
+a_age_1_traditions_elven_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.1
+	combat_power = 8
+	
+	age = "age_1_traditions"
+}
+
+a_age_1_traditions_elven_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.1
+	combat_power = 8
+	age = "age_1_traditions"
+}
+
+a_age_2_renaissance_elven_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.5
+	combat_power = 2
+}
+
+a_age_2_renaissance_elven_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.5
+	combat_power = 2
+}
+
+a_age_2_renaissance_elven_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_2_renaissance_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.2
+	combat_power = 8
+}
+
+a_age_2_renaissance_elven_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.2
+	combat_power = 8
+}
+
+a_age_3_discovery_elven_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.75
+	combat_power = 2
+}
+
+a_age_3_discovery_elven_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_3_discovery_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 0.75
+	combat_power = 2
+}
+
+a_age_3_discovery_elven_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_3_discovery_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.3
+	combat_power = 8
+}
+
+a_age_3_discovery_elven_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_3_discovery_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.3
+	combat_power = 8
+}
+
+a_age_4_reformation_elven_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.0
+	combat_power = 3
+}
+
+a_age_4_reformation_elven_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_4_reformation_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.0
+	combat_power = 3
+}
+
+a_age_4_reformation_elven_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_4_reformation_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.4
+	combat_power = 8
+}
+
+a_age_4_reformation_elven_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_4_reformation_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.4
+	combat_power = 8
+}
+
+a_age_5_absolutism_elven_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.25
+	combat_power = 4.5
+}
+
+a_age_5_absolutism_elven_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_5_absolutism_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.25
+	combat_power = 4.5
+}
+
+a_age_5_absolutism_elven_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_5_absolutism_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.5
+	combat_power = 8
+}
+
+a_age_5_absolutism_elven_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_5_absolutism_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.5
+	combat_power = 8
+}
+
+a_age_6_revolutions_elven_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.5
+	combat_power = 6
+}
+
+a_age_6_revolutions_elven_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.5
+	combat_power = 6
+}
+
+a_age_6_revolutions_elven_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_6_revolutions_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.6
+	combat_power = 8
+}
+
+a_age_6_revolutions_elven_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_6_revolutions_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.6
+	combat_power = 8
+}
+
+##################################################
+# Ratfolk templates — double max_strength, half combat_power
+# (same regiment combat mass as vanilla; keep inherited maintenance/construction)
+##################################################
+
+a_age_1_traditions_ratfolk_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.0
+	combat_power = 0.5
+	maintenance_demand =  early_infantry_maintenance
+	construction_demand = early_infantry_construction
+	age = "age_1_traditions"
+}
+
+a_age_1_traditions_ratfolk_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 1.0
+	combat_power = 0.5
+	maintenance_demand =  early_infantry_maintenance
+	construction_demand = early_infantry_construction
+	age = "age_1_traditions"
+}
+
+a_age_1_traditions_ratfolk_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.4
+	combat_power = 2
+	age = "age_1_traditions"
+}
+
+a_age_1_traditions_ratfolk_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.4
+	combat_power = 2
+	age = "age_1_traditions"
+}
+
+a_age_2_renaissance_ratfolk_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 2.0
+	combat_power = 0.5
+}
+
+a_age_2_renaissance_ratfolk_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 2.0
+	combat_power = 0.5
+}
+
+a_age_2_renaissance_ratfolk_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_2_renaissance_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.8
+	combat_power = 2
+}
+
+a_age_2_renaissance_ratfolk_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 0.8
+	combat_power = 2
+}
+
+a_age_3_discovery_ratfolk_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 3.0
+	combat_power = 0.5
+}
+
+a_age_3_discovery_ratfolk_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_3_discovery_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 3.0
+	combat_power = 0.5
+}
+
+a_age_3_discovery_ratfolk_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_3_discovery_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 1.2
+	combat_power = 2
+}
+
+a_age_3_discovery_ratfolk_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_3_discovery_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 1.2
+	combat_power = 2
+}
+
+a_age_4_reformation_ratfolk_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 4.0
+	combat_power = 0.75
+}
+
+a_age_4_reformation_ratfolk_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_4_reformation_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 4.0
+	combat_power = 0.75
+}
+
+a_age_4_reformation_ratfolk_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_4_reformation_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 1.6
+	combat_power = 2
+}
+
+a_age_4_reformation_ratfolk_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_4_reformation_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 1.6
+	combat_power = 2
+}
+
+a_age_5_absolutism_ratfolk_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 5.0
+	combat_power = 1.125
+}
+
+a_age_5_absolutism_ratfolk_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_5_absolutism_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 5.0
+	combat_power = 1.125
+}
+
+a_age_5_absolutism_ratfolk_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_5_absolutism_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 2.0
+	combat_power = 2
+}
+
+a_age_5_absolutism_ratfolk_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_5_absolutism_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 2.0
+	combat_power = 2
+}
+
+a_age_6_revolutions_ratfolk_light_infantry = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_light_infantry
+	hide = yes
+	buildable = no
+	max_strength = 6.0
+	combat_power = 1.5
+}
+
+a_age_6_revolutions_ratfolk_heavy_infantry = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_heavy_infantry
+	hide = yes
+	buildable = no
+	max_strength = 6.0
+	combat_power = 1.5
+}
+
+a_age_6_revolutions_ratfolk_light_cavalry = {
+	category = army_light_cavalry
+	copy_from = a_age_6_revolutions_light_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 2.4
+	combat_power = 2
+}
+
+a_age_6_revolutions_ratfolk_heavy_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_6_revolutions_heavy_cavalry
+	hide = yes
+	buildable = no
+	max_strength = 2.4
+	combat_power = 2
+}

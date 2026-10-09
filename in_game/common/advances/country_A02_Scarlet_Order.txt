@@ -1,0 +1,27 @@
+﻿#Age of Traditions#
+A02_and_they_shall_know_fear = {
+	age = age_1_traditions
+	potential = { 
+		has_or_had_tag = A02
+	}
+	army_heavy_infantry_power = 0.15
+
+	requires = organized_religion
+
+}
+
+#Age of Renaissance#
+
+
+#Age of Discovery# 
+
+
+
+#Age of Reformation#
+
+
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

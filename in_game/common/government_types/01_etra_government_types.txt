@@ -1,0 +1,9 @@
+﻿INJECT:theocracy = {
+
+	heir_selection = grandmistress_elective #Etra
+
+}
+
+INJECT:monarchy = {
+	heir_selection = vexvec_matrilineal_primogeniture
+}

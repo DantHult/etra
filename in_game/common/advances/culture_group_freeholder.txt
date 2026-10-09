@@ -1,0 +1,72 @@
+﻿#Age of Traditions#
+
+freeholder_land_of_promise = {
+	age = age_1_traditions
+	icon = pioneer_spirit
+	potential = {
+		culture = { has_culture_group = culture_group:freeholder_group }
+	}
+
+	global_monthly_prosperity = 0.001
+	global_migration_speed_modifier = 0.1
+
+	requires = feudalism_advance
+}
+
+
+freeholder_frontier_warriors = {
+	potential = {
+		culture = { has_culture_group = culture_group:freeholder_group }
+	}
+	age = age_1_traditions
+	icon = glorious_arms
+	
+	requires = faster_levy_recruitment
+	global_levy_recruitment_speed_modifier = 0.33
+}
+
+
+#Age of Renaissance#
+freeholder_multi_culturalism = {
+	potential = {
+		culture = { has_culture_group = culture_group:freeholder_group }
+	}
+	age = age_2_renaissance
+	icon = cultural_acceptance_advance
+	cultures_capacity = 2
+	add_accepted_culture_cost_modifier = -0.1
+	requires = global_nobles_max_literacy_advance
+}
+
+freeholder_cultivate_vineyards = {
+	age = age_2_renaissance
+	icon = golden_fleece
+	potential = {
+		culture = { has_culture_group = culture_group:freeholder_group }
+	}
+	global_wine_output_modifier = 0.2
+	global_fruit_output_modifier = 0.2
+
+	requires = food_advance_renaissance
+}
+
+freeholder_learning_from_the_ancients = {
+	age = age_2_renaissance
+	icon = court_cost_advance_renai
+	potential = {
+		culture = { has_culture_group = culture_group:freeholder_group }
+	}
+
+	research_speed_modifier = 0.05
+	
+	requires = art_school_advance
+}
+
+#Age of Discovery# 
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

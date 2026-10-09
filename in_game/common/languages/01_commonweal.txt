@@ -1,0 +1,1131 @@
+﻿common_language = {
+	color = rgb { 37 138 164 }
+
+
+	male_names = {
+		name_adam name_adrian name_alan name_alberic name_albert name_alexander name_alfred name_andrew name_anthony name_archibald name_arnold name_arthur name_emmerich
+		name_benedict 
+		name_cecil name_charles name_christian name_christopher name_clement name_cuthbert 
+		name_daniel name_david name_dennis
+		name_edgar name_edmond name_edward name_eric
+		name_francis
+		name_gawain name_godfrey name_george name_gerald name_gerard name_gilbert name_giles name_gregory
+		name_henry name_hugh Humphrey 
+		name_enguerrand
+		name_james name_john
+		name_laurence name_louis name_lucas
+		name_mark name_martin name_matthew name_maurice name_michael
+		name_nicholas name_nigel name_norman
+		name_eugene
+		name_patrick name_peter name_philip
+		name_ralph name_reginald name_richard name_robert name_roderick name_roger
+		name_simeon name_stephen
+		name_theobald name_theodore name_thomas
+		name_vincent
+		name_walter name_wilfred name_william
+
+		# Protestant
+		name_aaron name_abraham 
+		name_bartholomew name_benjamin 
+		name_cornelius
+		name_elias Ezra
+		name_gabriel 
+		name_isaac 
+		Jason name_jonas Jonathan name_jordan name_joseph name_joshua Josiah 
+		name_moses 
+		Nathan Nathaniel 
+		name_samuel name_salomon
+		name_timothy
+		name_zechariah		
+
+		# Islamic
+		name_muhammad	
+	}
+	female_names = {
+		Abigail name_agatha name_agnes name_alice Alison Amy name_anna name_annabel
+		name_barbara name_beatrix Bridget
+		name_caroline name_catherine name_cecile name_charlotte name_christine name_clemence
+		Deborah Denise Dinah name_dorothy
+		name_edith name_eleanor Ellen name_elizabeth name_emma Esther Eve
+		name_frances
+		name_grace
+		Hannah Harriet
+		Isolde
+		Jemima name_joanna Joyce name_judith
+		Lucy name_lydia
+		Mabel name_margaret Marjorie Marion name_martha name_matilda Maud
+		Nancy
+		Patience Pernel Phoebe Phyllis
+		name_rachel Rebecca Rosamund name_rosa Ruth
+		name_sara name_sophia name_susan name_sybil
+		Violet
+	}
+	dynasty_names = {	
+		Dudley name_mowbray beaufort_dynasty Howard Seymour holland_dynasty 
+		Talbot Stanley Courtenay de_la_Pole de_Vere stafford_dynasty Grey le_Despenser de_Camoys
+		Oglethorpe Hyde
+	}
+	
+	lowborn = {
+		Abbott Abdy Ackland Acklom name_adam Adams Adderley Adye Affleck Aitchison Alcock Alder Aldham name_alexander Alfray Allan Allardice Allen Alleyn Allison Alms Alner Alt name_ambrose Anderson Andoe name_andrew Andrews Annesley Anstis Anstruther name_anthony Antram Aplin Appleby Archdall Archibold Arden Argyles Armstrong name_arnold Arrow Arscott name_arthur Ashington Astbury Astle Atchison Atkin Atkins Atkinson Atwater Austen Autridge Averell Avery Axe Ayles Aylmer Ayres Ayscough 
+		Babington Bacha Bacon Badger Bailey Bain Baines Baird Baker Baldrick Baldridge name_baldwin Baley Balfour Ball Ballard Baly Bamber Bankes Banks Barber Barker Barler Barley Barlow Barnard Barnsley Barrete Barrett Barrie Barron Barton Barwell Barwick Basden Bashford Baskerville Bass Bassan Bassett Bastard Bastide Bastin Bateman Bates Bathurst Batt Batten Baugh Baumgardt Bawden Bayley Baynes Bayntin Bayntun Bazeley Bazely Beanor Beaker Beale Bean Beard Beasant Beasley Beauchamp Beauclerk Beaufort Beaufoy Beauman beaumont_dynasty Beaver Becher Beckett Bedford Bedingfield Beech Beecroft Belchier Belden Bell Bellamy Bellew Belli Benbow Benett Benge Bennet Bennett Bentinck Beresford Berkley Berney Berry Bertie Bertram Besley Besson Best Bettesworth Betty Bevan Bevians Bickerton Biggard Bignell Billinghurst Bindon Bingham Birchall Bird Birkhead Bishop Bissell Bisset Black Blackadder Blackburne Blackler Blackwell Blackwood Blainey Blake Blamey Blanchett Bland Blandford Blaquiere Bligh Blight Blissett Blow Bloye Bluett Blunden Blyth Boad Boger Bogue Bolton Bond bone_dynasty Bones Bonnet Bonny Bookless Boorder Booth Borough Borthwick Bostock Boston Boswell Bothwell Boulderson Bounton Bourchier Bourmaster Bourn Bourne Bouverie Bowater Bowden Bowdick Bowen Bower Bowie Bowker Bowler Bowles Bowyer Box Boxer Boyack Boyce Boyd Boyes Boyle Boyles Boys Brabazon Brace Bracegirdle Bradby Braddel Bradley Brady Brainer Braithwaite Branch Brand Brandreth Brathwaite Brawn Bray Bremer Brenton Brett Brice Bridges Bridport Briggs Brine Brisbane Bristow Broad Brock Brockman Brodie Broke Brome Bromley Brompton Bromwich Brookbank Brookes Brooking Brothers Broughton Broun Brown Browne Brownrigg Bruce Brumhall Brunton Bryan Buchan Buchanan Buck Buckland Buckle Buckner Budd Bullen Buller Bulley Bullock Bult Bulteel Bunce Burch Burchell Burdett Burdon Burgess Burgoyne Burke Burlton Burman Burn Burnaby Burney Burrough Burrowes Burrows Burstall Burt Burton Bury Bush Bushby Bussell Butcher Butler Butt Butterfield Butterworth Byam Byng Byron 
+		Cable Cadman Cadogan Calder Caldwell Callaway Callis Calmady Cameron Campbell Campion Canning Canterbury Capel Carden Carew Carey Carhew Carne Carnegie Carnegoe Carnegy Carpenter Carr Carter Carteret Carthew Cartier Cartwright Case Casey Cashman Caspal Cathcart Caulfield Cavell Cavendish Cawkitt Chamberlain Chambers Champain Champion Chandler Chapman name_charles Charleton Charlton Cheap Cheese Cheesman Chessell Chesshyre Chester Chetham Chiene Chilcott Child Childs Chimley Chivers Chochrane name_christian Christie Church Churches Clarence Claridge Clark Clarke Clarributt Clavell Clay Clayton Cleland name_clement Clements Clephan Clephane Cleverley Clifton Clinch Clive Cloherty Clyde Cobb Cobham Cochet Cochran Cochrane Cock Cockburn Cockcraft Cocklyn Cocks Codd Codrington Coe Coet Coffin Coggan Coghlan Coham Coke Colby Cole Coleman Coles Colet Collard Collett Collier Collingwood Collins Collis Colnett Colpoys Colquitt Coltman Columbine Colvill Comptonn Comyn Conant Condent Congaiton Conn Connolly Consitt Cooban Coode Cook Cooke Cookesley Coombes Cooper Coote Copinger Corbet Corbyn Corner Cornish Cornwallis Corries Corsellis Cosby Cosgrave Cotton Cottrell Couch Coulson Countess Courtney Courtoyes Covey Cowan Cowley Cox Coxen Coxon Coxwell Cracraft Craig Cramer Craven Crawford Crawley Cree Creed Creery Creighton Cress Cressy Crew Creyke Cribb Crispin Crispo Croasdale Crocombe Croft Crofton Cromwell Crooke Crosbe Crouch Crow Crusoe Crymes Cudlipp Culliford Culls Culverhouse Cumberland Cumby Cuming Cumpston Cunk Cunningham Curry Curtis Curzon Cutcliffe name_cuthbert 
+		Dacres Dalby Dale Dalway Daly Dampier Dance name_daniel Daniell Darby Darracott Dashwood Dathan Davey Davidson Davie Davies Davis Davison Dawe Dawes Dawson Day Dayrell Deacon Deams Debenham Delafons Dench Denman name_dennis Dent Derby Derry Desorat Devon Devonshire Dewey Dewsnap Dick Dickens Dickinson Dickson Dilkes Dillon Dix Dixie Dixon Dobbie Dobree Dobson Dod Dodd Dodgson Dods Dolling Dommett Doneclift Donnelly Donner Donnithorne Donovan Dornford Dorril name_douglas Dow Dowell Dowers Down Downie Downing Downman Doyel Doyle Drake Drane Draper Dredge Drummond Drury Dubbin Duckworth Duddington Dudgeon Duer Duff Duffy Duke Dunbar Duncan Dundas Dundass Dunham Dunlop Dunn Durban Durell Durham Dutch Dutton Duval Dove Dyer 
+		Eager Eastman Easton Eastwood name_edgar Edgcumbe Edge Edgell Edgerton Edmonds Edwards Ekins Elder Eldridge Elers Elfrith Eliot Elkington Ellary Ellicott Elliot Ellis Ellison Elphick Elphinston Elsmere Emerton England Epworth Errington Essex Essingham Evans Eveleigh Evelyn Everard Eyles Eyre 
+		Fabian Faddy Fahie Fairbairn Fairfax Fairweather name_falcon Falkland Falmouth Fancourt Fane Paris Farmer Farnall Farrington Faulkner Faulknor Fayerman Featherstone Fegan Fellowes Fellows Fenn Fennel Fenton Ferguson Fernandes Ferrie Ferrier Ferrieres Ferris Ferritor Festing Field Fielding Fife Finch Finley Finnis Fish Fisher FitzGerald FitzMaurice FitzPatrick FitzRoy Fitzsimmons Flanders Flatt Fleetwood Fleming Flinders Flinn Flint Fly Flynn Folds Foley Folliot Folvill Foote Forbes Ford Forder Foreman Forfar Forrest Forrestale Forster Forsyth Forteescue Forten Fortescue Foulerton Fowell Fowle Fowler Fox France Franklin Fraser Frazier name_frederick Freemantle French Fricker Frissell Fromow Fryer Fuller Fullton Furber Furmidge Furnival Fyffe 
+		name_gabriel Gage Galloway Galton Galway Gambier Gardiner Gardner Gardshore Garland Garlies Garrett Garrety Garrick Garth Gascoyne Gatehouse Gawen Gaydon Geale Geare Gedge Gell name_george Gettings Gibbes Gibbons Gibbs Gibson Giddy Giffard Gifford Gigman name_gilbert Gilchrist name_giles Gill Gillette Gilliland Gillingham Gillmor Gilmour Glanvill Glassford Glayson Glen Gligh Glover Glynn Goate Godench Godfrey Goeby Gold Goldesbrough Goldfinch Goldie Gomm Good Gooding Goodwin Gordon Gore Gosselin Gossett Gostling Gould Gourly Gower Graeme Graham Granger Grant Graves Gray Greatrix Green Greene Greening Greenlaw Greensill Greensword Greenway Greenwood Greer Gregort name_gregory Grey Grierson Grieve Griffin Griffith Griffiths Grigg Grindall Grosett Grosvenor Groube Grove Groves Grumley Guion Guise Gulon Gumming Gummoe name_gunther Guthrie Guyon Guyot Gwillim Gwynne Gybbon 
+		Hadaway Haddock Haddon Hagerty Hailes Halkett Hall Halliday Hallowell Halsted Halton Haly Hamilton Hamline Hammond Hamond Hampton Hance Hancock Hancorne Hand Handford Handy Hanmer Hanwell Hardacre Harding Hardinge Hardy Hardyman Hare Harford Hargood Hargrave Harland Harley Harper Harries Harris Harrison Hart Hartwell Harvey Harward Hastings Haswell Hatherill Hatley Haverfield Haward Hawes Hawker Hawkes Hawkey Hawkins Hawtayne Hay Haydon Hayes Hayford Haygarth Haynes Heacock Head Heard Hearle Heath Heathcote Heddington Hellard Helpman Heming Hemstead Henderson Hendrie Hendry Hennah Henniker name_henry Henryson Henter Hepenstall Heppell Herbert Heritage Hervey Hewett Hewit Hewson Hext Hexter Heywood Hiatt Hibbs Hickey Hicks Higgins Higginson Higgs Hill Hillier Hills Hillyar Hilton Hindmarsh Hinton Hird Hire Hislop Hitchens Hitchins Hoar Hoare Hobbs Hockings Hodder Hodge Hodgskin Hodgson Hoffman Hoggan Holcombe Holdsworth Hole Holiday Holland Holles Holliday Hollingberry Hollinworth Holloway Holman Holmes Holworthy Home Honey Honeyman Hood Hooper Hope Hopkins Hopkinson Horler horn_surname Horne Hornblower Hornigold Horrie Horsley Horton Hosie Hoste Hotchkis Hotham Houlton Houston Howard Howden Howe Howes Hoy Hudson Hue Hughes Huish Humphris Hungerford Hunloke Hunt Hunter Hupsman Hurd Hurdis Hussey Hutchinson Hutchison Hutton Iliffe Impey Infield Ingham Ingle Inglefield Inglis name_enguerrand Inman Innes Irby Ireland Irons Irvine Irwin Isham Ives Ivie Jack Jackson Jacques Jago James Jameson Jane Janvarin Janverin Jaques Jauncey Jeans Jeffreys Jekyll Jenkins Jennings Jennis Jenny Jepson Jewell Jewers Jeynes John Johnson Johnston Johnstone Jolliffe Jones Joyce Judd name_julian Julyan Jump Justice 
+		Kane Katpm Keats Keeler Keen Keenan Keenor Keith Kelley Kelly Kemp Kempe Kempt Kempthorne Kendall Kennedy Kennett Kent Kentish Kenway Keppel Ker Kerr Kevern Key Keys Kidd Killwick Kilner King Kingdom Kingsmill Kinley Kinneer Kinsman Kippen Kirk Kirtley Kittoe Kneeshaw Knight Knighton Knipe Knowles Kortwright Kyle 
+		Lackey Laforey Laing Laird Lake Lamb Lambe name_lambert Lamborn Lambrick Lancaster Landless Lane Langdon Langford Langley Lanyon Lapslie Larcom Larkan Larke Larmour Laroche Lasham Laugharne Laurie Lavie Lawford Lawless name_laurence Lawson Lay Layman Lea Leach Leaver Leavey Lecale Lecky Lee Leef Legard Leggatt Legge Leigh Leith Lemage Lennock Leroux Leslie Lethbridge Lewes name_louis Ley Leyton Libby Liddle Lighterness Like Lilburne Lillicrap Limbrey Lind Lindsay Lindsey Linklater Linthorne Linton Linzee Litchfield Little Littlehales Livingstone Lloyd Loane Lobb Lock Lockhart Lockwood Lockyer Long Longcroft Loring Losack Louted Loud Love Lovell Lowcay Lowder Lowe Lowry Lowther name_lucas Luce Luck Luckraft Lukin Lumley Lumsdaine Lundin Lurchen Lurwidge Lusk Lutwidge Lydiard Lye Lyford Lyne Lynn Lynne Lyon Lys Lysaght 
+		Magott Magurk Mainwaring Maitland Makolm Malbon Malcolm Maling Mallet Malone Malpass name_man Manby Manderson Manderston Mangin Manley Mann Mansel Mansell Mansfield Manson Mant Maples Mapleton Markett Markham Markland Marley Marrett Marsdin Marsh Marshall name_martin Masefield Mason Massingherd Masterman Maston Mather Matson Matthews Maude Mauger Maundrell Maunsell name_maurice Maxfield Maxwell May Maybery Mayes Maynard Mayne Mayo Mayris Meade Meager Meares Meates Medlicott Meheux Meik Mein Mends Menzies Mercer Meres Merry Messervy Methven Michell Middleton Milbanke Miles Millar Miller Mills Miln Milne Milner Milton Milward Minchin Minster Mitchell Mitford Moat Molineux Monckton Moncur Money Monke Monkton Montagu Montresor Moody Moor Moore Moorhead Moorsom Morce Morey Morgan Moriarty Morice Moriencourt Morrell Morres Morris Morrison Moss Mott Mottley Mouat Moubray Mould Moulding Moulson Mounier Mounsey Mounsher Mowat Mowatt name_mowbray Moxey Moyes Muckle Muddle Mudge Mudie Muir Mules Mulock Munday Mundy Murray Muston 
+		Nagle Nainby Nairne Nanny Napier Narracott Nash Nazer Neale Needham Nelson Nepeau Nesbitt Nesham Neve Nevile Neville New Newcombe Newell Newman Newton name_nicholas Nicholls Nicholson Nicol Nicolls Nightingale Ninis Nisbet Nixon Noble Nops name_norman Nornby Norrington Norris North Northesk Northey Norton Norway Norwood Nott Notter Nowell Noyce Nugent Nunn Nutt 
+		Oakley Ogilvie Ogilvy Ogle Oke Okes Oldfield Oldroyd Oliphant Oliver Ommanney Onslow Orchard Orde Orfeur Orkney Ormer Ormsby Orton Osborn Osborne Osmer Oswald Otter Ottley Otway Oughton name_eugene Owens Oxborough Oxenham 
+		Pace Packenham Packer Packwood Pacy Padeson Page Paget Paine Pakenham Palk Palmer Pamp Pardoe Parish Parke Parker Parkinson Parrey Parry Parsons Pasco Pascoe Pasley Pater Paterson Pateshall Patey Patriarch Patterson Patton name_paul Paule Paulet Payne Peacocke Peake Pearce Peard Pearkes Pearse Pearson Pease Pechell Pedlar Peed Peek Pellew Pellowe Pelly Pemberton Pender Pengelly Pennie Penrose Peppen Pepwell Pepys Percival Percy Perdrieau Peregrine Perkins Perry Peshall name_peter Petley Petman Petter Pettet Pettman Pew Peyton Philipps Phillimore Phillip Phillips Phillot Philpot Phips Pickernel Pickford Pickmore Pidgley Piercy Pierie Pierrepont Pigot Pike Pilch Pilfold Pilot Pimlott Pinto Pipon Place Plaine Plamplin Planner Plantain Platt Plowman Plunket Poate Pogson Pole Pollock Ponsonby Pook Poole Pope Popham Porter Portlock Potter Potts Poulden Poulett Pound Powell Power Poyntz Praed Prater Prescott Presley Pressland Preston Prevost Price Pricket Prickett Pridham Prient Priest Priestley Pringle Prior Pritchard Proby Probyn Provost Prowett Prowse Procter Prynn Puget Pulling Purches Purdue Purvis Putland Pye Pym 
+		Quash Quelch Quilliam Quinton 
+		Rackham Radstock Raggett Raigersfeld Rainier Rains Raitt Ramage Ramsay Ramsey Randle Raper Rathborne Ratsey Ravenscraft Ravenshaw Rawe Raye name_rayner Raynsford Read Reddie Reddy Reding Redmill Redmon Redruth Reekie Regbie Reid Relph Renny Renwick Reskinner Retalick Reynolds Riboleau Ribouleau Rice Richards Richardson Richbell Ricketts Rickman Rider Ridge Rigby Roach Robb Robbin Roberts Robertson Robilliard Robins Robinson Roby Rochfort Rodd Roddam Rodney Roe Rogers Rolles Rorie Roscow name_rosa Rosher Roskruge Ross Rosson Rotheram Rouett Rowe Rowed Rowley Rowling Royer Ruddach Rude Rudsdell Rugby Runwa Rushworth Russel Russell Rutherford Ryan Ryder Rye Ryves 
+		Sadler Sainthill Salisbury Salmon Salt Salter Salwey Sampson Samwell Sanders Sanderson Sandey Sandham Sandys Sangster Sargent Sauce Saunders Savage Saville Sawkins Sawyer Sawyet Saxon Sayer Sayes Scallon Schank Schaw Schomberg Schuyler Scobell Scot Scott Scriven Scroder Scrooge Seager Searle Seater Seaver Seccombe Seepgood Selby Senhouse Seppings Serrell Seton Seward Seymers Seymour Shackleton Shadbolt Shakespeare Share Sharp Sharpe Shaw Shed Sheldrake Shells Shepard Shepheard Shepherd Sheridan Sherriff Sherwin Shewen Shield Shields Shine Shinetop Shippard Shirley Shirreff Shivers Short Shortland Shrapnel Shuldham Sibley Sibrell Silver Simes Simmonds Simmons Simons Simpson Sinclair Sinions Skelton Skene Skinner Skipsey Skottowe Skryinsher Skryme Skynner Skyrme Slade Sleigh Slessor Sloane Small Smart Smillie Smirk Smith Smithies Smyth Snell Sneyd Snow Soley Somerville Sotheby Sotheren Sotheron Southcott Southey Souton Sowerby Sparke Sparkes Sparrow Spear Spearing Spence Spencer Spicer Spranger Spread Spriggs Sproule Spry Squarey Squire Stirling Stackpoole Stagg Staines Stainforth Stamp Standish Stanhope Stanley Stansbury Stanted Stanton Stap stapleton_dynasty Stark Steel Steele Stenhouse Stephens Stephenson Steuart Stevens Stevenson Steventon Stewart Stiles Stockham Stoddart Stokes Stone Stonehill Stopford Story Stow Stoyle Strachan Strachey Street Strong Strugnell Strutt Stubbs Stuart Stupart Sturt Styles Suckling Sulivan Surridge Sutherland Sutton Swaine Swan Swann Sweeney Swinburne Swiney Swymmer Sykes Syme Symes Symonds Symons 
+		Tailour Tait Talbot Tamplin Tancock Tandy Taplen Tapp Tatam Tatham Tayler Tayleure Taylor Teach Templar Temple Templer Ternan Tetley Tew Thesiger Thatch Thicknesse name_thomas Thompson Thomson Thornberry Thornborough Thrackston Thrackstone Threepwood Thrush Thwaits Tickell Tidy Tildesley Tillard Tiller Timin Timins Tindale Tindall Tingling Tinkler Tinsley Tippet Tippett Titcher Tobin Toby Todman Tokely Toker Tom Tomlinson Tonge Tonyn Tookey Tooley Toothrot Touzeau Townsend Towry Tracey Travers Treacy Tredwin Tregurtha Trelawny Tremlett Trench Trenholm Tresahar Trigge Triton Trollope Trotter Troubridge Truscott Tucker Tuckey Tuite Tullidge Tullock Tulloh Turnbull Turner Turnout Twisden Twist Tyler Tyre Tyrwhitt Tyte 
+		Upton Urry Ussher Uvedalte 
+		name_valentine Vallack Vashon Vassall Vaughan Vautier Veitch Verney Vernon Vesconte Vesey name_vincent Vine Violett Vivion Vol Vosper 
+		Waddell Wagman Wainwright Walbeoff Waldegrave Wales Walker Wall Wallace Waller Wallington Wallis Walpole Walrige Walsh Walters Walton Want Warburton Ward Warden Waring Warner Warran Warre Warrem Warren Washington Waterhouse Waters Watherston Watkins Watson Watt Watts Webb Webber Webley Weeks Weils Weir Welch Weld Welland Weller Wellesley Wells Welsh Welstead West Westbeach Westcott Western Westphal Westropp Weymouth Wharson Wharton Wheadon Wheatley Whilley Whimper Whinyates Whipple Whiston Whitaker Whitby White Whitehead Whithy Whitly Whitshed Whitter Whorwood Whyte Wickey Wickham Wilbraham Wildey Wiley Wilkins Wilkinson Wilks Willes Williams Williamson Willis Willoughby Wills Willson Wilmot Wilson Wing Wingate Winne Winslow Winthrop Wintour Wise Withers Witherston Wittman Wodehouse Wolfe Wollaston Wolley Wolseley Wood Woodbine Woodbridge Woodcock Woodger Woodin Woodland Woodman Woodriff Woodward Woolcombe Wooldridge Woolsey Worley Worrall Worsley Worth Woud Wray Wrayford Wrench Wright Wyborn Wycliffe Wyke Wylie Wynter 
+		Yarker Yates Yelland Yeo Yetts Yonge York Yorke Young Younger Yule
+	}
+	ship_names = {
+		achilles
+		adamant
+		advice
+		antelope
+		arrogant
+		assistance
+		association
+		assurance
+		audacious
+		august
+		bull
+		captain
+		centurion
+		colossus
+		conqueror
+		content
+		coronation
+		crown
+		dauntless
+		defiance
+		dragon
+		dreadnought
+		duchess
+		duke
+		eagle
+		elephant
+		excellent
+		expedition
+		experiment
+		fame
+		firm
+		fortitude
+		glory
+		goliath
+		hannibal
+		hero
+		hope
+		horse
+		illustrious
+		impregnable
+		indefatigable
+		interceptor
+		intrepid
+		invincible
+		irresistible
+		isis
+		jupiter
+		kingfisher
+		leopard
+		leviathan
+		lion
+		magnificent
+		majestic
+		marigold
+		mars
+		medusa
+		minotaur
+		moderate
+		monarch
+		moon
+		neptune
+		nonsuch
+		oak
+		ocean
+		orion
+		panther
+		phoenix
+		powerful
+		president
+		princess
+		prize
+		prudent
+		queen
+		renown
+		repulse
+		reserve
+		resolution
+		restoration
+		revenge
+		royal
+		ruby
+		saturn
+		sceptre
+		sovereign
+		standard
+		stately
+		superb
+		surprise
+		swallow
+		swan
+		swiftsure
+		terrible
+		thunderer
+		tiger
+		trememndous
+		trident
+		triton
+		triumph
+		trusty
+		unicorn
+		union
+		unity
+		valiant
+		vanguard
+		venerable
+		veteran
+		victorious
+		victory
+		vigilant
+		warrior
+		warspite
+		zealous
+	}
+	dynasty_template_keys = {
+		SOMEONE_OF_SOMEWHERE
+		SOMEONE_FROM_SOMEWHERE
+		SOMEONE_THE_SOMETHING_OF_SOMEWHERE__TYPE
+		SOMEONE_THE_SOMEDESC_SOMETHING__ADJ_TYPE
+		SOMEONE_THE_SOMELOCALITY_SOMETHING__TYPE
+		SOMEONE_THE_SOMENATIONALITY_SOMETHING__TYPE
+	}
+
+	location_prefix = "location_prefix_english"
+
+	descendant_prefix = "descendant_prefix_english"
+
+	dialects = {
+	}
+
+}
+
+
+aneaku_language = { 
+
+	color = map_maori
+	male_names = {
+		# Maori
+		Aoraki Aperahama Aroarokaehe Atuamatua Auha Awanuiarangi Hapekituaraki Hare Hewa Hikuroroa Hinaki Hineraho Hongi Hotete Hoturapa Houmaitawhiti 
+		Ihenga Kahumatamomoe Kahungunu Kakeroa Kirikirikatata Kupe Mahanga Makoare Manaia Mataroria Mokotorea Motiti Muturangi 
+		Ngahue Ngamautaurua Ngatoroirangi Nukutawhiti Ohomairangi Pahatea Paraoa Pekitetahua Pokaia Pokohiwitahi Puketapu
+		Rangitatau Rangitihi Rewa Ritua Rongokahe Ruanui Ruatara Riparo Taewhenua Tamatea Tamatekapua Taraia Tarataraika Tautoki Toto Tuahuriri Turakautahi Turi 
+		Uenuku Whakarewa Whakaturia Whatonga Whakaaria
+	}
+	female_names = {
+		# Maori
+		Hotuwaipara Kuraimonoa Kuramarotini Matakerepo Matenga Mutanga Rerekitaiari Reretua Rongorongo Ruiha
+		Taneroroa Tuhikura Turikatuku Waipuna Whaitiri
+	}
+	dynasty_names = {
+		# Maori
+		Tainui Taonui Taukau Hika maniapoto muriwhenua ngai_ta_ki_tamaki ngai_takoto ngapuhi ngati_hine ngati_kahu ngati_kuri ngati_makino ngati_manuhiri ngati_maru ngati_paoa ngati_pikiao ngati_pukenga ngati_rehia ngati_tamaoho ngati_tamatera ngati_te_ata ngati_te_rangi ngati_toa ngati_whanaunga ngati_whatua waikato whaingaroa
+	}
+	lowborn = {
+	}
+	location_prefix = "location_prefix_polynesian"	
+
+	descendant_prefix = "descendant_prefix_polynesian"
+	descendant_prefix_male = "descendant_prefix_polynesian_male"
+	descendant_prefix_female = "descendant_prefix_polynesian_female"
+}
+
+hawairqi_language = {
+
+	color = map_quechuan
+
+	male_names = {
+		Anquimarca Antaaccla Apo Apu Atahualpa Atoc Atocsopa Atocsuqui Auquihuaman Canchari Capactupac
+		Cariapata Cayotopa Chalcuchima Challco Chiaquitinta Chiguantopa Chilche Chunchos Collatopa Condorcanqui Coyllas
+		Curipaucar Curiatao name_cusi Cusichaca Guacra Guamanpoma Guaritito Guaritopa Huachuri Hualpa name_huaman
+		Huaritico Huascar Huaynacapac Huaypalcon Illa Illaquita Inquill Ispaca Llicllic Luyes Maila
+		name_manco Maras Marcavilca name_mayta Ninancuyuchi Ninancoro Orcovaranca Ozcoc Pachacuti Parinango Pascac
+		Paucar Paullu Pomacapi Pomaguala Puma Pumisopa Pusca Puyuvilca Ruminahui Quilaco Quillissacha
+		Sayritupac Sotaurco Sullcayanac Surandaman Taipi Tanqui Taraque Tiso Tituatauchi Titucusi Torinaseo
+		Tucuycuyche Tupac Tupacamaru Tupachualpa Uscacuriatao Villacumu Yamquimayta Yuncailo Yupanqui Zambiza Zopahua
+		Zope          	  
+	}
+	female_names = {
+		Anquimarca Antaaccla Apo Apu Atahualpa Atoc Atocsopa Atocsuqui Auquihuaman Canchari Capactupac
+		Cariapata Cayotopa Chalcuchima Challco Chiaquitinta Chiguantopa Chilche Chunchos Collatopa Condorcanqui Coyllas
+		Curipaucar Curiatao name_cusi Cusichaca Guacra Guamanpoma Guaritito Guaritopa Huachuri Hualpa name_huaman
+		Huaritico Huascar Huaynacapac Huaypalcon Illa Illaquita Inquill Ispaca Llicllic Luyes Maila
+		name_manco Maras Marcavilca name_mayta Ninancuyuchi Ninancoro Orcovaranca Ozcoc Pachacuti Parinango Pascac
+		Paucar Paullu Pomacapi Pomaguala Puma Pumisopa Pusca Puyuvilca Ruminahui Quilaco Quillissacha
+		Sayritupac Sotaurco Sullcayanac Surandaman Taipi Tanqui Taraque Tiso Tituatauchi Titucusi Torinaseo
+		Tucuycuyche Tupac Tupacamaru Tupachualpa Uscacuriatao Villacumu Yamquimayta Yuncailo Yupanqui Zambiza Zopahua
+		Zope          
+	}
+	dynasty_names = {
+		Achachau Alca Allauca Allcca Allccarima Alqa Amary Anhuaman Aucapuca Auquitayasi Cahua
+		Caipa Callanaupa Cancha Canchon Carhuanina Carihuasari Ccahua Ccahuantico Ccarhuarupay Ccari Ccasani
+		Ccolque Ccora Chakana Chambi Champi Chanca Chanka Chaupin Chawpin Chillitupa Chipana
+		Choque Chum Chuquimango Chuquipoma Cocha Colca Colquehuanca Condor Condori Curichimba name_cusi
+		Cusipuma Cuya Guaman Guanuna Huaccha Huachalla Hualla name_huaman Huamanchagua Huamancuri Huamanga
+		Huamani Huanca Huancachuri Huaricancha Huayhua Huayta Humahuaca Humala Huyhua name_inka Jaillita
+		Mamani name_manco Maygua Mayhuasca Michi Motocanchi Naccha Nahuis Nana Naupari Nina
+		Ninahuaman Olaya Orccosupa Pachari Pachacutec Pari Paricahua Paucar Paucarchuco Pillihuaman Pillpe
+		Pinchi Pinto Polloqueri Poma Pumacaja Pumacallao Pumasupa Qelka Qhawa Quelka Quichca
+		Quillahuaman Quispe Quisuyupanqui Rimayhuaman Roca Sayritupac Sihui name_sinchi Soncco Sulca Surichaqui
+		Ticahuanca Ticllacuri Ticona Tupa Tupac Ucharima Uchuypoma Usucachi Vilca Yacupaico Yupanqui  
+	}
+	lowborn = {
+		Achachau Alca Allauca Allcca Allccarima Alqa Amary Anhuaman Aucapuca Auquitayasi Cahua
+		Caipa Callanaupa Cancha Canchon Carhuanina Carihuasari Ccahua Ccahuantico Ccarhuarupay Ccari Ccasani
+		Ccolque Ccora Chakana Chambi Champi Chanca Chanka Chaupin Chawpin Chillitupa Chipana
+		Choque Chum Chuquimango Chuquipoma Cocha Colca Colquehuanca Condor Condori Curichimba name_cusi
+		Cusipuma Cuya Guaman Guanuna Huaccha Huachalla Hualla name_huaman Huamanchagua Huamancuri Huamanga
+		Huamani Huanca Huancachuri Huaricancha Huayhua Huayta Humahuaca Humala Huyhua name_inka Jaillita
+		Mamani name_manco Maygua Mayhuasca Michi Motocanchi Naccha Nahuis Nana Naupari Nina
+		Ninahuaman Olaya Orccosupa Pachari Pachacutec Pari Paricahua Paucar Paucarchuco Pillihuaman Pillpe
+		Pinchi Pinto Polloqueri Poma Pumacaja Pumacallao Pumasupa Qelka Qhawa Quelka Quichca
+		Quillahuaman Quispe Quisuyupanqui Rimayhuaman Roca Sayritupac Sihui name_sinchi Soncco Sulca Surichaqui
+		Ticahuanca Ticllacuri Ticona Tupa Tupac Ucharima Uchuypoma Usucachi Vilca Yacupaico Yupanqui 
+	}
+
+}
+atarakan_language   = {
+
+	color = map_oyo
+
+	male_names = {
+		Adebayo Adebowale Adedamola Adedayo Adedeji Adelaja Adelomo Ademola Adewale Afolabi Akande
+		Akinna Chinenye Chukwuni Nkechi Nnenna Obinna Odochi Ogechi Okafor Okeke Okonkwo Okorie Oluchi
+		Aare Abiolu Abiso Aboderin Adelakun Adelowo Adeniji Adeniyi Adeoti
+		Adetula Adetule Ajibade Akin Akinbolade Akinfela Akintunde Amari Apaadi Aseyiowu
+		Ayande Ayodeji Baba Bada_nigerian Bamikole Bankole Bayo Bejide Damilare Deji Efosa
+		Eshu Fela Gbadebo Gbemi Gboyega Goriola Kola Kolade Kolapo Kolawole Kunle
+		Leke Modadeola Muyiwa Obafemi Odafin Oduola Ogheneochukome Ojo Oladapo Oladeji Oladipupo
+		Olajide Olamigoke Olaniran Olaniyan Olasinbo Olatunde Oloruntuba Olufela Olumuyiwa Oluwafemisola Oluwale
+		Abegunde Aberuagba Abiona Abisade Adedoyin Ademurewa Adetutu Adewonuola Adewumi Adeyinka Ajani
+		Akeredolu Alafia Amoke Anuoluwapo Atiba Ayanfeoluwa Ayanmo Ayende Ayinde Ayobami Ayofela
+		Ayomidele Ayoola Babatope Bidemi Biodun Bisi Bolade Boluwaji Bukunmi Bunmi Busayo
+		Busola Damilola Duro Eni Erin Erinayo Fisayo Funfun Funmi Funmilola Gbekelolu
+		Gbonjubola Ibukunoluwa Ifedapo Ifeoluwa Ikidaola Inioluwa Irawo Iremide Ireti Iwalaye Iyiomo
+		Jimo Jumoki Kenhinde Kofo Kofoworola Kokumo Lafia Layomi Mabayoje Mahari Majekodunmi
+		Mobolaji Modupe Oluwa Modurolorilerioluwa Mofolorunso Mojerisolaoluwa Mojoyinade Oba Odu Ohuntuntun
+		Olabisi Oladigbolu Oladiipo Olaide Olaseni Olasunkanmi Olatayo Olatokunbo Olayide Olorunyomi
+		Oludare Oludotun Oluranti Oluseyi Oluwadarasimi Oluwademilola Oluwafeyisayo Oluwafisayo Oluwajoba Oluwanifemi Oluwanifesimi
+		Oluwapamilerin Oluwaranti Oluwarantimi Oluwaremilekun Oluwarotimi Oluwaseun Oluwasola Oluwasolafunmi Oluwateniola Oluwatimileyin Oluwatobi
+		Oluwatobiloba Oluwatomi Oluwatomiwa Oluwatosin Oluwatoyosi Oluyinka Ominira Omolola Omorinsola Omotola Oreoluwa
+		Oyebisi Oyindamola       
+		Quamdeen Rotimi Sowunmi Taio Tinu Tiyamiyu Toba Wole Yeni  
+		Pamilekunayo Pipeloluwa Simileoluwa Sinmiloluwa Sope Tafa Tayo Temidire Temiloluwa Temitayo Titilola
+		Tofunmi Tokunbo Tola Tolulope Toluwanimi Tosin Toyosi Yaba Yarra Yemi 
+	}
+	female_names = {
+		Adenike Adeola Adetutu Adewemimo Ayotundun Eniola Fehintola Feyisayo Folake Fowoke
+		Adaku Chidimna Chinenyere Chioma Mgbafor Mgbeke Mgbokwo Mgborie Nwafor Nwaore Nwaorie
+		Abeke Adebimpe Adebisi Adefunke Adeleke Adelewa Adelola Adepero Aderonke Adesimbo Adesina
+		Adesola Aduke Adunni Aidevo Aina Ajoke Anjolaoluwa Aralola Asabi Ayaba Ayoka
+		Bimpe Bmidele Bola Boluwatife Dideoluwakusidede Diekololaoluwa Diekololaoluwalayemi Doyinsola
+		Ebun Efunroye Ekalia Eriayomi Fayola Folaoluwashade Folasade Folashade Folayan Foyinsola
+		Funmike Fyiynfoluwa Gbolahun Ibukun Ife Ifedayo Ifetundun Ikeoluwa Irekanmi Iyabode Iyeoka
+		Iyoka Jadesola Kemi Kike Kikelomo Kinfeosioluwa Kudirat Latorunwa Mobiisola Mofoluwakemi
+		Oluwadurotimi Oluwagbemileke Oluwagbotemi Oluwakemi Oluwandara Oluwaseyitan Oluwatoniloba Oluwayemi Omolayo Omotanwa Orisabunmi
+		Oshun Oyenike Oyeronke Oyin 
+		Abegunde Aberuagba Abiona Abisade Adedoyin Ademurewa Adewonuola Adewumi Adeyinka Ajani
+		Akeredolu Alafia Amoke Anuoluwapo Atiba Ayanfeoluwa Ayanmo Ayende Ayinde Ayobami Ayofela
+		Ayomidele Ayoola Babatope Bidemi Biodun Bisi Bolade Boluwaji Bukunmi Bunmi Busayo
+		Busola Damilola Duro Eni Erin Erinayo Fisayo Funfun Funmi Funmilola Gbekelolu
+		Gbonjubola Ibukunoluwa Ifedapo Ifeoluwa Ikidaola Inioluwa Irawo Iremide Ireti Iwalaye Iyiomo
+		Jimo Jumoki Kenhinde Kofo Kofoworola Kokumo Lafia Layomi Mabayoje Mahari Majekodunmi
+		Mobolaji Modupe Oluwa Modurolorilerioluwa Mofolorunso Mojerisolaoluwa Mojoyinade Oba Odu Ohuntuntun
+		Olabisi Oladigbolu Oladiipo Olaide Olaseni Olasunkanmi Olatayo Olatokunbo Olayide Olorunyomi
+		Oludare Oludotun Oluranti Oluseyi Oluwadarasimi Oluwademilola Oluwafeyisayo Oluwafisayo Oluwajoba Oluwanifemi Oluwanifesimi
+		Oluwapamilerin Oluwaranti Oluwarantimi Oluwaremilekun Oluwarotimi Oluwaseun Oluwasola Oluwasolafunmi Oluwateniola Oluwatimileyin Oluwatobi
+		Oluwatobiloba Oluwatomi Oluwatomiwa Oluwatosin Oluwatoyosi Oluyinka Ominira Omolola Omorinsola Omotola Oreoluwa
+		Oyebisi Oyindamola       
+		Oyinkansola Shardai Simi Simidele Sulola Tejumola Temilola Teniayo Tiaraoluwa Titi Titiola
+		Wura Wuraola     
+		Pamilekunayo Pipeloluwa Simileoluwa Sinmiloluwa Sope Tafa Tayo Temidire Temiloluwa Temitayo Titilola
+		Tofunmi Tokunbo Tola Tolulope Toluwanimi Tosin Toyosi Yaba Yarra Yemi 
+	}
+	dynasty_names = {
+		Abiola Abimbola Adeoye Adeyemi Akinyemi Falade Okusanya Oladoyinbo Olanrewaju Olowe
+	}
+	lowborn = {
+		Abiola Abimbola Adeoye Adeyemi Akinyemi Falade Okusanya Oladoyinbo Olanrewaju Olowe
+	}
+}
+
+
+torrent_language = {
+
+	color = map_german
+	family = torrentor_language_family
+
+
+	patronym_suffix_son = "patronym_suffix_german_son"
+	patronym_suffix_daughter = "patronym_suffix_german_son"
+	
+	male_names = {
+		name_alexander name_alfred name_albert name_abraham name_alphonse name_andrew name_anthony
+		name_baldwin name_balthazar name_bernard.name_sigmund name_bernard name_berthold 
+		name_casper name_charles name_christopher name_conrad name_constantine name_christian
+		name_erwin name_emmanuel name_ernest name_everard
+		name_frederick name_felix
+		name_george name_gerard name_godfrey name_gregory
+		name_henry name_hector
+		name_james name_john name_john.name_albert name_john.name_george
+		name_lambert name_leonard name_leopold name_laurence
+		name_mark name_matthias name_maurice name_maximilian 
+		name_nicholas
+		name_philip name_peter
+		name_reginar name_richard name_robert name_reginald name_rappold
+		name_simeon name_stephen name_sigfrid
+		name_theodoric name_thomas name_theobald
+		name_victor name_walter
+	}
+	female_names = {
+		name_adelaide name_amelia name_adela name_adriana name_angela name_alexandra name_anna name_ava name_agnes name_agatha name_anna.name_lisa
+		name_bridget name_barbara
+		name_catherine name_cecile name_claire name_clarice name_constance
+		name_dorothy
+		name_eleanor name_elisa name_elizabeth name_emily name_ester
+		name_frances
+		name_gertrude
+		name_helen
+		name_joanna name_judith name_julianne
+		name_laura name_lisa name_louise
+		name_madeleine name_margaret name_matilda name_mary name_mary.name_madeleine name_martha
+		name_petra
+		name_sophia name_susan
+		name_theresa
+		name_ursula
+		name_victoria
+		name_waltrude
+	}
+	
+	dynasty_names = {
+		
+	}
+	
+	lowborn = {
+		Brenner Bohmer bach bartisch Busekke Bussacker
+		celtes cuspinian cruger cranach
+		Dientzenhofer Dinglinger
+		Erhart
+		faber Fichte
+		Gaismair Giese Gesiter Gothan
+		Hubert Hegel Hasse
+		Jonas Jacobs Jauert
+		kubel kepler Kant Karlstadt Klatt
+		Langhans Laudan
+		muller Maler Meincke
+		Nicolai Notke Niemann
+		pfauser Panck Porepp
+		Reinhold Reuchlin Reinike
+		Siebenburger schlick Strauss Solms Schluter Sudermann schiller Silbermann Schiner Schultz Schuhr Seeland Steinkopp Schlien Sass Schliechting
+		tetzel turing Tannstetter Therbusch Thess
+		wertheimer Wolff Wilcke
+		Zwicker
+	}
+	
+	location_prefix = "location_prefix_german"
+
+
+	dialects = {
+		bonwesforian_dialect = {
+				male_names = {
+				name_arnold name_anthony
+				name_bernard name_balthazar
+				name_christian name_charles name_conrad
+				name_douwe
+				name_eggricus name_egilhard name_eeltje name_eginhard name_eghard name_edo
+				name_ferdinand name_frederick name_francis
+				name_gisbert name_george
+				name_henry name_hugh
+				name_igo
+				name_john name_james name_joseph
+				name_louis
+				name_magnus name_martin name_michael
+				name_nicholas
+				name_okko name_olaf
+				name_peter
+				name_rudolf
+				name_theudebert name_theodoric name_tilman
+				name_ulrick name_uniko name_udalbert
+				name_werner name_wigbald name_wighard name_wibrand name_wigo
+			}
+			female_names = {
+				name_aechte name_anna name_albertina
+				name_christine name_cecile name_charlotte
+				name_elizabeth
+				name_ferdinanda name_frieda
+				name_jocelyn name_julianne
+				name_letitia
+				name_mary
+				name_theodora
+				name_wineke
+			}
+		
+				dynasty_names = {
+					Abdena Accama fan_Aldenboarch Brandsma fan_Boalsert fan_Blije Bieninka
+					Brongersma Binnerts Bonninga tom_Brok Carree Douwama Durks Dirksen Donia
+					Edema Eisinga Emmius Eschels fan_Esens Feddes Galama Hamkes Halbertsma Haringsma
+					Japiks fan_Jever Jelckama Jelgersma Lenige Ripperda fan_Rossum Steenbicker 
+					Sirksena Syrtsema fan_Thabor Vitringa Walles Wiarda Zelle
+				}
+				
+				lowborn = {
+				}
+					
+				location_prefix = "location_prefix_frisian"
+
+				patronym_suffix_son = "patronym_suffix_frisian_son"
+				patronym_suffix_daughter = "patronym_suffix_frisian_daughter"
+		}
+
+		south_torrentor_dialect = {
+			
+			male_names = {
+				#from language
+				name_alexander name_alfred name_albert name_abraham name_alphonse name_andrew name_anthony
+				name_baldwin name_balthazar name_bernard.name_sigmund name_bernard name_berthold 
+				name_casper name_charles name_christopher name_conrad name_constantine name_christian
+				name_erwin name_emmanuel name_ernest name_everard
+				name_frederick name_felix
+				name_george name_gerard name_godfrey name_gregory
+				name_henry name_hector
+				name_james name_john name_john.name_albert name_john.name_george
+				name_lambert name_leonard name_leopold name_laurence
+				name_mark name_matthias name_maurice name_maximilian 
+				name_nicholas
+				name_philip name_peter
+				name_reginar name_richard name_robert name_reginald
+				name_simeon name_stephen name_sigfrid
+				name_theodoric name_thomas name_theobald
+				name_victor name_walter
+
+				#from dialect
+				name_adolf name_adolf.name_frederick name_adolf.name_ernest
+				name_alaric name_alberic name_barnabas name_burchard
+				name_eric name_eugene
+				name_frederick.name_william
+				name_gerben name_gustav.name_rudolf name_gustav.name_william name_gunther
+				name_henry.name_william name_jobst name_lothar
+				name_magnus name_meinhard
+				name_olaf name_otto.name_henry name_otto
+				name_sigmund name_tilman
+				name_ulrick name_vitus name_vladislav
+				name_waldemar name_wenceslas name_wigbald name_william name_wolfgang
+			}
+
+			female_names = {
+				#from language
+				name_adelaide name_amelia name_adela name_adriana name_angela name_alexandra name_anna name_ava name_agnes name_agatha name_anna.name_lisa
+				name_bridget name_barbara
+				name_catherine name_cecile name_claire name_clarice name_constance
+				name_dorothy
+				name_eleanor name_elisa name_elizabeth name_emily name_ester
+				name_frances
+				name_gertrude
+				name_helen
+				name_joanna name_judith name_julianne
+				name_laura name_lisa name_louise
+				name_madeleine name_margaret name_matilda name_mary name_mary.name_madeleine name_martha
+				name_petra
+				name_sophia name_susan
+				name_theresa
+				name_ursula
+				name_victoria
+				name_waltrude
+
+				#from dialect
+				name_ada name_aechte
+				name_bertha name_beatrix
+				name_blanche
+				name_christine name_christiana
+				name_edith name_ermengard
+				name_gisela
+				name_hedwig name_heilwig name_hildegard
+				name_ida
+				name_olga
+				name_ricarda
+				name_wineke name_wulfhild name_walburga name_willelma
+				name_yvonne
+			}
+			
+			dynasty_names = {
+				von_Slesvig_dynasty von_Westernhagen von_Arnim von_Baudissin von_Haslang von_Pudewels von_Waldow
+				von_Silesia_Glogau_dynasty Boeselager_dynasty Jaworski_dynasty von_Utlede_dynasty von_Bardewik_dynasty
+				Warendorp_dynasty Wittenborg_dynasty von_Parchim_dynasty von_Rugen_dynasty von_Werle_dynasty
+				von_Wittenberg_dynasty von_Brandenburg_dynasty von_Glogau_dynasty von_Rendsburg_dynasty
+				von_Pommern_dynasty von_Wickerode_dynasty von_Winzenburg_dynasty von_Stade_dynasty
+				von_Haldensleben_dynasty von_Ringelheim_dynasty von_Nordheim_dynasty witte_dynasty von_Hagen_dynasty
+				von_Goslar_dynasty von_Wunstorf_dynasty von_Goltern_dynasty von_Holte_dynasty von_Wippra_dynasty
+				von_tanneberg_dynasty von_kriebstein_dynasty von_beerwalde_dynasty von_schwetzingen von_Loningen_dynasty
+				von_Corvey_dynasty von_Tecklenburg_dynasty von_Weyhe_dynasty von_Kerpen_dynasty
+				von_Nauen_dynasty suerbeer_dynasty von_Lunen_dynasty von_Vechta_dynasty von_Dorpat_dynasty
+				von_Haseldorf_dynasty von_Vyshusen_dynasty von_Friesack_dynasty von_Hildesheim_dynasty von_Dinslaken_dynasty
+				von_Scharfenberg_dynasty von_Badewide_dynasty von_Wassel_dynasty von_Dassel_dynasty von_Sigmaringen_dynasty
+				von_Magdeburg_dynasty von_Arneburg_dynasty von_Seeburg_dynasty von_Bocksberg_dynasty valkenburg_dynasty
+				von_Ratzeburg_dynasty von_Schlawe_dynasty von_Rostock_dynasty von_Gustrow_dynasty von_Segeberg_dynasty
+				von_Friedenthal_dynasty von_Osnabruck_dynasty von_Munster_dynasty von_neindorf_dynasty von_Celle_dynasty
+				von_Amsberg_dynasty von_Wolgast_dynasty von_Altmark_dynasty von_Anhalt_dynasty von_Stettin_dynasty
+				von_Beetzen_dynasty von_Walbeck_dynasty von_Knuth von_Plessen von_Kanitz von_Falkenhayn von_Nostitz
+				von_Meerheimb aus_dem_winckel von_Bock von_Bomsdorff von_Bose von_Bunau von_Hoym Holtzendorff
+				von_Harling von_Gfug von_Gersdorff von_Flanss von_Dyhrn von_Creytzen von_Rackel Senfft_von_Pilsach
+				von_Sternberg von_Liebenau von_Loeben von_Logau von_Tettau Wohrmann von_Wackerbarth von_Bredow
+				Echter Gabelkofen Griespek von_Laiming von_Thurn_und_Taxis von_Bodeck_dynasty
+				Brauchitsch_dynasty von_Bulow_dynasty von_Cham_dynasty von_Steutzlingen_dynasty
+				von_Venis_dynasty von_Arbon_dynasty von_Dolen_dynasty von_Liebnitz_dynasty
+				Rubsamen_dynasty Vorrade_dynasty von_Sulzbach_dynasty von_Versfleth_dynasty
+				von_Puteledorg_dynasty von_Sommerchenberg_dynasty von_Sachsen_dynasty von_Beilstein_dynasty von_Stad_dynasty
+				prochaska_dynasty asperger_dynasty runese_dynasty pleskow_dynasty von_Russel_dynasty von_Leistenberg_dynasty
+				von_Leibrechtskirchen_dynasty gualch_dynasty von_Schweipunt_dynasty von_Stolzenberg_dynasty von_Chalons_dynasty
+				von_Schwelz_dynasty von_Liebschau_dynasty von_Neuhaus_dynasty von_Assel_dynasty von_Pfalz_dynasty von_Scheidingen
+				von_Stolberg von_Taube von_Moor
+			}
+			
+			lowborn = {
+				#from language
+				Brenner Bohmer bach bartisch Busekke Bussacker
+				celtes cuspinian cruger cranach
+				Dientzenhofer Dinglinger
+				Erhart
+				faber Fichte
+				Gaismair Giese Gesiter Gothan
+				Hubert Hegel Hasse
+				Jonas Jacobs Jauert
+				kubel kepler Kant Karlstadt Klatt
+				Langhans Laudan
+				muller Maler Meincke
+				Nicolai Notke Niemann
+				pfauser Panck Porepp
+				Reinhold Reuchlin Reinike
+				Siebenburger schlick Strauss Solms Schluter Sudermann schiller Silbermann Schiner Schultz Schuhr Seeland Steinkopp Schlien Sass Schliechting
+				tetzel turing Tannstetter Therbusch Thess
+				wertheimer Wolff Wilcke
+				Zwicker
+
+				#from dialect
+				agricola
+				Mendelssohn
+				Lessing leibniz
+				Werner Wacker Warncke
+			}
+
+			location_prefix = "location_prefix_german"
+		}
+
+		central_torrentor_dialect = {
+			male_names = {
+				#from language
+				name_alexander name_alfred name_albert name_abraham name_alphonse name_andrew name_anthony
+				name_baldwin name_balthazar name_bernard.name_sigmund name_bernard name_berthold 
+				name_casper name_charles name_christopher name_conrad name_constantine name_christian
+				name_erwin name_emmanuel name_ernest name_everard
+				name_frederick name_felix
+				name_george name_gerard name_godfrey name_gregory
+				name_henry name_hector
+				name_james name_john name_john.name_albert name_john.name_george
+				name_lambert name_leonard name_leopold name_laurence
+				name_mark name_matthias name_maurice name_maximilian 
+				name_nicholas
+				name_philip name_peter
+				name_reginar name_richard name_robert name_reginald name_rappold
+				name_simeon name_stephen name_sigfrid
+				name_theodoric name_thomas name_theobald
+				name_victor name_walter
+
+				#from dialect
+				name_adolf name_adolf.name_frederick name_adolf.name_ernest
+				name_august name_barnabas name_burchard
+				name_christian.name_louis name_charles.name_leopold
+				name_eugene
+				name_frederick.name_william
+				name_gustav.name_rudolf name_gustav.name_william
+				name_herman
+				name_jobst
+				name_lothar
+				name_meinhard
+				name_otto.name_henry name_otto
+				name_philip.name_louis
+				name_sigmund name_sigmund.name_august
+				name_ulrick
+				name_vitus name_vladislav
+				name_waldemar name_wenceslas
+				name_william name_wolfgang
+			}
+
+			female_names = {
+				#from language
+				name_adelaide name_amelia name_adela name_adriana name_angela name_alexandra name_anna name_ava name_agnes name_agatha name_anna.name_lisa
+				name_bridget name_barbara
+				name_catherine name_cecile name_claire name_clarice name_constance
+				name_dorothy
+				name_eleanor name_elisa name_elizabeth name_emily name_ester
+				name_frances
+				name_gertrude
+				name_helen
+				name_joanna name_judith name_julianne
+				name_laura name_lisa name_louise
+				name_madeleine name_margaret name_matilda name_mary name_mary.name_madeleine name_martha
+				name_petra
+				name_sophia name_susan
+				name_theresa
+				name_ursula
+				name_victoria
+				name_waltrude
+
+				#from dialect
+				name_blanche
+				name_christine name_christiana
+				name_hildegard
+				name_willelma
+			}
+
+			dynasty_names = {
+				von_Westernhagen von_Flemming von_Arnim von_Baudissin zu_Eulenburg von_Etzdorff_dynasty
+				von_Bibra von_Closen von_Degenberg von_Durkheim von_Gebsattel von_Gravenreuth von_Trockau
+				von_Guttenberg von_Grumbach von_Quirnheim Notthafft von_Raumer von_Reitzenstein Rotenhan
+				von_Collenberg von_der_Tann_dynasty von_Thuengen von_Silesia_Glogau_dynasty Boeselager_dynasty
+				von_Calw_dynasty von_Wetterau_dynasty von_Katzenelnbogen_dynasty von_Altena_dynasty
+				von_Virneberg_dynasty von_Wittenberg_dynasty von_Glogau_dynasty von_Formbach_dynasty
+				von_Wickerode_dynasty von_thuringen von_Meissen_dynasty von_Genf_dynasty von_Arnstein_dynasty
+				von_Landsberg_dynasty von_Berg_dynasty von_Saarbrucken_dynasty von_Heimbach_dynasty von_Metz_dynasty
+				von_Hornes_dynasty orlamunde_dynasty von_Schweinfurt_dynasty von_Ringelheim_dynasty
+				von_Boulogne_dynasty von_Supplingenburg_dynasty von_Plotzkau_dynasty von_Katlenburg_dynasty
+				von_Goslar_dynasty von_Wolpe_dynasty von_Wippra_dynasty von_Bassenheim_dynasty von_Tunna_dynasty
+				von_Salza von_Malberg_dynasty von_Wullersleben_dynasty von_Osterna_dynasty von_Sangershausen_dynasty
+				von_Heldrungen_dynasty von_Orseln_dynasty von_Lechsgmund_dynasty von_Stahleck_dynasty von_Dinslaken_dynasty
+				von_Pluyvoise_dynasty von_Grunberg_dynasty von_Lichtenberg_dynasty von_Gudensberg_dynasty
+				von_Groitzsch_dynasty gross_dynasty von_Saffenberg_dynasty von_Norvenich_dynasty von_Naumburg_dynasty
+				von_Schrapelnau von_Magdeburg_dynasty von_Seeburg_dynasty von_Schmidtburg_dynasty von_Bamberg_dynasty
+				von_Kyrburg_dynasty von_Baumberg_dynasty von_Altenbaumberg_dynasty von_Vinstingen_dynasty
+				von_Schoenecken_dynasty von_Blankenheim_dynasty von_Brunshorn_dynasty von_Stein_dynasty
+				von_Bikkenbach_dynasty valkenburg_dynasty von_Muhlhausen_dynasty von_Lovenstein_dynasty von_Landau_dynasty
+				von_Andernach_dynasty von_Nordgau_dynasty von_Furstenberg_dynasty Weimar_dynasty von_Ansbach_dynasty
+				von_Lausitz_dynasty von_Schonburg von_Schlotheim von_Kospoth von_Erffa von_Bodungen von_Eckersberg
+				von_Brandenstein von_Wiehe von_Jena von_Trutzschler von_Haugwitz von_Kanitz von_Falkenhayn von_Nostitz
+				von_Bieberstein von_Meerheimb von_Freiberg von_Neitschutz von_Minckwitz von_Arnswaldt von_Auerswald
+				von_Beichlingen von_Bendeleben von_Berbisdorf von_Bissingen von_Bomsdorff von_Bose von_Breitenbach
+				von_Breitenbuch von_Bunau von_Hoym von_Hohenthal von_Heynitz von_Hessler von_Helldorff von_Gorschen
+				von_Glaubitz von_Gfug von_Gersdorff von_Germar von_Fritsch von_Friesen von_Flanss von_Erdmannsdorff
+				von_Einsiedel von_Dyhrn von_Dieskau von_Carlowitz von_Maltitz von_Miltitz von_Mucheln von_Pflugk
+				von_Polnitz von_Ponickau von_Rackel von_Rechenberg von_Rex Sack von_Schleinitzstrasse von_Schonberg
+				Senfft_von_Pilsach von_Kannewurf Karras von_Kirchbach von_Sternberg von_Leisnig von_Liebenau
+				von_Loeben von_Logau von_Luttichau von_Tettau von_Wolffersdorff Wohrmann von_Werthern von_Brandt
+				Echter Gabelkofen Griespek von_Laiming von_Thurn_und_Taxis von_Bodeck_dynasty
+				Brauchitsch_dynasty von_Bulow_dynasty von_Cham_dynasty von_Steutzlingen_dynasty
+				von_Venis_dynasty von_Arbon_dynasty von_Dolen_dynasty von_Liebnitz_dynasty
+				Rubsamen_dynasty Vorrade_dynasty von_Sulzbach_dynasty von_Versfleth_dynasty
+				von_Puteledorg_dynasty von_Sommerchenberg_dynasty von_Sachsen_dynasty von_Beilstein_dynasty von_Stad_dynasty
+				prochaska_dynasty asperger_dynasty runese_dynasty pleskow_dynasty von_Russel_dynasty von_Leistenberg_dynasty
+				von_Leibrechtskirchen_dynasty gualch_dynasty von_Schweipunt_dynasty von_Stolzenberg_dynasty von_Chalons_dynasty
+				von_Schwelz_dynasty von_Liebschau_dynasty von_Neuhaus_dynasty von_Assel_dynasty von_Pfalz_dynasty von_Scheidingen
+				von_Stolberg von_Taube von_Moor
+			}
+
+			lowborn = {
+				#from language
+				Brenner Bohmer bach bartisch Busekke Bussacker
+				celtes cuspinian cruger cranach
+				Dientzenhofer Dinglinger
+				Erhart
+				faber Fichte
+				Gaismair Giese Gesiter Gothan
+				Hubert Hegel Hasse
+				Jonas Jacobs Jauert
+				kubel kepler Kant Karlstadt Klatt
+				Langhans Laudan
+				muller Maler Meincke
+				Nicolai Notke Niemann
+				pfauser Panck Porepp
+				Reinhold Reuchlin Reinike
+				Siebenburger schlick Strauss Solms Schluter Sudermann schiller Silbermann Schiner Schultz Schuhr Seeland Steinkopp Schlien Sass Schliechting
+				tetzel turing Tannstetter Therbusch Thess
+				wertheimer Wolff Wilcke
+				Zwicker
+
+				#from dialect
+				Lessing leibniz
+				Melanchton
+				oppenheimer
+			}
+
+		}
+		north_torrentor_dialect ={
+			male_names = {
+				#from language
+				name_alexander name_alfred name_albert name_abraham name_alphonse name_andrew name_anthony
+				name_baldwin name_balthazar name_bernard.name_sigmund name_bernard name_berthold 
+				name_casper name_charles name_christopher name_conrad name_constantine name_christian
+				name_erwin name_emmanuel name_ernest name_everard
+				name_frederick name_felix
+				name_george name_gerard name_godfrey name_gregory
+				name_henry name_hector
+				name_james name_john name_john.name_albert name_john.name_george
+				name_lambert name_leonard name_leopold name_laurence
+				name_mark name_matthias name_maurice name_maximilian 
+				name_nicholas
+				name_philip name_peter
+				name_reginar name_richard name_robert name_reginald name_rappold
+				name_simeon name_stephen name_sigfrid
+				name_theodoric name_thomas name_theobald
+				name_victor name_walter
+
+				#from dialect
+				name_adolf name_adolf.name_frederick name_adolf.name_ernest 
+				name_barnabas name_benedict name_burchard
+				name_christian.name_louis name_charles.name_leopold name_clement
+				name_eugene name_frederick.name_francis name_francis name_ferdinand
+				name_gustav.name_rudolf 
+				name_jobst 
+				name_joseph
+				name_lothar
+				name_louis
+				name_meinhard
+				name_philip.name_louis name_sigmund
+				name_ulrick
+				name_waldemar name_wenceslas
+				name_william name_wolfgang
+				name_xavier
+			}
+			female_names = {
+				#from language
+				name_adelaide name_amelia name_adela name_adriana name_angela name_alexandra name_anna name_ava name_agnes name_agatha name_anna.name_lisa
+				name_bridget name_barbara
+				name_catherine name_cecile name_claire name_clarice name_constance
+				name_dorothy
+				name_eleanor name_elisa name_elizabeth name_emily name_ester
+				name_frances
+				name_gertrude
+				name_helen
+				name_joanna name_judith name_julianne
+				name_laura name_lisa name_louise
+				name_madeleine name_margaret name_matilda name_mary name_mary.name_madeleine name_martha
+				name_petra
+				name_sophia name_susan
+				name_theresa
+				name_ursula
+				name_victoria
+				name_waltrude
+
+				#from dialect
+				name_blanche name_mary.name_theresa
+			}
+
+			dynasty_names = {
+				von_Pappenheim von_Keller_dynasty von_Aham von_Arco von_Armansperg von_Bibra von_Chlingensperg
+				von_Closen von_Degenberg von_Durkheim von_Fraunberg von_Freundsberg von_Gaisberg von_Griespach
+				von_Gumppenberg von_Hackledt von_Haslang Hofer von_Lobenstein von_Holnstein von_Knoringen
+				von_Leublfing Pfaffinger von_Pienzenau von_Raumer von_Rehlinger von_Rohr von_Waldow von_Sandizell
+				von_Sinzendorf von_Tattenbach von_Thurheim von_Toerring von_Koenigsegg von_Calw_dynasty
+				von_Helffenstein_dynasty von_Urach_dynasty von_Bucheck_dynasty von_Klingenberg_dynasty
+				von_Karnten_dynasty von_Neuenburg_dynasty von_Plain_dynasty von_Wasserburg_dynasty
+				von_Lengenfeld_dynasty von_Eberstein_dynasty von_Bogen_dynasty von_Arstein_dynasty
+				von_Babenberg_dynasty von_Kirchberg_dynasty von_Raabs_dynasty von_Metz_dynasty von_Eppenstein_dynasty
+				von_Rheinfelden_dynasty von_Boulogne_dynasty von_Egisheim_dynasty hunfriding_dynasty von_Molln_dynasty
+				von_Nellenburg_dynasty pernstein_dynasty von_Lechsgmund_dynasty von_Komburg_dynasty von_Lambach_dynasty
+				von_Greyerz_dynasty von_Grenchen_dynasty von_Abensberg_dynasty von_Lichtenberg_dynasty von_Hachberg_dynasty
+				von_Wartenberg von_Wolfach_dynasty von_Gerhausen_dynasty von_Signau_dynasty von_Frickingen_dynasty
+				von_Sigmaringen_dynasty von_Regensburg_dynasty von_Lurngau_dynasty von_Meran_dynasty von_Treven_dynasty
+				beck_dynasty von_Attems_dynasty von_Eschenloch_dynasty von_Hardegg_dynasty von_Wangen_dynasty
+				von_Frontenhausen_dynasty von_Eurasburg_dynasty von_Hohenfels_dynasty von_Hunolstein_dynasty
+				von_Veringen_dynasty von_Gruningen_dynasty von_Eselsberg_dynasty von_Tschudi_dynasty
+				von_Glarus_dynasty von_Friedenthal_dynasty von_Waldenstein_dynasty von_Urslingen_dynasty
+				von_Sundgau_dynasty von_Bern_dynasty von_Schwyz_dynasty von_Aargau_dynasty von_Breisgau_dynasty
+				von_Kempten_dynasty von_Trent_dynasty von_Innsbruck_dynasty von_Berlichingen_dynasty
+				sieghardinger_dynasty von_Beneckendorff von_Bunau von_Rechenberg Sack
+				Echter Gabelkofen Griespek von_Laiming von_Thurn_und_Taxis von_Bodeck_dynasty
+				Brauchitsch_dynasty von_Bulow_dynasty von_Cham_dynasty von_Steutzlingen_dynasty
+				von_Venis_dynasty von_Arbon_dynasty von_Dolen_dynasty von_Liebnitz_dynasty
+				Rubsamen_dynasty Vorrade_dynasty von_Sulzbach_dynasty von_Versfleth_dynasty
+				von_Puteledorg_dynasty von_Sommerchenberg_dynasty von_Sachsen_dynasty von_Beilstein_dynasty von_Stad_dynasty
+				prochaska_dynasty asperger_dynasty runese_dynasty pleskow_dynasty von_Russel_dynasty von_Leistenberg_dynasty
+				von_Leibrechtskirchen_dynasty gualch_dynasty von_Schweipunt_dynasty von_Stolzenberg_dynasty von_Chalons_dynasty
+				von_Schwelz_dynasty von_Liebschau_dynasty von_Neuhaus_dynasty von_Assel_dynasty von_Pfalz_dynasty von_Scheidingen
+				von_Stolberg von_Taube von_Moor
+			}
+
+			lowborn = {
+				#from language
+				Brenner Bohmer bach bartisch Busekke Bussacker
+				celtes cuspinian cruger cranach
+				Dientzenhofer Dinglinger
+				Erhart
+				faber Fichte
+				Gaismair Giese Gesiter Gothan
+				Hubert Hegel Hasse
+				Jonas Jacobs Jauert
+				kubel kepler Kant Karlstadt Klatt
+				Langhans Laudan
+				muller Maler Meincke
+				Nicolai Notke Niemann
+				pfauser Panck Porepp
+				Reinhold Reuchlin Reinike
+				Siebenburger schlick Strauss Solms Schluter Sudermann schiller Silbermann Schiner Schultz Schuhr Seeland Steinkopp Schlien Sass Schliechting
+				tetzel turing Tannstetter Therbusch Thess
+				wertheimer Wolff Wilcke
+				Zwicker
+
+				#from dialect
+				Apian Aventinus
+				Bullinger
+				Egkelzain
+				Grillparzer
+				Wisso
+				Zwingli
+			}
+		}
+	}
+}
+
+
+chesmaker_language = { #https://en.wikipedia.org/wiki/Kipchak_languages
+#Represents a language group: Contains Kazakh, Kyrgyz and Tatar
+color = chesmeker_color
+
+
+male_names = {
+	Azamat Adilet Bacman Qacir name_job Koten Qalawun name_baybars Aktai Aslan Aslanbek
+	#Kazakh
+	Alikhan Alisher Bolat Bulat Erasyl Nurasyl Serik 
+	#Tatar
+	Ravil
+	#Kyrgyz
+	Adis Aibek Alik name_alikhan Almaz Asan Azat Aziz Bakyt Bekjan 
+	Bolot Chingiz Damir name_emil Esel Ermek name_elias Ilkay Islambek Izatbek Jyral 
+	Kuban Kylych Mirbek Nurbek Nurlan Nurdeen Omar Prince Sultan 
+	Timurbek Usen Ulan Yajub Zamir
+}	
+female_names = {
+	Dinara Gauhar Saltanat Sezim Zarina
+	#Kazakh
+	Aiday Aigerim Aiman Aina Anar Anara Anargul Aruzhan Asel Ayaulym Aygerim 
+	name_ayneh Bibigul Inkar Inzhu Madina Saule 
+	Zhuldyz
+	#Tatar
+	Alfia Alfiya
+	#Kyrgyz
+	Adel Adinai Aida Aidai Aidana Aidina Aigul Aijamal Ailin Ainura 
+	Aima Aisulu Aiza Akmaral Aliya Altynai Ayana Aziza Azem 
+	Baktigul Begaiym Begimai Cholpon Cholponai Diana Dariga Darixa Dayana 
+	Dilara Dimira Eldana Elina Elgiza Erkaiym Gulsana Gulzat 
+	Jamilya Kanykei Kauhar Kunduz Keres name_leyla Mirgul Nargiza Nazgul 
+	Nazira Gulperi Nurayda Nurjamal Nurzat Saikal
+	Zamira
+}
+dynasty_names = {
+}
+lowborn = {
+}
+
+# to override the default adjective and noun database for cultural works
+#adjective = {
+#}
+#noun = {
+#}
+}
+
+
+tyelkian_language = {
+
+	color = tyelkian_color
+
+	male_names = { 
+		name_abel name_adam name_albert name_alexander name_alexis name_almos name_aloysius name_amadeus name_ambrose name_anastasius name_andrew Arpad name_anthony Attila name_augustine
+		name_balthazar name_barnabas name_bartholomew name_basil name_bela name_benedict name_bernard name_blaise Bonuslo name_boris
+		name_casimir name_casper name_christopher name_conrad name_cornelius Csaba Csak Csongor
+		name_david name_demetrius name_dennis name_desiderius Domoszlo name_donato
+		name_edmond name_edward Elemer name_emmerich name_ernest name_eugene
+		name_ferdinand name_francis name_frederick
+		name_gabriel name_george name_gerard name_geza name_gregory 
+		name_isaac 
+		name_james name_john name_joseph name_julius 
+		name_kalman
+		Lampert name_laurence name_lazarus Levente name_louis name_lucas 
+		name_mark name_martin Mate name_matthias name_maurice name_michael name_moses 
+		name_nicholas 
+		name_oscar name_otto 
+		name_patrick name_paul name_peter name_philip 
+		name_robert 
+		name_salomon name_samuel Saul name_sigmund name_silvester name_simeon Soma name_stephen 
+		Tacsony Tador name_theodore Tibor name_thomas 
+		name_urban 
+		name_valentine name_vladislav 
+		name_wenceslas name_william 
+		Zoltan Zsolt
+	}
+	female_names = {
+		name_adelaide name_agatha name_agnes name_amelia name_angelica name_anna name_apollonia name_aurelia 
+		name_barbara name_bertha 
+		name_camilla name_catherine name_christine name_claire name_constance Csilla Csillag Czenzi 
+		name_dorothy 
+		name_edith name_elizabeth Emese Emoke Erika name_ester Etel name_euphemia name_eve 
+		name_georgia name_giselle 
+		Hajnal name_hedwig name_helen name_hilda name_hyacintha 
+		name_irene 
+		name_joanna Jozsa name_judith name_julianne name_julie 
+		name_kera name_kunigunde 
+		name_laura name_lucia 
+		name_madeleine name_margaret name_martha name_mary name_matilda 
+		name_natalia name_rosa 
+		Odola
+		Piroska
+		name_sara Sarolt name_scholastica name_sophia name_susan 
+		name_theresa Tunder
+		name_ursula 
+		name_violet Virag
+		name_yolande      
+		Zoltana
+	}
+	dynasty_names = {
+		Almasy Andrassy Bathory Batthyany Both Csaky Cseszneky Decsey Derencsenyi Dessewffy Dobo Doczy Erdody Esterhazy Eszterhazy Festetics Forgach Frankopan Garay Hadik Hajdu Imreffy Kallay Karolyi Kemeny Kohary Kun Magyary Majlath Mikes Nadasdy Orczy Perenyi Rakoczi Rakoczy Revay Rhedey Ronai Szapolyai Szechenyi Szecsi Szepessy Teleki Thoekoely Thurzo Tisza Zichy Zrinski Zrinyi
+	}
+	lowborn = {
+		Balogh Farkas Feher Fekete Juhasz Kiss Kovacs Lakatos Meszaros Molnar Nagy name_blaise	 name_simeon Szabo Szilagyi Takacs Varga
+	}
+
+	location_suffix = "location_suffix_hungarian"
+	
+	character_name_short_regnal_number = "CHARACTER_SHORT_NAME_PREFIX_NUMBER_NAME_SUFFIX"
+	character_name_order = "CHARACTER_NAME_ORDER_PREFIX_NUMBER_NICKNAME_LASTNAME_NAME_SUFFIX"
+}
+
+west_elven_language = {
+
+	color = rgb { 181 201 225 }
+
+	male_names = { 
+		Aethelos Aetrith Aislinn Althinn Aradith Araentir Aragnir Ardvandir Ascarnil Ashen 
+		Bel-Alhor Bel-Cireon Bel-Findel Bel-Galroth Bel-Gildris Bel-Hothar Bellaeir Bellarion Bel-Noth Bel'Korandras Belannaer Bel-Caldris 
+		Caedral Caradrion Caradryel Celerioth Clagran 
+		Dalloran Dannor Daramas Daverion Doralius Dorthinn 
+		Edrifan Elerion Ellyr Elmkin Elontir Eltharik Elthyr Ereslinn 
+		Faelar Falunieras Filavandrel Finrindel Folariath 
+		Galandel Galarr Galien Galvandir Gilrindel 
+		Ioandar 
+		Korhedron Korhil 
+		Laerin Larien Liandra Loranrol 
+		Malriel Melathur Meteour Miriel Morelion 
+		Naranniel 
+		Olthralle 
+		Pelanir 
+		Rithilan Rylir 
+		Salendor Selaandel Selafryn Sherlaw Sullathur 
+		Talerion Thanan Thansortor Tharien Therandel Therthos Toruviel 
+		Uthien 
+		Valoriel
+	}
+	female_names = {
+		Alastar Adanra Adargia Adastara Adelwyn Adhira Adranna Adrastara Adrelwyn Adroria Aenura Aethisa Agania Agellia Agindre Agya Aislagia Aislenil Aislindre Aislinna Aliathra Althanara Althastara Althelwyn Anarly Astralfa Astrara Ayeadis 
+		Bel-Adrya Bel-Agenil Belagia Bel-alenil Belanra Belarra Bel-Astrieth Bel-Circiela Beleine Bel-Eldyra Bel-Feleine Bel-Finya Bel-Ghanya Bel-Iladara Bel-Kirai Bel-Larara Bel-Lianai Bel-Litilla Bel-Luai Bel-Marai Bel-Marene Bel-Narya Bel-Pryilla Bel-Senisa Bel-Yvraine Benanara Benelwyn Benieth Beninda
+		Calanara Calastara Calieth Calindre Circama Circella Circinda Cythalfa Cythanara Cythelle Cythelwyn Cythilla Cythindre Cythya 
+		Delagia Delanara Delara Delelwyn Delieth Dithalfa Dithania Dithanra Ditharess Ditharine Ditharya Dithoria Drakhira Drilanna Drilellia Drilhira Drilya 
+		Edelalfa Edelanara Edelille Edelindre Edeloria Einama Einastara Einindre Einya Eldagia Eldama Eldanna Eldelwyn Eldhira Eldilize Eldisa Elekalfa Elekanra Elekieth Elekisa
+		Fayandr Fayania Fayastara Fayelle Fayiela Felagia Felinama Felinanara Felinastara Felinhira Fernanra Fernelle Fernhira Fernindre Finastara Finelwyn
+		Galifreius Genalfa Genanara Genastara Genella Genelwyn Genindre Ghanania Ghandr Ghanellia Ghanindre Ghastara Ghelwyn Gheranna Gherella Gheress Gherilize Ghieth Gywnama Gywnenil Gywnlea 
+		Haenastara Haenenil Haenieth Haenya Haerrandr Haerrania Haerrella Hemmanra Hemmedra Hemmelwyn Hemmisa Hymandr Hymenil Hymiela Hyminda Hymoria 
+		Ichandr Ichathoi Ichelwyn Ichindre Ilelwyn Illenanara Illenanra Illeniela Illenieth Illenindre Illenirmara Illenya Inilagia Inilalfa Inilanra Inilellia Inilinda Itilania Itileine Itilieth Itilirmara 
+		Jalastara Jayadara-Alinth Jayadilize Jayadina Jayadirmara Jayastara Jayelle Jayiela Jayindre Jelai Jelandr Jeledra Jinella Jinieth Jinima 
+		Kaedra Karaya Kavandr Kavellia Kavieth Kavinalfa Kavinathoi Kavinella Kavinindre Kerthagia Kerthelwyn Kerthieth Kerthilize Khalathoi Khaleine Khalella Khalellia Khalian Khalima Khalina Kirama Kirastara Kirelwyn Kirilla Kiroria Kyrama Kyrandr Kyreine Kyrene Kyrielle Kyrieth Kyrisa 
+		Larathoi Larieth Larithagia Larithanara Larithandr Larithelwyn Larithiela Laroria Liananna Lianess Lianilla Lianlea Lianya Licumara Licumathoi Licumeine Licumelle Licumieth Licuminda Litenil Litess Lolanna Lolarra Lolathoi Lolellia Lolieth Lolirmara Loloria Loragia Loranara Loreine Lorelwyn Lorilize Lornadara Lothagia Lothanara Lothedra Lothelwyn Lothoria Luandr Luelwyn Luenil Luieth 
+		Malama Malenil Malinda Malya Manellia Manhira Manindre Mantathoi Manteine Mantelwyn Mantinda Mantirmara Maragia Maredra Marene Maroria Mehathoi Mehellia Mehieth Mlenanra Mlenathoi Mlenelwyn Mlenilla 
+		Naestadara Naestara Naestedra Naesthira Naestisa Narama Nariela Nasadara Nasastara Nasenil Nashagia Nashella Nashisa Nasinda Nathanra Natheine Nathenil 
+		Oethanra Oethedra Oethine Ophania Ophellia Ophhira Ophilagia Ophilene Ophilina Ophoria Orilelle Osyania Osyastara Osyelwyn Osyenil Osyirmara 
+		Pethanra Pethathoi Pethenil Pethindre Pilhira Pilindre Prenoria Pryanna Pryeine Pryelwyn Pryima Pynama Pynastara Pynelwyn Pyniela Qinedra 
+		Qiness Qinoria Quenama Quenara Quenelle Quenieth 
+		Racael Relama Relathoi Releine Relhira Relya Rethagia Rethandr Rethara Rethelwyn Rethina Rhamalfa Rhamanra Rhamella Rhamiela Rhamoria 
+		Saamene Saamima Saamisa Sadrania Sadrara Sadrinda Sakelle Sakieth Salania Salastara Salenil Salinda Saloria Senathoi Seneine Seniela Shakellia Shelandr Sheledra Shelenil Shelieth Sophagia Sophanra Sopheine Sophenil Sophilla
+		Talarian Tefadara Tefalfa Tefastara Tefelwyn Tenanara Tenathoi Tenelwyn Tenindre Thinastara Thinedra Thininda Tilagia Tilelwyn Tilindre Tiloria Trilama Trileine Trilieth Trilirmara Vanadara Vanalfa Vananna Vananra Vanella Vanellia Vanindre Velama Velathoi Velenil Verai Verara Verenil Vesella Vesiela Vesoria 
+		Waerelle Waeriela Waerya Wendama Wendarra Wendenil Wendilize Wendina Wesania Wesenil Wesian Westelwyn Westindre Wonama Wonathoi Wonellia Wonoria Yasama 
+		Yaselwyn Yasille Yasina Yasya Yenandr Yenanra Yenedra Yenelle Yenene Yenhira Yenieth Yenlea Yoranna Yorhira Yulya Yvreine 
+		Zamania Zeleine Zelirmara Zinieth
+	}
+	dynasty_names = {
+		Dawnstrider Frostsong Emberblade Mistwalker Thornweaver Nightwhisper Ashdancer Veilrunner Glimmereye Tideseer Stormchaser Faewalker Palehand Dewblade Wildsong Embersworn Hollowmoon Brackenbow
+	}
+	lowborn = {
+	}
+}
+
+nordish_language = {
+	color = map_swedish
+
+
+	male_names = {
+		name_albert name_algoth name_arnold name_absalon name_andrew
+		name_benedict name_birger name_berthold name_bo name_bjorn
+		name_charles name_canute name_christopher name_cornificius
+		name_dag name_dane
+		name_egil name_eric name_egilhard
+		name_frederick name_fulk
+		name_gregory name_gunther name_gustav
+		name_hacon name_harold name_henry name_holger name_halfdane name_hakan
+		name_ivor name_igor name_inge
+		name_james name_john
+		name_laurence name_leonard
+		name_magnus name_matthias name_maurice name_michael
+		name_nicholas
+		name_olaf
+		name_peter name_philip
+		name_sten name_sven name_sture name_sviatopolk
+		name_thore
+		name_ulrick
+		name_waldemar
+	}
+	female_names = {
+		name_anna name_astrid
+		name_beata name_bridget
+		name_cecile name_catherine name_christine
+		name_elizabeth name_eleanor
+		name_frederica
+		name_hedwig name_helen
+		name_ingeborg name_inge
+		name_matilda name_margaret
+		name_olga
+		name_sophia name_sara name_sigrid
+		name_ulrike
+
+		Asta #short form of name_astrid
+		Bothild #version of Bodil
+		Elin #scandinavian version of name_helen
+		Gunhild #Gunnhild Norwegian Gunnhildur Icelandic
+		Ingegerd
+		name_ingrid
+		Karin #swedish version for name_catherine
+		Marta #scandinavian version of name_martha
+		Ragnhild #scandinavian version of name_reinhild
+	}
+
+	patronym_suffix_son = "patronym_suffix_swedish_son"
+	patronym_suffix_daughter = "patronym_suffix_swedish_daughter"
+
+	location_prefix = "location_prefix_swedish"
+	
+	descendant_suffix = "descendant_suffix_swedish_male"
+	
+	# to override the default adjective and noun database for cultural works
+	#adjective = {
+	#}
+	#noun = {
+	#}
+	dialects = {
+	}
+}

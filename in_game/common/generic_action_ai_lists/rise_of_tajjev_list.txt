@@ -1,0 +1,13 @@
+﻿rise_of_tajjev_list = {
+	potential = {
+		tag = A409
+		can_see_situation = situation:rise_of_tajjev
+	}
+	actions = {
+		roj_declare_conquest_ambition
+		roj_plan_invasion
+		roj_select_core_region
+		roj_reform_into_monarchy
+		roj_promote_regional_culture
+	}
+}

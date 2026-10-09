@@ -1,0 +1,101 @@
+﻿# Naiha (A325): Antigonid constraints as advances. No unique units.
+
+#Age of Traditions#
+A325_the_host_is_not_replaceable = {
+	age = age_1_traditions
+	icon = drill_army_advance
+	potential = {
+		has_or_had_tag = A325
+	}
+	discipline = 0.05
+	levy_recovery_modifier = -0.20
+	global_levy_size_modifier = -0.10
+	requires = feudalism_advance
+}
+
+A325_foot_companions = {
+	age = age_1_traditions
+	icon = offensive_army
+	potential = {
+		has_or_had_tag = A325
+	}
+	army_heavy_infantry_power = 0.15
+	requires = feudalism_advance
+}
+
+A325_hawk_riders = {
+	age = age_1_traditions
+	icon = glorious_arms
+	potential = {
+		has_or_had_tag = A325
+	}
+	army_heavy_cavalry_power = 0.10
+	land_morale_modifier = 0.05
+	requires = feudalism_advance
+}
+
+A325_tombs_of_ematis = {
+	age = age_1_traditions
+	icon = patron_of_art
+	potential = {
+		has_or_had_tag = A325
+	}
+	monthly_legitimacy = 0.1
+	cultural_influence_modifier = 0.10
+	requires = organized_religion
+}
+
+A325_royal_monopolies = {
+	age = age_1_traditions
+	icon = feudalism_advance
+	potential = {
+		has_or_had_tag = A325
+	}
+	global_silver_output_modifier = 0.20
+	global_lumber_output_modifier = 0.20
+	global_crown_estate_power = 0.10
+	requires = city_building_advance
+}
+
+A325_the_wall = {
+	age = age_1_traditions
+	icon = drill_army_advance
+	potential = {
+		has_or_had_tag = A325
+	}
+	global_hostile_attrition = 1
+	global_defensive = 0.10
+	requires = feudalism_advance
+}
+
+A325_the_fetters = {
+	age = age_1_traditions
+	icon = patron_of_art
+	potential = {
+		has_or_had_tag = A325
+	}
+	subject_loyalty = 10
+	diplomatic_annexation_efficiency = -0.25
+	requires = feudalism_advance
+}
+
+#Age of Renaissance#
+
+#Age of Discovery#
+A325_a_second_hegemony = {
+	age = age_3_discovery
+	icon = genoese_banking_traditions
+	potential = {
+		has_or_had_tag = A325
+	}
+	land_morale_modifier = 0.10
+	diplomatic_annexation_efficiency = -0.15
+	monthly_legitimacy = 0.05
+	requires = study_institutions_advance
+}
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#

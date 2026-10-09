@@ -1,0 +1,494 @@
+﻿namespace = verminus_wars
+
+verminus_wars.1 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.1.title
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					tag = A13
+				}
+				desc = verminus_wars.1.desc.crown
+			}
+			triggered_desc = {
+				desc = verminus_wars.1.desc
+			}
+		}
+	}
+	outcome = neutral
+
+	option = {
+		name = verminus_wars.1.a
+		trigger = {
+			tag = A13
+		}
+		add_government_power = government_power_mild_penalty
+		add_legitimacy = legitimacy_mild_penalty
+	}
+
+	option = {
+		name = verminus_wars.1.b
+		trigger = {
+			NOT = { tag = A13 }
+		}
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+verminus_wars.3 = {	# Informative event for the rest of the Godhand
+	type = country_event
+	category = situation_event
+	title = verminus_wars.3.title
+	desc = verminus_wars.3.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		ruler_or_regent ?= { save_scope_as = target_character }
+		international_organization:verminus_realms.leader_country ?= {
+			save_scope_as = target_country
+			ruler_or_regent ?= { save_scope_as = target_character2 }
+		}
+	}
+
+	option = {
+		name = verminus_wars.3.a
+		custom_tooltip = verminus_wars_explanation_tooltip1
+		custom_tooltip = verminus_wars_explanation_tooltip2
+		custom_tooltip = verminus_wars_explanation_tooltip3
+	}
+}
+
+verminus_wars.2 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.2.title
+	desc = verminus_wars.2.desc.winner
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		save_scope_as = from_country
+		ruler_or_regent ?= { save_scope_as = target_character }
+	}
+
+	option = {
+		name = verminus_wars.2.a
+		trigger = {
+			any_in_global_list = {
+				variable = verminus_wars_losers_list
+				country_exists = yes
+				is_subject = no
+			}
+		}
+		custom_tooltip = verminus_wars.2.a.tt
+		hidden_effect = {
+			every_in_global_list = {
+				variable = verminus_wars_losers_list
+				limit = {
+					country_exists = yes
+					is_subject = no
+				}
+				trigger_event_non_silently = verminus_wars.22
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_government_power = government_power_mild_bonus
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				num_subjects >= 2
+			}
+			modifier = {
+				factor = 0.5
+				army_size > 50
+			}
+		}
+	}
+
+	option = {
+		name = verminus_wars.2.b
+		trigger = {
+			any_in_global_list = {
+				variable = verminus_wars_losers_list
+				country_exists = yes
+				is_subject = no
+			}
+		}
+		custom_tooltip = verminus_wars.2.b.tt
+		hidden_effect = {
+			every_in_global_list = {
+				variable = verminus_wars_losers_list
+				limit = {
+					country_exists = yes
+					is_subject = no
+				}
+				scope:from_country = {
+					add_casus_belli = {
+						target = prev
+						type = casus_belli:cb_verminus_subjugate
+					}
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				army_size > 50
+			}
+		}
+	}
+
+	option = {
+		name = verminus_wars.2.c
+		trigger = {
+			NOT = {
+				any_in_global_list = {
+					variable = verminus_wars_losers_list
+					country_exists = yes
+					is_subject = no
+				}
+			}
+		}
+		add_prestige = prestige_severe_bonus
+		add_government_power = government_power_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+	}
+}
+
+verminus_wars.21 = {
+	hide_portraits = yes
+	type = country_event
+	category = situation_event
+	title = verminus_wars.2.title
+	desc = verminus_wars.2.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		situation:verminus_wars.var:verminus_wars_winner ?= {
+			save_scope_as = target_country
+			ruler_or_regent ?= { save_scope_as = target_character2 }
+		}
+	}
+
+	option = {
+		name = verminus_wars.21.a
+		add_prestige = prestige_mild_penalty
+		add_government_power = government_power_mild_penalty
+	}
+}
+
+verminus_wars.22 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.22.title
+	desc = verminus_wars.22.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		save_scope_as = target_country
+		situation:verminus_wars.var:verminus_wars_winner ?= {
+			save_scope_as = from_country
+			ruler_or_regent ?= { save_scope_as = target_character2 }
+		}
+	}
+
+	option = {
+		name = verminus_wars.22.a
+		show_as_tooltip = {
+			make_subject_of = {
+				target = scope:from_country
+				type = subject_type:vassal
+			}
+		}
+		scope:from_country = {
+			trigger_event_non_silently = verminus_wars.23
+		}
+
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 3
+				relative_strength = {
+					target = scope:from_country
+					value <= 0.5
+				}
+			}
+			modifier = {
+				factor = 0.25
+				relative_strength = {
+					target = scope:from_country
+					value >= 1.5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = verminus_wars.22.b
+		show_as_tooltip = {
+			scope:from_country = {
+				add_casus_belli = {
+					target = scope:target_country
+					type = casus_belli:cb_verminus_subjugate
+				}
+			}
+		}
+		scope:from_country = {
+			trigger_event_non_silently = verminus_wars.24
+		}
+
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 3
+				relative_strength = {
+					target = scope:from_country
+					value >= 1.5
+				}
+			}
+		}
+	}
+}
+
+verminus_wars.23 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.23.title
+	desc = verminus_wars.23.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		scope:target_country ?= { save_scope_as = target_country }
+	}
+
+	option = {
+		name = verminus_wars.23.a
+		scope:target_country = {
+			make_subject_of = {
+				target = root
+				type = subject_type:vassal
+			}
+		}
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+verminus_wars.24 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.24.title
+	desc = verminus_wars.24.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		scope:target_country ?= { save_scope_as = target_country }
+	}
+
+	option = {
+		name = verminus_wars.24.a
+		add_casus_belli = {
+			target = scope:target_country
+			type = casus_belli:cb_verminus_subjugate
+		}
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+verminus_wars.4 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.4.title
+	desc = verminus_wars.4.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	trigger = {
+		is_situation_active = situation:verminus_wars
+		international_organization:verminus_realms = {
+			any_international_organization_member = {
+				this != root
+				NOT = { is_at_war_with = root }
+				NOT = { has_truce_with = root }
+				NOT = {
+					root = { has_casus_belli_on = prev }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		international_organization:verminus_realms = {
+			random_international_organization_member = {
+				limit = {
+					this != root
+					NOT = { is_at_war_with = root }
+					NOT = { has_truce_with = root }
+					NOT = {
+						root = { has_casus_belli_on = prev }
+					}
+				}
+				save_scope_as = target_enemy
+			}
+		}
+	}
+
+	option = {
+		name = verminus_wars.4.a
+		add_casus_belli = { target = scope:target_enemy type = casus_belli:cb_verminus_succession }
+	}
+}
+
+verminus_wars.5 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.5.title
+	desc = verminus_wars.5.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	trigger = {
+		is_situation_active = situation:verminus_wars
+		international_organization:verminus_realms = {
+			any_international_organization_member = {
+				NOT = { has_truce_with = root }
+				root = { has_casus_belli_on = prev }
+			}
+		}
+	}
+
+	immediate = {
+		international_organization:verminus_realms = {
+			random_international_organization_member = {
+				limit = {
+					NOT = { has_truce_with = root }
+					root = { has_casus_belli_on = prev }
+				}
+				save_scope_as = target_enemy
+			}
+		}
+	}
+
+	option = {
+		name = verminus_wars.5.a
+		declare_war_with_cb = { target = scope:target_enemy type = casus_belli:cb_verminus_succession }
+	}
+
+	option = {
+		name = verminus_wars.5.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+verminus_wars.10 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.10.title
+	desc = verminus_wars.10.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	trigger = {
+		is_situation_active = situation:verminus_wars
+		NOT = { tag = A13 }
+		country_exists = c:A13
+	}
+
+	option = {
+		name = verminus_wars.10.a
+		add_casus_belli = { target = c:A13 type = casus_belli:cb_verminus_succession }
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = verminus_wars.10.b
+		add_government_power = government_power_mild_bonus
+	}
+}
+
+verminus_wars.11 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.11.title
+	desc = verminus_wars.11.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	trigger = {
+		tag = A13
+		is_situation_active = situation:verminus_wars
+		current_year >= 1345
+	}
+
+	immediate = {
+		set_global_variable = verminus_ratticar_come_of_age
+	}
+
+	option = {
+		name = verminus_wars.11.a
+		add_legitimacy = legitimacy_mild_penalty
+		add_stability = stability_mild_penalty
+	}
+
+	option = {
+		name = verminus_wars.11.b
+		add_government_power = government_power_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+verminus_wars.200 = {	# Informative event for the rest of the Godhand
+	hide_portraits = yes
+	type = country_event
+	category = situation_event
+	title = verminus_wars.200.title
+	desc = verminus_wars.200.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		ruler_or_regent ?= { save_scope_as = target_character }
+		situation:verminus_wars.var:verminus_wars_winner ?= {
+			save_scope_as = target_country
+			ruler_or_regent ?= { save_scope_as = target_character2 }
+		}
+	}
+
+	option = {
+		name = verminus_wars.200.a
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+verminus_wars.100 = {
+	type = country_event
+	category = situation_event
+	title = verminus_wars.100.title
+	desc = verminus_wars.100.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+
+	immediate = {
+		scope:target.owner = {
+			save_scope_as = target_country
+		}
+	}
+
+	option = {
+		name = verminus_wars.100.a
+		add_casus_belli = { target = scope:target.owner type = casus_belli:cb_verminus_succession }
+		refresh_map_colors = yes
+	}
+}

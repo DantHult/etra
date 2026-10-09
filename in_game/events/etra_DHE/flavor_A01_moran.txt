@@ -1,0 +1,572 @@
+﻿namespace = flavor_A01
+
+flavor_A01.1 = { #The Great Coloessium
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A01.1.title
+	desc = flavor_A01.1.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		owns = location:eternalcity1
+		location:eternalcity1 = { has_building = building_type:the_amphitheatrum }
+		tag = A01
+		at_war = no
+		is_during_bankruptcy = no
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		location:eternalcity1 = { save_scope_as = target_location }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A01.1.a
+
+		historical_option = yes
+		add_prestige = prestige_weak_bonus
+	}
+
+}
+flavor_A01.2 = { #Trimpuh for God Hand
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A01.2.title
+	desc = flavor_A01.2.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 50
+	}
+
+	trigger = {
+		region:godhand_region = {
+			any_location_in_region = {
+				controller ?= {
+					tag = A01
+				}
+				count >= 200
+			}
+		}
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		location:eternalcity1 = { save_scope_as = target_location }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A01.2.a
+
+		historical_option = yes
+		add_prestige = prestige_severe_bonus
+		if = {
+			limit = {
+				has_country_modifier = A01_the_mandate  
+			}
+			custom_tooltip = { 
+				text = flavor_A01.2.fullfilment.tt
+			}
+			add_country_modifier = {
+				modifier = A01_the_mandate
+				years = -1
+				mode = replace
+			}
+		}
+	}
+
+}
+
+flavor_A01.3 = { #The Undercity Introduction 
+	type = country_event
+	title = flavor_A01.3.title
+	desc = flavor_A01.3.desc
+
+	fire_only_once = yes
+	outcome = neutral
+
+
+	dynamic_historical_event = {
+		tag = A01
+		from = 1330.1.1
+		to = 9999.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		owns = location:eternalcity1
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:eternalcity1 = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_A01.3.a
+		historical_option = yes
+		change_gold_effect = { scale = -3 }
+		location:eternalcity1 = {
+			change_development = development_mild_bonus
+			change_prosperity = prosperity_mild_bonus
+		}
+		custom_tooltip = {
+			text = flavor_A01.3.a.tt
+			location:eternalcity1 = {
+				every_pop = {
+					limit = {
+						owner = ROOT
+					}
+					add_pop_satisfaction = pop_satisfaction_mild_bonus
+				}
+			}
+		}
+		location:eternalcity1 = {
+			add_location_modifier = { modifier = ven_accommodate_the_growing_population years = 10 mode = add_and_extend }
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+
+	option = {
+		name = flavor_A01.3.b
+		location:eternalcity1 = {
+			change_prosperity = prosperity_mild_penalty
+		}
+		
+	}
+	after = {
+		trigger_event_silently = { id = flavor_A01.4 years = { 25 100 } }
+	}
+}
+
+
+flavor_A01.4 = { #Digging to Deeply 
+	type = country_event
+	title = flavor_A01.4.title
+	desc = flavor_A01.4.desc
+
+	fire_only_once = yes
+	outcome = neutral
+
+	trigger = {
+		owns = location:eternalcity1
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:eternalcity1 = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = { #freaky
+		name = flavor_A01.4.a
+		historical_option = yes
+
+	}
+
+}
+
+
+flavor_A01.5 = { #Tone setting opening event
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A01.5.title
+	desc = flavor_A01.5.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1336.1.1
+		to = 9999.1.1
+		monthly_chance = 35
+	}
+
+	trigger = {
+		owns = location:eternalcity1
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		location:eternalcity1 = { save_scope_as = target_location }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A01.5.a
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+	option = {
+		name = flavor_A01.5.b
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_weak_bonus }
+	}
+	option = {
+		name = flavor_A01.5.c
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_bonus }
+		historical_option = yes
+	}
+	option = {
+		name = flavor_A01.5.d
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_weak_bonus }
+	}
+	
+}
+
+
+flavor_A01.6 = { #Introduction Event - Eternity's End?
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A01.6.title
+	desc = flavor_A01.6.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+
+	trigger = {
+		tag = A01
+	}
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		location:eternalcity1 = { save_scope_as = target_location }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A01.6.a
+
+		historical_option = yes
+	}
+
+}
+
+
+flavor_A01.7 = { #ode to the golden hills
+	type = country_event
+	title = flavor_A01.7.title
+	desc = flavor_A01.7.desc
+
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		own_entire_province = province_definition:freehold2_province
+		is_integrating = province_definition:freehold2_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = flavor_A01.7.a
+		add_prestige = prestige_mild_bonus
+
+		province_definition:freehold2_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 25
+				custom_tooltip = {
+					text = A01_convert_venutirans_tt
+					every_pop = {
+						limit = {
+							culture = culture:venturian_culture
+							religion.group = religion_group:adunan
+						}
+						split_pop = {
+							fraction = 0.1
+							religion = root.religion
+							culture = culture:vivum_moran_culture
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#defeating the Scarlet Order
+flavor_A01.8 = { 
+	type = country_event
+	title = flavor_A01.8.title
+	desc = flavor_A01.8.desc
+
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		own_entire_province = province_definition:freehold9_province
+		is_integrating = province_definition:freehold9_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = flavor_A01.8.a
+		add_prestige = prestige_mild_bonus
+
+		province_definition:freehold9_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 25
+			}
+		}
+	}
+}
+
+
+#Human integration
+flavor_A01.9 = {
+	type = country_event
+	title = flavor_A01.9.title
+	desc = flavor_A01.9.desc
+
+	dynamic_historical_event = {
+		tag = A01
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+
+	fire_only_once = yes
+	outcome = neutral
+	
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	trigger = {
+		culture_group_percentage_in_country = {
+			culture_group = culture_group:human_group
+			value > 0.35
+		}
+	}
+
+	option = {
+		name = flavor_A01.9.a
+		add_country_modifier = {
+			modifier = A01_flesh_and_bone
+			years = -1
+			mode = add_and_extend
+		}
+	}
+	option = {
+		name = flavor_A01.9.b
+		add_country_modifier = {
+			modifier = A01_human_resources
+			years = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+#defeating the Ratfolk
+flavor_A01.10 = { 
+	type = country_event
+	title = flavor_A01.10.title
+	desc = flavor_A01.10.desc
+
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		own_entire_province = province_definition:freehold7_province
+		is_integrating = province_definition:freehold7_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = flavor_A01.10.a
+		province_definition:freehold7_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 25
+			}
+		}
+	}
+	
+}
+
+#The Living
+flavor_A01.11 = {
+	type = country_event
+	title = flavor_A01.11.title
+	desc = flavor_A01.11.desc
+
+	dynamic_historical_event = {
+		tag = A01
+		from = 1337.1.1
+		to = 1836.1.1
+		monthly_chance = 25
+	}
+
+	fire_only_once = yes
+	outcome = neutral
+	
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	trigger = {
+		culture_group_percentage_in_country = {
+			culture_group = culture_group:human_group
+			value > 0.10
+		}
+	}
+
+	option = {
+		name = flavor_A01.11.a
+		add_country_modifier = {
+			modifier = A01_flesh_and_bone
+			years = 10
+			mode = add_and_extend
+		}
+	}
+	option = {
+		name = flavor_A01.11.b
+		add_country_modifier = {
+			modifier = A01_human_resources
+			years = 10
+			mode = add_and_extend
+		}
+	}
+}
+
+
+#The Next Steps
+flavor_A01.12 = {
+	type = country_event
+	title = flavor_A01.12.title
+	desc = flavor_A01.12.desc
+	
+	fire_only_once = yes
+	outcome = neutral
+
+	trigger = {
+		tag = A01
+	}
+	
+	illustration_tags = {
+        10 = regular
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	
+	option = {
+		name = flavor_A01.12.a
+		add_country_modifier = {
+			modifier = A01_the_mandate
+			years = 50
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = flavor_A01.12.tt
+		}
+	}
+}

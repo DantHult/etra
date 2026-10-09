@@ -1,0 +1,344 @@
+﻿namespace = flavor_A378
+
+#########################################################
+# Iborros prelude to the Red Turban Rebellions
+# Ported from flavor_chi.30 / .122-.126
+#########################################################
+
+# Catastrophic rains along the Iborric waterways
+flavor_A378.30 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A378.30.title
+	desc = flavor_A378.30.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A378
+		from = 1345.1.1
+		to = 1350.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+
+	trigger = {
+		tag = A378
+		NOT = { is_situation_active = situation:etra_red_turban_rebellions }
+		any_owned_location = {
+			region = region:iboros_region
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		random_owned_location = {
+			limit = {
+				region = region:iboros_region
+				OR = {
+					this = location:etra1159
+					this = location:etra1158
+					this = location:etra1160
+					this = location:etra1155
+					this = location:etra1151
+					this = location:etra1161
+					this = location:etra1172
+					this = location:etra1173
+					this = location:etra1008
+					this = location:etra1088
+				}
+			}
+			province = {
+				save_scope_as = target_province
+			}
+		}
+		if = {
+			limit = { NOT = { exists = scope:target_province } }
+			random_owned_location = {
+				limit = { region = region:iboros_region }
+				province = {
+					save_scope_as = target_province
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_A378.30.a
+		etra_adjust_pre_rtr_modifiers = { value = 0.05 }
+		add_country_modifier = {
+			mode = replace
+			modifier = etra_rtr_disrupted_waterways
+			years = 15
+		}
+		scope:target_province = {
+			add_province_modifier = {
+				mode = add_and_extend
+				modifier = etra_rtr_catastrophic_rain
+				years = 15
+			}
+		}
+		change_iboric_authority = { value = -5 }
+	}
+
+	after = {
+		trigger_event_silently = {
+			id = flavor_A378.122
+			months = { 6 12 }
+		}
+	}
+}
+
+# Flood management / river works
+flavor_A378.122 = {
+	type = country_event
+	title = flavor_A378.122.title
+	desc = flavor_A378.122.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	trigger = {
+		tag = A378
+		NOT = { is_situation_active = situation:etra_red_turban_rebellions }
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_A378.122.a
+		add_country_modifier = {
+			mode = replace
+			modifier = etra_rtr_flood_works
+			years = -1
+			desc = until_etra_rtr_flood_works_are_complete
+		}
+		trigger_event_silently = {
+			id = flavor_A378.123
+			months = { 3 6 }
+		}
+		trigger_event_non_silently = {
+			id = flavor_A378.124
+			months = { 12 24 }
+		}
+	}
+
+	option = {
+		name = flavor_A378.122.b
+		etra_adjust_pre_rtr_modifiers = { value = 0.1 }
+		change_iboric_authority = { value = -5 }
+		trigger_event_silently = {
+			id = flavor_A378.123
+			months = { 3 6 }
+		}
+	}
+}
+
+# Agitator propaganda among flood laborers
+flavor_A378.123 = {
+	type = country_event
+	title = flavor_A378.123.title
+	desc = flavor_A378.123.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	trigger = {
+		tag = A378
+		NOT = { is_situation_active = situation:etra_red_turban_rebellions }
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		create_character = {
+			first_name = name_shan.name_tong2
+			birth_date = 1320
+			birth_location = location:etra1008
+			culture = culture:selorian_culture
+			religion = religion:manyfold
+			estate = estate_type:nobles_estate
+			adm = { 60 70 }
+			dip = { 60 70 }
+			mil = { 60 70 }
+			script = etra_rtr_agitator
+			save_scope_as = target_character
+		}
+		create_character = {
+			first_name = name_lin.name_er
+			father = scope:target_character
+			birth_date = 1339.2.23
+			culture = culture:selorian_culture
+			religion = religion:manyfold
+			estate = estate_type:nobles_estate
+			adm = { 15 25 }
+			dip = { 15 25 }
+			mil = { 15 25 }
+			script = etra_rtr_agitator_heir
+		}
+	}
+
+	option = {
+		name = flavor_A378.123.a
+		etra_adjust_pre_rtr_modifiers = { value = 0.25 }
+		add_country_modifier = {
+			mode = replace
+			modifier = etra_rtr_propaganda
+			years = -1
+			desc = until_the_end_of_etra_red_turban_rebellion
+		}
+	}
+
+	after = {
+		trigger_event_non_silently = {
+			id = flavor_A378.125
+			months = { 24 48 }
+		}
+	}
+}
+
+# Flood works complete
+flavor_A378.124 = {
+	type = country_event
+	title = flavor_A378.124.title
+	desc = flavor_A378.124.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	trigger = {
+		tag = A378
+		has_country_modifier = etra_rtr_flood_works
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_A378.124.a
+		etra_adjust_pre_rtr_modifiers = { value = -0.25 }
+		if = {
+			limit = { has_country_modifier = etra_rtr_flood_works }
+			remove_country_modifier = etra_rtr_flood_works
+		}
+		if = {
+			limit = { has_country_modifier = etra_rtr_disrupted_waterways }
+			remove_country_modifier = etra_rtr_disrupted_waterways
+		}
+		add_stability = stability_mild_bonus
+		change_iboric_authority = { value = 5 }
+	}
+}
+
+# Arrest the agitator?
+flavor_A378.125 = {
+	type = country_event
+	title = flavor_A378.125.title
+	desc = flavor_A378.125.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	trigger = {
+		tag = A378
+		has_country_modifier = etra_rtr_propaganda
+		character:etra_rtr_agitator ?= {
+			owner ?= ROOT
+			is_alive = yes
+		}
+		NOT = { is_situation_active = situation:etra_red_turban_rebellions }
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		character:etra_rtr_agitator = {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_A378.125.a
+		historical_option = yes
+		etra_adjust_pre_rtr_modifiers = { value = -0.1 }
+		custom_tooltip = {
+			text = etra_rtr_arrest_speeds_situation
+			set_variable = etra_rtr_leader_arrested
+		}
+		scope:target_character = {
+			imprison_character_effect = {
+				years = -1
+			}
+		}
+		add_stability = stability_mild_penalty
+	}
+
+	option = {
+		name = flavor_A378.125.b
+		etra_adjust_pre_rtr_modifiers = { value = 0.05 }
+		add_legitimacy = legitimacy_severe_penalty
+	}
+}
+
+# Rebel band humiliates the army
+flavor_A378.126 = {
+	type = country_event
+	title = flavor_A378.126.title
+	desc = flavor_A378.126.desc
+	outcome = neutral
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A378
+		from = 1337.1.1
+		to = 1360.1.1
+		monthly_chance = 5
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:soldiers background = pop_type:soldiers }
+	}
+
+	trigger = {
+		tag = A378
+		has_country_modifier = etra_rtr_propaganda
+		NOT = { is_situation_active = situation:etra_red_turban_rebellions }
+	}
+
+	option = {
+		name = flavor_A378.126.a
+		add_prestige = prestige_weak_penalty
+		add_country_modifier = {
+			mode = replace
+			modifier = etra_rtr_loss_of_confidence_in_army
+			years = 5
+		}
+		etra_adjust_pre_rtr_modifiers = { value = 0.05 }
+	}
+}

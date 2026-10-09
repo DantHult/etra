@@ -1,0 +1,55 @@
+﻿# Vexvec (A331): Gloom Stalker line — replaces elven longbow advances
+
+#Age of Traditions#
+unlock_vexvec_gloom_stalker_advance = {
+	age = age_1_traditions
+	icon = glorious_arms
+	requires = city_building_advance
+	potential = {
+		has_or_had_tag = A331
+	}
+	unlock_levy = levy_a_a331_gloom_stalker
+}
+
+#Age of Renaissance#
+unlock_vexvec_gloom_stalker_veteran_advance = {
+	age = age_2_renaissance
+	icon = glorious_arms
+	requires = unlock_men_at_arms_advance
+	potential = {
+		has_or_had_tag = A331
+	}
+	unlock_levy = levy_a_a331_gloom_stalker_2
+}
+
+#Age of Discovery#
+unlock_vexvec_gloom_stalker_elite_advance = {
+	age = age_3_discovery
+	icon = pike_square
+	requires = unlock_halberdiers_advance
+	potential = {
+		has_or_had_tag = A331
+	}
+	unlock_levy = levy_a_a331_gloom_stalker_3
+}
+
+#Age of Reformation#
+INJECT:unlock_arquebusiers_advance = {
+	unlock_unit = a_a331_gloom_stalker_4
+}
+
+#Age of Absolutism#
+INJECT:unlock_hunters_advance = {
+	unlock_unit = a_a331_gloom_stalker_5
+}
+
+#Age of Revolutions#
+vexvec_gloom_stalker_riflemen = {
+	age = age_6_revolutions
+	icon = napoleonic_warfare
+	requires = unlock_sharpshooters_advance
+	potential = {
+		has_or_had_tag = A331
+	}
+	unlock_unit = a_a331_gloom_stalker_6
+}

@@ -1,0 +1,133 @@
+﻿typhrean_elven_language = {
+
+	color = map_serbian
+
+	male_names = {
+
+		# === CUSTOM FANTASY MALE NAMES ===
+		# Proto-Typheraii shared roots
+		name_tyraion name_tyrvaion name_aelkaion name_aelmaion name_morios name_morinthir name_thalorion name_thalvaion name_seliaios name_selinaion
+		name_varethion name_varemaion name_aitheron name_aithrion name_kheirion name_kheiraion
+		# Hyrivari noble
+		name_alkaion name_alykairos name_pyrrhion name_pyrrhaios name_menesthion name_kallinor name_laerthion name_laerthir name_orthirion name_halcyrion
+		name_hieron name_hiereon name_elyaion name_elyrion name_nereon name_chrysion name_chrysaios name_leukaion name_orthion name_kalythir
+		name_phaeron name_phaetheon
+	}
+
+	female_names = {
+
+		# === CUSTOM FANTASY FEMALE NAMES ===
+		# Proto-Typheraii shared roots
+		name_tyraneia name_tyralia name_aelkaia name_aelmaia name_morinaia name_morinethia name_thaloreia name_thalvania name_seliara name_selinaia
+		name_varethia name_varemaia name_aitheia name_kheireia
+		# Hyrivari noble
+		name_adneia name_kalliea name_kallinaia name_laerthia name_athenea name_phermaia name_elysia name_iona name_nereia name_halcya
+		name_hieraia name_chryseia name_chrysaia name_leukaia name_leukothia name_pyrrhaia name_menesthia name_orthea name_phaeria name_aelyra
+	}
+
+	dynasty_names = {
+		name_aelkorthoi name_tyrvaides name_morinthoi name_thalvaides name_selinthoi
+		name_varethides name_kallinides name_pyrrhaides
+	}
+
+	lowborn = {
+		name_aelken name_tyron name_morinos name_thallos name_selinor name_varethos name_kheiros name_aithros
+	}
+
+	ship_names = {
+		name_argonaion name_pelasgos name_thalassa name_okeanos name_aion name_aithros name_hippokampos name_triton
+		name_nereis name_scylla name_glaukos name_proteus name_knossios name_phaestaios name_pylaion name_mykenaios
+		name_tirynthos name_thebaios name_kleostrate name_nikephore name_aristarkh name_eudaimon name_sophron name_kalliros
+	}
+
+	patronym_suffix_son = "patronym_suffix_typheraii_son"
+	patronym_suffix_daughter = "patronym_suffix_typheraii_daughter"
+	location_prefix = "location_prefix_typheraii"
+	location_prefix_vowel = "location_prefix_typheraii_vowel"
+
+	dialects = {
+		typhrean_elven_language = {
+			default = yes
+		}
+		high_elven_dialect = {
+			male_names = {
+				name_wanaktios name_telestion name_koretion name_damokor name_atreion name_atrelion name_nestoron name_peleios name_priamion name_hektoron
+				name_hektaion name_idomaion name_akhaion name_protesion name_aiaion
+			}
+			female_names = {
+				name_wanassa name_telestia name_koretia name_damora name_atreia name_peneia name_nestoria name_peleia name_priama name_hektoria
+				name_hektea name_andromia name_kassandria name_briseia name_helenea
+			}
+			dynasty_names = {
+				name_atreides name_telestides name_koretides name_wanaktides name_nestorides
+				name_priamides name_pelopides
+			}
+			lowborn = {
+				name_telestos name_koretos name_wanaktos name_atreos name_nestoros name_hektos name_peleos
+			}
+		}
+		wood_elven_dialect = {
+			male_names = {
+				name_amyntha name_amynljar name_perdiljas name_perdikjen name_rheszon name_rheselj name_zypoytan name_zypoljas name_kersibhaun name_dentheljar
+				name_bessolyn name_spartokeljon name_kotylja name_dresheljan name_amyljen name_perdyljek name_rheshljon name_zypolljan name_kerseljan name_dentholjen
+				name_bessyljan name_kotyljen name_tribalanth name_mithroljen name_spartoljen name_dresholjan name_sarmaljen name_rhodolja
+			}
+			female_names = {
+				name_besshija name_bessyana name_amynja name_perdilja name_rheszona name_zypolja name_kersilja name_dentha name_sparteshka name_kotyshka
+				name_mithrana name_tribalja name_bessyelja name_zypoljka name_kotyljeva name_perdyljka name_rhoszlika name_kersolja name_mithralja name_tribalka
+				name_sparteljka name_dentholja name_rhodoljia name_bessyljana
+			}
+			dynasty_names = {
+				name_amyntljar name_perdiljan name_kersibljan name_zypoljan name_spartoljan
+				name_rheszonja name_bessoryn
+			}
+			lowborn = {
+				name_amyntin name_perdiljin name_rheslijan name_zypoljin name_bessorin name_kersiljan name_kotylin
+			}
+		}
+		dark_elven_dialect = {
+			male_names = {
+				name_assarayn name_asashrann name_holairynx name_holaithri name_evissthon name_evisthynn name_dapurtyx name_dapuryxos name_kunyssai name_kunnixos
+				name_marazzeth name_napphyxos name_sivaithon name_xassaron name_qassathor name_zyrrhinyx name_xassathri name_zevaithon name_xolairyx name_maqarryth
+				name_xunnassos name_qaraznyx name_zephynxos name_assorenn name_yllarisk name_ethresmorr name_ossyleth name_irramphess name_arachnorax name_nyxeroth
+				name_morosyxos name_hekataxos name_styxarion name_phobyxos
+			}
+			female_names = {
+				name_asseyxa name_arunthia name_holairya name_holaessa name_evistheia name_evisthyxa name_dapurthia name_dapuryxa name_kunyssia name_kunnixa
+				name_marazessa name_marazyxa name_qaraznyxa name_zephyssia name_xunnaessa name_zarynthia name_zyrrhyxa name_qunnyxa name_zolairya name_arrenessa
+				name_sillythria name_ethressia name_ossylethia name_yrrhanessa name_arachnia name_nyxaena name_morosaia name_hekataia name_styxyxa name_phobyssa
+			}
+			dynasty_names = {
+				name_holaithynx name_evisthoxos name_kunyssathra name_marazyxos name_assareynthi
+				name_dapuryxos name_sivaithyxa
+			}
+			lowborn = {
+				name_assarinx name_holairyn name_evistynx name_kunyssin name_marazinx name_dapuryn name_sivaiin
+			}
+		}
+		steppe_elven_dialect = {
+			male_names = {
+				name_tudhalian name_tudhaliel name_arnuwan name_arnendir name_suppelian name_muwathir name_muwattaz name_muwakkan name_sparghytis name_spargin
+				name_skolakhzai name_aryashar name_khshathrion name_dahyumar name_pharzoy name_aspargoi name_bagaqan name_tegintyr name_ormuqan name_saryqan
+				name_qatharion name_qathvaion name_sarushaar name_khaybagan name_nesamuwa name_labarnash name_muwawalqa name_kantuzzel name_ammuwazir name_hattuqan
+				name_suppatalla name_arzawathir name_idanthyrsa name_madyvesh name_lipoxar name_kolaxshar name_oktamqan name_spargaphen name_pharzanoi name_khshayaqan
+				name_amyrgaran name_yabghuqan name_tegishtyr name_bumaqan name_igliqan name_tarbaqan name_erkinqan name_ophiaros name_drakorion name_echidnaros
+				name_typhonaios name_saurophas name_lamiaros
+			}
+			female_names = {
+				name_tudhalina name_tudhalia name_arnuwa name_muwathala name_muwattaza name_suppelina name_sparghya name_sparpia name_aryaxsha name_skolakya
+				name_khshathria name_dahyumira name_pharzia name_asparia name_bagashka name_teginra name_saryqana name_saruskha name_qatharia name_qatharya
+				name_ormaqana name_sarushya name_puduhepa name_hattushyna name_nikkalmara name_tawanna name_asmunikal name_opoiana name_tomyrana name_serimira
+				name_amagiana name_sarmathya name_pharzana name_khshayana name_zarinamira name_teginmira name_altqana name_yabghana name_bumaqana name_erkinqana
+				name_ophiana name_drakorea name_echidnia name_typhonia name_saurophia name_lamiana
+			}
+			dynasty_names = {
+				name_qatharides name_saryqanid name_tudhalianthi name_spargapides name_khshathrides
+				name_pharzoides name_muwathalinthi name_bagaqanid
+			}
+			lowborn = {
+				name_qatharin name_saryqen name_tudhalin name_spargen name_pharzin name_muwathin name_aryashin name_bagaqin
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿namespace = races_event
+
+races_event.1 = {
+	type = country_event
+	title = races_event.1.title
+	desc = races_event.1.desc
+	hidden = yes
+
+	trigger = {
+		owns = location:eternalcity1
+	}
+
+	option = {
+		hidden_effect = {
+			races_set_up = yes
+		}
+	}
+}

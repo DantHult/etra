@@ -1,0 +1,69 @@
+﻿# Location demographic race modifiers — parameterized replacement for races_set_up copy-paste.
+
+update_location_race_modifiers_for_group = {
+	if = {
+		limit = {
+			culture_group_percentage = {
+				culture_group = $culture_group$
+				value < 0.05
+			}
+		}
+		remove_location_modifier = $prefix$_majority
+		remove_location_modifier = $prefix$_large_minority
+		remove_location_modifier = $prefix$_minority
+	}
+	else_if = {
+		limit = {
+			culture_group_percentage = {
+				culture_group = $culture_group$
+				value > 0.49
+			}
+		}
+		add_location_modifier = { modifier = $prefix$_majority years = -1 mode = replace }
+		remove_location_modifier = $prefix$_large_minority
+		remove_location_modifier = $prefix$_minority
+	}
+	else_if = {
+		limit = {
+			culture_group_percentage = {
+				culture_group = $culture_group$
+				value > 0.24
+			}
+		}
+		add_location_modifier = { modifier = $prefix$_large_minority years = -1 mode = replace }
+		remove_location_modifier = $prefix$_majority
+		remove_location_modifier = $prefix$_minority
+	}
+	else_if = {
+		limit = {
+			culture_group_percentage = {
+				culture_group = $culture_group$
+				value > 0.05
+			}
+		}
+		add_location_modifier = { modifier = $prefix$_minority years = -1 mode = replace }
+		remove_location_modifier = $prefix$_majority
+		remove_location_modifier = $prefix$_large_minority
+	}
+}
+
+etra_update_location_race_modifiers = {
+	update_location_race_modifiers_for_group = { culture_group = culture_group:undead_group prefix = undead }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:human_group prefix = human }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:ratfolk_group prefix = ratfolk }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:elven_group prefix = elven }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:giantsborn_group prefix = giantsborn }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:tiefling_group prefix = tiefling }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:aasimar_group prefix = aasimar }
+	update_location_race_modifiers_for_group = { culture_group = culture_group:beastfolk_group prefix = beastfolk }
+	# TODO: add location modifiers for pigmen, lupusfolk, catfolk when defined in etra_races.txt
+}
+
+races_set_up = {
+	every_location_in_the_world = {
+		limit = {
+			is_ownable = yes
+		}
+		etra_update_location_race_modifiers = yes
+	}
+}

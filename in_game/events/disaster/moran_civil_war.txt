@@ -1,0 +1,1173 @@
+﻿namespace = moran_civil_war
+moran_civil_war.1 = { #Nobles Demand Compensation
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.1.title
+	desc = moran_civil_war.1.desc
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	trigger = {
+		tag = A01 
+		ruler_or_regent ?= {
+			has_estate = estate_type:nobles_estate 
+		}
+		in_civil_war = no
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		ruler_or_regent ?= { save_scope_as = target_character2 }
+	}
+
+	option = {	#Yes
+		name = moran_civil_war.1.a
+
+		change_gold_effect = { scale = -3 }
+		add_gold_to_estate = {
+			estate_type = estate_type:nobles_estate
+			value = {
+				value = monthly_income_trade_and_tax
+				multiply = 3
+			}
+		}
+		add_stability = stability_weak_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_mild_bonus
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = estate_satisfaction_extreme_penalty
+		}
+		custom_tooltip = peasants_unhappy_tt
+		hidden_effect = {
+			every_owned_location = {
+				random_pop = {
+					limit = {
+						owner = root
+						pop_type = pop_type:peasants
+					}
+					add_pop_satisfaction = pop_satisfaction_mild_penalty
+				}
+			}
+		}
+	}
+
+	option = {	#No
+		name = moran_civil_war.1.b 
+
+		change_societal_value = {
+			type = serfdom_vs_free_subjects
+			value = societal_value_large_move_to_right
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_radical_penalty
+		}
+		add_government_power = government_power_extreme_bonus
+		custom_tooltip = moran_every_noble_sides_with_pretender_tt
+		hidden_effect = {
+			every_owned_location = {
+				random_pop = {
+					limit = {
+						owner = root
+						pop_type = pop_type:nobles
+					}
+					add_pop_satisfaction = pop_satisfaction_severe_penalty
+					if = {
+						limit = { exists = scope:succession_crisis_pretender_scope }
+						change_pop_allegiance = scope:succession_crisis_pretender_scope
+					}
+				}
+			}
+		}
+	}
+}
+
+moran_civil_war.2 = { #Nobles Refuse to Pay Taxes
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.2.title
+	desc = moran_civil_war.2.desc
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		NOT = { has_variable = moran_nobles_refused_paying_taxes }
+		estate_tax_percentage:nobles_estate > 0
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		set_variable = {
+			name = moran_nobles_refused_paying_taxes
+			value = yes
+			years = 10
+		}
+		ruler_or_regent ?= { save_scope_as = target_character2 }
+	}
+
+	option = {
+		name = moran_civil_war.2.a
+		
+		historical_option = yes
+
+		add_country_modifier = {
+			modifier = byz_relinquish_taxes_for_nobles_modifier
+			years = 5
+			mode = add_and_extend
+		}
+	}
+
+	option = {
+		name = moran_civil_war.2.b 
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_radical_penalty
+		}
+		add_government_power = government_power_mild_bonus
+	}
+}
+
+moran_civil_war.3 = { #Our Nobility Supports the Pretender
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.3.title
+	desc = moran_civil_war.3.desc
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		NOT = { has_variable = moran_nobles_supports_pretender_variable }
+		estate_satisfaction:nobles_estate < 0.5	
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		set_variable = {
+			name = moran_nobles_supports_pretender_variable
+			value = yes
+			years = 5
+		}
+		ruler_or_regent ?= { save_scope_as = target_character2 }
+	}
+
+	option = {
+		name = moran_civil_war.3.a
+
+		var:succession_crisis_pretender_variable ?= {
+			add_rebel_progress = {
+				value = 0.1
+			}
+		}
+		add_government_power = government_power_mild_penalty
+	}
+
+	option = {
+		name = moran_civil_war.3.b 
+
+		trigger = {
+			num_possible_estate_privileges:nobles_estate > 0
+		}
+
+		"estate(estate_type:nobles_estate)" = {
+			random_possible_privilege = {
+				root = { grant_estate_privilege = prev }
+			}
+		}
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_mild_bonus
+		}
+
+		add_government_power = government_power_weak_penalty
+	}
+}
+
+moran_civil_war.4 = { #Mariners Guild Rises Up
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.4.title
+	desc = moran_civil_war.4.desc
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		owns = location:godhand36
+		location:godhand36 = {
+			any_pop = {
+				OR = {
+					pop_type = pop_type:peasants 
+					pop_type = pop_type:burghers
+				}	
+				OR = {
+					AND = {
+						exists = root.var:succession_crisis_pretender_variable
+						has_rebel = root.var:succession_crisis_pretender_variable
+							has_rebel = yes
+					}
+					pop_satisfaction < 0.4
+				}
+			}
+		}
+		NOT = { has_variable = moran_mariners_guild_rose_up }
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		location:godhand36 = {
+			save_scope_as = target_location
+		}
+		set_variable = moran_mariners_guild_rose_up
+		ruler_or_regent ?= { save_scope_as = target_character2 }
+	}
+
+	option = {
+		name = moran_civil_war.4.a
+
+		custom_tooltip = moran_mariners_guild_effect_1_tt
+		hidden_effect = {
+			location:godhand36 = {
+				change_control = control_ultimate_penalty
+				every_pop = {
+					limit = {
+						owner = root
+						OR = {
+							pop_type = pop_type:peasants
+							pop_type = pop_type:burghers
+						}
+					}
+					add_pop_satisfaction = pop_satisfaction_ultimate_bonus
+				}
+				every_pop = {
+					limit = {
+						owner = root
+						pop_type = pop_type:nobles
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_extreme_penalty
+		}
+		change_societal_value = {
+			type = serfdom_vs_free_subjects
+			value = societal_value_minor_move_to_right
+		}
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_large_move_to_right
+		}
+	}
+
+	option = {
+		name = moran_civil_war.4.b 
+
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_extreme_bonus
+		}
+		custom_tooltip = moran_mariners_guild_effect_2_tt
+		hidden_effect = {
+			location:godhand36 = {
+				change_control = control_ultimate_penalty
+				every_pop = {
+					limit = {
+						owner = root
+						OR = {
+							pop_type = pop_type:peasants
+							pop_type = pop_type:burghers
+						}
+					}
+					add_pop_satisfaction = pop_satisfaction_extreme_penalty
+				}
+				random_pop = {
+					limit = { pop_type = pop_type:nobles }
+					add_pop_satisfaction = pop_satisfaction_ultimate_bonus
+				}
+			}
+		}
+		change_societal_value = {
+			type = serfdom_vs_free_subjects
+			value = societal_value_large_move_to_left
+		}
+	}
+}
+
+moran_civil_war.5 = { #Commoners Demand Noble Purge
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.5.title
+	desc = moran_civil_war.5.desc
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		any_owned_location = {
+			NOT = { has_variable = noble_purge_timer }
+			any_pop = {
+				pop_type = pop_type:peasants
+				pop_satisfaction < 0.4
+			}
+			any_pop = { pop_type = pop_type:nobles }
+		} 
+	}
+	immediate = {
+		event_illustration_poptype_effect = { foreground = pop_type:nobles   background = pop_type:nobles }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		random_owned_location = {
+			limit = {
+				any_pop = { pop_type = pop_type:nobles }
+				any_pop = {
+					pop_type = pop_type:peasants
+					pop_satisfaction < 0.4
+				}
+			}
+			save_scope_as = target_location
+			set_variable = {
+				name = noble_purge_timer
+				value = yes 
+				years = 2
+			}
+		}
+		ruler_or_regent ?= { save_scope_as = target_character2 }
+	}
+
+	option = {
+		name = moran_civil_war.5.a
+
+		scope:target_location = {
+			random_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:nobles
+				}
+				add_pop_size = {
+					value = pop_size
+					multiply = -0.5 
+				}
+				add_pop_satisfaction = pop_satisfaction_radical_penalty
+			}
+			random_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:peasants
+				}
+				add_pop_satisfaction = pop_satisfaction_extreme_bonus
+			}
+		}
+		add_stability = stability_weak_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = estate_satisfaction_radical_penalty
+		}
+	}
+
+	option = {
+		name = moran_civil_war.5.b 
+
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = estate_satisfaction_radical_penalty
+		}
+		add_government_power = government_power_weak_bonus
+		scope:target_location = {
+			random_pop = {
+				limit = {
+					owner = root
+					pop_type = pop_type:peasants
+				}
+				add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+			}
+		}
+	}
+}
+
+moran_civil_war.6 = { #General Abandons the Court
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.6.title
+	desc = moran_civil_war.6.desc
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		any_character = {
+			NOT = { has_variable = scope_pretender_var }
+			NOT = { has_variable = recently_abandoned_var }
+			is_ruler = no 
+			is_regent = no
+			is_general = yes
+		}
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		random_character = {
+			limit = {
+				NOT = { has_variable = scope_pretender_var }
+				NOT = { has_variable = recently_abandoned_var }
+				is_ruler = no 
+				is_regent = no
+				is_general = yes
+			}
+			save_scope_as = target_character2
+			set_variable = {
+				name = recently_abandoned_var
+				value = yes 
+				years = 1
+			}
+		}
+		ruler_or_regent ?= { save_scope_as = target_character3 }
+	}
+
+	option = {	#Imprison him!
+		name = moran_civil_war.6.a
+
+		add_government_power = government_power_mild_bonus
+		if = {
+			limit = {
+				scope:target_character2 ?= { has_estate = estate_type:clergy_estate }
+			}
+			add_estate_satisfaction = { type = estate_type:clergy_estate 
+				value = estate_satisfaction_severe_penalty
+			}
+			add_religious_influence_if_valid = { VALUE = religious_influence_mild_penalty }
+		}
+		else_if = {
+			limit = {
+				scope:target_character2 ?= { has_estate = estate_type:burghers_estate }
+			}
+			add_estate_satisfaction = { type = estate_type:burghers_estate 
+				value = estate_satisfaction_severe_penalty
+			}
+			change_societal_value = {
+				type = aristocracy_vs_plutocracy
+				value = societal_value_minor_move_to_left
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_character2 ?= { has_estate = estate_type:peasants_estate }
+			}
+			add_estate_satisfaction = { type = estate_type:peasants_estate 
+				value = estate_satisfaction_severe_penalty
+			}
+			change_societal_value = {
+				type = serfdom_vs_free_subjects
+				value = societal_value_minor_move_to_left
+			}
+		}
+		else = {
+			add_estate_satisfaction = { type = estate_type:nobles_estate 
+				value = estate_satisfaction_severe_penalty
+			}
+			change_societal_value = {
+				type = serfdom_vs_free_subjects
+				value = societal_value_minor_move_to_right
+			}
+		}
+	}
+
+	option = {
+		name = moran_civil_war.6.b 
+
+		add_stability = stability_mild_bonus
+		if = {
+			limit = {
+				scope:target_character2 = { has_estate = estate_type:nobles_estate }
+			}
+			add_gold_to_estate = {
+				estate_type = estate_type:nobles_estate
+				value = {
+					value = monthly_income_trade_and_tax
+					multiply = -1
+				}
+			}
+			add_gold = {
+				value = monthly_income_trade_and_tax
+				multiply = 1
+			}
+			add_estate_satisfaction = { type = estate_type:nobles_estate 
+				value = estate_satisfaction_mild_penalty
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_character2 = { has_estate = estate_type:clergy_estate }
+			}
+			add_gold_to_estate = {
+				estate_type = estate_type:clergy_estate
+				value = {
+					value = monthly_income_trade_and_tax
+					multiply = -1
+				}
+			}
+			add_gold = {
+				value = monthly_income_trade_and_tax
+			}
+			add_estate_satisfaction = { type = estate_type:clergy_estate 
+				value = estate_satisfaction_mild_penalty
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_character2 = { has_estate = estate_type:burghers_estate }
+			}
+			add_gold_to_estate = {
+				estate_type = estate_type:burghers_estate
+				value = {
+					value = monthly_income_trade_and_tax
+					multiply = -1
+				}
+			}
+			add_gold = {
+				value = monthly_income_trade_and_tax
+			}
+			add_estate_satisfaction = { type = estate_type:burghers_estate 
+				value = estate_satisfaction_mild_penalty
+			}
+		}
+		else_if = {
+			limit = {
+				scope:target_character2 = { has_estate = estate_type:peasants_estate }
+			}
+			add_gold_to_estate = {
+				estate_type = estate_type:peasants_estate
+				value = {
+					value = monthly_income_trade_and_tax
+					multiply = -1
+				}
+			}
+			add_gold = {
+				value = monthly_income_trade_and_tax
+			}
+			add_estate_satisfaction = { type = estate_type:peasants_estate 
+				value = estate_satisfaction_mild_penalty
+			}
+		}
+	}
+
+	option = {
+		name = moran_civil_war.6.c
+
+		custom_tooltip = moran_character_might_cause_trouble_again_tt
+		add_government_power = government_power_weak_penalty
+		hidden_effect = { 
+			scope:target_character = { remove_variable = recently_abandoned_var }
+		}
+	}
+}
+
+moran_civil_war.7 = { 
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.7.title
+	desc = moran_civil_war.7.desc
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	trigger = {
+		in_civil_war = no
+		tag = A01
+		NOT = { has_variable = had_parliament_event_variable }
+		is_active_parliament = yes
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		set_variable = {
+			name = had_parliament_event_variable
+			value = yes
+			years = 5
+		}
+	}
+
+	option = {
+		name = moran_civil_war.7.a
+
+		custom_tooltip = unlock_new_issues_about_civil_war_tt
+		add_country_modifier = {
+			modifier = expanded_assembly_powers_modifier
+			years = 10
+			mode = add_and_extend
+			size = {
+				value = 1
+				multiply = {
+					desc = "[crown_power|e]"
+					value = "estate_power(estate_type:crown_estate)"
+				}
+			}
+		}
+		custom_tooltip = scales_with_crown_power_tt
+	}
+
+	option = {
+		name = moran_civil_war.7.b 
+
+		add_government_power = government_power_extreme_bonus
+	}
+}
+
+moran_civil_war.8 = { #Church Dissaproves of Pretender 
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.8.title
+	desc = moran_civil_war.8.desc
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		estate_satisfaction:clergy_estate >= 0.6
+		any_province = {
+			any_location_in_province = {
+				any_pop = {
+					religion = root.religion
+					OR = {
+						AND = {
+							exists = root.var:succession_crisis_pretender_variable
+							has_rebel = root.var:succession_crisis_pretender_variable
+						}
+						pop_satisfaction < 0.4
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		random_province = {
+			limit = {
+				any_location_in_province = {
+					any_pop = {
+						religion = root.religion
+						OR = {
+							AND = {
+								exists = root.var:succession_crisis_pretender_variable
+								has_rebel = root.var:succession_crisis_pretender_variable
+							}
+							pop_satisfaction < 0.4
+						}
+					}
+				}
+			}
+			save_scope_as = target_province
+		}
+		ruler_or_regent ?= { save_scope_as = target_character2 }
+	}
+
+	option = {
+		name = moran_civil_war.8.a
+
+		var:succession_crisis_pretender_variable ?= {
+			add_rebel_progress = -0.05
+		}
+		add_government_power = {
+			value = "root.estate_power(estate_type:clergy_estate)"
+			multiply = 100
+			min = 5
+		}
+		custom_tooltip = scales_with_clergy_estate_power_tt
+	}
+
+	option = {
+		name = moran_civil_war.8.b 
+		
+		custom_tooltip = province_pops_gain_satisfaction_tt
+		ordered_province = {
+			order_by = {
+				value = province_satisfaction
+				multiply = -1
+			}
+			max = 4
+			check_range_bounds = no
+			hidden_effect = {
+				every_location_in_province = {
+					every_pop = {
+						limit = { 
+							owner = root
+							religion = root.religion
+							OR = {
+								AND = {
+									exists = root.var:succession_crisis_pretender_variable
+									has_rebel = root.var:succession_crisis_pretender_variable
+								}
+								pop_satisfaction < 0.4
+							}		
+						}
+						add_pop_satisfaction = pop_satisfaction_severe_bonus
+					}
+				}
+			}
+		}
+	}
+}
+
+moran_civil_war.9 = { #The Ravages of Civil War
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.9.title
+	desc = moran_civil_war.9.desc
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	trigger = {
+		tag = A01
+		in_civil_war = no
+		any_province = {
+			any_location_in_province = { this != root.capital }
+			any_location_in_province = { prosperity < 0.3 }
+			NOT = { has_variable = province_asked_for_aid_variable }
+		}
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			var:succession_crisis_pretender_variable ?= {
+				save_scope_as = succession_crisis_pretender_scope
+			}
+		}
+		random_character = {
+			limit = {
+				has_variable = scope_pretender_var
+			}
+			save_scope_as = target_character
+		}
+		ordered_province = {
+			limit = {
+				any_location_in_province = { this != root.capital }
+				
+				any_location_in_province = { prosperity < 0.3 }
+			}
+			order_by = {
+				value = province_satisfaction
+				multiply = -1
+			}
+			check_range_bounds = no
+			max = 1
+			save_scope_as = target_province
+			set_variable = { 
+				name = province_asked_for_aid_variable 
+				value = yes 
+				years = 2
+			}
+		}
+	}
+
+	option = {
+		name = moran_civil_war.9.a
+
+		change_gold_effect = { scale = -2 }
+		scope:target_province = {
+			every_location_in_province = { change_prosperity  = prosperity_very_weak_bonus }
+		}
+	}
+
+	option = {
+		name = moran_civil_war.9.b 
+
+		if = {
+			limit = {
+				exists = var:succession_crisis_pretender_variable
+				NOT = { 
+					scope:target_province = {
+						any_location_in_province = {
+							any_pop = {
+								rebel = root.var:succession_crisis_pretender_variable
+							}
+							count >= 2
+						}
+					}
+				}
+			}
+			custom_tooltip = pops_in_target_province_join_succession_crisis_pretender_tt
+			hidden_effect = {
+				scope:target_province = {
+					every_location_in_province = {
+						every_pop = {
+							limit = {
+								owner = root
+							}
+							add_pop_satisfaction = pop_satisfaction_mild_penalty
+							if = {
+								limit = { exists = scope:succession_crisis_pretender_scope }
+								change_pop_allegiance = scope:succession_crisis_pretender_scope
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# A New Dawn for Moran
+moran_civil_war.100 = {
+	type = country_event
+    category = disaster_event
+	title = moran_civil_war.100.title
+	desc = moran_civil_war.100.desc
+
+	image = "gfx/interface/illustrations/disaster/succession_crisis.dds"
+	
+	fire_only_once = yes
+
+	option = {
+		name = moran_civil_war.100.a
+
+		add_stability = stability_severe_bonus
+		add_country_modifier = {
+			mode = add_and_extend
+			modifier = A01_weathered_the_storm
+			years = 30
+		}
+		trigger_event_silently = { id = flavor_A01.12 days = { 360 480 } }
+	}
+
+}
+
+
+
+moran_civil_war.101 = { #start event
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = moran_civil_war.101.title
+	desc = moran_civil_war.101.desc
+
+	image = "gfx/interface/illustrations/disaster/succession_crisis.dds"
+
+	immediate = {
+		create_rebel = {
+			category = pretender
+			name = succession_crisis_pretender
+			save_scope_as = succession_crisis_pretender_scope
+		}
+		set_variable = {
+			name = succession_crisis_pretender_variable
+			value = scope:succession_crisis_pretender_scope
+		}
+		if = {
+			limit = {
+				"estate_power(estate_type:nobles_estate)" >= 0.5
+				has_ruler = yes
+				ruler = {
+					has_dynasty = yes
+				}
+			}
+			root.ruler.dynasty = {
+				ordered_character_in_dynasty = {
+					order_by = mil
+					limit = {
+						character_valid_pretender_trigger = yes
+					}
+					max = 1
+					save_scope_as = scope_pretender
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				"estate_power(estate_type:clergy_estate)" >= 0.5
+				has_ruler = yes
+				ruler = {
+					has_dynasty = yes
+				}
+			}
+			root.ruler.dynasty = {
+				ordered_character_in_dynasty = {
+					order_by = adm
+					limit = {
+						character_valid_pretender_trigger = yes
+					}
+					max = 1
+					save_scope_as = scope_pretender
+				}
+			}
+
+		}
+		else_if = {
+			limit = {
+				"estate_power(estate_type:burghers_estate)" >= 0.5
+				has_ruler = yes
+				ruler = {
+					has_dynasty = yes
+				}
+			}
+			root.ruler.dynasty = {
+				ordered_character_in_dynasty = {
+					order_by = dip
+					limit = {
+						character_valid_pretender_trigger = yes
+					}
+					max = 1
+					save_scope_as = scope_pretender
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler = yes
+				ruler = {
+					has_dynasty = yes
+				}
+			}
+			root.ruler.dynasty = {
+				ordered_character_in_dynasty = {
+					order_by = total_abilities
+					limit = {
+						character_valid_pretender_trigger = yes
+					}
+					max = 1
+					save_scope_as = scope_pretender
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { exists = scope:scope_pretender }
+				"estate_power(estate_type:crown_estate)" >= 0.5
+			}
+			ordered_character = {
+				order_by = total_abilities
+				limit = {
+					character_valid_pretender_trigger = yes
+				}
+				max = 1
+				save_scope_as = scope_pretender
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { exists = scope:scope_pretender }
+			}
+			create_character = {
+				religion = root.religion
+				culture = root.culture
+				estate = estate_type:nobles_estate
+				age = 30
+				save_scope_as = scope_pretender
+			}
+		}
+
+		scope:scope_pretender = {
+			set_variable = {
+				name = scope_pretender_var
+				value = yes
+			}
+			change_character_allegiance = scope:succession_crisis_pretender_scope
+		}
+
+
+		set_variable = {
+			name = total_num_prov_variable
+			value = 0
+		}
+		every_province = {
+			limit = {
+				OR = {
+					province_average_control < 0.5
+					province_food_percentage < 0.5
+					province_satisfaction < 0.5
+				}
+				any_location_in_province = { is_capital = no }
+			}
+			add_to_list = revolt_provinces_list
+			owner = {
+				change_variable = {
+					name = total_num_prov_variable
+					add = 1
+				}
+			}
+		}
+		create_gui_variable = {
+			type = pretender_rebel_character
+			target = scope:scope_pretender
+		}
+	}
+
+	option = {
+		name = moran_civil_war.101.a
+
+		custom_tooltip = succession_crisis.1.tt
+		add_stability = stability_extreme_penalty
+
+		hidden_effect = {
+			if = {
+				limit = { list_size = { name = revolt_provinces_list value > 0 } }
+				ordered_in_list = {
+					list = revolt_provinces_list
+					order_by = population
+					max = {
+						value = var:total_num_prov_variable
+						divide = 4
+						ceiling = yes
+					}
+					every_location_in_province = {
+						every_pop = {
+							limit = {
+								owner = root
+							}
+							add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+							change_pop_allegiance = scope:succession_crisis_pretender_scope
+						}
+
+					}
+				}
+			}
+		}
+		scope:scope_pretender = {
+			add_character_modifier = {
+				modifier = plotting_rebellion_modifier
+				years = -1
+				mode = extend
+			}
+		}
+
+		every_character = {
+			limit = {
+				is_alive = yes
+				OR = {
+					is_close_relative = scope:scope_pretender
+					is_spouse_of = scope:scope_pretender
+				}
+				NOR = {
+					is_ruler = yes
+					is_regent = yes
+				}
+			}
+			change_character_allegiance = scope:succession_crisis_pretender_scope
+			hidden_effect = {
+				add_character_modifier = {
+					modifier = plotting_rebellion_modifier
+					years = -1
+					mode = extend
+				}
+			}
+		}
+	}
+	after = {
+		remove_variable = total_num_prov_variable
+	}
+
+}

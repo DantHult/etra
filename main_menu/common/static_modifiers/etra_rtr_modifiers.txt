@@ -1,0 +1,101 @@
+﻿etra_rtr_red_turban_rebellions = {
+	game_data = {
+		category = country
+	}
+	monthly_rebel_growth = -0.05
+	stability_investment = stability_investment_penalty
+	monthly_legitimacy = -0.05
+	country_cabinet_efficiency = -0.2
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	global_levy_size_modifier = -0.45
+	global_mercenaries_modifier = -0.75
+}
+
+etra_rtr_factional_strife = {
+	game_data = {
+		category = country
+	}
+	global_crown_estate_power = -0.33
+	army_tradition_decay = 0.001
+	global_levy_size_modifier = -0.5
+	army_maintenance_efficiency = -0.75
+	mercenary_maintenance_efficiency = -0.75
+}
+
+etra_rtr_administration_in_disarray = {
+	game_data = {
+		category = country
+	}
+	blocked_from_creating_subjects = yes
+}
+
+etra_rtr_propaganda = {
+	game_data = {
+		category = country
+	}
+	pop_join_rebel_threshold = -0.02
+}
+
+etra_rtr_flood_works = {
+	game_data = {
+		category = country
+	}
+	court_spending_efficiency = -0.25
+}
+
+etra_rtr_loss_of_confidence_in_army = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = -0.05
+}
+
+etra_rtr_disrupted_waterways = {
+	game_data = {
+		category = country
+	}
+	global_monthly_food_modifier = -0.1
+	export_efficiency = -0.1
+}
+
+etra_rtr_catastrophic_rain = {
+	game_data = {
+		category = province
+	}
+	local_population_growth = -0.005
+	local_food_capacity = -0.25
+	local_pop_join_rebel_threshold = -0.05
+}
+
+etra_rtr_appeased_the_court = {
+	game_data = {
+		category = country
+	}
+	global_estate_max_tax = -0.25
+	global_estate_target_satisfaction = large_permanent_target_satisfaction
+}
+
+etra_rtr_rein_in_area_modifier = {
+	game_data = {
+		category = location
+	}
+	local_separatism = -0.2
+	local_max_control = 0.15
+}
+
+etra_rtr_support_of_the_people = {
+	game_data = {
+		category = character
+	}
+	monthly_rebel_growth = -0.05
+	land_morale_modifier = 0.25
+	discipline = 0.05
+	levy_combat_efficiency_modifier = 0.33
+}
+
+etra_rtr_yuanzhangs_leadership = {
+	game_data = {
+		category = character
+	}
+	army_maintenance_efficiency = 0.2
+}

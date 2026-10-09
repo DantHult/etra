@@ -1,0 +1,134 @@
+﻿purge_kindred_monthly_effect = {
+
+	every_cabinet = {
+
+		limit = {
+
+			has_cabinet_action = yes
+
+			cabinet_action = cabinet_action:purge_kindred
+
+		}
+
+		interaction_target:target = {
+
+			save_temporary_scope_as = purge_kindred_group
+
+		}
+
+		interaction_target:target_1 = {
+
+			every_location_in_province = {
+
+				every_pop = {
+
+					limit = {
+
+						culture = {
+
+							has_culture_group = scope:purge_kindred_group
+
+							NOT = { is_accepted_in = owner }
+
+						}
+
+					}
+
+					add_pop_size = {
+
+						value = pop_size
+
+						multiply = -0.02
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	purge_kindred_monthly_satisfaction_effect = yes
+
+}
+
+
+
+purge_kindred_monthly_satisfaction_effect = {
+
+	every_cabinet = {
+
+		limit = {
+
+			has_cabinet_action = yes
+
+			cabinet_action = cabinet_action:purge_kindred
+
+		}
+
+		interaction_target:target = {
+
+			save_temporary_scope_as = purge_kindred_group
+
+		}
+
+		every_pop = {
+
+			limit = {
+
+				culture = {
+
+					has_culture_group = scope:purge_kindred_group
+
+					NOT = { is_accepted_in = owner }
+
+				}
+
+			}
+
+			add_pop_satisfaction = pop_satisfaction_weak_penalty
+
+		}
+
+	}
+
+}
+
+
+
+purge_kindred_save_active_scopes = {
+
+	random_cabinet = {
+
+		limit = {
+
+			has_cabinet_action = yes
+
+			cabinet_action = cabinet_action:purge_kindred
+
+		}
+
+		weight = {
+
+			base = 1
+
+		}
+
+		interaction_target:target_1 = {
+
+			save_scope_as = target_province
+
+		}
+
+		interaction_target:target = {
+
+			save_scope_as = target_kindred
+
+		}
+
+	}
+
+}
+

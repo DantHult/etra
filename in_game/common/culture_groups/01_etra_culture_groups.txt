@@ -1,0 +1,64 @@
+﻿# avoid naming the same as Cultures and Languages
+
+####################
+##cultural##########
+####################
+
+moran_group = {} #!Roman
+
+freeholder_group = {} #Generic Fantasyian
+
+sordrenic_group = {} #Greco-Occitan
+
+armonorian_group = { } #Celtic-Basuq
+
+ardrainic_group = { } #!french
+
+torrenter_group = { } #Peoples of the Commonweal
+
+ringed_citizen_group = { } #!dutch
+
+aitan_group = { } #!swiss
+
+vetusian_group = { } #Original Inhabits of Torrent
+
+jaskadian_group = { }
+
+typheraii_group = { }
+
+vothivrian_group = { }
+
+great_swardish_group = { }
+
+iborian_group = { }
+
+amalyarat_group = { }
+
+astanun_group = { }
+
+adnkhalan_group = { }
+
+####################
+##heritages#########
+####################
+undead_group = {}
+
+human_group = {}
+
+ratfolk_group = {}
+
+elven_group = {}
+
+giantsborn_group = {}
+
+tiefling_group = {}
+
+aasimar_group = {}
+
+beastfolk_group = { }
+
+pigmen_group = { }
+
+lupusfolk_group = { }
+
+catfolk_group = { }

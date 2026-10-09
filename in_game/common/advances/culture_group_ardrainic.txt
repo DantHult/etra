@@ -1,0 +1,173 @@
+﻿#Age of Traditions#
+ardrainic_heritage = {
+	age = age_1_traditions
+	icon = feudalism_advance
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	nobles_estate_levy_size = 1.0
+	
+	requires = feudalism_advance
+}
+
+ardrainien_chivalric_code = {
+	age = age_1_traditions
+	icon = teu_teutonic_heavy_cavalry
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	land_morale_modifier = 0.05
+	requires = feudalism_advance
+}
+
+ardrainien_manor_economy = {
+	age = age_1_traditions
+	icon = scholasticism
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	monthly_prestige = 0.05
+	requires = agriculture_advance
+}
+
+#Age of Renaissance#
+ardrainien_courtly_arts = {
+	age = age_2_renaissance
+	icon = patron_of_art
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	has_cultural_maintenance = yes
+	num_possible_artists = 1
+	requires = construction_speed_renaissance
+}
+
+ardrainien_knights_errant = {
+	age = age_2_renaissance
+	icon = drill_army_advance
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	army_tradition_decay = -0.0005
+	requires = medieval_military
+}
+
+ardrainien_sisterhood_of_the_sword_maiden = {
+	age = age_2_renaissance
+	icon = preserve_theogony_advance
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	unlock_unit = a_ardrainien_sword_maiden
+	land_morale_modifier = 0.05
+	requires = ardrainien_chivalric_code
+}
+
+#Age of Discovery#
+ardrainien_merchant_nobles = {
+	age = age_3_discovery
+	icon = zmw_merchant_taxes
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	selling_efficiency = small_trade_efficiency_bonus
+	global_merchant_power = 0.1
+	requires = regulate_court_procedures
+} 
+
+
+#Age of Reformation#
+ardrainien_noble_diplomats = {
+	age = age_4_reformation
+	icon = diplomatic_influence
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	diplomatic_reputation = diplomatic_reputation_mild_bonus
+	diplomatic_capacity = 1
+	requires = imperial_ambitions
+}
+
+#Age of Absolutism#
+ardrainien_crown_nobility = {
+	age = age_5_absolutism
+	icon = the_constitution
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	global_crown_estate_power = 0.10
+	land_morale_modifier = 0.05
+	requires = war_score_absolutism_advance
+}
+
+#Age of Revolutions#
+ardrainien_enlightened_aristocracy = {
+	age = age_6_revolutions
+	icon = enlightened_court
+	potential = {
+		or = {
+			culture = culture:ardrainien_culture
+			culture = culture:chevallois_culture
+			culture = culture:sittadellian_culture
+			culture = culture:aloisoise_culture
+			
+		}
+	}
+	global_integration_speed_modifier = 0.15
+	subject_loyalty = 3
+	requires = separation_of_powers
+}

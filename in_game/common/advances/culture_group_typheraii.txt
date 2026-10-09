@@ -1,0 +1,33 @@
+﻿#Age of Traditions#
+
+typheraii_the_first_murder = {
+	age = age_1_traditions
+	icon = smooth_administration
+	potential = {
+		OR = {
+			culture = culture:darothari_culture
+			culture = culture:aldorai_culture
+			culture = culture:hyriovari_culture
+			culture = culture:sarusthari_culture						
+
+		}
+	}
+
+	global_monthly_prosperity = 0.001
+
+	requires = feudalism_advance
+}
+
+
+
+
+#Age of Renaissance#
+
+#Age of Discovery# 
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

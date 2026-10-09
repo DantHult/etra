@@ -1,0 +1,5 @@
+﻿l_english:
+ hre_religion_eternalist: "$imperial_religion$ - $manyfold$"
+ hre_religion_eternalist_desc: "The virtues and values of traditional [ShowReligionName('manyfold')] dictate life within the [GetUniqueInternationalOrganization('hre').GetName]."
+ HCA_desc: "$hre_desc$"
+ hre_set_imperial_religion_manyfold_tt: "Set the [imperial_religion|e] of the [GetUniqueInternationalOrganization('hre').GetName] to [ShowReligionName('manyfold')]"

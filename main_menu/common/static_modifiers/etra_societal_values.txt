@@ -1,0 +1,14 @@
+﻿# One per societal value in game/in_game/common/societal_values
+xenophobe_progress_cabinet_efficiency = {
+    game_data = {
+	    category = country
+    }
+    monthly_towards_xenophobe = 1
+}
+
+xenophile_progress_cabinet_efficiency = {
+    game_data = {
+	    category = country
+    }
+    monthly_towards_xenophile = societal_value_minor_monthly_move 
+}

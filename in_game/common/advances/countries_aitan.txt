@@ -1,0 +1,182 @@
+﻿#Age of Traditions#
+
+A282_tradition = {
+	age = age_1_traditions
+	icon = drill_army_advance
+	potential = { has_or_had_tag = A282 }
+	discipline = 0.05
+	requires = scriptorium_advance
+}
+
+A283_tradition = {
+	age = age_1_traditions
+	icon = recruitment_improvements_renaissance
+	potential = { has_or_had_tag = A283 }
+	monthly_army_tradition = 0.05
+	requires = scriptorium_advance
+}
+
+A284_tradition = {
+	age = age_1_traditions
+	icon = a_permanent_capital
+	potential = { has_or_had_tag = A284 }
+	army_light_infantry_power = 0.1
+	allow_female_cabinet = yes
+	allow_female_leader = yes
+	requires = scriptorium_advance
+}
+
+A285_tradition = {
+	age = age_1_traditions
+	icon = glorious_arms
+	potential = { has_or_had_tag = A285 }
+	land_morale_modifier = 0.05
+	requires = scriptorium_advance
+}
+
+A286_tradition = {
+	age = age_1_traditions
+	icon = smooth_administration
+	potential = { has_or_had_tag = A286 }
+	stability_investment = small_stability_investment
+	requires = scriptorium_advance
+}
+
+A287_tradition = {
+	age = age_1_traditions
+	icon = renaissance_development
+	potential = { has_or_had_tag = A287 }
+	global_devastation_recovery = 0.005
+	requires = scriptorium_advance
+}
+
+A288_tradition = {
+	age = age_1_traditions
+	icon = efficient_spies
+	potential = { has_or_had_tag = A288 }
+	spy_network_construction = 0.1
+	requires = scriptorium_advance
+}
+
+A289_tradition = {
+	age = age_1_traditions
+	icon = serbian_mining
+	potential = { has_or_had_tag = A289 }
+	global_production_efficiency = medium_production_efficiency_bonus
+	requires = scriptorium_advance
+}
+
+A290_tradition = {
+	age = age_1_traditions
+	icon = zmw_merchant_taxes
+	potential = { has_or_had_tag = A290 }
+	global_merchant_power = 0.08
+	requires = scriptorium_advance
+}
+
+A291_tradition = {
+	age = age_1_traditions
+	icon = genoese_banking_traditions
+	potential = { has_or_had_tag = A291 }
+	tax_income_efficiency = medium_tax_income_efficiency_bonus
+	requires = scriptorium_advance
+}
+
+A292_tradition = {
+	age = age_1_traditions
+	icon = ship_building_advance
+	potential = { has_or_had_tag = A292 }
+	global_sailors_modifier = 0.1
+	requires = scriptorium_advance
+}
+
+A293_tradition = {
+	age = age_1_traditions
+	icon = nor_shipbuilding
+	potential = { has_or_had_tag = A293 }
+	global_fish_output_modifier = 0.1
+	requires = scriptorium_advance
+}
+
+A294_tradition = {
+	age = age_1_traditions
+	icon = patron_of_art
+	potential = { has_or_had_tag = A294 }
+	has_cultural_maintenance = yes
+	num_possible_artists = 1
+	requires = scriptorium_advance
+}
+
+A295_tradition = {
+	age = age_1_traditions
+	icon = scholasticism
+	potential = { has_or_had_tag = A295 }
+	monthly_devotion = 0.05
+	requires = scriptorium_advance
+}
+
+A296_tradition = {
+	age = age_1_traditions
+	icon = feudalism_advance
+	potential = { has_or_had_tag = A296 }
+	monthly_legitimacy = 0.05
+	requires = scriptorium_advance
+}
+
+A297_tradition = {
+	age = age_1_traditions
+	icon = laws
+	potential = { has_or_had_tag = A297 }
+	monthly_republican_tradition = 0.05
+	requires = scriptorium_advance
+}
+
+A298_tradition = {
+	age = age_1_traditions
+	icon = arduous_terrain
+	potential = { has_or_had_tag = A298 }
+	mountains_proximity_impact = -0.2
+	requires = scriptorium_advance
+}
+
+A299_tradition = {
+	age = age_1_traditions
+	icon = warriors_unity
+	potential = { has_or_had_tag = A299 }
+	global_integration_speed_modifier = 0.08
+	discipline = 0.03
+	requires = scriptorium_advance
+}
+
+A300_tradition = {
+	age = age_1_traditions
+	icon = offensive_army
+	potential = { has_or_had_tag = A300 }
+	army_light_infantry_power = 0.05
+	land_morale_modifier = 0.05
+	requires = scriptorium_advance
+}
+
+A301_tradition = {
+	age = age_1_traditions
+	icon = estates_general
+	potential = { has_or_had_tag = A301 }
+	global_merchant_power = 0.05
+	tax_income_efficiency = small_tax_income_efficiency_bonus
+	requires = scriptorium_advance
+}
+
+A302_tradition = {
+	age = age_1_traditions
+	icon = cultural_acceptance_advance
+	potential = { has_or_had_tag = A302 }
+	global_integration_speed_modifier = 0.1
+	requires = scriptorium_advance
+}
+A303_tradition = {
+	age = age_1_traditions
+	icon = teu_teutonic_heavy_cavalry
+	potential = { has_or_had_tag = A303 }
+	discipline = 0.05
+	requires = scriptorium_advance
+}

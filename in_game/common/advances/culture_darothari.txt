@@ -1,0 +1,28 @@
+﻿# ############################
+# # age_1_traditions
+# ############################
+darothari_unlit_chambers = {
+	age = age_1_traditions
+	icon = head_hunters
+	potential = {
+		culture = culture:darothari_culture
+	}
+	spy_network_construction = 0.1
+	caverns_proximity_impact = -0.50
+	flatland_proximity_impact = 0.15
+	wetlands_proximity_impact = 0.15
+	requires = typheraii_the_first_murder
+}
+
+# ############################
+# # age_2_renaissance
+# ############################
+darothari_webbound_labor = {
+	age = age_2_renaissance
+	icon = head_hunters
+	potential = {
+		culture = culture:darothari_culture
+	}
+	slave_raid_efficiency = 0.15
+	requires = late_feudal_relations
+}

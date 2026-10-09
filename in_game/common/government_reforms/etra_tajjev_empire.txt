@@ -1,0 +1,18 @@
+﻿tajjev_empire = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = { type = tajjev_empire }
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = tajjev_empire
+		}
+	}
+	country_modifier = {
+		government_size = 1
+		antagonism_received_modifier = -0.20
+		government_reform_slots = 1
+		amount_looted_modifier = 0.5
+	}
+}

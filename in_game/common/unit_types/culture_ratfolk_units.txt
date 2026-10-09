@@ -1,0 +1,690 @@
+﻿# Ratfolk culture-group army line — full infantry + cavalry progression
+# Parallel to vanilla tech line; gated by culture_group:ratfolk_group
+# Uses ratfolk age templates: double max_strength, half combat_power (equal regiment mass)
+# Cavalry overlays make mounted troops terrible. Artillery and auxiliaries remain vanilla.
+
+########################
+# Age 1 — Traditions
+########################
+
+a_ratfolk_footmen = {
+	default = yes
+	category = army_heavy_infantry
+	copy_from = a_age_1_traditions_ratfolk_heavy_infantry
+	strength_damage_taken = 0.05
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+		government_type != government_type:steppe_horde
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_men_at_arms
+
+	maintenance_demand = early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_archers = {
+	default = yes
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_ratfolk_light_infantry
+
+	upgrades_to = a_ratfolk_crossbowmen
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+		government_type != government_type:steppe_horde
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+	gfx_tags = { archer_tag medium_tag }
+}
+
+a_ratfolk_footmen_levy = {
+	category = army_heavy_infantry
+	copy_from = a_age_1_traditions_ratfolk_heavy_infantry
+	strength_damage_taken = 0.05
+	buildable = no
+	levy = yes
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_feudal_levy = {
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_ratfolk_light_infantry
+	strength_damage_done = -0.1
+	buildable = no
+	levy = yes
+
+	gfx_tags = { light_tag }
+}
+
+a_ratfolk_horsemen = {
+	category = army_light_cavalry
+	copy_from = a_age_1_traditions_ratfolk_light_cavalry
+	flanking_ability = -0.20
+	strength_damage_done = -0.15
+	movement_speed = -0.25
+	morale_damage_taken = 0.10
+	build_time_modifier = 0.15
+
+	upgrades_to = a_ratfolk_cavalrymen
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.01
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_armored_horsemen = {
+	category = army_heavy_cavalry
+	copy_from = a_age_1_traditions_ratfolk_heavy_cavalry
+	flanking_ability = -0.30
+	strength_damage_done = -0.25
+	movement_speed = -0.40
+	morale_damage_taken = 0.15
+	build_time_modifier = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	upgrades_to = a_ratfolk_heavy_cavalrymen
+
+	gfx_tags = { heavy_tag }
+}
+
+########################
+# Age 2 — Renaissance
+########################
+
+a_ratfolk_men_at_arms = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_ratfolk_heavy_infantry
+	strength_damage_taken = 0.10
+	combat_speed = -1
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_halberdiers
+
+	maintenance_demand = early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_crossbowmen = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_ratfolk_light_infantry
+
+	upgrades_to = a_ratfolk_early_arquebusiers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { crossbow_tag medium_tag }
+}
+
+# Warren Handgonners — Renaissance handgonners (ratfolk_warren_handgonners advance)
+a_ratfolk_handgonners = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_ratfolk_light_infantry
+	buildable = yes
+
+	morale_damage_done = 0.10
+	strength_damage_taken = 0.10
+	build_time_modifier = 0.25
+	combat_speed = -0.5
+
+	combat = {
+		hills = 0.10
+	}
+
+	maintenance_demand = infantry_maintenance
+	construction_demand = infantry_construction
+
+	upgrades_to = a_ratfolk_early_arquebusiers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.025
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_ratfolk_men_at_arms_levy = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_ratfolk_heavy_infantry
+	buildable = no
+	levy = yes
+	strength_damage_taken = 0.10
+	combat_speed = -1
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_peasant_levy = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_ratfolk_light_infantry
+	buildable = no
+	levy = yes
+
+	gfx_tags = { light_tag }
+}
+
+a_ratfolk_cavalrymen = {
+	category = army_light_cavalry
+	copy_from = a_age_2_renaissance_ratfolk_light_cavalry
+	flanking_ability = -0.20
+	strength_damage_done = -0.15
+	movement_speed = -0.25
+	morale_damage_taken = 0.10
+	build_time_modifier = 0.15
+
+	upgrades_to = a_ratfolk_light_lancers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.01
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_heavy_cavalrymen = {
+	category = army_heavy_cavalry
+	copy_from = a_age_2_renaissance_ratfolk_heavy_cavalry
+	flanking_ability = -0.30
+	strength_damage_done = -0.25
+	movement_speed = -0.40
+	morale_damage_taken = 0.15
+	build_time_modifier = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_lancers
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	gfx_tags = { heavy_tag }
+}
+
+########################
+# Age 3 — Discovery
+########################
+
+a_ratfolk_early_arquebusiers = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_ratfolk_light_infantry
+
+	upgrades_to = a_ratfolk_arquebusiers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_ratfolk_halberdiers = {
+	category = army_heavy_infantry
+	copy_from = a_age_3_discovery_ratfolk_heavy_infantry
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_pikemen
+
+	maintenance_demand = early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { polearm_tag medium_tag }
+}
+
+a_ratfolk_matchlock_levy = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_ratfolk_light_infantry
+	buildable = no
+	levy = yes
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_ratfolk_light_lancers = {
+	category = army_light_cavalry
+	copy_from = a_age_3_discovery_ratfolk_light_cavalry
+	flanking_ability = -0.20
+	strength_damage_done = -0.15
+	movement_speed = -0.25
+	morale_damage_taken = 0.10
+	build_time_modifier = 0.15
+
+	upgrades_to = a_ratfolk_pistoleers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.01
+	}
+
+	gfx_tags = { spear_tag medium_tag }
+}
+
+a_ratfolk_lancers = {
+	category = army_heavy_cavalry
+	copy_from = a_age_3_discovery_ratfolk_heavy_cavalry
+	flanking_ability = -0.30
+	strength_damage_done = -0.25
+	movement_speed = -0.40
+	morale_damage_taken = 0.15
+	build_time_modifier = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_heavy_lancers
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+########################
+# Age 4 — Reformation
+########################
+
+a_ratfolk_arquebusiers = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_ratfolk_light_infantry
+
+	upgrades_to = a_ratfolk_hunters
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_ratfolk_pikemen = {
+	category = army_heavy_infantry
+	copy_from = a_age_4_reformation_ratfolk_heavy_infantry
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_musketeers
+
+	maintenance_demand = pikemen_maintenance
+	construction_demand = pikemen_construction
+
+	gfx_tags = { pike_tag medium_tag }
+}
+
+a_ratfolk_flintlock_levy = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_ratfolk_light_infantry
+	buildable = no
+	levy = yes
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_ratfolk_pistoleers = {
+	category = army_light_cavalry
+	copy_from = a_age_4_reformation_ratfolk_light_cavalry
+	flanking_ability = -0.20
+	strength_damage_done = -0.15
+	movement_speed = -0.25
+	morale_damage_taken = 0.10
+	build_time_modifier = 0.15
+
+	upgrades_to = a_ratfolk_hussars
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	gfx_tags = { pistol_tag medium_tag }
+}
+
+a_ratfolk_heavy_lancers = {
+	category = army_heavy_cavalry
+	copy_from = a_age_4_reformation_ratfolk_heavy_cavalry
+	flanking_ability = -0.30
+	strength_damage_done = -0.25
+	movement_speed = -0.40
+	morale_damage_taken = 0.15
+	build_time_modifier = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_gallop_cavalry
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+########################
+# Age 5 — Absolutism
+########################
+
+a_ratfolk_hunters = {
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_ratfolk_light_infantry
+
+	upgrades_to = a_ratfolk_sharpshooters
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+a_ratfolk_musketeers = {
+	category = army_heavy_infantry
+	copy_from = a_age_5_absolutism_ratfolk_heavy_infantry
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_fusiliers
+
+	maintenance_demand = heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_ratfolk_militiamen = {
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_ratfolk_light_infantry
+	buildable = no
+	levy = yes
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_ratfolk_hussars = {
+	category = army_light_cavalry
+	copy_from = a_age_5_absolutism_ratfolk_light_cavalry
+	flanking_ability = -0.20
+	strength_damage_done = -0.15
+	movement_speed = -0.25
+	morale_damage_taken = 0.10
+	build_time_modifier = 0.15
+
+	upgrades_to = a_ratfolk_light_dragoons
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_ratfolk_gallop_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_5_absolutism_ratfolk_heavy_cavalry
+	flanking_ability = -0.30
+	strength_damage_done = -0.25
+	movement_speed = -0.40
+	morale_damage_taken = 0.15
+	build_time_modifier = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_ratfolk_cuirassiers
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	gfx_tags = { heavy_tag }
+}
+
+########################
+# Age 6 — Revolutions
+########################
+
+a_ratfolk_sharpshooters = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_ratfolk_light_infantry
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+a_ratfolk_fusiliers = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_ratfolk_heavy_infantry
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	maintenance_demand = heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_ratfolk_grenadiers = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_ratfolk_heavy_infantry
+	is_special = yes
+	buildable = yes
+
+	morale_damage_done = 0.2
+	strength_damage_taken = 0.1
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	gfx_tags = { grenadier_tag medium_tag }
+}
+
+a_ratfolk_conscripts = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_ratfolk_light_infantry
+	buildable = no
+	levy = yes
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_ratfolk_light_dragoons = {
+	category = army_light_cavalry
+	copy_from = a_age_6_revolutions_ratfolk_light_cavalry
+	flanking_ability = -0.20
+	strength_damage_done = -0.15
+	movement_speed = -0.25
+	morale_damage_taken = 0.10
+	build_time_modifier = 0.15
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+}
+
+a_ratfolk_cuirassiers = {
+	category = army_heavy_cavalry
+	copy_from = a_age_6_revolutions_ratfolk_heavy_cavalry
+	flanking_ability = -0.30
+	strength_damage_done = -0.25
+	movement_speed = -0.40
+	morale_damage_taken = 0.15
+	build_time_modifier = 0.25
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+
+	gfx_tags = { cuirassier_tag heavy_tag }
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+}

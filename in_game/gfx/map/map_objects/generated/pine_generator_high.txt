@@ -1,0 +1,32 @@
+﻿object={
+	name="pine_generator_high_0"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=yes
+	layer="vegetation_high"
+	pdxmesh="vegetation_diorama_arctic_tree_mesh"
+}
+object={
+	name="pine_generator_high_1"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=yes
+	layer="vegetation_high"
+	pdxmesh="vegetation_diorama_arctic_tree2_mesh"
+}
+object={
+	name="pine_generator_high_2"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=yes
+	layer="vegetation_high"
+	pdxmesh="vegetation_diorama_arctic_tree3_mesh"
+}
+object={
+	name="pine_generator_high_3"
+	clamp_to_water_level=no
+	render_under_water=no
+	generated_content=yes
+	layer="vegetation_high"
+	pdxmesh="vegetation_diorama_arctic_tree4_mesh"
+}

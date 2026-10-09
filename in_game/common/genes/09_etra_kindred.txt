@@ -1,0 +1,202 @@
+﻿morph_genes = {
+
+	skin_color_hue = {
+		inheritable = yes
+		
+		human_skin_hue = { 
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+
+		giantsborn_skin_hue = { #blue
+			index = 2
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.32 0.01 0.04 } }
+						{ 1.0   { 0.61 0.02 0.03 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+
+		high_elf_skin_hue = {  #yellow
+			index = 3
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0 	{ 0.075 0.4 0.0 } }
+						{ 1.0   { 0.08 0.4 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		tiefling_red_skin_hue = { 
+			index = 4
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.92 0.0 0.0 } }
+						{ 1.0   { 0.92 0.0 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		tiefling_black_skin_hue = {
+			index = 5
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.0 -2.0 1.0 } }
+						{ 1.0   { 0.0 -2.0 -1.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		tiefling_orange_skin_hue = { 
+			index = 6
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.0 -2.0 1.0 } }
+						{ 1.0   { 0.0 -2.0 -1.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		tiefling_purple_skin_hue = {
+			index = 7
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.6 0.0 0.0 } }
+						{ 1.0   { 0.68 0.0 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+
+		tiefling_pink_skin_hue = {
+			index = 8
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.68 0.0 0.0 } }
+						{ 1.0   { 0.87 0.0 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		erlfolk_skin_hue = { # wood elf
+			index = 9
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0 	{ 0.0 0.0 0.0 } }
+						{ 1.0   { 0.0 0.0 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		dark_skin_hue = { # snow elf (snelf)
+			index = 10
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0 	{ 0.57 0.28 0.0 } }
+						{ 1.0   { 0.57 0.34 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}		
+	}
+	gene_long_ears = {
+		inheritable = yes
+		
+	    default_ear = {
+	        index = 0
+	        male = { }
+	        female = male
+	        boy = male
+			girl = female
+	        adolescent_boy = male
+	        adolescent_girl = female
+	    }
+		longear = {
+			index = 1
+			male = { 
+				setting = { 
+					attribute = "bs_long_ears"	
+					value = { min = 0.5 max = 1.0 }	
+				} 
+			}
+			female = { 
+				setting = { 
+					attribute = "bs_long_ears"	
+					value = { min = 0.5 max = 1.0 }	
+				} 
+			}
+		}
+	}
+	# kindred_features = { 
+		# human_like = {
+			# index = 0
+			# male = {}
+			# female = male
+			# boy = male
+			# girl = male
+		# }
+		# ratfolk_features = {
+			# index = 1
+			# male = {
+				# setting = { 
+					# attribute = "bs_ratman_head"	
+					# value = { min = 0.6 max = 1.0 }	
+				# }
+				# texture_override = {
+					# weight = 100000  #if there are multiple texture_overrides in a character's dna one will be picked by weighted random
+					# diffuse = 		"gfx/models/portraits/decals/male_head/ratfolk/ratfolk_head_base_diffuse.dds"
+				# #	normal = 		"gfx/models/portraits/decals/male_head/ratfolk/ratfolk_head_base_normal.dds"
+					# #specular = 	"gfx/models/portraits/decals/male_head/ratfolk/ratfolk_head_base_properties.dds"
+				# }
+			# }
+
+			# female = male
+			# boy = male
+			# girl = female
+		# }
+	# }
+	#kindred_eyes = { #Located in 02_genes_accessories_misc
+}
+
+

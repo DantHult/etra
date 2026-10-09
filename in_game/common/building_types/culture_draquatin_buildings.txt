@@ -1,0 +1,92 @@
+﻿draquatin_gardens = {
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	employment_size = cultural_employment
+	category = cultural_category
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = large_cultural_building_time
+	
+	location_potential = {
+		dominant_culture = culture:draquatin_culture
+	}
+	
+	country_potential = {
+		has_advance = draquatin_gardening
+	}
+
+	icon = eng_royal_forest
+	
+	modifier = {
+		local_cultural_tradition = 1.0
+		local_unrest = -0.05
+	}
+
+	unique_production_methods = {
+		draquatin_gardens_upkeep = {
+			saltpeter = 1.0
+			stone = 0.1
+			lumber = 0.2
+			glass = 0.4
+			category = building_maintenance
+		}
+	}
+	construction_demand = minting_office_construction
+}
+
+draquatin_moon_fall_shipyards = {
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = 1
+	employment_size = shipyard_employment
+	
+	category = military_category
+	
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	
+	build_time = large_port_building_time
+
+	
+	location_potential = {
+		is_port = yes
+		OR = {
+			dominant_culture = culture:draquatin_culture
+			region = region:ardraine_region
+			area = area:east_sordren_area
+		}
+	}
+
+	country_potential = {
+		has_advance = draquatin_moon_ports
+	}
+	
+	icon = north_sea_shipyards
+		
+	modifier = {
+		max_ships_built_at_same_time = 1
+		local_sailors = 0.07
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.01
+	}
+	
+	unique_production_methods = {
+		draquatin_moon_fall_shipyards_upkeep = {
+			tar = 0.4
+			naval_supplies = 0.8
+			tools = 0.2
+			lumber = 1.0
+			category = building_maintenance
+		}
+	}
+	construction_demand = port_building_construction
+}

@@ -1,0 +1,218 @@
+﻿############################
+# age_1_traditions
+############################
+eternalist_mere_mortal_men = {
+	age = age_1_traditions
+	icon = renaissance_development
+
+	potential = {
+		religion = religion:manyfold
+	}
+	
+	global_devastation_recovery = 0.005
+	
+	requires = organized_religion
+}
+
+eternalist_warrior_priest = {
+	age = age_1_traditions
+	icon = feudalism_advance
+	
+	potential = {
+		religion = religion:manyfold
+	}
+	
+	monthly_army_tradition = 0.05
+	
+	requires = organized_religion
+}
+
+eternalist_inquistion = {
+	age = age_1_traditions
+	icon = ori_bulwark_of_the_hindu
+	
+	potential = {
+		religion = religion:manyfold
+	}
+	
+	stability_investment = small_stability_investment
+	
+	requires = eternalist_warrior_priest
+}
+
+
+
+eternalist_esus = {
+	age = age_1_traditions
+	icon = efficient_spies
+	potential = {
+		religion = religion:manyfold
+	}
+	spy_network_construction = 0.1
+	requires = scholasticism
+}
+
+############################
+# age_2_renaissance
+############################
+eternalist_sacred_canon = {
+	age = age_2_renaissance
+	icon = scholasticism
+	potential = {
+		religion = religion:manyfold
+	}
+	research_speed_modifier = 0.05
+	requires = patron_of_art
+}
+
+eternalist_pilgrim_roads = {
+	age = age_2_renaissance
+	icon = trade_caravans
+	potential = {
+		religion = religion:manyfold
+	}
+	global_merchant_capacity_modifier = 0.1
+	requires = renaissance_city_rights
+}
+
+eternalist_temple_schools = {
+	age = age_2_renaissance
+	icon = patron_of_art
+	potential = {
+		religion = religion:manyfold
+	}
+	global_clergy_max_literacy = 10
+	requires = eternalist_sacred_canon
+}
+
+############################
+# age_3_discovery
+############################
+eternalist_missionary_zeal = {
+	age = age_3_discovery
+	icon = printing_press_advance
+	potential = {
+		religion = religion:manyfold
+	}
+	global_institution_growth_modifier = 0.1
+	requires = faceting
+}
+
+eternalist_embrace_of_truth = {
+	age = age_2_renaissance
+	icon = abacus_advance
+	potential = {
+		religion = religion:manyfold
+	}
+	embrace_institution_cost_modifier = -0.1
+	requires = eternalist_sacred_canon
+}
+
+eternalist_cultural_legacy = {
+	age = age_3_discovery
+	icon = renaissance_advance
+	potential = {
+		religion = religion:manyfold
+	}
+	cultural_influence_modifier = 0.1
+	requires = blend_of_influences
+}
+
+############################
+# age_4_reformation
+############################
+eternalist_orthodox_edicts = {
+	age = age_3_discovery
+	icon = laws
+	potential = {
+		religion = religion:manyfold
+	}
+	change_policy_cost_modifier = -0.1
+	requires = regulate_court_procedures
+}
+
+eternalist_five_precepts = {
+	age = age_4_reformation
+	icon = smooth_administration
+	potential = {
+		religion = religion:manyfold
+	}
+	monthly_rebel_growth = -0.0005
+	requires = confessional_court
+}
+
+eternalist_confessional_faith = {
+	age = age_4_reformation
+	icon = court_accounting
+	potential = {
+		religion = religion:manyfold
+	}
+	clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+	requires = spy_construction_reformation
+}
+
+############################
+# age_5_absolutism
+############################
+eternalist_communities_of_faith = {
+	age = age_5_absolutism
+	icon = a_central_power
+	potential = {
+		religion = religion:manyfold
+	}
+	monthly_prestige = 0.1
+	requires = absolutist_court
+}
+
+eternalist_sacred_offerings = {
+	age = age_5_absolutism
+	icon = golden_fleece
+	potential = {
+		religion = religion:manyfold
+	}
+	clergy_estate_satisfaction_recovery = 0.001
+	requires = eternalist_communities_of_faith
+}
+
+eternalist_glory_of_the_all_being = {
+	age = age_5_absolutism
+	icon = estates_general
+	potential = {
+		religion = religion:manyfold
+	}
+	global_estate_target_satisfaction = small_permanent_target_satisfaction
+	requires = eternalist_sacred_offerings
+}
+
+############################
+# age_6_revolutions
+############################
+eternalist_endurance_of_the_faithful = {
+	age = age_6_revolutions
+	icon = regimental_system
+	potential = {
+		religion = religion:manyfold
+	}
+	monthly_war_exhaustion = -0.05
+	requires = separation_of_powers
+}
+
+eternalist_resistance_to_persecution = {
+	age = age_6_revolutions
+	icon = cultural_acceptance_advance
+	potential = {
+		religion = religion:manyfold
+	}
+	global_pop_conversion_speed_modifier = 0.1
+	requires = eternalist_endurance_of_the_faithful
+}
+
+eternalist_meditation_on_eternity = {
+	age = age_6_revolutions
+	icon = enlightenment_advance
+	potential = {
+		religion = religion:manyfold
+	}
+	cultural_influence_modifier = 0.1
+	requires = eternalist_endurance_of_the_faithful
+}

@@ -1,0 +1,80 @@
+﻿namespace = undead_events
+undead_events.1	= { 						#Undead have centuries of knowledge they will be willing to pass on
+ 	type = country_event 				 	# type of event 
+ 	title = undead_events.1.title 			# title key to be localized
+ 	desc = undead_events.1.desc 			# description key to be localized 
+	
+	trigger = {
+		NOT = { culture = { has_culture_group = culture_group:undead_group } }
+	}
+	
+	immediate = {
+		event_illustration_government_estate_effect = yes
+	}
+
+	option = {
+		name = undead_events.1.a
+		ruler ?= {
+			add_character_modifier = {
+				mode = add_and_extend
+				modifier = undead_tutor
+				years = 10
+			}
+		}
+		add_all_estate_satisfaction = { value = estate_satisfaction_mild_penalty } 
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_left }
+	}
+	option = {
+		name = undead_events.1.b
+		add_prestige = 5
+		add_all_estate_satisfaction = { value = 0.05 } 
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_right }
+	}
+	
+}
+
+undead_events.2 = {
+	type = country_event
+	title = undead_events.2.title
+	desc = undead_events.2.desc
+	trigger = {
+		NOT = { culture = { has_culture_group = culture_group:undead_group } }
+		any_owned_location = {
+			has_undead = yes
+			is_capital = no
+		}
+	}
+	illustration_tags = { 10 = regular  10 = interior }
+	immediate = {
+		event_illustration_government_estate_effect = yes
+		random_owned_location = {
+			limit = { has_undead = yes  is_capital = no }
+			save_scope_as = racial_pop_location_target
+		}
+	}
+	option = { name = racial_petitioners_events.undead_1.a  ai_chance = { factor = 50 }
+		add_government_power = government_power_severe_penalty
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_left }
+		if = { limit = { exists = scope:racial_pop_location_target }
+			scope:racial_pop_location_target = { change_control = control_severe_penalty }
+		}
+	}
+	option = { name = racial_petitioners_events.undead_1.b  ai_chance = { factor = 50 }
+		add_government_power = government_power_mild_penalty
+		if = { limit = { exists = scope:racial_pop_location_target }
+			scope:racial_pop_location_target = { change_control = control_mild_penalty }
+		}
+	}
+	option = { name = racial_petitioners_events.undead_1.c  ai_chance = { factor = 50 }
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_right }
+	}
+	option = { name = racial_petitioners_events.undead_1.e
+		trigger = { ruler_or_regent = { has_personality = charismatic_negotiator_personality } }
+		highlight = yes  ai_chance = { factor = 25 }
+		add_government_power = government_power_weak_penalty
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_left }
+		if = { limit = { exists = scope:racial_pop_location_target }
+			scope:racial_pop_location_target = { change_control = control_weak_penalty }
+		}
+	}
+}

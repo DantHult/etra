@@ -1,0 +1,34 @@
+﻿cb_verminus_succession = {
+
+	create_visible = {
+		is_member_of_international_organization = international_organization:verminus_realms
+		is_situation_active = situation:verminus_wars
+	}
+	declare_enabled = {
+		is_member_of_international_organization = international_organization:verminus_realms
+		is_situation_active = situation:verminus_wars
+	}
+	create_enabled = {
+		is_member_of_international_organization = international_organization:verminus_realms
+		is_situation_active = situation:verminus_wars
+		scope:target = {
+			is_member_of_international_organization = international_organization:verminus_realms
+			this != root
+		}
+	}
+
+	speed = 10
+
+	war_goal_type = verminus_succession_wargoal
+}
+
+cb_verminus_subjugate = {
+	create_visible = {
+		always = no
+	}
+
+	ai_subjugation_desire = 1000
+	ai_cede_location_desire = -1000
+
+	war_goal_type = take_capital_subjugation
+}

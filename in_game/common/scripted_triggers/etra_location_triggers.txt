@@ -1,0 +1,68 @@
+﻿has_humans = {
+	OR = {
+		has_location_modifier  = human_majority
+		has_location_modifier  = human_large_minority
+		has_location_modifier  = human_minority
+	}
+}
+
+has_elves = {
+	OR = {
+		has_location_modifier = elven_majority
+		has_location_modifier = elven_large_minority
+		has_location_modifier = elven_minority
+
+	}
+}
+
+has_vermen = {
+	OR = {
+		has_location_modifier = ratfolk_majority
+		has_location_modifier = ratfolk_large_minority
+		has_location_modifier = ratfolk_minority
+	}
+}
+
+has_tieflings = {
+	OR = {
+		has_location_modifier = tiefling_majority
+		has_location_modifier = tiefling_large_minority
+		has_location_modifier = tiefling_minority
+	}
+}
+
+has_giantsborn = {
+	OR = {
+		has_location_modifier = giantsborn_majority
+		has_location_modifier = giantsborn_large_minority
+		has_location_modifier = giantsborn_minority
+	}
+}
+
+
+has_aasimar = {
+	OR = {
+		has_location_modifier = aasimar_majority
+		has_location_modifier = aasimar_large_minority
+		has_location_modifier = aasimar_minority
+	}
+}
+
+has_beastfolk = {
+	OR = {
+		has_location_modifier = beastfolk_majority
+		has_location_modifier = beastfolk_large_minority
+		has_location_modifier = beastfolk_minority
+	}
+}
+
+
+
+
+has_undead = {
+	OR = {
+		has_location_modifier = undead_majority
+		has_location_modifier = undead_large_minority
+		has_location_modifier = undead_minority
+	}
+}

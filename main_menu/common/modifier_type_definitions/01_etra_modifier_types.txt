@@ -1,0 +1,32 @@
+﻿monthly_towards_xenophile={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}
+
+monthly_towards_xenophobe={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}
+
+num_of_ynarheimian_units={
+	decimals=0
+	game_data={
+		category=country
+	}
+}
+
+caverns_proximity_impact = {
+	percent=yes
+	color = bad
+	game_data={
+		category=country
+	}
+}

@@ -1,0 +1,55 @@
+﻿imperial_creeds = { 
+	color = map_guasave
+	group = adunan
+	language = moran_language
+	
+	definition_modifier = {
+		monthly_religious_influence = 0.1
+		global_clergy_max_literacy = 25
+		
+		can_have_monasteries = yes
+		maximum_religious_influence = 200
+
+	}
+	
+	opinions = {
+
+	}
+	
+	tags = { hellenism_gfx folk_european_gfx pagan_gfx }
+}
+
+manyfold = { 
+	color = religion_zoroastrian
+	group = adunan
+	language = moran_language
+	
+	
+	definition_modifier = {
+		stability_cost_efficiency = 0.1
+		global_max_literacy = 5
+		can_have_monasteries = yes
+
+	}
+	opinions = {
+
+	}
+	
+	tags = { catholic_gfx western_christian_gfx christian_gfx abrahamic_gfx }
+}
+
+tajjev_rites = { 
+	color = religion_manichaeism
+	group = adunan
+	
+	
+	
+	definition_modifier = {
+		land_morale_modifier = 0.05
+		stability_investment = small_stability_investment
+		global_pop_conversion_speed_modifier = 0.1
+		tolerance_heretic = -2
+	}
+	tags = { muslim_gfx abrahamic_gfx }
+}
+

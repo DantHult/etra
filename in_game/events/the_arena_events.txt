@@ -1,0 +1,164 @@
+﻿namespace = arena_events
+
+arena_events.1 = { #The Games Begin
+	hide_portraits = yes
+	type = country_event
+	title = arena_events.1.title
+	desc = arena_events.1.desc
+	fire_only_once = no
+
+	illustration_tags = {
+        10 = regular
+        10 = interior
+    }
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		location:eternalcity1 = { save_scope_as = target_location }
+		ruler_or_ruler ?= { save_scope_as = target_character }
+		add_cooldown = {
+			type = arena_games_cooldown
+			years = 25
+		}
+	}
+
+	option = { #vetern fighter, high chance, weak reward
+		name = arena_events.1.a
+		add_gold = {
+			value = root.monthly_income_trade_and_tax
+			multiply = -1
+		}
+		hidden_effect = {
+			location:eternalcity1 = {
+					set_local_variable = veteran_fighter
+				}
+			random_list = {
+				70 = {
+					trigger_event_silently = {
+						id = arena_events.2 #winning
+					}
+				}
+				30 = {
+					trigger_event_silently = {
+						id = arena_events.3 #losing
+					}
+				
+				}
+			}
+		}
+	}
+	option = { #vetern fighter, low chance, higher reward
+		name = arena_events.1.b
+
+		add_gold = {
+			value = root.monthly_income_trade_and_tax
+			multiply = -1
+		}
+		hidden_effect = {
+			location:eternalcity1 = {
+				set_local_variable = young_fighter
+			}
+			random_list = {
+				30 = {
+					trigger_event_silently = {
+						id = arena_events.2 #winning
+				}
+				}
+				70 = {
+					trigger_event_silently = {
+						id = arena_events.3 #losing
+					}
+				
+				}
+			}
+		}
+	}
+
+	 option = { #I will Fight Personally!
+		name = arena_events.1.d
+
+		add_prestige = prestige_weak_penalty
+		hidden_effect = {
+			 random_list = {
+				100 = { trigger_event_silently = arena_events.4 }
+				100 = { trigger_event_silently = arena_events.5 }
+			 }
+		}
+	 }
+
+	option = { #nah
+		name = arena_events.1.c
+		add_prestige = prestige_weak_penalty
+	}
+	
+}
+
+
+
+arena_events.2 = { #Winning
+	hide_portraits = yes
+	type = country_event
+	title = arena_events.2.title
+	desc = arena_events.2.desc
+	
+	option = { #results
+		name = arena_events.2.a
+		if = { 
+			limit = { location:eternalcity1 = { has_local_variable = veteran_fighter } } 
+			add_gold = {
+				value = root.monthly_income_trade_and_tax
+				multiply = 1.5
+			}	
+		}
+		else_if = { 
+			limit = { location:eternalcity1 = { has_local_variable = young_fighter } }
+			add_gold = {
+				value = root.monthly_income_trade_and_tax
+				multiply = 3
+			}	
+		}
+		add_army_tradition = army_tradition_weak_bonus
+	}
+	
+}
+
+arena_events.3 = { #Losing
+	hide_portraits = yes
+	type = country_event
+	title = arena_events.3.title
+	desc = arena_events.3.desc
+	
+	option = { #results
+		name = arena_events.3.a
+		add_prestige = prestige_weak_penalty
+		add_army_tradition = army_tradition_weak_bonus
+	}
+}
+
+arena_events.4 = { #ruler Winning
+	hide_portraits = yes
+	type = country_event
+	title = arena_events.4.title
+	desc = arena_events.4.desc
+	
+	option = { #Victory!
+		name = arena_events.4.a
+			add_legitimacy = legitimacy_weak_bonus
+			add_prestige = prestige_mild_bonus
+	}
+	
+}
+
+arena_events.5 = { #ruler Losing
+	hide_portraits = yes
+	type = country_event
+	title = arena_events.5.title
+	desc = arena_events.5.desc
+	
+	option = { #How embrassing....
+		name = arena_events.5.a
+			add_legitimacy = legitimacy_weak_penalty
+			add_prestige = prestige_mild_penalty
+	}
+}
+

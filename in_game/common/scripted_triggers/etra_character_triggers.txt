@@ -1,0 +1,57 @@
+﻿character_is_undead = {
+	culture = { has_culture_group = culture_group:undead_group }
+}
+
+etra_has_racial_trait = {
+	has_character_modifier = $trait$
+}
+
+etra_has_any_racial_trait = {
+	OR = {
+		has_character_modifier = is_undead_modifier
+		has_character_modifier = is_elven_modifier
+		has_character_modifier = is_human_modifier
+		has_character_modifier = is_ratfolk_modifier
+		has_character_modifier = is_giantsborn_modifier
+		has_character_modifier = is_tiefling_modifier
+		has_character_modifier = is_aasimar_modifier
+		has_character_modifier = is_beastfolk_modifier
+		has_character_modifier = is_pigmen_modifier
+		has_character_modifier = is_lupusfolk_modifier
+		has_character_modifier = is_catfolk_modifier
+		has_character_modifier = is_dragon_modifier
+		has_character_modifier = giant_of_borili_modifier
+	}
+}
+
+character_is_etra_kindred = {
+	culture = {
+		OR = {
+			has_culture_group = culture_group:undead_group
+			has_culture_group = culture_group:human_group
+			has_culture_group = culture_group:ratfolk_group
+			has_culture_group = culture_group:elven_group
+			has_culture_group = culture_group:giantsborn_group
+			has_culture_group = culture_group:tiefling_group
+			has_culture_group = culture_group:aasimar_group
+			has_culture_group = culture_group:beastfolk_group
+			has_culture_group = culture_group:pigmen_group
+			has_culture_group = culture_group:lupusfolk_group
+			has_culture_group = culture_group:catfolk_group
+		}
+	}
+}
+
+junilarian_subject_to_term_limit = {
+	ruler_or_heir_if_regent ?= {
+		OR = {
+			is_immortal = yes
+			etra_has_racial_trait = { trait = is_elven_modifier }
+			etra_has_racial_trait = { trait = is_undead_modifier }
+			etra_has_racial_trait = { trait = is_dragon_modifier }
+			etra_has_racial_trait = { trait = giant_of_borili_modifier }
+			etra_has_racial_trait = { trait = is_giantsborn_modifier }
+			modifier:character_life_expectancy >= 100
+		}
+	}
+}

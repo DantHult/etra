@@ -1,0 +1,105 @@
+﻿l_english:
+ flavor_cyrewin.1.title: "Civil Strife in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_cyrewin.1.desc: "The great trading houses and sworn houses of [ROOT.GetCountry.GetName] have never sung from the same hymn. Deadlocks in the Ring Moot, jealous clerks, and captains who answer to coin before charter all sap the authority of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. If the estates turn openly on one another, the republic may bleed out before any foreign power strikes a blow."
+ flavor_cyrewin.1.a: "Back the merchant interest."
+ flavor_cyrewin.1.b: "Back the noble interest."
+
+ flavor_cyrewin.10.title: "Niebur's Peace"
+ flavor_cyrewin.10.desc: "The relationship with the [GetCountry('HSA').GetLongName] has traditionally been tense, as competition on northern routes is treated as a zero-sum game between our merchants and theirs. Yet some of their leading voicesâ€”among them the mayor of [ShowLocationName('lubeck')], Johann Nieburâ€”argue for a compact of mutual recognition. They would kiss the cross, we would open our books a finger's width, and both entrepÃ´ts might profit."
+ flavor_cyrewin.10.a: "We shall kiss the cross to confirm the deal!"
+ flavor_cyrewin.10.b: "It is more in our interest to embargo them!"
+
+ flavor_cyrewin.12.title: "A Greater Temple at [ShowLocationNameWithNoTooltip('etra370')]"
+ flavor_cyrewin.12.desc: "The clergy of [ShowLocationName('etra370')] tend a venerated icon and a growing congregation. Their old chapel groans at the seams during high feast; processions spill into the market lanes. They ask the Moot for stone, timber, and a proper dome so the sacred image need not share wall space with warehouse dust."
+ flavor_cyrewin.12.a: "Fund the new temple."
+ flavor_cyrewin.12.b: "The old building still stands."
+
+ flavor_cyrewin.33.title: "Reform of the Magistrate Offices"
+ flavor_cyrewin.33.desc: "The chief magistrates of [ShowLocationName('etra370')] wield more patronage than any one charter was meant to allow. Voices in the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] demand the office be splitâ€”several elected magistrates, term-bound, watching one anotherâ€”so no single house cages the Moot."
+ flavor_cyrewin.33.a: "Expand the offices."
+ flavor_cyrewin.33.b: "Leave well enough alone."
+
+ flavor_cyrewin.34.title: "The Council of Lords"
+ flavor_cyrewin.34.desc: "The great houses of [ShowLocationName('etra370')] would meet behind closed doors while the Ring Moot argues in the hall. They call it good order; the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] call it a coup in damask. A formal 'Council of Lords' would crown their influenceâ€”strong rule, perhaps, but not the old open quarrel of the Moot."
+ flavor_cyrewin.34.a: "Let the Council of Lords govern."
+ flavor_cyrewin.34.b: "Do not let them swallow the Moot."
+
+ flavor_cyrewin.36.title: "The [ShowPolicyNameWithNoTooltip('novgorod_judicial_charter_policy')]"
+ flavor_cyrewin.36.desc: "The [ShowPolicyName('russkaya_pravda_policy')] has served since the ledger was small. As contracts cross seas and the Moot invents new offenses daily, scribes beg for a codex that fits [ROOT.GetCountry.GetName]â€”a judicial charter that binds bench and burgher alike without waiting for precedent from abroad."
+ flavor_cyrewin.36.a: "Implement [ShowPolicyNameWithNoTooltip('novgorod_judicial_charter_policy')]."
+ flavor_cyrewin.36.b: "The old legal code works well enough."
+
+ flavor_cyrewin.100.title: "[ShowEstatePrivilegeNameWithNoTooltip('cyrewin_chartered_factors')] and the Moot"
+ flavor_cyrewin.100.desc: "[ROOT.GetCountry.GetName] runs on ink, wax, and rumor. The [ShowEstatePrivilegeName('cyrewin_chartered_factors')] are first among the combines: they hold tables at the commerce bench and speak in the Moot as of right. Lately their syndics have pressed [our_ruler.GetName] for open backing, especially on [ShowGoodsName('beeswax')] runs. [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] whisper that another grant will make merchants king in all but name."
+ flavor_cyrewin.100.a: "Give them the Moot's blessing."
+ flavor_cyrewin.100.b: "Isolate the combine."
+ empower_cyrewin_factors_privilege: "The [ShowEstatePrivilegeName('cyrewin_chartered_factors')] will gain the following for 25 years:\n#R -5.00%#! [ShowModifierTypeName('global_crown_estate_power')] and #G +20.00%#! [ShowModifierTypeName('global_merchant_capacity_modifier')]"
+
+ flavor_cyrewin.101.title: "Monopoly on [ShowGoodsNameWithNoTooltip('beeswax')]?"
+ flavor_cyrewin.101.desc: "Emboldened after the Moot's favor, the [ShowEstatePrivilegeName('cyrewin_chartered_factors')] ask for a sealed monopoly on [ShowGoodsName('beeswax')] flowing through [ShowLocationName('etra370')]. They swear it will steady prices and fill the treasury; their rivals swear it will empty every smaller trader's purse."
+ flavor_cyrewin.101.a: "Grant the monopoly."
+ flavor_cyrewin.101.b: "Refuse them."
+ cyrewin_factors_beeswax_increase: "The [ShowEstatePrivilegeName('cyrewin_chartered_factors')] will gain the following for 25 years:\n#G +10.00%#! [ShowModifierTypeName('export_efficiency')] and #G +25.00%#! [ShowModifierTypeName('global_beeswax_output_modifier')]"
+
+ flavor_cyrewin.104.title: "Letters of Marque for the River Wolves"
+ flavor_cyrewin.104.desc: "For generations, river- and coast-raiders have taken purses from our enemies when a noble's purse backed them. Now the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] want the Moot's seal on the practiceâ€”proper letters, proper sharesâ€”so any rival caravan or convoy can be made to bleed without shame."
+ flavor_cyrewin.104.a: "Fund them from the public chest."
+ flavor_cyrewin.104.b: "We will not license wolves."
+
+ flavor_cyrewin.105.title: "Abolish the Licensed Raiders"
+ flavor_cyrewin.105.desc: "The river wolves have overfed. Neighbors who were merely annoyed now send envoys and ultimatums; even allies complain of 'accidental' seizures. A faction in the Moot demands we tear up the letters and hang the worst offenders as a courtesy to the peace."
+ flavor_cyrewin.105.a: "Dissolve the compact."
+ flavor_cyrewin.105.b: "They still serve us."
+ ushkuiniks_greatly_weakened_cyrewin_tt: "While [ShowAdvanceName('ushkuiniks')] will lose formal backing from [ROOT.GetCountry.GetName], scattered bands may linger along the trade routes."
+
+ flavor_cyrewin.106.title: "Tripling the Magistracy"
+ flavor_cyrewin.106.desc: "The late [target_character.GetName] split the chief magistracy; for some [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] that was only the first cut. They demand a third chairâ€”a 'stepped' magistrateâ€”to widen patronage and break deadlocks. [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] speakers mutter that every new seat becomes another hereditary fief."
+ flavor_cyrewin.106.a: "Add the third office."
+ flavor_cyrewin.106.b: "Hold to the earlier reform."
+
+ flavor_cyrewin.107.title: "Magistrates in the Same Blood"
+ flavor_cyrewin.107.desc: "Election was supposed to tame the magistracy; instead the same four surnames trade the rods between cousins. Burghers and commons demand a purge of the excess offices; the great houses warn of riot if their posts are touched."
+ flavor_cyrewin.107.a: "Let the houses keep their seats."
+ flavor_cyrewin.107.b: "Strip some offices; open the bench."
+
+ flavor_cyrewin.108.title: "End the Magistrate College"
+ flavor_cyrewin.108.desc: "The magistrate college has become a ledger for bribes and a ladder for nephews. With stability high and no foreign war, [our_ruler.GetName] asks the Moot to abolish the expanded offices outright and return charter justice to simpler formsâ€”even if the sworn houses howl."
+ flavor_cyrewin.108.a: "Abolish the bloated college."
+ flavor_cyrewin.108.b: "Retain the magistrates."
+
+ flavor_cyrewin.109.title: "An Old Shieldmarshal's Shadow"
+ flavor_cyrewin.109.desc: "The [ShowEstatePrivilegeName('cyrewin_shieldmarshal_charter')] was meant to rotate: captains-elect, short terms, answerable to the Moot. In practice the same families hold the baton, and retired shieldmarshals still pick their successors. Some call them the 'old marshals'â€”a second nobility in chain mail."
+ flavor_cyrewin.109.a: "Use their clout while it lasts."
+ flavor_cyrewin.109.b: "Cut their political weight."
+ cyrewin_shieldmarshal_influential_benefits: "The [ShowEstatePrivilegeName('cyrewin_shieldmarshal_charter')] will gain the following for 30 years:\n#G +25.00%#! [ShowModifierTypeName('global_nobles_estate_power')] and #G +15.00%#! [ShowModifierTypeName('army_heavy_infantry_power')]"
+ cyrewin_shieldmarshal_followup_tt: "The shieldmarshals may later demand a heavier tithe from the [ShowEstatePrivilegeName('cyrewin_chartered_factors')]."
+ cyrewin_shieldmarshal_weakened_benefits: "The [ShowEstatePrivilegeName('cyrewin_shieldmarshal_charter')] will gain the following for 30 years:\n#R -25.00%#! [ShowModifierTypeName('global_nobles_estate_power')] and #G +0.10#! [ShowModifierTypeName('stability_investment')]"
+
+ flavor_cyrewin.110.title: "Shieldmarshal Tithe on the Factors"
+ flavor_cyrewin.110.desc: "The current shieldmarshal claims the [ShowEstatePrivilegeName('cyrewin_chartered_factors')] pay court fees to the letter but not to him. He wants a fixed slice of their bench dues redirected to the marshalcy. The syndics call it theft; his captains call it order."
+ flavor_cyrewin.110.a: "Grant the tithe."
+ flavor_cyrewin.110.b: "Refuse."
+
+ flavor_cyrewin.111.title: "The Periphery and the Moot"
+ flavor_cyrewin.111.desc: "[ShowLocationName('etra370')] is the heart of the charter, but outlying towns still bargain as if they were leagues away. [our_ruler.GetName] asks whether to drag them under a tighter ring-law or let them buy quiet with autonomy."
+ flavor_cyrewin.111.a: "Tighten central influence."
+ flavor_cyrewin.111.b: "Let the hinterland govern itself."
+
+ flavor_cyrewin.112.title: "Minting the Ring Mark"
+ flavor_cyrewin.112.desc: "Traders have always juggled foreign coin. [our_ruler.GetName] proposes a minted 'ring mark'â€”our stamp, our alloyâ€”so debts in the Moot need not be translated through a dozen currencies. Skeptics warn merchants will miss the old flexibility."
+ flavor_cyrewin.112.a: "Strike the ring mark."
+ flavor_cyrewin.112.b: "Keep foreign coin in circulation."
+
+ flavor_cyrewin.113.title: "Firearms on the Quays"
+ flavor_cyrewin.113.desc: "Whispers of tube-and-powder weapons have reached [ShowLocationName('etra370')] before; now crates arrive with invoices. [our_ruler.GetName] can pay smiths to study them, or spend the silver on safer, older priorities."
+ flavor_cyrewin.113.a: "Master the new weapons."
+ flavor_cyrewin.113.b: "Focus on trade, not powder."
+
+ flavor_cyrewin.114.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Grip on [ShowGoodsNameWithNoTooltip('beeswax')] and [ShowGoodsNameWithNoTooltip('fur')]"
+ flavor_cyrewin.114.desc: "Our warehouses already move great lots of [ShowGoodsName('beeswax')] and [ShowGoodsName('fur')]. Formal privilege would lock in the marginâ€”angering competitors, pleasing the combines who underwrite the Moot."
+ flavor_cyrewin.114.a: "Codify the monopoly."
+
+ cyrewin_factors_strengthened_requirement: "The following bonus can be gained from the $flavor_cyrewin.100.title$ [dynamic_historical_event|e]:"
+ cyrewin_factors_beeswax_requirement: "The following bonus can be gained from the $flavor_cyrewin.101.title$ [dynamic_historical_event|e]:"
+ cyrewin_shieldmarshal_influential_requirement: "The following bonus can be gained from the $flavor_cyrewin.109.title$ [dynamic_historical_event|e]:"
+ cyrewin_shieldmarshal_weakened_requirement: "The following bonus can be gained from the $flavor_cyrewin.109.title$ [dynamic_historical_event|e]:"

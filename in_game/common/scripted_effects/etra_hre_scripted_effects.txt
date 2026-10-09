@@ -1,0 +1,34 @@
+﻿etra_schedule_commonweal_pulse_once = {
+	if = {
+		limit = {
+			exists = international_organization:hre
+			NOT = { has_global_variable = etra_commonweal_pulse_fired }
+			NOT = { has_global_variable = etra_commonweal_pulse_scheduled }
+		}
+		set_global_variable = etra_commonweal_pulse_scheduled
+		international_organization:hre.leader_country ?= {
+			trigger_event_silently = { id = etra_hre.0 years = { 1 5 } }
+		}
+	}
+}
+
+etra_reassign_commonweal_pulse_scheduler = {
+	if = {
+		limit = {
+			exists = international_organization:hre
+			is_leader_of_international_organization = international_organization:hre
+			has_global_variable = etra_commonweal_pulse_scheduled
+			NOT = { has_global_variable = etra_commonweal_pulse_fired }
+		}
+		trigger_event_silently = { id = etra_hre.0 years = { 1 5 } }
+	}
+}
+
+etra_broadcast_commonweal_pulse_to_human_members = {
+	international_organization:hre ?= {
+		every_international_organization_member = {
+			limit = { is_human = yes }
+			trigger_event_non_silently = etra_hre.1
+		}
+	}
+}

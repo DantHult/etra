@@ -1,0 +1,14 @@
+locations = {
+	etra766 = {
+		timed_modifiers = {
+			timed_modifiers = {
+				{
+					modifier = "giants_of_borili"
+					start_date = 1111.1.1
+					date = 9999.1.1
+					size = 1
+				}
+			}
+		}
+	}
+}

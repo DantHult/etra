@@ -1,0 +1,33 @@
+﻿hormisetr_serpants_bay = {
+	game_data = {
+		category = location
+	}
+	local_population_growth = 0.0002
+}
+
+bourfort_widow_of_the_empire = {
+	game_data = {
+		category = location
+	}
+	local_monthly_food_modifier = 0.05
+	local_disease_resistance = 0.10
+	local_unrest = -0.025
+}
+
+bourfort_grannery_of_the_empire = {
+	game_data = {
+		category = location
+	}
+	local_food_capacity = 2000
+	local_monthly_food_modifier = 0.20
+}
+
+giants_of_borili = {
+	game_data = {
+		category = location
+	}
+	local_pop_assimilation_speed_modifier = -2
+	local_pop_conversion_speed_modifier = -2
+	local_population_growth = 0.0025
+	local_max_rgo_size = 5
+}

@@ -1,0 +1,101 @@
+﻿# ############################
+# # age_1_traditions
+# ############################
+sordrenic_sailors = {
+	age = age_1_traditions
+	icon = ship_building_advance
+	potential = {
+		OR = {
+			culture = culture:salt_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	global_sailors_modifier = 0.1
+
+	requires = legalism_advance
+}
+
+# ############################
+# # age_2_renaissance
+# ############################
+
+sordrenic_trade_power = {
+	age = age_2_renaissance
+	icon = a_central_power
+	potential = {
+		OR = {
+			culture = culture:salt_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	export_efficiency = small_trade_efficiency_bonus
+	merchant_maintenance_efficiency  = -0.1
+
+	requires = merchants_and_trade
+}
+
+
+# ############################
+# # age_3_discovery
+# ############################
+sordrenic_new_world = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			culture = culture:salt_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+
+	colonial_migration_size_modifier = 0.25
+	colonial_range_modifier = 0.25
+
+	requires = open_sea_exploration
+}
+
+# ############################
+# # age_4_reformation
+# ############################
+sordrenic_marine_infantry = {
+	age = age_4_reformation
+	potential = {
+		OR = {
+			culture = culture:salt_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	army_disembark_speed = 0.25
+	naval_morale_modifier = 0.10
+
+	requires = mercenaries_reformation_advance
+}
+
+# ############################
+# # age_5_absolutism
+# ############################
+sordrenic_colonial_governors = {
+	age = age_5_absolutism
+	potential = {
+		OR = {
+			culture = culture:salt_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	subject_loyalty = 5
+	
+	requires = maritime_advance_age_5
+}
+
+# ############################
+# # age_6_revolutions
+# ############################
+sordrenic_ambition = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			culture = culture:salt_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	blockade_efficiency = 0.40
+}

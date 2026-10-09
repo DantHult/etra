@@ -1,0 +1,661 @@
+﻿namespace = flavor_A325
+
+# 1. The empty tomb
+flavor_A325.1 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.1.title
+	desc = flavor_A325.1.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 12
+	}
+
+	trigger = {
+		tag = A325
+		owns = location:etra304
+		at_war = no
+		is_during_bankruptcy = no
+		exists = c:A331
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:clergy_estate }
+		location:etra66 = { save_scope_as = target_location }
+		c:A331 = { save_scope_as = target_country }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.1.a
+		historical_option = yes
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_weak_penalty
+	}
+
+	option = {
+		name = flavor_A325.1.b
+		add_prestige = prestige_weak_bonus
+	}
+}
+
+# 2. The cortege in the dark
+flavor_A325.2 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.2.title
+	desc = flavor_A325.2.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.6.1
+		to = 9999.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		tag = A325
+		exists = c:A331
+		at_war = no
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:A331 = { save_scope_as = target_country }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.2.a
+		historical_option = yes
+		add_casus_belli = {
+			target = scope:target_country
+			type = casus_belli:cb_a325_stolen_cortege
+		}
+		add_prestige = prestige_weak_bonus
+	}
+
+	option = {
+		name = flavor_A325.2.b
+		add_legitimacy = legitimacy_mild_penalty
+	}
+}
+
+# 3. A Hyriosian snub
+flavor_A325.3 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.3.title
+	desc = flavor_A325.3.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		tag = A325
+		at_war = no
+		any_neighbor_country = {
+			OR = {
+				tag = A326
+				tag = A327
+				tag = A328
+				tag = A359
+			}
+			NOT = { is_subject_of = root }
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		random_neighbor_country = {
+			limit = {
+				OR = {
+					tag = A326
+					tag = A327
+					tag = A328
+					tag = A359
+				}
+				NOT = { is_subject_of = root }
+			}
+			save_scope_as = target_country
+		}
+		c:A354 = { save_scope_as = target_country_2 }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.3.a
+		historical_option = yes
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_weak_penalty
+	}
+
+	option = {
+		name = flavor_A325.3.b
+		add_prestige = prestige_mild_penalty
+	}
+}
+
+# 4. The north comes down
+flavor_A325.4 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.4.title
+	desc = flavor_A325.4.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 12
+	}
+
+	trigger = {
+		tag = A325
+		exists = c:A354
+		any_neighbor_country = { tag = A354 }
+		owns = location:etra181
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:peasants_estate }
+		location:etra181 = { save_scope_as = target_location }
+		c:A354 = { save_scope_as = target_country }
+		c:A330 = { save_scope_as = target_country_2 }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.4.a
+		historical_option = yes
+		scope:target_location = {
+			change_prosperity = prosperity_mild_penalty
+		}
+		add_country_modifier = {
+			modifier = a325_the_wall_kept
+			years = 15
+			mode = replace
+		}
+		add_casus_belli = {
+			target = scope:target_country
+			type = casus_belli:cb_insulted_us
+		}
+	}
+
+	option = {
+		name = flavor_A325.4.b
+		change_gold_effect = { scale = -2 }
+		add_legitimacy = legitimacy_mild_penalty
+		scope:target_location = {
+			change_prosperity = prosperity_weak_penalty
+		}
+	}
+}
+
+# 5. Quarrel of Companions
+flavor_A325.5 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.5.title
+	desc = flavor_A325.5.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1339.1.1
+		to = 9999.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		tag = A325
+		at_war = no
+		exists = character:A325_orthirion
+		exists = character:A325_kallinor
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		character:A325_orthirion = { save_scope_as = target_character }
+		character:A325_kallinor = { save_scope_as = target_character_2 }
+		ruler_or_regent = { save_scope_as = target_character_3 }
+	}
+
+	option = {
+		name = flavor_A325.5.a
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+		add_prestige = prestige_weak_bonus
+	}
+
+	option = {
+		name = flavor_A325.5.b
+		historical_option = yes
+		add_stability = stability_weak_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+	}
+}
+
+# 6. The phalanx in the hills
+flavor_A325.6 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.6.title
+	desc = flavor_A325.6.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		tag = A325
+		at_war = no
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.6.a
+		historical_option = yes
+		add_prestige = prestige_weak_penalty
+	}
+
+	option = {
+		name = flavor_A325.6.b
+		add_country_modifier = {
+			modifier = a325_broken_ground
+			years = 5
+			mode = add_and_extend
+		}
+	}
+}
+
+# 7. A fetter or a province
+flavor_A325.7 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.7.title
+	desc = flavor_A325.7.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1339.1.1
+		to = 9999.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		tag = A325
+		at_war = no
+		any_neighbor_country = {
+			OR = {
+				tag = A326
+				tag = A327
+				tag = A328
+				tag = A359
+			}
+			NOT = { is_subject_of = root }
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		random_neighbor_country = {
+			limit = {
+				OR = {
+					tag = A326
+					tag = A327
+					tag = A328
+					tag = A359
+				}
+				NOT = { is_subject_of = root }
+			}
+			save_scope_as = target_country
+		}
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.7.a
+		historical_option = yes
+		add_casus_belli = {
+			target = scope:target_country
+			type = casus_belli:cb_subjugation
+		}
+		add_prestige = prestige_weak_bonus
+	}
+
+	option = {
+		name = flavor_A325.7.b
+		add_casus_belli = {
+			target = scope:target_country
+			type = casus_belli:cb_annex
+		}
+		custom_tooltip = {
+			text = flavor_A325.7.b.tt
+		}
+	}
+}
+
+# 8. The pages of Carcos
+flavor_A325.8 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.8.title
+	desc = flavor_A325.8.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		tag = A325
+		at_war = no
+		owns = location:etra304
+		exists = character:A325_orthirion
+		exists = character:A325_kallinor
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		location:etra304 = { save_scope_as = target_location }
+		character:A325_orthirion = { save_scope_as = target_character }
+		character:A325_kallinor = { save_scope_as = target_character_2 }
+		ruler_or_regent = { save_scope_as = target_character_3 }
+	}
+
+	option = {
+		name = flavor_A325.8.a
+		historical_option = yes
+		add_country_modifier = {
+			modifier = a325_pages_of_carcos
+			years = 20
+			mode = replace
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+	}
+
+	option = {
+		name = flavor_A325.8.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_bonus }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+# 9. Royal timber and the silver hills
+flavor_A325.9 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.9.title
+	desc = flavor_A325.9.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		tag = A325
+		at_war = no
+		owns = location:etra72
+		owns = location:etra181
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+		location:etra72 = { save_scope_as = target_location }
+		location:etra181 = { save_scope_as = target_location_2 }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.9.a
+		historical_option = yes
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_weak_penalty }
+		change_gold_effect = { scale = 2 }
+	}
+
+	option = {
+		name = flavor_A325.9.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		change_gold_effect = { scale = -2 }
+	}
+}
+
+# 10. Brother against brother
+flavor_A325.10 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.10.title
+	desc = flavor_A325.10.desc
+	fire_only_once = yes
+	outcome = negative
+	dynamic_historical_event = {
+		tag = A325
+		from = 1340.1.1
+		to = 9999.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		tag = A325
+		exists = heir
+		exists = character:A325_alkaion
+		exists = character:A325_menesthion
+		exists = character:A325_pyrrhion
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		character:A325_alkaion = { save_scope_as = target_character }
+		character:A325_menesthion = { save_scope_as = target_character_2 }
+		character:A325_pyrrhion = { save_scope_as = target_character_3 }
+	}
+
+	option = {
+		name = flavor_A325.10.a
+		kill_character = {
+			target = character:A325_menesthion
+			reason = execution
+		}
+		set_variable = a325_chose_restoration
+		add_stability = stability_mild_penalty
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = flavor_A325.10.b
+		historical_option = yes
+		kill_character = {
+			target = character:A325_alkaion
+			reason = execution
+		}
+		set_variable = a325_chose_accommodation
+		add_stability = stability_mild_penalty
+		add_legitimacy = legitimacy_mild_penalty
+	}
+}
+
+# 11. Occupation of Hyriosia (annexation punished)
+flavor_A325.11 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.11.title
+	desc = flavor_A325.11.desc
+	fire_only_once = yes
+	outcome = negative
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 40
+	}
+
+	trigger = {
+		tag = A325
+		OR = {
+			AND = {
+				owns = location:etra24
+				NOT = { exists = c:A328 }
+			}
+			AND = {
+				owns = location:etra35
+				NOT = { exists = c:A327 }
+			}
+			AND = {
+				owns = location:etra11
+				NOT = { exists = c:A326 }
+			}
+			AND = {
+				owns = location:etra74
+				NOT = { exists = c:A359 }
+			}
+		}
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:peasants_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.11.a
+		historical_option = yes
+		add_country_modifier = {
+			modifier = a325_occupation_of_hyriosia
+			years = 25
+			mode = replace
+		}
+		add_stability = stability_mild_penalty
+	}
+}
+
+# 12. The second sun (A377 as gamble)
+flavor_A325.12 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A325.12.title
+	desc = flavor_A325.12.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A325
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 25
+	}
+
+	trigger = {
+		tag = A325
+		owns = location:etra74
+		owns = location:etra24
+		owns = location:etra35
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+
+	option = {
+		name = flavor_A325.12.a
+		add_country_modifier = {
+			modifier = a325_preparing_the_second_sun
+			years = 25
+			mode = replace
+		}
+		add_prestige = prestige_mild_bonus
+	}
+
+	option = {
+		name = flavor_A325.12.b
+		historical_option = yes
+		add_legitimacy = legitimacy_mild_bonus
+		add_prestige = prestige_weak_penalty
+	}
+}

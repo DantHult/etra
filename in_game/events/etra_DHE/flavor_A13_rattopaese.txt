@@ -1,0 +1,99 @@
+﻿namespace = flavor_A13
+
+flavor_A13.1 = { # The Funeral of Ratticar the Great
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A13.1.title
+	desc = flavor_A13.1.desc
+	fire_only_once = yes
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = A13
+		from = 1337.4.1
+		to = 1337.8.1
+		monthly_chance = 100
+	}
+
+	trigger = {
+		tag = A13
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:clergy_estate }
+		capital = { save_scope_as = target_location }
+		character:rat_verminus_supreme = { save_scope_as = target_character1 }
+		character:A13_cecilia = { save_scope_as = target_character2 }
+	}
+
+	option = {
+		name = flavor_A13.1.a
+		historical_option = yes
+		ai_chance = {
+			factor = 3
+		}
+		set_variable = flavor_A13_funeral_held
+		add_legitimacy = legitimacy_mild_penalty
+	}
+
+}
+
+flavor_A13.2 = { # Through a Child's Eyes
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A13.2.title
+	desc = flavor_A13.2.desc
+	fire_only_once = yes
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = A13
+		from = 1337.8.1
+		to = 1338.9.1
+		monthly_chance = 100
+	}
+
+	trigger = {
+		tag = A13
+		has_regent = yes
+		has_variable = flavor_A13_funeral_held
+		exists = heir
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		heir = { save_scope_as = target_character1 }
+		character:A13_cecilia = { save_scope_as = target_character2 }
+		character:rat_vernacius = { save_scope_as = target_character3 }
+		capital = { save_scope_as = target_location }
+	}
+
+	option = {
+		name = flavor_A13.2.a
+		historical_option = yes
+		ai_chance = {
+			factor = 3
+		}
+		add_government_power = government_power_mild_bonus
+		add_legitimacy = legitimacy_mild_bonus
+	}
+
+	option = {
+		name = flavor_A13.2.b
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_mild_penalty
+	}
+}

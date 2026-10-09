@@ -1,0 +1,4 @@
+diplomacy_manager = {
+	rival = { first = A325 second = A354 }
+	rival = { first = A354 second = A325 }
+}

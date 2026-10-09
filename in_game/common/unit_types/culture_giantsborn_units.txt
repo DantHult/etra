@@ -1,0 +1,947 @@
+# Giantsborn culture-group army line — full infantry + cavalry progression
+# Parallel to vanilla tech line; gated by culture_group:giantsborn_group
+# copy_from vanilla age templates (not elven half-strength). Artillery and auxiliaries remain vanilla.
+#
+# Overlay (consistent across ages; Battleborn already grants +20% HI power):
+# HI: modest toughness/morale, paid with speed, food, and flanking
+# LI: milder version of the same — still large people, not skirmish specialists
+# LC: clumsy, hungry, poor shock; HC worse still. Nobles mercenary density lowered vs vanilla.
+
+########################
+# Age 1 — Traditions
+########################
+
+a_giantsborn_footmen = {
+	default = yes
+	category = army_heavy_infantry
+	copy_from = a_age_1_traditions_heavy_infantry
+	strength_damage_taken = -0.10
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+		government_type != government_type:steppe_horde
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_men_at_arms
+
+	maintenance_demand = early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_archers = {
+	default = yes
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_light_infantry
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	upgrades_to = a_giantsborn_crossbowmen
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+		government_type != government_type:steppe_horde
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+	gfx_tags = { archer_tag medium_tag }
+}
+
+a_giantsborn_footmen_levy = {
+	category = army_heavy_infantry
+	copy_from = a_age_1_traditions_heavy_infantry
+	strength_damage_taken = -0.10
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+	buildable = no
+	levy = yes
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_feudal_levy = {
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_light_infantry
+	strength_damage_done = -0.1
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+	buildable = no
+	levy = yes
+
+	gfx_tags = { light_tag }
+}
+
+a_giantsborn_horsemen = {
+	category = army_light_cavalry
+	copy_from = a_age_1_traditions_light_cavalry
+	movement_speed = -0.35
+	flanking_ability = -0.20
+	strength_damage_done = -0.10
+	morale_damage_taken = 0.05
+	food_consumption_per_strength = 0.30
+	build_time_modifier = 0.15
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+	}
+
+	upgrades_to = a_giantsborn_cavalrymen
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.01
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_armored_horsemen = {
+	category = army_heavy_cavalry
+	copy_from = a_age_1_traditions_heavy_cavalry
+	movement_speed = -0.50
+	flanking_ability = -0.25
+	strength_damage_done = -0.15
+	morale_damage_taken = 0.10
+	food_consumption_per_strength = 0.40
+	build_time_modifier = 0.25
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+		river = -0.10
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	upgrades_to = a_giantsborn_heavy_cavalrymen
+
+	gfx_tags = { heavy_tag }
+}
+
+########################
+# Age 2 — Renaissance
+########################
+
+a_giantsborn_men_at_arms = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
+	strength_damage_taken = -0.15
+	combat_speed = 1
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_halberdiers
+
+	maintenance_demand = early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_crossbowmen = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	upgrades_to = a_giantsborn_early_arquebusiers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { crossbow_tag medium_tag }
+}
+
+a_giantsborn_handgonners = {
+	# Light infantry so it can upgrade into early arquebusiers (upgrades are category-scoped).
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+
+	movement_speed = -0.75
+	initiative = -4
+	flanking_ability = -0.15
+	strength_damage_done = 0.1
+	morale_damage_taken = -0.1
+	combat_speed = -1.5
+
+	morale_damage_done = 0.10
+	build_time_modifier = 0.25
+	food_consumption_per_strength = 0.15
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	maintenance_demand = infantry_maintenance
+	construction_demand = infantry_construction
+
+	upgrades_to = a_giantsborn_early_arquebusiers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.025
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_giantsborn_men_at_arms_levy = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_heavy_infantry
+	buildable = no
+	levy = yes
+	strength_damage_taken = -0.15
+	combat_speed = 1
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_peasant_levy = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	buildable = no
+	levy = yes
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	gfx_tags = { light_tag }
+}
+
+a_giantsborn_cavalrymen = {
+	category = army_light_cavalry
+	copy_from = a_age_2_renaissance_light_cavalry
+	movement_speed = -0.35
+	flanking_ability = -0.20
+	strength_damage_done = -0.10
+	morale_damage_taken = 0.05
+	food_consumption_per_strength = 0.30
+	build_time_modifier = 0.15
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+	}
+
+	upgrades_to = a_giantsborn_light_lancers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.01
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_heavy_cavalrymen = {
+	category = army_heavy_cavalry
+	copy_from = a_age_2_renaissance_heavy_cavalry
+	movement_speed = -0.50
+	flanking_ability = -0.25
+	strength_damage_done = -0.15
+	morale_damage_taken = 0.10
+	food_consumption_per_strength = 0.40
+	build_time_modifier = 0.25
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+		river = -0.10
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_lancers
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	gfx_tags = { heavy_tag }
+}
+
+########################
+# Age 3 — Discovery
+########################
+
+a_giantsborn_early_arquebusiers = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	upgrades_to = a_giantsborn_arquebusiers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_giantsborn_halberdiers = {
+	category = army_heavy_infantry
+	copy_from = a_age_3_discovery_heavy_infantry
+	strength_damage_taken = -0.05
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_pikemen
+
+	maintenance_demand = early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { polearm_tag medium_tag }
+}
+
+a_giantsborn_matchlock_levy = {
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	buildable = no
+	levy = yes
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_giantsborn_light_lancers = {
+	category = army_light_cavalry
+	copy_from = a_age_3_discovery_light_cavalry
+	movement_speed = -0.35
+	flanking_ability = -0.20
+	strength_damage_done = -0.10
+	morale_damage_taken = 0.05
+	food_consumption_per_strength = 0.30
+	build_time_modifier = 0.15
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+	}
+
+	upgrades_to = a_giantsborn_pistoleers
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.01
+	}
+
+	gfx_tags = { spear_tag medium_tag }
+}
+
+a_giantsborn_lancers = {
+	category = army_heavy_cavalry
+	copy_from = a_age_3_discovery_heavy_cavalry
+	movement_speed = -0.50
+	flanking_ability = -0.25
+	strength_damage_done = -0.15
+	morale_damage_taken = 0.10
+	food_consumption_per_strength = 0.40
+	build_time_modifier = 0.25
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+		river = -0.10
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_heavy_lancers
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+########################
+# Age 4 — Reformation
+########################
+
+a_giantsborn_arquebusiers = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_light_infantry
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	upgrades_to = a_giantsborn_hunters
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_giantsborn_pikemen = {
+	category = army_heavy_infantry
+	copy_from = a_age_4_reformation_heavy_infantry
+	strength_damage_taken = -0.05
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_musketeers
+
+	maintenance_demand = pikemen_maintenance
+	construction_demand = pikemen_construction
+
+	gfx_tags = { pike_tag medium_tag }
+}
+
+a_giantsborn_flintlock_levy = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_light_infantry
+	buildable = no
+	levy = yes
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_giantsborn_pistoleers = {
+	category = army_light_cavalry
+	copy_from = a_age_4_reformation_light_cavalry
+	movement_speed = -0.35
+	flanking_ability = -0.20
+	strength_damage_done = -0.10
+	morale_damage_taken = 0.05
+	food_consumption_per_strength = 0.30
+	build_time_modifier = 0.15
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+	}
+
+	upgrades_to = a_giantsborn_hussars
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	gfx_tags = { pistol_tag medium_tag }
+}
+
+a_giantsborn_heavy_lancers = {
+	category = army_heavy_cavalry
+	copy_from = a_age_4_reformation_heavy_cavalry
+	movement_speed = -0.50
+	flanking_ability = -0.25
+	strength_damage_done = -0.15
+	morale_damage_taken = 0.10
+	food_consumption_per_strength = 0.40
+	build_time_modifier = 0.25
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+		river = -0.10
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_gallop_cavalry
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+########################
+# Age 5 — Absolutism
+########################
+
+a_giantsborn_hunters = {
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_light_infantry
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	upgrades_to = a_giantsborn_sharpshooters
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+a_giantsborn_musketeers = {
+	category = army_heavy_infantry
+	copy_from = a_age_5_absolutism_heavy_infantry
+	strength_damage_taken = -0.05
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_fusiliers
+
+	maintenance_demand = heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_giantsborn_militiamen = {
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_light_infantry
+	buildable = no
+	levy = yes
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_giantsborn_hussars = {
+	category = army_light_cavalry
+	copy_from = a_age_5_absolutism_light_cavalry
+	movement_speed = -0.35
+	flanking_ability = -0.20
+	strength_damage_done = -0.10
+	morale_damage_taken = 0.05
+	food_consumption_per_strength = 0.30
+	build_time_modifier = 0.15
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+	}
+
+	upgrades_to = a_giantsborn_light_dragoons
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_giantsborn_gallop_cavalry = {
+	category = army_heavy_cavalry
+	copy_from = a_age_5_absolutism_heavy_cavalry
+	movement_speed = -0.50
+	flanking_ability = -0.25
+	strength_damage_done = -0.15
+	morale_damage_taken = 0.10
+	food_consumption_per_strength = 0.40
+	build_time_modifier = 0.25
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+		river = -0.10
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+
+	upgrades_to = a_giantsborn_cuirassiers
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	gfx_tags = { heavy_tag }
+}
+
+########################
+# Age 6 — Revolutions
+########################
+
+a_giantsborn_sharpshooters = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_light_infantry
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+a_giantsborn_fusiliers = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_heavy_infantry
+	strength_damage_taken = -0.05
+	morale_damage_done = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	mercenaries_per_location = {
+		pop_type = laborers
+		multiply = 0.1
+	}
+
+	maintenance_demand = heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_giantsborn_grenadiers = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_revolutions_heavy_infantry
+	is_special = yes
+	buildable = yes
+
+	morale_damage_done = 0.25
+	strength_damage_taken = 0.05
+	movement_speed = -0.35
+	food_consumption_per_strength = 0.20
+	flanking_ability = -0.10
+	combat = {
+		mountains = 0.10
+		hills = 0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	gfx_tags = { grenadier_tag medium_tag }
+}
+
+a_giantsborn_conscripts = {
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_light_infantry
+	buildable = no
+	levy = yes
+	movement_speed = -0.25
+	food_consumption_per_strength = 0.15
+	flanking_ability = -0.05
+	combat = {
+		mountains = 0.05
+		hills = 0.02
+	}
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_giantsborn_light_dragoons = {
+	category = army_light_cavalry
+	copy_from = a_age_6_revolutions_light_cavalry
+	movement_speed = -0.35
+	flanking_ability = -0.20
+	strength_damage_done = -0.10
+	morale_damage_taken = 0.05
+	food_consumption_per_strength = 0.30
+	build_time_modifier = 0.15
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+}
+
+a_giantsborn_cuirassiers = {
+	category = army_heavy_cavalry
+	copy_from = a_age_6_revolutions_heavy_cavalry
+	movement_speed = -0.50
+	flanking_ability = -0.25
+	strength_damage_done = -0.15
+	morale_damage_taken = 0.10
+	food_consumption_per_strength = 0.40
+	build_time_modifier = 0.25
+	combat = {
+		jungle = -0.10
+		wetlands = -0.10
+		mountains = -0.20
+		hills = -0.05
+		river = -0.10
+	}
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+
+	gfx_tags = { cuirassier_tag heavy_tag }
+
+	maintenance_demand = heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+}

@@ -1,0 +1,41 @@
+﻿l_english:
+ 
+ the_amphitheatrum: "The Amphitheatrum"
+ the_amphitheatrum_desc: "Within this vast arena, the free-willed undead of Moran gather for organized combat and public spectacle, continuing traditions preserved from their mortal past. Gladiators range from veterans bearing centuries of scars or the living, fighting for honor, memory, and the entertainment of the undying masses. No roar is so thunderous as that of an audience who has cheered for a hundread years and will cheer for a thousand more."
+ the_amphitheatrum_maintenance: "Amphitheatrum Maintenance"
+ 
+ sorlkol_academy_fortress: "Academy Fortress"
+ sorlkol_academy_fortress_desc: "A massive stone fortress-monastery serving as military stronghold, administrative center, and martial training complex—the foundation of each canton's power."
+
+ sorlkol_dairy: "Ibex-Cattle Dairy"
+ sorlkol_dairy_desc: "A communal dairy facility where herdsmen pool milk from ibex-cattle, hardy bovine hybrids with the climbing ability of mountain goats and the size of lowland cattle, producing rich cheeses prized across Edorinn."
+
+ pwasciards_coastal_warehouse: "Coastal Warehouse"
+ pwasciards_coastal_warehouse_desc: "A fortified warehouse and quayside complex where fish, salt, and trade goods are stored and sold. Harbor masters coordinate loading and customs here, boosting local fisheries and drawing sailors and merchants to the peninsula's ports."
+ pwasciards_coastal_warehouse_upkeep: "Coastal Warehouse Maintenance"
+
+ ratfolk_warren_barracks: "Warren Barracks"
+ ratfolk_warren_barracks_desc: "A fortified training burrow where ratfolk soldiers drill and garrison. Built into hillsides or beneath settlements, it strengthens local defenses and provides a steady flow of manpower from the warren population."
+ ratfolk_warren_barracks_upkeep: "Warren Barracks Maintenance"
+ ratfolk_undermarket_depot: "Undermarket Depot"
+ ratfolk_undermarket_depot_desc: "A subterranean exchange where tunnel networks meet surface trade routes. Merchants and clerks coordinate convoys and storage here, boosting local trade power and construction where the ratfolk undermarket thrives."
+ ratfolk_undermarket_depot_upkeep: "Undermarket Depot Maintenance"
+ ratfolk_breeding_warren: "Breeding Warren"
+ ratfolk_breeding_warren_desc: "A managed warren dedicated to breeding and food storage. It increases local food surplus and manpower while reinforcing the peasants' ties to the land and the burrow."
+ ratfolk_breeding_warren_upkeep: "Breeding Warren Maintenance"
+ ratfolk_warren_clock_tower: "Warren Clock Tower"
+ ratfolk_warren_clock_tower_desc: "A tower or shaft housing a master clock whose gears and bells regulate the local warren. Convoys depart on the hour, shifts change at the chime, and scribes and merchants keep shared time. The result is swifter construction, stronger trade coordination, and a trickle of development as punctuality becomes habit."
+ ratfolk_warren_clock_tower_upkeep: "Warren Clock Tower Maintenance"
+ 
+ draquatin_gardens: "Draquatin Gardens"
+ draquatin_gardens_desc: "The large public gardens of Draquatin cities are a testament to the culture’s values and aspirations. Nature can soothe the most tortured souls through just the gentle whispers of the wind."
+ draquatin_gardens_upkeep: "Draquatin Gardens Maintenance"
+ draquatin_moon_fall_shipyards: "Moon's Fall Shipyards"
+ draquatin_moon_fall_shipyards_desc: "The Draquatin shipyards have the advantage of being able to hire from the best artisans and engineers of Edorinn making them very efficient and capable."
+ draquatin_moon_fall_shipyards_upkeep: "Moon's Fall Shipyards Maintenance"
+ 
+ ruined_ringed_wall: "Ruined Ringed Wall"
+ ruined_ringed_wall_desc: "A gigantic series of concentric walls and structures that define the city itself, the Ring-walls were raised by hands unknown for purposes lost to time. Although successive generations have made repairs, reinforcing breaches with lesser stone, patching gaps with structural cantrips—centuries of neglect and the catastrophic Northern collapse have left much of the outer circuits in ruins."
+ repaired_ring_wall: "Repair Ringed Wall"
+ repaired_ring_wall_desc: "Restored and maintained Ring-walls, reinforced with modern masonry and stabilization enchantments, protecting the city's inhabited districts from the encroaching marshlands and provides structural integrity to the metropolis built within and upon them. We may not understand what the ancients intended, but we know well enough how to keep their work standing."
+ is_historical_route_of_ringed_wall_tt: "Is on the historical route of the Ringed Wall"

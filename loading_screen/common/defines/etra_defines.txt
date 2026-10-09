@@ -1,0 +1,4 @@
+﻿NCharacter = {
+	MAX_CHARACTER_AGE = 1000		# Vanilla was 100
+	MAX_AGE_SETUP_ERROR_LOG = 1000	# Vanilla was 100
+}

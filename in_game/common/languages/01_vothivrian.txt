@@ -1,0 +1,96 @@
+﻿
+vothivrian_language = {
+	color = map_BOH
+	male_names = {
+		#Czechoslovak
+		name_amadeus
+		name_anthony
+		name_blahoslav
+		name_bohuslav
+		name_bogomil
+		name_bronislav
+		name_cyril
+		name_charles
+		name_ctibor
+		name_dalimir # Slovak
+		name_dobroslav
+		name_dragomir
+		name_dragoslav
+		name_emil
+		name_hugh
+		name_henry
+		name_ignatius
+		name_yaromir
+		name_george
+		name_casimir
+		name_constantine
+		name_levoslav
+		name_lubomir
+		name_luboslav
+		name_louis
+		name_lucas
+		name_matthew
+		name_methodius
+		name_nicholas
+		name_moymar
+		name_maurice
+		name_andrew
+		name_paul
+		name_peter
+		name_premysl
+		name_prokop
+		name_radomir
+		name_radoslav
+		name_svetozar
+		name_tihomir
+		name_thomas
+		name_william
+		name_vitazoslav
+		name_vlastimil
+		name_vratislav
+		name_waldemar
+		name_wenceslas
+		name_wojciech
+	}
+
+	female_names = {		
+		#Czechoslovak
+		name_amelia
+		name_beata
+		name_bozena
+		name_catherine 
+		name_danuta
+		name_dobrava
+		name_dobroslava
+		name_elizabeth 
+		name_eve 
+		name_anna
+		name_yaroslava 
+		name_jarmila 
+		name_judith
+		name_ludmila
+		name_margaret
+		name_milena
+		name_nadia
+		name_premyslava
+		name_stanislava
+		name_svetlana
+		name_svyatoslava
+		name_vaclava
+	}
+
+	lowborn = {
+		#Czechoslovak
+		kovac Varga balaz lukac novak mlynar ctvrtnik horak hrabik hudek hornik kopecki novotny pesek repasky reznik ryba volner vrba zeman
+	}
+
+	dynasty_names = {
+		dynasty_lobkowicz dynasty_kinsky dynasty_kolowrat dynasty_nostic 
+		dynasty_csaky dynasty_rakoczi dynasty_apponyi dynasty_forgach
+	}
+	dialects = {
+
+	}
+	
+	location_prefix = "location_prefix_czech"
+}

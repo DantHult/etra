@@ -1,0 +1,169 @@
+﻿purge_kindred = {
+	ability = mil
+	allow_multiple = yes
+
+	potential = {
+		num_locations > 0
+		societal_value:xenophile_vs_xenophobe > -50
+	}
+
+	allow = {
+		societal_value:xenophile_vs_xenophobe > -50
+	}
+
+	select_trigger = {
+		looking_for_a = culture_group
+		target_flag = target
+		name = "purge_kindred_select_kindred"
+		none_available_msg_key = "purge_kindred_no_kindreds"
+		column = {
+			data = name
+		}
+		interaction_source_list = {
+			culture_group:undead_group = { add_to_list = source }
+			culture_group:human_group = { add_to_list = source }
+			culture_group:ratfolk_group = { add_to_list = source }
+			culture_group:elven_group = { add_to_list = source }
+			culture_group:giantsborn_group = { add_to_list = source }
+			culture_group:tiefling_group = { add_to_list = source }
+			culture_group:aasimar_group = { add_to_list = source }
+			culture_group:beastfolk_group = { add_to_list = source }
+			culture_group:pigmen_group = { add_to_list = source }
+			culture_group:lupusfolk_group = { add_to_list = source }
+			culture_group:catfolk_group = { add_to_list = source }
+		}
+		visible = {
+			is_etra_kindred_culture_group = yes
+			scope:actor = {
+				culture_group_percentage_in_country = {
+					culture_group = root
+					value >= 0.01
+				}
+				NOT = { culture = { has_culture_group = root } }
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target_1
+		name = "purge_kindred_select_province"
+		none_available_msg_key = "purge_kindred_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		default_sort = population
+		visible = {
+			any_location_in_province = {
+				any_pop = {
+					culture = {
+						has_culture_group = scope:target
+						NOT = { is_accepted_in = scope:actor }
+					}
+				}
+			}
+			NOT = {
+				cabinet_already_performing_same_task_on_target = {
+					cabinet_action = purge_kindred
+					interaction_target = target_1
+				}
+			}
+		}
+		map_color = {
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_LOW
+				max_color = define:NMapColors|MAP_COLOR_HIGH
+				factor = "culture_group_percentage(scope:target)"
+			}
+		}
+	}
+
+	is_finished = {
+		trigger_if = {
+			limit = {
+				exists = scope:target
+				exists = scope:target_1
+			}
+			scope:target_1 = {
+				NOT = {
+					any_location_in_province = {
+						any_pop = {
+							pop_size >= 0.01
+							culture = {
+								has_culture_group = scope:target
+								NOT = { is_accepted_in = scope:actor }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				exists = scope:target
+				exists = scope:target_1
+			}
+			scope:target_1 = {
+				set_variable = {
+					name = purging_kindred
+					value = yes
+				}
+			}
+		}
+	}
+
+	on_deactivate = {
+		if = {
+			limit = {
+				exists = scope:target_1
+			}
+			scope:target_1 = {
+				remove_variable = purging_kindred
+			}
+		}
+	}
+
+	location_modifier = {
+		local_unrest = 0.2
+		local_migration_attraction = -0.1
+	}
+
+	progress = {
+		scope:target_1 = {
+			value = 1
+			subtract = "culture_group_percentage(scope:target)"
+		}
+	}
+
+	map_marker = {
+		show_for_owner = yes
+	}
+
+	ai_will_do = {
+		add = {
+			desc = "Xenophile society"
+			if = {
+				limit = {
+					societal_value:xenophile_vs_xenophobe <= 0
+				}
+				value = -500
+			}
+		}
+		add = {
+			desc = "Xenophobe society"
+			if = {
+				limit = {
+					societal_value:xenophile_vs_xenophobe >= 25
+				}
+				value = 100
+			}
+		}
+	}
+}

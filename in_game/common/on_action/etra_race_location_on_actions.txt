@@ -1,0 +1,10 @@
+﻿# Location race modifier refresh — root = location
+# Runs per ownable location to keep demographic modifiers in sync when pops shift.
+etra_race_location_pulse = {
+	effect = {
+		if = {
+			limit = { is_ownable = yes }
+			etra_update_location_race_modifiers = yes
+		}
+	}
+}

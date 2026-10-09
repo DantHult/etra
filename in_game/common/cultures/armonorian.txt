@@ -1,0 +1,26 @@
+﻿ebiam_culture = { #city-dwellers
+	language = armonorican_dialect
+	
+	color = map_TOU
+	
+	tags = { breton_gfx french_gfx celtic_gfx western_european_gfx european_gfx  }
+
+	culture_groups = {
+		human_group
+		armonorian_group
+	}
+}
+
+aggeuios_culture = { #Clumsy people
+	language = armonorican_dialect
+	
+	color = map_vezo
+	
+	tags = { breton_gfx french_gfx celtic_gfx western_european_gfx european_gfx  }
+
+	culture_groups = {
+		human_group
+		armonorian_group
+	}
+
+}

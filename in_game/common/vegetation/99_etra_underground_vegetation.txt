@@ -1,0 +1,28 @@
+﻿######################
+# Etra Vegetation
+######################
+
+# fungus amungus
+cave_fungus = { #based off of jungle + desert
+	color = terrain_cave_fungus
+	movement_cost = 1.5
+	proximity = -0.10
+	defender = 1
+	location_modifier = { 
+		local_frontage_allowed = -4
+		local_rgo_build_time = 0.5 
+		local_road_building_time = 3.0
+		local_population_capacity = 50
+		local_monthly_development_modifier = -0.30
+		local_monthly_food_modifier = 0.1
+		blocks_vision_from_sea = yes
+		blocks_vision_from_land = yes
+	}
+	
+	colonial_migration_size_modifier = -0.2
+	
+	audio_tags = {
+		masDataVegetationDensity = 0.0
+	}
+	debug_color = rgb { 32 36 40 } 
+}

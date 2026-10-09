@@ -1,0 +1,27 @@
+﻿REPLACE:is_historical_route_of_great_wall = {
+}
+
+# Locations with starting ruined_ringed_wall (mirrors setup in 07_cities_and_buildings.txt).
+is_historical_route_of_ringed_wall = {
+	custom_tooltip = {
+		text = is_historical_route_of_ringed_wall_tt
+		OR = {
+			location_key = torrent156
+			location_key = torrent222
+			location_key = torrent216
+			location_key = torrent295
+			location_key = torrent219
+			location_key = commonweal3
+			location_key = ardraine222
+			location_key = torrent85
+			location_key = commonweal6
+			location_key = torrent60
+			location_key = torrent155
+			location_key = torrent97
+			location_key = ardraine175
+			location_key = ardraine153
+			location_key = commonweal2
+			location_key = torrent56
+		}
+	}
+}

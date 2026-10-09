@@ -1,0 +1,77 @@
+﻿
+
+arineran_culture = {
+	language = vothivrian_language
+	
+	color = rgb { 126 15 15 }
+	
+	tags = { polish_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		vothivrian_group
+	}
+}
+silemarian_culture = {
+	language = vothivrian_language
+	
+	color = map_katapas
+	
+	tags = { polish_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		vothivrian_group
+	}
+}
+nachrish_culture = {
+	language = vothivrian_language
+	
+	color = map_sekani
+	
+	tags = { polish_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		vothivrian_group
+	}
+}
+penichrian_culture = {
+	language = vothivrian_language
+	
+	color = map_croatian
+	
+	tags = { polish_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		vothivrian_group
+	}
+}
+
+
+vanelic_culture = {
+	language = vothivrian_language
+	
+	color = map_serbian
+	
+	tags = { polish_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		vothivrian_group
+	}
+}
+
+ameleuin_culture = {
+	language = vothivrian_language
+	
+	color = map_sclavene
+	
+	tags = { polish_gfx west_slavic_gfx slavic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		vothivrian_group
+	}
+}

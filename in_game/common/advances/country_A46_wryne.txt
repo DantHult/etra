@@ -1,0 +1,34 @@
+﻿#includes both Stone and Salt Sordrenic culutres
+#Age of Traditions#
+A46_the_wryne_benefactor = {
+	age = age_1_traditions
+	icon = smooth_administration
+	potential = { 
+		has_or_had_tag = A46
+	}
+	monthly_rebel_growth = -0.0005
+	requires = library_advance
+}
+A46_caped_crusaders = {
+	age = age_1_traditions
+	icon = patron_of_art
+	potential = { 
+		has_or_had_tag = A46
+	}
+	hire_advisor_cost_modifier = -0.1
+	train_general_cost_modifier = -0.1
+	requires = library_advance
+}
+#Age of Renaissance#
+
+
+
+#Age of Discovery# 
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

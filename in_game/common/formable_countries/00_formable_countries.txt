@@ -1,0 +1,523 @@
+﻿#Overwritten
+A42_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:sordrenic_group }
+	}
+
+	allow = {
+	}
+	
+	name = A42
+	flag = A42
+	adjective = A42_ADJ
+	tag = A42
+	color = map_A42
+
+	regions = {
+		sordren_region
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	
+	}
+}
+
+
+HCA_f = {
+
+	level = 4
+	required_locations_fraction = 0.75
+	rule = plausible
+	potential = {
+			exists = international_organization:hre
+		is_member_of_international_organization = international_organization:hre
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = HCA_f_tt
+			always = no
+		}
+	}
+	
+	name = HCA
+	flag = HCA
+	adjective = HCA_ADJ
+	tag = HCA
+	color = map_HCA
+	
+	regions = {
+		ardraine_region
+		torrent_region
+	}
+	areas = {
+		apanieve_area
+		skybur_area
+		nomine_magna_area
+	}
+	form_effect = {
+	}
+}
+
+A52_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:ardrainic_group }
+	}
+
+	allow = {
+	}
+	
+	name = A52
+	flag = A52
+	adjective = A52_ADJ
+	tag = A52
+	color = map_A52
+
+	regions = {
+		ardraine_region
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	
+	}
+}
+
+
+A305_f = { #bowesfor
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	allow = {
+
+	}
+
+	name = A305
+	flag = A305	
+	adjective = A305_ADJ
+	tag = A305
+	color = map_A305
+
+	areas = {
+		bonwesfor_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+
+A309_f = { #fullhorner
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:fullhorner_culture
+	}
+	allow = {
+
+	}
+
+	name = A309
+	flag = A309	
+	adjective = A309_ADJ
+	tag = A309
+	color = torrent_fullhorner
+
+	areas = {
+		fullhorn_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A310_f = { #borrikan
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:borrikan_culture
+	}
+	allow = {
+
+	}
+
+	name = A310
+	flag = A310	
+	adjective = A310_ADJ
+	tag = A310
+	color = borrikan_color
+
+	areas = {
+		borrika_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A311_f = { #tyelkian
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:tyelkian_culture
+	}
+	allow = {
+
+	}
+
+	name = A311
+	flag = A311	
+	adjective = A311_ADJ
+	tag = A311
+	color = tyelkian_color
+
+	areas = {
+		the_lowlands_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A312_f = { #chesmeker
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:chesmeker_culture
+	}
+	allow = {
+
+	}
+
+	name = A312
+	flag = A312	
+	adjective = A312_ADJ
+	tag = A312
+	color = chesmeker_color
+
+	areas = {
+		engsadt_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A313_f = { #afhaemeisan
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:afhaemeisan_culture
+	}
+	allow = {
+
+	}
+
+	name = A313
+	flag = A313	
+	adjective = A313_ADJ
+	tag = A313
+	color = afhaemeisan_color
+
+	areas = {
+		afhaemeisa_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A314_f = { #thaurfolk
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:thaurfolk_culture
+	}
+	allow = {
+
+	}
+
+	name = A314
+	flag = A314	
+	adjective = A314_ADJ
+	tag = A314
+	color = thaurfolk_color
+
+	areas = {
+		thaurwach_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A315_f = { #naurmen
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:aneaku_culture
+	}
+	allow = {
+
+	}
+
+	name = A315
+	flag = A315	
+	adjective = A315_ADJ
+	tag = A315
+	color = naurmen_color
+
+	areas = {
+		naureiska_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+
+A317_f = { #Serenland
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		or = {
+			culture = culture:middle_serenic_culture
+			culture = culture:lower_serenic_culture
+			culture = culture:serenish_culture
+		}
+		
+	}
+	allow = {
+
+	}
+
+	name = A317
+	flag = A317	
+	adjective = A317_ADJ
+	tag = A317
+	color = lower_serenic_color
+
+	areas = {
+		lower_serens_area
+		central_serens_area
+		upper_serens_area
+		muse_area
+	}
+	provinces = {
+		apanieve_province
+		boutte_province
+		littlewoods_province
+	}
+
+	form_effect = {
+		
+	}
+}
+
+A318 = {
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:aitan_group }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = SWI_f_tt
+			NOT = { exists = international_organization:swiss_confederation }
+		}
+	}
+	
+	name = A318
+	flag = A318
+	adjective = A318_ADJ
+	tag = A318
+	color = map_SWI
+
+	areas = {
+		aita_central_area
+		aita_east_area
+		aita_west_area
+	}
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		#unlock_government_reform_effect = { type = autonomous_swiss_cantons_reform }
+		#add_replacing_gov_reform = { reform = government_reform:autonomous_swiss_cantons_reform }
+		if = {
+			limit = {
+				NOT = { government_type = government_type:monarchy }
+				NOT = { government_type = government_type:theocracy }
+				NOT = { government_type = government_type:republic }
+			}
+			change_government_type = government_type:republic
+		}
+	}
+}
+
+A319_f = { #appavin
+	level = 2
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = culture:hawairqi_culture
+	}
+	allow = {
+
+	}
+
+	name = A319
+	flag = A319	
+	adjective = A319_ADJ
+	tag = A319
+	color = map_ADU
+
+	areas = {
+		apanieve_area
+	}
+
+	form_effect = {
+		
+	}
+}
+
+Rattopaese_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		always = no # Formed by the Verminus Wars situation
+	}
+
+	allow = {
+	}
+
+	name = A13
+	flag = A13
+	adjective = A13_ADJ
+	tag = A13
+	color = map_A13
+
+	areas = {
+		freehold_2_area
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+
+A377_f = { # Reunited Kingdom — Typheraii reunification
+	level = 4
+	required_locations_fraction = 0.7
+	rule = historical
+
+	potential = {
+		culture = {
+			has_culture_group = culture_group:typheraii_group
+		}
+	}
+
+	allow = {
+	}
+
+	name = A377
+	flag = A377
+	adjective = A377_ADJ
+	tag = A377
+	color = map_A377
+
+	areas = {
+		typhrea_area_1
+		cynoar_area
+		mare_arborum_area
+		erebum_area
+		alar_area
+		ethes_area
+	}
+
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+	}
+}
+
+A378_f = { # Iborros — generic iborian reunification (CHI analogue)
+	level = 4
+	required_locations_fraction = 0.7
+	rule = historical
+
+	potential = {
+		culture = {
+			has_culture_group = culture_group:iborian_group
+		}
+		NOT = { exists = international_organization:iboric_mandate }
+	}
+
+	allow = {
+		NOT = { is_situation_active = situation:etra_red_turban_rebellions }
+	}
+
+	name = A378
+	flag = A378
+	adjective = A378_ADJ
+	tag = A378
+	color = map_A378
+
+	regions = {
+		iboros_region
+	}
+
+	form_effect = {
+		change_government_type = government_type:monarchy
+		etra_rtr_recreate_middle_kingdom = yes
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+	}
+}
+

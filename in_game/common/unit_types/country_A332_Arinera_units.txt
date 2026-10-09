@@ -1,0 +1,35 @@
+﻿# Arinera (A332): Winged Dragoons — imported from vanilla Poland winged hussars
+
+a_a332_winged_dragoons = {
+	copy_from = a_age_4_reformation_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_a332_late_winged_dragoons
+
+	buildable = yes
+
+	initiative = 2
+	morale_damage_done = 0.25
+
+	country_potential = {
+		has_or_had_tag = A332
+	}
+
+	gfx_tags = { spear_tag medium_tag }
+}
+
+a_a332_late_winged_dragoons = {
+	copy_from = a_age_5_absolutism_heavy_cavalry
+	is_special = yes
+
+	buildable = yes
+
+	initiative = 3
+	strength_damage_done = 0.1
+	morale_damage_done = 0.25
+
+	country_potential = {
+		has_or_had_tag = A332
+	}
+
+	gfx_tags = { spear_tag heavy_tag }
+}

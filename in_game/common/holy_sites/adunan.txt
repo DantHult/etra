@@ -1,0 +1,21 @@
+﻿eternal_city_holy_site = {
+    location = eternalcity1
+    type = city
+    importance = 5
+	religions = { imperial_creeds}
+}
+
+
+dawn_watch_holy_site = {
+    location = freehold13
+    type = temple
+    importance = 2
+	religions = { manyfold}
+}
+
+the_crater_holy_site = {
+    location = etra1637
+    type = temple
+    importance = 2
+	religions = { manyfold}
+}

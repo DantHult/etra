@@ -1,0 +1,121 @@
+﻿l_english:
+ #generic events here, country specific ones go into their bespoke file
+ 
+ ##The Arena
+ arena_events.1.title: "Games at the Amphitheatrum"
+ arena_events.1.desc: "The Grand Arena prepares for another day of combat. A seasoned Veteran and a promising Newcomer stand ready to enter the arena. The crowds gather, wagers are placed, and only one will walk away in triumph. Which contender shall we support?"
+ arena_events.1.a: "We place our coin and confidence in the old warrior"
+ arena_events.1.b: "A gamble on fresh blood, may they rise to glory"
+ arena_events.1.c: "I have no time for games"
+ arena_events.1.d: "The honor of combat is mine to claim!"
+ 
+ arena_events.2.title: "Our Champion Prevails!"
+ arena_events.2.desc: "When the gate creaks open, the roar of the crowd shakes the ancient stone, and the duel begins. Steel clashes, sand flies, and the air burns with the fervor of thousands. The duel is decided. Before the cheering masses, our chosen fighter stands victorious, earning both glory and profit for our wager."
+ arena_events.2.a: "Victory is ours!"
+
+ arena_events.3.title: "Our Champion Falls"
+ arena_events.3.desc: "When the gate creaks open, the roar of the crowd shakes the ancient stone, and the duel begins. Steel clashes, sand flies, and the air burns with the fervor of thousands. The duel is decided. Before the cheering masses, our chosen fighter falls."
+ arena_events.3.a: "Our fighter falls but the dead cheer on nonetheless"
+
+ arena_events.4.title: "We Are Victorious!"
+ arena_events.4.desc: "When the gate creaks open, the roar of the crowd shakes the ancient stone, and the duel begins. Steel clashes, sand flies, and the air burns with the fervor of thousands. In the End..."
+ arena_events.4.a: "Victory is ours!"
+
+ arena_events.5.title: "Defeat…"
+ arena_events.5.desc: "When the gate creaks open, the roar of the crowd shakes the ancient stone, and the duel begins. Steel clashes, sand flies, and the air burns with the fervor of thousands. In the End..."
+ arena_events.5.a: "A stunned hush grips the arena"
+ 
+ #ratfolkj
+ ratfolk_events.1.title: "Whispers in the Wall"
+ ratfolk_events.1.desc: "Reports speak of a band of Ratfolk willing to sell their talents to the highest bidder. Masters of tunneling, mimicry, and coded chirps, they claim they can slip into any city and vanish before even trained operatives know they were there. Their price is steep, but their reputation sharper still."
+ ratfolk_events.1.a: "Their senses are keen; their loyalty is negotiable"
+ ratfolk_events.1.b: "Foreign Vermen have no place in our service"
+ 
+ #undead
+ undead_events.1.title: "The Sepulchral Tutor"
+ undead_events.1.desc: "An undead figure shrouded in faded robes, wearing the traditional mask of their kind, has arrived at court. They were escorted by trembling guards who insist the being had appeared in the library without passing through a door. Calling themself The Sepulchral Scholar, they claimed to have studied statecraft, sorcery, and diplomacy across centuries. They offers to tutor our ruler, insisting their motive is “to ensure wisdom survives the ages — even if mortal flesh does not. Their presence chills the court, yet their knowledge is invaluable."
+ undead_events.1.a: "Ancient wisdom will outweigh mortal fears"
+ undead_events.1.b: "The dead have their realm; We have ours"
+
+ ratfolk_events.2.title: "The Vermen Come Knocking. Again."
+ ratfolk_events.2.desc: "A delegation from the Ratfolk warrens has navigated their way to court—no small feat, given how many doors were 'accidentally' left locked along the way. They come with grievances rehearsed, hats in hand, asking for formal recognition and the right to settle their own affairs in the under-quarters and tunnel-settlements they have occupied for generations. Their asks are modest. Their patience, less so. Grant them, and you spend coin you don't have and irritate those who believe the Vermen should be grateful simply to be tolerated. Refuse them, and whatever goodwill remains between surface and under-settlement begins, quietly, to rot."
+ ratfolk_events.2.a: "Fine. Don't chew anything important."
+ ratfolk_events.2.b: "Something can probably be arranged."
+ ratfolk_events.2.c: "They already have the tunnels."
+ 
+ human_events.1.title: "The Short-Lived Want More Time"
+ human_events.1.desc: "A delegation of humans has arrived at court, which would be unremarkable if they weren't here to ask for more of a say in how they are governed. They represent communities that have lived in this realm long enough to have buried their grandparents in it, and they are no longer content to let others speak for them. Their requests—local representation, a measure of self-governance—are reasonable by any standard that doesn't depend on them staying quiet. Grant it, and you lose ground with those who find short-lived ambition distasteful. Deny it, and you gain nothing except the slow accumulation of a grievance."
+ human_events.1.a: "Granted. Use the time well."
+ human_events.1.b: "Some things can be done."
+ human_events.1.c: "One lifetime wasn't enough already?"
+ 
+ elven_events.1.title: "The Elder Folk Have Opinions"
+ elven_events.1.desc: "Elder Folk from the groves and enclaves within our borders have come to court—composed, unhurried, and absolutely certain they have lived longer than anyone who will rule on their petition. They ask for formal recognition of their communities and the right to govern their own enclaves as they have, informally, already been doing. Their requests are not new. Neither is the objection that elder blood and crown authority mix poorly. Grant them, and you cede ground to those who were here before the current dynasty had a name. Refuse, and you remind them—and they *will* remember—that you chose politics over principle."
+ elven_events.1.a: "Granted. They'll still complain eventually."
+ elven_events.1.b: "We'll extend what seems reasonable."
+ elven_events.1.c: "They've had four centuries already."
+ 
+ giantsborn_events.1.title: "The Titan-Blooded Stoop to Ask"
+ giantsborn_events.1.desc: "The titan-blooded do not often trouble courts with formal delegations—their size makes most rooms feel like an argument waiting to happen—but here they stand, representatives of the holds and settlements where the Giantsborn have lived as subjects in all but recognition. They ask for local authority over their own affairs. They ask without kneeling, which some in attendance find offensive and others find wisely diplomatic. Granting this costs you control and the approval of those who believe such stock should remain grateful and biddable. Refusing costs you their trust, and Giantsborn who stop trusting tend to become a problem that no door-frame was built to contain."
+ giantsborn_events.1.a: "Granted. Mind the load-bearing walls."
+ giantsborn_events.1.b: "Something reasonable can be managed."
+ giantsborn_events.1.c: "The holds weren't enough, apparently."
+ 
+ racial_petitioners_events.undead_1.title: "Dead Men Tell Grievances, Apparently"
+ undead_events.2.desc: "Representatives of the undead communities within our provinces have presented themselves at court, which required some negotiation around which chambers, on grounds of smell, would receive them. They ask what the living ask: recognition, local governance, the right to manage their necropolises and sepulchral quarters without requiring the crown's hand in every burial ordinance. Death, they argue, does not revoke the obligations owed to a subject. Granting them this is a harder sell than the request itself warrants—there are those in court who believe the dead have already received their due. Refuse, and you leave a community that has, demonstrably, all the time in the world to wait for better terms."
+ undead_events.2.a: "Granted. They've waited long enough."
+ undead_events.2.b: "Some accommodations seem manageable. Fine."
+ undead_events.2.c: "We let them stay. Enough."
+ 
+ tiefling_events.1.title: "Hell-Touched, Hat in Hand"
+ tiefling_events.1.desc: "A Tiefling delegation has come before court—which, judging by the temperature in the room, some of your advisors regard as a theological problem before it is a political one. They ask for formal recognition of their communities and the right to govern their own affairs without the crown's interference in matters their neighbors are already left to handle themselves. The hell-touched have heard every variation of 'not yet' and 'perhaps in time,' and their patience for it is, the lead petitioner makes clear without raising her voice, limited. Grant this, and you anger those who see infernal heritage as reason enough to withhold. Refuse, and you prove them right that the crown applies its principles selectively."
+ tiefling_events.1.a: "Granted. We didn't flinch. Much."
+ tiefling_events.1.b: "Measured concessions seem fair enough."
+ tiefling_events.1.c: "Nobody's been damned lately. Still no."
+
+ aasimar_events.1.title: "Heaven's Favorites Want Paperwork Too"
+ aasimar_events.1.desc: "Aasimar representatives have arrived from the sanctuaries and communities scattered across our provinces, composed and quietly luminous in the way that makes some in court feel they are being evaluated rather than petitioning. They ask for local autonomy—formal authority over the communities where the celestial-touched have long governed themselves in practice if not in law. Their cause is harder to dismiss than most, which is precisely what irritates those who oppose it. Grant them recognition, and you spend political goodwill defending a people some resent for being too easy to respect. Deny them, and you will have to explain, eventually, why the crown draws lines it has never quite written down."
+ aasimar_events.1.a: "Granted. Someone upstairs is watching."
+ aasimar_events.1.b: "Some concessions. Not worth explaining otherwise."
+ aasimar_events.1.c: "Heaven's favorites can wait longer."
+
+ #purge kindred cabinet events
+ purge_kindred.10.title: "Exodus from [SCOPE.sProvince('target_province').GetNameWithNoTooltip]"
+ purge_kindred.10.desc: "Word of the purge against the [target_kindred.GetName] has spread faster than the soldiers enforcing it. Families are fleeing [SCOPE.sProvince('target_province').GetNameWithNoTooltip] in droves, carrying what they can and cursing the names of those who ordered this policy. Some in court argue that an empty province is a successful province. Others warn that the displaced will carry their grievances wherever they settle."
+ purge_kindred.10.a: "Let them flee. Empty the province."
+ purge_kindred.10.b: "Seal the roads. No one leaves."
+
+ purge_kindred.11.title: "Resistance in [SCOPE.sProvince('target_province').GetNameWithNoTooltip]"
+ purge_kindred.11.desc: "The purge in [SCOPE.sProvince('target_province').GetNameWithNoTooltip] has met organized resistance. [target_kindred.GetName] communities are sheltering their own, sabotaging patrols, and turning rural lanes into traps for crown officials. The local governor reports that control is slipping and demands instructions before the situation becomes a rebellion in all but name."
+ purge_kindred.11.a: "Negotiate. We cannot afford open revolt."
+ purge_kindred.11.b: "Crack down harder. Fear will finish what patience began."
+
+ purge_kindred.12.title: "Voices Against the Purge"
+ purge_kindred.12.desc: "Opposition to the ongoing purge has reached our own court. Delegations from several estates argue that targeting the [target_kindred.GetName] wholesale is cruel, impractical, and beneath the dignity of a state that claims to govern by law rather than terror. Xenophile-minded advisors urge restraint. Hardliners demand the cabinet hold its course and make an example of dissent."
+ purge_kindred.12.a: "Hear their concerns and soften our approach."
+ purge_kindred.12.b: "Ignore the grumbling. The purge continues."
+ purge_kindred.12.c: "Arrest the loudest critics. Let the rest take note."
+
+ purge_kindred.13.title: "Foreign Condemnation"
+ purge_kindred.13.desc: "Envoys from [SCOPE.sCountry('condemning_country').GetNameWithNoTooltip] have delivered a formal protest against our purge of the [target_kindred.GetName]. They call the policy barbaric, warn of lasting enmity, and remind us that kindreds have friends beyond our borders. How we answer will be remembered."
+ purge_kindred.13.a: "Let them protest. Our internal affairs are our own."
+ purge_kindred.13.b: "Issue a diplomatic apology without changing course."
+ purge_kindred.13.c: "Answer defiance with defiance."
+
+ purge_kindred.14.title: "The Undead Do Not Forget"
+ purge_kindred.14.desc: "The purge of undead communities in [SCOPE.sProvince('target_province').GetNameWithNoTooltip] has provoked a response unlike any other kindred's. Ancient grievances stir. Locals report unsettling gatherings, missing patrols, and whispers that the dead are being given new reasons to hate the living. Those who know the undead best warn that this purge may cost more than population figures suggest."
+ purge_kindred.14.a: "Pull back before necromantic unrest spreads."
+ purge_kindred.14.b: "Offer concessions to calm the province."
+ purge_kindred.14.c: "Press on. The dead have no place among the living."
+
+ etra_hre.0.title: "Holy Commonweal Pulse"
+ etra_hre.0.a: "Acknowledged."
+
+ etra_hre.1.title: "And then there was silence."
+ etra_hre.1.desc: "The embers flickered, and a crack broke the silence of the grove.\n\nWhat a curious thing it was, to have seen the death of a mortal and the birth of an idea. To have seen friends become fanatics, Valera mused.\n\nThe fire consumed another log, the wood crumbling to ash.\n\nShe had been the first; now she would be the last of the party of Junil — the Junil, she supposed. Alaric had been the first to pass, as he always had to be first. Aegwynn followed soon after. The plague had taken Kixirx — a year ago? Or had it been ten? Dead friends. An unpleasant thought.\n\nHer bones ached. She had spent the remainder of her years seeing the Junil's dream fulfilled, and now she had retired to the land of her youth, to the time before everything — though it barely reminded her of those pleasant years now. What would become of them now? When the Dream was no longer held before them, but only a shadow on the wall?\n\nThe fire dimmed further. Valera did not add another log. She turned and walked home. etra_hre.1.a: "So the Commonweal turns."
+ etra_hre.1.a: "The Dream outlives the dreamer."
+
+ ##Dummy validation (never fires)
+ etra_dummy_events.1.title: "(placeholder)"
+ etra_dummy_events.1.desc: "(placeholder)"
+ etra_dummy_events.1.a: "(placeholder)"

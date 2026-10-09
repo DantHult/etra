@@ -1,0 +1,72 @@
+﻿hravevi_language = {
+	color = map_ARM
+
+	male_names = {
+		Abas Abirad Aboughamr Aboulgharib name_abraham name_alexander Arakel Ardeshir name_aram Ari Armen name_arsenios Arshak Arshavir Artashes Artashir Artavazd Ashot Athom Atrnerseh name_avag Avedis
+		Badouagan Bagour name_bagrat Bedros Berjouhi Boghos
+		Davit 
+		Eshkhan
+		Gagik Gevorg Ghoukas Gosdantin Grigor Gurgen Gyulnara
+		Hagop Hakob Hamazasp Hayk name_hethum Hovhannes Hovsep
+		Ishkhan name_john
+		Jirair
+		Kapriel Karayan Kevork Khachik Khajag Khosrau Khosrov Krikor
+		Levon name_lupus
+		Malkhas Mamigon name_emmanuel Margos Melek Mihrdat Mikayel Mkhitar Mleh Movses Musegh Mushel Mzhezh
+		Nairi Narineh Narses Nerseh
+		name_oshin
+		Petros Poghos
+		Roupen
+		Sahak Samvel Sarkis Sevag Sevan Smbat 
+		Tachar Taniel name_theodore Tigran
+		Vagram Vahan 
+		Zadig Zoravan                               
+	}
+	female_names = {
+		Aghavni Alitz Almasd Anahit Ani name_anna Anoush Arda Arevig Arin 
+		Baydzar Berjanoush Berjouhi
+        Dalita Datevig  
+		Elen Eliz  
+		Gadar Gorandoukht  
+		Hasmig Houri Hranoush Hripsimeh        
+        Keghanoush Keran Khorishah Kohar 
+		Latavri Leyli Lousin 
+		Mara Margarid name_mary Mariyam Mariam Meghranoush name_milena
+		Nane Nazani 
+		Ovsanna 
+		Pounig 
+		Razmouhi Rita 
+		Satenik Satinik Seta Siran Sirvart Srpouhi Shoushanig 
+		Takouhi name_tamara  
+		Vartanoush Vartouhi Vosgi 
+		Yeva 
+		Zabel	
+	}
+	dynasty_names = {
+		Abamelik Amatuni
+		Bagdazarian Bagratuni Bebutov
+		Khojaminasishvili
+		Melikov
+		Orbelid
+		Pahlavuni
+		Rubenid
+        Tumanishvili
+	}
+	lowborn = {
+		Avetisyan
+		Davtyan
+		Gevorgyan Grigoryan
+		Hakobyan Hovhannisyan
+		Mkhitaryan
+		Petrosyan Poghosyan
+		Sargsyan
+		Vardanyan
+	}
+	
+	# to override the default adjective and noun database for cultural works
+	#adjective = {
+	#}
+	#noun = {
+	#}
+
+}

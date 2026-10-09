@@ -1,0 +1,21 @@
+﻿#Age of Traditions#
+A370_the_black_rose = {
+	age = age_1_traditions
+	icon = efficient_spies
+	potential = {
+		has_or_had_tag = A370
+	}
+	spy_network_construction = 0.1
+	antagonism_received_modifier = -0.05
+	requires = medieval_administration
+}
+
+#Age of Renaissance#
+
+#Age of Discovery#
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#

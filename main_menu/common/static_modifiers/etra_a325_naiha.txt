@@ -1,0 +1,42 @@
+﻿# Naiha (A325) event modifiers
+
+a325_occupation_of_hyriosia = {
+	game_data = {
+		category = country
+	}
+	levy_recovery_modifier = -0.20
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	land_unit_attrition = 0.10
+}
+
+a325_pages_of_carcos = {
+	game_data = {
+		category = country
+	}
+	global_crown_estate_power = 0.10
+	global_nobles_estate_power = -0.10
+}
+
+a325_the_wall_kept = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = 0.10
+	land_morale_modifier = 0.05
+}
+
+a325_preparing_the_second_sun = {
+	game_data = {
+		category = country
+	}
+	levy_recovery_modifier = -0.15
+	land_morale_modifier = 0.05
+}
+
+a325_broken_ground = {
+	game_data = {
+		category = country
+	}
+	levy_recovery_modifier = -0.10
+	land_unit_attrition = 0.10
+}

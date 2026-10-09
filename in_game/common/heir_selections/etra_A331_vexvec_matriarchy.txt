@@ -1,0 +1,51 @@
+﻿# Female-only succession for A331 (Vexvec); available on monarchy via INJECT
+
+vexvec_matrilineal_primogeniture = {
+	include_ruler_siblings = yes
+	through_female = yes
+	allow_female = yes
+	allow_male = no
+	allow_children = yes
+	ignore_ruler = yes
+
+	potential = {
+		tag = A331
+		NOR = {
+			succession_law = heir_selection:fratricide_succesion
+			succession_law = heir_selection:unigeniture
+		}
+	}
+
+	locked = {
+		tag = A331
+	}
+
+	allowed_estates = { nobles_estate }
+	heir_is_allowed = {
+	}
+
+	traverse_family_tree = yes
+	depth_first = yes
+
+	sibling_score = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = character_age
+			}
+			add = {
+				desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+				if = { limit = { modifier:blocked_from_being_ruler = yes } value = -1000 }
+			}
+		}
+		else = {
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = 1
+			}
+		}
+	}
+}

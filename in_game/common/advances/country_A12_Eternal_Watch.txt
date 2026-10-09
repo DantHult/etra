@@ -1,0 +1,29 @@
+﻿#Age of Traditions#
+A12_the_hollow_vigil  = {
+	age = age_1_traditions
+	potential = { 
+		has_or_had_tag = A12
+	}
+	
+	discipline = 0.05
+	army_tradition_from_battle = 2
+	
+	requires = organized_religion
+	icon = regiment_reinforcement_speed_renaissance
+}
+
+#Age of Renaissance#
+
+
+#Age of Discovery# 
+
+
+
+#Age of Reformation#
+
+
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

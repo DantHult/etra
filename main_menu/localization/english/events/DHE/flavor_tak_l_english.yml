@@ -1,0 +1,37 @@
+﻿l_english:
+ # Rise of Tajjev DHE
+ flavor_tak.2.title: "The Destruction of House Izem"
+ flavor_tak.2.desc: "In the turmoil of Iborros, enemies at court and in the streets turn on House Izem. Estates are seized, retainers slain, and the name of Izem is struck from favor. Only [GetCharacter('A378_massin').GetName] escapes the slaughter — a broken noble cast toward the highlands of Takkev."
+ flavor_tak.2.a: "Hunt them without mercy."
+ flavor_tak.2.a.tt: "House Izem is crushed. Survivors will flee Iborros."
+ flavor_tak.2.b: "Strip their titles and drive them out."
+ flavor_tak.2.b.tt: "House Izem is broken. The survivors are cast into exile."
+
+ flavor_tak.3.title: "Exiles from Iborros"
+ flavor_tak.3.desc: "Refugees from Iborros reach [exile_location.GetName]. Among them walks [target_character.GetName] of House Izem — stripped of rank, yet not of purpose. The highlanders of Takkev watch the strangers with wary interest."
+ flavor_tak.3.a: "Give them shelter."
+ flavor_tak.3.a.tt: "[target_character.GetName] joins our court."
+
+ flavor_tak.4.title: "A Stranger Among the Highlands"
+ flavor_tak.4.desc: "[target_character.GetName] learns the trails, the dialects, and the pride of Takkev. Some call the exile a useless courtling. Others already glimpse a leader who might bind the tribes."
+ flavor_tak.4.a: "Let him earn his place."
+
+ flavor_tak.5.title: "Embassy to Iborros"
+ flavor_tak.5.desc: "Years after the fall of House Izem, voices urge an embassy to [target_country.GetName]. Whether for reconciliation or quiet measure of the old enemy, the court of Tajjev looks north again."
+ flavor_tak.5.a: "Send the embassy."
+ flavor_tak.5.b: "We owe them nothing."
+
+ flavor_tak.8.title: "The Rise of Tajjev"
+ flavor_tak.8.desc: "The tribes of Takkev gather under [target_character.GetName]. From exile and bitterness is forged a new banner: Tajjev. The highlanders will no longer be a scattered people — they will be an army."
+ flavor_tak.8.a: "Tajjev rises."
+ flavor_tak.8.a.tt: "A new country is founded under Massin, beginning the Rise of Tajjev."
+ flavor_tak.8.b: "I will lead Tajjev myself."
+
+ flavor_tak.81.title: "The Call of Tajjev"
+ flavor_tak.81.desc: "[target_character.GetName] summons the Tajjevi peoples under one standard. Neighboring tribes are offered a place in the rising host — or the promise of war."
+ flavor_tak.81.a: "Join Tajjev."
+ flavor_tak.81.b: "We keep our own path."
+
+ flavor_tak.9.title: "Death of the Founder"
+ flavor_tak.9.desc: "[target_character.GetName] is dead. The host that feared him looks for weakness, and the unity of Tajjev hangs by a thread."
+ flavor_tak.9.a: "Hold what we can."

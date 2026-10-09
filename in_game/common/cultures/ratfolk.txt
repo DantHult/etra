@@ -1,0 +1,41 @@
+﻿rattolini_culture = { #italian Ratfolk
+	
+	language = vulgar_moran_language
+	
+	color = color_culture_bedouin
+	
+	tags = { verman_gfx egyptian_gfx middle_east_gfx }
+
+	culture_groups = {
+		freeholder_group
+		ratfolk_group
+	}
+}
+
+knawven_culture = {
+	
+	language = north_torrentor_dialect
+	
+	color = map_FRI
+	
+	tags = { verman_gfx egyptian_gfx middle_east_gfx }
+
+	culture_groups = {
+		torrenter_group
+		ratfolk_group
+		ringed_citizen_group
+	}
+} 
+
+skorryn_culture = { #Children of the Deep Warrens
+	
+	language = vulgar_moran_language
+	
+	color = rgb { 75 75 25 }
+	
+	tags = { verman_gfx egyptian_gfx middle_east_gfx }
+
+	culture_groups = {
+		ratfolk_group
+	}
+}

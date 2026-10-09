@@ -1,0 +1,65 @@
+﻿INJECT:marriage_law = {
+	polygyny = {
+		potential = {
+			OR = {
+				is_country_religion_pagan = yes
+				#religion = religion:hindu
+				culture = { has_culture_group = culture_group:ratfolk_group }
+			}
+		}
+		country_modifier = {
+			female_spouses = 4
+			male_spouses = 1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+
+	vexvec_matron_unions = {
+		potential = {
+			has_reform = government_reform:vexvec_coven_throne_reform
+		}
+		country_modifier = {
+			female_spouses = 1
+			male_spouses = 4
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}
+
+INJECT:legal_code_law = {
+	lux_aeterna = {
+		potential = {
+			tag = A01
+		}
+		country_modifier = {
+			monthly_towards_centralization = societal_value_monthly_move
+			pop_join_rebel_threshold = -0.03
+			legislative_efficiency = 0.15
+			country_cabinet_efficiency = 0.05
+		}
+		years = 5
+	}
+
+}
+
+INJECT:civil_law_policy = {
+	potential = {
+		OR = {
+			capital.continent = continent:europe
+			religion.group = religion_group:christian
+			religion.group = religion_group:adunan
+		}
+	}
+	allow = {
+		OR = {
+			has_embraced_institution = institution:legalism
+			capital = { has_institution = institution:legalism }
+		}
+	}
+}

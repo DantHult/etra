@@ -1,0 +1,325 @@
+﻿namespace = purge_kindred
+
+purge_kindred.10 = {
+	type = country_event
+	title = purge_kindred.10.title
+	desc = purge_kindred.10.desc
+	outcome = negative
+
+	trigger = {
+		has_active_purge_kindred_cabinet = yes
+		NOT = { has_variable = purge_kindred_migration_cooldown }
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:peasants_estate
+			background = estate_type:peasants_estate
+		}
+		purge_kindred_save_active_scopes = yes
+		set_variable = { name = purge_kindred_migration_cooldown days = 365 }
+	}
+
+	option = {
+		name = purge_kindred.10.a
+		ai_chance = { factor = 40 }
+		if = {
+			limit = {
+				exists = scope:target_province
+			}
+			scope:target_province = {
+				every_location_in_province = {
+					add_migration = {
+						owner = root
+						from = this.province.province_definition
+						to = root.capital.province_definition
+						amount = 0.3
+						months = 6
+					}
+				}
+			}
+		}
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_right
+		}
+	}
+
+	option = {
+		name = purge_kindred.10.b
+		ai_chance = { factor = 60 }
+		if = {
+			limit = {
+				exists = scope:target_province
+			}
+			scope:target_province = {
+				every_location_in_province = {
+					change_control = control_mild_penalty
+				}
+			}
+		}
+		purge_kindred_monthly_satisfaction_effect = yes
+	}
+}
+
+purge_kindred.11 = {
+	type = country_event
+	title = purge_kindred.11.title
+	desc = purge_kindred.11.desc
+	outcome = negative
+
+	trigger = {
+		has_active_purge_kindred_cabinet = yes
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:peasants_estate
+			background = estate_type:peasants_estate
+		}
+		purge_kindred_save_active_scopes = yes
+	}
+
+	option = {
+		name = purge_kindred.11.a
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				exists = scope:target_province
+			}
+			scope:target_province = {
+				every_location_in_province = {
+					change_control = control_mild_penalty
+				}
+			}
+		}
+		add_stability = stability_mild_penalty
+	}
+
+	option = {
+		name = purge_kindred.11.b
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				exists = scope:target_province
+			}
+			scope:target_province = {
+				every_location_in_province = {
+					every_pop = {
+						limit = {
+							culture = {
+								has_culture_group = scope:target_kindred
+								NOT = { is_accepted_in = root }
+							}
+						}
+						add_pop_size = {
+							value = pop_size
+							multiply = -0.03
+						}
+					}
+				}
+			}
+		}
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_right
+		}
+		purge_kindred_monthly_satisfaction_effect = yes
+	}
+}
+
+purge_kindred.12 = {
+	type = country_event
+	title = purge_kindred.12.title
+	desc = purge_kindred.12.desc
+	outcome = negative
+
+	trigger = {
+		has_active_purge_kindred_cabinet = yes
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+		purge_kindred_save_active_scopes = yes
+	}
+
+	option = {
+		name = purge_kindred.12.a
+		ai_chance = { factor = 40 }
+		add_all_estate_satisfaction = { value = estate_satisfaction_mild_bonus }
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_left
+		}
+	}
+
+	option = {
+		name = purge_kindred.12.b
+		ai_chance = { factor = 35 }
+		add_government_power = government_power_mild_penalty
+	}
+
+	option = {
+		name = purge_kindred.12.c
+		ai_chance = { factor = 25 }
+		add_stability = stability_mild_penalty
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_right
+		}
+	}
+}
+
+purge_kindred.13 = {
+	type = country_event
+	title = purge_kindred.13.title
+	desc = purge_kindred.13.desc
+	outcome = negative
+
+	trigger = {
+		has_active_purge_kindred_cabinet = yes
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+		purge_kindred_save_active_scopes = yes
+		random_country = {
+			limit = {
+				NOT = { this = root }
+				exists = scope:target_kindred
+				culture = { has_culture_group = scope:target_kindred }
+			}
+			save_scope_as = condemning_country
+		}
+	}
+
+	option = {
+		name = purge_kindred.13.a
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				exists = scope:condemning_country
+			}
+			reverse_add_opinion = {
+				target = scope:condemning_country
+				modifier = opinion_negative_societal_values
+			}
+		}
+	}
+
+	option = {
+		name = purge_kindred.13.b
+		ai_chance = { factor = 30 }
+		add_prestige = prestige_mild_penalty
+	}
+
+	option = {
+		name = purge_kindred.13.c
+		ai_chance = { factor = 20 }
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_right
+		}
+	}
+}
+
+purge_kindred.14 = {
+	type = country_event
+	title = purge_kindred.14.title
+	desc = purge_kindred.14.desc
+	outcome = negative
+
+	trigger = {
+		any_cabinet = {
+			has_cabinet_action = yes
+			cabinet_action = cabinet_action:purge_kindred
+			interaction_target:target = culture_group:undead_group
+		}
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+		purge_kindred_save_active_scopes = yes
+	}
+
+	option = {
+		name = purge_kindred.14.a
+		ai_chance = { factor = 40 }
+		if = {
+			limit = {
+				exists = scope:target_province
+			}
+			scope:target_province = {
+				every_location_in_province = {
+					change_control = control_severe_penalty
+				}
+			}
+		}
+		add_stability = stability_mild_penalty
+	}
+
+	option = {
+		name = purge_kindred.14.b
+		ai_chance = { factor = 35 }
+		add_government_power = government_power_mild_penalty
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_left
+		}
+	}
+
+	option = {
+		name = purge_kindred.14.c
+		ai_chance = { factor = 25 }
+		if = {
+			limit = {
+				exists = scope:target_province
+			}
+			scope:target_province = {
+				every_location_in_province = {
+					every_pop = {
+						limit = {
+							culture = {
+								has_culture_group = culture_group:undead_group
+								NOT = { is_accepted_in = root }
+							}
+						}
+						add_pop_size = {
+							value = pop_size
+							multiply = -0.03
+						}
+					}
+				}
+			}
+		}
+		change_societal_value = {
+			type = xenophile_vs_xenophobe
+			value = societal_value_minor_move_to_right
+		}
+	}
+}

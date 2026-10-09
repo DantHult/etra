@@ -1,0 +1,228 @@
+situation_panel = {
+
+	blockoverride "situation_panel_image" {
+		using = two_countries_header_template
+
+		blockoverride "FirstCountryContext" {
+			datacontext = "[GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry]"
+		}
+
+		blockoverride "SecondCountryContext" {
+			datacontext = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry]"
+		}
+
+		blockoverride "second_character_portrait_anchor" {
+			parentanchor = bottom|right
+		}
+
+		blockoverride "character_religion_visibility" {
+			visible = no
+		}
+
+		blockoverride "character_name_maximumsize" {
+			maximumsize = { 270 -1 }
+		}
+	}
+
+	blockoverride "situation_subheader_content" { }
+
+	blockoverride "situation_panel_main_content" {
+		situation_card_expandable = {
+			blockoverride "header_button_onclick" {
+				onclick = "[LateralView.Vars.Toggle( 'requirements_toggled' )]"
+			}
+			blockoverride "header_text" {
+				text = "END_REQUIREMENTS"
+			}
+			blockoverride "header_icon" {
+				texture = "gfx/interface/icons/disasters/end_requirements_green.dds"
+			}
+			blockoverride "bottom_content" {
+				TooltipRequirementsList = {
+					textcontext = "[SituationView.GetActiveSituation.GetSituation.GetEndConditions]"
+				}
+			}
+			blockoverride "visible_hint" {}
+			blockoverride "onaction_hint" {
+				action_tooltip = {
+					title = "OPEN_HINT"
+					on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_verminus_wars')]"
+				}
+			}
+			blockoverride "bottom_content_onclick" {
+				visible = "[LateralView.Vars.Exists( 'requirements_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_yes" {
+				visible = "[LateralView.Vars.Exists( 'requirements_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_not" {
+				visible = "[Not(LateralView.Vars.Exists( 'requirements_toggled' ))]"
+			}
+		}
+
+		situation_fancy_two_line_card = {
+			blockoverride "left_flag_properties" {
+				datacontext = "[GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry]"
+				visible = "[Country.IsValid]"
+			}
+			blockoverride "left_bottom_flag" { }
+			blockoverride "left_top_text" {
+				margin_top = 10
+				margin_bottom = -10
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				visible = "[GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry.IsValid]"
+				text = "[GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry.GetName]"
+			}
+			blockoverride "left_bottom_text" {
+				raw_text = " "
+			}
+
+			blockoverride "right_flag_properties" {
+				datacontext = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry]"
+				visible = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry.IsValid]"
+			}
+			blockoverride "right_bottom_flag" { }
+			blockoverride "right_top_text" {
+				margin_top = 10
+				margin_bottom = -10
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				visible = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry.IsValid]"
+				text = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry.GetName]"
+			}
+			blockoverride "right_bottom_text" {
+				raw_text = " "
+			}
+
+			blockoverride "center_visible_trigger" { }
+			blockoverride "center_content" {
+				piechart = {
+					size = { 50 50 }
+					using = piechart_angles
+
+					pieslice = {
+						datacontext = "[SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry]"
+						tooltipwidget = {
+							ContextualTooltipType = {
+								blockoverride "title_text" {
+									text = "SITUATION_VERMINUS_CONTENDER_PROGRESS"
+								}
+								blockoverride "title_icon" {
+									icon = {
+										using = tooltip_title_icon_size
+										texture = "gfx/interface/icons/flat_icons/war_view/army_strength.dds"
+									}
+								}
+								blockoverride "concept_link" {
+									text = "[military_strength|e]"
+								}
+								blockoverride "tooltip_content" {
+									TooltipTextBlock = {
+										textcontext = "SITUATION_VERMINUS_CONTENDER_PROGRESS_TEXT"
+									}
+									TooltipRowList = {
+										textcontext = "[GetLandCombatPowerTooltipUI(Country.Self, '(bool)no')]"
+									}
+								}
+							}
+						}
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80_red.dds"
+						value = "[FixedPointToFloat(SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry.GetRelativeMilitaryStrength(GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry.Self))]"
+						color = { 1 1 1 1 }
+					}
+
+					pieslice = {
+						datacontext = "[GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry]"
+						tooltipwidget = {
+							ContextualTooltipType = {
+								blockoverride "title_text" {
+									text = "SITUATION_VERMINUS_CROWN_PROGRESS"
+								}
+								blockoverride "title_icon" {
+									icon = {
+										using = tooltip_title_icon_size
+										texture = "gfx/interface/icons/flat_icons/war_view/army_strength.dds"
+									}
+								}
+								blockoverride "concept_link" {
+									text = "[military_strength|e]"
+								}
+								blockoverride "tooltip_content" {
+									TooltipTextBlock = {
+										textcontext = "SITUATION_VERMINUS_CROWN_PROGRESS_TEXT"
+									}
+									TooltipRowList = {
+										textcontext = "[GetLandCombatPowerTooltipUI(Country.Self, '(bool)no')]"
+									}
+								}
+							}
+						}
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80_green.dds"
+						value = "[FixedPointToFloat(GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry.GetRelativeMilitaryStrength(SituationView.GetActiveSituation.GetSituation.MakeScope.GetVariable('verminus_threatening_contender').GetCountry.Self))]"
+						color = { 1 1 1 1 }
+					}
+
+					icon = {
+						size = { 65% 65% }
+						parentanchor = center
+						texture = "gfx/interface/icons/situations/_default.dds"
+					}
+				}
+			}
+		}
+
+		situation_card_expandable = {
+			blockoverride "header_button_onclick" {
+				onclick = "[LateralView.Vars.Toggle( 'contenders_toggled' )]"
+			}
+			blockoverride "bottom_content_onclick" {
+				visible = "[LateralView.Vars.Exists( 'contenders_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_yes" {
+				visible = "[LateralView.Vars.Exists( 'contenders_toggled' )]"
+			}
+			blockoverride "icon_replace_visible_not" {
+				visible = "[Not(LateralView.Vars.Exists( 'contenders_toggled' ))]"
+			}
+			blockoverride "header_icon" {
+				texture = "gfx/interface/icons/situations/_default.dds"
+			}
+			blockoverride "header_text" {
+				margin_left = 5
+				text = "VERMINUS_STRONG_CONTENDERS"
+			}
+			blockoverride "header_content_rest" { }
+			blockoverride "bottom_content" {
+				scrollarea = {
+					layoutpolicy_horizontal = expanding
+					autoresizescrollarea = yes
+					scrollbarpolicy_horizontal = always_off
+					scrollbar_vertical = {
+						using = Scrollbar_Vertical
+					}
+
+					scrollwidget = {
+						dynamicgridbox = {
+							flipdirection = yes
+							datamodel_wrap = 13
+							maxhorizontalslots = 13
+							datamodel = "[GetGlobalList('verminus_strong_contenders_list')]"
+							item = {
+								country_flag_small = {
+									datacontext = "[Scope.GetCountry]"
+									blockoverride "click" {
+										onclick = "[OpenDiplomacy(Country.Self)]"
+									}
+									tooltipwidget = {
+										using = CountryTooltip
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

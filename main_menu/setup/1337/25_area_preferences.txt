@@ -1,0 +1,11 @@
+
+countries = {
+	countries = {
+		A01 = {
+			area_preferences = {
+				generic_conquer_home_region
+			}
+		}
+
+	}
+}

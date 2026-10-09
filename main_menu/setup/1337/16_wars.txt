@@ -1,0 +1,65 @@
+war_manager = {
+	war = {
+		war_name = {
+			name = "CRUSADE_WAR_NAME"
+			ordinal = 1
+			second = {
+				name = "A360"
+			}
+		}
+		
+		take_province = {
+			type = crusade_conquest
+			casus_belli = cb_crusade
+			location = etra401
+		}
+		
+		start_date = 1283.1.1
+		action = 1337.3.1
+		attacker = {
+			country = A360 #Ashenborne
+			request = {
+				reason = Instigator
+			}
+		}
+		attacker = {
+			country = A345 #Cynzic
+			request = {
+				caller = A360
+				reason = Scripted
+				which = alliance
+			}
+		}
+		attacker = {
+			country = A348 #Stryh
+			request = {
+				caller = A360
+				reason = Scripted
+				which = alliance
+			}
+		}
+		attacker = {
+			country = A349 #Rikova
+			request = {
+				caller = A360
+				reason = Scripted
+				which = alliance
+			}
+		}
+		attacker = {
+			country = A343 #Tortra
+			request = {
+				caller = A360
+				reason = Scripted
+				which = alliance
+			}
+		}		
+		defender = {
+			country = A321
+			request = {
+				reason = Target
+			}
+		}
+
+	}
+}

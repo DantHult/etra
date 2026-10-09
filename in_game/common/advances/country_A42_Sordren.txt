@@ -1,0 +1,24 @@
+﻿#includes both Stone and Salt Sordrenic culutres
+#Age of Traditions#
+A42_lands_of_salt_and_stone = {
+	age = age_1_traditions
+	icon = bur_between_two_realms
+	potential = { 
+		has_or_had_tag = A42
+	}
+	global_integration_speed_modifier = 0.1
+	requires = library_advance
+}
+#Age of Renaissance#
+
+
+
+#Age of Discovery# 
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

@@ -1,0 +1,14 @@
+﻿moran_civil_war_end_trigger = {
+	OR = {
+		AND = {
+			stability >= 75
+			government_power >= 75
+		}
+		AND = {
+			had_disaster_for_years = {
+				disaster_type = disaster_type:moran_civil_war
+				years >= 10
+			}
+		}
+	}
+}

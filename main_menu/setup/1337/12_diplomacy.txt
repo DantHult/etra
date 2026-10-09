@@ -1,0 +1,16 @@
+ diplomacy_manager = {   
+	dependency = { first = A02 second = A12 subject_type = vassal }
+    dependency = { first = A02 second = A11 subject_type = vassal }
+	dependency = { first = A02 second = A29 subject_type = vassal }
+	dependency = { first = A37 second = A38 subject_type = vassal }
+	#Exalted Host
+	dependency = { first = A330 second = A339 subject_type = tributary }
+	dependency = { first = A330 second = A340 subject_type = tributary }
+	dependency = { first = A330 second = A341 subject_type = tributary }
+	dependency = { first = A330 second = A354 subject_type = tributary }
+	dependency = { first = A330 second = A356 subject_type = tributary }
+	dependency = { first = A330 second = A355 subject_type = tributary }
+	dependency = { first = A330 second = A353 subject_type = tributary }
+	dependency = { first = A330 second = A324 subject_type = tributary }
+	dependency = { first = A330 second = A338 subject_type = tributary }	
+}

@@ -1,0 +1,1828 @@
+# #Remember to write sons and daughters ALWAYS after their parents to avoid crashes
+
+character_db={
+
+	# sir_not_appearing_in_this_mod = {
+		# first_name = { name = name_albert }
+		# nickname = { name = the_wise }
+		# culture = danube_bavarian
+		# religion = manyfold
+		# estate = nobles_estate
+		# adm = 85 dip = 66 mil = 33
+		# female = no
+		# birth_date = 1298.12.12
+		# birth = testprovince1
+		# dynasty = habsburg_dynasty
+		# fertility = 75
+		# tag = PIR
+		# ruler_trait = lawgiver
+	# }
+	A01_decius = {
+		first_name = { name = Decius }
+		nickname = { name = the_pale }
+		culture = high_moran_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 65 dip = 43 mil = 65
+		female = no
+		birth_date = 1066.12.10
+		birth = godhand64
+		dynasty = atrius_dynasty
+		fertility = 0
+		tag = A01
+		ruler_trait = lawgiver
+		
+		timed_modifier = {
+			modifier = "is_undead_modifier"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	A01_varian_the_living = {
+		first_name = { name = name_varian }
+		nickname = { name = title_the_living }
+		culture = late_moran_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 65 dip = 23 mil = 56
+		female = no
+		birth_date = 1066.9.10
+		birth = godhand43
+		dynasty = salvius_dynasty
+		fertility = 0
+		tag = A01
+		ruler_trait = lawgiver
+		timed_modifier = {
+			modifier = "is_undead_modifier"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	A01_selene_noctivus = {
+		first_name = { name = name_selene }
+		culture = late_moran_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 47 dip = 84 mil = 63
+		female = yes
+		birth_date = 1066.1.10
+		birth = godhand46
+		dynasty = noctivus_dynasty
+		fertility = 0
+		tag = A01
+		#ruler_trait = lawgiver
+		timed_modifier = {
+			modifier = "is_undead_modifier"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	A01_juven = {
+		first_name = { name = name_juven }
+		nickname = { name = torchbearer }
+		culture = early_moran_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 64 dip = 70 mil = 47
+		female = no
+		birth_date = 1066.2.10
+		birth = godhand46
+		dynasty = sepulchor_dynasty
+		fertility = 0
+		estate = clergy_estate
+		tag = A01
+		ruler_trait = lawgiver
+		timed_modifier = {
+			modifier = "is_undead_modifier"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}	
+	#scarlet_order
+	A02_grand_master_theodoric = {
+		first_name = { name = name_theodoric }
+		culture = venturian_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 76 dip = 25 mil = 59
+		birth_date = 1290.3.2
+		birth = freehold13
+		tag = A02
+	}
+	A02_peter_von_dusburg = {
+		first_name = { name = name_peter }
+		last_name = { name = Dusburg }
+		culture = westphalian
+		religion = manyfold
+		estate = clergy_estate
+		adm = 51 dip = 41 mil = 23
+		birth_date = 1280.1.1
+		birth = freehold13
+		artist = writer
+		artist_skill = 0.54
+		artist_trait = adept
+		tag = A02
+	}
+
+	#Livonian Order
+	A02_eberhard_von_monheim = {
+		first_name = { name = name_everard }
+		culture = prussian
+		religion = manyfold
+		adm = 51 dip = 31 mil = 34
+		birth_date = 1275
+		birth = freehold13
+		dynasty = von_monheim_dynasty
+		tag = A02
+
+	}
+	#the rats
+	
+	rat_verminus_supreme = {
+		first_name = { name = name_ratticar }
+		nickname = { name = title_the_great_rat }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1243.1.1
+		death_date = 1337.3.30
+		birth = freehold50
+		dynasty = verminus_dynasty
+		tag = A13
+		adm = 100
+		dip = 100
+		mil = 100
+	}
+	rat_gnavius = {
+		first_name = { name = name_gnavius }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1270.1.1
+		death_date = 1330.3.30
+		father = rat_verminus_supreme
+		birth = freehold50
+		dynasty = verminus_dynasty
+		tag = A13
+	}
+	rat_vernacius = {
+		first_name = { name = name_vernacius }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1300.5.5
+		death_date = 1334.4.30
+		father = rat_gnavius
+		birth = freehold50
+		dynasty = verminus_dynasty
+		tag = A13
+	}
+	rat_pantegan_halden = {
+		first_name = { name = name_valerius }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1272.6.1
+		birth = freehold72
+		dynasty = pantegan_dynasty
+		tag = A13
+		adm = 55
+		dip = 62
+		mil = 48
+	}
+	A13_cecilia = { #Queen Regent of Rattopaese
+ 		first_name = { name = name_cecile }
+ 		culture = rattolini_culture
+ 		religion = manyfold
+		estate = nobles_estate
+		female = yes
+ 		birth_date = 1300.1.1
+ 		birth = freehold72
+		father = rat_pantegan_halden
+		dynasty = pantegan_dynasty
+		spouse = rat_vernacius
+ 		tag = A13
+ 	}
+	rat_pantegan_pantius = {
+		first_name = { name = name_pantius }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1296.9.14
+		birth = freehold72
+		father = rat_pantegan_halden
+		dynasty = pantegan_dynasty
+		tag = A13
+		adm = 44
+		dip = 51
+		mil = 58
+	}
+	rat_ratticar_the_young = {
+		first_name = { name = name_ratticar }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1333.1.1
+		father = rat_vernacius
+		birth = freehold50
+		dynasty = verminus_dynasty
+		tag = A13
+	}	
+	rat_cheq = {
+		first_name = { name = name_cheq }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 68
+		dip = 37
+		mil = 60
+		birth_date = 1297.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_cheq_consort_valina
+		dynasty = verminus_dynasty
+		tag = A14
+	}
+	rat_vikkit = {
+		first_name = { name = name_vikkit }
+		nickname = { name = the_claw }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 25
+		dip = 40
+		mil = 77
+		birth_date = 1294.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_vikkit_consort_beatra
+		dynasty = verminus_dynasty
+		tag = A16
+		ruler_trait = inspiring_leader
+	}
+	rat_kvos = {
+		first_name = { name = name_kvos }
+		nickname = { name = title_the_great_rat }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 60
+		dip = 32
+		mil = 81
+		birth_date = 1300.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_kvos_consort_elina
+		dynasty = verminus_dynasty
+		tag = A17
+		ruler_trait = tactical_genius
+		ruler_trait = inspiring_leader
+	}
+	rat_vem = {
+		first_name = { name = name_vem }
+		nickname = { name = nick_balatrone }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 35
+		dip = 75
+		mil = 87
+		birth_date = 1295.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_vem_consort_diana
+		dynasty = verminus_dynasty
+		tag = A18
+		ruler_trait = inspiring_leader
+	}
+	rat_rocdit_the_first = {
+		first_name = { name = name_rocdit }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1284.1.1
+		death_date = 1330.3.30
+		birth = freehold50
+		father = rat_verminus_supreme
+		dynasty = verminus_dynasty
+		tag = A22
+	}
+	rat_rocdit_the_second = {
+		first_name = { name = name_rocdit }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 47
+		dip = 35
+		mil = 59
+		birth_date = 1300.1.1
+		birth = freehold50
+		father = rat_rocdit_the_first
+		spouse = rat_rocdit_consort_valina
+		dynasty = verminus_dynasty
+		tag = A22
+	}	
+	rat_jex_the_first = {
+		first_name = { name = name_jex }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1282.1.1
+		death_date = 1326.3.30
+		birth = freehold50
+		father = rat_verminus_supreme
+		dynasty = verminus_dynasty
+		tag = A22
+	}
+	rat_jex_the_second = {
+		first_name = { name = name_jex }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 47
+		dip = 35
+		mil = 59
+		birth_date = 1301.1.1
+		birth = freehold50
+		father = rat_rocdit_the_first
+		spouse = rat_jex_consort_catera
+		dynasty = verminus_dynasty
+		tag = A15
+	}	
+	rat_djigren = {
+		first_name = { name = name_djigren }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 53
+		dip = 53
+		mil = 76
+		birth_date = 1282.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_djigren_consort_ermengarda
+		dynasty = verminus_dynasty
+		tag = A23
+		ruler_trait = intricate_web_weaver
+	}
+	rat_rikkek = {
+		first_name = { name = name_rikkek }
+		nickname = { name = the_claw }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 25
+		dip = 50
+		mil = 66
+		birth_date = 1282.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_rikkek_consort_saria
+		dynasty = verminus_dynasty
+		tag = A19
+	}
+	rat_zrindez = {
+		first_name = { name = name_zrindez }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 62
+		dip = 82
+		mil = 16
+		birth_date = 1289.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_zrindez_consort_beatrix
+		dynasty = verminus_dynasty
+		tag = A21
+		ruler_trait = intricate_web_weaver
+	}
+	rat_mavvis = {
+		first_name = { name = name_mavvis }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 60
+		dip = 25
+		mil = 64
+		birth_date = 1291.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_mavvis_consort_catera
+		dynasty = verminus_dynasty
+		tag = A20
+		ruler_trait = bold_fighter
+	}
+	rat_nibblin = {
+		first_name = { name = name_nibblin }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 60
+		dip = 25
+		mil = 64
+		birth_date = 1293.1.1
+		birth = freehold50
+		father = rat_verminus_supreme
+		spouse = rat_nibblin_consort_selene
+		dynasty = verminus_dynasty
+		tag = A24
+		ruler_trait = bold_fighter
+	}
+
+	# Verminus uncle consorts and heirs (Visconti-inspired dynastic lines)
+
+	rat_cheq_consort_valina = {
+		first_name = { name = name_valina }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1299.1.1
+		birth = freehold41
+		spouse = rat_cheq
+		tag = A14
+	}
+	rat_cheq_son_mattik = {
+		first_name = { name = name_mattik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1318.1.1
+		birth = freehold41
+		father = rat_cheq
+		mother = rat_cheq_consort_valina
+		dynasty = verminus_dynasty
+		tag = A14
+	}
+	rat_cheq_son_galeq = {
+		first_name = { name = name_galeq }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 25
+		dip = 50
+		mil = 66
+		birth_date = 1320.3.14
+		birth = freehold41
+		father = rat_cheq
+		mother = rat_cheq_consort_valina
+		dynasty = verminus_dynasty
+		tag = A14
+	}
+	rat_cheq_son_bernib = {
+		first_name = { name = name_bernib }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 47
+		dip = 35
+		mil = 59
+		birth_date = 1322.1.1
+		birth = freehold41
+		father = rat_cheq
+		mother = rat_cheq_consort_valina
+		dynasty = verminus_dynasty
+		tag = A14
+		child_trait = child_rowdy
+	}
+
+	rat_jex_consort_catera = {
+		first_name = { name = name_catera }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1303.1.1
+		birth = freehold35
+		spouse = rat_jex_the_second
+		tag = A15
+		child_trait = child_gifted
+	}
+	rat_jex_son_whisk = {
+		first_name = { name = name_whiskik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1319.1.1
+		birth = freehold35
+		father = rat_jex_the_second
+		mother = rat_jex_consort_catera
+		dynasty = verminus_dynasty
+		tag = A15
+	}
+	rat_jex_son_snip = {
+		first_name = { name = name_snip }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1323.1.1
+		birth = freehold35
+		father = rat_jex_the_second
+		mother = rat_jex_consort_catera
+		dynasty = verminus_dynasty
+		tag = A15
+		child_trait = child_rowdy
+	}
+
+	rat_vikkit_consort_beatra = {
+		first_name = { name = name_beatra }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		adm = 33
+		dip = 54
+		mil = 16
+		birth_date = 1298.1.1
+		birth = freehold34
+		spouse = rat_vikkit
+		tag = A16
+	}
+	rat_vikkit_son_azik = {
+		first_name = { name = name_azik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 60
+		dip = 25
+		mil = 64
+		birth_date = 1316.1.1
+		birth = freehold34
+		father = rat_vikkit
+		mother = rat_vikkit_consort_beatra
+		dynasty = verminus_dynasty
+		tag = A16
+		ruler_trait = bold_fighter
+	}
+	rat_vikkit_son_marik = {
+		first_name = { name = name_marik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 35
+		dip = 75
+		mil = 87
+		birth_date = 1319.1.1
+		birth = freehold34
+		father = rat_vikkit
+		mother = rat_vikkit_consort_beatra
+		dynasty = verminus_dynasty
+		tag = A16
+	}
+	rat_vikkit_son_otto = {
+		first_name = { name = name_otto }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1321.1.1
+		birth = freehold34
+		father = rat_vikkit
+		mother = rat_vikkit_consort_beatra
+		dynasty = verminus_dynasty
+		tag = A16
+	}
+
+	rat_kvos_consort_elina = {
+		first_name = { name = name_elina }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1302.1.1
+		birth = freehold53
+		spouse = rat_kvos
+		tag = A17
+	}
+	rat_kvos_son_luch = {
+		first_name = { name = name_luchik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 68
+		dip = 37
+		mil = 60
+		birth_date = 1320.1.1
+		birth = freehold53
+		father = rat_kvos
+		mother = rat_kvos_consort_elina
+		dynasty = verminus_dynasty
+		tag = A17
+	}
+	rat_kvos_son_stef = {
+		first_name = { name = name_stefik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1324.1.1
+		birth = freehold53
+		father = rat_kvos
+		mother = rat_kvos_consort_elina
+		dynasty = verminus_dynasty
+		tag = A17
+	}
+
+	rat_vem_consort_diana = {
+		first_name = { name = name_diana }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1300.1.1
+		birth = freehold75
+		spouse = rat_vem
+		tag = A18
+	}
+	rat_vem_son_leon = {
+		first_name = { name = name_leonard }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 28
+		dip = 52
+		mil = 30
+		birth_date = 1317.1.1
+		birth = freehold75
+		father = rat_vem
+		mother = rat_vem_consort_diana
+		dynasty = verminus_dynasty
+		tag = A18
+	}
+	rat_vem_son_mark = {
+		first_name = { name = name_mark }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1320.1.1
+		birth = freehold75
+		father = rat_vem
+		mother = rat_vem_consort_diana
+		dynasty = verminus_dynasty
+		tag = A18
+	}
+	rat_vem_son_john = {
+		first_name = { name = name_john }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1322.1.1
+		birth = freehold75
+		father = rat_vem
+		mother = rat_vem_consort_diana
+		dynasty = verminus_dynasty
+		tag = A18
+	}
+
+	rat_rikkek_consort_saria = {
+		first_name = { name = name_saria }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1290.1.1
+		birth = freehold52
+		spouse = rat_rikkek
+		tag = A19
+	}
+	rat_rikkek_son_galeq = {
+		first_name = { name = name_galeq }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 25
+		dip = 50
+		mil = 66
+		birth_date = 1318.1.1
+		birth = freehold52
+		father = rat_rikkek
+		mother = rat_rikkek_consort_saria
+		dynasty = verminus_dynasty
+		tag = A19
+	}
+	rat_rikkek_son_bernib = {
+		first_name = { name = name_bernib }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1321.1.1
+		birth = freehold52
+		father = rat_rikkek
+		mother = rat_rikkek_consort_saria
+		dynasty = verminus_dynasty
+		tag = A19
+	}
+
+	rat_mavvis_consort_catera = {
+		first_name = { name = name_catera }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1295.1.1
+		birth = freehold51
+		spouse = rat_mavvis
+		tag = A20
+		child_trait = child_gifted
+	}
+	rat_mavvis_son_azik = {
+		first_name = { name = name_azik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1330.1.1
+		birth = freehold51
+		father = rat_mavvis
+		mother = rat_mavvis_consort_catera
+		dynasty = verminus_dynasty
+		tag = A20
+	}
+	rat_mavvis_son_ric = {
+		first_name = { name = name_ricarda }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1328.1.1
+		birth = freehold51
+		father = rat_mavvis
+		mother = rat_mavvis_consort_catera
+		dynasty = verminus_dynasty
+		tag = A20
+	}
+	rat_mavvis_son_mark = {
+		first_name = { name = name_mark }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1332.1.1
+		birth = freehold51
+		father = rat_mavvis
+		mother = rat_mavvis_consort_catera
+		dynasty = verminus_dynasty
+		tag = A20
+	}
+
+	rat_zrindez_consort_beatrix = {
+		first_name = { name = name_beatrix }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1295.1.1
+		birth = freehold90
+		spouse = rat_zrindez
+		tag = A21
+	}
+	rat_zrindez_son_leon = {
+		first_name = { name = name_leonard }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 62
+		dip = 82
+		mil = 16
+		birth_date = 1319.1.1
+		birth = freehold90
+		father = rat_zrindez
+		mother = rat_zrindez_consort_beatrix
+		dynasty = verminus_dynasty
+		tag = A21
+	}
+	rat_zrindez_son_otto = {
+		first_name = { name = name_otto }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1323.1.1
+		birth = freehold90
+		father = rat_zrindez
+		mother = rat_zrindez_consort_beatrix
+		dynasty = verminus_dynasty
+		tag = A21
+	}
+
+	rat_rocdit_consort_valina = {
+		first_name = { name = name_valina }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1301.1.1
+		birth = freehold73
+		spouse = rat_rocdit_the_second
+		tag = A22
+	}
+	rat_rocdit_son_mattik = {
+		first_name = { name = name_mattik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1319.1.1
+		birth = freehold73
+		father = rat_rocdit_the_second
+		mother = rat_rocdit_consort_valina
+		dynasty = verminus_dynasty
+		tag = A22
+	}
+	rat_rocdit_son_galeq = {
+		first_name = { name = name_galeq }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 25
+		dip = 50
+		mil = 66
+		birth_date = 1320.3.14
+		birth = freehold73
+		father = rat_rocdit_the_second
+		mother = rat_rocdit_consort_valina
+		dynasty = verminus_dynasty
+		tag = A22
+	}
+	rat_rocdit_son_bernib = {
+		first_name = { name = name_bernib }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 47
+		dip = 35
+		mil = 59
+		birth_date = 1322.1.1
+		birth = freehold73
+		father = rat_rocdit_the_second
+		mother = rat_rocdit_consort_valina
+		dynasty = verminus_dynasty
+		tag = A22
+		child_trait = child_rowdy
+	}
+
+	rat_djigren_consort_ermengarda = {
+		first_name = { name = name_ermengarda }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1288.1.1
+		birth = freehold95
+		spouse = rat_djigren
+		tag = A23
+	}
+	rat_djigren_son_gaspar = {
+		first_name = { name = name_gaspar }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 53
+		dip = 53
+		mil = 76
+		birth_date = 1308.1.1
+		birth = freehold95
+		father = rat_djigren
+		mother = rat_djigren_consort_ermengarda
+		dynasty = verminus_dynasty
+		tag = A23
+	}
+	rat_djigren_son_luch = {
+		first_name = { name = name_luchik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 68
+		dip = 37
+		mil = 60
+		birth_date = 1312.1.1
+		birth = freehold95
+		father = rat_djigren
+		mother = rat_djigren_consort_ermengarda
+		dynasty = verminus_dynasty
+		tag = A23
+	}
+
+	rat_nibblin_consort_selene = {
+		first_name = { name = name_selene }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		female = yes
+		birth_date = 1298.1.1
+		birth = freehold104
+		spouse = rat_nibblin
+		tag = A24
+	}
+	rat_nibblin_son_azik = {
+		first_name = { name = name_azik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1317.1.1
+		birth = freehold104
+		father = rat_nibblin
+		mother = rat_nibblin_consort_selene
+		dynasty = verminus_dynasty
+		tag = A24
+	}
+	rat_nibblin_son_whisk = {
+		first_name = { name = name_whiskik }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1320.1.1
+		birth = freehold104
+		father = rat_nibblin
+		mother = rat_nibblin_consort_selene
+		dynasty = verminus_dynasty
+		tag = A24
+	}
+	rat_nibblin_son_claw = {
+		first_name = { name = name_alric }
+		culture = rattolini_culture
+		religion = manyfold
+		estate = nobles_estate
+		birth_date = 1323.1.1
+		birth = freehold104
+		father = rat_nibblin
+		mother = rat_nibblin_consort_selene
+		dynasty = verminus_dynasty
+		tag = A24
+	}
+
+	A26_valerius = {
+		first_name = { name = valerius }
+		nickname = { name = title_the_dragonslayer }
+		culture = late_moran_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 65 dip = 32 mil = 86
+		female = no
+		birth_date = 1066.10.10
+		birth = godhand83
+		dynasty = draconis_dynasty
+		fertility = 0
+		tag = A26
+		ruler_trait = lawgiver
+		ruler_trait = righteous
+		ruler_trait = bold_fighter
+		timed_modifier = {
+			modifier = "is_undead_modifier"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	A32_alric_sunbreaker = {
+		first_name = { name = name_alric }
+		nickname = { name = title_the_dragonslayer }
+		culture = pantagrins_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 64 dip = 52 mil = 74
+		female = no
+		birth_date = 1298.10.10
+		birth = testprovince86
+		dynasty = sunbreaker_dynasty
+		spouse = A32_anna_last_oath
+		fertility = 60
+		tag = A32
+		ruler_trait = righteous
+		ruler_trait = bold_fighter
+	
+	}
+	A32_anna_last_oath = {
+		first_name = { name = name_anna }
+		culture = pantagrins_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 53 dip = 27 mil = 64
+		female = yes
+		spouse = A32_alric_sunbreaker
+		birth_date = 1298.10.10
+		birth = testprovince86
+		dynasty = lastoath_dynasty
+		fertility = 60
+		tag = A32
+	
+	}
+	A32_ja = {
+		first_name = { name = name_john }
+		culture = pantagrins_culture
+		religion = manyfold
+		adm = 59 dip = 34 mil = 57
+		birth_date = 1312
+		birth = testprovince86
+		dynasty = lastoath_dynasty
+		tag = A32
+	}
+
+	A32_sigurd = {
+		first_name = { name = Sigurd }
+		culture = pantagrins_culture
+		religion = manyfold
+		adm = 52 dip = 52 mil = 32
+		birth_date = 1315
+		birth = testprovince86
+		dynasty = stonewake_dynasty
+		tag = A32
+	}
+	
+	A32_magnus = {
+		first_name = { name = name_magnus }
+		culture = pantagrins_culture
+		religion = manyfold
+		adm = 16 dip = 5 mil = 26
+		birth_date = 1316.5.1
+		birth = testprovince86
+		dynasty = thunderlord_dynasty
+		tag = A32
+	}
+	
+	A32_knut = {		
+		first_name = { name = name_canute }
+		culture = pantagrins_culture
+		religion = manyfold
+		adm = 57 dip = 45 mil = 52
+		birth_date = 1280.1.1
+		birth = testprovince86
+		dynasty = strongjaw_dynasty
+		tag = A32
+	}
+
+	#
+	#	A163
+	#
+	A163_armand_de_hauteclaire = {
+		first_name = { name = name_armand }
+		last_name = { name = hauteclaire_dynasty }
+		culture = berenguer_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 64 dip = 72 mil = 59
+		female = no
+		birth_date = 1254.3.14
+		death_date = 1317.6.12
+		birth = ardraine218
+		dynasty = hauteclaire_dynasty
+		fertility = 45
+		tag = A163
+		ruler_trait = righteous
+	}
+
+	A163_theobald_de_hauteclaire = {
+		first_name = { name = name_theobald }
+		last_name = { name = hauteclaire_dynasty }
+		culture = berenguer_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 58 dip = 70 mil = 73
+		female = no
+		birth_date = 1281.9.4
+		death_date = 1335.4.18
+		father = A163_armand_de_hauteclaire
+		birth = ardraine218
+		dynasty = hauteclaire_dynasty
+		fertility = 50
+		tag = A163
+		ruler_trait = bold_fighter
+	}
+
+	A163_valerand_de_hauteclaire = {
+		first_name = { name = name_valerand }
+		last_name = { name = hauteclaire_dynasty }
+		culture = berenguer_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 76 dip = 84 mil = 62
+		female = no
+		birth_date = 1305.11.21
+		father = A163_theobald_de_hauteclaire
+		birth = ardraine218
+		dynasty = hauteclaire_dynasty
+		fertility = 55
+		tag = A163
+		ruler_trait = lawgiver
+	}
+
+	#
+	#	A119
+	#
+	A119_iyalana_tuluin = {
+		first_name = { name = name_iyalana }
+		last_name = { name = tuluin_dynasty }
+		culture = aneaku_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 74 dip = 86 mil = 58
+		female = yes
+		birth_date = 1311.8.26
+		birth = torrent238
+		dynasty = tuluin_dynasty
+		spouse = A169_aurelian_serpentar
+		fertility = 60
+		tag = A119
+		ruler_trait = lawgiver
+	}
+
+	#
+	#	A169
+	#
+	A169_marcellian_serpentar = {
+		first_name = { name = name_marcellian }
+		last_name = { name = serpentar_dynasty }
+		culture = thaurfolk_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 72 dip = 76 mil = 70
+		female = no
+		birth_date = 1274.6.1
+		death_date = 1334.10.9
+		birth = torrent308
+		dynasty = serpentar_dynasty
+		fertility = 0
+		tag = A169
+	}
+
+	A73_severian_serpentar = {
+		first_name = { name = name_severian }
+		last_name = { name = serpentar_dynasty }
+		culture = thaurfolk_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 78 dip = 88 mil = 71
+		female = no
+		birth_date = 1304.8.2
+		father = A169_marcellian_serpentar
+		birth = torrent211
+		dynasty = serpentar_dynasty
+		fertility = 50
+		tag = A73
+		ruler_trait = righteous
+	}
+
+	A169_aurelian_serpentar = {
+		first_name = { name = name_aurelian }
+		last_name = { name = serpentar_dynasty }
+		culture = thaurfolk_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 91 dip = 83 mil = 93
+		female = no
+		birth_date = 1313.4.14
+		father = A169_marcellian_serpentar
+		birth = torrent308
+		dynasty = serpentar_dynasty
+		spouse = A119_iyalana_tuluin
+		fertility = 55
+		tag = A169
+		ruler_trait = lawgiver
+	}
+
+	#
+	#	A37
+	#
+	
+	A37_saria_valfaren = {
+		first_name = { name = name_saria }
+		culture = lutin_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 82 dip = 61 mil = 74
+		female = yes
+		birth_date = 1260.10.10
+		birth = testprovince89
+		dynasty = valfaren_dynasty
+		fertility = 60
+		tag = A37
+		timed_modifier = {
+			modifier = "is_elven_modifier"
+			start_date = 1217.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	A38_kyrihas = {
+		first_name = { name = name_kyrihas }
+		culture = lutin_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 14 dip = 67 mil = 46
+		birth_date = 1267.10.10
+		birth = testprovince89
+		fertility = 60
+		tag = A37
+		timed_modifier = {
+			modifier = "is_elven_modifier"
+			start_date = 1217.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}	
+	A46_briouze_wryne = {
+		first_name = { name = name_briouze }
+		culture = draquatin_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 36 dip = 56 mil = 86
+		birth_date = 1280.10.10
+		birth = testprovince89
+		dynasty = wryne_dynasty
+		fertility = 60
+		tag = A46
+	}
+	A322_artheonx_wyrmwealth = {
+		first_name = { name = name_artheonx }
+		culture = wyrmwealth_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 90 dip = 90 mil = 90
+		birth_date = 1066.10.10
+		birth = crelzerte
+		fertility = 0
+		tag = A322
+		timed_modifier = {
+			modifier = "is_dragon_modifier"
+			start_date = 1066.1.1
+			date = 9999.1.1
+			size = 1
+		}	
+	}	
+	#
+	#	A325 Naiha — Kynarides court (Companion usurpers)
+	#	Sons after parents.
+	#
+	A325_pyrrhion = {
+		first_name = { name = name_pyrrhion }
+		culture = hyriovari_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 72 dip = 84 mil = 78
+		female = no
+		birth_date = 1258.4.9
+		birth = etra304
+		dynasty = kynarides_dynasty
+		last_name = { name = kynarides_dynasty }
+		fertility = 40
+		tag = A325
+		ruler_trait = lawgiver
+		spouse = A325_chryseia
+	}
+	A325_chryseia = {
+		first_name = { name = name_chryseia }
+		culture = hyriovari_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 68 dip = 81 mil = 44
+		female = yes
+		birth_date = 1274.11.2
+		birth = etra48
+		fertility = 40
+		tag = A325
+		spouse = A325_pyrrhion
+	}
+	A325_alkaion = {
+		first_name = { name = name_alkaion }
+		culture = hyriovari_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 55 dip = 48 mil = 86
+		female = no
+		birth_date = 1304.6.18
+		birth = etra304
+		father = A325_pyrrhion
+		mother = A325_chryseia
+		dynasty = kynarides_dynasty
+		last_name = { name = kynarides_dynasty }
+		fertility = 40
+		tag = A325
+		ruler_trait = bold_fighter
+	}
+	A325_menesthion = {
+		first_name = { name = name_menesthion }
+		culture = hyriovari_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 71 dip = 82 mil = 61
+		female = no
+		birth_date = 1311.2.27
+		birth = etra304
+		father = A325_pyrrhion
+		mother = A325_chryseia
+		dynasty = kynarides_dynasty
+		last_name = { name = kynarides_dynasty }
+		fertility = 40
+		tag = A325
+	}
+	A325_orthirion = {
+		first_name = { name = name_orthirion }
+		culture = hyriovari_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 49 dip = 52 mil = 80
+		female = no
+		birth_date = 1288.9.14
+		birth = etra66
+		dynasty = pyrrhaides_dynasty
+		last_name = { name = pyrrhaides_dynasty }
+		fertility = 35
+		tag = A325
+		ruler_trait = bold_fighter
+	}
+	A325_kallinor = {
+		first_name = { name = name_kallinor }
+		culture = hyriovari_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 63 dip = 70 mil = 74
+		female = no
+		birth_date = 1291.1.8
+		birth = etra176
+		dynasty = kallinides_dynasty
+		last_name = { name = kallinides_dynasty }
+		fertility = 35
+		tag = A325
+	}
+
+	A332_the_dragon_queen = {
+		first_name = { name = name_vaeaelionys }
+		nickname = { name = title_torrentborn }
+		culture = arineran_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 90 dip = 90 mil = 90
+		birth_date = 1066.10.10
+		birth = etra864
+		fertility = 0
+		tag = A332
+		female = yes
+			timed_modifier = {
+			modifier = "is_dragon_modifier"
+			start_date = 1066.1.1
+			date = 9999.1.1
+			size = 1
+		}	
+	}
+	A356_bolakhan_giant_of_borili = {
+		first_name = { name = name_bolakhan }
+		nickname = { name = title_the_giant_of_borili }
+		culture = borili_giantsborn_culture
+		religion = maw_of_ur_khal
+		estate = nobles_estate
+		adm = 91 dip = 73 mil = 95
+		female = no
+		birth_date = 1312.4.6
+		birth = etra766
+		fertility = 35
+		tag = A356
+		ruler_trait = bold_fighter
+		timed_modifier = {
+			modifier = "giant_of_borili_modifier"
+			start_date = 1312.4.6
+			date = 9999.1.1
+			size = 1
+		}
+	}
+	A360_sealda = {
+		first_name = { name = name_sealda }
+		culture = ashenborn_culture
+		religion = green_pact_religion
+		estate = nobles_estate
+		adm = 56 dip = 42 mil = 96
+		birth_date = 1300.10.10
+		birth = etra941
+		fertility = 40
+		tag = A360
+		female = yes
+	
+	}
+
+	#
+	#	A370 - The Arch-Betrayers (placeholder)
+	#
+	A370_caiyndor_geoffrey = {
+		first_name = { name = name_geoffrey }
+		last_name = { name = caiyndor_dynasty }
+		culture = serenish_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 75 dip = 79 mil = 68
+		female = no
+		birth_date = 1268.3.1
+		birth = adune85
+		dynasty = caiyndor_dynasty
+		fertility = 40
+		tag = A370
+	}
+	A370_caiyndor_ermengarda = {
+		first_name = { name = name_ermengarda }
+		culture = serenish_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 58 dip = 62 mil = 41
+		female = yes
+		birth_date = 1272.8.14
+		birth = adune85
+		spouse = A370_caiyndor_geoffrey
+		fertility = 40
+		tag = A370
+	}
+	A370_caiyndor_julian= {
+		first_name = { name = name_julian }
+		last_name = { name = caiyndor_dynasty }
+		culture = serenish_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 54 dip = 51 mil = 57
+		female = no
+		birth_date = 1295.6.4
+		father = A370_caiyndor_geoffrey
+		mother = A370_caiyndor_ermengarda
+		birth = adune23
+		dynasty = caiyndor_dynasty
+		fertility = 40
+		tag = A370
+	}
+	A370_caiyndor_verounica = {
+		first_name = { name = name_verounica }
+		last_name = { name = caiyndor_dynasty }
+		culture = serenish_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 61 dip = 56 mil = 44
+		female = yes
+		birth_date = 1298.11.21
+		father = A370_caiyndor_geoffrey
+		mother = A370_caiyndor_ermengarda
+		birth = adune23
+		dynasty = caiyndor_dynasty
+		fertility = 40
+		tag = A370
+	}
+	A370_caiyndor_arnaut = {
+		first_name = { name = name_arnaut }
+		last_name = { name = caiyndor_dynasty }
+		culture = serenish_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 48 dip = 53 mil = 59
+		female = no
+		birth_date = 1316.2.8
+		father = A370_caiyndor_geoffrey
+		birth = adune23
+		mother = A370_caiyndor_ermengarda
+		fertility = 40
+		tag = A370
+	}
+
+	#
+	#	A178 - Garmon (placeholder)
+	#
+	A178_asiiriil_oladeji = {
+		first_name = { name = Oladeji }
+		last_name = { name = asiiriil_dynasty }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 51 dip = 47 mil = 54
+		female = no
+		birth_date = 1265.4.12
+		birth = adune72
+		dynasty = asiiriil_dynasty
+		fertility = 40
+		tag = A178
+	}
+	A178_asiiriil_adenike = {
+		first_name = { name = Adenike }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 55 dip = 59 mil = 42
+		female = yes
+		birth_date = 1270.1.8
+		birth = adune72
+		spouse = A178_asiiriil_oladeji
+		fertility = 40
+		tag = A178
+	}
+	A178_asiiriil_akintunde = {
+		first_name = { name = Akintunde }
+		last_name = { name = asiiriil_dynasty }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 49 dip = 52 mil = 56
+		female = no
+		birth_date = 1293.7.3
+		father = A178_asiiriil_oladeji
+		mother = A178_asiiriil_adenike
+		birth = ardraine184
+		dynasty = asiiriil_dynasty
+		fertility = 40
+		tag = A178
+	}
+	A178_asiiriil_adetutu = {
+		first_name = { name = Adetutu }
+		last_name = { name = asiiriil_dynasty }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 57 dip = 54 mil = 43
+		female = yes
+		birth_date = 1296.10.15
+		father = A178_asiiriil_oladeji
+		mother = A178_asiiriil_adenike
+		birth = ardraine184
+		dynasty = asiiriil_dynasty
+		fertility = 40
+		tag = A178
+	}
+	A178_asiiriil_oladapo = {
+		first_name = { name = Oladapo }
+		last_name = { name = asiiriil_dynasty }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 46 dip = 48 mil = 61
+		female = no
+		birth_date = 1300.3.22
+		father = A178_asiiriil_oladeji
+		mother = A178_asiiriil_adenike
+		birth = ardraine184
+		dynasty = asiiriil_dynasty
+		fertility = 40
+		tag = A178
+	}
+	A178_asiiriil_eniola = {
+		first_name = { name = Eniola }
+		last_name = { name = asiiriil_dynasty }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 60 dip = 58 mil = 39
+		female = yes
+		birth_date = 1304.12.1
+		father = A178_asiiriil_oladeji
+		mother = A178_asiiriil_adenike
+		birth = ardraine184
+		dynasty = asiiriil_dynasty
+		fertility = 40
+		tag = A178
+	}
+	A178_asiiriil_adebowale = {
+		first_name = { name = Adebowale }
+		last_name = { name = asiiriil_dynasty }
+		culture = pwasciards_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 44 dip = 50 mil = 58
+		female = no
+		birth_date = 1318.5.17
+		father = A178_asiiriil_akintunde
+		birth = ardraine184
+		dynasty = asiiriil_dynasty
+		fertility = 40
+		tag = A178
+	}
+
+	#
+	#	A378 Iborros — Yuan (CHI) starting court analogue
+	#	Remember: parents before children
+	#
+
+	# Imperial house of Coraino (Borjigin → Coraino)
+	A378_odonar = { # Khutughtu — previous emperor
+		first_name = { name = name_odonar }
+		last_name = { name = coraino_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 21 dip = 46 mil = 56
+		female = no
+		birth_date = 1300.12.22
+		death_date = 1329.9.30
+		birth = etra1159
+		dynasty = coraino_dynasty
+		fertility = 45
+		tag = A378
+		ruler_trait = bold_fighter
+	}
+
+	A378_mailena = { # Mailaiti — mother of Alarico (foreign consort)
+		first_name = { name = name_mailena }
+		culture = vocera_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 25 dip = 39 mil = 35
+		female = yes
+		birth_date = 1290.1.1
+		death_date = 1320.5.25
+		birth = etra1173
+		spouse = A378_odonar
+		fertility = 40
+		tag = A378
+	}
+
+	A378_babina = { # Babusha — stepmother / mother of Rinaldo
+		first_name = { name = name_babina }
+		last_name = { name = coraino_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 31 dip = 35 mil = 37
+		female = yes
+		birth_date = 1295.1.1
+		death_date = 1330.1.1
+		birth = etra1159
+		spouse = A378_odonar
+		dynasty = coraino_dynasty
+		fertility = 40
+		tag = A378
+	}
+
+	A378_rinaldo = { # Rinchinbal — short-lived child emperor
+		first_name = { name = name_rinaldo }
+		last_name = { name = coraino_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 22 dip = 21 mil = 28
+		female = no
+		birth_date = 1326.5.1
+		death_date = 1332.12.14
+		father = A378_odonar
+		mother = A378_babina
+		birth = etra1159
+		dynasty = coraino_dynasty
+		fertility = 0
+		tag = A378
+	}
+
+	# Ruler — Toghon Temur analogue
+	A378_alarico = {
+		first_name = { name = name_alarico }
+		last_name = { name = coraino_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 57 dip = 51 mil = 66
+		female = no
+		birth_date = 1322.5.25
+		father = A378_odonar
+		mother = A378_mailena
+		birth = etra1173
+		dynasty = coraino_dynasty
+		fertility = 55
+		tag = A378
+		ruler_trait = righteous
+	}
+
+	A378_bayara = { # primary consort
+		first_name = { name = name_bayara }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 30 dip = 28 mil = 28
+		female = yes
+		birth_date = 1324.1.1
+		birth = etra1159
+		spouse = A378_alarico
+		fertility = 50
+		tag = A378
+	}
+
+	A378_gisela = { # Gi — foreign court favorite (not formal wife under monogamy)
+		first_name = { name = name_gisela }
+		culture = anerrian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 35 dip = 48 mil = 22
+		female = yes
+		birth_date = 1315.1.1
+		birth = etra1088
+		fertility = 45
+		tag = A378
+	}
+
+	#  Toqto ministerial line
+	A378_ginzerio = { # Jinzhier
+		first_name = { name = name_ginzerio }
+		last_name = { name = matalon_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 27 dip = 47 mil = 66
+		female = no
+		birth_date = 1265.1.1
+		death_date = 1320.1.1
+		birth = etra1172
+		dynasty = matalon_dynasty
+		fertility = 40
+		tag = A378
+	}
+
+	A378_bayardo = { # Bayan Merkid — powerful senior magnate
+		first_name = { name = name_bayardo }
+		last_name = { name = matalon_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 58 dip = 40 mil = 83
+		female = no
+		birth_date = 1280.1.1
+		father = A378_ginzerio
+		birth = etra1172
+		dynasty = matalon_dynasty
+		fertility = 35
+		tag = A378
+		ruler_trait = bold_fighter
+	}
+
+	A378_majaro = { # Majartai
+		first_name = { name = name_majaro }
+		last_name = { name = matalon_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 16 dip = 46 mil = 54
+		female = no
+		birth_date = 1285.1.1
+		father = A378_ginzerio
+		birth = etra1172
+		dynasty = matalon_dynasty
+		fertility = 40
+		tag = A378
+	}
+
+	A378_tocardo = { # Toqto — brilliant young chancellor
+		first_name = { name = name_tocardo }
+		last_name = { name = matalon_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 91 dip = 60 mil = 82
+		female = no
+		birth_date = 1314.1.1
+		father = A378_majaro
+		birth = etra1172
+		dynasty = matalon_dynasty
+		fertility = 50
+		tag = A378
+		ruler_trait = lawgiver
+	}
+
+	# House Izem — purged during Iborros crisis; Massin survives and later founds Tajjev
+	A378_aghilas = {
+		first_name = { name = name_aghilas }
+		last_name = { name = izem_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 52 dip = 48 mil = 62
+		female = no
+		birth_date = 1298.3.12
+		birth = etra1173
+		dynasty = izem_dynasty
+		fertility = 45
+		tag = A378
+		ruler_trait = bold_fighter
+	}
+
+	A378_udaden = {
+		first_name = { name = name_udaden }
+		last_name = { name = izem_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 40 dip = 44 mil = 50
+		female = no
+		birth_date = 1326.8.4
+		father = A378_aghilas
+		birth = etra1173
+		dynasty = izem_dynasty
+		fertility = 40
+		tag = A378
+	}
+
+	A378_massin = {
+		first_name = { name = name_massin }
+		last_name = { name = izem_dynasty }
+		culture = selorian_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 68 dip = 72 mil = 88
+		female = no
+		birth_date = 1330.4.8
+		father = A378_aghilas
+		birth = etra1173
+		dynasty = izem_dynasty
+		fertility = 55
+		tag = A378
+		child_trait = child_prodigy
+		timed_modifier = {
+			modifier = "is_tajjev_massin"
+			start_date = 1330.4.8
+			date = 9999.1.1
+			size = 1
+		}
+	}
+}

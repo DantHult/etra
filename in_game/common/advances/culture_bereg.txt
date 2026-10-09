@@ -1,0 +1,27 @@
+﻿#Age of Traditions#
+
+beren_order_of_the_peak = {
+	age = age_2_renaissance
+	potential = {
+		culture = culture:berenguer_culture
+	}
+
+	icon = teu_teutonic_heavy_cavalry
+
+	requires = armory_advance
+
+	army_heavy_cavalry_power = 0.05
+	army_heavy_cavalry_maintenance_cost_modifier = -0.1
+}
+
+#Age of Renaissance#
+
+
+#Age of Discovery# 
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

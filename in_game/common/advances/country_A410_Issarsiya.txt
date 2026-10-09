@@ -1,0 +1,31 @@
+﻿#Age of Traditions#
+A410_kings_of_fire_and_ice = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = A410 }
+	requires = feudalism_advance
+	icon = feudalism_advance
+	stability_cost_efficiency = 0.1
+}
+A410_the_rise_of_the_diarchy = {
+	age = age_1_traditions
+	potential = { has_or_had_tag = A410 }
+	requires = A410_kings_of_fire_and_ice
+	icon = feudalism_advance
+	monthly_legitimacy = 0.1
+	stability_cost_efficiency = 0.1
+}
+
+#Age of Renaissance#
+
+
+#Age of Discovery# 
+
+
+
+#Age of Reformation#
+
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

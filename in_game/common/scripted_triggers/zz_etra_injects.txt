@@ -1,0 +1,46 @@
+﻿REPLACE:country_can_start_exploration_trigger = {
+	modifier:may_explore = yes
+	OR = {
+		is_ai = no
+		AND = {
+			country_tax_base > 30
+			OR = {
+				has_game_rule = all_countries_explore
+				trigger_if = {
+					limit = {
+						has_game_rule = western_exploration_only
+					}
+					#this != c:PAP
+					not = { has_preference_tag = "warfare" }
+					OR = {
+						capital.continent = continent:europe
+						and = {
+							is_subject = yes
+							overlord = {
+								capital.continent = continent:europe
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+REPLACE:can_country_have_tusi = {
+	always = NO
+	# exists = international_organization:middle_kingdom
+	# OR = {
+		# is_leader_of_international_organization = international_organization:middle_kingdom
+		# AND = {
+			# is_subject = yes
+			# subject_type = subject_type:tusi
+		# }
+		# AND = {
+			# exists = international_organization:middle_kingdom.leader_country
+			# is_subject_of = international_organization:middle_kingdom.leader_country
+			# culture = overlord.culture
+		# }
+	# }
+}
+

@@ -1,0 +1,183 @@
+﻿rise_of_tajjev = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		has_enabled_situation_trigger = { type = rise_of_tajjev }
+		country_exists = c:A409
+		has_global_variable = tajjev_character
+		global_var:tajjev_character = { is_alive = yes }
+	}
+	can_end = {
+		rise_of_tajjev_end_conditions = yes
+	}
+	visible = {
+		OR = {
+			tag = A409
+			is_neighbor_of = c:A409
+			is_subject_of = c:A409
+			is_enemy_of = c:A409
+			is_rival_of = c:A409
+			capital ?= {
+				OR = {
+					region = region:amalyarat_region
+					region = region:iboros_region
+				}
+			}
+		}
+	}
+	on_start = {
+		set_variable = {
+			name = tajjev_battle_kill_counter
+			value = 0
+		}
+		set_variable = {
+			name = tajjev_total_kill_counter
+			value = 0
+		}
+		set_variable = {
+			name = rise_of_tajjev_event_cooldown
+			value = 0
+		}
+		set_variable = {
+			name = rise_of_tajjev_unique_event_cooldown
+			value = 0
+		}
+		every_country = {
+			limit = {
+				NOT = { tag = A409 }
+				OR = {
+					is_neighbor_of = c:A409
+					is_subject_of = c:A409
+					is_enemy_of = c:A409
+					is_rival_of = c:A409
+					capital ?= {
+						OR = {
+							region = region:amalyarat_region
+							region = region:iboros_region
+						}
+					}
+				}
+			}
+			trigger_event_non_silently = rise_of_tajjev.2
+		}
+		c:A409 = {
+			add_country_modifier = { modifier = rise_of_tajjev_impact years = -1 mode = add }
+			trigger_event_non_silently = rise_of_tajjev.1
+			set_personality = ai_personality:ai_expansionist
+		}
+	}
+	on_monthly = {
+		change_variable = { name = rise_of_tajjev_event_cooldown add = 1 }
+		change_variable = { name = rise_of_tajjev_unique_event_cooldown add = 1 }
+		if = {
+			limit = { var:rise_of_tajjev_event_cooldown > 10 }
+			set_variable = { name = rise_of_tajjev_event_cooldown value = 1 }
+			random_list = {
+				20 = {
+					trigger = {
+						c:A409 ?= {
+							has_ruler = yes
+							months_since_war > 12
+							at_war = no
+							any_neighbor_country = {
+								NOT = { has_truce_with = c:A409 }
+								NOT = { has_target_casus_belli_on_us = c:A409 }
+								NOT = { is_allied_with = { target = c:A409 } }
+								NOT = { is_subject_of = c:A409 }
+								is_rebel_country = no
+								can_declare_war_on = c:A409
+							}
+						}
+					}
+					c:A409 ?= {
+						trigger_event_non_silently = rise_of_tajjev.100
+					}
+				}
+				20 = {
+					trigger = {
+						c:A409 ?= {
+							has_ruler = yes
+							OR = {
+								war_exhaustion >= war_exhaustion_mild_penalty
+								has_countries_with_timed_antagonism = yes
+							}
+						}
+					}
+					c:A409 ?= {
+						trigger_event_non_silently = rise_of_tajjev.101
+					}
+				}
+				20 = {
+					trigger = {
+						c:A409 ?= {
+							has_ruler = yes
+							war_exhaustion < HIGH_WAR_EXHAUSTION
+							manpower_percentage < 1
+							monthly_manpower > 0
+						}
+					}
+					c:A409 ?= {
+						trigger_event_non_silently = rise_of_tajjev.102
+					}
+				}
+				20 = {
+				}
+			}
+		}
+		if = {
+			limit = { var:rise_of_tajjev_unique_event_cooldown > 20 }
+			set_variable = { name = rise_of_tajjev_unique_event_cooldown value = 1 }
+			c:A409 ?= {
+				if = {
+					limit = {
+						can_fire_situation_event = {
+							situation = root
+							event = roj_prepare_conquest_of_iborros
+						}
+						country_exists = c:A378
+						is_neighbor_of = c:A378
+						OR = {
+							is_situation_active = situation:etra_red_turban_rebellions
+							c:A378 = { has_variable = etra_rtr_is_new_china }
+						}
+					}
+					trigger_event_non_silently = rise_of_tajjev.12
+				}
+				if = {
+					limit = {
+						can_fire_situation_event = {
+							situation = root
+							event = roj_right_to_conquer
+						}
+					}
+					trigger_event_non_silently = rise_of_tajjev.13
+				}
+			}
+		}
+		if = {
+			limit = { has_tajjev_stagnate = yes }
+			c:A409 ?= {
+				trigger_event_non_silently = rise_of_tajjev.7
+			}
+		}
+	}
+	on_ended = {
+		remove_variable = roj_conquest_ambition
+		c:A409 ?= {
+			remove_country_modifier = rise_of_tajjev_impact
+			remove_all_tajjev_cbs = yes
+			clear_tajjev_variables = yes
+			every_owned_location = {
+				limit = { has_location_modifier = roj_tajjev_core_region }
+				remove_location_modifier = roj_tajjev_core_region
+			}
+		}
+		if = {
+			limit = { has_global_variable = tajjev_character }
+			remove_global_variable = tajjev_character
+		}
+		every_location_in_the_world = {
+			limit = { has_location_modifier = roj_tajjev_scare }
+			remove_location_modifier = roj_tajjev_scare
+		}
+	}
+}

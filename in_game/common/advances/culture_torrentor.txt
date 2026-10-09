@@ -1,0 +1,151 @@
+﻿# ############################
+# # age_1_traditions
+# ############################
+
+torrentor_age_1 = {
+	age = age_1_traditions
+	icon = glorious_arms
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	land_morale_modifier = 0.10
+	requires = feudalism_advance
+}
+
+torrentor_martial_traditions = {
+	age = age_1_traditions
+	icon = improved_foraging
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	global_levy_recruitment_speed_modifier = 0.15
+	requires = organized_religion
+}
+
+# ############################
+# # age_2_renaissance
+# ############################
+
+torrentor_renaissance_merchants = {
+	age = age_2_renaissance
+	icon = zmw_merchant_taxes
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	global_merchant_capacity_modifier = 0.1
+	requires = renaissance_city_rights
+}
+
+# ############################
+# # age_3_discovery
+# ############################
+
+torrentor_exploratory_spirit = {
+	age = age_3_discovery
+	icon = merchant_power_from_maritime_discovery_advance
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	trade_range_modifier = 0.2
+	requires = open_sea_exploration
+}
+
+# ############################
+# # age_4_reformation
+# ############################
+
+torrentor_unified_customs = {
+	age = age_4_reformation
+	icon = crown_power_advance_reformation
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	global_integration_speed_modifier = 0.10
+	requires = crown_power_advance_reformation
+}
+
+# ############################
+# # age_5_absolutism
+# ############################
+
+torrentor_crown_authority = {
+	age = age_5_absolutism
+	icon = the_constitution
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	global_crown_estate_power = 0.10
+	requires = construction_speed_absolutism
+}
+
+# ############################
+# # age_6_revolutions
+# ############################
+
+torrentor_modern_identity = {
+	age = age_6_revolutions
+	icon = enlightened_court
+	potential = {
+		or = {
+			culture = culture:fullhorner_culture
+			culture = culture:chesmeker_culture
+			culture = culture:tyelkian_culture
+			culture = culture:aneaku_culture
+			culture = culture:thaurfolk_culture
+			culture = culture:afhaemeisan_culture
+			culture = culture:heuhian_culture
+		}
+	}
+	global_pop_promotion_speed_modifier = 0.15
+	research_speed_modifier = 0.05
+	requires = rights_of_man
+}
+

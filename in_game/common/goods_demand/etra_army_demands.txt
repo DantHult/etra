@@ -1,0 +1,13 @@
+﻿a330_steppe_horse_archers_construction = {
+	leather = 0.1
+	livestock = 2.0
+	weaponry = 0.1
+	category = regiment_construction
+}
+
+a330_steppe_horse_archers_maintenance = {
+	leather = 0.01
+	livestock = 0.4
+	weaponry = 0.01
+	category = regiment_construction
+}

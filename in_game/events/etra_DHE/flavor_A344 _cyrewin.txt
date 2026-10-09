@@ -1,0 +1,948 @@
+namespace = flavor_cyrewin
+
+# Forked from vanilla flavor_nov for Cyrewin (A344). Excludes Russian geography, Pskov/Dvina/Karelian/Muscovy/Lithuania,
+# Orthodox heresy chains, Hanseatic Neva/Peterhof, Arkhangelsk, Solovki, Novgorod massacre vs MOS, St. Sophia art chain.
+# location:novgorod -> location:etra370 where applicable.
+
+flavor_cyrewin.1 = {
+	type = country_event
+	fire_only_once = yes
+	title = flavor_cyrewin.1.title
+	desc = flavor_cyrewin.1.desc
+	dynamic_historical_event = {
+		tag = A344
+		from = 1330.1.1
+		to = 1450.1.1
+		monthly_chance = 1
+	}
+
+	trigger = {
+		succession_law = heir_selection:veche_selection
+		government_power < 50
+		OR = {
+			has_ruler = no
+			ruler = { adm < 50 }
+			ruler = { dip < 50 }
+			ruler = { mil < 50 }
+		}
+		OR = {
+			estate_satisfaction:nobles_estate < 0.3
+			estate_satisfaction:burghers_estate < 0.3
+		}
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+	}
+
+	option = {
+		name = flavor_cyrewin.1.a
+		historical_option = yes
+		ai_chance = {
+			factor = 1
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate	value = estate_satisfaction_radical_penalty }
+		add_estate_satisfaction = { type = estate_type:peasants_estate	value = estate_satisfaction_radical_penalty }
+		add_estate_satisfaction = { type = estate_type:burghers_estate	value = estate_satisfaction_radical_bonus }
+		add_country_modifier = { modifier = civil_war_looming years = 2 	mode = add_and_extend }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = flavor_cyrewin.1.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate	value = estate_satisfaction_radical_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate	value = estate_satisfaction_radical_penalty }
+		add_estate_satisfaction = { type = estate_type:burghers_estate	value = estate_satisfaction_radical_penalty }
+		add_country_modifier = { modifier = civil_war_looming years = 2 	mode = add_and_extend }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+flavor_cyrewin.10 = {
+	type = country_event
+	fire_only_once = yes
+	title = flavor_cyrewin.10.title
+	desc = flavor_cyrewin.10.desc
+	image = "gfx/interface/illustrations/government/diplomacy_illustration.dds"
+
+	dynamic_historical_event = {
+		tag = A344
+		from = 1382.1.1
+		to = 1402.1.1
+		monthly_chance = 15
+	}
+	trigger = {
+		country_exists = c:HSA
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+		c:HSA = {
+			save_scope_as = hansa_country
+		}
+	}
+	option = {
+		name = flavor_cyrewin.10.a
+		historical_option = yes
+		scope:hansa_country = {
+			add_opinion = {
+				modifier = nov_novgorodian_hanseatic_friendship
+				target = root
+			}
+			reverse_add_opinion = {
+				modifier = nov_novgorodian_hanseatic_friendship
+				target = root
+			}
+		}
+		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_minor_move_to_right }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = flavor_cyrewin.10.b
+		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_minor_move_to_left }
+		add_prestige = prestige_extreme_bonus
+		create_relation = {
+			first = this
+			second = scope:hansa_country
+			type = relation_type:embargo_nation
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+flavor_cyrewin.12 = {
+	type = country_event
+	fire_only_once = yes
+	title = flavor_cyrewin.12.title
+	desc = flavor_cyrewin.12.desc
+	dynamic_historical_event = {
+		tag = A344
+		from = 1364.1.1
+		to = 1384.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		owns = location:etra370
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	option = {
+		name = flavor_cyrewin.12.a
+		historical_option = yes
+		add_gold = { value = -50 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_mild_bonus }
+		location:etra370 = {
+			change_building_level_in_location = {
+				building = building_type:temple
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = flavor_cyrewin.12.b
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_weak_penalty }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+flavor_cyrewin.33 = {
+	type = country_event
+	fire_only_once = yes
+	title = flavor_cyrewin.33.title
+	desc = flavor_cyrewin.33.desc
+	dynamic_historical_event = {
+		tag = A344
+		from = 1350.1.1
+		to = 1365.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		government_type = government_type:republic
+		government_power >= 80
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		create_character = {
+			adm = 75
+			dip = 60
+			mil = 60
+			estate = estate_type:nobles_estate
+			age = 25
+			culture = root.culture
+			religion = root.religion
+			birth_location = location:etra370
+			script = cyrewin_posadnik_reformer
+			save_scope_as = cyrewin_posadnik_reformer
+			create_in_limbo = yes
+		}
+		event_illustration_poptype_effect = { foreground = pop_type:nobles background = pop_type:soldiers }
+	}
+	option = {
+		name = flavor_cyrewin.33.a
+		historical_option = yes
+		add_government_power = government_power_extreme_penalty
+		change_gold_effect = { scale = -3 }
+		unlock_advance_effect = { type = reforms_of_the_posadnichestvo }
+		unlock_government_reform_effect = { type = expanded_posadnichestvo_office }
+		scope:cyrewin_posadnik_reformer = { move_country = root }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = flavor_cyrewin.33.b
+		add_prestige = prestige_weak_penalty
+		scope:cyrewin_posadnik_reformer = { move_country = root }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+flavor_cyrewin.34 = {
+	type = country_event
+	fire_only_once = yes
+	title = flavor_cyrewin.34.title
+	desc = flavor_cyrewin.34.desc
+	dynamic_historical_event = {
+		tag = A344
+		from = 1400.1.1
+		to = 1450.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		has_reform = government_reform:cyrewin_ring_moot
+		government_type = government_type:republic
+		government_power >= 80
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_cyrewin.34.a
+		historical_option = yes
+		remove_reform = government_reform:cyrewin_ring_moot
+		unlock_government_reform_effect = { type = sovet_gospod }
+		add_reform = government_reform:sovet_gospod
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_penalty }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = flavor_cyrewin.34.b
+		add_stability = stability_weak_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_bonus }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+flavor_cyrewin.36 = {
+	type = country_event
+	fire_only_once = yes
+	title = flavor_cyrewin.36.title
+	desc = flavor_cyrewin.36.desc
+	dynamic_historical_event = {
+		tag = A344
+		from = 1435.1.1
+		to = 1470.1.1
+		monthly_chance = 10
+	}
+	image = "gfx/interface/illustrations/institutions/legalism.dds"
+	trigger = {
+		has_embraced_institution = institution:legalism
+		NOT = { has_unlocked_policy_trigger = { type = novgorod_judicial_charter_policy } }
+	}
+	immediate = {
+		save_scope_as = target_country
+		unlock_policy_effect = { type = novgorod_judicial_charter_policy }
+	}
+	option = {
+		name = flavor_cyrewin.36.a
+		historical_option = yes
+		add_policy = policy:novgorod_judicial_charter_policy
+	}
+	option = {
+		name = flavor_cyrewin.36.b
+		add_stability = stability_mild_bonus
+	}
+}
+
+flavor_cyrewin.100 = {
+	type = country_event
+	title = flavor_cyrewin.100.title
+	desc = flavor_cyrewin.100.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1360.1.1
+		to = 1480.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		has_ruler = yes
+		has_estate_privilege = estate_privilege:cyrewin_chartered_factors
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	option = {
+		name = flavor_cyrewin.100.a
+		historical_option = yes
+		custom_tooltip = {
+			text = empower_cyrewin_factors_privilege
+			set_variable = {
+				name = ivan_hundred_strengthened
+				years = 25
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+	}
+	option = {
+		name = flavor_cyrewin.100.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+flavor_cyrewin.101 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_cyrewin.101.title
+	desc = flavor_cyrewin.101.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_beeswax.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1370.1.1
+		to = 1485.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		has_estate_privilege = estate_privilege:cyrewin_chartered_factors
+		has_variable = ivan_hundred_strengthened
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.101.a
+		historical_option = yes
+		custom_tooltip = {
+			text = cyrewin_factors_beeswax_increase
+			set_variable = {
+				name = ivan_hundred_beeswax
+				years = 25
+			}
+		}
+		add_stability = stability_mild_penalty
+	}
+	option = {
+		name = flavor_cyrewin.101.b
+		add_stability = stability_mild_bonus
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+	}
+}
+
+flavor_cyrewin.104 = {
+	type = country_event
+	title = flavor_cyrewin.104.title
+	desc = flavor_cyrewin.104.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1401.1.1
+		to = 1480.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		has_advance = dock_advance
+		OR = {
+			current_age = age_2_renaissance
+			current_age = age_3_discovery
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.104.a
+		change_gold_effect = { scale = -1 }
+		add_country_modifier = { modifier = nov_financing_ushkuyniks_pirates years = 25 mode = add }
+		custom_tooltip = enable_ushkuiniks_advance
+		unlock_advance_effect = { type = ushkuiniks }
+	}
+	option = {
+		name = flavor_cyrewin.104.b
+		add_stability = stability_severe_bonus
+	}
+}
+
+flavor_cyrewin.105 = {
+	type = country_event
+	title = flavor_cyrewin.105.title
+	desc = flavor_cyrewin.105.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1480.1.1
+		to = 1580.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		has_advance = ushkuiniks
+		OR = {
+			current_age = age_2_renaissance
+			current_age = age_3_discovery
+		}
+		at_war = no
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	option = {
+		name = flavor_cyrewin.105.a
+		add_country_modifier = { modifier = nov_ushkuiniks_dissolved years = 100 mode = add }
+		custom_tooltip = ushkuiniks_greatly_weakened_cyrewin_tt
+		add_prestige = prestige_mild_penalty
+		add_stability = stability_extreme_bonus
+	}
+	option = {
+		name = flavor_cyrewin.105.b
+		add_prestige = prestige_severe_bonus
+		add_stability = stability_extreme_penalty
+	}
+}
+
+flavor_cyrewin.106 = {
+	type = country_event
+	title = flavor_cyrewin.106.title
+	desc = flavor_cyrewin.106.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1410.1.1
+		to = 1440.1.1
+		monthly_chance = 8
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	trigger = {
+		has_ruler = yes
+		exists = character:cyrewin_posadnik_reformer
+		has_reform = government_reform:expanded_posadnichestvo_office
+		character:cyrewin_posadnik_reformer ?= {
+			is_alive = no
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+		character:cyrewin_posadnik_reformer ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.106.a
+		add_stability = stability_mild_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_country_modifier = { modifier = nov_further_posadnik_reforms years = 30 mode = add }
+		set_variable = {
+			name = nov_expanded_posadnik
+			years = 50
+		}
+		custom_tooltip = {
+			text = nov_expanded_posadnik_risk
+			set_variable = {
+				name = nov_expanded_posadnik
+				years = 50
+			}
+		}
+	}
+	option = {
+		name = flavor_cyrewin.106.b
+		add_stability = stability_mild_penalty
+		add_republican_tradition = republican_tradition_mild_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_penalty }
+	}
+}
+
+flavor_cyrewin.107 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_cyrewin.107.title
+	desc = flavor_cyrewin.107.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1440.1.1
+		to = 1478.1.1
+		monthly_chance = 8
+	}
+
+	trigger = {
+		has_ruler = yes
+		exists = character:cyrewin_posadnik_reformer
+		has_reform = government_reform:expanded_posadnichestvo_office
+		character:cyrewin_posadnik_reformer ?= {
+			is_alive = no
+		}
+		has_variable = nov_expanded_posadnik
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.107.a
+		add_stability = stability_weak_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_penalty }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_penalty }
+	}
+	option = {
+		name = flavor_cyrewin.107.b
+		add_stability = stability_severe_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_radical_penalty }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+	}
+	after = {
+		remove_variable = nov_expanded_posadnik
+	}
+}
+
+flavor_cyrewin.108 = {
+	type = country_event
+	title = flavor_cyrewin.108.title
+	desc = flavor_cyrewin.108.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1478.1.1
+		to = 1530.1.1
+		monthly_chance = 10
+	}
+
+	trigger = {
+		has_ruler = yes
+		exists = character:cyrewin_posadnik_reformer
+		has_reform = government_reform:expanded_posadnichestvo_office
+		character:cyrewin_posadnik_reformer ?= {
+			is_alive = no
+		}
+		stability > 50
+		at_war = no
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	option = {
+		name = flavor_cyrewin.108.a
+		add_republican_tradition = republican_tradition_extreme_bonus
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_huge_move_to_left }
+		add_stability = stability_severe_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_radical_penalty }
+		remove_reform = government_reform:expanded_posadnichestvo_office
+		lock_government_reform_effect = { type = expanded_posadnichestvo_office }
+	}
+	option = {
+		name = flavor_cyrewin.108.b
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_right }
+		add_stability = stability_severe_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_radical_bonus }
+	}
+}
+
+flavor_cyrewin.109 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_cyrewin.109.title
+	desc = flavor_cyrewin.109.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1350.1.1
+		to = 1399.1.1
+		monthly_chance = 5
+	}
+
+	trigger = {
+		has_ruler = yes
+		at_war = no
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	option = {
+		name = flavor_cyrewin.109.a
+		add_army_tradition = army_tradition_mild_bonus
+		if = {
+			limit = {
+				NOT = { has_estate_privilege = estate_privilege:cyrewin_shieldmarshal_charter }
+			}
+			grant_estate_privilege = estate_privilege:cyrewin_shieldmarshal_charter
+		}
+		custom_tooltip = {
+			text = cyrewin_shieldmarshal_influential_benefits
+			set_variable = {
+				name = nov_influential_tysiatskii
+				years = 30
+			}
+		}
+		custom_tooltip = {
+			text = cyrewin_shieldmarshal_followup_tt
+			set_variable = {
+				name = nov_tysiatskii_influence_event_happened
+				years = 100
+			}
+		}
+	}
+	option = {
+		name = flavor_cyrewin.109.b
+		add_stability = stability_mild_penalty
+		if = {
+			limit = {
+				NOT = { has_estate_privilege = estate_privilege:cyrewin_shieldmarshal_charter }
+			}
+			grant_estate_privilege = estate_privilege:cyrewin_shieldmarshal_charter
+		}
+		custom_tooltip = {
+			text = cyrewin_shieldmarshal_weakened_benefits
+			set_variable = {
+				name = nov_tysiatskii_influence_weakened
+				years = 30
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+	}
+}
+
+flavor_cyrewin.110 = {
+	type = country_event
+	title = flavor_cyrewin.110.title
+	desc = flavor_cyrewin.110.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1350.1.1
+		to = 1399.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		has_estate_privilege = estate_privilege:cyrewin_chartered_factors
+		has_variable = nov_tysiatskii_influence_event_happened
+		at_war = no
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.110.a
+		add_country_modifier = { modifier = nov_increased_fees_on_ivans_hundred years = 20 mode = add }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
+	}
+	option = {
+		name = flavor_cyrewin.110.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+	}
+	after = {
+		remove_variable = nov_tysiatskii_influence_event_happened
+	}
+}
+
+flavor_cyrewin.111 = {
+	type = country_event
+	title = flavor_cyrewin.111.title
+	desc = flavor_cyrewin.111.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1360.1.1
+		to = 1481.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		stability > 50
+		at_war = no
+		owns = location:etra370
+		government_type = government_type:republic
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+		location:etra370 = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.111.a
+		add_country_modifier = { modifier = nov_expand_central_influence years = 20 mode = add }
+	}
+	option = {
+		name = flavor_cyrewin.111.b
+		add_country_modifier = { modifier = nov_allow_self_governance years = 20 mode = add }
+	}
+}
+
+flavor_cyrewin.112 = {
+	type = country_event
+	title = flavor_cyrewin.112.title
+	desc = flavor_cyrewin.112.desc
+	image = "gfx/interface/illustrations/institutions/banking.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1415.1.1
+		to = 1481.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		at_war = no
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.112.a
+		add_prestige = prestige_mild_bonus
+		add_country_modifier = { modifier = nov_minting_of_novgorodka years = 10 mode = add }
+	}
+	option = {
+		name = flavor_cyrewin.112.b
+		add_stability = stability_mild_bonus
+		add_country_modifier = { modifier = nov_reliance_on_other_currencies years = 20 mode = add }
+	}
+}
+
+flavor_cyrewin.113 = {
+	type = country_event
+	title = flavor_cyrewin.113.title
+	desc = flavor_cyrewin.113.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_firearms.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1390.1.1
+		to = 1481.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		at_war = no
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.113.a
+		add_research_progress = research_progress_mild_bonus
+		add_country_modifier = { modifier = nov_study_of_gunpowder years = 15 mode = add }
+	}
+	option = {
+		name = flavor_cyrewin.113.b
+		add_stability = stability_extreme_bonus
+		add_republican_tradition = republican_tradition_mild_bonus
+	}
+}
+
+flavor_cyrewin.114 = {
+	type = country_event
+	title = flavor_cyrewin.114.title
+	desc = flavor_cyrewin.114.desc
+
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_fur.dds"
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = A344
+		from = 1360.1.1
+		to = 1420.1.1
+		monthly_chance = 6
+	}
+
+	trigger = {
+		has_ruler = yes
+		produced_in_country:fur > 10
+		produced_in_country:beeswax > 10
+		at_war = no
+	}
+
+	immediate = {
+		ruler ?= {
+			save_scope_as = our_ruler
+		}
+	}
+
+	option = {
+		name = flavor_cyrewin.114.a
+		add_prestige = prestige_extreme_bonus
+		add_country_modifier = { modifier = nov_beeswax_and_fur_trade years = 30 mode = add }
+	}
+}

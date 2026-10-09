@@ -1,0 +1,14 @@
+﻿#Age of Traditions#
+serpentar_house_of_cowards = {
+	age = age_1_traditions
+	icon = fortified_towns
+	potential = {
+		ruler_or_heir_if_regent ?= {
+			dynasty ?= dynasty:serpentar_dynasty
+		}
+	}
+
+	global_defensive = 0.10
+
+	requires = feudalism_advance
+}

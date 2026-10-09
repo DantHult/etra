@@ -1,0 +1,31 @@
+# Takkev / Tajjevi culture units
+
+a_takkev_cavalry = {
+	is_special = yes
+	category = army_light_cavalry
+	copy_from = a_age_2_renaissance_light_cavalry
+	buildable = yes
+
+	movement_speed = 0.25
+	build_time_modifier = 0.1
+
+	impact = {
+		desert = -0.75
+		arid = -0.75
+		hills = -0.25
+		arctic = 0.25
+	}
+
+	country_potential = {
+		culture = culture:takkev_culture
+	}
+
+	combat = {
+		desert = 0.10
+		arid = 0.10
+		hills = 0.10
+		coastal = -0.10
+	}
+
+	gfx_tags = { medium_tag }
+}

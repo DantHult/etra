@@ -1,0 +1,1866 @@
+﻿europe = {
+	western_europe = {####
+		south_torrent_region = {
+			aita_east_area = {
+				aita_east_1_province = {
+					aita44 aita43 aita23 aita42 aita41 aita70
+				}
+				aita_east_2_province = {
+					aita48  aita46 aita49 aita47 aita50
+				}
+				aita_east_3_province = {
+					ardraine178 ardraine174 aita1 aita3 aita4
+				}
+				chanois_province = { testprovince146 testprovince104 commonweal24 ardraine52 commonweal60 }
+			}
+			aita_central_area = {
+				aita_central_1_province = {
+					aita18 aita12 aita69 aita45 aita17
+				}
+				aita_central_2_province = {
+					aita7 aita8 aita2 aita6 aita13 aita67
+				}
+				aita_central_3_province = {
+					aita5 aita9 aita10 aita82 aita11 aita19 aita20
+				}
+				aita_central_4_province = {
+					aita14 aita15 aita16 aita68 aita24 aita40 aita25
+				}
+				aita_central_5_province = {
+					aita22 aita21 aita38 aita39 aita26 aita30
+				}
+				aita_west_2_province = {
+					aita31 aita27 aita29 aita28 aita32 aita33 aita63 aita64
+				}
+			}
+			aita_west_area = {
+				aita_west_1_province = {
+					aita35 aita34 aita36 aita65 aita61 aita62 aita37
+				}
+
+				aita_west_3_province = {
+					aita51 aita52 aita53 aita57 aita54 aita56 aita55
+				}
+				aita_west_4_province = {
+					aita74 aita75 aita76 aita77 aita78 aita79 aita90
+				}
+				aita_west_5_province = {
+					aita59 aita60 aita58 aita72 aita73 aita81 aita80 aita83
+				}
+				aita_west_6_province = {
+					aita84 aita85 aita86 aita87 aita88 aita89
+				}
+				aita_west_7_province = {
+					aita92 aita93 aita94 aita95 aita96 aita101 aita97 aita98 aita100 aita103 aita102 adune7
+				}
+			}
+		
+			nomine_magna_area = {#"in the great name"
+				dis_province = {
+					dis1 dis2 dis3 dis4 dis5 wasteland_blocker
+				}
+				raphaelsruh_province = { torrent20 torrent1 torrent337 torrent304 }
+				urielshohe_province = { torrent28 torrent25 torrent26 torrent285 }
+				selaphienmark_province = { torrent333 torrent280 commonweal43 torrent281 commonweal50 }
+				schnelllauf_province = { ardraine229 ardraine186 torrent343 torrent336 torrent286 }
+				kronenkamm_province = { torrent270 torrent282 torrent332 torrent283 }
+				nomine_magna_province = { torrent284 commonweal68 commonweal31 torrent344 commonweal7 }
+				eistoth_province = { etra231 etra240 etra230 etra229 }
+			}#
+			apanieve_area = {#White Rivers it comes from the snow
+				joffrin_province = { testprovince121 ardraine37 testprovince118 ardraine167 }
+				cheridan_province = { ardraine42 ardraine51 ardraine190 }
+				chassemont_province = { ardraine50 ardraine120 ardraine217 ardraine121 }
+				okrantis_province = { ardraine130 ardraine128 ardraine126 ardraine127 }
+				
+				philippeaux_province = { commonweal54 ardraine131 ardraine125 ardraine124 ardraine129 }
+				cerfs_riviere_province = { ardraine137 ardraine123 ardraine122 ardraine94 ardraine97 adune39 adune24 }
+			}#
+			skybur_area = {#Skybur "Sky Burrows"
+				quirkgard_province = { ardraine235 torrent27 torrent32 torrent338 }
+				rackethaven_province = { torrent31 torrent342 torrent23 torrent341 }
+				vemse_province = { torrent24 torrent22 ardraine234 torrent335 }
+				chiselburgh_province = { torrent21 torrent18 torrent334 torrent19 ardraine216 }
+				bellmere_province = { torrent339 ardraine164 ardraine132 ardraine163 torrent340 }
+				rattenburg_province = { torrent16 torrent17 }
+				skybur_province = { ardraine162 torrent14 torrent30 torrent15 torrent13 }
+			}#
+		}
+		torrent_region = {
+			north_sea_area = {
+				ringed_sea_province = { adunic_sea13 adunic_sea15 adunic_sea16 adunic_sea17 etra_sea83 etra_sea84 }
+				torrentor_coastline_province = { adunic_sea8 adunic_sea14 adunic_sea32 adunic_sea19 adunic_sea18 adunic_sea20 adunic_sea21 }
+				gulf_of_giants_province = { adunic_sea22 adunic_sea24 adunic_sea25 etra_sea41 etra_sea29 etra_sea28  }
+			}
+			naureiska_area = {#North Realm
+				dastan_province = { adune43 adune49 adune27 }
+				ark_islands_province = { torrent152 adune87 torrent199 adune56 adune155 adune47 adune44 adune35 torrent149 }
+				roordland_province = {  torrent323 torrent320 commonweal52 torrent321 }
+				eledamstra_province = { torrent330 torrent329 torrent325 torrent328 torrent346 }
+				apave_province = { adune63 torrent311 torrent331 adune26 adune42 }
+				benkorter_province = { torrent327 torrent315 commonweal16 torrent326 torrent313 }
+			}#
+			high_home_area = {
+				veenh_province = { torrent125 torrent127 torrent130 }
+				revelh_province = { torrent126 torrent29 torrent33 }
+				gising_province = { torrent135 torrent134 torrent266 torrent133 }
+				arlove_province = { ardraine187 ardraine230 commonweal20 commonweal10 torrent287 }
+				tseylem_province = { torrent289 ardraine214 ardraine185 commonweal61 }
+				high_home_province = { torrent35 torrent131 torrent132 torrent36 torrent288 torrent34 }
+			}#
+			the_lowlands_area = {#lands are low
+				nadivan_province = { commonweal26 ardraine180 commonweal12 commonweal62 commonweal49 ardraine181 }
+				tengemoria_province = { torrent172 commonweal30 torrent174 torrent46 torrent173 adune65 }
+				deretshke_province = { ardraine182 torrent292 torrent42 torrent43 torrent312 etra784 }
+				diemre_province = { torrent183 torrent184 torrent45 ardraine231 }
+				aibinitz_province = { torrent256 torrent251 torrent260 torrent258 torrent261 torrent262 }
+				twin_cities_province = { torrent250 torrent249 commonweal63 }
+				avrotene_province = { torrent300 torrent255 torrent257 torrent259 torrent182 torrent254 }
+				lowlands_province = {
+					     torrent44
+					     torrent47 torrent41
+				}
+			
+			}
+			bonwesfor_area = {#Land of the Bloody Moon
+				naureiska_province = { torrent314 commonweal15 commonweal45 }
+				abeleron_province = { commonweal53 torrent145 torrent198 torrent298 torrent318 }
+				bloods_way_province = { torrent347 torrent301 torrent202 torrent218 torrent348 }
+				bloodstone_province = { torrent322 torrent102 torrent103 torrent104 }
+				bloedlahn_province = { torrent101 ardraine226 torrent144 torrent200 }
+				bonwesfor_province = { torrent143 torrent296 torrent201 torrent190 torrent189 torrent191 }
+			}
+			thaurwach_area = {#Giant's Watch - Was the /Old/ Border aganist the Giants of the North
+				titan_falls_province = { etra921 etra923 etra282 etra922 etra920 etra373 }
+				holmkelsa_province = { torrent169 torrent170 torrent171 torrent181 torrent303 }#RG
+				hundsnes_province = { torrent166 torrent167 torrent168 torrent176 adune69 }#RG
+				kolbeinsdalr_province = { commonweal65 torrent293 commonweal56 commonweal57 adune131 }#RG
+				vestpunkt_province = { torrent161 torrent162 torrent163 torrent165 torrent164 }#west point
+				middellandet_province = { torrent175 ardraine143 torrent177 adune57 }#Middle Lands
+				jorundarholt_province = { torrent160 torrent178 torrent159 torrent294 }#RG
+				fiskaby_province = { torrent310 torrent157 torrent158 }#Fish City
+				auonar_isles_province = { torrent307 torrent308 torrent309 }
+				oerstlies_province = { torrent305 ardraine232 torrent306 }
+				thaurwach_province = {
+					         adune21
+					       torrent179
+					  torrent299
+					     torrent240 commonweal36 commonweal59
+					  torrent180
+				}
+			}
+			borrika_area = {#Wolf's Realm
+				wolstobitz_province = { torrent220 commonweal40 torrent226 torrent235 torrent236 commonweal64 adune62 }
+				volftot_province = { torrent269 torrent233 torrent234 }
+				borrika_province = { torrent242 torrent253 torrent252 torrent246 torrent243 torrent244 torrent350 adune45 }
+				velthelm_province = { torrent238 torrent239 torrent317 torrent241 ardraine212 }
+				zuidema_province = { torrent319 torrent324 }
+			}
+			afhaemeisa_area = {#~new Home
+				lower_serens_province = {  torrent119 ardraine228 torrent138 torrent279   }
+				faewald_province = { torrent115 torrent120 torrent114 torrent116 torrent72 torrent73 }
+				littlewoods_province = { torrent75 torrent71 }
+				clouzborg_province = { torrent123 torrent118 torrent117 }
+				rodem_province = { torrent124 commonweal32 torrent129 }
+				arlaue_province = { ardraine227 torrent195 commonweal55 torrent194 }
+				afhaemeisa_province = { torrent128 torrent193 torrent136 torrent137 adune30 }
+			}#
+			engsadt_area = {#To Cut
+				astrine_province = { torrent40 commonweal35 torrent291 torrent231 torrent39 }
+				rozhank_province = { ardraine183 ardraine184 commonweal11 commonweal34 torrent237 }
+				gedele_province = { ardraine236 torrent247 ardraine215 torrent248 }
+				hadas_province = { torrent245 torrent232 torrent345 torrent229 }
+				engsadt_province = {
+					   torrent290 torrent38 torrent37 torrent206
+					torrent208 torrent207 torrent230
+					        commonweal48 commonweal33
+				}
+			}
+			fullhorn_area = {#german for corncopuia - Grows a lot of wheat
+				ojiville_province = { torrent204 torrent211 torrent264 torrent205 adune22 }
+				babaev_province = { ardraine210 torrent227 torrent267 torrent228 torrent209 commonweal47 }
+				galits_province = { torrent217 torrent225 torrent215 ardraine213 }
+				hisin_province = { torrent197 torrent212 torrent196 }
+				veperburg_province = { torrent223 torrent224 torrent268 commonweal28 }
+				fullhorn_province = {
+					          commonweal27
+					    torrent213 torrent265
+					 torrent214
+				}
+			}
+			the_circle_area = {
+				outer_ring_province = { torrent148 torrent146 torrent147 torrent96  torrent156  }
+				inner_ring_province = { torrent154 torrent99 torrent153 torrent151 torrent150   }
+				central_district_province = { torrent86 ardraine211 torrent98 torrent100 adune3 adune4 adune2 }
+				sector_six_province = { ardraine223 torrent97 torrent221 }
+				sector_five_province = { torrent203 torrent302 ardraine148 torrent275 ardraine153 torrent57 commonweal2  }
+				sector_four_province = { torrent273 adune1 torrent56 torrent60 torrent59 torrent85  torrent58 }
+				sector_three_province = { torrent274 torrent93 commonweal3 torrent219 torrent95 }
+				sector_one_province = {torrent222 ardraine225 torrent272 torrent263 torrent271}
+				sector_two_province = {  ardraine224 torrent316 torrent297 torrent295  torrent216 }
+			}#
+			lower_serens_area = {#end of the river serens
+				cadia_province = { torrent112 adune15 torrent113 torrent121}
+				aureia_province = { adune13 adune12 torrent122 adune16 }
+				grauring_province = { torrent92 torrent91 torrent87 ardraine221 torrent94 ardraine222 }#grey ring
+				ringvorland_province = { torrent105 torrent142 torrent107 torrent106 }#ring foreland
+				kettenau_province = { torrent188 torrent187 torrent141 torrent186 commonweal29 torrent192 }
+				schattensenke_province = { torrent90 torrent108 torrent109 torrent140 adune74 }
+				spira_province = { torrent185   torrent139 }	
+				commonweal_city_province = { adune8 adune10 adune11 }
+			}#
+			central_serens_area = {
+				opkkon_province = { ardraine220 torrent53 torrent67 torrent68 torrent278 adune112 }
+				marktborn_province = { ardraine237 torrent80 torrent79 commonweal70 commonweal19 adune14 }
+				hengestad_province = { torrent76 torrent78 torrent74 torrent70 torrent77 }
+				central_serens_province = { torrent12 torrent69 torrent8 torrent9 torrent10 torrent11 }
+			}
+			bereguin_area = {
+				abon_province = { torrent210 torrent111 torrent110 }
+				lohin_province = { torrent4 torrent6  torrent7 torrent52 commonweal69 }
+				feneufels_province = { ardraine218 torrent50 torrent54 commonweal9 }
+				allenhal_province = { torrent51 torrent65 torrent66 }
+				creuzlein_province = { torrent62 torrent63 torrent64 torrent61 torrent55 commonweal6 torrent84 }
+				bereguin_province = { torrent83 torrent89 torrent82 torrent81 torrent88 commonweal5 commonweal4 }
+			}
+		}#
+		ardraine_region = {
+			moons_fall_area = {
+				sea_of_the_dragon_province = {adunic_sea1 adunic_sea2 adunic_sea3 adunic_sea5 adunic_sea4 adunic_sea26 adunic_sea6 etra_sea130 }
+				armonorian_sea_province = { adunic_sea27 adunic_sea7 adunic_sea30 adunic_sea9 adunic_sea10 adunic_sea11 adunic_sea12 etra_sea123 }
+			}
+			milgearth_area = {#Nonsense
+				saorn_province = { ardraine80 ardraine81 adune55 ardraine62 ardraine90 }
+				eoirnas_province = { adune5 ardraine74 }
+				ruath_province = { adune29 ardraine102 adune34 ardraine203 ardraine87 ardraine82 milgearth_mountains1 }
+				maonar_province = { adune75 ardraine73 adune51 }
+				tuiol_province = { ardraine86 ardraine89 ardraine85 ardraine118 ardraine116 milgearth_mountains2 }
+				naronre_province = { adune76 adune50 ardraine88 }
+				eoith_province = { adune38 adune32 ardraine68 ardraine79 ardraine69 }
+				artuas_province = { adune18 ardraine70 adune40 ardraine205 ardraine194 }
+				amhnor_province = { ardraine72 adune77 ardraine84 ardraine83 ardraine71 }
+				cainen_province = { etra331 ardraine77 adune73 }
+				serra_province = { ardraine75 adune20 adune53 adune67 ardraine76 } #the Hook
+			}#
+			daqueland_area = {
+				chevre_province = {ardraine4 ardraine6 testprovince39 adune66 }
+				goat_field_province = { testprovince5   }
+				capriaine_province = { testprovince33 testprovince1 testprovince64 ardraine40 ardraine109 }
+				daquehead_province = { crelzerte beuzerte ardraine1 ardraine2 ardraine3 adune61 }#Dragon's Head
+				the_neck_province = { ardraine8 ardraine9  ardraine11 }#Dragon's Neck 
+				basgardens_province = { ardraine12 ardraine13 ardraine14 ardraine171 }#LT: Low Gardens'
+				escuyre_province = { ardraine10 ardraine7 ardraine15 ardraine41 adune71 }#Squire's Place Corrupted #Ecuyia
+			}
+			adrasteria_area = {				
+				high_fire_province = { testprovince171 ardraine44 ardraine141 testprovince30 ardraine32 ardraine27 }
+				smoke_horn_province = { testprovince144 testprovince41 testprovince145 ardraine19 ardraine106  testprovince181 }
+				army_fields = { ardraine165 ardraine54 testprovince38 adune37 }
+				chevalle_province = {
+					ardraine103 ardraine47
+					ardraine20 testprovince44   }
+				rempart_province = { testprovince189 ardraine39 testprovince161 ardraine36 adune58 adune154  }
+				cerf_province = { testprovince191 ardraine38 testprovince159 ardraine55 ardraine16 }
+				rollant_province = { testprovince147 ardraine56 testprovince163   adune64 }
+				adrasteria_province = { ardraine33 ardraine29 ardraine28 testprovince164 ardraine35 adune54 adune60 adune46 }
+			}
+			pwascions_area = {#fish slightly corrupted
+				aqen_province = { adune17 adune70 testprovince10 adune72 ardraine101 }
+				lanceland_province = {testprovince185 testprovince183 ardraine17 }
+				bumura_province = { testprovince182 ardraine199 }
+				Duraka_province = { adune41 adune31 ardraine200 testprovince9 }
+				west_moon_province = { ardraine192 ardraine26 testprovince20  testprovince29 commonweal14 }
+				arawone_province = { ardraine5 ardraine53 adune33 adune23 adune103 }
+				pwascions_province = { adune25  ardraine238 ardraine239 testprovince6 }
+			}
+			upper_serens_area = {#Origination of the river serens
+				apanieve_province = { ardraine136 testprovince124 ardraine135 ardraine99 adune94 }
+				gidie_province = { ardraine30 ardraine34 ardraine60 ardraine31 adune124 }
+				eudes_province = { ardraine112 ardraine93 testprovince143 testprovince43 adune85 }
+				
+				aylise_province = { ardraine59 commonweal72 testprovince162 ardraine22 testprovince176 }
+				marechale_province = { testprovince35 ardraine134 testprovince170 }
+				upper_serens_province = { ardraine63 ardraine21 ardraine193 ardraine107 testprovince115 testprovince267 testprovince158 }
+			}
+			aulerica_area = {#Pot Makera
+				northpoint_province = { torrent155 ardraine147 ardraine196 ardraine145 ardraine146 ardraine169 commonweal1 }
+				bay_of_aune = {#bay of cloths
+					ardraine170 ardraine202  ardraine191 adune48
+				}
+				rothe_province = { adune36 ardraine78 adune6 adune52 ardraine67 ardraine198 }
+				aulerica_province = {
+					ardraine152 ardraine201 ardraine151 ardraine195
+					ardraine144 ardraine140 ardraine176 }
+			}
+			alois_area = {#just like the name'
+				clovis_province = { testprovince11 ardraine49  ardraine138 testprovince142 }
+				chauvellac_province = { testprovince140 commonweal38 testprovince137 ardraine142 commonweal46 adune59 }
+				astaze_province = { testprovince156 testprovince4 testprovince157 commonweal23 commonweal37 }
+				alois_province = {
+					   testprovince135
+					testprovince134 testprovince148
+					ardraine139 ardraine177 testprovince131
+					  commonweal18 commonweal73
+				}
+			
+			}
+			sittadelles_area = {#land of many citadels
+				swan_watch_province = { testprovince178 testprovince25 testprovince22   ardraine91 commonweal58 }
+				sittadelles_province = {#(Lower)
+					    ardraine111 ardraine43
+					   ardraine110 ardraine172
+				}
+				grosse_corne_province = {#big horn
+					ardraine66 ardraine113 testprovince249 ardraine61
+				}
+				chardon_province = {#(land the bull) thistles 
+					ardraine115 ardraine117 testprovince50 ardraine173 ardraine95 commonweal39}
+				banques_malodorantes_province = {#bad smelling banks
+					testprovince174 testprovince177 ardraine92 ardraine104 testprovince152
+				}
+				rigos_shield_province = {#King's Shield
+					ardraine64 testprovince166 testprovince168 ardraine65 ardraine168
+				}
+			}
+			the_heartwoods_area = {#Woods in the middle of ardraline
+				wood_freehold1_province = { ardraine24 torrent349 ardraine105 testprovince15 commonweal25 }
+				winter_woods_province = { ardraine100 heartwoods1 ardraine18 }
+				summer_groves_province = { ardraine46 ardraine197 ardraine108 adune19 }
+				autumn_forests_province = { ardraine58 testprovince188 ardraine166 ardraine133 }
+				spring_thicket_province = { ardraine96 testprovince179 }
+				the_heartwoods_province = { testprovince180 commonweal51 }
+				little_woods_province = {
+					ardraine23 commonweal17
+				}
+			}
+			muse_area = {#Mouse Maze Muses
+				kronfurt_province = { ardraine219 ardraine114 testprovince165 ardraine25 }
+				serengrau_province = { testprovince128 ardraine189 ardraine57 commonweal71 ardraine179 }#grey serens
+				muse_province = { testprovince160 ardraine119 ardraine45 ardraine161 ardraine48 torrent5 }
+				camvou_province = {#The Bend
+					 testprovince51 testprovince184 testprovince101 commonweal66
+				}#
+				boutte_province = { testprovince58 ardraine188 testprovince172 ardraine98 testprovince127 }
+			}#
+			ardrigos_stead_area = {#King's Stead = Crownlands, former home of the High Kings now home of the regents
+				kings_field_province = { ardraine154 ardraine155 torrent2 torrent3 commonweal22 adune68 }
+				valon_province = { commonweal21 ardraine158 torrent48 torrent49 commonweal8 }
+				lidien_province = { commonweal41 commonweal42 ardraine159 commonweal44 ardraine175 torrent276 }
+				ardrigos_stead_province = {
+					ardraine156 ardraine208 ardraine150 ardraine160 ardraine209 ardraine149 commonweal13 torrent277 ardraine207 ardraine157
+				}
+			}
+			south_ardraine_1_area = {
+				south_ardraine_1_province = { islands_1 commonweal67 }#
+			}#
+		}#
+		sordren_region = {
+			shattered_coast_area = {
+				vevne_province = { adune161 adune92 }
+				sedre_province = { adune81 adune93 adune80 adune98 }
+				aderie_province = { adune100 adune111 adune129 adune139 adune91 adune84 adune149 }
+				tanissa_province = { adune132 adune134 adune126 adune142 testprovince114 testprovince132 adune117 }
+				eveorne_province = { adune90 testprovince105 testprovince108 adune86 adune82 adune127 }
+				west_sordren_3_province = {
+					testprovince57
+					testprovince31
+					testprovince139
+					testprovince113
+					testprovince122
+					testprovince141
+					testprovince202
+					testprovince66
+					adune116
+				}
+				central_sordren_2_province = {
+					testprovince12
+					testprovince92
+					testprovince93
+					testprovince62
+					testprovince52
+					testprovince90
+				}
+				hultouin_province = { adune79 testprovince175 adune159 testprovince153 adune105 adune141 }
+				west_sordren_4_province = {
+					testprovince167
+					testprovince40
+					testprovince149
+				}
+				central_sordren_3_province = {
+					testprovince138 testprovince195 testprovince197 testprovince68 testprovince26 testprovince94 testprovince24 testprovince82
+				}
+			} 
+			east_sordren_area = {
+				ardmarka_province = {
+					testprovince76
+					testprovince37
+					testprovince173
+					testprovince63
+				}
+				east_sordren_1_province = {
+					testprovince99
+					testprovince203
+					testprovince7
+				}
+				east_sordren_2_province = {
+					testprovince204
+					testprovince74
+					testprovince28
+					testprovince98
+					testprovince207
+					testprovince27 adune28
+				}
+				east_sordren_3_province = {
+					testprovince96
+					testprovince8
+					testprovince65
+					testprovince34
+				}
+				east_sordren_4_province = {
+					testprovince56
+					testprovince88
+					testprovince130
+					testprovince86
+					testprovince116
+					testprovince81
+				}
+				east_sordren_5_province = {
+					testprovince19
+					testprovince198
+					testprovince97
+					testprovince55
+					testprovince100
+					testprovince16
+				}
+				east_sordren_6_province = {
+					testprovince47
+					testprovince136
+					testprovince190
+				}
+			}
+			central_sordren_area = {
+				central_sordren_1_province = {
+					testprovince201 testprovince126 testprovince14 testprovince13 testprovince36 testprovince107 testprovince87
+				}
+				central_sordren_4_province = {
+					testprovince69
+					testprovince21
+					testprovince89
+					testprovince95
+					testprovince112
+					testprovince59
+					testprovince23
+					testprovince48 western_aita
+				}
+				central_sordren_5_province = {
+					testprovince60
+					testprovince85
+					testprovince110
+					testprovince194
+					testprovince80
+				}
+				west_sordren_1_province = { testprovince150 testprovince70 testprovince119 testprovince78 }
+				west_sordren_2_province = {
+					testprovince106 adune160
+					testprovince42
+					testprovince77
+					testprovince71
+					testprovince123
+				}
+				west_sordren_5_province = {
+					testprovince154
+					testprovince125
+					testprovince196
+					testprovince61			
+					testprovince53
+				}
+				west_sordren_6_province = {
+					testprovince54 
+					testprovince72
+					testprovince129
+					testprovince111
+					testprovince84
+					testprovince155
+					testprovince102
+					testprovince32
+				}
+			}
+
+			west_gate_sea_area = {
+				west_gate_sea_province = {
+					testprovince17
+					testprovince3
+					testprovince2
+					testprovince83
+					adunic_sea28 etra_sea31
+				}
+			}
+			stoeste_sea_area = {
+				stoeste_sea_province = {
+					testprovince18
+					testprovince46
+					testprovince45 etra_sea39
+					etra_sea68 etra_sea67
+					east_gate my_sea_zone_30
+				}
+			}
+		}#end region
+		godhand_region = {
+			godhand_1_area = {
+				eternal_city_province = {
+					eternalcity1
+					eternalcity2
+					eternalcity3
+					godhand35
+					godhand36
+				}
+				finger5_province = {
+					godhand30 godhand31 godhand32 godhand33 godhand34 godhand37 godhand38 godhand39
+				}
+				god_hand_6_province = { godhand41 godhand43 godhand42 godhand44 }
+				god_hand_8_province = {
+					godhand81
+					godhand83
+					godhand40
+					godhand82
+				}
+			}#end area1
+			godhand_2_area = {
+				god_hand_1_province = {
+					godhand7
+					godhand8
+					godhand9
+					godhand29
+					godhand50
+					testprovince79
+				}
+				finger1_province = {godhand1 godhand2 godhand3 godhand4 godhand5 godhand6 testprovince199}
+				god_hand_2_province = {
+					godhand51
+					godhand49
+					godhand46
+					godhand48
+					godhand45
+					godhand47
+					testprovince103
+				}
+				finger2_province = {
+					godhand18
+					godhand17
+					godhand15
+					godhand16
+					godhand14
+					testprovince208
+					testprovince209
+					godhand13
+				}
+			}#end area2
+			godhand_3_area = {
+				finger3_province = {
+					godhand12
+					godhand11
+					godhand20
+					testprovince200
+					godhand28
+					testprovince250
+				}
+
+				god_hand_3_province = { godhand52 godhand53 godhand10 godhand19 godhand21 godhand22 }
+				finger4_province = {
+					godhand25
+					godhand24
+					godhand26
+					godhand27
+					godhand23
+					testprovince192
+				}
+				god_hand_4_province = { godhand59 godhand60 godhand62 godhand63 godhand61 }
+				god_hand_5_province = {
+					godhand56
+					godhand55
+					godhand54
+					godhand67
+					godhand58
+					godhand68
+					godhand66
+					godhand57
+					freehold125
+					testprovince169
+				}
+			}#end area4
+			godhand_4_area = {
+				god_hand_7_province = {
+					godhand80
+					godhand65
+					godhand69
+					godhand70
+					godhand71
+					godhand72
+					godhand79
+					godhand64
+				}
+				god_hand_10_province = {
+					godhand78
+					godhand77
+					godhand76
+					godhand73
+					godhand105
+					godhand104
+					godhand75
+				}
+				god_hand_province = {
+					godhand74
+					godhand87
+					godhand92
+					godhand93
+					godhand94
+					godhand96
+					testprovince211
+					godhand99
+				}
+				god_hand_11_province = {
+					godhand100
+					godhand102
+					godhand103
+					godhand101
+					godhand98
+					godhand97
+					testprovince213
+					testprovince214
+					testprovince215
+					godhand95
+				}
+			}#end area
+			godhand_5_area = {
+				god_hand_9_province = {
+					godhand84
+					godhand85
+					godhand89
+					godhand90
+					godhand91
+					godhand86
+					godhand88
+					testprovince239
+					testprovince240
+				}
+				freehold1_province = {
+					freehold3
+					freehold2
+					freehold28
+					freehold1
+					testprovince237
+				}
+				freehold2_province = {
+					freehold7
+					freehold4
+					freehold5
+					freehold6
+					freehold9
+					testprovince238
+					freehold8
+				}
+				freehold_province = {
+					freehold32
+					freehold33
+					freehold81
+					godhand106
+					testprovince193
+				}
+			}#end area 5
+			freehold_1_area = {
+				freehold3_province = { freehold23 freehold10 freehold24 testprovince73 testprovince186 testprovince120 }
+				faian_province = { freehold15 testprovince222 testprovince223 freehold14 }
+				ircnae_province = { freehold12 testprovince243 freehold11 }
+				lenaxus_province = { freehold13 testprovince242 adune99 adune102 adune119 }
+				freehold9_province = {
+					freehold16
+					freehold17
+					freehold126 testprovince241
+				}
+				freehold10_province = {
+					freehold19
+					freehold18
+					freehold61
+					freehold62 aita66
+					freehold64
+					freehold63
+					testprovince212
+				}
+				freehold13_province = {
+					freehold60
+					freehold67
+					freehold59
+					freehold58
+					testprovince210
+					testprovince216
+					testprovince91
+					testprovince229
+				}
+				freehold8_province = { freehold22 freehold47 freehold21 freehold20 }
+			}#end area
+			freehold_2_area = {
+				freehold4_province = {
+					freehold30
+					freehold31
+					freehold34
+					freehold48
+					testprovince231
+				}
+				freehold6_province = {
+					freehold38
+					freehold35
+					freehold39
+					freehold40
+					freehold51
+					freehold52
+					freehold53
+				}
+				freehold17_province = {
+					freehold75
+					freehold76
+					freehold74
+					freehold73
+					testprovince226
+					testprovince225
+					testprovince224
+					testprovince67
+				}
+				freehold7_province = {
+					freehold49
+					freehold72
+					freehold71
+					freehold50
+					testprovince205
+				}
+
+				freehold14_province = { freehold70 freehold57 freehold56 freehold55 }
+				freehold5_province = {
+					freehold25
+					freehold37
+					freehold36
+					freehold26
+					freehold27
+					freehold29
+					testprovince117
+					testprovince232
+					testprovince75
+				}
+				freehold16_province = {
+					freehold46
+					freehold45
+					freehold44
+					freehold43
+					freehold41
+					freehold54
+					freehold42
+					testprovince228
+					testprovince227
+					testprovince217
+				}
+			}#end area
+			freehold_3_area = {
+				freeholdic_aita_province = {
+					freehold127
+					freehold128
+					freehold129
+					freehold130
+					freehold131
+					freehold80
+				}
+				freehold11_province = {
+					freehold82
+					freehold77
+					freehold85
+					freehold84
+					freehold78
+					freehold83
+					testprovince206
+					testprovince230
+					testprovince234
+					testprovince151
+				}
+				freehold12_province = {
+					freehold79
+					freehold66 aita71
+					freehold69
+					freehold65
+					freehold68
+				}
+
+				freehold15_province = {
+					freehold88
+					freehold89
+					freehold90
+					freehold91
+					freehold92
+					freehold86
+					freehold87
+				}
+				freehold18_province = {
+					freehold94
+					freehold95
+					freehold98
+					freehold97
+					freehold93
+					freehold96
+					testprovince235
+					testprovince236
+				}
+			}#end area
+			freehold_6_area = {
+				freehold19_province = {
+					freehold101
+					freehold102
+					freehold103
+					freehold106
+					testprovince49
+				}
+				freehold20_province = {
+					freehold100
+					freehold99
+					freehold104
+					freehold105
+					freehold108
+					freehold109
+					testprovince133
+				}
+				teikhra_province = {
+					aita91 aita99 freehold110 testprovince109 freehold111  aita104
+				}
+				freehold21_province = {
+					freehold112 freehold107 freehold113 freehold114 testprovince244 freehold132
+				}
+				freehold22_province = {
+					freehold115
+					freehold116
+					freehold117
+					freehold123
+					freehold124
+					testprovince233
+					testprovince221
+					testprovince219
+					testprovince218
+					aita108
+				}
+				freehold23_province = {
+					freehold118
+					freehold122
+					freehold119
+					freehold120
+					freehold121
+					testprovince220
+				}
+				eqorus_prov = {
+					etra1 etra2 etra6 etra7 etra19 etra4 etra3
+				}
+			}#end area
+			aldrian_sea_area = {
+				north_aldrian_sea_province = {
+					my_sea_zone_2
+					my_sea_zone_3
+					my_sea_zone_4
+					my_sea_zone_5
+					my_sea_zone_6
+					my_sea_zone_7
+				}
+				south_aldrian_sea_province = {
+					my_sea_zone_8
+					my_sea_zone_9
+					my_sea_zone_10
+					my_sea_zone_11
+					etra_sea3
+					my_sea_zone_12
+				}
+			}#end area
+			lilotha_sea_area = {
+				lilothan_sea_province = {
+					my_sea_zone_13
+					my_sea_zone_14 
+					my_sea_zone_15 etra_sea99 etra_sea102 etra_sea143 etra_sea159 etra_sea172
+					my_sea_zone_17
+					my_sea_zone_16
+					my_sea_zone_18
+				}
+			}#end area
+			golden_sea_area = {
+				southern_golden_sea_province = {
+					my_sea_zone_21
+					my_sea_zone_20
+					my_sea_zone_19 etra_sea100
+					my_sea_zone_22
+					my_sea_zone_23
+					etra_sea73 etra_sea75 
+				}
+				central_golden_sea_province = { my_sea_zone_24 my_sea_zone_25 my_sea_zone_26 etra_sea70 etra_sea69 etra_sea71 etra_sea72 my_sea_zone_27 }
+				northern_golden_sea_province = {
+					my_sea_zone_29
+					my_sea_zone_28
+					adunic_sea23
+				}
+			}#end area
+		}#end region
+	
+	}#end subcontinent
+	eastern_europe = {
+		vothivre_region = {
+			silemar_area = {
+				findela_prov = { etra763 etra321 aita152 etra469 etra919 etra471 etra467 }
+				saithara_prov = { etra470 etra468 etra939 etra323 etra324 }
+				urdog_prov = { etra466 etra964 etra795 etra713 }
+				bojal_prov = { etra382 etra761 }
+				brivolk_prov = { etra714 etra794 etra384 etra793 etra326 }
+				galnol_prov = { etra862 etra861 etra381 etra464 }
+				kekva_prov = { etra762 etra725 etra717 }
+				
+			}
+
+			vokvric_area = {
+				vaden_prov = { etra864 etra320 etra796 etra790 etra863 }
+				lodril_prov = { etra791 etra792 etra789 etra305 etra465 etra885 etra378 etra803 }
+				aralk_prov = { aita154 etra802 aita155 etra797 etra865 aita128 aita137 }
+			}
+			volokaj_area = {
+				raukosl_prov = { etra562 etra552 etra551 etra569 etra561 }
+				vanel_prov = { etra554 etra553 etra563 etra555 etra646 etra564 }
+				somich_prov = { etra542 etra543 etra541 etra973 etra539 etra550 }
+				soranj_prov = { etra580 etra570 etra568 etra581 etra587 }
+				moveid_prov = { etra583 etra590 etra567 etra582 etra566 }
+			}
+			momiroga_area = {
+				penalnirkna_prov = { etra887 etra959 etra477 etra392 etra476 etra886 }
+				rekelgaja_area = { etra966 etra755 etra754 etra756 }
+				roorh_area = { etra960 etra648 etra649 }
+				adjagost_area = { etra753 etra757 etra647 etra957 etra972 etra565 }
+			}
+			relor_area = {
+				vasos_area = { etra594 etra604 etra607 etra606 etra613 }
+				ralarikveca_area = { etra605 etra597 etra596 etra595 }
+				olkogrc_area = { etra938 etra592 etra593 etra584 }
+			}
+			drena_area = {
+				ajvogia_area = { etra591 etra589 etra588 etra586 etra585 etra572 }
+				magne_area = { etra614 etra620 etra619 etra617 }
+				medobas_area = { etra618 etra602 etra601 etra600 }
+				nichroo_area = { etra609 etra598 etra599 etra574 etra575 etra611 }
+				radal_area = { etra616 etra612 etra615 etra610 }
+			}
+			vochau_area = {
+				haulgri_prov = { etra710 etra642 etra537 etra641 }
+				ichir_prov = { etra540 etra536 etra549 }
+				galra_prov = { etra544 etra546 etra545 etra573 etra559 etra571 etra557 etra558 }
+				hjama_prov = { etra548 etra547 etra556 etra560 }
+				arldan_prov = { etra534 etra535 }
+				arasin_prov = { etra531 etra532 etra533 }
+			}
+			adrorj_area = {
+				cendaj_prov = { etra355 etra322 etra368 etra366 }
+				darlid_prov = { etra801 etra422 etra800 etra424 }
+				havocha_prov = { etra319 etra423 etra310 etra309 etra318 }
+			}
+			vorvnich_area = {
+				vaumn_prov = { etra297 etra359 etra358 }
+				sadaj_prov = { etra933 etra287 etra932 etra340 }
+				jodrma_prov = { etra289 etra362 etra357 etra361 etra253 }
+				iorore_prov = { etra291 etra334 etra356 etra286 }
+				nidraec_prov = { etra332 etra339 }
+			}
+			dowas_area = {
+				dralonj_prov = { etra427 etra425 etra426 etra364 }
+				arvemith_prov = { etra233 etra239 etra241 etra232 }
+				ceith_prov = { etra244 etra252 etra251 etra250 }
+				karola_prov = { etra248 etra249 etra254 etra246 }
+				rekvau_prov = { etra245 etra234 etra235 etra931 }
+				iothoth_prov = { etra236 etra238 etra242 etra247 etra243 etra237 }
+			}
+			miroj_area = {
+				ralche_prov = { etra330 etra329 etra328 etra930 etra929 etra327 }
+				oparajor_prov = { etra645 etra702 etra704 etra703 etra705 etra884 etra788 }
+				rarmithorth_prov = { etra288 etra298 etra299 }
+				sigam_prov = { etra706 etra643 etra644 etra707 etra538 }
+			}
+			olovol_area = {
+				penichr_prov = { etra308 etra311 etra315 etra314 etra306 }
+				olkva_prov = { etra316 etra312 etra317 etra313 etra325 }
+			}
+			veazhe_area = {
+				vochila_prov = { etra303 etra87 etra86 etra88 etra89 }
+				dathra_prov = { etra90 etra91 etra92 etra93}
+				gajos_prov = { aita148 aita151 aita149 aita150 }
+				nalos_prov = { etra94 etra96 etra95 etra97 etra98 }
+				ebilkarka_prov = { aita106 aita113 aita118 etra524 aita112 }
+				ceviroland_prov = { etra502 etra503 etra504 etra505 etra506 }
+			}
+			dodora_area = {
+				dramalc_prov = { etra265 etra260 etra262 etra263 etra264 etra261 etra228 }
+				mithek_prov = { etra256 etra258 etra259 etra255 etra257 }
+			}
+		}
+		the_great_sward_region = {
+			usazan_area = {
+				gs_prov_16 = { etra135 etra136 etra947 etra139 etra138 }
+				gs_prov_111 = { etra143 etra948 etra144 etra150 etra148 }
+				alar_prov_5 = { etra141 etra140 etra787 etra137 }
+				alar_prov_6 = { etra145 etra146 etra151 etra770 etra147 }
+			}
+			vazodis_area = {
+				gs_prov_1 = { etra214 etra212 etra213 etra162 }
+				gs_prov_4 = { etra621 etra622 }
+				gs_prov_2 = { etra217 etra215 etra218 etra216 }
+				gs_prov_5 = { etra623 etra625 etra629 etra624 etra639 etra630 }
+				gs_prov_3 = { etra219 etra126 etra128 etra129 }
+				gs_prov_7 = { etra130 etra131 etra133 etra134 etra771 }
+			}
+			reira_area = {
+				gs_prov_15 = { etra525 etra526 etra527 etra529 etra530 }
+					
+				gs_prov_12 = { etra510 etra509 etra511 etra528 etra512 etra514 }
+			}
+			govara_area = {
+				gs_prov_11 = { etra742 etra519 etra520 etra521 }
+				gs_prov_13 = { etra744 etra745 etra746 etra747 etra153 etra752 }
+				gs_prov_10 = { etra638 etra516 etra517 etra518 etra515 etra628 }
+				gs_prov_14 = { etra576 etra578 etra522 etra523 etra603 etra579 etra577 }		
+				gs_prov_114 = { etra738 etra773 }
+			}
+			dalis_area = {
+				gs_prov_115 = { etra977 etra976 etra982 etra975 etra974 }
+				gs_prov_116 = { etra608 etra651 etra650 }
+			}
+			ashon_area = {
+				gs_prov_9 = { etra635 etra636 etra637 etra743 }
+				gs_prov_8 = { etra627 etra626 etra631 etra632 etra634 }	
+				gs_prov_6 = { etra633 etra772 etra132 }
+			}
+			telan_area = {
+				gs_prov_103 = { etra159 etra158 etra160 etra661 etra967 }
+				gs_prov_106 = { etra462 etra656 etra654 etra655 etra951 }
+				gs_prov_100 = { etra765 etra659 etra768 etra658 }
+			}
+			mavisa_area = {
+				gs_prov_105 = { etra508 etra731 etra736 etra154 etra513 }
+				gs_prov_107 = { etra732 etra730 etra701 etra729 etra728 }
+				gs_prov_117 = { etra953 etra776 etra734 etra769 etra735 }
+				gs_prov_104 = { etra708 etra733 etra709 etra954 etra2135 etra2158 }	
+			}
+			valeke_area = {
+					gs_prov_113 = { etra653 etra955 etra740 etra739 etra652 }
+					gs_prov_109 = { etra741 etra737 etra775 etra774 }
+					gs_prov_112 = { etra750 etra751 etra749 }
+			}
+			high_swards_area = {
+				alar_prov_10 = { etra766 etra156 etra157 etra723 etra715 etra724 }
+				gs_prov_101 = { etra952 etra764 etra949 etra712 }
+				gs_prov_102 = { etra767 etra777 etra950 etra719 }
+			}
+			gs_area_2 = {
+				gs_prov_108 = { etra727 etra720 etra726 etra721 etra155 }
+				gs_prov_110 = { etra657 etra152 etra718 etra722 }
+			}
+			gs_area_3 = {
+				gs_prov_120 = { etra2014 etra2071 etra1953 etra2064 }
+				gs_prov_121 = { etra1948 etra1986 etra2001 }
+				gs_prov_122 = { etra2003 etra1903 etra2002 etra2077 etra2040 }
+			}
+		}
+		typhrea_region = {
+			east_lilotha_sea_area = {
+				east_lilothan_sea_province = { etra_sea1  etra_sea8 etra_sea7 etra_sea10 etra_sea9 etra_sea94 }
+				inner_east_lilothan_sea_province = { etra_sea2 etra_sea4 etra_sea6 }
+			}
+			tethynic_sea_area = {
+				aelyric_sea_province = { etra_sea12 etra_sea16 etra_sea80 etra_sea45 }
+				bay_of_siraus_province = { etra_sea13 etra_sea14 }
+				thrasan_sea_province = { etra_sea15 etra_sea47 etra_sea11 etra_sea17 etra_sea152 }
+				far_thrasan_sea_prov = { etra_sea142 etra_sea106 etra_sea140   etra_sea136 etra_sea138 }
+				ethes_sea_prov = { etra_sea184 etra_sea139 etra_sea186 etra_sea145 }
+			}
+			alar_area = {
+				alar_prov_1 = { etra220 etra195 etra199  etra201  etra2008 etra1042 }
+				alar_prov_3 = { etra225 etra224 etra184 etra204 etra203 etra185 }
+				alar_prov_4 = { etra172 etra507 etra166 etra463 }
+				alar_prov_8 = { etra167 etra186 etra660 etra187 etra190 etra191 etra786 }
+				alar_prov_9 = { etra221 etra196 etra189 etra188 etra197 }
+		
+			}
+			ethes_area = {
+				ethes_prov = { etra1925 etra1909 etra2049 etra2108 etra1938 etra2105}
+			}
+			cynoar_area = {#Land of the Hawks
+				cynoar_prov_1 = {
+					etra38 etra66 etra67 etra68 etra70 etra72 etra304 etra226
+				}
+				cynoar_prov_2 = {
+					etra169 etra168 etra175 etra176 etra177 etra223
+				}
+				cynoar_prov_3 = {
+					etra178 etra69 etra120 etra119 etra205 etra179
+				}
+				cynoar_prov_4 = {
+					etra118 etra206 etra207 etra208 etra117
+				}
+				cynoar_prov_5 = {
+					etra210 etra211 etra209
+				}
+				cynoar_prov_6 = {
+					 etra193 etra192 etra181 etra198 etra200 etra2018 
+				}
+				cynoar_prov_7 = {
+					etra202 etra194 etra180
+				}
+			}
+			erebum_area = {#dark Elves
+				taldanyal_prov = { aita153 aita147 etra142 aita115 aita117 etra857 }
+				eretailiral_prov = { aita145 aita119 aita146 }
+				erebus_prov_1 = {
+					aita109 aita114 aita110 aita138 aita111 aita139 aita140 aita132 aita129
+				}
+				erebus_prov_2 = {
+					aita120 aita125 aita126 aita133 aita135 testprovince245 aita130 aita131 aita
+				}
+				erebus_prov_3 = {
+					aita105 aita107 aita134 aita136
+				}
+				erebus_prov_4 = {
+					 aita116 aita122 aita123 aita124 aita121 adune9
+				}
+				erebus_prov_5 = {
+					aita141 aita142 aita143 aita127
+				}
+			}
+			mare_arborum_area = {
+				mare_arborum_prov_1 = {
+					etra84 etra163 etra164 etra82 etra81 etra114 etra111
+				}
+				mare_arborum_prov_2 = {
+					etra170 etra174 etra183 etra173 etra222 etra182
+				}
+				mare_arborum_prov_3 = {
+					etra165 etra785 etra171 etra125 etra127 etra124
+				}
+				mare_arborum_prov_4 = {
+					etra113 etra103 etra104 etra102 etra101 etra115
+				}
+				mare_arborum_prov_5 = {
+					etra110 etra105 etra106 etra109 etra121
+				}
+				mare_arborum_prov_6 = {
+					etra15 etra149 etra28 etra100 etra107 etra40 aita144
+				}
+				mare_arborum_prov_7 = {
+					etra99 etra45 etra123 etra161 etra108 etra122
+				}
+			}
+			typhrea_area_1 = {
+				typhrea_prov_13 = {
+					etra18 etra116 etra112 etra17 etra83 etra16
+				}
+				typhrea_prov_1 = {
+					etra20 etra21 etra25 etra24 etra27 etra26
+				}
+				typhrea_prov_2 = {
+					etra14 etra63 etra22 etra64 etra30 etra13 etra29
+				}
+				typhrea_prov_3 = {
+					etra10 etra8 etra12 etra11 etra9 etra5
+				}
+				typhrea_prov_4 = {
+					etra57 etra65 etra58 etra59 etra60
+				}
+				typhrea_prov_5 = {
+					etra46 etra56 etra54 etra53
+				}
+				typhrea_prov_6 = {
+					etra44 etra48 etra50 etra49 etra47
+				}
+				typhrea_prov_9 = {
+					etra35 etra33 etra34 etra36 etra37 etra32
+				}
+				typhrea_prov_10 = {
+					etra41 etra39 etra55 etra52 etra51 etra31
+				}
+				typhrea_prov_11 = {
+					etra23 etra62 etra61 etra42
+				}
+				typhrea_prov_12 = {
+					etra43 etra78 etra77 etra85 etra80 etra71 etra79 hykrios_lake_1 hykrios_mountains_1
+				}
+				typhrea_prov_14 = {
+					etra74 etra76 etra75 etra73
+				}
+
+			}
+		}
+		baltic_region = {#Jasskadia
+			west_hronrad_sea_area = {
+				west_hronrad_sea_province = { etra_sea64 etra_sea56 etra_sea55 etra_sea53 etra_sea65 etra_sea54 etra_sea48 etra_sea52 etra_sea57 etra_sea49 etra_sea82 etra_sea66 etra_sea78 etra_sea77 etra_sea40 etra_sea79 etra_sea37 etra_sea59 etra_sea58 etra_sea32 }
+			}
+			east_hronrad_se_area = {
+				east_hronrad_sea_province = { etra_sea81 etra_sea38 etra_sea36 etra_sea42 etra_sea44 etra_sea50 etra_sea51 etra_sea19 etra_sea18 etra_sea21 etra_sea20 etra_sea22 etra_sea30 etra_sea23 etra_sea43 etra_sea35 etra_sea34 etra_sea27 etra_sea24 etra_sea25 etra_sea26 }
+			}
+			nachra_area = {
+				ulfwa_prov = { etra439 etra440 etra913 }
+				eylaor_prov = { etra435 etra437 etra436 etra478 etra979 etra1068 }
+				iobra_prov = { etra386 etra876 etra969 etra473 etra970 }
+				avedre_prov = { etra494 etra866 etra867 }
+				bovoru_prov = { etra916 etra907 etra472 etra434 }
+				dauth_prov = { etra390 etra431 etra889 etra640 etra888 }
+				ravonolj_prov = { etra716 etra432 etra433 }
+			}
+			ralogn_area = {
+				yadriga_prov = { etra877 etra450 etra946 }
+				votroth_prov = { etra945 etra944 etra449 etra479 etra943 }
+				ralich_prov = { etra962 etra445 etra458 etra914 etra779 }
+				jonkath_prov = { etra447 etra868 etra942 etra446 etra780 etra971 }
+				melora_prov = { etra915 etra441 etra778 }
+				vovoj_prov = { etra457 etra968 etra459 etra443 }
+				kaval_prov = { etra444 etra442 etra438 etra760 etra908 }
+			}
+			eorarax_area = {
+				north_jasskara_prov_4 = { etra903 etra293 etra294 etra902 etra266 etra301 etra292 }
+				north_jasskara_prov_5 = { etra474 etra904 etra267 }
+				north_jasskara_prov_15 = { etra501 etra351 etra350 etra925 etra814 }
+				north_jasskara_prov_14 = { etra348 etra268 etra343 etra344 etra345 etra269 etra924 etra1065 }
+				north_jasskara_prov_13 = { etra338 etra337 etra892 etra342 }
+				north_jasskara_prov_12 = { etra270 etra333 etra335 etra302 etra336 }
+			}
+			aibhr_area = {
+				north_jasskara_prov_3 = { etra365 etra934 etra475 etra360 etra895 }
+				north_jasskara_prov_7 = { etra363 etra296 etra896 }
+				north_jasskara_prov_9 = { etra901 etra295 etra980 }
+			}
+			nehalem_area = {
+				alkanbren_prov = { etra367 etra369 etra370 etra285 etra407 etra409 etra408 etra430 etra855 }
+				north_jasskara_prov_1 = { etra421 etra372 etra420 etra385 etra371 etra417 etra850 }
+				north_jasskara_prov_2 = { etra273 etra898 etra272 etra897 etra461 etra899 }
+				
+			}
+			taolna_area = {
+				north_jasskara_prov_8 = { etra894 etra900 etra758 etra227 etra759 etra927 etra813 }
+				north_jasskara_prov_11 = { etra893 etra492 etra905 }
+				north_jasskara_prov_10 = { etra271 etra958 etra490 etra487 etra491 etra815 }
+			}
+			caghaolax_area = {
+				north_jasskara_prov_16 = { etra500 etra499 etra498 etra496 etra497 etra926 }
+				north_jasskara_prov_17 = { etra493 etra495 etra489 etra488 etra486 etra825 etra918 etra1070 }
+				north_jasskara_prov_18 = { etra455 etra453 etra454 etra456 etra821 etra820 }
+			}
+			northern_jasskara_area = {
+				north_jasskara_prov_19 = { etra871 etra883 etra413 etra410 }
+				north_jasskara_prov_20 = { etra412 etra978 etra485 etra411 etra906 }
+				north_jasskara_prov_21 = { etra451 etra452 etra910 }
+			}
+			eardea_area = {
+				hoggerland_prov_1 = { etra377 etra380 etra379 etra393 etra917 }
+				hoggerland_prov_2 = { etra274 etra396 etra383 etra397 etra401 }
+				hoggerland_prov_3 = { etra391 etra909 etra389 etra279 etra387 etra388 etra940 }
+				hoggerland_prov_10 = { etra400 etra879 etra880 etra881 etra428 }
+			}
+			wisc_area = {
+				hoggerland_prov_5 = { etra353 etra354 etra346 etra347 }
+				hoggerland_prov_6 = { etra394 etra283 etra290 etra341 etra307 }
+				hoggerland_prov_4 = { etra374 etra300 etra284 etra349 etra352 etra375 }
+			}
+			great_boar_march_area = {
+				hoggerland_prov_16 = { etra405 etra280 etra941 etra278 etra460 }
+				hoggerland_prov_13 = { etra429 etra277 etra852 etra281 etra851 }
+				hoggerland_prov_14 = { etra870 etra882 etra419 etra874 etra414 etra875 etra448 }
+				hoggerland_prov_12 = { etra415 etra872 etra873  etra416 etra418 }
+				hoggerland_prov_11 = {
+					etra403 etra782 etra404 etra781 etra406
+				
+				}
+			}
+			hoggerland_area = {
+				
+				hoggerland_prov_7 = {
+					etra890 etra891 etra402 etra276 etra878 etra275
+				
+				}
+				hoggerland_prov_8 = {
+					etra483 etra783 etra398 etra484 etra481 etra482 etra399
+				
+				}
+				hoggerland_prov_9 = {
+					etra480 etra395 etra799 etra798 etra963
+				
+				}
+
+					
+			}
+			placeholder_baltic_area_1 = {#Jassskara Eljanas Vihityla Wilararä
+				ph_baltic_prov_1 = { etra376  }
+			}
+		
+		}
+		placeholder_ee_reg = {
+			placeholder_ee_area = {
+				placeholder_ee_prov_2 = { etra748 }
+				placeholder_ee_prov_3 = {   
+					 etra804 etra805 etra806 etra807 etra808 etra809 etra810 etra811 etra812
+					 etra816 etra817 etra818 etra819 etra822 etra823 etra826 etra827
+					etra828 etra829 etra830 etra831 etra832 etra833 etra834 etra835 etra836 etra837 etra838 etra839 etra840
+					etra841 etra842 etra843 etra844 etra845 etra846 etra847 etra848 etra849 etra853
+					etra854 etra856 etra858 etra859 etra860 etra824
+				}
+
+				placeholder_ee_prov_4 = {
+					        etra869 etra911 etra912
+					  etra928 etra935 etra936
+					etra937
+					etra956 etra961 etra965
+					      etra981
+				}
+			}
+		}
+	}#end subcontinent
+}
+
+custom_continent = {
+	custom_subcontintent = {
+		custom_region = {
+			#always have at least 256 normal non-wasteland locations on the map and code!!!
+			my_land_area = {
+				my_land_province = { testprovince187 testprovince246 testprovince247 testprovince248  testprovince251 testprovince252 testprovince253 testprovince254 testprovince255 testprovince256 testprovince257 testprovince258 testprovince259 testprovince260  testprovince262 testprovince263 testprovince264 testprovince265 testprovince266 testprovince268 testprovince269 testprovince270 etra1405   etra1491 adune113 }
+			}
+
+			#always have at least 1 sea zone & 1 port on your map and code!!!
+			#don't forget to define them in default.map and ports.csv
+			my_sea_area = {
+				my_sea_province = {
+					my_sea_zone_1 etra_sea146
+					
+					adunic_sea29
+					etra_sea76
+					wasteland1
+					wasteland2
+					wasteland3
+					wasteland4
+					wasteland5
+					wasteland6
+					wasteland7
+					wasteland8
+					wasteland9
+					wasteland10
+				}
+				my_sea_province_2 = { etra_sea205 etra_sea185 etra_sea192 etra_sea194 etra_sea179 etra_sea176 etra_sea201 etra_sea206 etra_sea198 etra_sea187 }
+				my_sea_province_3 = { etra_sea193 etra_sea195 etra_sea204 etra_sea165 etra_sea169  etra_sea183 etra_sea167 }
+			}
+		}
+	}
+}
+#un-used here to stop errors
+asia = {
+	south_asia = {
+		western_india_region = {}
+		indonesia_region = {}
+	}
+	east_asia = {
+	
+	}
+	north_asia = {}
+	central_asia = {}
+	middle_east = {
+		adnkhala_region = {
+			nsari_sea_area = { 
+				nsar_sea_prov_1 = { etra_sea202 etra_sea164 etra_sea174 etra_sea209 }
+				nsar_sea_prov_2 = { etra_sea190 etra_sea161 etra_sea168 etra_sea181 etra_sea182 etra_sea170 etra_sea173 }
+				nsar_sea_prov_3 = { etra_sea208 etra_sea180 etra_sea160 etra_sea175 etra_sea199 etra_sea197 etra_sea163 }
+				nsar_sea_prov_4 = { etra_sea203 etra_sea200 etra_sea177 etra_sea162 etra_sea191 etra_sea196 etra_sea188}
+				nsar_sea_prov_5 = { etra_sea189 etra_sea178 etra_sea166 etra_sea171}
+			}
+			adnkhala_area_1 = {
+				adnkhala_area_1_prov_1 = { etra1808 etra1809 etra1813 etra1812 etra1814 etra1816 etra1815 etra1810}
+				adnkhala_area_1_prov_2 = { etra1817 etra1818 etra1821 etra1819 etra1811 etra1822 etra1820}
+				adnkhala_area_1_prov_3 = { etra1823 etra1824 etra1825 etra1826 }
+				adnkhala_area_1_prov_4 = { etra1828 etra1830 etra1829 etra1833 etra1832 }
+				adnkhala_area_1_prov_5 = { etra1827 etra1831 etra1834 }
+				adnkhala_area_1_prov_6 = { etra1835 etra1859 etra1861 }
+				adnkhala_area_1_prov_7 = { etra1860 etra2075 etra2081 etra1865 }
+			}
+			adnkhala_area_2 = {
+				adnkhala_area_2_prov_1 = { etra1836 etra1837 etra1862 etra1867 etra1863 }
+				adnkhala_area_2_prov_2 = { etra1838 etra1868 etra1839 }
+				adnkhala_area_2_prov_3 = {  etra1855 etra1854 etra1856 }
+				adnkhala_area_2_prov_4 = { etra1840 etra2065 adune157 etra2120 }
+				
+				adnkhala_area_2_prov_6 = { etra1883 etra1881 etra2100 etra1889 etra2122 }
+				adnkhala_area_2_prov_7 = { etra1866  etra1880 etra1917 etra1864 etra1955 }
+			}
+			adnkhala_area_3 = {
+				adnkhala_area_3_prov_1 = { etra1841 etra1842 etra2082 etra2147 etra2126 }
+				adnkhala_area_3_prov_2 = { etra1843 etra1894 etra1844 etra2012 }
+				adnkhala_area_3_prov_3 = { etra2037 etra1853 etra1869 etra1858 etra2062 }
+				adnkhala_area_3_prov_4 = { etra1871 etra1870 etra1873 etra1872 etra2153 }
+				adnkhala_area_3_prov_5 = { etra1852 etra1845 etra1846 etra1847 etra2140  }
+				adnkhala_area_3_prov_6 = { etra1851 etra1850 etra1849 etra2097 etra2113 etra2127 }
+				adnkhala_area_3_prov_7 = { etra1857 etra1874 etra1888 }
+				adnkhala_area_3_prov_8 = { etra1877 etra1885 etra1876 etra2028 etra2114 }
+				adnkhala_area_3_prov_9 = { etra1848 etra1875 }
+			}
+			adnkhala_area_4 = { 
+				adnkhala_area_4_prov_1 = { etra1914 etra1884 etra2091 }
+				adnkhala_area_4_prov_2 = { etra1892 etra2107 etra1890 etra1891 etra1905 etra2152 etra2144 etra2155 }
+				adnkhala_area_4_prov_3 = { etra1950 etra1913 etra2084 etra1916 etra1921 etra1918 }
+				adnkhala_area_4_prov_4 = { etra1922 etra1923 etra1920 etra1919 }
+				adnkhala_area_4_prov_5 = { etra1915 etra1906 etra1907 etra1908 }
+				adnkhala_area_4_prov_7 = { etra1924 etra1912 etra1911 etra1910 }	
+			}
+			adnkhala_area_5 = {
+				adnkhala_area_5_prov_1 = { etra2013 etra2059 etra2036 etra1960 }
+				adnkhala_area_5_prov_2 = { etra2118 etra1900 etra2093 }
+				adnkhala_area_5_prov_3 = { etra2154 etra1898 etra2050 etra1956 etra1998 }
+				adnkhala_area_5_prov_4 = { etra2041  etra2016 etra2076 etra2033 etra2057 etra2085 }
+				adnkhala_area_5_prov_5 = { etra2078 etra1901 etra1983 }
+				adnkhala_area_5_prov_6 = { etra1904 etra1979 etra1981 etra2101 }
+				adnkhala_area_4_prov_8 = { etra2142 etra2157 etra2128 etra2124 }
+				adnkhala_area_4_prov_6 = { etra1886 etra1882 etra1926 etra1927 etra2119 }
+				adnkhala_area_5_prov_7 = { etra2125 etra2149 etra1933 etra1971 }
+			}
+			adnkhala_sea_area = {
+				the_red_strait_province = { etra_sea132 etra_sea101 etra_sea151 etra_sea131 }
+				eastern_inner_sea_province = { etra_sea137  etra_sea121 etra_sea144 etra_sea149 etra_sea141 }
+			}
+		}
+		astanu_region = {
+			astanu_area_1 = {
+				astanu_area_1_prov_1 = { etra2089 etra1887 etra2063 etra1997 etra1978 }
+				astanu_area_1_prov_2 = { etra1999 etra2025 etra2095 etra2067 etra1053 }
+				astanu_area_1_prov_3 = { etra2080 etra2051 etra1992 etra1990 etra2006 etra2010 etra1063  }
+				astanu_area_1_prov_4 = { etra2069 etra2094 etra2073 etra2021 etra1045 }
+				astanu_area_1_prov_5 = { etra2087 etra2054 etra1073 etra2019 etra1996 etra2053 etra2079 etra2038 etra1055 }
+				astanu_area_1_prov_6 = { etra2104 etra2024 etra2106 etra1893 etra2045 }
+				astanu_area_1_prov_7 = { etra2056 etra1945 etra1943 etra1896 etra1895 etra1062 }
+				astanu_area_1_prov_10 = { etra2022 etra1932 etra1034 }
+				astanu_area_1_prov_13 = { etra1985 etra2034 etra2015 etra2011 etra2159 }
+				astanu_area_1_prov_15 = { etra2099 etra1946 etra2074 etra1964 etra1967 etra1974 }
+				astanu_area_1_prov_18 = { etra1970 etra1952 etra1975 }
+			}
+			astanu_area_2 = {
+				astanu_area_1_prov_16 = { etra1944 etra1962 }
+				astanu_area_1_prov_19 = { etra1965 etra1966 etra1973 etra1963 etra1968 etra1056 }
+				astanu_area_1_prov_14 = { etra1936 etra1935 etra1937 etra1049 }
+				astanu_area_1_prov_23 = { etra1897 etra1984 etra2044 etra1902 etra1977 etra2031 }
+				astanu_area_1_prov_25 = { etra1980 etra2027 etra2068 etra2047 etra2156 }
+				astanu_area_1_prov_26 = { etra1947  etra2103 etra2129 }
+				astanu_area_1_prov_22 = { etra2072 etra1928 etra2042 etra2131  }	
+				astanu_area_1_prov_12 = { etra1942 etra1931 etra1930 etra1941 etra1054 }
+				astanu_area_1_prov_21 = { etra1972 etra1878 etra1969 etra2145 etra2146 }	
+				astanu_area_1_prov_24 = { etra1958 etra1949  etra2090 etra1995 }	
+				astanu_area_1_prov_17 = { etra2066 etra1976 etra1959 etra1940 etra1939 etra1039 }				
+			}
+			astanu_area_3 = {
+				astanu_area_1_prov_20 = { etra2005 etra2098 etra1961 etra2035 }
+				astanu_area_1_prov_8 = { etra2058 etra2023  etra711 }			
+				astanu_area_1_prov_9 = { etra2088 etra1993 etra2032 }			
+				astanu_area_1_prov_11 = { etra2026 etra2102 etra2083 }	
+				astanu_area_1_prov_27 = { etra1982 etra1994 etra2048 adune109 etra2043 }				
+			}
+		}
+	}
+	south_east_asia = {}
+}
+
+africa = {
+	west_africa = {}
+	north_africa = {
+		the_crater_region = {
+			narain_sea_area = {
+				sea_of_dusk_and_dreams_province = {  etra_sea154 etra_sea135 etra_sea92 etra_sea147 etra_sea103 my_sea_zone etra_sea91 etra_sea96 etra_sea104  }
+				khoran_sea_province = { etra_sea95 etra_sea98 etra_sea97 etra_sea74 etra_sea133 etra_sea134  }
+			}
+			western_crater_area = {
+				western_crater_area_area_prov_1 = { etra1606 etra1608 etra1654 etra1612 etra1648 etra1643 etra1650 etra1597 }
+				western_crater_area_area_prov_2 = { etra1636 etra1619 etra1667 etra1631 etra1629 }
+				western_crater_area_area_prov_3 = { etra1633 etra1624 etra1595 etra1679 }
+				western_crater_area_area_prov_4 = { etra1599 etra1796 etra1598 etra1797 etra1792 etra1017 }
+				western_crater_area_area_prov_5 = { etra1775 etra1745 etra1736 etra1770 etra1743 etra1703 etra1767 etra1762 etra1060 etra1730 }
+				western_crater_area_area_prov_6 = { etra1647 etra1640 etra1653 etra1638 etra1668 etra1626 etra1634 etra1026 }
+				western_crater_area_area_prov_7 = { etra1674 etra1623 etra1659 etra1622 etra1675 }
+				western_crater_area_area_prov_8 = { etra1632 etra1651 etra1609 etra1676 etra1669 }
+				western_crater_area_area_prov_9 = {  etra1023 etra1641 etra1594 etra1639 etra1657 etra1635 etra1596 etra1628 }
+			}
+			southern_crater_area = {
+				southern_crater_area_prov_1 = { etra1764 etra1700 etra1751 etra1776 etra1737 }
+				southern_crater_area_prov_2 = { etra1689 etra1781 etra1725 etra1692 etra1763 etra1693}
+				southern_crater_area_prov_3 = { etra1707 etra1738 etra1701 etra1702 etra1780 etra1735 etra1018 }
+				southern_crater_area_prov_4 = { etra1711 etra1727 etra1696 etra1752 etra1688 }
+				southern_crater_area_prov_5 = { etra1733 etra1716 etra1755 etra1759 etra1772 etra1704 etra1754 }
+				southern_crater_area_prov_6 = { etra1715 etra1739 etra1753 etra1690 etra1705 etra1698 etra1729 etra1021 }
+				southern_crater_area_prov_7 = { etra1720 etra1757 etra1774 etra1708 etra1721 etra1724 }
+				southern_crater_area_prov_8 = { etra1665 etra1666 etra1660 etra1630 }
+				southern_crater_area_prov_9 = { etra1773 etra1697 etra1782 etra1722 etra1746 etra1709 }
+				southern_crater_area_prov_10 = { etra1714 etra1744 etra1020 }
+				southern_crater_area_prov_11 = { etra1710 etra1761 etra1766 etra1685 }
+				southern_crater_area_prov_12 = { etra1691 etra1682 etra1646 }
+				southern_crater_area_prov_13 = { etra1798 etra1799 etra1800 }
+			}
+			eastern_crater_area = {
+				eastern_crater_area_area_prov_1 = {  etra1719    etra1779   }
+				eastern_crater_area_area_prov_2 = { etra1687 etra1748 etra1681 etra1672 etra1661 etra1742}
+				eastern_crater_area_area_prov_3 = { etra1592 etra1680 etra1664 etra1485 etra1048 etra1031}
+				eastern_crater_area_area_prov_4 = { etra1593 etra1627 etra1644 etra1625 etra1652 etra1677 etra1793 }
+				eastern_crater_area_area_prov_5 = { etra1731 etra1642 etra1758 etra1684 etra1712 etra1768 etra1050 etra1662}
+				eastern_crater_area_area_prov_6 = { etra1747 etra1760 etra1683 etra1769 etra1728 etra1726 }
+				eastern_crater_area_area_prov_7 = { etra1723 etra1732 etra1777 etra1771 }
+				eastern_crater_area_area_prov_8 = { etra1765 etra1778 etra1686 etra1695 etra1718 etra1756 etra1009 }
+				eastern_crater_area_area_prov_9 = { etra1616 etra1620 etra1795 etra1673 etra1655 }
+				eastern_crater_area_area_prov_10 = {  etra1618  etra1791 etra1706   etra1713 etra1734 adune110  }
+				eastern_crater_area_area_prov_11 = {  etra1694 etra1740 etra1699 etra1717 etra1750 etra1741 }
+			}
+			inner_crater_area = {
+				inner_isles = { etra1637 etra1790 etra1794 etra1658 etra1656 etra1788 etra1621 etra1649 etra1789 }
+			}
+		}
+		amalyarat_region = { #Âmistah
+			amalyarat_area_1 = {
+				amalyarat_area_1_prov_1 = { etra1424 etra1459 etra1395 etra1429 etra1471 etra1324}
+				amalyarat_area_1_prov_2 = { etra1477  etra1442 etra1426 etra1465 etra1412 }
+				amalyarat_area_1_prov_3 = { etra1415 etra1398 etra1437 }
+				amalyarat_area_1_prov_4 = { etra1453 etra1427 etra1420 etra1410 }
+				amalyarat_area_1_prov_5 = { etra1460 etra1444 etra1388 etra1417 etra1390 etra1422 etra1028 etra1061 etra1036 }
+				
+				amalyarat_area_1_prov_7 = { etra1428 etra1411 etra1478 etra1421 etra1466 etra1408 etra1438 etra1425 etra1461 }
+				amalyarat_area_1_prov_8 = { etra1446 etra1450 etra1464 etra1436 etra1064 etra1416 etra1583 etra1584 }
+				amalyarat_area_1_prov_9 = { adune140 etra1019 etra1389 etra1383 etra1400 etra1431 etra1474 etra1449 etra1399 etra1024 }
+			}
+			amalyarat_area_1_sea = {
+				arkhorian_sea_province = { etra_sea60 etra_sea93 etra_sea88 etra_sea90 etra_sea62 etra_sea61 etra_sea63}
+			
+			}			
+			amalyarat_area_2 = {
+				amalyarat_area_2_prov_1 = { etra1487   etra1504 etra1492 }
+				amalyarat_area_2_prov_2 = { etra1508 etra1535 etra1579 etra1582 }
+				amalyarat_area_2_prov_3 = { etra1523 etra1507 etra1574 etra1521 etra1542 etra1486 }
+				amalyarat_area_2_prov_4 = { etra1541 etra1576 etra1570 etra1562 etra1549 etra1564 }
+				amalyarat_area_2_prov_5 = { etra1489 etra1566 etra1567 etra1536 etra1067 }
+			}
+			amalyarat_area_2_sea = {
+				amalyarat_area_2_sea_prov = { etra_sea155 etra_sea156 etra_sea157 etra_sea158 etra_sea150 }
+			
+			}
+			amalyarat_area_3 = {
+				amalyarat_area_3_prov_1 = { etra1534 etra1510 etra1577 etra1532 etra1557 etra1537 etra1671 }
+				amalyarat_area_3_prov_2 = { etra1501 etra1543 etra1512 etra1545 etra1526 etra1551 etra1516 }
+				amalyarat_area_3_prov_3 = { etra1547 etra1506 etra1529 etra1503 etra1519 etra1575 etra1525 }
+				amalyarat_area_3_prov_4 = { etra1467 etra1385 etra1439 etra1473  etra1047 etra1578 etra1554 etra1580 etra1484 etra1500 etra1527 }
+				amalyarat_area_3_prov_5 = { etra1539 etra1571 etra1531 etra1524 etra1514 etra1544 etra1614 etra1678 }
+				amalyarat_area_3_prov_6 = { etra1511 etra1565 etra1496 etra1490 etra1552 etra1502 etra1560 etra1573 }
+				amalyarat_area_3_prov_7 = { etra1387 etra1520 etra1419 etra1555 etra1550 etra1533 etra1499 etra1513 adune158}
+			}
+			amalyarat_area_4 = {
+				amalyarat_area_4_prov_1 = { etra1586 etra1585 etra1587 etra1589 etra1590 etra1509 etra1588 adune108 }
+				amalyarat_area_4_prov_2 = { etra1663 etra1553 etra1591 etra1497 etra1670 }
+				amalyarat_area_4_prov_3 = { etra1517 etra1182 etra1397 etra1014 etra1556 etra1785 etra1784 }
+				amalyarat_area_4_prov_4 = { etra1538 etra1548 etra1602 etra1443  }
+				amalyarat_area_4_prov_5 = { etra1607 etra1601 }
+				amalyarat_area_4_prov_6 = { etra1604 etra1568 etra1559 etra1558 }
+				amalyarat_area_4_prov_7 = { etra1515 etra1605 etra1540 }
+				amalyarat_area_4_prov_8 = { etra1483 etra1495 etra1530 etra1498 etra1581 etra1787 }
+				amalyarat_area_4_prov_9 = { etra1488 etra1522 etra1615  }
+				amalyarat_area_4_prov_10 = { etra1392 etra1561 etra1455 etra1409 etra1469 etra1441 }
+				amalyarat_area_4_prov_11 = { etra1518 etra1569 etra1600 etra1563 etra1032 etra1783 }
+				amalyarat_area_4_prov_12 = { etra1611 etra1481 etra1613 etra1603 etra1546 etra1528 etra1610 etra1075 }
+				amalyarat_area_4_prov_13 = { etra1493 etra1505 etra1572 etra1494 etra1015 }
+			}
+			great_sand_sea = {
+				zishoa = { etra1802 etra1801 etra1807 etra1749 etra1617 etra1803 etra1804 etra1806 etra1805 etra2123 etra2138 etra2137 etra2141 etra2151 etra2117 etra2132 etra2112 }
+				ajaat_prov = { etra2109 etra2148 etra2115 etra2150 etra2121 etra2139 etra2111 etra2116 etra2133 etra2110 etra2136 etra2134 etra2130 etra2143 }
+				great_sand_sea_province = { etra1414 testprovince261 adune146 }
+				outer_crater = { etra2004 etra2017  etra2046 etra1988 etra1934 etra1899 etra2096 etra2007 etra2029 }
+			}
+			the_eastern_desert_area = {
+				eastern_desert_prov_1 = { etra1879 etra2070 etra2009 etra2052  }
+				eastern_desert_prov_2 = { etra2039 etra1951 etra2061 etra2086 }
+				eastern_desert_prov_3 = { etra2092 etra2030 etra1989 }
+				eastern_desert_prov_4 = { etra2060 etra2020 etra1954 etra1957 etra2000 etra1987 etra1991 etra2055 }
+			}
+		}
+		iboros_region = { 
+		
+			iboros_area_1 = {
+				iboros_area_1_prov_1 = { etra983 etra984 etra986 }
+				iboros_area_1_prov_2 = { etra985 etra990 etra1011 etra993 }
+				iboros_area_1_prov_3 = { etra987 etra991 etra988 etra989 etra995 etra1407 }
+				iboros_area_1_prov_4 = { etra1006 etra1005 etra1002 }
+				iboros_area_1_prov_5 = { etra992 etra997 etra994 etra1004 etra998 }
+				iboros_area_1_prov_6 = { etra999 etra1000 etra1001  etra1462 }
+				iboros_area_1_prov_7 = { etra1007 etra996 etra1003 adune123 }
+			}
+			iboros_area_2 = {
+				iboros_area_2_prov_1 = { etra1008 etra1013 etra1010 etra1069 etra1040 }
+				iboros_area_2_prov_2 = { etra1081 etra1072 etra1071 etra1077   }
+				iboros_area_2_prov_3 = { etra1122 etra1102 etra1100 etra1127 etra1113 etra1101 }
+				iboros_area_2_prov_4 = { etra1089 etra1091 etra1131 etra1128 etra1112 }
+				iboros_area_2_prov_5 = { etra1082 etra1129 etra1095 etra1104 etra1099 etra1132 etra1105 }
+				iboros_area_2_prov_6 = { etra1087 etra1085 etra1083 etra1126 etra1084 etra1090 etra1121 }
+				iboros_area_2_prov_7 = { adune130 adune107 }
+			}
+			iboros_area_3 = {
+				iboros_area_3_prov_1 = { etra1088 etra1114 etra1103 etra1080 etra1107  }
+				iboros_area_3_prov_2 = { etra1110 etra1078 etra1111 etra1130 etra1118   }
+				iboros_area_3_prov_3 = { etra1108 etra1124 etra1117 etra1119}
+				iboros_area_3_prov_4 = { etra1074 etra1079 etra1037  }
+				iboros_area_3_prov_5 = { etra1093 etra1094 etra1123 etra1092 etra1106  }
+			}		
+			iboros_area_4 = {
+				iboros_area_4_prov_1 = { etra1173 etra1135 etra1133 }
+				iboros_area_4_prov_2 = { etra1076 etra1116 adune106 }
+				iboros_area_4_prov_3 = { etra1012 etra1086 etra1097 etra1096 etra1138 }
+				iboros_area_4_prov_4 = { etra1164 etra1180 etra1146 etra1169 etra1153 adune135 }
+				
+				
+				iboros_area_4_prov_7 = { etra1156 etra1168 etra1161 etra1175 etra1152 etra1027 etra1786 }
+				
+				iboros_area_4_prov_9 = { etra1109 etra1125 etra1098 etra1115 etra1120 }
+			}
+			iboros_area_5 = {
+				iboros_area_5_prov_1 = { etra1172 etra1178 etra1151 etra1137 etra1155 }
+				iboros_area_5_prov_2 = {  etra1167 etra1266 }
+				iboros_area_5_prov_3 = { etra1184 etra1200 etra1259 etra1183 etra1188 }
+				iboros_area_5_prov_4 = { etra1267 etra1271 etra1201 etra1274 etra1140 etra1248 }
+				iboros_area_5_prov_5 = { etra1192 etra1186 etra1270 etra1281 etra1141 }
+				iboros_area_5_prov_6 = { etra1265 etra1196 adune133 }
+				iboros_area_5_prov_7 = { etra1199 etra1213 etra1190}
+				iboros_area_5_prov_8 = { etra1189 etra1195 etra1193 etra1264 etra1166 }
+				iboros_area_5_prov_9 = { etra1136 etra1134 etra1162 }
+				iboros_area_5_prov_10 = { etra1208 etra1209 etra1249 etra1243 etra1171 etra1211 }
+				iboros_area_5_prov_11 = { etra1276 etra1214 etra1217 etra1232 etra1187  }
+				iboros_area_5_prov_12 = { etra1272 etra1237 etra1282  }
+			}	
+			iboros_area_6 = {
+				iboros_area_6_prov_1 = { etra1198 etra1255 etra1204 etra1170 etra1227 }
+				iboros_area_6_prov_2 = { etra1163 etra1174 etra1145 }
+				iboros_area_6_prov_3 = { etra1238 etra1234 etra1224 etra1191 }
+				iboros_area_6_prov_4 = { etra1254 etra1216 etra1150 etra1269 etra1280 }
+				iboros_area_6_prov_5 = { etra1236 etra1246 etra1279 etra1250 etra1275 etra1247 etra1251 }
+				iboros_area_6_prov_6 = { etra1239 etra1197 etra1207 etra1226 }
+				iboros_area_6_prov_7 = { etra1245 etra1205 etra1219 }
+				iboros_area_6_prov_8 = { etra1194 etra1203 etra1143 etra1220 etra1273 }
+				iboros_area_6_prov_9 = { etra1263 etra1278 etra1258 etra1139}
+				iboros_area_6_prov_10 = { etra1229 etra1277}
+				iboros_area_6_prov_11 = { etra1260 etra1268 }
+				iboros_area_6_prov_12 = { etra1252 etra1241 etra1262 }
+				iboros_area_6_prov_13 = { etra1215 etra1154 etra1159 }
+			}
+			iboros_area_7 = {
+				iboros_area_7_prov_1 = { etra1185 etra1230 etra1210 etra1149 etra1256 }
+				iboros_area_7_prov_2 = { etra1244 etra1202 etra1228 etra1223 }
+				iboros_area_7_prov_3 = { etra1235 etra1221 etra1231 etra1052 }
+				iboros_area_7_prov_4 = { etra1293 etra1296 etra1297  etra1299 }
+				iboros_area_7_prov_6 = { etra1286 etra1285 etra1287 etra1284 etra1242}
+				iboros_area_7_prov_7 = { etra1206 etra1300 }
+				iboros_area_7_prov_8 = { etra1289 etra1301 etra1225}
+				iboros_area_7_prov_5 = { etra1288 etra1295 etra1291 etra1290 etra1292 etra1294  }
+				iboros_area_7_prov_9 = { etra1308 etra1212 etra1303 etra1302 etra1066 }
+				iboros_area_7_prov_10 = { etra1261 etra1322 etra1240 etra1306 etra1253 }
+				iboros_area_7_prov_11 = { etra1222 etra1304 etra1307 etra1305 etra1233 etra1378 }
+				iboros_area_7_prov_12 = { etra1218 etra1257 etra1283 etra1298 }
+			}
+			iboros_area_8 = {
+				iboros_area_8_prov_1 = { etra1372 etra1333 etra1376 etra1311 etra1381 }
+				iboros_area_8_prov_2 = { etra1318 etra1357 etra1309 etra1321 etra1334 }
+				iboros_area_8_prov_3 = { etra1343 etra1331 etra1317 etra1351 etra1016 }
+				iboros_area_8_prov_4 = { etra1323 etra1310 etra1320 etra1379 }
+				iboros_area_8_prov_5 = { etra1352 etra1359 etra1365 etra1326 }
+				iboros_area_8_prov_6 = { etra1362 etra1341 etra1374 etra1336 }
+				
+				iboros_area_8_prov_8 = { etra1338 etra1371 etra1328 etra1349 etra1358}
+				iboros_area_8_prov_9 = { etra1354 etra1313 etra1345 etra1335 etra1364 etra1402 }
+				iboros_area_4_prov_6 = { etra1179 etra1158 etra1147 etra1022  }
+				iboros_area_4_prov_8 = { etra1176 etra1148 etra1144 etra1160 etra1165 etra1157 etra1369  }
+				iboros_area_4_prov_5 = { etra1177 etra1181 etra1142 adune145  }
+			}
+
+			iboros_area_10 = {
+				iboros_area_10_prov_1 = { etra1404 etra1470 etra1463 }
+				iboros_area_10_prov_2 = { etra1368 etra1380 etra1367 }
+				iboros_area_10_prov_3 = { etra1451 etra1386 etra1447 etra1445 etra1480 }
+				iboros_area_10_prov_4 = { etra1337 etra1327 adune147 etra1029 }
+				iboros_area_10_prov_5 = { etra1418 etra1423 etra1432 etra1430 }
+				iboros_area_10_prov_6 = { etra1347 etra1366 etra1339 etra1448 etra1329 etra1325 etra1059 etra1025 etra1041 }
+				iboros_area_10_prov_7 = { etra1435 etra1456 etra1454 etra1391 etra1401 adune114 }
+				iboros_area_10_prov_8 = { etra1312 etra1314 etra1361 etra1316 etra1434 }
+				iboros_area_10_prov_9 = { etra1356 etra1340 etra1373 etra1377 etra1332 etra1355 etra1344 }
+				iboros_area_10_prov_10 = { etra1348 etra1346 etra1452 etra1413 etra1440  }
+				iboros_area_11_prov_11 = { etra1360 etra1319 adune121 }
+			}
+			iboros_area_11 = {
+				iboros_area_11_prov_1 = {   etra1482  etra1403 etra1457  }
+				iboros_area_11_prov_2 = { etra1472 etra1468 etra1384 etra1393 etra1035 }
+				iboros_area_11_prov_3 = { etra1396 etra1476 etra1458 etra1433 }
+				iboros_area_11_prov_4 = { etra1350 etra1315 etra1330  }
+				iboros_area_11_prov_5 = { etra1363 etra1342 etra1353 etra1394 etra1406 }
+				iboros_area_8_prov_7 = {  etra1382 etra1370 etra1375 etra1475 etra1033 }
+			}
+			iboros_east_coast_area = {
+				iboros_east_coast_prov = { etra_sea85  etra_sea87 etra_sea86 etra_sea46 etra_sea33 }
+			}
+
+			iboros_west_coast_area = {
+				iboros_west_coast_area_prov_1 = { etra_sea115 etra_sea128 etra_sea114 etra_sea127 etra_sea113 etra_sea112 etra_sea111  etra_sea126 etra_sea110 }
+				iboros_west_coast_area_prov_2 = { etra_sea153 etra_sea122  etra_sea118 etra_sea148 etra_sea117 etra_sea116 etra_sea105 etra_sea124  etra_sea129 etra_sea120 etra_sea119 }
+				horned_sea = { etra_sea125 etra_sea108 etra_sea107 adunic_sea31 etra_sea109 }
+			}
+		}
+	}	
+	east_africa = {}
+	central_africa = {}
+	southern_africa = {}
+}
+
+america = {
+	south_america = {}
+	north_america = {
+		east_coast_region = {}
+		canada_region = {}
+		caribbean_region = {}
+		mesoamerica_region = {}
+	}
+}
+
+oceania = {
+	australasia = {}
+	pacific_islands = {}
+}
+unused_continent = {
+	unused_subcontinent = {
+		unused_region = {
+			unused_area = {
+				unused_province = { }
+								placeholder_ee_prov_12 = { etra1479}
+				placeholder_ee_prov_14 = { etra1645}
+				placeholder_ee_prov_7 = { etra1038 etra1043 etra1044 etra1046 etra1051 etra1057 etra1058}
+				placeholder_ee_prov_6 = { etra1030}
+				placeholder_ee_prov_15 = { etra1903 etra1929 etra1948 etra1953 etra1986 etra2001 etra2002 etra2003 etra2014 etra2040 etra2064 etra2071 etra2077}
+				placeholder_ee_prov_16 = { etra2135 etra2158}
+				placeholder_ee_prov_17 = {
+					etra2160 etra2161 etra2162 etra2163 etra2164 etra2165 etra2166 etra2167 etra2168 etra2169 etra2170 etra2171
+					etra2172 etra2173 etra2174 etra2175 etra2176 etra2177 etra2179 etra2180 etra2181 etra2182 etra2183 # etra2178
+					etra2184 etra2185 etra2186 etra2187 etra2188 etra2189 etra2190 etra2191 etra2192 etra2193 etra2194 etra2195
+					etra2196 etra2197 etra2198 etra2199 etra2200 etra2201 etra2202 etra2203 etra2204 etra2205 etra2206 etra2207
+					etra2208 etra2209 etra2210 etra2211 etra2212 etra2213 etra2214 etra2215 etra2216 etra2217 etra2218 etra2219
+					etra2220 etra2221 etra2222 etra2223 etra2224 etra2225 etra2226 etra2227 etra2228 etra2229 etra2230 etra2231
+					etra2232 etra2233 etra2234 etra2235 etra2236 etra2237 etra2238 etra2239 etra2240 etra2241 etra2242 etra2243
+					etra2244 etra2245 etra2246 etra2247 etra2248 etra2249 etra2250 etra2251 etra2252 etra2253 etra2254 etra2255
+					etra2256 etra2257 etra2258 etra2259
+				}
+				placeholder_ee_prov_18 = {
+					# etra2260 etra2261 etra2262 etra2263 etra2264 etra2265 etra2266 etra2267 etra2268 etra2269 etra2270 etra2271
+					# etra2272 etra2273 etra2274 etra2275 etra2276 etra2277 etra2278 etra2279 etra2280 etra2281 etra2282 etra2283
+					# etra2284 etra2285 etra2286 etra2287 etra2288 etra2289 etra2290 etra2291 etra2292 etra2293 etra2294 etra2295
+					# etra2296 etra2297 etra2298 etra2299 etra2300 etra2301 etra2302 etra2303 etra2304 etra2305 etra2306 etra2307
+					# etra2308 etra2309 etra2310 etra2311 etra2312 etra2313 etra2314 etra2315 etra2316 etra2317 etra2318 etra2319
+					# etra2320 etra2321 etra2322 etra2323 etra2324 etra2325 etra2326 etra2327 etra2328 etra2329 etra2330 etra2331
+					# etra2332 etra2333 etra2334 etra2335 etra2336 etra2337 etra2338 etra2339 etra2340 etra2341 etra2342 etra2343
+					# etra2344 etra2345 etra2346 etra2347 etra2348 etra2349 etra2350 etra2351 etra2352 etra2353 etra2354 etra2355
+					# etra2356 etra2357 etra2358 etra2359
+				}
+				placeholder_ee_sea_prov = { etra_sea207}
+
+			}
+		
+			bohemia_area = {}
+			moravia_area = {}
+			baltic_area = {}
+			alsace_area = {}
+			franche_comte_area = {}
+			lorraine_area = {}
+			picardy_area = {}
+			slovenia_area = {}
+			silesia_area = {}
+			central_switzerland_area = {}
+			eastern_switzerland_area = {}
+			western_switzerland_area = {}
+			wales_area = { }
+			lombardy_area = {}
+			emilia_area = {}
+			piemonte_area = {}
+			liguria_area = {}
+			veneto_area = {}
+			tuscany_area = {}
+
+			finland_area = {}
+			norrland_area = {}
+
+			new_hampshire_area = {}
+			southern_new_england_area = {}
+			maine_area = {}
+			hudson_area = {}
+			haudenosaunee_area = {}
+			westsylvania_area = {}
+			zacatecas_area = {}
+			xalisco_area = {}
+			provence_area = {}
+			newfoundland_area = {}
+			right_bank_ukraine_area = { }
+			left_bank_ukraine_area = { }
+		}
+		indochina_region = {}
+		hindustan_region = {}
+		melanesia_region = {}
+		zimbabwe_region = {}
+		persia_region = {}
+		crescent_region = {}
+		egypt_region = {}
+		maghreb_region = {}
+		andes_region = {}
+		iberia_region = {}
+		north_china_region = {}
+		south_china_region = {}
+		west_china_region = {}
+		east_china_region = {}
+		deccan_region = {}
+		central_india_region = {}
+		bengal_region = {}
+		micronesia_region = {}
+		polynesia_region = {}
+		italy_region = {}
+		ireland_region = {}
+		great_britain_region = {}
+		colombia_region = {}
+		new_zealand_region = {}
+		southern_africa_region = {}
+		kongo_region = {}
+		west_siberia_region = {}
+		france_region = {}
+		balkan_region = {}
+		north_german_region = {}
+		south_german_region = {}
+		carpathia_region = {}
+		ruthenia_region = {}
+		steppes_region = {}
+		swahili_coast_region = {}
+		scandinavian_region = {}
+		north_atlantic_islands_region = {}
+		russian_region = {}
+		mongolia_region = {}
+		ural_region = {}
+		ethiopia_region = {}
+		nubia_region = {}
+		somalia_region = {}
+		madagascar_region = {}
+		southern_africa_islands_region = {}
+		sahel_region = {}
+		west_coast_region = {}
+		great_plains_region = {}
+		alaska_region = {}
+		brazil_region = {}
+		australia_region = {}
+		chaco_region = {}
+		macaronesia_region = {}
+		anatolia_region = {}
+		arabia_region = {}
+		khorasan_region = {}
+		east_siberia_region = {}
+		tibet_region = {}
+		japan_region = {}
+		central_america_region = {}
+		caucasus_region = {}
+		la_plata_region = {}
+		xinjiang_region = {}
+		manchuria_region = {}
+		korea_region = {}
+		guinea_region = {}
+		aridoamerica_region = {}
+		great_lakes_region = {}
+	}
+}

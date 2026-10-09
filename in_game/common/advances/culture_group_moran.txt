@@ -1,0 +1,57 @@
+﻿#Age of Traditions#
+
+#Age of Renaissance#
+INJECT:unlock_men_at_arms_advance = {
+	unlock_unit = a_moran_men_at_arms
+	unlock_levy = levy_a_moran_men_at_arms	
+}
+INJECT:unlock_crossbowmen_advance = {
+	unlock_unit = a_moran_crossbowmen
+}
+INJECT:unlock_handgonners_advance = {
+	unlock_unit = a_moran_handgonners
+}
+INJECT:unlock_peasant_levy_advance = {
+	unlock_levy = levy_a_moran_peasant_levy
+}
+#Age of Discovery# 
+INJECT:unlock_halberdiers_advance = {
+	unlock_unit = a_moran_halberdiers
+}
+INJECT:unlock_early_arquebusiers_advance = {
+	unlock_unit = a_moran_early_arquebusiers
+}
+INJECT:unlock_matchlock_levy = {
+	unlock_levy = levy_a_moran_matchlock_levy
+}
+
+#Age of Reformation#
+INJECT:unlock_arquebusiers_advance = {
+	unlock_unit = a_moran_arquebusiers
+}
+INJECT:unlock_pikemen_advance = {
+	unlock_unit = a_moran_pikemen
+}
+INJECT:unlock_flintlock_levy = {
+	unlock_levy = levy_a_moran_flintlock_levy
+}
+#Age of Absolutism#
+INJECT:unlock_musketeers_advance = {
+	unlock_unit = a_moran_musketeers
+}
+INJECT:unlock_hunters_advance = {
+	unlock_unit = a_moran_hunters
+}
+INJECT:militiamen_advance = {
+	unlock_levy = levy_a_moran_militiamen
+}
+#Age of Revolutions#
+INJECT:unlock_sharpshooters_advance = {
+	unlock_unit = a_moran_sharpshooters
+}
+INJECT:unlock_fusiliers_advance = {
+	unlock_unit = a_moran_fusiliers
+}
+INJECT:conscription_advance = {
+	unlock_levy = levy_moran_conscripts
+}

@@ -1,0 +1,20 @@
+######################
+# Etra Underground 3D Terrain Biomes
+# Maps climate + topography + vegetation to biome names in gfx/terrain2/materials.txt
+######################
+
+192 =
+{
+	climate = subterranean
+	topography = caverns
+	vegetation = cave_fungus
+	biome = subterranean_caverns_cave_fungus_biome
+}
+
+193 =
+{
+	climate = continental
+	topography = mountains
+	vegetation = cave_fungus
+	biome = continental_mountains_cave_fungus_biome
+}

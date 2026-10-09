@@ -1,0 +1,67 @@
+﻿venturian_culture = {
+	
+	language = vulgar_moran_language
+	
+	color = map_swedish
+	
+	tags = { western_european_gfx european_gfx  }
+
+	culture_groups = {
+		freeholder_group
+		human_group
+	}
+}
+
+rovina_culture = {
+	language = vulgar_moran_language
+	
+	color = map_corsican
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		freeholder_group
+		human_group
+	}
+}
+
+thanok_culture = {
+	language = vulgar_moran_language
+	
+	color = map_taino
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		freeholder_group
+		human_group
+	}
+
+}
+
+fluviolander = {
+	language = vulgar_moran_language
+	
+	color = map_carib
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		freeholder_group
+		human_group
+	}
+
+}
+
+fioranelle_culture = {
+	language = vulgar_moran_language
+	
+	color = map_ajuran
+	
+	tags = { north_italian_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		freeholder_group
+		human_group
+	}
+}

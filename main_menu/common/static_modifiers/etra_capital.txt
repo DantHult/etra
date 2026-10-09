@@ -1,0 +1,6 @@
+﻿capital_in_caverns= {
+	game_data = {
+		category = country
+	}
+	caverns_proximity_impact = -0.2
+}

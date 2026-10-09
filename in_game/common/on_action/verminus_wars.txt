@@ -1,0 +1,31 @@
+﻿on_game_start = {
+	on_actions = {
+		verminus_wars_start_check
+	}
+}
+
+verminus_wars_start_check = {
+	trigger = {
+		verminus_wars_can_start_trigger = yes
+		situation:verminus_wars = {
+			situation_is_active = no
+			situation_has_ended = no
+		}
+	}
+	effect = {
+		activate_situation = situation:verminus_wars
+	}
+}
+
+verminus_wars_monthly_start_check = {
+	trigger = {
+		verminus_wars_can_start_trigger = yes
+		situation:verminus_wars = {
+			situation_is_active = no
+			situation_has_ended = no
+		}
+	}
+	effect = {
+		activate_situation = situation:verminus_wars
+	}
+}

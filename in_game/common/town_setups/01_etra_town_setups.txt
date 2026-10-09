@@ -1,0 +1,98 @@
+﻿bourfort_city = {
+	copy_from = german_city
+	granary = 8
+	marketplace = 3
+	fine_cloth_guild = 2
+}
+
+iboros_coastal_city = {
+	temple = 1
+	winery = 2
+	porcelain_guild = 1
+	distillers_guild = 1
+	marketplace = 5
+	weapon_guild = 2
+	mason = 2
+	pottery_guild = 2
+	furniture_guild = 1
+	paper_guild = 2
+	fine_cloth_guild = 2
+	cloth_guild = 2
+	glass_guild = 1
+	jewelry_guild = 1
+	tannery = 2
+	granary = 2
+	castle = 1
+	brewery = 1
+	tools_guild = 2
+	scriptorium = 2
+	dyes_guild = 2
+	wharf = 1
+}
+iboros_city = {
+	temple = 1
+	winery = 2
+	porcelain_guild = 1
+	distillers_guild = 1
+	marketplace = 5
+	weapon_guild = 2
+	mason = 2
+	pottery_guild = 2
+	furniture_guild = 1
+	paper_guild = 2
+	fine_cloth_guild = 2
+	cloth_guild = 2
+	glass_guild = 1
+	jewelry_guild = 1
+	tannery = 2
+	granary = 2
+	castle = 1
+	brewery = 1
+	tools_guild = 2
+	scriptorium = 2
+	dyes_guild = 1
+}
+
+iboros_town = {
+	temple = 1
+	winery = 1
+	porcelain_guild = 1
+	marketplace = 2
+	fine_cloth_guild = 2
+	mason = 2
+	pottery_guild = 2
+	furniture_guild = 1
+	cloth_guild = 2
+	paper_guild = 2
+	tannery = 1
+	granary = 2
+	weapon_guild = 1
+	brewery = 1
+	tools_guild = 1
+	scriptorium = 1
+	lacquerware_guild = 2
+	dyes_guild = 1
+}
+
+iboros_coastal_town = {
+	temple = 1
+	winery = 1
+	porcelain_guild = 1
+	marketplace = 2
+	fine_cloth_guild = 2
+	mason = 2
+	pottery_guild = 2
+	furniture_guild = 1
+	cloth_guild = 2
+	paper_guild = 2
+	tannery = 1
+	granary = 2
+	weapon_guild = 1
+	brewery = 1
+	tools_guild = 1
+	scriptorium = 1
+	dyes_guild = 1
+	wharf = 1
+}
+
+

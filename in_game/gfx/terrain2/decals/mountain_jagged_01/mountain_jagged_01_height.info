@@ -1,0 +1,69 @@
+source_resolution={ 512 512 }
+num_channels=1
+bytes_per_channel=2
+empty_value={ 0 0 0 0 }
+lzav=yes
+tile_infos={ {
+		offset=0
+		size=30316
+	} {
+		offset=30316
+		size=33577
+	} {
+		offset=63893
+		size=33696
+	} {
+		offset=97589
+		size=26750
+	} {
+		offset=124339
+		size=34213
+	} {
+		offset=158552
+		size=34856
+	} {
+		offset=193408
+		size=34856
+	} {
+		offset=228264
+		size=32917
+	} {
+		offset=261181
+		size=32650
+	} {
+		offset=293831
+		size=34854
+	} {
+		offset=328685
+		size=34854
+	} {
+		offset=363539
+		size=33837
+	} {
+		offset=397376
+		size=27211
+	} {
+		offset=424587
+		size=33255
+	} {
+		offset=457842
+		size=33368
+	} {
+		offset=491210
+		size=29764
+	} {
+		offset=520974
+		size=34328
+	} {
+		offset=555302
+		size=33809
+	} {
+		offset=589111
+		size=33533
+	} {
+		offset=622644
+		size=33943
+	} {
+		offset=656587
+		size=34268
+	} }

@@ -1,0 +1,17 @@
+﻿on_game_start = {
+	on_actions = {
+		etra_serpants_bay_start_modifier
+	}
+}
+
+etra_serpants_bay_start_modifier = {
+	effect = {
+		location:torrent308 = {
+			add_location_modifier = {
+				modifier = hormisetr_serpants_bay
+				years = -1
+				mode = replace
+			}
+		}
+	}
+}

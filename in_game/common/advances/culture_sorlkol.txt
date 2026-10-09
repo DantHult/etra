@@ -1,0 +1,78 @@
+﻿# === Sorlkol culture traditions (from nd_tib; gated by culture = { has_culture_group = culture_group:aitan_group }) ===
+# AGE 1 — Traditions
+
+# Warrior monk tradition - unlocks dob-dob levy unit
+sorlkol_warrior_monks = {
+	age = age_1_traditions
+	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	requires = organized_religion
+	icon = mandinka_warrior_spirit
+
+	unlock_unit = a_sorlkol_warrior_monk
+	unlock_levy = levy_sorlkol_warrior_monk
+	land_morale_modifier = 0.1
+
+
+}
+
+# Yak butter economy - unlocks butter workshop
+sorlkol_butter_economy = {
+	age = age_1_traditions
+	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	requires = agriculture_advance
+	icon = arduous_terrain
+
+	unlock_building = sorlkol_dairy
+	global_livestock_output_modifier = 0.15
+}
+
+# === AGE 2 — Renaissance ===
+
+
+stone_oath_academy_system = {
+	age = age_2_renaissance
+	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	requires = drill_army_advance
+	icon = fortified_towns
+
+	unlock_building = sorlkol_academy_fortress
+	global_defensive = 0.1
+	global_garrison_size_modifier = 0.2
+}
+
+stone_oath_pass_trade = {
+	age = age_2_renaissance
+	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	requires = merchants_and_trade
+	icon = trade_caravans
+
+	export_efficiency = 0.05
+}
+
+
+# === AGE 3 — Discovery ===
+
+# Mountain pass defense doctrine
+stone_oath_mountain_warfare = {
+	age = age_3_discovery
+	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	requires = pike_square
+	icon = arduous_terrain
+
+	global_hostile_attrition = 1
+	land_unit_attrition = -0.1
+}
+
+# === AGE 4 — Reformation ===
+
+# Khampa cavalry tradition - unlocks Khampa horsemen
+stone_oath_lynx_goats = {
+	age = age_4_reformation
+	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	requires = leader_recruit_cost_advance
+	icon = timurid_cavalry
+
+	unlock_unit = a_sorlkol_lynx_goat_riders
+	army_heavy_cavalry_power = 0.10
+
+}

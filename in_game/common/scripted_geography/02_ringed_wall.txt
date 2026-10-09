@@ -1,0 +1,21 @@
+historical_route_of_ringed_wall = {
+	# Mirrors the location_key list in is_historical_route_of_ringed_wall (etra_building_triggers.txt).
+	location = {
+		torrent156
+		torrent222
+		torrent216
+		torrent295
+		torrent219
+		commonweal3
+		ardraine222
+		torrent85
+		commonweal6
+		torrent60
+		torrent155
+		torrent97
+		ardraine175
+		ardraine153
+		commonweal2
+		torrent56
+	}
+}

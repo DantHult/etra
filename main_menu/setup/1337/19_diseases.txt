@@ -1,0 +1,137 @@
+disease_outbreak_manager = {
+
+    add_disease_resistance = {
+        type = bubonic_plague
+        resistance = 0.1
+        regions = {
+            #Edorinn (Europe analogue)
+            godhand_region
+            sordren_region
+            torrent_region
+            south_torrent_region
+            ardraine_region
+            baltic_region
+            vothivre_region
+            the_great_sward_region
+            typhrea_region
+        }
+    }
+    
+    add_disease_resistance = {#Increase black plague resistance for places were it hit less intensely
+        type = bubonic_plague
+        resistance = 0.4
+        regions = {
+            #Narkaŕa (Africa analogue)
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+    }
+    
+    add_disease_resistance = {
+        type = typhus
+        resistance = 0.3
+        regions = {
+            #Warm belt — southern/coastal Edorinn + Narkaŕa
+            godhand_region
+            sordren_region
+            ardraine_region
+            south_torrent_region
+            typhrea_region
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+        areas = {  }
+    }
+
+    add_disease_resistance = {
+        type = influenza
+        resistance = 0.3
+        regions = {
+            godhand_region
+            sordren_region
+            torrent_region
+            south_torrent_region
+            ardraine_region
+            baltic_region
+            vothivre_region
+            the_great_sward_region
+            typhrea_region
+            #Narkaŕa
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+    }
+
+    add_disease_resistance = {
+        type = smallpox
+        resistance = 0.5
+        regions = {
+            godhand_region
+            sordren_region
+            torrent_region
+            south_torrent_region
+            ardraine_region
+            baltic_region
+            vothivre_region
+            the_great_sward_region
+            typhrea_region
+            #Narkaŕa
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+    }
+
+    add_disease_resistance = {
+        type = measles
+        resistance = 0.3
+        regions = {
+            godhand_region
+            sordren_region
+            torrent_region
+            south_torrent_region
+            ardraine_region
+            baltic_region
+            vothivre_region
+            the_great_sward_region
+            typhrea_region
+            #Narkaŕa
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+    }
+
+    add_disease_resistance = {
+        type = great_pestilence
+        resistance = 1.0
+        continents = {
+            europe
+            asia
+            africa
+        }
+    }
+
+    add_disease_outbreaks = {
+        type = malaria
+        regions = {
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+    }
+
+    add_disease_resistance = {
+        type = malaria #this one is environmental so it will create outbreaks wherever we have set a value
+        resistance = 1 #native population is resistant to it
+        regions = {
+            iboros_region
+            amalyarat_region
+            the_crater_region
+        }
+    }
+
+}

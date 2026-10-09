@@ -1,0 +1,28 @@
+﻿#Age of Traditions#
+
+the_great_rivers = {
+	age = age_1_traditions
+	
+	potential = { 
+		culture = culture:fluviolander
+	}
+
+	icon = river_trade
+
+	requires = agriculture_advance
+	
+	global_monthly_food_modifier = 0.1
+}
+
+
+#Age of Renaissance#
+
+
+#Age of Discovery# 
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

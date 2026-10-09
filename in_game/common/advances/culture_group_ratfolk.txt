@@ -1,0 +1,153 @@
+﻿# Age of Traditions #
+ratfolk_traditions = {
+	age = age_1_traditions
+	icon = mandinka_warrior_spirit
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	global_levy_size_modifier = 0.33
+	requires = legalism_advance
+}
+
+
+
+ratfolk_warren_craft = {
+	age = age_1_traditions
+	icon = serbian_mining
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	global_production_efficiency = medium_production_efficiency_bonus
+	requires = legalism_advance
+}
+
+ratfolk_tunnel_networks = {
+	age = age_1_traditions
+	icon = defenses_of_novgorod
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	global_construction_speed = 0.08
+	global_defensive = 0.05
+	requires = feudalism_advance
+}
+
+ratfolk_swarm_tactics = {
+	age = age_1_traditions
+	icon = expansionism
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	global_manpower_modifier = 0.10
+	requires = feudalism_advance
+}
+
+# Age of Renaissance #
+
+ratfolk_the_survivor_endorsement = {
+	age = age_2_renaissance
+	icon = diplomatic_influence
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	diplomatic_reputation = 1
+	improve_relation_impact = 0.2
+	requires = diplomatic_range_age_1
+}
+
+ratfolk_underestimated = {
+	age = age_2_renaissance
+	icon = cultural_acceptance_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	aggressiveness_modifier = -0.10
+	requires = renaissance_court
+}
+
+
+ratfolk_warren_handgonners = {
+	age = age_2_renaissance
+	icon = gunpowder_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	unlock_unit = a_ratfolk_handgonners
+	requires = unlock_handgonners_advance
+}
+
+ratfolk_brewing_expertise = {
+	age = age_2_renaissance
+	icon = expanded_supply_trains
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	unlock_production_method = bavarian_brewery_maintenance
+	unlock_production_method = bavarian_beer_workshop_maintenance
+
+	requires = food_advance_renaissance
+}
+
+ratfolk_alchemists = {
+	age = age_2_renaissance
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	requires = paper_guild_cloth_maintenance_advance
+	icon = alchemy
+	army_artillery_power = 0.1
+	siege_ability = 0.1
+}
+
+# Age of Discovery #
+
+ratfolk_far_tunnels = {
+	age = age_3_discovery
+	icon = merchant_power_from_maritime_discovery_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	trade_range_modifier = 0.25
+	global_merchant_capacity_modifier = 0.08
+	requires = merchant_power_from_maritime_discovery_advance
+}
+
+ratfolk_plague_resilience = {
+	age = age_3_discovery
+	icon = alchemy_advance
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	global_disease_resistance = 0.08
+	global_life_expectancy = 2
+	requires = surgery_advance
+}
+
+
+# Age of Reformation #
+
+
+# Age of Absolutism #
+
+ratfolk_warren_clockwork = {
+	age = age_5_absolutism
+	icon = efficient_mining
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	global_production_efficiency = medium_production_efficiency_bonus
+	unlock_building = ratfolk_warren_clock_tower
+	requires = construction_speed_absolutism
+}
+
+# Age of Revolutions #
+
+ratfolk_people_assembly = {
+	age = age_6_revolutions
+	icon = colonial_assembly
+	potential = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+	parliament_base_support = 0.2
+	requires = rights_of_man
+}

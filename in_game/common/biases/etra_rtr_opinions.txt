@@ -1,0 +1,9 @@
+﻿opinion_etra_rtr_red_turban_rebellions = {
+	value = -200
+	yearly_decay = 2
+}
+
+antagonism_peace_etra_rtr_demand_all_iborric_territories = {
+	value = 1
+	yearly_decay = 2
+}

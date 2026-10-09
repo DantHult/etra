@@ -1,0 +1,18 @@
+﻿senatus_sempiternus = { #etra
+	type = country
+	potential = {
+		modifier:allow_estate_parliament = yes
+		tag = A01
+	}
+	allow = {
+		NOT = { has_country_modifier = supreme_authority_modifier }
+	}
+	modifier = {
+		court_spending_efficiency = -0.05
+		has_a_parliamentary_system = yes
+		global_crown_estate_power = 0.10
+		clergy_estate_can_participate_in_parliament = yes
+		burghers_estate_can_participate_in_parliament = yes
+		nobles_estate_agenda_impact = 0.2
+	}
+}

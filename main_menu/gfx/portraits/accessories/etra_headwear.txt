@@ -1,0 +1,4 @@
+﻿male_headwear_giant_borili = {
+	set_tags = "hair_covered"
+	entity = { required_tags = ""	shared_pose_entity = head	entity = male_headwear_giant_borili_entity }
+}

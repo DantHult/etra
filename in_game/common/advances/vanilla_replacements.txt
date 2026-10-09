@@ -1,0 +1,9 @@
+﻿REPLACE:unlock_galleass_advance = {
+	age = age_4_reformation
+	icon = ship_building_advance
+	potential = {
+	#	NOT = { culture = { has_culture_group = culture_group:italian_group } }
+	}
+	unlock_unit = n_galleass
+
+}

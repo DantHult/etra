@@ -1,0 +1,10 @@
+﻿tajjev_war_superiority = {
+	type = superiority
+	attacker = {
+		subjugate_cost = 0.25
+	}
+	defender = {
+		subjugate_cost = 0.25
+	}
+	ticking_war_score = 0.5
+}

@@ -1,0 +1,103 @@
+﻿# ############################
+# # age_1_traditions
+# ############################
+stone_sordrenic_tradition = {
+	age = age_1_traditions
+	icon = glorious_arms
+	potential = {
+		OR = {
+			culture = culture:stone_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	mountains_proximity_impact = -0.33
+	hills_proximity_impact = -0.33
+	plateau_proximity_impact = -0.33
+
+	requires = codified_laws
+}
+
+# ############################
+# # age_2_renaissance
+# ############################
+stone_sordrenic_tenacity = {
+	age = age_2_renaissance
+	icon = regimental_system
+	requires = unlock_men_at_arms_advance
+	potential = {
+		OR = {
+			culture = culture:stone_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+
+	monthly_war_exhaustion = -0.05
+}
+
+# ############################
+# # age_3_discovery
+# ############################
+stone_sordrenic_keepers_of_the_gate  = {
+	age = age_3_discovery 
+	icon = defenses_of_novgorod
+	potential = {
+		OR = {
+			culture = culture:stone_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	fort_maintenance_efficiency = 0.2
+	
+	requires = supply_depot_advance_age_3_discovery
+}
+
+
+# ############################
+# # age_4_reformation
+# ############################
+stone_sordrenic_mercantile_expansion = { #DIP
+	age = age_4_reformation
+	icon = letters_of_marque
+	potential = {
+		OR = {
+			culture = culture:stone_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	global_merchant_power = 0.10
+	
+	requires = letters_of_marque
+}
+# ############################
+# # age_5_absolutism
+# ############################
+stone_sordrenic_a_strong_rule = {
+	age = age_5_absolutism
+	icon = the_constitution
+	potential = {
+		OR = {
+			culture = culture:stone_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	global_crown_estate_power = 0.10
+	
+	requires = the_constitution
+}
+
+# ############################
+# # age_6_revolutions
+# ############################
+stone_sordrenic_pandurs_recruitment = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			culture = culture:stone_sordrenic_culture
+			has_or_had_tag = A42
+		}
+	}
+	icon = expansionism
+	army_light_infantry_power = 0.1
+
+	requires = napoleonic_warfare
+}

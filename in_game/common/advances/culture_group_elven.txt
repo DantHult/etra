@@ -1,0 +1,124 @@
+﻿#Age of Traditions#
+elven_artisanry = {
+	age = age_1_traditions
+	icon = patron_of_art
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	has_cultural_maintenance = yes
+	num_possible_artists = 1
+	requires = feudalism_advance
+}
+elven_discipline = {
+	age = age_1_traditions
+	icon = drill_army_advance
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	discipline = 0.05
+	
+	requires = feudalism_advance
+}
+
+unlock_elven_early_longbowmen_advance = {
+	age = age_1_traditions
+	icon = glorious_arms
+	requires = city_building_advance
+	potential = {
+		NOT = { has_or_had_tag = A331 }
+	}
+	unlock_levy = levy_a_elven_early_longbowmen
+	#unlock_estate_privilege = peasants_yeomanry
+}
+
+
+
+#Age of renaissance#
+elven_metal_movable_type = {
+	age = age_2_renaissance
+	icon = printing_press_advance
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	global_monthly_literacy = 0.01
+	requires = construction_speed_renaissance
+}
+
+unlock_elven_longbowmen_advance = {
+	age = age_2_renaissance
+	icon = glorious_arms
+	requires = unlock_men_at_arms_advance
+	potential = {
+		NOT = { has_or_had_tag = A331 }
+	}
+	unlock_levy = levy_a_elven_longbowmen
+}
+
+#Age of discovery#
+elven_grand_code = {
+	age = age_3_discovery
+	icon = genoese_banking_traditions
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	country_cabinet_efficiency = 0.1
+	requires = regulate_court_procedures
+}
+unlock_elven_late_longbowmen_advance = {
+	age = age_3_discovery
+	icon = pike_square
+	requires = unlock_halberdiers_advance
+	potential = {
+		NOT = { has_or_had_tag = A331 }
+	}
+	unlock_levy = levy_a_elven_late_longbowmen
+}
+
+unlock_lutin_bladesinger_advance = {
+	age = age_3_discovery
+	icon = pike_square
+	potential = {
+		culture = culture:lutin_culture
+	}
+	unlock_unit = a_lutin_bladesinger
+	requires = unlock_halberdiers_advance
+}
+#Age 4
+
+elven_diplomats = {
+	age = age_4_reformation
+	icon = diplomatic_influence
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	diplomatic_reputation = diplomatic_reputation_mild_bonus
+	diplomatic_capacity = 1
+	
+	requires = imperial_ambitions
+}
+
+#age 5
+
+elven_long_lived = {
+	age = age_5_absolutism
+	icon = alchemy_advance
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+	requires = war_score_absolutism_advance
+	army_tradition_decay = -0.001
+}
+
+#age 6
+
+elven_experimental_riflemen = {
+	age = age_6_revolutions
+	icon = napoleonic_warfare
+	requires = unlock_sharpshooters_advance
+	potential = {
+		culture = { has_culture_group = culture_group:elven_group }
+		NOT = { has_or_had_tag = A331 }
+	}
+	
+	unlock_unit = a_experimental_riflemen
+}

@@ -1,0 +1,80 @@
+﻿pantagrins_culture = {
+	language = sordrenic_language
+	
+	color = map_PRU
+	
+	tags = { giantsborn_gfx swedish_gfx western_european_gfx european_gfx  }
+
+	culture_groups = {
+		sordrenic_group
+		giantsborn_group
+	}
+	opinions = {
+		salt_sordrenic = positive
+		stone_sordrenic = positive
+	}
+}
+
+
+hravevi_culture = {
+	language = hravevi_language
+	
+	color = map_ARM
+	
+	tags = { giantsborn_gfx swedish_gfx western_european_gfx european_gfx  }
+
+	culture_groups = {
+		giantsborn_group
+	}
+
+}
+
+borili_giantsborn_culture = {
+	language = hipparian_language
+
+	color = rgb { 92 116 148 }
+
+	tags = { giantsborn_gfx native_american_tag north_american_gfx american_gfx central_plains_coa_gfx }
+
+	culture_groups = {
+		giantsborn_group
+		great_swardish_group
+	}
+
+	opinions = {
+		telanian_culture = kindred
+	}
+}
+
+
+pahhuar_culture = {
+	language = astanun_language
+	
+	color = rgb { 150 25 25 }
+	
+	tags = { giantsborn_gfx persian_gfx persianate_gfx middle_east_gfx  }
+
+	culture_groups = {
+		astanun_group
+		giantsborn_group
+	}
+	opinions = {
+		ekuniman_culture = kindred
+	}
+}
+
+ekuniman_culture = {
+	language = astanun_language
+	
+	color = rgb { 155 200 240 }
+	
+	tags = { giantsborn_gfx persian_gfx persianate_gfx middle_east_gfx  }
+
+	culture_groups = {
+		astanun_group
+		giantsborn_group
+	}
+	opinions = {
+		pahhuar_culture = kindred
+	}
+}

@@ -1,0 +1,31 @@
+﻿# Vexvec (A331): exclusive major reform for Coven Throne government type
+
+vexvec_coven_throne_reform = {
+	unique = yes
+	major = yes
+	government = monarchy
+
+	potential = {
+		tag = A331
+	}
+
+	allow = {
+		tag = A331
+	}
+
+	locked = {
+		tag = A331
+	}
+
+	country_modifier = {
+		monthly_towards_traditionalist = societal_value_minor_monthly_move
+		monthly_towards_aristocracy = societal_value_minor_monthly_move
+		allow_female_cabinet = yes
+		allow_female_leader = yes
+		allow_male_cabinet = no
+		allow_male_leader = no
+		nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+	}
+
+	years = 2
+}

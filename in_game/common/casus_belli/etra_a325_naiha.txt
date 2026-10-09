@@ -1,0 +1,21 @@
+﻿# Naiha (A325): recover Phaetheon's body from Vexvec. Permanent late objective.
+
+cb_a325_stolen_cortege = {
+	create_visible = {
+		tag = A325
+	}
+	create_enabled = {
+		tag = A325
+		scope:target = {
+			tag = A331
+		}
+	}
+	war_goal_type = take_capital
+
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 50
+		}
+	}
+}

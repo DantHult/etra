@@ -1,0 +1,18 @@
+﻿# Receives data from /genes
+# Ethnicity templates are used in other ethnicities and templates in this folder
+
+tiefling_ethnicity = {
+	template = "mediterranean_italian_ethnicity"
+	eyes = {
+		10 = { name = purple_glowing	range = { 1.0 1.0 } }
+		10 = { name = green_glowing		range = { 1.0 1.0 } }
+		10 = { name = red_glowing		range = { 1.0 1.0 } }
+	}
+	skin_color_hue = {
+		1 = { name = tiefling_red_skin_hue 			range = { 0.7 1.0 } }
+		1 = { name = tiefling_black_skin_hue  		range = { 0.7 1.0 } }
+		1 = { name = tiefling_orange_skin_hue       range = { 0.7 1.0 } }
+		1 = { name = tiefling_pink_skin_hue       range = { 0.7 1.0 } }
+		1 = { name = tiefling_purple_skin_hue       range = { 0.7 1.0 } }
+	}
+}

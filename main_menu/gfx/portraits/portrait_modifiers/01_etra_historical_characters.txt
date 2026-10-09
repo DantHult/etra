@@ -1,0 +1,94 @@
+﻿etra_historical_characters_accessories = {
+
+	usage = game
+	selection_behavior = max
+	priority = 99
+	
+	# Special modifiers
+
+	# Characters below
+
+	# A332_the_dragon_queen = {
+	
+		# dna_modifiers = {
+
+			# morph = {
+				# mode = replace
+				# gene = gene_aging_body
+				# template = ageless_body
+				# value = 1
+				# # range = { 0 0.2 } # For the randomness to work correctly
+			# }
+			# morph = {
+				# mode = replace
+				# gene = gene_aging_eyes
+				# template = ageless_eyes
+				# value = 1
+				# # range = { 0 0.2 } # For the randomness to work correctly
+			# }
+			# morph = {
+				# mode = replace
+				# gene = gene_aging_eyes
+				# template = ageless_eyes
+				# value = 1
+				# # range = { 0 0.2 } # For the randomness to work correctly
+			# }
+			# morph = {
+				# mode = replace
+				# gene = gene_aging_forehead
+				# template = ageless_forehead
+				# value = 1
+				# # range = { 0 0.2 } # For the randomness to work correctly
+			# }
+			# morph = {
+				# mode = replace
+				# gene = gene_aging_mouth
+				# template = ageless_mouth
+				# value = 1
+				# # range = { 0 0.2 } # For the randomness to work correctly
+			# }
+			# morph = {
+				# mode = replace
+				# gene = gene_aging_colors
+				# template = ageless_colors
+				# value = 1
+				# # range = { 0 0.2 } # For the randomness to work correctly
+			# }
+		# }
+		# weight = {
+			# base = 0
+			# modifier = {
+				# add = 500
+				# exists = this
+				# exists = character:A332_the_dragon_queen
+				# this = character:A332_the_dragon_queen
+			# }
+		# }
+	# }
+
+	A356_bolakhan_giant_of_borili = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace
+				gene = hair_styles
+				template = no_hair
+				range = { 0 1 }
+			}
+			accessory = {
+				mode = add
+				gene = headwear
+				template = giant_borili_headwear
+				accessory = male_headwear_giant_borili
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:A356_bolakhan_giant_of_borili
+				this = character:A356_bolakhan_giant_of_borili
+			}
+		}
+	}
+}

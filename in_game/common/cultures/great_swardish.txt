@@ -1,0 +1,67 @@
+﻿hipparian_culture = {
+	language = hipparian_language
+	
+	color = map_koroa
+	
+	tags = { native_american_tag north_american_gfx american_gfx central_plains_coa_gfx }
+
+	culture_groups = {
+		human_group
+		great_swardish_group
+	}
+}
+valakind_culture = {
+	language = hipparian_language
+	
+	color = map_bulgarian
+	
+	tags = { native_american_tag north_american_gfx american_gfx central_plains_coa_gfx }
+
+	culture_groups = {
+		human_group
+		great_swardish_group
+	}
+}
+telanian_culture = {
+	language = hipparian_language
+	
+	color = map_oroqen
+	
+	tags = { native_american_tag north_american_gfx american_gfx central_plains_coa_gfx }
+
+	culture_groups = {
+		human_group
+		great_swardish_group
+	}
+
+	opinions = {
+		borili_giantsborn_culture = kindred
+	}
+}
+
+mavisan_culture = {
+	language = hipparian_language
+	
+	color = map_botos
+	
+	tags = { native_american_tag north_american_gfx american_gfx central_plains_coa_gfx }
+
+	culture_groups = {
+		human_group
+		great_swardish_group
+	}
+}
+
+
+zilaanian_culture = {
+	language = hipparian_language
+	
+	color = map_olyuben
+	
+	tags = { native_american_tag north_american_gfx american_gfx central_plains_coa_gfx }
+
+	culture_groups = {
+		human_group
+	}
+}
+

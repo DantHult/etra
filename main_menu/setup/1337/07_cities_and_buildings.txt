@@ -1,0 +1,281 @@
+locations = {
+	adune11 = { rank = city town_setup = italian_city }
+	eternalcity1 = { rank = megalopolis town_setup = italian_city }
+	eternalcity2 = { rank = city town_setup = italian_city }
+   eternalcity3 = { rank = town town_setup = italian_town }
+   testprovince40 = { rank = city town_setup = iberian_city }
+   testprovince49 = { rank = town town_setup = balkan_town }
+   testprovince57 = { rank = city town_setup = iberian_city_port }
+   testprovince74 = { rank = town town_setup = iberian_town_port }
+   testprovince86 = { rank = city town_setup = iberian_city_port }
+   testprovince89 = { rank = city town_setup = iberian_city }
+   testprovince93 = { rank = city town_setup = iberian_city }
+   testprovince204 = { rank = city town_setup = iberian_city_port }
+   testprovince214 = { rank = town town_setup = iberian_town }
+   godhand20 = { rank = city town_setup = italian_coastal_city }
+   godhand26 = { rank = city town_setup = italian_town }
+   godhand30 = { rank = town town_setup = italian_town }
+   godhand36 = { rank = city town_setup = italian_city }
+   godhand50 = { rank = city town_setup = italian_coastal_city }
+   adune111 = { rank = city town_setup = italian_coastal_city }
+   godhand60 = { rank = city town_setup = italian_coastal_city }
+   godhand71 = { rank = town town_setup = italian_town }
+   godhand76 = { rank = town town_setup = italian_town }
+   godhand103 = { rank = city town_setup = italian_coastal_city }
+   godhand104 = { rank = town town_setup = italian_town }
+   freehold1 = { rank = town town_setup = italian_town }
+   freehold3 = { rank = city town_setup = italian_coastal_city }
+   freehold4 = { rank = town town_setup = italian_town }
+   freehold5 = { rank = city town_setup = italian_trading_capital }
+   freehold10 = { rank = city town_setup = italian_trading_capital }
+   freehold13 = { rank = city town_setup = italian_trading_capital }
+   freehold19 = { rank = town town_setup = balkan_town }
+   freehold20 = { rank = town town_setup = italian_town }
+   freehold21 = { rank = town town_setup = balkan_town }
+   freehold23 = { rank = town town_setup = balkan_town }
+   freehold31 = { rank = city town_setup = italian_trading_capital }
+   freehold35 = { rank = town town_setup = italian_town }
+   freehold36 = { rank = city town_setup = italian_town }
+   freehold37 = { rank = town town_setup = balkan_town }
+   freehold45 = { rank = town town_setup = balkan_town }
+   freehold48 = { rank = town town_setup = balkan_town }
+   freehold49 = { rank = town town_setup = balkan_town }
+   freehold50 = { rank = city town_setup = italian_trading_capital }
+   freehold59 = { rank = town town_setup = balkan_town }
+   freehold64 = { rank = town town_setup = balkan_town }
+   freehold66 = { rank = city town_setup = italian_city }
+   freehold73 = { rank = town town_setup = italian_town }
+   freehold76 = { rank = city town_setup = italian_city }
+   freehold83 = { rank = city town_setup = italian_city }
+   freehold86 = { rank = town town_setup = italian_town }
+   freehold87 = { rank = town town_setup = italian_town }
+   freehold91 = { rank = town town_setup = italian_town }
+   freehold95 = { rank = town town_setup = italian_town }
+   freehold101 = { rank = town town_setup = italian_town }
+   freehold103 = { rank = city town_setup = italian_coastal_city }
+   freehold112 = { rank = city town_setup = iberian_city }
+   freehold120 = { rank = city town_setup = iberian_city }
+   ardraine8 = { rank = city town_setup = german_coastal_city }
+   ardraine59 = { rank = town town_setup = french_town }
+   ardraine9 = { rank = town town_setup = french_town }
+   commonweal66 = { rank = town town_setup = french_town }
+    ardraine179 = { rank = town town_setup = french_town }  
+   ardraine36 = { rank = town town_setup = french_town }
+   ardraine53 = { rank = city town_setup = french_city }
+   ardraine71 = { rank = city town_setup = french_city }
+   ardraine83 = { rank = town town_setup = french_town }
+   ardraine84 = { rank = town town_setup = french_town }
+   ardraine97 = { rank = town town_setup = german_town }
+   ardraine103 = { rank = city town_setup = french_city }
+   ardraine163 = { rank = city town_setup = german_city }
+   ardraine164 = { rank = city town_setup = german_city }
+   ardraine172 = { rank = town town_setup = french_town }
+   ardraine191 = { rank = city town_setup = lowlands_coastal_city }
+   ardraine207 = { rank = city town_setup = paris_city }
+   ardraine211 = { rank = city town_setup = lowlands_coastal_city }
+   ardraine212 = { rank = town town_setup = german_town }
+   ardraine218 = { rank = city town_setup = bourfort_city }
+   ardraine238 = { rank = city town_setup = lowlands_costal_town }
+   ardraine239 = { rank = city town_setup = german_coastal_city }
+   torrent68 = { rank = town town_setup = french_town }
+   torrent79 = { rank = town town_setup = german_town }
+   torrent86 = { rank = city town_setup = lowlands_coastal_city }
+   torrent100 = { rank = city town_setup = german_coastal_city }
+   torrent113 = { rank = town town_setup = german_town }
+   torrent114 = { rank = city town_setup = german_city }
+   torrent119 = { rank = city town_setup = german_city }
+   torrent130 = { rank = city town_setup = german_city }
+   torrent154 = { rank = town town_setup = lowlands_costal_town }
+   torrent155 = { rank = town town_setup = lowlands_costal_town }
+   torrent156 = { rank = town town_setup = lowlands_costal_town }
+   torrent170 = { rank = city town_setup = german_coastal_city }
+   torrent182 = { rank = town town_setup = german_town }
+   torrent185 = { rank = town town_setup = german_town }
+   torrent203 = { rank = city town_setup = german_coastal_city }
+   torrent250 = { rank = city town_setup = russian_city }
+   torrent271 = { rank = city town_setup = german_coastal_city }
+   torrent280 = { rank = city town_setup = german_city }
+   torrent313 = { rank = city town_setup = german_city }
+   torrent316 = { rank = town town_setup = lowlands_town }
+	crelzerte = { rank = city town_setup = lowlands_coastal_city }
+	dis2 = { rank = city town_setup = german_city }
+	dis4 = { rank = town town_setup = german_town }
+	commonweal12 = { rank = city town_setup = german_coastal_city }
+	commonweal29 = { rank = town town_setup = german_town }
+	commonweal51 = { rank = city town_setup = french_city }
+	commonweal54 = { rank = town town_setup = german_town }
+	commonweal56 = { rank = city town_setup = german_coastal_city }
+	commonweal63 = { rank = city town_setup = german_city }
+	aita18 = { rank = town town_setup = german_town }
+	ardraine226 = { rank = town town_setup = german_town }
+	torrent340 = { rank = town town_setup = german_town }
+	aita39 = { rank = town town_setup = german_town }
+	aita58 = { rank = city town_setup = german_city }
+
+   
+	etra370 = { rank = city			town_setup = german_coastal_city  }
+	etra408 = { rank = town 		town_setup = russian_town }
+   
+   
+	#!Balkans
+	etra304 = { rank = city			town_setup = greek_city_port }
+	etra48 = { rank = city			town_setup = greek_city_port }
+	etra35 = { rank = city 	town_setup = greek_city_port }
+	etra24 = { rank = city 	town_setup = greek_city_port }
+	etra31 = { rank = town 			town_setup = greek_town_port }
+	etra8 = { rank = town 		town_setup = greek_town_port }
+	etra3 = { rank = town 			town_setup = greek_town_port }
+	etra69 = { rank = town 	town_setup = anatolian_town } 
+	
+	
+	etra864 = { rank = city 		town_setup = polish_town }
+	etra865 = 	{ rank = town	town_setup = polish_town }
+	etra939 = 	{ rank = town	town_setup = polish_town }	
+	etra314 = 	{ rank = town	town_setup = polish_town }	
+	etra791 = 	{ rank = town	town_setup = polish_town }	
+	
+	#Jasskadia
+	etra394 = 	{ rank = city	town_setup = british_town }	
+	etra375 = 	{ rank = town	town_setup = british_town_port }	
+	etra401 = 	{ rank = town	town_setup = baltic_town }	
+	etra284 = 	{ rank = town	town_setup = baltic_town }	
+	
+	
+	#Erebum
+	aita120 = 	{ rank = city	town_setup = baltic_town }	
+	
+	
+	#exalted horde
+	etra743 = { rank = city			town_setup = russian_city }
+	etra639 = { rank = town 			town_setup = russian_town }
+	etra749 = { rank = town			town_setup = russian_town }
+	
+	#great Swards
+	etra765 = { rank = city 	town_setup = anatolian_city }
+	
+	#iboros
+	etra1284 = { rank = city 	town_setup = iboros_coastal_city } 
+	etra1249  = { rank = city 	town_setup = iboros_coastal_city } 
+	etra1185  = { rank = city 	town_setup = iboros_coastal_city } 
+	etra1186  = { rank = city 	town_setup = iboros_coastal_city } 
+	etra1108  = { rank = city 	town_setup = iboros_coastal_city }
+	etra1159  = { rank = city 	town_setup = iboros_city } 	
+	etra1279  = { rank = city 	town_setup = iboros_city } 
+	etra1228 = { rank = city 	town_setup = iboros_city } 
+	etra1384  = { rank = city 	town_setup = iboros_city } 
+	etra1200  = { rank = city 	town_setup = iboros_city } 
+	etra1201  = { rank = city 	town_setup = iboros_city } 
+	etra1160  = { rank = town 	town_setup = iboros_town } 
+	etra1372  = { rank = town 	town_setup = iboros_town } 
+	etra1307  = { rank = town 	town_setup = iboros_town } 
+	etra1281  = { rank = town 	town_setup = iboros_town } 
+	etra1271  = { rank = town 	town_setup = iboros_town } 
+	etra1124  = { rank = town 	town_setup = iboros_town } 
+	etra1305  = { rank = town 	town_setup = iboros_town } 
+	etra1214  = { rank = town 	town_setup = iboros_town } 
+	etra1207  = { rank = town 	town_setup = iboros_town } 
+	
+	#the crater
+	etra1711 = { rank = city 	town_setup	 = egyptian_city }
+	etra1747 = { rank = city 	town_setup	 = egyptian_city }
+	etra1795 = { rank = city 		town_setup	 = egyptian_city }
+	etra1682 = { rank = city 		town_setup	 = egyptian_city }
+	etra1632 = { rank = town 		town_setup	 = maghreb_town }
+	
+	#maitha
+	etra1842 = { rank = city 	town_setup	 = damascus_city }	
+	etra1841 = { rank = city 	town_setup	 = levant_city }
+	etra1919 = { rank = city 	town_setup	 = baghdad_city }
+	etra1886 = { rank = city 	town_setup	 = baghdad_city }		
+	etra1833 = { rank = town 	town_setup = levant_town }	
+	etra1808 = { rank = town 	town_setup = levant_town }	
+}
+building_manager = {
+	caravanserai = { tag = A330 level = 1 location = etra743 }
+
+   sand_pit = { tag = A03 level = 2 location = freehold5 }
+   clay_pit = { tag = A03 level = 2 location = freehold5 }
+   tar_kiln = { tag = A03 level = 2 location = freehold5 }
+   tar_kiln = { tag = A03 level = 1 location = freehold3 }
+   scriptorium = { tag = A03 level = 2 location = freehold5 }
+   castle = { tag = A03 level = 1 location = freehold1 }
+   sergeantry = { tag = A03 level = 1 location = freehold5 }
+   fine_cloth_guild = { tag = A03 level = 1 location = freehold5 }
+   university = { tag = A01 level = 1 location = eternalcity1 }
+   sergeantry = { tag = A01 level = 1 location = eternalcity1 }
+   royal_court = { tag = A01 level = 1 location = eternalcity1 }
+   sand_pit = { tag = A01 level = 1 location = eternalcity1 }
+   clay_pit = { tag = A01 level = 1 location = eternalcity1 }
+   tar_kiln = { tag = A01 level = 1 location = eternalcity1 }
+   the_amphitheatrum = { tag = A01 level = 1 location = eternalcity1 }
+   scriptorium = { tag = A01 level = 3 location = eternalcity1 }
+   tannery = { tag = A01 level = 2 location = eternalcity1 }
+   market_warehouse = { tag = A01 level = 1 location = eternalcity1 }
+   sand_pit = { tag = A04 level = 1 location = freehold10 }
+   clay_pit = { tag = A04 level = 1 location = freehold10 }
+   tar_kiln = { tag = A04 level = 1 location = freehold10 }
+   sand_pit = { tag = A13 level = 2 location = freehold50 }
+   clay_pit = { tag = A13 level = 2 location = freehold50 }
+   tar_kiln = { tag = A13 level = 2 location = freehold50 }
+   lumber_mill = { tag = A13 level = 1 location = freehold49 }
+   lumber_mill = { tag = A13 level = 1 location = freehold102 }
+   lumber_mill = { tag = A01 level = 1 location = godhand25 }
+   lumber_mill = { tag = A01 level = 1 location = godhand71 }
+   stone_quarry = { tag = A01 level = 2 location = godhand71 }
+   stone_quarry = { tag = A23 level = 1 location = testprovince236 }
+   university = { tag = A304 level = 1 location = aita58 }
+   university	= { tag = A52 level = 1	location = ardraine207 }
+    university	= { tag = A148 level = 1	location = torrent86 }
+   cathedral = { tag = A52 level = 1 location = ardraine207 } 
+   cathedral = { tag = A02 level = 1 location = freehold13 } 
+
+   
+	banking_office = { tag = A322 level = 1 location = crelzerte }
+	banking_office = { tag = A322 level = 1 location = ardraine9 }
+	banking_office = { tag = A322 level = 1 location = ardraine238 }
+	banking_office = { tag = A322 level = 1 location = ardraine53 }
+	banking_office = { tag = A322 level = 1 location = ardraine207 }
+	banking_office = { tag = A322 level = 1 location = testprovince204 }
+	banking_office = { tag = A322 level = 1 location = ardraine103 }
+	banking_office = { tag = A322 level = 1 location = ardraine71 }
+	
+	
+	castle		= { tag = A344 level = 1 location = etra370 }
+	marketplace	= { tag = A344 level = 1 location = etra370 }
+	
+	# Great Swards 
+	kurultai = { tag = A330 level = 1 location = etra636 }
+	kurultai = { tag = A330 level = 1 location = etra138 }
+	kurultai = { tag = A330 level = 1 location = etra749 }
+	kurultai = { tag = A330 level = 1 location = etra744 }
+	kurultai = { tag = A330 level = 1 location = etra752 }
+	kurultai = { tag = A330 level = 1 location = etra750 }
+	
+	#Ringed Walls
+	ruined_ringed_wall = { tag = A149 level = 1 location = torrent156 }
+	ruined_ringed_wall = { tag = A149 level = 1 location = torrent222 }
+	ruined_ringed_wall = { tag = A150 level = 1 location = torrent216 }
+	ruined_ringed_wall = { tag = A150 level = 1 location = torrent295 }
+	ruined_ringed_wall = { tag = A235 level = 1 location = torrent219 }
+	ruined_ringed_wall = { tag = A235 level = 1 location = commonweal3 }
+	ruined_ringed_wall = { tag = A209 level = 1 location = ardraine222 }
+	ruined_ringed_wall = { tag = A209 level = 1 location = torrent85 }
+	ruined_ringed_wall = { tag = A250 level = 1 location = commonweal6 }	
+	
+	ruined_ringed_wall = { tag = A198 level = 1 location = torrent60 }
+	ruined_ringed_wall = { tag = A152 level = 1 location = torrent155 }
+	ruined_ringed_wall = { tag = A152 level = 1 location = torrent97 }
+	
+	ruined_ringed_wall = { tag = A188 level = 1 location = ardraine175 }
+	ruined_ringed_wall = { tag = A185 level = 1 location = ardraine153 }
+	ruined_ringed_wall = { tag = A185 level = 1 location = commonweal2 }
+	
+	ruined_ringed_wall = { tag = A198 level = 1 location = torrent56 }
+	
+	
+	#ardraine
+	monastery 	= { tag = A366 level = 1 location = adune71 }
+	monastery 	= { tag = A181 level = 1 location = ardraine140 }
+	monastery 	= { tag = A375 level = 1 location = adune59 }
+	
+}

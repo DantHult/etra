@@ -1,0 +1,22 @@
+﻿on_purge_kindred_monthly_pulse = {
+	trigger = {
+		has_active_purge_kindred_cabinet = yes
+	}
+
+	effect = {
+		purge_kindred_monthly_effect = yes
+	}
+
+	random_events = {
+		10 = purge_kindred.10
+		10 = purge_kindred.11
+		10 = purge_kindred.12
+		10 = purge_kindred.13
+		10 = purge_kindred.14
+
+		chance_to_happen = 1
+		chance_of_no_event = {
+			value = 10
+		}
+	}
+}

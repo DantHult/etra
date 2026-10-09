@@ -1,0 +1,37 @@
+﻿etra_red_turban_rebellions_wargoal = {
+	type = superiority
+	war_name = "etra_red_turban_rebellions_WAR_NAME"
+	attacker = {
+		conquer_cost = 0.02
+		subjugate_cost = 0.12
+		antagonism = 0.02
+		allowed_locations = {
+			region = region:iboros_region
+		}
+	}
+	defender = {
+		conquer_cost = 0.02
+		subjugate_cost = 0.12
+		antagonism = 0.02
+	}
+	ticking_war_score = 1.25
+}
+
+etra_red_turban_rebellions_against_other_rebels_wargoal = {
+	type = superiority
+	war_name = "etra_red_turban_rebellions_AGAINST_OTHER_REBELS_WAR_NAME"
+	attacker = {
+		conquer_cost = 0.02
+		subjugate_cost = 0.12
+		antagonism = 0.02
+		allowed_locations = {
+			region = region:iboros_region
+		}
+	}
+	defender = {
+		conquer_cost = 0.02
+		subjugate_cost = 0.12
+		antagonism = 0.02
+	}
+	ticking_war_score = 1.0
+}

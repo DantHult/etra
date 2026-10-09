@@ -1,0 +1,280 @@
+﻿# Swiss Confederation IO and all related localization (base-game English)
+# Sourced from base game; customize for your mod.
+# Sources: international_organizations, country_history, buildings, goods,
+#   events/DHE/flavor_swi, laws_and_policies, formable_countries
+l_english:
+ ########################
+ # International organization – Swiss Confederacy
+ ########################
+ swiss_confederation: "The Stone Oath"
+ swiss_confederation_desc: "The $swiss_confederation$ - also known as the #italic Eidgenossenschaft#! - is a league of political entities home to the Swiss Plateau and the Alps. The [ShowCultureGroupName('aitan_group')] people have formed this union in order to overthrow the influence of the Undying Emperor."
+ SWISS_CONFEDERATION_LEADER: "Sovereign"
+ SWISS_CONFEDERATION_LEADER_MALE: "$SWISS_CONFEDERATION_LEADER$"
+ SWISS_CONFEDERATION_LEADER_FEMALE: "$SWISS_CONFEDERATION_LEADER$"
+ WE_ARE_SMALL: "We are small"
+ swiss_election: "Stone Oath Election"
+ swiss_election_desc: "The members of the [GetUniqueInternationalOrganization('swiss_confederation').GetName] shall participate in a direct vote to elect the [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle], who shall represent the Confederation on the public stage."
+ swiss_election_specific: "$swiss_election$"
+ swiss_election_specific_desc: "$swiss_election_desc$"
+ vote_in_swiss_election: "Vote on $swiss_election$"
+ vote_in_swiss_election_desc: "Decide who we shall become the new [international_organization_leader_short|e] of the [GetUniqueInternationalOrganization('swiss_confederation').GetName]."
+
+ ########################
+ # Country history (aitan_group)
+ ########################
+ country_history_aitan_group: "$country_history_german_group$\n\nThe [ShowCultureGroupName('aitan_group')] people inhabiting the western Alps are fiercely resisting the authority of [GetCountry('HAB').GetName] encroaching on their territory. With the victory in the Battle of Morgarten, a new unity between the independent countries of [ShowAreaName('eastern_switzerland_area')] was formed, and the [GetUniqueInternationalOrganization('swiss_confederation').GetName] stands strong with more and more members flocking to take up their banner. But their old foe, the [GetDynasty('habsburg_dynasty').GetName] dynasty, are gathering their strength with the grant of [GetCharacter('ubv_ludwig_iv_wittelsbach').GetName], ready to bring the people of [GetCountry('A318').GetName] completely under their yoke. We must stand strong against this incursion; the fate of our homeland depends on us!"
+
+
+ ########################
+ # Formable country – SWI
+ ########################
+ A318_f: "$A318$"
+ A318_f_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetName] began as a mere alliance between different academies. Each part has developed separately, speaking different languages and even having different laws. To truly unify the [ShowCultureGroupName('aitan_group')], a sovereign power must establish dominance in the Aitan Mountains. While unifying so many different people will not be easy, we stand to gain much if we are successful."
+ A318_f_tt: "[GetUniqueInternationalOrganization('swiss_confederation').GetName] exists\nThe [international_organization|e] can enact the [ShowLawName('sc_unification')] instead to form this country"
+
+ ########################
+ # Swiss Confederation laws and policies (sc_*)
+ ########################
+ sc_policy_proposal_frequency: "Policy Proposal Frequency"
+ sc_policy_proposal_frequency_desc: "A law regulating the administration of law proposals within the [GetInternationalOrganizationType('swiss_confederation').GetName]."
+ sc_frequent_policy_proposals: "Frequent Policy Proposals"
+ sc_frequent_policy_proposals_desc: "Adjustment of laws and policies is a frequent act, and as such happens in [GetInternationalOrganizationType('swiss_confederation').GetName] on a base of every 4 years."
+ sc_moderate_policy_proposals: "Moderate Policy Proposals"
+ sc_moderate_policy_proposals_desc: "While a significant process, administrating the laws and policy proposals within the [GetInternationalOrganizationType('swiss_confederation').GetName] takes considerable effort, which allows law proposals only every 8 years."
+
+ sc_religious_affairs: "Religious Affairs"
+ sc_religious_affairs_desc: "With the breakout of the [ShowSituationName('reformation')], the religious unity of the Confederation is a precarious situation. A solution must be found or else the conflict of faith threatens to tear the union apart."
+ sc_clear_religious_chaos_tt: "[ShowLawName('sc_internal_politics')] and [ShowLawName('sc_war_politics')] are now in effect for every member regardless of [religion|e]"
+ sc_mending_schism: "Mending the Schism"
+ sc_mending_schism_desc: "The stability and safety of the [GetInternationalOrganizationType('swiss_confederation').GetName] is above the religious quarrels of the [ShowSituationName('reformation')]. Every member shall withdraw hostile relations with members of a different faith."
+
+ sc_enforcing_religious_unity: "Enforce Religious Unity"
+ sc_enforcing_religious_unity_desc: "Religion plays a significant role in the lives of its members and as such the religious unity of the [GetInternationalOrganizationType('swiss_confederation').GetName] is of great priority. All cantons shall follow the same faith one way or another."
+ sc_only_defending_same_religion_allies_tt: "Only members of the same [religion|e] benefit from the current policy of [ShowLawName('sc_war_politics')]"
+
+ sc_relations_with_hre: "Imperial Relations"
+ sc_relations_with_hre_desc: "The [GetInternationalOrganizationType('swiss_confederation').GetName] has been part of the [GetUniqueInternationalOrganization('hre').GetName] since its inception. However, the [ShowSituationName('reformation')] left a bitter taste for many members of the Confederation..."
+ sc_remain_in_the_hre: "Remain in the Empire"
+ sc_remain_in_the_hre_desc: "While the [GetInternationalOrganizationType('swiss_confederation').GetName] is a capable network of alliance defending its members from foreign powers, it is ill-suited to withstand the military might of far greater states. Remaining in the [GetUniqueInternationalOrganization('hre').GetName] will provide the [ShowCultureName('aitan_group')] with more, much-needed support."
+ sc_remain_in_the_hre_tt: "Remains in the [GetUniqueInternationalOrganization('hre').GetName]"
+ sc_prestige_malus_tt: "Every member loses [ShowNamedValue('prestige_extreme_penalty')|+=2%] [prestige|e]"
+ sc_leave_the_hre: "Leave the Empire"
+ sc_leave_the_hre_desc: "Although external enemies are not uncommon, the biggest threats the [GetInternationalOrganizationType('swiss_confederation').GetName] faces come from within the [GetUniqueInternationalOrganization('hre').GetName] itself, which originally promised to defend its members. Staying within the Empire only jeopardizes our own survivability."
+ sc_leave_the_hre_tt: "Leaves the [GetUniqueInternationalOrganization('hre').GetName]"
+ sc_every_member_leaves_hre_tt: "Every member leaves the [GetUniqueInternationalOrganization('hre').GetName] and cannot rejoin until they are no longer part of the [GetInternationalOrganizationType('swiss_confederation').GetName]"
+
+ sc_representative: "[ShowCultureGroupNameWithNoTooltip('aitan_group')] Representative"
+ sc_representative_desc: "Every kind of organization will require a spokesman - a representative - who shall be the face to the political entities inside and outside of the organization. The [GetInternationalOrganizationType('swiss_confederation').GetName] might pose an exception to this rule though..."
+ sc_canton_representative: "Canton Representative"
+ sc_canton_representative_desc: "Some Cantons happen to be richer and more influential than others. As such, the [GetInternationalOrganizationType('swiss_confederation').GetName] shall be represented not by a man but by a city-state."
+ sc_councillor_representative: "Councillor Representative"
+ sc_councillor_representative_desc: "The Cantons of the [GetInternationalOrganizationType('swiss_confederation').GetName] shall give up a bit of their influence to enact a single man to become the face of the Confederation."
+
+ sc_power_of_the_sovereign: "[GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] Power"
+ sc_power_of_the_sovereign_desc: "The representative of the Confederation could request for more power and influence within the union in order to strengthen their position on the public stage."
+ sc_sovereign_representative_power: "Representative Power"
+ sc_sovereign_representative_power_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] has the right to request aid from the members of the [GetInternationalOrganizationType('swiss_confederation').GetName] which can range from financial to military support."
+ sc_sovereign_religious_power: "Religious Power"
+ sc_sovereign_religious_power_desc: "The power of the [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] is limited with the exception in the matters of religious affairs of the [GetInternationalOrganizationType('swiss_confederation').GetName]."
+ sc_sovereign_absolute_power: "Absolute Power"
+ sc_sovereign_absolute_power_desc: "The leading [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] rules over the [GetInternationalOrganizationType('swiss_confederation').GetName] as if it was a singular state. As such, they enjoy all the privileges and duties as if they were a monarch of the Confederation."
+
+ sc_election_method: "Election Method"
+ sc_election_method_desc: "The process of electing the [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] of the [GetInternationalOrganizationType('swiss_confederation').GetName] is a delicate matter which requires an exact legislature to be handled properly."
+ sc_direct_vote: "Direct Vote"
+ sc_direct_vote_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] is directly elected by the members of the [GetInternationalOrganizationType('swiss_confederation').GetName]. Every member has a singular vote, and every member shall be eligible to represent the Confederation."
+ sc_lottery: "Lottery"
+ sc_lottery_desc: "Only the Lord can decide who shall represent the [GetInternationalOrganizationType('swiss_confederation').GetName]. The election process is handled via a secret lottery process with fate as the conclusive factor."
+ sc_rotation: "Rotation"
+ sc_rotation_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] is decided by turns. Every member of the [GetInternationalOrganizationType('swiss_confederation').GetName] shall represent the confederation at least once before a former leader can take over the mantle once again."
+
+ sc_ruling_period: "Ruling Period"
+ sc_ruling_period_desc: "The Confederation might have a [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] representing it. Yet, it must be determined if said [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] shall serve the union lifelong or until a certain time has passed."
+ sc_timed: "Timed"
+ sc_timed_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] of the [GetInternationalOrganizationType('swiss_confederation').GetName] is only in charge for a set period of time. Afterwards, their term ends and a new [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] shall be elected."
+ sc_lifelong: "Lifelong"
+ sc_lifelong_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] of the [GetInternationalOrganizationType('swiss_confederation').GetName] serves for their entire life. Only upon their death or expulsion, an election shall be held."
+
+ sc_election_frequency: "Election Frequency"
+ sc_election_frequency_desc: "As the matters of the [ShowLawName('sc_ruling_period')] are cleared, a new topic arises which handles the frequency of the elections of a new [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle]."
+ sc_biyearly_elections: "Biyearly Elections"
+ sc_biyearly_elections_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] of the [GetInternationalOrganizationType('swiss_confederation').GetName] shall be chosen every 2 years."
+ sc_four_yearly_elections: "4-yearly Elections"
+ sc_four_yearly_elections_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] of the [GetInternationalOrganizationType('swiss_confederation').GetName] shall be chosen every 4 years."
+ sc_eight_yearly_elections: "8-yearly Elections"
+ sc_eight_yearly_elections_desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetLeaderTitle] of the [GetInternationalOrganizationType('swiss_confederation').GetName] shall be chosen every 8 years."
+
+ sc_internal_politics: "Internal Politics"
+ sc_internal_politics_desc: "While the [GetInternationalOrganizationType('swiss_confederation').GetName] is first and foremost a union for defensive purposes, it is clear that the internal affairs of the Confederation must be handled too."
+ sc_forbid_internal_wars: "Forbid Internal Wars"
+ sc_forbid_internal_wars_desc: "We cannot allow petty disputes to escalate into bloody conflicts. Every member of the [GetInternationalOrganizationType('swiss_confederation').GetName] shall state their issue with another member in front of the judges of the Confederation instead of on the battlefield."
+ sc_forbid_internal_wars_tt: "No member of the [GetInternationalOrganizationType('swiss_confederation').GetName] can attack another member"
+ sc_forbid_same_religion_internal_wars_tt: "No member of the [GetInternationalOrganizationType('swiss_confederation').GetName] can attack another member of the same [religion|e]"
+ sc_allow_internal_wars: "Allow Internal Wars"
+ sc_allow_internal_wars_desc: "Although generally not desirable, conflict is part of human nature, and it is through it that we get to grow stronger."
+
+ sc_membership_regulation: "Membership Regulation"
+ sc_membership_regulation_desc: "The [GetInternationalOrganizationType('swiss_confederation').GetName] is an organization originally made by the [ShowCultureGroupName('aitan_group')] people to defend themselves against the growing influence of the [GetDynasty('habsburg_dynasty').GetName] in the local region. However, the rules who can join are never set in stone..."
+ sc_swiss_culture_and_geography: "Native Aitan Only"
+ sc_swiss_culture_and_geography_desc: "The confederation is a [ShowCultureGroupName('aitan_group')] organization, and as such only those who are of its culture and geography are allowed to join."
+ sc_swiss_culture_and_geography_tt: "Only countries which [primary_culture|e] is [ShowCultureGroupName('aitan_group')] and have their [capital|e] in [ShowAreaName('central_switzerland_area')], [ShowAreaName('eastern_switzerland_area')] or [ShowAreaName('western_switzerland_area')] can join"
+ sc_just_swiss_culture: "Aitan Culture"
+ sc_just_swiss_culture_desc: "The influence of the [ShowCultureGroupName('aitan_group')] people is growing far beyond the historical area of the [GetInternationalOrganizationType('swiss_confederation').GetName]. Geographical limitations are no longer adequate, and as such the law needs reconsideration."
+ sc_just_swiss_culture_tt: "Only countries which [primary_culture|e] is [ShowCultureGroupName('aitan_group')] can join"
+ sc_swiss_or_swiss_relative: "Relatives of the Aitans"
+ sc_swiss_or_swiss_relative_desc: "The influence and power of the [GetInternationalOrganizationType('swiss_confederation').GetName] is projected not only by the [ShowCultureGroupName('aitan_group')] people, but also those which we consider close relatives to our culture."
+ sc_swiss_or_swiss_relative_tt: "Only countries which [primary_culture|e] is either [ShowCultureGroupName('aitan_group')] or uses a [language|e] used by these cultures can join"
+
+ sc_war_politics: "War Politics"
+ sc_war_politics_desc: "The external threats of the [GetInternationalOrganizationType('swiss_confederation').GetName] are many. Unified terms of how the [ShowCultureGroupName('aitan_group')] defend each other are needed if the Confederation is to survive the political anarchy around it."
+ sc_defensive_pact: "Defensive Pact"
+ sc_defensive_pact_desc: "Members of the [GetInternationalOrganizationType('swiss_confederation').GetName] are only called to arms in a defensive war against external threats."
+ sc_alliance: "Aitan Alliance"
+ sc_alliance_desc: "Members of the [GetInternationalOrganizationType('swiss_confederation').GetName] may call each other to their side in their own expansion attempts. In case of an external invasion, all members are called to arms to defend their fellow comrades of the Confederation."
+ sc_united_war_efforts: "United War Efforts"
+ sc_united_war_efforts_desc: "The [GetInternationalOrganizationType('swiss_confederation').GetName] is similar to a singular political entity to all external states. Each war - be it offensive or defensive in nature - shall call the military of all the members of the Confederation."
+ sc_call_to_arms_conditions_tt: "[Custom('GetSCCallToArmsTooltip')]"
+ sc_call_to_arms_only_same_religion_tt: "$sc_call_to_arms_always_tt$ and the caller and country called to arms are of the same [religion|e]"
+ sc_call_to_arms_always_tt: "The enemy is NOT a member of [GetUniqueInternationalOrganization('swiss_confederation').GetName]"
+
+ sc_unification: "$A318_ADJ$ Unification"
+ sc_unification_desc: "The [ShowCultureGroupName('aitan_group')] lands have been splintered for far too long. If the people of the Alps wish to see prosperity and security, they have to unite under a single banner."
+ sc_unification_movement_event_happened_tt: "The [event|e] '#Y $flavor_swi.999.title$#!' has happened which has the following conditions:\n\n[ShowTriggerConditions('flavor_swi_999_trigger',PlayerScope.Self)]"
+ sc_unification_same_religion_tt: "Every member is either [ShowReligionName('catholic')], [ShowReligionName('lutheran')], or [ShowReligionName('calvinist')]"
+ sc_found_swiss_republic: "Found the $A318_ADJ$ $republic$"
+ sc_found_swiss_republic_desc: "The principles and methods of the [GetInternationalOrganizationType('swiss_confederation').GetName] are well received as every Canton enjoys having their voices heard. Yet, the decentralized nature of the confederation will always endanger the safety and security of the [ShowCultureGroupName('aitan_group')] people. It is time to unify the Confederation into a singular state while maintaining the [ShowGovernmentTypeName('republic')]."
+ sc_found_swiss_republic_specific_tt: "[THIS.GetCountry.GetName] unifies the [GetInternationalOrganizationType('swiss_confederation').GetName] to form the [GetCountry('A318').GetAdjective] [ShowGovernmentTypeName('republic')]"
+ sc_found_swiss_republic_tt: "The [GetInternationalOrganizationType('swiss_confederation').GetName] unifies into the [GetCountry('A318').GetAdjective] [ShowGovernmentTypeName('republic')]"
+ sc_found_swiss_monarchy: "Found the $A318_ADJ$ $monarchy$"
+ sc_found_swiss_monarchy_desc: "While it started as a republican union, the challenges the [GetInternationalOrganizationType('swiss_confederation').GetName] had to face have proven the superiority of a strong rule under a single Councillor. The future of the [ShowCultureGroupName('aitan_group')] people can only be ensured under the authority of a proper [ShowGovernmentTypeName('monarchy')] which shall replace the old Confederation."
+ sc_found_swiss_monarchy_specific_tt: "[THIS.GetCountry.GetName] unifies the [GetInternationalOrganizationType('swiss_confederation').GetName] to form the [GetCountry('A318').GetAdjective] [ShowGovernmentTypeName('monarchy')]"
+ sc_found_swiss_monarchy_tt: "The [GetInternationalOrganizationType('swiss_confederation').GetName] unifies into the [GetCountry('A318').GetAdjective] [ShowGovernmentTypeName('monarchy')]"
+ sc_found_swiss_theocracy: "Found the $A318_ADJ$ $theocracy$"
+ sc_found_swiss_theocracy_desc: "Neither the free will of the Republican votes nor the authoritarian power of a Monarchy has led the [GetInternationalOrganizationType('swiss_confederation').GetName] to the position it is now, but the will of the divine. Only as a unified [ShowGovernmentTypeName('theocracy')] can the [ShowCultureGroupName('aitan_group')] people prosper in this world."
+ sc_found_swiss_theocracy_specific_tt: "[THIS.GetCountry.GetName] unifies the [GetInternationalOrganizationType('swiss_confederation').GetName] to form the [GetCountry('A318').GetAdjective] [ShowGovernmentTypeName('theocracy')]"
+ sc_found_swiss_theocracy_tt: "The [GetInternationalOrganizationType('swiss_confederation').GetName] unifies into the [GetCountry('A318').GetAdjective] [ShowGovernmentTypeName('theocracy')]"
+
+ ########################
+ # Events – DHE flavor_swi (Swiss flavor)
+ ########################
+ flavor_swi.1.title: "The Achievements of [target_character.GetNameWithNoTooltip]"
+ flavor_swi.1.desc: "A central pillar in the establishment of the [ShowCultureGroupName('aitan_group')] Guard for the Holy See, [target_character.GetName] could serve us in other matters as well, if we are willing to bind him closer to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [target_character.GetNameWithNoTooltip], working for our government, could boost our reputation and open diplomatic avenues for us that where shut before."
+ flavor_swi.1.a: "What a brilliant man!"
+ flavor_swi.1.b: "That does not sound useful at all."
+ flavor_swi.1.historical_info: "Matthäus Schirner, bishop of Sitten since 1499, was the main instigator of the pro-papal policies in the Swiss Confederation during the War of the Holy League. Due to his involvement, Swiss troops were provided to the Pope permanently and he secured the ownership of Bellinzona for the Confederacy."
+
+ flavor_swi.2.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_swi.2.desc: "Rumors of a traveling physician, born into an illegitimate line of minor nobility, have reached our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. A rather unusual character, [target_character.GetName] was born in [ShowLocationName('schwyz')] and started traveling to further his studies. If we sponsor his practices, we could permanently secure his services."
+ flavor_swi.2.a: "Only practice makes perfect!"
+ flavor_swi.2.b: "His attitude has no place here."
+ flavor_swi.2.historical_info: "Theophrastus von Hohenheim, later renaming himself Paracelsus, was a physician and philosopher who spent most of his life in pursuit of universal knowledge. In 1527 and 1528 he spent his time in Basel, both as a physician and a teacher at the University of Basel. He was forced to leave the city, after disagreements about his teachings, which he held in German language and not in the usual Latin, and insulting judges during a trial. After leaving Basel, he continued his studies in Nürnberg, Merano, Augsburg, and Salzberg where he eventually succumbed to mercury poisoning in 1541."
+
+ flavor_swi.3.title: "#italic Codex Manesse#! Finished"
+ flavor_swi.3.desc: "The #italic Codex Manesse#!, a work which [target_artist.GetName] has been toiling at for decades, is finally ready to be delivered to the Manesse family, who serve as sponsors for [target_artist.GetHerHim] and [target_artist.GetHerHis] artistic endeavors. The #italic Codex#! contains several works of #italic Minnesang#! in the $central_german_dialect$ dialect, and records important events of the Hohenstaufer dynasty. While the #italic Codex#! is ready to be delivered now, the open nature of it will make it easy to commission future additions to the work."
+ flavor_swi.3.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_swi.100.title: "Centralization of the [GetUniqueInternationalOrganization('swiss_confederation').GetNameWithNoTooltip]"
+ flavor_swi.100.desc: "Originally an alliance between the many [ShowCultureGroupName('aitan_group')] cantons of the Swiss Plateau and the Alps, the [GetUniqueInternationalOrganization('swiss_confederation').GetName] has evolved into a functioning state with a great deal of internal politics and an external, unified front. From this day onwards, the [GetUniqueInternationalOrganization('swiss_confederation').GetNameWithNoTooltip] will no longer be just a loose bond, but a unified power led by [target_character.GetName] of [target_country.GetName], known as the [GetCountry('A318').GetLongName]."
+ flavor_swi.100.a: "May this lead to a prosperous future!"
+ sc_gain_cores_on_switzerland_proper_tt: "We gain a [core|e] in every location in [ShowAreaName('central_switzerland_area')], [ShowAreaName('eastern_switzerland_area')] and [ShowAreaName('western_switzerland_area')]"
+ sc_seize_subject_locations_tt: "Every [location|e] in these [areas|e] owned by any of our [subjects|e] which are NOT part of the [GetUniqueInternationalOrganization('swiss_confederation').GetName] get seized by us"
+ sc_unify_the_cantons_tt: "We unify [GetUniqueInternationalOrganization('swiss_confederation').GetName] into one entity"
+
+ flavor_swi.101.title: "$flavor_swi.100.title$"
+ flavor_swi.101.desc: "The votes have been cast. The [ShowCultureGroupName('aitan_group')] people let out their voices clear and loud. The old [GetInternationalOrganizationType('swiss_confederation').GetName] shall be unified into the singular state of [GetCountry('A318').GetName] under the watchful guidance of [target_character.GetName] - and we shall become part of it."
+ flavor_swi.101.a: "Long shall live the [GetCountry('A318').GetFlavorRank]!"
+ flavor_swi.101.b: "We will never bend our knee before anyone!"
+ sc_every_core_location_breaks_away_tt: "Every owned location which is a [core|e] of [target_country.GetName] breaks away from us"
+
+ flavor_swi.110.title: "The [GetUniqueInternationalOrganization('swiss_confederation').GetNameWithNoTooltip] and the [ShowSituationNameWithNoTooltip('reformation')]"
+ flavor_swi.110.desc: "[ShowSituationName('reformation')] spreads through [ShowContinentName('europe')] like a wildfire. Families, friends, and neighbors - once united in their faith - stand on opposing fronts. Religious conflicts have become a new norm, and even the [GetUniqueInternationalOrganization('swiss_confederation').GetName] is not spared from the tragedy as the [ShowCultureGroupName('aitan_group')] cantons turn on each other..."
+ flavor_swi.110.historical_info: "Similar to many other parts of Europe, so was Switzerland severely affected by the Reformation as several cantons embraced its ideas while others maintained a pro-Catholic stance. The influence of reformists such as Zwingli and Calvin drove the gap between the cantons even further which eventually led to the First (1529) and Second (1531) War of Kappel."
+ flavor_swi.110.a: "Uncertain times are ahead..."
+ sc_block_votes_on_non_religious_policies_tt: "Cannot propose any [law|e] other than [ShowLawName('sc_religious_affairs')]"
+ sc_religious_chaos_tt: "#R As long no [policy|e] for [ShowLawName('sc_religious_affairs')] has been enacted, [ShowLawName('sc_internal_politics')] and [ShowLawName('sc_war_politics')] are only in effect for members which follow each other's [religion|e]#!"
+
+ flavor_swi.111.title: "The Wars of [target_location.GetNameWithNoTooltip]"
+ flavor_swi.111.desc: "The increasing influence of [target_character.GetName] as well as the anti-tolerant [ShowPolicyName('sc_enforcing_religious_unity')] policy have left the [GetUniqueInternationalOrganization('swiss_confederation').GetName] in a state of religious and political unrest. $flavor_swi.111.desc.fallback$"
+ flavor_swi.111.desc.fallback: "[ShowReligionAdjective('catholic')] and [ShowReligionAdjective('lutheran')] members alike see each other with hostility. Such an encounter eventually escalated in [target_location.GetName], becoming the trigger for what will be known as the Wars of [target_location.GetNameWithNoTooltip]."
+ flavor_swi.111.historical_info: "The Wars of Kappel was a series of two armed conflicts near Kappel am Albis between Catholic and Protestant cantons. The first war (1529) was triggered by the increasing influence of Huldrych Zwingli and led to the foundation of the Christian Union, while the second war (1531) was caused by the refusal of the Catholics to aid the Protestant cantons in the Musso War against the Duchy of Milan. A mending of the relations between the Catholics and the Protestants would not occur until the end of the Sonderbund War of 1847."
+ flavor_swi.111.a: "Troubled times for the [GetUniqueInternationalOrganization('swiss_confederation').GetNameWithNoTooltip]"
+ sc_every_member_gains_force_convert_cb_tt: "Every member gains the [ShowCasusBelliName('cb_heretic')] against other heretic members"
+
+ flavor_swi.120.title: "The [GetUniqueInternationalOrganization('swiss_confederation').GetNameWithNoTooltip] and the [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip]"
+ flavor_swi.120.desc: "With the end of the great religious upheaval that engulfed not only the [GetUniqueInternationalOrganization('hre').GetName] but also much of [ShowContinentName('europe')], the cantons of the [GetUniqueInternationalOrganization('swiss_confederation').GetName] are reconsidering their loose relationship with the Empire. The members of the Confederation have suggested the topic of the [ShowLawName('sc_relations_with_hre')] to be further discussed..."
+ flavor_swi.120.historical_info: "The Swiss Confederation had been de jure part of the Holy Roman Empire ever since its inception. However, the Swiss cantons gained more and more autonomy over time, reducing the influence of the Holy Roman Emperor in the region in the process, making them de facto independent by 1499. The Treaty of Westphalia in 1648 recognized the independence of the Swiss Confederacy and confirmed the Swiss lands to be no longer part of the Empire."
+ flavor_swi.120.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ flavor_swi.121.title: "[GetUniqueInternationalOrganization('swiss_confederation').GetNameWithNoTooltip] leaves the Empire!"
+ flavor_swi.121.desc: "The [GetUniqueInternationalOrganization('swiss_confederation').GetName] has abandoned the Empire! Driven by dissatisfaction with the religious peace as well as weakening ties with Imperial institutions, the [ShowCultureGroupName('aitan_group')] have decided that membership in the [GetUniqueInternationalOrganization('hre').GetName] no longer serves their interests. "
+ flavor_swi.121.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ flavor_swi.999.title: "The [ShowCultureGroupNameWithNoTooltip('aitan_group')] Movement for Unification"
+ flavor_swi.999.desc: "Recent development in [ShowContinentName('europe')] as well as [ROOT.GetCountry.GetName] has sparked an unprecedented movement in the areas that are traditional land of the [GetUniqueInternationalOrganization('swiss_confederation').GetName]. With most of non-[ShowCultureGroupName('aitan_group')] states exiled from [ShowAreaName('central_switzerland_area')], [ShowAreaName('eastern_switzerland_area')], and [ShowAreaName('western_switzerland_area')], the people have voiced their desire for the unified nation-state of [GetCountry('A318').GetName]."
+ flavor_swi.999.historical_info: "Historically, a movement for unification never existed for the Swiss Confederation per se. Instead, Switzerland always was a loose alliance of self-governing cantons until the French invasion of Switzerland in 1798 during the French Revolutionary Wars. While the resulting Helvetic Republic and the succeeding Restored Swiss Confederation still held onto the principles of self-governing cantons, the republic was on an external level barely different from any other nation-state. With the creation of the federal constitution on the 12th of September 1848, the Swiss alliance of city-states gave birth to the first proper state of Switzerland."
+ flavor_swi.999.a: "The people have spoken!"
+ flavor_swi_999_trigger_at: "Is owned by a member of the [GetUniqueInternationalOrganization('swiss_confederation').GetName]"
+ sc_unification_movement_event_happens_tt: "Enables the [ShowLawName('sc_unification')] [law|e] for the [GetUniqueInternationalOrganization('swiss_confederation').GetName]"
+
+ flavor_swi.1000.title: "The Guild Constitution of [target_ruler.GetNameWithNoTooltip]"
+ flavor_swi.1000.desc: "The Guilds of [ShowLocationName('zurich')] won an important victory with the election of [target_ruler.GetName] in 1336 and achieved their due representation in the city council. [target_ruler.GetNameWithNoTooltip] swiftly implemented a new constitution to safeguard the rights of the guilds in the city council and break the stranglehold the old elites had over our administration."
+ flavor_swi.1000.a: "The Guild Constitution will guide our country."
+ flavor_swi.1000.b: "The Guilds need to be removed from the council."
+ flavor_swi.1000.historical_info: "The City Council of Zürich in 1335 was dominated by a few noble families and only the wealthiest of merchants, goldsmiths, silk weavers, and the masters of the mint. Following a coup orchestrated by the nobles and guild members of Zürich on the 7th of June 1336, Rudolf Brun was elected as the first mayor of the city. Directly after, Brun implemented the Guild Constitution, which reformed and reorganized the City Council with a balance of 26 members, 13 from the old elite of merchants and 13 from the previously excluded guilds."
+
+ flavor_swi.1001.title: "The Murder Night of [ShowLocationNameWithNoTooltip('zurich')]"
+ flavor_swi.1001.desc: "The old rulers of [ShowLocationName('zurich')] have tried to kill our blessed [target_ruler.GetName]!\n\nAfter their flight to Rapperswil, a nearby town connected by the Zürich Lake, they schemed and plotted their revenge and their return to [ShowLocationNameWithNoTooltip('zurich')]. Thankfully, [target_ruler.GetNameWithNoTooltip] enjoys high popularity among the guilds [target_ruler.GetHeShe] gave representation in the council. Especially the guild of the butchers rallied with such fervor against the traitors that they stood no chance in succeeding in their plot."
+ flavor_swi.1001.a: "[ROOT.GetCountry.GetReligion.GetGodName] bless their bloody trade."
+ flavor_swi.1001.historical_info: "After the Guild Revolution of 1336, 22 of the previous Council Members fled Zürich to the nearby, Habsburg-controlled, town of Rapperswil. From there, they undertook efforts to destabilize the government of Rudolf Brun in Zürich. These efforts culminated in the night of the 24th of February 1350, the so-called Murder Night of Zürich. When the Conspirators entered the city, let in by sympathizers from within Zürich, they met fierce opposition from Brun and the guilds, who had been informed about the plot before. After a short, but fierce fight, the conspirators were defeated and the victory of the Guild Revolution was secured."
+
+ flavor_swi.1002.title: "The Sack of Rapperswil"
+ flavor_swi.1002.desc: "We have tolerated the conspirators who fled to Rapperswil for the longest time after our Guild Revolution. Until now, there was not much we needed to do, as we were satisfied with our rule over [ShowLocationName('zurich')]. But with their vile aggression, trying to assassinate [target_ruler.GetName], we maybe should root out the problem once and for all. As Rapperswil is under the control of [target_location.GetOwner.GetName], the conflict could further escalate and draw their ire onto us."
+ flavor_swi.1002.a: "Rapperswil must pay."
+ swi_sacked_our_town: "Sacked our Town"
+ flavor_swi.1002.b: "It is too risky."
+ flavor_swi.1002.historical_info: "In direct reaction to the attempted coup, Rudolf Brun marched onto the town of Rapperswil, which supported the exiles of Zürich. Fearing the life of the Count of Rapperswil, Johannes von Habsburg-Laufenburg, the town surrendered and was devastated by Brun's troops. Under the mediation of Ludwig von Wittelsbach, Margrave of Brandenburg, Peace was eventually restored."
+
+ flavor_swi.1003.title: "Return of the Exiles"
+ flavor_swi.1003.desc: "With the failure of the reforms of [target_ruler.GetName], the exiles who found refuge in the town of Rapperswil have gained significant support among the council members of [ShowLocationName('zurich')]. On a cloudy night, they forced entry into the city and assassinated [target_ruler.GetNameWithNoTooltip] in [target_ruler.GetHerHis] sleep. With [target_ruler.GetNameWithNoTooltip] dead, the exiles elevated [target_new_ruler.GetNameWithNoTooltip] to lead [ShowLocationNameWithNoTooltip('zurich')] and our government."
+ flavor_swi.1003.a: "The old order is finally restored."
+
+ flavor_swi.1100.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_swi.1100.desc: "Usually, the local priests of [ROOT.GetCountry.GetName] are appointed by our bishop, however, sometimes the locals reject this recommendation and select their own favorite. While these are not uncommon, the appointment of [target_character.GetName] stands out. [target_character.GetNameWithNoTooltip], born among the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], is highly regarded among our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] for his plain, yet relatable sermons and has quickly risen to local fame."
+ flavor_swi.1100.a: "What a skilled theologian!"
+ flavor_swi.1100.b: "Skilled or not, we should follow the proper rules."
+ flavor_swi.1100.historical_info: "Huldrych Zwingli was appointed as the local priest for the Glarus Parish in 1506. He was appointed by the demand of the local population, against the recommended Henrich Göldi of Zürich, who the Glarner population feared to be only interested in the monetary exploitation of the parish. Being born into a local peasant family and showing himself to be an approachable priest, Zwingli quickly rose to high popularity."
+
+ flavor_swi.1101.title: "[target_character.GetNameWithNoTooltip] Accused of Heresy"
+ flavor_swi.1101.desc: "The sermons of [target_character.GetName] changed over the last couple of years. Where he initially preached in accordance with our doctrine, he now tends to strife far from it. More and more, his speeches include criticism of our rituals like fasting and clerical celibacy. A confrontation about his actions could spark an outrage among his followers, but might be necessary if we want to preserve the integrity of our faith."
+ flavor_swi.1101.a: "We should hold a fair disputation."
+ flavor_swi.1101.b: "Remove him from his post already!"
+ flavor_swi.conversion.tt: "Some of our [pops|e] in [ROOT.GetCountry.GetName] will convert to [ShowReligionName('lutheran')]."
+ flavor_swi.1101.historical_info: "A couple of years after he started preaching in Switzerland, Huldrych Zwingli was accused of heresy by members of the Dominican Order of Zürich. To investigate these harsh accusations, the great council of Zürich called for a disputation on the 29. of January 1523. Gathered before 600 theologians, including the renowned Johann Faber, Zwingli was able to defend his position and was proclaimed the victor of the debate by the council."
+
+ flavor_swi.1102.title: "The Disputation of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+ flavor_swi.1102.desc: "[target_character.GetName] put up a brilliant defense of his points in the face of other members of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. His opponents, the defenders of the [ROOT.GetCountry.GetReligion.GetAdjective] faith, were only able to argue based on the authority of tradition and customs, which was thoroughly unconvincing to our judges."
+ flavor_swi.1102.a: "A resounding success for [target_character.GetNameWithNoTooltip]!"
+ flavor_swi.1102.b: "We can not accept this!"
+ flavor_swi.large_conversion.tt: "A lot of our [pops|e] in [ROOT.GetCountry.GetName] will convert to [ShowReligionName('lutheran')]."
+
+ flavor_swi.1103.title: "The Influence of [target_character.GetNameWithNoTooltip] Spreads"
+ flavor_swi.1103.desc: "With the continuous effect of [target_character.GetName] and other preachers who have joined his cause, [ROOT.GetCountry.GetName] is now a predominant [ShowReligionAdjective('lutheran')] country. Due to their widespread influence, we will have no choice but to proclaim [ShowReligionNameWithNoTooltip('lutheran')] as our faith."
+ flavor_swi.1103.a: "This was inevitable."
+
+ flavor_swi.1104.title: "The [ShowReligionAdjectiveWithNoTooltip('lutheran')] Support for [target_character.GetNameWithNoTooltip]"
+ flavor_swi.1104.desc: "Our population has not taken kindly to our hostile treatment of [target_character.GetName]. They have organized their protests and started to destroy religious images and statues in the churches of our land. These Iconoclasts demand [target_character.GetNameWithNoTooltip] be released and allowed to preach again."
+ flavor_swi.1104.a: "We will crush the revolt!"
+ flavor_swi.1104.b: "Give in to their demands."
+ zwingli_support_rebels: "Iconoclast Revolt of Zwingli"
+ zwingli_support_rebels_joining: "All [ShowReligionAdjective('lutheran')] [pops|e] in [ROOT.GetCountry.GetNameWithNoTooltip] lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e] and join [target_zwingli_support_rebels.GetName]."
+
+ flavor_swi.1200.title: "The [ShowBuildingTypeNameWithNoTooltip('swi_collegium_helveticum')]"
+ flavor_swi.1200.desc: "Our people lacked a proper institution to educate members of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Thankfully, a deal has been proposed to establish a separate institution dedicated to the theological education of the [ShowCultureName('high_alemannic')] people in [ShowLocationName('milano')]."
+ flavor_swi.1200.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ swi_collegium_helveticum_explanation_tt: "As long as this building exists, talented clergymen will appear for [ShowCultureGroupName('aitan_group')] countries."
+ flavor_swi.1200.b: "We should pursue other options."
+ flavor_swi.1200.historical_info: "The Education of Swiss clergymen in Milan began with the initiative of the Milanese Archbishop Carlo Borromeo and Pope Pius V in 1568. The Collegium Helveticum was later established by Pope Gregory XIII. The selection of the up to 75 attendants was entirely in the hands of the catholic Swiss Cantons."
+
+ flavor_swi.1201.title: "A Graduate of the [ShowBuildingTypeNameWithNoTooltip('swi_collegium_helveticum')]"
+ flavor_swi.1201.desc: "We have sent multiple talented members of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] to the [ShowBuildingTypeName('swi_collegium_helveticum')], as our deal allows. Now one of these has finished his studies and returns to us, ready to serve our needs."
+ flavor_swi.1201.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

@@ -1,0 +1,124 @@
+﻿#Age of Traditions#
+A01_the_eternal_empire = {
+	age = age_1_traditions
+	potential = { 
+		has_or_had_tag = A01
+	}
+	global_integration_speed_modifier = 0.1
+
+	requires = organized_religion
+
+}
+
+A01_imperial_seductresses_a_codex = {
+	age = age_1_traditions
+	potential = { 
+		has_or_had_tag = A01
+	}
+	has_cultural_maintenance = yes
+	num_possible_artists = 1
+
+	requires = scholasticism
+}
+
+
+#Age of Renaissance#
+A01_expand_ynarheimian_guard_advance = {
+	age = age_2_renaissance
+	potential = { has_or_had_tag = A01 }
+	num_of_ynarheimian_units = 4
+
+	requires = gunpowder_advance
+}
+
+A01_the_new_forging = {
+	age = age_2_renaissance
+	potential = { 
+		has_or_had_tag = A01
+	}
+	army_heavy_infantry_power = 0.1
+
+	requires = medieval_military
+}
+
+A01_new_auxilia = {
+	age = age_2_renaissance
+	potential = {
+		has_or_had_tag = A01
+	}
+	hire_mercenary_premium_cost_modifier  = -0.10
+	
+	requires = supply_depot_advance_age_2_renaissance
+	icon = offensive_army
+}
+
+A01_the_mask = {
+	age = age_2_renaissance
+	 
+	
+	potential = { has_or_had_tag = A01 }
+	
+	diplomatic_spending_cost = -0.005
+
+	requires = diplomatic_range_age_1
+}
+
+
+#Age of Discovery# 
+A01_archivum_vitae = {
+	age = age_3_discovery
+	icon = genoese_banking_traditions
+
+	potential = {
+		has_or_had_tag = A01
+	}
+	stability_cost_efficiency = 0.1
+
+	requires = study_institutions_advance
+}
+
+A01_what_can_change_the_nature_of_a_man = {
+	age = age_3_discovery
+	icon = genoese_banking_traditions
+
+	potential = {
+		has_or_had_tag = A01
+	}
+	embrace_institution_cost_modifier = -0.1
+
+	requires = A01_archivum_vitae
+}
+
+
+A01_bread_and_circuses = {
+	age = age_3_discovery
+
+	potential = { has_or_had_tag = A01 }
+
+	requires = crown_power_advance_discovery
+	
+	icon = pun_breadbasket_of_india
+
+	global_estate_target_satisfaction = small_permanent_target_satisfaction
+
+}
+
+
+
+#Age of Reformation#
+A01_wandering_scribe = {
+	age = age_4_reformation
+
+	requires = global_trade_advance
+
+	potential = {
+		has_or_had_tag = A01
+	}
+	global_institution_growth_modifier = 0.2
+}
+
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

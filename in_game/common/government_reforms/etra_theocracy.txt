@@ -1,0 +1,31 @@
+﻿aitan_college_reform = {
+	age = age_1_traditions
+	government = theocracy
+	major = yes
+
+	potential = {
+		has_reform = government_reform:aitan_college_reform
+	}
+	
+	locked = {
+		has_reform = government_reform:aitan_college_reform
+	}
+
+	
+	country_modifier = {
+		global_peasants_estate_power = 1
+		global_nobles_estate_power = -0.25
+		global_production_efficiency = large_production_efficiency_bonus
+		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+		nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_free_subjects = societal_value_monthly_move
+		peasants_estate_can_participate_in_parliament = yes
+		government_reform_slots = 1
+		blocked_from_conversion = yes
+	}
+	on_activate = {
+		change_heir_selection = heir_selection:professor_election
+	}
+	years = 2
+}

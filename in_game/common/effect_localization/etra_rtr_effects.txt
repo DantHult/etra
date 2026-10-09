@@ -1,0 +1,71 @@
+﻿etra_adjust_pre_rtr_modifiers_text = {
+	global = etra_worsen_pre_rtr_modifiers
+	global_neg = etra_improve_pre_rtr_modifiers
+	first = first_etra_worsen_pre_rtr_modifiers
+	first_neg = first_etra_improve_pre_rtr_modifiers
+	third = third_etra_worsen_pre_rtr_modifiers
+	third_neg = third_etra_improve_pre_rtr_modifiers
+	global_past = past_etra_worsen_pre_rtr_modifiers
+	global_past_neg = past_etra_improve_pre_rtr_modifiers
+	first_past = first_past_etra_worsen_pre_rtr_modifiers
+	first_past_neg = first_past_etra_improve_pre_rtr_modifiers
+	third_past = third_past_etra_worsen_pre_rtr_modifiers
+	third_past_neg = third_past_etra_improve_pre_rtr_modifiers
+}
+
+etra_rtr_change_allegiance_points = {
+	global = etra_rtr_change_allegiance_points
+	global_neg = neg_etra_rtr_change_allegiance_points
+	first = first_etra_rtr_change_allegiance_points
+	first_neg = first_neg_etra_rtr_change_allegiance_points
+	third = third_etra_rtr_change_allegiance_points
+	third_neg = third_neg_etra_rtr_change_allegiance_points
+	global_past = past_etra_rtr_change_allegiance_points
+	global_past_neg = past_neg_etra_rtr_change_allegiance_points
+	first_past = first_past_etra_rtr_change_allegiance_points
+	first_past_neg = first_past_neg_etra_rtr_change_allegiance_points
+	third_past = third_past_etra_rtr_change_allegiance_points
+	third_past_neg = third_past_neg_etra_rtr_change_allegiance_points
+}
+
+etra_rtr_lose_competent_characters = {
+	global = etra_rtr_lose_competent_characters
+	first = first_etra_rtr_lose_competent_characters
+	third = third_etra_rtr_lose_competent_characters
+	global_past = past_etra_rtr_lose_competent_characters
+	first_past = first_past_etra_rtr_lose_competent_characters
+	third_past = third_past_etra_rtr_lose_competent_characters
+}
+
+etra_rtr_core_all_of_china = {
+	global = etra_rtr_core_all_of_china
+	first = etra_rtr_core_all_of_china
+	third = etra_rtr_core_all_of_china
+	global_past = etra_rtr_core_all_of_china
+	first_past = etra_rtr_core_all_of_china
+	third_past = etra_rtr_core_all_of_china
+}
+
+etra_rtr_gain_annex_cb_on_china = {
+	global = etra_rtr_gain_annex_cb_on_china
+	first = etra_rtr_gain_annex_cb_on_china
+	third = etra_rtr_gain_annex_cb_on_china
+	global_past = etra_rtr_gain_annex_cb_on_china
+	first_past = etra_rtr_gain_annex_cb_on_china
+	third_past = etra_rtr_gain_annex_cb_on_china
+}
+
+change_iboric_authority_text = {
+	global = ADD_IBORIC_AUTHORITY
+	first = FIRST_ADD_IBORIC_AUTHORITY
+	third = THIRD_ADD_IBORIC_AUTHORITY
+	global_past = PAST_ADD_IBORIC_AUTHORITY
+	first_past = FIRST_PAST_ADD_IBORIC_AUTHORITY
+	third_past = THIRD_PAST_ADD_IBORIC_AUTHORITY
+	global_neg = SUBTRACT_IBORIC_AUTHORITY
+	first_neg = FIRST_SUBTRACT_IBORIC_AUTHORITY
+	third_neg = THIRD_SUBTRACT_IBORIC_AUTHORITY
+	global_past_neg = PAST_SUBTRACT_IBORIC_AUTHORITY
+	first_past_neg = FIRST_PAST_SUBTRACT_IBORIC_AUTHORITY
+	third_past_neg = THIRD_PAST_SUBTRACT_IBORIC_AUTHORITY
+}

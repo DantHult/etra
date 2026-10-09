@@ -1,0 +1,226 @@
+﻿verminus_wars = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_verminus_wars
+	international_organization_type = verminus_realms
+
+	can_start = {
+		verminus_wars_can_start_trigger = yes
+	}
+
+	can_end = {
+		verminus_wars_end_trigger = yes
+	}
+
+	visible = {
+		OR = {
+			is_member_of_international_organization = international_organization:verminus_realms
+			has_presence_in = region:godhand_region
+		}
+	}
+
+	on_start = {
+		verminus_wars_init_timers = yes
+		verminus_wars_reevaluate_contenders = yes
+		international_organization:verminus_realms ?= {
+			every_international_organization_member = {
+				trigger_event_non_silently = verminus_wars.1
+			}
+		}
+		region:godhand_region = {
+			every_country_with_capital_in_geography = {
+				limit = {
+					is_subject = no
+					NOT = { is_member_of_international_organization = international_organization:verminus_realms }
+				}
+				trigger_event_non_silently = verminus_wars.3
+			}
+		}
+	}
+
+	on_monthly = {
+		verminus_wars_reevaluate_contenders = yes
+
+		random_list = {
+			20 = {
+				trigger = {
+					exists = international_organization:verminus_realms
+				}
+				international_organization:verminus_realms = {
+					random_international_organization_member = {
+						trigger_event_non_silently = verminus_wars.4
+					}
+				}
+			}
+			20 = {
+				trigger = {
+					international_organization:verminus_realms = {
+						any_international_organization_member = {
+							at_war = no
+						}
+					}
+				}
+				international_organization:verminus_realms = {
+					random_international_organization_member = {
+						trigger_event_non_silently = verminus_wars.5
+					}
+				}
+			}
+			5 = {
+				trigger = {
+					current_year >= 1345
+					NOT = { has_global_variable = verminus_ratticar_come_of_age }
+				}
+				c:A13 ?= {
+					trigger_event_non_silently = verminus_wars.11
+				}
+			}
+			5 = {
+				international_organization:verminus_realms = {
+					random_international_organization_member = {
+						limit = {
+							NOT = { tag = A13 }
+						}
+						trigger_event_non_silently = verminus_wars.10
+					}
+				}
+			}
+			150 = { }
+		}
+	}
+
+	map_color = {
+		if = {
+			limit = {
+				OR = {
+					international_organization:verminus_realms.leader_country = prev.owner
+					situation:verminus_wars.var:verminus_threatening_contender = prev.owner
+					situation:verminus_wars.var:verminus_second_contender = prev.owner
+					situation:verminus_wars.var:verminus_third_contender = prev.owner
+					situation:verminus_wars.var:verminus_fourth_contender = prev.owner
+					situation:verminus_wars.var:verminus_fifth_contender = prev.owner
+				}
+			}
+			value = owner.country_color
+		}
+		else = {
+			value = define:NMapColors|DEFAULT_COLOR
+		}
+	}
+
+	legend_key = {
+		limit = {
+			OR = {
+				international_organization:verminus_realms.leader_country = prev.owner
+				situation:verminus_wars.var:verminus_threatening_contender = prev.owner
+				situation:verminus_wars.var:verminus_second_contender = prev.owner
+				situation:verminus_wars.var:verminus_third_contender = prev.owner
+				situation:verminus_wars.var:verminus_fourth_contender = prev.owner
+				situation:verminus_wars.var:verminus_fifth_contender = prev.owner
+			}
+		}
+
+		desc = "LOCATION_OWNER_NAME"
+		color = owner.country_color
+	}
+
+	on_ended = {
+		if = {
+			limit = {
+				exists = international_organization:verminus_realms
+				international_organization:verminus_realms = {
+					any_international_organization_member = {
+						is_verminus_wars_unifier = yes
+					}
+				}
+			}
+			international_organization:verminus_realms = {
+				ordered_international_organization_member = {
+					limit = { is_verminus_wars_unifier = yes }
+					order_by = {
+						add = {
+							value = country_total_army_levy_size
+						}
+						multiply = country_rank_level
+						add = {
+							value = army_size
+							multiply = 10
+						}
+						add = {
+							value = country_total_navy_levy_size
+							divide = 2
+						}
+						add = {
+							value = monthly_income_trade_and_tax
+							divide = 10
+						}
+						if = {
+							limit = { is_great_power = yes }
+							add = 100
+						}
+					}
+					max = 1
+					check_range_bounds = no
+					verminus_wars_unify_winner = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = international_organization:verminus_realms
+				international_organization:verminus_realms = { total_members <= 1 }
+				exists = international_organization:verminus_realms.leader_country
+			}
+			international_organization:verminus_realms.leader_country = {
+				verminus_wars_unify_winner = yes
+			}
+		}
+		else_if = {
+			limit = {
+				exists = situation:verminus_wars.var:verminus_strongest_contender
+			}
+			situation:verminus_wars.var:verminus_strongest_contender = {
+				verminus_wars_unify_winner = yes
+			}
+		}
+		else_if = {
+			limit = {
+				exists = international_organization:verminus_realms.leader_country
+			}
+			international_organization:verminus_realms.leader_country = {
+				verminus_wars_unify_winner = yes
+			}
+		}
+
+		verminus_wars_save_losers_list = yes
+
+		international_organization:verminus_realms ?= {
+			every_international_organization_member = {
+				limit = {
+					this != situation:verminus_wars.var:verminus_wars_winner
+				}
+				trigger_event_non_silently = verminus_wars.21
+			}
+		}
+
+		situation:verminus_wars.var:verminus_wars_winner ?= {
+			trigger_event_non_silently = verminus_wars.2
+		}
+
+		region:godhand_region = {
+			every_country_with_capital_in_geography = {
+				limit = {
+					is_subject = no
+					NOT = { is_member_of_international_organization = international_organization:verminus_realms }
+				}
+				trigger_event_non_silently = verminus_wars.200
+			}
+		}
+
+		if = {
+			limit = {
+				exists = international_organization:verminus_realms
+			}
+			destroy_international_organization = { target = international_organization:verminus_realms }
+		}
+	}
+}

@@ -1,0 +1,66 @@
+﻿is_tajjev_massin = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 30
+}
+
+tajjev_wants_to_play = {
+	game_data = {
+		category = character
+	}
+	force_allow_as_leader = yes
+	auto_conquer_at_war = yes
+	global_army_levy_size_modifier = 0.5
+	max_war_exhaustion = -5
+	aggressiveness_modifier = 1
+	character_life_expectancy = 20
+}
+
+rise_of_tajjev_impact = {
+	game_data = {
+		category = country
+	}
+	blocks_country_formation = yes
+	aggressiveness_modifier = 0.5
+}
+
+roj_legacy_exile = {
+	game_data = {
+		category = country
+	}
+	auto_conquer_at_war = yes
+	antagonism_received_modifier = -0.1
+	land_morale_modifier = 0.15
+}
+
+roj_legacy_highlands = {
+	game_data = {
+		category = country
+	}
+	monthly_legitimacy = 0.1
+	global_separatism = -0.05
+	land_morale_modifier = 0.15
+}
+
+roj_tajjev_scare = {
+	game_data = {
+		category = location
+		decaying = yes
+	}
+	local_defensive = -0.5
+	occupation_time = -0.5
+	local_garrison_growth = -0.5
+	local_levy_size_modifier = -0.25
+	local_manpower_modifier = -0.25
+	local_sailors_modifier = -0.25
+}
+
+roj_tajjev_core_region = {
+	game_data = {
+		category = location
+	}
+	local_unrest = -0.2
+	local_devastation_recovery = 0.005
+	local_monthly_prosperity = 0.001
+}

@@ -1,0 +1,12 @@
+﻿# ############################
+# # age_2_renaissance
+# ############################
+erlfolk_endurance_of_the_long_dark = {
+	age = age_2_renaissance
+	icon = smooth_administration
+	potential = {
+		culture = culture:erlfolk_culture
+	}
+	stability_investment = small_stability_investment
+	requires = renaissance_court
+}

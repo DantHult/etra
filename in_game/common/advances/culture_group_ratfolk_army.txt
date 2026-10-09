@@ -1,0 +1,141 @@
+# Ratfolk culture-group army unlocks
+# Injects Ratfolk infantry/cavalry twins into the shared vanilla army advance tree.
+# Recruitment remains gated by unit country_potential (ratfolk_group primary culture).
+
+######################
+# Infantry
+######################
+
+INJECT:unlock_footmen_advance = {
+	unlock_unit = a_ratfolk_footmen
+	unlock_levy = levy_a_ratfolk_footmen
+}
+
+INJECT:unlock_archers_advance = {
+	unlock_unit = a_ratfolk_archers
+}
+
+INJECT:unlock_feudal_levy_advance = {
+	unlock_levy = levy_a_ratfolk_feudal_levy
+}
+
+INJECT:unlock_men_at_arms_advance = {
+	unlock_unit = a_ratfolk_men_at_arms
+	unlock_levy = levy_a_ratfolk_men_at_arms
+}
+
+INJECT:unlock_crossbowmen_advance = {
+	unlock_unit = a_ratfolk_crossbowmen
+}
+
+INJECT:unlock_handgonners_advance = {
+	unlock_unit = a_ratfolk_handgonners
+}
+
+INJECT:unlock_peasant_levy_advance = {
+	unlock_levy = levy_a_ratfolk_peasant_levy
+}
+
+INJECT:unlock_halberdiers_advance = {
+	unlock_unit = a_ratfolk_halberdiers
+}
+
+INJECT:unlock_early_arquebusiers_advance = {
+	unlock_unit = a_ratfolk_early_arquebusiers
+}
+
+INJECT:unlock_matchlock_levy = {
+	unlock_levy = levy_a_ratfolk_matchlock_levy
+}
+
+INJECT:unlock_arquebusiers_advance = {
+	unlock_unit = a_ratfolk_arquebusiers
+}
+
+INJECT:unlock_pikemen_advance = {
+	unlock_unit = a_ratfolk_pikemen
+}
+
+INJECT:unlock_flintlock_levy = {
+	unlock_levy = levy_a_ratfolk_flintlock_levy
+}
+
+INJECT:unlock_hunters_advance = {
+	unlock_unit = a_ratfolk_hunters
+}
+
+INJECT:unlock_musketeers_advance = {
+	unlock_unit = a_ratfolk_musketeers
+}
+
+INJECT:militiamen_advance = {
+	unlock_levy = levy_a_ratfolk_militiamen
+}
+
+INJECT:unlock_sharpshooters_advance = {
+	unlock_unit = a_ratfolk_sharpshooters
+}
+
+INJECT:unlock_fusiliers_advance = {
+	unlock_unit = a_ratfolk_fusiliers
+}
+
+INJECT:unlock_grenadiers_advance = {
+	unlock_unit = a_ratfolk_grenadiers
+}
+
+INJECT:conscription_advance = {
+	unlock_levy = levy_a_ratfolk_conscripts
+}
+
+######################
+# Cavalry
+######################
+
+INJECT:unlock_horsemen_advance = {
+	unlock_unit = a_ratfolk_horsemen
+}
+
+INJECT:unlock_armored_horsemen_advance = {
+	unlock_unit = a_ratfolk_armored_horsemen
+}
+
+INJECT:unlock_cavalry_advance = {
+	unlock_unit = a_ratfolk_cavalrymen
+}
+
+INJECT:unlock_heavy_cavalry_advance = {
+	unlock_unit = a_ratfolk_heavy_cavalrymen
+}
+
+INJECT:unlock_light_lancers_advance = {
+	unlock_unit = a_ratfolk_light_lancers
+}
+
+INJECT:unlock_lancers_advance = {
+	unlock_unit = a_ratfolk_lancers
+}
+
+INJECT:unlock_pistoleers_advance = {
+	unlock_unit = a_ratfolk_pistoleers
+}
+
+INJECT:unlock_heavy_lancers_advance = {
+	unlock_unit = a_ratfolk_heavy_lancers
+}
+
+INJECT:unlock_hussars_advance = {
+	unlock_unit = a_ratfolk_hussars
+}
+
+INJECT:unlock_gallop_cavalry_advance = {
+	unlock_unit = a_ratfolk_gallop_cavalry
+}
+
+INJECT:unlock_light_dragoons_advance = {
+	unlock_unit = a_ratfolk_light_dragoons
+}
+
+INJECT:unlock_cuirassiers_advance = {
+	unlock_unit = a_ratfolk_cuirassiers
+}

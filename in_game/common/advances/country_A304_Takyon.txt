@@ -1,0 +1,23 @@
+﻿#Age of Traditions#
+A304_the_storm_peaks = {
+	age = age_1_traditions
+	icon = arduous_terrain
+	potential = {
+		has_or_had_tag = A304
+	}
+	mountains_proximity_impact = -0.33
+	hills_proximity_impact = -0.33
+	plateau_proximity_impact = -0.33
+	global_hostile_attrition = 0.25
+
+	requires = scriptorium_advance
+}
+
+#Age of Discovery# 
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#

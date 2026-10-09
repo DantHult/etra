@@ -1,0 +1,2694 @@
+DUMMY = {
+	color = RGB { 40 40 40 }
+	color2 = RGB { 110 27 27 }
+}
+PIR = {
+	color = RGB { 116 143 139 }
+	color2 = RGB { 110 27 27 }
+}
+MER = {
+	color = RGB { 72 85 83 }
+	color2 = RGB { 110 27 27 }
+}
+
+
+A01 = { #Moran Imperium
+	color = RGB { 70 20 36 }
+
+	culture_definition = novus_moran_culture
+	religion_definition = imperial_creeds
+
+	description_category = military
+	difficulty = 2
+
+	unit_color0 = hsv360 { 350 77 53 }
+	unit_color1 = yellow
+	unit_color2 = map_BYZ	
+}
+
+A02 = { #Scarlet Order
+	color = RGB { 255 36 0 } #new color
+
+	culture_definition = marcheur_culture
+	religion_definition = manyfold
+
+	description_category = military
+	difficulty = 3
+	
+}
+
+A03 = { #Free League of Ventura
+	color = map_USA
+	color2 = map_USA
+
+	culture_definition = venturian_culture
+	religion_definition = manyfold
+}
+
+A04 = {
+	color = RGB { 55 69 106 }
+
+	culture_definition = rovina_culture
+	religion_definition = manyfold
+}
+
+A05 = { 
+	color = RGB { 173 176 113 }
+
+	culture_definition = venturian_culture
+	religion_definition = manyfold
+
+}
+
+A06 = { 
+	color = RGB { 176 176 6 }
+
+	culture_definition = venturian_culture
+	religion_definition = manyfold
+}
+
+A07 = { #
+	color = RGB { 244 193 37 }
+
+	culture_definition = venturian_culture
+	religion_definition = manyfold
+}
+
+A08 = {
+	color = RGB { 135 138 192 }
+
+	culture_definition = venturian_culture
+	religion_definition = manyfold
+
+}
+
+A09 = { #Cerim
+	color = RGB { 144 44 144 }
+
+	culture_definition = vivum_moran_culture
+	religion_definition = imperial_creeds
+}
+
+A10 = { #Iuvenia
+	color = luccinan_blue
+
+	culture_definition = fluviolander
+	religion_definition = manyfold
+}
+
+A11 = { #The Sanguine Daughters
+	color = RGB { 90 0 0 } #new color
+
+
+	culture_definition = marcheur_culture
+	religion_definition = manyfold
+
+}
+
+A12 = { #The Eternal Watch
+	color = RGB { 29 20 20 } #new color
+	culture_definition = marcheur_culture
+	religion_definition = manyfold
+}
+
+
+A13 = { #rattopaese
+	color = hsv360 { 245 40 150 }
+
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A14 = {
+	color = hsv360 { 200 85 62 }
+
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A16 = {
+	color = hsv { 0.58 0.71 0.38 }
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A17 = {
+	
+	color = hsv360 { 25 84 90 }
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A18 = { # Ormond
+	color = map_ORD
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A15 = { # Desmond
+	color = map_DMS
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A19 = { # Kildare
+	color = map_KID
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A20 = { # Beare
+	color = map_BEA
+	color2 = RGB { 16 41 150 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A21 = {
+	color = hsv360 { 79 95 60 }
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A22 = {
+	color = hsv360 { 189 47 80 }
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A23 = {
+	color = hsv360 { 0 0 40 }
+	color2 = RGB { 255 255 255 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+A24 = {
+	color = hsv360 { 0 20 93  }
+	color2 = RGB { 16 41 202 }
+
+	culture_definition = rattolini_culture
+	religion_definition = manyfold
+}
+
+
+A25 = {
+	color = RGB { 178 45 187 }
+	
+	culture_definition = koth_culture
+	religion_definition = manyfold
+}
+
+A26 = {
+	color = RGB { 178 145 87 }
+	
+	culture_definition = late_moran_culture
+	religion_definition = imperial_creeds
+}
+
+A27 = {
+	color = RGB { 75 110 102 }
+	
+	culture_definition = thanok_culture
+	religion_definition = manyfold
+}
+
+A28 = {
+	color = RGB { 220 150 158 }
+	
+	culture_definition = rovina_culture
+	religion_definition = manyfold
+}
+
+A29 = {
+	color = RGB { 160 120 200 }
+	
+	culture_definition = rovina_culture
+	religion_definition = manyfold
+}
+
+A30 = { #kalistra
+	color = RGB { 35 200 15 }
+
+	culture_definition = venturian_culture
+	religion_definition = manyfold
+
+}
+
+
+A31 = { #Louirte
+	color = RGB { 0 200 255 }
+
+	culture_definition = salt_sordrenic_culture
+	religion_definition = manyfold
+
+}
+A32 = { #Druwen
+	color = RGB { 238 0 13 }
+
+	culture_definition = pantagrins_culture
+	religion_definition = manyfold
+
+}
+
+A33 = { #Stoeste
+	color = RGB { 112 0 13 }
+
+	culture_definition = salt_sordrenic_culture
+	religion_definition = manyfold
+
+}
+A34 = { #Plelme
+	color = RGB { 216 121 139 }
+
+	culture_definition = salt_sordrenic_culture
+	religion_definition = manyfold
+
+}
+A35 = { #Nanlque
+	color = RGB { 93 194 122 }
+
+	culture_definition = salt_sordrenic_culture
+	religion_definition = manyfold
+
+}
+A36 = { #Sonkst
+	color = RGB { 166 125 154 }
+
+	culture_definition = salt_sordrenic_culture
+	religion_definition = manyfold
+
+}
+
+A37 = { #Getru
+	color = RGB { 75 140 165 }
+
+	culture_definition = lutin_culture
+	religion_definition = manyfold
+
+}
+A38 = { #Brelm
+	color = RGB { 218 155 75 }
+
+	culture_definition = lutin_culture
+	religion_definition = manyfold
+
+}
+
+A39 = { #Piurdre
+	color = RGB { 187 206 247 }
+
+	culture_definition = stone_sordrenic_culture
+	religion_definition = manyfold
+
+}
+
+
+A40 = { #Toul
+	color = RGB { 247 186 206 }
+
+	culture_definition = stone_sordrenic_culture
+	religion_definition = manyfold
+
+}
+
+A41 = { #Sunthramarke
+	color = RGB { 255 213 51 }
+
+	culture_definition = stone_sordrenic_culture
+	religion_definition = manyfold
+
+}
+#A42 - Sordren
+
+A43 = { #Milgearth
+	color = RGB { 170 255 255 }
+
+	culture_definition = ebiam_culture
+	religion_definition = manyfold
+
+}
+
+
+A44 = { #Crelzerte Lt: New City
+	color = RGB { 255 102 0 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+
+}
+
+A45 = { #Guarden Garden + Guardian
+	color = RGB { 20 90 30 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+
+}
+
+A46 = { #Wryne Wayne + Wryne
+	color = RGB { 50 60 150 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+}
+
+
+A47 = {#Guarden City 
+	color = RGB { 190 110 10 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+}
+
+A48 = { #Euinkors # Trans: Squire's Land Heavily Corrupted Yonkers
+	color = RGB { 190 230 255 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+}
+
+A49 = { #Élisa LT: Elisabeth shortened
+	color = RGB { 35 253 153 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+
+}
+A50 = { #Emarvine LT: Emar's Vine's
+	color = RGB { 192 70 100 }
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+
+}
+
+A51 = { #Heartwoods High Elves
+	color = RGB { 75 40 180 }
+	culture_definition = lutin_culture
+	religion_definition = manyfold
+}
+
+A52 = { #the regency
+	color = RGB { 20 20 255 }
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+
+}
+
+A53 = { #Teron
+	color = RGB { 255 213 91 }
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+
+}
+
+
+A54 = { #Swanwatch
+	color = RGB { 90 194 221 }
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+
+}
+
+A55 = { #Gabrihel
+	color = RGB { 255 0 0 }
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+
+}
+A56 = { #kadoria
+	color = RGB { 160 20 20 }
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+
+}
+A57  = { #Disirae
+	color = RGB { 150 60 150 }
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+
+} 
+
+A58  = { #Uxor
+	color = RGB { 60 60 60 }
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+
+} 
+
+A59 = { #Azraelgau
+	color = RGB { 15 60 60 }
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+
+} 
+
+A60 = { #Zadkielburg
+	color = RGB { 170 60 70 }
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+
+} 
+
+A61 = { #Mouse Lords
+	color = RGB { 100 107 099 }
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+
+}
+
+A62 = { # Shtshbur
+	color = RGB { 220 160 220 }
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+
+}
+
+A63 = { #unter Höhlen
+	color = RGB { 10 160 220 }
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+}
+
+A64 = { #grünburg
+	color = RGB { 10 255 100 }
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+
+}
+
+A65 = { #eckeldogh
+	color = RGB { 30 180 120 }
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+
+}
+A66 = { #Heughia
+	color = RGB { 255 75 45 }
+	culture_definition = heuhian_culture
+	religion_definition = manyfold
+
+}
+
+A67 = { #Dornbruck
+	color = RGB { 32 38 33  }
+	culture_definition = heuhian_culture
+	religion_definition = manyfold
+
+}
+A68 = { #Schaareind
+	color = RGB { 23 80 104 }
+	culture_definition = heuhian_culture
+	religion_definition = manyfold
+
+}
+A69 = { #Zweilüsse
+	color = RGB { 20 100 150 }
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+
+}
+
+A70 = { #
+	color = RGB { 107 132 163 }
+	culture_definition = heuhian_culture
+	religion_definition = manyfold
+
+}
+
+A71 = { #Elmhofen
+	color = RGB { 129 151 100 }
+	culture_definition = erlfolk_culture
+	religion_definition = manyfold
+
+}
+
+
+A72 = {
+	color = RGB { 59 126 59 }
+	
+	culture_definition = afhaemeisan_culture
+	religion_definition = manyfold
+}
+
+A73 = {
+	color = RGB { 201 185 40 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A74 = {
+	color = RGB { 170 43 21 }
+	
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A75 = {
+	color = RGB { 175 183 202 }
+	
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A76 = {
+	color = RGB { 101 189 23 }
+	
+	culture_definition = afhaemeisan_culture
+	religion_definition = manyfold
+}
+
+A77 = {
+	color = hsv { 0 0 0.50 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A78 = {
+	color = RGB { 202 160 78 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A79 = {
+	color = RGB { 115 104 76 }
+	
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A80 = {
+	color = RGB { 31 140 205 }
+	
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A81 = {
+	color = RGB { 261 66 63 }
+	
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A82 = {
+	color = RGB { 220 229 61 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A83 = {
+	color = RGB { 34 0 0}
+	
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+
+A84 = {
+	color = RGB { 255 223 87 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A85 = {
+	color = RGB { 196 68 110 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A86 = {
+	color = RGB { 164 168 237 }
+	
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A87 = {
+	color = RGB { 144 238 134 }
+	
+	culture_definition = afhaemeisan_culture
+	religion_definition = manyfold
+}
+
+
+A88 = {
+	color = RGB { 218 161 113 }
+	
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+}
+
+A89 = {
+	color = RGB { 191 156 141 }
+	
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+}
+
+A90 = {
+	color = RGB { 51 191 102 }
+	
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+}
+
+A91 = {
+	color = RGB { 145 139 102 }
+	
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+}
+
+A92 = {
+	color = RGB { 94 32 108 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A93 = {
+	color = RGB { 219 212 255 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A94 = {
+	color = hsv { 0.32 0.21 0.38 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A95 = {
+	color = RGB { 139 40 40 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+
+A97 = {
+	color = map_PAL
+	color2 = RGB { 57 151 142 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A98 = {
+	color = RGB { 221 41 111 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A99 = {
+	color = map_ANS
+	color2 = RGB { 130 77 119 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A100 = {
+	color = RGB { 242 255 140 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A101 = {
+	color = RGB { 60 97 64 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A102 = {
+	color = RGB { 245 216 216 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A103 = {
+	color = RGB { 243 112 15 }
+	
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+
+A104 = {
+	color = RGB { 246 80 38 }
+	
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+
+A105 = {
+	color = RGB { 250 0 0 }
+	
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A106 = {
+	color = RGB { 87 131 152 }
+	
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+}
+
+A107 = {
+	color = RGB { 154 152 126 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A108 = {
+	color = RGB { 210 15 15 }
+	
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+A109 = {
+	color = RGB { 101 143 66 }
+	
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+A110 = {
+	color = RGB { 210 37 57 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A111 = {
+	color = RGB { 212 235 111 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A112 = {
+	color = RGB { 202 202 202 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A113 = {
+	color = RGB { 255 133 59 }
+	
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+}
+
+A114 = {
+	color = RGB { 111 162 128 }
+	
+	culture_definition = afhaemeisan_culture
+	religion_definition = manyfold
+}
+
+A115 = {
+	color = RGB { 154 79 103 }
+	
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A116 = {
+	color = RGB { 229 48 45 }
+	
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+
+A117 = {
+	color = RGB { 86 14 7 }
+	
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+
+A118 = {
+	color = RGB { 117 161 67 }
+	
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A119 = {
+	color = RGB { 250 232 185 }
+	
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+}
+
+
+
+A121 = {
+	color = RGB { 0 103 169 }
+	
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+A122 = {
+	color = RGB { 162 8 198 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A123 = {
+	color = RGB { 198 8 116 }
+	
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A124 = {
+	color = RGB { 240 199 229 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A125 = {
+	color = RGB { 247 176 130 }
+	
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A126 = {
+	color = RGB { 0 48 255 }
+	
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A127 = {
+	color = RGB { 210 14 16 }
+	
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+A128 = {
+	color = RGB { 50 240 158 }
+	
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+A129 = { #Vaud
+	color = hsv360 { 338 94 96 }
+
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+A130 = {
+    color = RGB { 190 170 220 }
+    culture_definition = thaurfolk_culture
+    religion_definition = manyfold
+}
+
+
+A131 = {
+    color = RGB { 170 170 170 }
+    culture_definition = tyelkian_culture
+    religion_definition = manyfold
+}
+
+A132 = {
+    color = RGB { 150 100 90 }
+    culture_definition = lower_serenic_culture
+    religion_definition = manyfold
+}
+
+
+A133 = {
+    color = RGB { 190 130 120 }
+    culture_definition = afhaemeisan_culture
+    religion_definition = manyfold
+}
+
+A134 = {
+    color = RGB { 180 150 120 }
+    culture_definition = afhaemeisan_culture
+    religion_definition = manyfold
+}
+
+A135 = {
+    color = RGB { 116 7 7}
+    culture_definition = bonwesforian_culture
+    religion_definition = manyfold
+}
+
+A136 = {
+    color = RGB { 134 201 157 }
+    culture_definition = aneaku_culture
+    religion_definition = manyfold
+}
+
+A137 = {
+    color = RGB { 211 105 174 }
+    culture_definition = aneaku_culture
+    religion_definition = manyfold
+}
+
+A138 = {
+    color = RGB { 175 172 173 }
+    culture_definition = afhaemeisan_culture
+    religion_definition = manyfold
+}
+
+A139 = {
+    color = RGB { 33 21 20 }
+    culture_definition = berenguer_culture
+    religion_definition = manyfold
+}
+
+A140 = {
+    color = RGB { 180 140 100 }
+    culture_definition = middle_serenic_culture
+    religion_definition = manyfold
+}
+
+A141 = {
+    color = RGB { 126 43 127 }
+    culture_definition = middle_serenic_culture
+    religion_definition = manyfold
+}
+
+A142 = {
+    color = RGB { 35 9 33 }
+    culture_definition = middle_serenic_culture
+    religion_definition = manyfold
+}
+
+
+A144 = {
+    color =  RGB { 102 175 49 } 
+    culture_definition = serenish_culture
+    religion_definition = manyfold
+}
+
+A145 = {
+    color = RGB { 163 50 32 }
+    culture_definition = berenguer_culture
+    religion_definition = manyfold
+}
+
+A146 = {
+    color = RGB { 43 25 40 }
+    culture_definition = ardrainien_culture
+    religion_definition = manyfold
+}
+
+A147 = {
+    color =  RGB{97 168 114 }
+    culture_definition = aullerican_culture
+    religion_definition = manyfold
+}
+
+A148 = {
+    color =  RGB { 2 31 147 }
+    culture_definition = stedeling_culture
+    religion_definition = manyfold
+}
+
+A149 = {
+    color = RGB{201 75 66 }
+    culture_definition = stedeling_culture
+    religion_definition = manyfold
+}
+
+A150 = {
+    color =  RGB{79 96 96}
+    culture_definition = stedeling_culture
+    religion_definition = manyfold
+}
+
+A151 = {
+    color =  RGB{11 21 28 }
+    culture_definition = lower_serenic_culture
+    religion_definition = manyfold
+}
+
+
+A153 = {
+    color = RGB { 117 29 61 }
+    culture_definition = ardrainien_culture
+    religion_definition = manyfold
+}
+
+A154 = {
+    color = RGB{ 43 130 174 }
+    culture_definition = ardrainien_culture
+    religion_definition = manyfold
+}
+
+A155 = {
+    color = RGB { 192 134 239 }
+    culture_definition = serenish_culture
+    religion_definition = manyfold
+}
+
+A156 = {
+    color = RGB { 180 130 80 }
+    culture_definition = middle_serenic_culture
+    religion_definition = manyfold
+}
+
+A157 = {
+    color = RGB { 190 140 100 }
+    culture_definition = lower_serenic_culture
+    religion_definition = manyfold
+}
+
+A158 = {
+    color = RGB { 59 112 62 }
+    culture_definition = lower_serenic_culture
+    religion_definition = manyfold
+}
+
+A159 = {
+    color = RGB { 200 160 210 }
+    culture_definition = berenguer_culture
+    religion_definition = manyfold
+}
+
+A160 = {
+    color = RGB { 180 140 190 }
+    culture_definition = berenguer_culture
+    religion_definition = manyfold
+}
+
+A161 = {
+    color = RGB { 210 170 120 }
+    culture_definition = middle_serenic_culture
+    religion_definition = manyfold
+}
+
+A162 = {
+	color = RGB { 215 183 147 }
+	
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A163 = {
+	color = map_SOR
+	color2 = RGB { 67 80 128 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A164 = {
+	color = RGB { 255 137 146 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A165 = {
+	color = hsv { 0 0.7 0.38 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A166 = {
+	color = RGB { 136 48 66 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A167 = {
+	color = RGB { 25 73 134 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A168 = {
+	color = RGB { 228 110 95 }
+
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A169 = {
+	color = RGB { 0 255 128 }
+
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+
+
+A171 = {
+	color = RGB { 255 249 116 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A172 = {
+	color = RGB { 255 225 196 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A173 = {
+	color = RGB { 245 196 145 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A174 = {
+	color = RGB { 235 178 18 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A175 = {
+	color = RGB { 190 15 15 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A176 = {
+	color = RGB { 100 75 66 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+
+A177 = {
+	color = RGB { 79 139 99 }
+
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+}
+
+A178 = {
+	color = RGB { 227 95 7 }
+
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+}
+
+A179 = {
+	color = RGB { 215 182 199 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A180 = {
+	color = RGB { 75 39 97 }
+
+	culture_definition = aullerican_culture
+	religion_definition = manyfold
+}
+
+A181 = {
+	color = map_ANH
+	color2 = RGB { 203 93 124 }
+
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+}
+
+A182 = {
+	color = RGB { 150 213 211 }
+
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+}
+
+A183 = {
+	color = RGB { 30 143 239 }
+
+	culture_definition = sittadellian_culture
+	religion_definition = manyfold
+}
+
+A184 = {
+	color = RGB { 232 232 102 }
+
+	culture_definition = sittadellian_culture
+	religion_definition = manyfold
+}
+
+A185 = {
+	color = RGB { 240 203 255 }
+
+	culture_definition = stedeling_culture
+	religion_definition = manyfold
+}
+
+A186 = {
+	color = RGB { 127 124 85 }
+
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+}
+
+A187 = {
+	color = RGB { 220 94 40 }
+
+	culture_definition = aullerican_culture
+	religion_definition = manyfold
+}
+
+A188 = {
+	color = hsv { 0.14 0.38 0.38 }
+
+	culture_definition = stedeling_culture
+	religion_definition = manyfold
+}
+
+A189 = {
+	color = RGB { 66 103 88 }
+
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A190 = {
+	color = RGB { 198 210 222 }
+
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A191 = {
+	color = RGB { 200 200 62 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A192 = {
+	color = RGB { 155 170 136 }
+
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+}
+
+A193 = {
+	color = RGB { 133 22 128 }
+
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+}
+
+A194 = {
+	color = RGB { 117 175 244 }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+
+A195 = {
+	color = RGB { 114 171 184 }
+
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+}
+
+A196 = {
+	color = RGB { 214 90 79 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+
+A197 = {
+	color = RGB { 0 241 230 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+
+A198 = {
+	color = RGB { 205 186 214 }
+
+	culture_definition = stedeling_culture
+	religion_definition = manyfold
+}
+
+A199 = {
+	color = RGB { 150 70 70 }
+
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A200 = {
+	color = RGB { 180 22 127 }
+
+	culture_definition = sittadellian_culture
+	religion_definition = manyfold
+}
+
+A201 = {
+	color = RGB { 180 255 127 }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+
+
+A202 = {
+	color = RGB { 7 137 48 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A203 = {
+	color = RGB { 84 124 48 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A204 = {
+	color = hsv { 0.66 0.33 0.38 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A205 = {
+	color = RGB { 200 211 22 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A206 = {
+	color = RGB { 157 51 167 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A207 = {
+	color = RGB { 103 79 33 }
+
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A208 = {
+	color = RGB { 139 66 97 }
+
+	culture_definition = knawven_culture
+	religion_definition = manyfold
+}
+
+A209 = {
+	color = RGB { 79 157 202 }
+
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A210 = {
+	color = RGB { 93 202 202 }
+	culture_definition = lutin_culture
+	religion_definition = manyfold
+}
+
+A211 = {
+	color = RGB { 221 37 77 }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+
+A212 = {
+	color = RGB { 228 108 139 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+
+A213 = {
+	color = RGB { 215 177 186 }
+
+	culture_definition = draquatin_culture
+	religion_definition = manyfold
+}
+
+A214 = {
+	color = RGB { 55 69 106 }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+
+A215 = {
+	color = RGB { 173 176 113 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A216 = {
+	color = RGB { 5 135 67 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A217 = {
+	color = RGB { 21 83 149 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A218 = {
+	color = RGB { 244 193 37 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A219 = {
+	color = RGB { 220 134 21 }
+
+	culture_definition = lutin_culture
+	religion_definition = manyfold
+}
+
+A220 = {
+	color = RGB { 135 138 192 }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+A221 = {
+    color = RGB { 180 120 240 }
+    culture_definition = thaurfolk_culture
+    religion_definition = manyfold
+}
+A222 = {
+	color = RGB { 16 41 202 }
+
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+A223 = {
+	color = RGB { 16 41 202 }
+
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+A224 = {
+	color = RGB { 107 198 142 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+A225 = {
+	color = RGB { 100 75 102 }
+
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+A226 = {
+	color = RGB { 16 41 202 }
+
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+A227 = {
+	color = RGB { 84 193 112 }
+
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A228 = {
+	color = RGB { 201 77 164 }
+
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A229 = {
+	color = RGB { 34 158 219 }
+
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A230 = {
+	color = RGB { 142 221 67 }
+
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A231 = {
+	color = RGB { 189 52 91 }
+
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A232 = {
+	color = RGB { 73 104 238 }
+
+	culture_definition = heuhian_culture
+	religion_definition = manyfold
+}
+
+A233 = {
+	color = RGB { 216 187 44 }
+
+	culture_definition = heuhian_culture
+	religion_definition = manyfold
+}
+
+A234 = {
+	color = RGB { 118 39 162 }
+
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A235 = {
+	color = RGB { 27 199 154 }
+
+	culture_definition = stedeling_culture
+	religion_definition = manyfold
+}
+
+A236 = {
+	color = RGB { 240 96 31 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A237 = {
+	color = RGB { 61 142 88 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A238 = {
+	color = RGB { 173 214 199 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+
+
+A240 = {
+	color = RGB { 255 141 66 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A241 = {
+	color = RGB { 46 226 201 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+
+
+A243 = {
+	color = RGB { 198 122 171 }
+
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+}
+
+A244 = {
+	color = RGB { 11 167 97 }
+
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+}
+
+A245 = {
+	color = RGB { 224 59 138 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+A246 = {
+	color = RGB { 71 112 52 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+
+A247 = {
+	color = RGB { 159 244 109 }
+
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+
+A248 = {
+	color = RGB { 37 85 190 }
+
+	culture_definition = afhaemeisan_culture
+	religion_definition = manyfold
+}
+
+A249 = {
+	color = RGB { 210 173 18 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A250 = {
+	color = RGB { 99 33 251 }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+A251 = {
+	color = RGB { 182 64 209 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+
+A252 = {
+	color = RGB { 23 191 133 }
+
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A253 = {
+	color = RGB { 247 156 42 }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+
+A254 = {
+	color = RGB { 98 214 61 }
+
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A255 = {
+	color = RGB { 171 88 27 }
+
+	culture_definition = borrikan_culture
+	religion_definition = manyfold
+}
+
+A256 = {
+	color = RGB { 54 109 232 }
+
+	culture_definition = afhaemeisan_culture
+	religion_definition = manyfold
+}
+
+A257 = {
+	color = RGB { 201 33 119 }
+
+	culture_definition = lower_serenic_culture
+	religion_definition = manyfold
+}
+
+A258 = {
+	color = RGB { 76 168 201 }
+
+	culture_definition = chesmeker_culture
+	religion_definition = manyfold
+}
+
+A259 = {
+	color = RGB { 144 241 95 }
+
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A260 = {
+	color = RGB { 12 72 185 }
+
+	culture_definition = torrentor_ratfolk_culture
+	religion_definition = manyfold
+}
+A261 = {
+	color = RGB { 15 153 155 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+
+A262 = {
+	color = RGB { 193 163 65 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+
+A263 = {
+	color = RGB { 209 190 180 }
+
+	culture_definition = fullhorner_culture
+	religion_definition = manyfold
+}
+
+A264 = {
+	color = RGB { 20  12 25 }
+
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+
+A265 = {
+	color = RGB { 117 156 255 }
+
+	culture_definition = torrentor_tieflings_culture
+	religion_definition = manyfold
+}
+
+A266 = {
+	color = RGB { 0 57 10 }
+
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+}
+
+A267 = {
+	color = RGB { 201 107 96 }
+
+	culture_definition = sittadellian_culture
+	religion_definition = manyfold
+}
+A268 = {
+	color = RGB { 188 52 93 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+
+A269 = {
+	color = RGB { 147 23 43 }
+
+	culture_definition = bonwesforian_culture
+	religion_definition = manyfold
+}
+A270 = {
+	color = RGB { 205 55 34 }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+A271 = {
+	color = RGB { 41 40 43 }
+
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+A272 = {
+	color = RGB { 20 11 43 }
+	culture_definition = hawairqi_culture
+	religion_definition = manyfold
+}
+A273 = {
+	color = RGB { 145 63 119  }
+
+	culture_definition = middle_serenic_culture
+	religion_definition = manyfold
+}
+A274 = {
+	color = RGB { 145 63 119  }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+A275 = {
+	color = RGB { 150 207 200  }
+
+	culture_definition = berenguer_culture
+	religion_definition = manyfold
+}
+
+
+A276 = {
+	color = RGB { 140 154 127  }
+
+	culture_definition = tyelkian_culture
+	religion_definition = manyfold
+}
+A277 = {
+	color = RGB { 190  170 175  }
+
+	culture_definition = chevallois_culture
+	religion_definition = manyfold
+}
+
+
+
+
+A278  = {
+	color = RGB { 255 48 66 }
+
+	culture_definition = aloisoise_culture
+	religion_definition = manyfold
+}
+A279  = {
+	color = RGB { 200 78 96 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+A280  = {
+	color = RGB { 180 98 106 }
+
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+}
+A281  = {
+	color = RGB { 108 059 042 }
+
+	culture_definition = torrentor_ratfolk_culture	
+	religion_definition = manyfold
+}
+
+
+A282 = {
+	color = RGB {  121 085 61 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A283 = {
+	color = RGB { 006 057 113 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A284 = {
+	color = RGB { 032 096 061 }
+
+	culture_definition = himmelskind_culture	
+	religion_definition = manyfold
+}
+
+A285 = {
+	color = RGB { 037 109 123 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A286 = {
+	color = RGB { 126 123 082 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A287 = {
+	color = RGB { 038 037 045 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A288 = {
+	color = RGB { 046 058 035 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A289 = {
+	color = RGB { 114 020 034 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A290 = {
+	color = RGB { 245 208 51 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A291 = {
+	color = RGB { 022 053 055 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A292 = {
+	color = RGB { 033 033 033 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A293 = {
+	color = RGB { 074 025 044 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A294 = {
+	color = RGB { 143 143 143 }
+
+	culture_definition = himmelskind_culture	
+	religion_definition = manyfold
+}
+
+A295 = {
+	color = RGB { 244 070 017}
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A296 = {
+	color = RGB { 157 161 170 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A297 = {
+	color = RGB { 031 058 061 }
+
+	culture_definition = himmelskind_culture	
+	religion_definition = manyfold
+}
+
+A298 = {
+	color = RGB { 073 103 141 }
+
+	culture_definition = himmelskind_culture	
+	religion_definition = manyfold
+}
+
+A299 = {
+	color = RGB { 091 058 041 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+
+A300 = {
+	color = RGB { 161 035 018 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+A301 = {
+	color = RGB { 73 126 118 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+A302 = {
+	color = RGB { 042 100 120 }
+
+	culture_definition = himmelskind_culture	
+	religion_definition = manyfold
+}
+A303 = {
+	color = RGB { 248 243 059 }
+
+	culture_definition = sorlkol_culture	
+	religion_definition = manyfold
+}
+A304 = {
+	color = RGB { 175 197 245 }
+
+	culture_definition = hravevi_culture	
+	religion_definition = manyfold
+}
+#A305 bonwesforian
+A321 = { #hoggerland
+	color =  rgb {  250 39 18 }
+
+	culture_definition = hoggish_culture
+	religion_definition = manyfold
+
+}
+
+
+A322 = { #WyrmWealth
+	color = map_BRD
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = wyrmwealth_culture
+	religion_definition = manyfold
+}
+A323 = { #Grungau
+	color = rgb { 17 34 85 }
+
+	culture_definition = venturian_culture	
+	religion_definition = manyfold
+
+}
+A324 = { 
+	color = rgb { 20 0 50 }
+
+	culture_definition = telanian_culture
+	religion_definition = manyfold
+
+}
+A325 = { 
+	color = rgb { 170 60 05 }
+
+	culture_definition = hyriovari_culture
+	religion_definition = manyfold
+
+}
+A326 = { 
+	color = rgb { 113 0 232 }
+
+	culture_definition = hyriovari_culture
+	religion_definition = manyfold
+
+}
+A327 = { 
+	color = rgb { 103 170 249 }
+
+	culture_definition = hyriovari_culture
+	religion_definition = manyfold
+
+}
+A328 = { 
+	color = rgb { 160 60 50 }
+
+	culture_definition = hyriovari_culture
+	religion_definition = manyfold
+
+}
+A329 = { #WOOD ELVES
+	color = rgb { 0 44 23 }
+
+	culture_definition = aldorai_culture
+	religion_definition = manyfold
+
+}
+A330 = { #Exalted Host of Kathar
+	color = rgb { 62 3 12 }
+
+	culture_definition = sarusthari_culture
+	religion_definition = faith_saurethii
+
+}
+A331 = { 
+	color = rgb { 55 34 72 }
+
+	culture_definition = darothari_culture
+	religion_definition = spider_cult_religion
+
+}
+
+A332 = { #Dragon Queen's Realm
+	color = rgb { 176 15 15 }
+
+	culture_definition = arineran_culture
+	religion_definition = manyfold
+
+}
+A333 = { #
+	color = rgb { 81 65 91 }
+
+	culture_definition = hundvarian_culture
+	religion_definition = manyfold
+
+}
+A334 = { #
+	color = rgb { 114 24 79 }
+
+	culture_definition = hundvarian_culture
+	religion_definition = manyfold
+
+}
+A335 = { #
+	color = rgb { 224 220 197 }
+
+	culture_definition = koth_culture
+	religion_definition = manyfold
+
+}
+
+A336 = { #
+	color = rgb { 24 24 114 }
+
+	culture_definition = hundvarian_culture
+	religion_definition = manyfold
+
+}
+
+A337 = { #
+	color = rgb { 047 053 059 }
+
+	culture_definition = koth_culture
+	religion_definition = manyfold
+
+}
+
+A338 = { #
+	color = rgb { 114 114 114 }
+
+	culture_definition = ameleuin_culture
+	religion_definition = manyfold
+
+}
+A339 = { #
+	color = rgb { 0 74 128 }
+
+	culture_definition = hipparian_culture
+	religion_definition = manyfold
+
+}
+A340 = { #87, 182, 80
+	color = rgb { 87 182 80 }
+
+	culture_definition = hipparian_culture
+	religion_definition = manyfold
+
+}
+A341 = { #
+	color = rgb { 240 133 2 }
+
+	culture_definition = hipparian_culture
+	religion_definition = manyfold
+
+}
+A342 = { #
+	color = rgb { 57 79 73}
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+A343 = { #
+	color = rgb { 014 041 075 }
+
+	culture_definition = highlander_salusian_culture
+	religion_definition = green_pact_religion
+
+}
+A344 = { #
+	color = rgb { 20 90 30 }
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+A345 = { #
+	color = rgb { 063 136 143 }
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+
+A346 = { #
+	color = rgb { 255 192 0 }
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+
+A347 = { #
+	color = rgb { 32 192 14}
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+
+A348 = { #
+	color = rgb { 101 116 58 }
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+
+A349 = { #
+	color = rgb { 97 144 98 }
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+
+A350 = { #
+	color = rgb { 241 255 250   }
+
+	culture_definition = salusian_culture
+	religion_definition = green_pact_religion
+
+}
+
+A353 = { #
+	color = rgb { 230 95 92 }
+
+	culture_definition = mavisan_culture
+	religion_definition = manyfold
+
+}
+A354 = { #
+	color = rgb { 34 46 80 }
+
+	culture_definition = zilaanian_culture
+	religion_definition = manyfold
+
+}
+A355 = { #
+	color = rgb { 31 36 33  }
+
+	culture_definition = telanian_culture
+	religion_definition = manyfold
+
+}
+A356 = { #
+	color = rgb { 238 150 75 }
+
+	culture_definition = telanian_culture
+	religion_definition = manyfold
+
+}
+
+A359 = { #
+	color = rgb { 200 114 114 }
+
+	culture_definition = hyriovari_culture
+	religion_definition = manyfold
+
+}
+A360 = { #Dolnasúith
+	color = rgb { 158 170 158 }
+
+	culture_definition = ashenborn_culture
+	religion_definition = green_pact_religion
+
+}
+A361 = { #Dolnasúith
+	color = rgb { 158 170 158 }
+
+	culture_definition = hundvarian_culture
+	religion_definition = manyfold
+
+}
+A362 = { #
+	color = rgb { 200 114 114 }
+
+	culture_definition = nachrish_culture
+	religion_definition = manyfold
+
+}
+A363 = { #
+	color = rgb { 114 200 114 }
+
+	culture_definition = vanelic_culture
+	religion_definition = manyfold
+
+}
+
+A364 = { #Northsteorra
+	color = RGB { 30 35 155 }
+	
+	culture_definition = thaurfolk_culture
+	religion_definition = manyfold
+}
+A365 = { #JUNIL Commonweal City
+	color = RGB { 25 45 145 }
+
+	culture_definition = varian_culture
+	religion_definition = manyfold
+}
+A366 = { #
+	color = RGB { 40 160 50 }
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+
+}
+A367 = { #
+	color = RGB { 202 20 21 }
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+
+}
+A368 = { #
+	color = RGB { 125 236 227 }
+	culture_definition = aneaku_culture
+	religion_definition = manyfold
+
+}
+A369 = { #
+	color = RGB { 125 236 227 }
+	culture_definition = pwasciards_culture
+	religion_definition = manyfold
+
+}
+
+A370 = { #The Arch-Betrayers
+	color = RGB { 156 15 15 }
+	culture_definition = serenish_culture
+	religion_definition = manyfold
+
+}
+
+A371 = { 
+	color = RGB { 15 15 15 }
+	culture_definition = erlfolk_culture
+	religion_definition = manyfold
+
+}
+A372 = { 
+	color = RGB { 25 25 25 }
+	culture_definition = erlfolk_culture
+	religion_definition = manyfold
+
+}
+A373 = { 
+	color = RGB { 45 45 45 }
+	culture_definition = erlfolk_culture
+	religion_definition = manyfold
+
+}
+A374 = {  #blood elves techincally
+	color = RGB { 65 65 65 }
+	culture_definition = erlfolk_culture
+	religion_definition = manyfold
+
+}
+
+A375 = { #Holy Abbey of St.
+	color = RGB { 19 56 190 }
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+
+}
+
+A376 = { #Lenene
+	color = RGB { 90 210 240 }
+	culture_definition = ardrainien_culture
+	religion_definition = manyfold
+
+}
+
+A377 = { # Reunited Kingdom — Typheraii formable
+	color = rgb { 255 177 52 }
+	culture_definition = hyriovari_culture
+	religion_definition = manyfold
+}
+
+A378 = { #Iboros placeholder - northwest highlands
+	color = rgb { 204 102 0 }
+	culture_definition = selorian_culture
+	religion_definition = manyfold
+}
+A379 = { #Iboros placeholder - central plains
+	color = rgb { 0 102 51 }
+	culture_definition = selorian_culture
+	religion_definition = manyfold
+}
+A380 = { #Iboros placeholder - forest marches
+	color = rgb { 128 64 0 }
+	culture_definition = andaean_culture
+	religion_definition = manyfold
+}
+A381 = { #Iboros placeholder - crossroads
+	color = rgb { 180 30 60 }
+	culture_definition = vocera_culture
+	religion_definition = manyfold
+}
+A382 = { #Iboros placeholder - bundeli heartland
+	color = rgb { 255 153 51 }
+	culture_definition = anerrian_culture
+	religion_definition = manyfold
+}
+A383 = { #Iboros placeholder - deep interior
+	color = rgb { 34 89 34 }
+	culture_definition = sioran_culture
+	religion_definition = manyfold
+}
+A384 = { #Iboros placeholder - northern frontier
+	color = rgb { 70 130 180 }
+	culture_definition = besban_culture
+	religion_definition = manyfold
+}
+A385 = { #Iboros placeholder - western hills
+	color = rgb { 139 69 19 }
+	culture_definition = ebaran_culture
+	religion_definition = manyfold
+}
+A386 = { #Iboros placeholder - southern lowlands
+	color = rgb { 160 90 40 }
+	culture_definition = selorian_culture
+	religion_definition = manyfold
+}
+A387 = { #Iboros placeholder - eastern marches
+	color = rgb { 210 180 140 }
+	culture_definition = andaean_culture
+	religion_definition = manyfold
+}
+
+A388 = { #Iboros placeholder
+	color = rgb { 55 95 160 }
+	culture_definition = vocera_culture
+	religion_definition = manyfold
+}
+A389 = { #Iboros placeholder
+	color = rgb { 46 125 110 }
+	culture_definition = anerrian_culture
+	religion_definition = manyfold
+}
+A390 = { #Iboros placeholder
+	color = rgb { 95 55 20 }
+	culture_definition = sioran_culture
+	religion_definition = manyfold
+}
+A391 = { #Iboros placeholder
+	color = rgb { 200 75 95 }
+	culture_definition = ayarena_culture
+	religion_definition = manyfold
+}
+A392 = { #Iboros placeholder
+	color = rgb { 225 140 35 }
+	culture_definition = ayarena_culture
+	religion_definition = manyfold
+}
+A393 = { #Iboros placeholder
+	color = rgb { 55 95 145 }
+	culture_definition = keluj_culture
+	religion_definition = manyfold
+}
+A394 = { #Iboros placeholder
+	color = rgb { 165 95 45 }
+	culture_definition = ayarena_culture
+	religion_definition = manyfold
+}
+A395 = { #Iboros placeholder
+	color = rgb { 115 45 95 }
+	culture_definition = shurari_culture
+	religion_definition = manyfold
+}
+A396 = { #Iboros placeholder
+	color = rgb { 25 75 55 }
+	culture_definition = keluj_culture
+	religion_definition = manyfold
+}
+A397 = { #Iboros placeholder
+	color = rgb { 175 125 90 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A398 = { #Iboros placeholder
+	color = rgb { 120 80 160 }
+	culture_definition = shurari_culture
+	religion_definition = manyfold
+}
+A399 = { #Iboros placeholder
+	color = rgb { 80 140 70 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A400 = { #Iboros placeholder
+	color = rgb { 150 90 50 }
+	culture_definition = shurari_culture
+	religion_definition = manyfold
+}
+A401 = { #Iboros placeholder
+	color = rgb { 40 120 145 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A402 = { #Iboros placeholder
+	color = rgb { 170 100 130 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A403 = { #Iboros placeholder
+	color = rgb { 100 60 120 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A404 = { #Iboros placeholder
+	color = rgb { 140 100 40 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A405 = { #Iboros placeholder
+	color = rgb { 45 130 95 }
+	culture_definition = bhil
+	religion_definition = manyfold
+}
+A406 = { #Iboros placeholder
+	color = rgb { 190 80 60 }
+	culture_definition = mewari
+	religion_definition = manyfold
+}
+A407 = { #Iboros placeholder
+	color = rgb { 70 85 145 }
+	culture_definition = gond
+	religion_definition = manyfold
+}
+A408 = { #Crater placeholder
+	color = rgb { 95 60 45 }
+	culture_definition = khyresh_culture
+	religion_definition = manyfold
+}
+A409 = { #Tajjev
+	color = rgb { 5 30 100 }
+	culture_definition = takkev_culture
+	religion_definition = tajjev_rites
+}
+A410 = { # Dual Kingdom of Fire and Ice
+	color = rgb { 51 35 61 }
+	culture_definition = ekuniman_culture
+	religion_definition = manyfold
+}
+A411 = { # Archonia
+	color = rgb { 240 230 230 }
+	culture_definition = archonian_culture
+	religion_definition = manyfold
+}
+A412 = { # Roman Undead Pirates
+	color = rgb { 22 117 178 }
+	culture_definition = novus_moran_culture
+	religion_definition = manyfold
+}
+A413 = { # Tieflings
+	color = rgb { 125 10 10 }
+	culture_definition = nephion_tieflings_culture
+	religion_definition = manyfold
+}
+A414 = { # Placeholder
+	color = rgb { 15 140 15 }
+	culture_definition = abashvan_culture
+	religion_definition = manyfold
+}
+A415 = { # Placeholder
+	color = rgb { 15 120 140 }
+	culture_definition = novus_moran_culture
+	religion_definition = manyfold
+}
+A416 = { # Placeholder
+	color = rgb { 130 16 50 }
+	culture_definition = abashvan_culture
+	religion_definition = manyfold
+}
+A417 = { # Placeholder
+	color = rgb { 130 16 50 }
+	culture_definition = novus_moran_culture
+	religion_definition = manyfold
+}
+
+A418 = { # Placeholder
+	color = rgb { 200 130 50 }
+	culture_definition = novus_moran_culture
+	religion_definition = manyfold
+}
+A419 = { # Placeholder
+	color = rgb { 200 200 50 }
+	culture_definition = abashvan_culture
+	religion_definition = manyfold
+}
+A420 = { # Placeholder
+	color = rgb { 60 40 180 }
+	culture_definition = novus_moran_culture
+	religion_definition = manyfold
+}
+A421 = { # Placeholder
+	color = rgb { 180 60 140 }
+	culture_definition = abashvan_culture
+	religion_definition = manyfold
+}
+A422 = { # Placeholder
+	color = rgb { 30 90 160 }
+	culture_definition = novus_moran_culture
+	religion_definition = manyfold
+}
+A423 = { # Placeholder
+	color = rgb { 160 110 30 }
+	culture_definition = abashvan_culture
+	religion_definition = manyfold
+}

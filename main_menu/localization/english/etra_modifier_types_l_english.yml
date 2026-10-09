@@ -1,0 +1,5 @@
+﻿l_english:
+ MODIFIER_TYPE_NAME_num_of_ynarheimian_units: "Number of Ynarheimian Units"
+ MODIFIER_TYPE_DESC_num_of_ynarheimian_units: "This impacts how many [ShowUnitDefinitionName('a_ynarheimian')] [units|e] we can have at the same time."
+ MODIFIER_TYPE_NAME_caverns_proximity_impact: "Caverns Proximity Impact"
+ MODIFIER_TYPE_DESC_caverns_proximity_impact: "This impacts the [proximity|e] cost when going through [ShowTopographyName('caverns')]."

@@ -1,0 +1,12 @@
+﻿moran_language_family = { #morance
+	color = map_celtic_language_family
+}
+
+torrentor_language_family = { #Common
+	color = map_germanic_language_family
+}
+
+armonorican_language_family = { #Psuedo
+	color = map_celtic_language_family
+}
+

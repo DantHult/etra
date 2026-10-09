@@ -1,0 +1,25 @@
+﻿# Arinera (A332): Winged Dragoons — imported from vanilla Poland winged hussars
+
+#Age of Reformation#
+
+arinera_winged_dragoons_advance = {
+	content_priority = 1100
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = A332
+	}
+	requires = unlock_heavy_lancers_advance
+	unlock_unit = a_a332_winged_dragoons
+}
+
+#Age of Absolutism#
+
+arinera_late_winged_dragoons_advance = {
+	content_priority = 1000
+	age = age_5_absolutism
+	potential = {
+		has_or_had_tag = A332
+	}
+	requires = unlock_hussars_advance
+	unlock_unit = a_a332_late_winged_dragoons
+}

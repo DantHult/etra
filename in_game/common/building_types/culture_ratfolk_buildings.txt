@@ -1,0 +1,39 @@
+﻿# Ratfolk culture group buildings — unlocked by advances
+
+
+
+# Warren Clock Tower — clockwork / coordination (ratfolk_warren_clockwork advance)
+ratfolk_warren_clock_tower = {
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	employment_size = trade_employment
+	category = government_category
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = small_capital_build_time
+
+	country_potential = {
+		has_advance = ratfolk_warren_clockwork
+	}
+
+	modifier = {
+		local_construction_speed = 0.08
+		local_merchant_power = 0.08
+		local_monthly_development = 0.0005
+	}
+
+	unique_production_methods = {
+		ratfolk_warren_clock_tower_upkeep = {
+			tools = 0.10
+			weaponry = 0.05
+			lumber = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = town_building_construction
+}

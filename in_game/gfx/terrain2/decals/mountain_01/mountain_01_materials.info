@@ -1,0 +1,261 @@
+source_resolution={ 1024 1024 }
+num_channels=1
+bytes_per_channel=1
+empty_value={ 0 0 0 0 }
+lzav=yes
+tile_infos={ {
+		offset=0
+		size=62
+	} {
+		offset=62
+		size=485
+	} {
+		offset=547
+		size=661
+	} {
+		offset=1208
+		size=406
+	} {
+		offset=1614
+		size=459
+	} {
+		offset=2073
+		size=1079
+	} {
+		offset=3152
+		size=121
+	} {
+		offset=3273
+		size=62
+	} {
+		offset=3335
+		size=849
+	} {
+		offset=4184
+		size=3343
+	} {
+		offset=7527
+		size=3646
+	} {
+		offset=11173
+		size=2930
+	} {
+		offset=14103
+		size=2497
+	} {
+		offset=16600
+		size=3091
+	} {
+		offset=19691
+		size=2232
+	} {
+		offset=21923
+		size=1912
+	} {
+		offset=23835
+		size=617
+	} {
+		offset=24452
+		size=3351
+	} {
+		offset=27803
+		size=3893
+	} {
+		offset=31696
+		size=3841
+	} {
+		offset=35537
+		size=3798
+	} {
+		offset=39335
+		size=3671
+	} {
+		offset=43006
+		size=3727
+	} {
+		offset=46733
+		size=1254
+	} {
+		offset=47987
+		size=627
+	} {
+		offset=48614
+		size=2808
+	} {
+		offset=51422
+		size=3493
+	} {
+		offset=54915
+		size=3866
+	} {
+		offset=58781
+		size=3702
+	} {
+		offset=62483
+		size=3654
+	} {
+		offset=66137
+		size=2923
+	} {
+		offset=69060
+		size=816
+	} {
+		offset=69876
+		size=353
+	} {
+		offset=70229
+		size=376
+	} {
+		offset=70605
+		size=2132
+	} {
+		offset=72737
+		size=3657
+	} {
+		offset=76394
+		size=3683
+	} {
+		offset=80077
+		size=3554
+	} {
+		offset=83631
+		size=2554
+	} {
+		offset=86185
+		size=394
+	} {
+		offset=86579
+		size=62
+	} {
+		offset=86641
+		size=212
+	} {
+		offset=86853
+		size=3033
+	} {
+		offset=89886
+		size=3886
+	} {
+		offset=93772
+		size=3763
+	} {
+		offset=97535
+		size=3811
+	} {
+		offset=101346
+		size=3356
+	} {
+		offset=104702
+		size=569
+	} {
+		offset=105271
+		size=62
+	} {
+		offset=105333
+		size=114
+	} {
+		offset=105447
+		size=2487
+	} {
+		offset=107934
+		size=1912
+	} {
+		offset=109846
+		size=2336
+	} {
+		offset=112182
+		size=3860
+	} {
+		offset=116042
+		size=3582
+	} {
+		offset=119624
+		size=306
+	} {
+		offset=119930
+		size=62
+	} {
+		offset=119992
+		size=62
+	} {
+		offset=120054
+		size=62
+	} {
+		offset=120116
+		size=62
+	} {
+		offset=120178
+		size=176
+	} {
+		offset=120354
+		size=851
+	} {
+		offset=121205
+		size=945
+	} {
+		offset=122150
+		size=121
+	} {
+		offset=122271
+		size=1766
+	} {
+		offset=124037
+		size=2665
+	} {
+		offset=126702
+		size=2508
+	} {
+		offset=129210
+		size=1560
+	} {
+		offset=130770
+		size=2788
+	} {
+		offset=133558
+		size=5005
+	} {
+		offset=138563
+		size=4891
+	} {
+		offset=143454
+		size=3214
+	} {
+		offset=146668
+		size=459
+	} {
+		offset=147127
+		size=4406
+	} {
+		offset=151533
+		size=4943
+	} {
+		offset=156476
+		size=2669
+	} {
+		offset=159145
+		size=86
+	} {
+		offset=159231
+		size=1681
+	} {
+		offset=160912
+		size=2611
+	} {
+		offset=163523
+		size=1907
+	} {
+		offset=165430
+		size=3975
+	} {
+		offset=169405
+		size=3991
+	} {
+		offset=173396
+		size=2488
+	} {
+		offset=175884
+		size=3918
+	} {
+		offset=179802
+		size=3899
+	} }

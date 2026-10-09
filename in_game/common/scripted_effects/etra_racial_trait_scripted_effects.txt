@@ -1,0 +1,105 @@
+﻿# Uses static character modifiers from main_menu/common/static_modifiers/etra_races.txt.
+
+etra_assign_racial_trait = {
+	add_character_modifier = {
+		modifier = $trait$
+		years = -1
+		mode = add_and_extend
+	}
+}
+
+etra_remove_racial_trait = {
+	remove_character_modifier = $trait$
+}
+
+etra_assign_kindred_racial_trait_from_culture = {
+	if = {
+		limit = {
+			culture = { has_culture_group = culture_group:undead_group }
+			NOT = { etra_has_racial_trait = { trait = is_undead_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_undead_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:human_group }
+			NOT = { etra_has_racial_trait = { trait = is_human_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_human_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:ratfolk_group }
+			NOT = { etra_has_racial_trait = { trait = is_ratfolk_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_ratfolk_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:elven_group }
+			NOT = { etra_has_racial_trait = { trait = is_elven_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_elven_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:giantsborn_group }
+			NOT = { etra_has_racial_trait = { trait = is_giantsborn_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_giantsborn_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:tiefling_group }
+			NOT = { etra_has_racial_trait = { trait = is_tiefling_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_tiefling_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:aasimar_group }
+			NOT = { etra_has_racial_trait = { trait = is_aasimar_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_aasimar_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:beastfolk_group }
+			NOT = { etra_has_racial_trait = { trait = is_beastfolk_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_beastfolk_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:pigmen_group }
+			NOT = { etra_has_racial_trait = { trait = is_pigmen_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_pigmen_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:lupusfolk_group }
+			NOT = { etra_has_racial_trait = { trait = is_lupusfolk_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_lupusfolk_modifier }
+	}
+	else_if = {
+		limit = {
+			culture = { has_culture_group = culture_group:catfolk_group }
+			NOT = { etra_has_racial_trait = { trait = is_catfolk_modifier } }
+		}
+		etra_assign_racial_trait = { trait = is_catfolk_modifier }
+	}
+}
+
+etra_backfill_all_character_racial_traits = {
+	every_country = {
+		every_character = {
+			limit = {
+				character_is_etra_kindred = yes
+				NOT = { etra_has_any_racial_trait = yes }
+			}
+			etra_assign_kindred_racial_trait_from_culture = yes
+		}
+	}
+}

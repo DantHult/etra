@@ -1,0 +1,12 @@
+# ############################
+# # age_1_traditions
+# ############################
+sarusthari_steppe_host = {
+	age = age_1_traditions
+	icon = glorious_arms
+	potential = {
+		culture = culture:sarusthari_culture
+	}
+	army_light_cavalry_power = 0.15
+	requires = typheraii_the_first_murder
+}

@@ -1,0 +1,17 @@
+﻿etra_red_turban_rebellions_list = {
+	potential = {
+		can_see_situation = situation:etra_red_turban_rebellions
+	}
+	actions = {
+		etra_rtr_grant_titles
+		etra_rtr_negotiate_with_rebels
+		etra_rtr_call_loyalists_to_arms
+		etra_rtr_appease_the_court
+		etra_rtr_rekindle_revolt
+		etra_rtr_rein_in_area
+		etra_rtr_declare_war_for_regional_supremacy
+		etra_rtr_support_faction
+		etra_rtr_join_iborric_defense
+		etra_rtr_declare_independence
+	}
+}

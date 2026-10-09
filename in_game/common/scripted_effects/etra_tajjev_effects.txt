@@ -1,0 +1,66 @@
+﻿#####################################
+# Rise of Tajjev Situation
+#####################################
+roj_increase_kill_counter = {
+	if = {
+		limit = {
+			exists = $variable$
+			situation:rise_of_tajjev = { situation_is_active = yes }
+		}
+		situation:rise_of_tajjev = {
+			change_variable = {
+				name = tajjev_$type$_kill_counter
+				add = $variable$
+			}
+			change_variable = {
+				name = tajjev_total_kill_counter
+				add = $variable$
+			}
+		}
+	}
+}
+
+buff_tajjev_effect = {
+	$target$ = {
+		add_army_tradition = army_tradition_ultimate_bonus
+	}
+	scope:target_character = {
+		add_character_modifier = {
+			modifier = tajjev_wants_to_play
+			days = -1
+			mode = add_and_extend
+		}
+		hidden_effect = {
+			remove_traits_of_category = ruler
+			remove_traits_of_category = general
+		}
+		add_trait = trait:conqueror
+		add_trait = trait:tactical_genius
+		add_trait = trait:strategist
+	}
+}
+
+clear_tajjev_variables = {
+	remove_variable = tak_founding_father
+	remove_country_modifier = roj_legacy_exile
+	remove_country_modifier = roj_legacy_highlands
+	remove_variable = rise_of_tajjev_situation_country
+	remove_variable = roj_has_selected_core_region
+	remove_variable = roj_assumed_regional_culture
+	remove_variable = roj_conquest_ambition
+}
+
+remove_all_tajjev_cbs = {
+	if = {
+		limit = { NOT = { has_reform = government_reform:tajjev_empire } }
+		custom_tooltip = {
+			text = remove_all_tajjev_cbs_tt
+			ROOT = {
+				every_casus_belli_target = {
+					limit = { ROOT = { has_casus_belli_of_type_on = { target = PREV type = casus_belli:cb_tajjev_conquests } } }
+					ROOT = { remove_casus_belli = { target = PREV type = casus_belli:cb_tajjev_conquests } }
+				}
+			}
+		}
+	}
+}

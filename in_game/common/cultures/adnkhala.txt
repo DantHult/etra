@@ -1,0 +1,14 @@
+﻿abashvan_culture = {
+	language = adnkhalan_language
+	
+	color = map_soqotri
+	
+	tags = { arabian_gfx middle_east_gfx }
+
+	culture_groups = {
+		human_group	
+		adnkhalan_group
+	}
+		use_patronym = yes
+}
+

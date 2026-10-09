@@ -1,0 +1,101 @@
+﻿is_elven_country = {
+
+	culture = { has_culture_group = culture_group:elven_group }
+
+}
+
+# False for kindreds that use a parallel infantry/cavalry line instead of vanilla.
+# Add new culture groups here when introducing another alternate army set.
+can_use_generic_line_infantry_cavalry = {
+	NOR = {
+		culture = { has_culture_group = culture_group:undead_group }
+		culture = { has_culture_group = culture_group:elven_group }
+		culture = { has_culture_group = culture_group:giantsborn_group }
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+}
+
+
+
+is_etra_kindred_culture_group = {
+
+	OR = {
+
+		this = culture_group:undead_group
+
+		this = culture_group:human_group
+
+		this = culture_group:ratfolk_group
+
+		this = culture_group:elven_group
+
+		this = culture_group:giantsborn_group
+
+		this = culture_group:tiefling_group
+
+		this = culture_group:aasimar_group
+
+		this = culture_group:beastfolk_group
+
+		this = culture_group:pigmen_group
+
+		this = culture_group:lupusfolk_group
+
+		this = culture_group:catfolk_group
+
+	}
+
+}
+
+
+
+has_active_purge_kindred_cabinet = {
+
+	any_cabinet = {
+
+		has_cabinet_action = yes
+
+		cabinet_action = cabinet_action:purge_kindred
+
+	}
+
+}
+
+
+
+province_has_active_purge_kindred = {
+
+	has_variable = purging_kindred
+
+}
+
+
+
+pop_matches_active_purge_kindred = {
+
+	culture = {
+
+		NOT = { is_accepted_in = owner }
+
+	}
+
+	owner = {
+
+		any_cabinet = {
+
+			has_cabinet_action = yes
+
+			cabinet_action = cabinet_action:purge_kindred
+
+			interaction_target:target ?= {
+
+				culture = { has_culture_group = prev }
+
+			}
+
+		}
+
+	}
+
+}
+

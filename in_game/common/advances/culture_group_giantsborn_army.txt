@@ -1,0 +1,141 @@
+# Giantsborn culture-group army unlocks
+# Injects Giantsborn infantry/cavalry twins into the shared vanilla army advance tree.
+# Recruitment remains gated by unit country_potential (giantsborn_group primary culture).
+
+######################
+# Infantry
+######################
+
+INJECT:unlock_footmen_advance = {
+	unlock_unit = a_giantsborn_footmen
+	unlock_levy = levy_a_giantsborn_footmen
+}
+
+INJECT:unlock_archers_advance = {
+	unlock_unit = a_giantsborn_archers
+}
+
+INJECT:unlock_feudal_levy_advance = {
+	unlock_levy = levy_a_giantsborn_feudal_levy
+}
+
+INJECT:unlock_men_at_arms_advance = {
+	unlock_unit = a_giantsborn_men_at_arms
+	unlock_levy = levy_a_giantsborn_men_at_arms
+}
+
+INJECT:unlock_crossbowmen_advance = {
+	unlock_unit = a_giantsborn_crossbowmen
+}
+
+INJECT:unlock_handgonners_advance = {
+	unlock_unit = a_giantsborn_handgonners
+}
+
+INJECT:unlock_peasant_levy_advance = {
+	unlock_levy = levy_a_giantsborn_peasant_levy
+}
+
+INJECT:unlock_halberdiers_advance = {
+	unlock_unit = a_giantsborn_halberdiers
+}
+
+INJECT:unlock_early_arquebusiers_advance = {
+	unlock_unit = a_giantsborn_early_arquebusiers
+}
+
+INJECT:unlock_matchlock_levy = {
+	unlock_levy = levy_a_giantsborn_matchlock_levy
+}
+
+INJECT:unlock_arquebusiers_advance = {
+	unlock_unit = a_giantsborn_arquebusiers
+}
+
+INJECT:unlock_pikemen_advance = {
+	unlock_unit = a_giantsborn_pikemen
+}
+
+INJECT:unlock_flintlock_levy = {
+	unlock_levy = levy_a_giantsborn_flintlock_levy
+}
+
+INJECT:unlock_hunters_advance = {
+	unlock_unit = a_giantsborn_hunters
+}
+
+INJECT:unlock_musketeers_advance = {
+	unlock_unit = a_giantsborn_musketeers
+}
+
+INJECT:militiamen_advance = {
+	unlock_levy = levy_a_giantsborn_militiamen
+}
+
+INJECT:unlock_sharpshooters_advance = {
+	unlock_unit = a_giantsborn_sharpshooters
+}
+
+INJECT:unlock_fusiliers_advance = {
+	unlock_unit = a_giantsborn_fusiliers
+}
+
+INJECT:unlock_grenadiers_advance = {
+	unlock_unit = a_giantsborn_grenadiers
+}
+
+INJECT:conscription_advance = {
+	unlock_levy = levy_a_giantsborn_conscripts
+}
+
+######################
+# Cavalry
+######################
+
+INJECT:unlock_horsemen_advance = {
+	unlock_unit = a_giantsborn_horsemen
+}
+
+INJECT:unlock_armored_horsemen_advance = {
+	unlock_unit = a_giantsborn_armored_horsemen
+}
+
+INJECT:unlock_cavalry_advance = {
+	unlock_unit = a_giantsborn_cavalrymen
+}
+
+INJECT:unlock_heavy_cavalry_advance = {
+	unlock_unit = a_giantsborn_heavy_cavalrymen
+}
+
+INJECT:unlock_light_lancers_advance = {
+	unlock_unit = a_giantsborn_light_lancers
+}
+
+INJECT:unlock_lancers_advance = {
+	unlock_unit = a_giantsborn_lancers
+}
+
+INJECT:unlock_pistoleers_advance = {
+	unlock_unit = a_giantsborn_pistoleers
+}
+
+INJECT:unlock_heavy_lancers_advance = {
+	unlock_unit = a_giantsborn_heavy_lancers
+}
+
+INJECT:unlock_hussars_advance = {
+	unlock_unit = a_giantsborn_hussars
+}
+
+INJECT:unlock_gallop_cavalry_advance = {
+	unlock_unit = a_giantsborn_gallop_cavalry
+}
+
+INJECT:unlock_light_dragoons_advance = {
+	unlock_unit = a_giantsborn_light_dragoons
+}
+
+INJECT:unlock_cuirassiers_advance = {
+	unlock_unit = a_giantsborn_cuirassiers
+}

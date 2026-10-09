@@ -1,0 +1,43 @@
+﻿government = {
+	type = monarchy
+	heir_selection = absolute_cognatic_primogeniture
+
+	#Societal Values
+	centralization_vs_decentralization = 20
+	traditionalist_vs_innovative = -60 #Just feels right
+	spiritualist_vs_humanist = -50 #Just feels right
+	aristocracy_vs_plutocracy = -60 #Just feels right
+	serfdom_vs_free_subjects = 30 #Just feels right
+	mercantilism_vs_free_trade = 10
+	belligerent_vs_conciliatory = 25 #Elf Fantasy - Peacemakers
+	quality_vs_quantity = -70 #Elf Fantasy - Quality
+	offensive_vs_defensive = 40 #Elf Fantasy - Isoliationist
+	capital_economy_vs_traditional_economy = 50
+	individualism_vs_communalism = 30
+	outward_vs_inward = 60 #Elf Fantasy - Isoliationist
+	parliament = {
+		parliament_type = estate_parliament
+	}
+
+	#Estate Privileges
+	privilege = {
+		#nobles
+		#right_to_inherit
+		#Burghers
+		#magdeburg_rights
+		burghers_land_rights
+
+	}
+	reforms = {
+		elven_grove_realm
+	}
+
+	laws = {
+		marriage_law = monogamous_marriage
+		heir_religion_law = heir_same_religion
+		immigration_law = open_borders_law
+		mining_law = burghers_mining_law
+		coin_laws = gold_and_silver_coins
+	}
+}
+

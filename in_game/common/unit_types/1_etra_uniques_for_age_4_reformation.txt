@@ -1,0 +1,72 @@
+﻿
+a_moran_arquebusiers = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_undead_light_infantry
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}		
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+
+	upgrades_to = a_moran_hunters
+	
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_moran_pikemen = {
+	category = army_heavy_infantry
+	copy_from = a_age_4_reformation_undead_heavy_infantry
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}	
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	upgrades_to = a_moran_musketeers
+
+	
+	maintenance_demand =  pikemen_maintenance
+	construction_demand = pikemen_construction
+
+	gfx_tags = { pike_tag medium_tag }
+}
+
+
+a_moran_flintlock_levy = {
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_undead_light_infantry
+	buildable = no
+	levy = yes
+	gfx_tags = { musket_tag light_tag }
+		country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}	
+}

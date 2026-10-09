@@ -1,0 +1,11 @@
+﻿levy_sorlkol_warrior_monk = {
+	size = levy_generic_infantry_size
+	unit = a_sorlkol_warrior_monk
+
+	allowed_pop_type = clergy
+	allowed_pop_type = peasants
+
+	country_allow = {
+		culture = culture:sorlkol_culture
+	}
+}

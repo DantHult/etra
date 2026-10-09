@@ -1,0 +1,128 @@
+﻿# ############################
+# # age_1_traditions
+# ############################
+tiefling_infernal_heritage = {
+	age = age_1_traditions
+	icon = offensive_army
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	army_light_infantry_power = 0.15
+	requires = feudalism_advance
+}
+
+tiefling_oathbound_warriors = {
+	age = age_1_traditions
+	icon = drill_army_advance
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	monthly_army_tradition = 0.05
+	requires = organized_religion
+}
+
+tiefling_sanctified_blades = {
+	age = age_1_traditions
+	icon = glorious_arms
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	land_morale_modifier = 0.05
+	requires = tiefling_oathbound_warriors
+}
+
+tiefling_pact_of_the_torrent = {
+	age = age_1_traditions
+	icon = smooth_administration
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	stability_investment = small_stability_investment
+	requires = organized_religion
+}
+
+# ############################
+# # age_2_renaissance
+# ############################
+tiefling_crusade_zeal = {
+	age = age_4_reformation
+	icon = regimental_system
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	monthly_war_exhaustion = -0.05
+	requires = mercenaries_reformation_advance
+}
+
+tiefling_temple_legions = {
+	age = age_2_renaissance
+	icon = recruitment_improvements_renaissance
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	global_levy_recruitment_speed_modifier = 0.2
+	requires = renaissance_city_rights
+}
+
+# ############################
+# # age_3_discovery
+# ############################
+tiefling_devotional_fury = {
+	age = age_3_discovery
+	icon = drill_army_advance
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	army_tradition_decay = -0.0005
+	requires = open_sea_exploration
+}
+
+tiefling_blood_pact_rites = {
+	age = age_2_renaissance
+	icon = court_accounting
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	global_pop_conversion_speed_modifier = 0.1
+	requires = tiefling_temple_legions
+}
+
+# ############################
+# # age_4_reformation
+# ############################
+tiefling_hellforged_resilience = {
+	age = age_4_reformation
+	icon = regimental_system
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	hire_mercenary_premium_cost_modifier = -0.1
+	requires = mercenaries_reformation_advance
+}
+
+# ############################
+# # age_5_absolutism
+# ############################
+tiefling_righteous_conquest = {
+	age = age_5_absolutism
+	icon = maritime_advance_age_5
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	global_integration_speed_modifier = 0.10
+	requires = maritime_advance_age_5
+}
+
+# ############################
+# # age_6_revolutions
+# ############################
+tiefling_infernal_legacy = {
+	age = age_6_revolutions
+	icon = crown_power_advance_revolutions
+	potential = {
+		culture = culture:torrentor_tieflings_culture
+	}
+	army_heavy_infantry_power = 0.1
+	diplomatic_reputation = 1
+	requires = separation_of_powers
+}

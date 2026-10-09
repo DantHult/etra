@@ -1,0 +1,72 @@
+﻿l_english:
+ #
+ # Culture Groups
+ #
+ moran_group: "Moran"
+ moran_group_desc: "Over a millenium ago, the Moran Empire conquered the lands from where the sun fades, to where it rises. Wherever the banners of her Legions flew, her culture and peoples spread, by sword or word. Foretold by the oculi to be the final empire and the end of histories, it was ultimately bested by entropy, as everything is. Since those days, the multitude of cultures on Etra have evolved and diverged from the ancient Morans, as they encountered new peoples and via the natural flow of time. Yet in the wake of the Day of Apokatastasis, countless ancient Morans once more walk among the living, in a stage of undying. If they are to believed have brought with them echoes of their old cultures, preserved from all epochs of Moras."
+ freeholder_group: "Freeholder"
+ freeholder_group_desc: "The sons and daughters of crusaders, mercenaries, holy-men, knaves, nobles, rogues and rascals and everything in between, originally hailing from the Ruined Kingdoms and from throughout the reaches of Etra, the Freeholders are bound together by the whims of Fortune."
+ 
+ sordrenic_group: "Sordrenic"
+ sordrenic_group_desc: "Sordrenics are natives of Sordren, a southwestern region of Edorinn. Inhabiting the fertile vales and coastal regions of their homeland, they are known throughout the world as skilled sailors and merchants."
+ 
+ ardrainic_group: "Ardrainic"
+ ardrainic_group_desc: "The Ardrainic people trace their origins from the the ancient tribes and kingdoms that once ranged across the western reaches of Edorinn. They are the true legacy of the once great High Kingdom of Ardraine. Though the nation of Ardraine has shattered in the wake of The Day, it is beneath the Gold and Blue banners of the commonweal that the Ardrainic people persist."
+ 
+ torrenter_group: "Torrenter"
+ torrenter_group_desc: "'Torrentor' is an umbrella term referring to the vast and diverse cultures that reside in central lands of Edorinn. Despite differences in customs and languages, all these peoples share the identity of being Torrentors - having been brought together beneath the Commonweal, they have developed collectively since its inception."
+ 
+ armonorian_group: "Armonorian"
+ armonorian_group_desc: ""
+ aitan_group: "Aitan"
+ aitan_group_desc: ""
+ 
+ ringed_citizen_group: "Ringed Citizen"
+ ringed_citizen_group_desc: "From the most exalted Upper ringer to the poorest Lower Ringer all know the same - They are fundamentally different from those who dwell outside its walls. Shaped by unknown hands in the ages beyond memory, the citizens of City of Rings are especially attached to their city. Within the great walls, there exists order, civilization, culture, learning. Beyond the grear structure there is only barbarism, guttural tongues and rapid decay of morality."
+ 
+ vetusian_group: "Vetusian"
+ vetusian_group_desc: ""
+
+ jaskadian_group: "Jaskadian"
+ jaskadian_group_desc: "The Jaskadian peoples inhabit the rain-soaked coasts and forested valleys of Jaskadia, a region nestled between the western seas and the mountain spine that walls off the inland. The Jaskadian identity is a relatively recent construct, born of the forest awakening that followed the burning of the world tree - before that calamity, the peoples of the region had little reason to think of themselves as one."
+ 
+ typheraii_group: "Typheraii"
+ typheraii_group_desc: "The Typheraii are the elven peoples of Typhrea, a region defined as much by its endless internecine warfare as by any shared heritage. To outsiders the Typheraii present one cultural sphere; among themselves they recognize four bitterly divided kinds, high, dark, wood, and steppe, each convinced they and they alone are the true elves. What binds them is not affection but shared inheritance: A common languages, shared cultural-mythos, and a homeland very nature presses their feuds into ever-tighter contact."
+ vothivrian_group: "Vothivrian"
+ vothivrian_group_desc: "Rooted in a rich tapestry of ancient tribes, The Vothivrian peoples, expanded over centuries to occupy much of Eastern Edorinn. Despite being separated into different Kindreds and forming many different states and kingdoms, their shared cultural ancestry remains."
+ 
+ #
+ #Kindreds
+ #
+ undead_group: "Undead"
+ undead_group_desc: "Undead refers to beings which are between a state of life and death. They are not alive in the traditional sense, as they do not need to breathe, do not age, nor rely on normal biology, but they move, think, and act because of magic, curses, necromancy, or some other unnatural force."
+ ratfolk_group: "Vermen"
+ ratfolk_group_desc: "Vermen refers to humanoids which ressemble rodents. Vermen come in a variety of shapes and sizes, and while commonly called 'Ratfolk', this is a misnomer, as Vermen includes humanoids ressembling squirrels, beavers, capybaras, and other similar animals."
+ human_group: "Human"
+ human_group_desc: "Human refers to the hairless great apes that are one of the most prevelant kindreds of Etra. Humanity has been characterized by its high intelligence and highly social nature. There are many origin myths to explain how modern humanity came to be, none have definatively been proven."
+ 
+ elven_group: "Elven"
+ elven_group_desc: "Elf refers to the long-lived humanoids renowned for keen perception, natural grace, and formidable magic. Elven appearances vary greatly, but all share one defining characteristic: their elongated, pointy ears."
+ 
+ giantsborn_group: "Giantsborn"
+ giantsborn_group_desc: "Giantsborn refers to the large humanoids said to carry the blood of giants, renowned for their strength and formidable stature. Though diminished from their (supposed) legendary ancestors, they still tower over the smaller kindreds."
+ 
+ tiefling_group: "Tiefling"
+ tiefling_group_desc: "Tiefling refers to the humanoids believed to carry the blood of infernals or have been marked in some way by malignant energies. Across many lands they are regarded as ominous figures, and their appearance alone is often enough to spark distrust or persecution."
+ aasimar_group: "Aasimar"
+ aasimar_group_desc: "Aasimar refers to the humanoids believed to descend from heavenly beings or to have been touched by divine powers. Across many lands they are viewed with a complex mixture of awe and distrust-their radiant eyes, uncommon beauty, and occasional luminescence marking them as neither fully mortal nor divine. Some are venerated; others are burdened by expectations they can never possibly fulfill."
+
+ beastfolk_group: "Beastfolk"
+ beastfolk_group_desc: "Beastfolk or Beastkin, refers to the humanoids that possess notable animalistic features."
+ pigmen_group: "Pigmen"
+ pigmen_group_desc: "Pigmen refers to the tusked, bristle-haired humanoids of stocky, powerful build, said to descend from boar-stock."
+ lupusfolk_group: "Houndsfolk"
+ lupusfolk_group_desc: "Houndsfolk refers to the humanoids resembling canids. Though the name evokes the Hound, the term is applied broadly, encompassing also those resembling foxes, jackals, and wolves. Houndsfolk are predominantly social by nature, organizing themselves into packs or larger states."
+ 
+ catfolk_group: "Catfolk"
+ catfolk_group_desc: "Catfolk refers to the lithe, fur-covered humanoids resembling felines. The term is umbrella in nature, encompassing those of housecat-stock as readily as those bearing the markings of tigers, lions, and other great predators of warmer climes. Across much of Etra they are regarded with a mixture of fascination and unease."
+
+ iborian_group: "Iborric"
+ iborian_group_desc: ""
+ amalyarat_group: "Amalyarat"
+ amalyarat_group_desc: ""

@@ -1,0 +1,67 @@
+﻿#fallbacks are just tags used during asset lookup. They don't need to match existing graphical cultures
+
+giantsborn_gfx = {
+	priority = 5000 #kindred
+	culture_tag = giantsborn_gfx
+	ethnicities = {
+		10 = giantsborn_ethnicity
+	}
+}
+
+elf_gfx = {
+	priority = 5000 #kindred
+	culture_tag = elf_gfx
+	ethnicities = {
+		10 = elf_ethnicity
+	}
+}
+
+wood_elf_gfx = {
+	priority = 5000 #kindred
+	culture_tag = wood_elf_gfx
+	ethnicities = {
+		10 = wood_elf_ethnicity
+	}
+}
+
+
+dark_elf_gfx = {
+	priority = 5000 #kindred
+	culture_tag = dark_elf_gfx
+	ethnicities = {
+		10 = dark_elf_ethnicity
+	}
+}
+
+undead_gfx = {
+	priority = 5000 #kindred
+	culture_tag = undead_gfx
+	ethnicities = {
+		10 = undead_ethnicity
+	}
+}
+
+verman_gfx = {
+	priority = 5000 #kindred
+	culture_tag = verman_gfx
+	ethnicities = {
+		10 = ratfolk_ethnicity
+	}
+}
+
+tiefling_gfx = {
+	priority = 5000 #kindred
+	culture_tag = tiefling_gfx
+	ethnicities = {
+		10 = tiefling_ethnicity
+	}
+}
+
+aasimar_gfx = {
+	priority = 5000 #kindred
+	culture_tag = aasimar_gfx
+	ethnicities = {
+		10 = aasimar_ethnicity
+	}
+}
+

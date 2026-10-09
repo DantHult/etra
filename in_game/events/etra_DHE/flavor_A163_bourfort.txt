@@ -1,0 +1,111 @@
+﻿namespace = flavor_A163
+
+flavor_A163.1 = { #The Widow of the Empire
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A163.1.title
+	desc = flavor_A163.1.desc
+	fire_only_once = yes
+	outcome = neutral
+
+	dynamic_historical_event = {
+		tag = A163
+		from = 1337.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+
+	trigger = {
+		tag = A163
+		owns = location:ardraine218
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:ardraine218 = {
+			save_scope_as = target_location
+		}
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_A163.1.a
+		historical_option = yes
+		ai_chance = {
+			factor = 3
+		}
+		add_gold = { value = -100 }
+		add_prestige = 20
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_weak_bonus }
+		location:ardraine218 = {
+			change_prosperity = prosperity_weak_bonus
+			add_location_modifier = { modifier = bourfort_widow_of_the_empire years = 25 mode = add_and_extend }
+		}
+	}
+}
+
+flavor_A163.2 = { #Prosperous Rein
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A163.2.title
+	desc = flavor_A163.2.desc
+	fire_only_once = yes
+	outcome = positive
+
+	dynamic_historical_event = {
+		tag = A163
+		from = 1340.1.1
+		to = 1346.12.31
+		monthly_chance = 100
+	}
+
+	trigger = {
+		tag = A163
+		owns = location:ardraine218
+		location:ardraine218 = {
+			has_location_modifier = bourfort_widow_of_the_empire
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		location:ardraine218 = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_A163.2.a
+		historical_option = yes
+		ai_chance = {
+			factor = 3
+		}
+		add_gold = { value = -1000 }
+		location:ardraine218 = {
+			remove_location_modifier = bourfort_widow_of_the_empire
+			add_location_modifier = { modifier = bourfort_grannery_of_the_empire years = -1 mode = replace }
+		}
+	}
+
+	option = {
+		name = flavor_A163.2.b
+		ai_chance = {
+			factor = 1
+		}
+		location:ardraine218 = {
+			remove_location_modifier = bourfort_widow_of_the_empire
+		}
+	}
+}

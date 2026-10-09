@@ -1,0 +1,117 @@
+﻿#Age of Traditions#
+
+pwasciards_tradition = {
+	age = age_1_traditions
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = river_trade
+	global_fish_output_modifier = 0.2
+	navy_galley_power = 0.1
+
+	requires = feudalism_advance
+}
+
+pwasciards_shore_guilds = {
+	age = age_1_traditions
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = trade_caravans
+	global_sailors_modifier = 0.10
+	global_merchant_capacity_modifier = 0.05
+	requires = organized_religion
+}
+
+#Age of Renaissance#
+
+pwasciards_port_networks = {
+	age = age_2_renaissance
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = trade_caravans
+	global_merchant_power = 0.10
+	trade_range_modifier = 0.15
+	requires = renaissance_court
+}
+
+pwasciards_naval_glory = {
+	age = age_2_renaissance
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = ship_building_advance
+	unlock_unit = n_pwasciards_peninsula_galley
+	export_efficiency = small_trade_efficiency_bonus
+	navy_galley_power = 0.05
+	requires = renaissance_city_rights
+}
+
+#Age of Discovery#
+
+pwasciards_maritime_horizons = {
+	age = age_3_discovery
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = ship_building_advance
+	unlock_unit = a_pwasciards_marines
+	trade_range_modifier = 0.20
+	requires = merchant_power_from_maritime_discovery_advance
+}
+
+pwasciards_distant_waters = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			culture = culture:pwasciards_culture
+			has_or_had_tag = A51
+			}
+	}
+	icon = trade_caravans
+	global_construction_speed = 0.10
+	global_merchant_capacity_modifier = 0.10
+	requires = crown_power_advance_discovery
+}
+
+#Age of Reformation#
+
+pwasciards_coastal_identity = {
+	age = age_4_reformation
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = ori_encourage_salt_trade
+	global_maritime_presence_modifier = 0.25
+	sea_cost_on_distance_from_capital_when_maritime = -0.5
+	requires = crown_power_advance_reformation
+}
+
+#Age of Absolutism#
+
+pwasciards_harbor_masters = {
+	age = age_5_absolutism
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = ship_building_advance
+	unlock_building = pwasciards_coastal_warehouse
+	global_naval_supplies_output_modifier = 0.10
+	requires = construction_speed_absolutism
+}
+
+#Age of Revolutions#
+
+pwasciards_modern_maritime = {
+	age = age_6_revolutions
+	potential = {
+		culture = culture:pwasciards_culture
+	}
+	icon = river_trade
+	global_pop_promotion_speed_modifier = 0.15
+	own_coast_naval_combat_bonus = 0.1
+	navy_maintenance_efficiency = 0.1
+	requires = rights_of_man
+}
+

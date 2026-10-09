@@ -1,0 +1,8126 @@
+current_age = age_1_traditions
+
+# own_control_core
+# own_control_integrated
+# own_control_conquered
+# own_control_colony
+# own_core
+# own_conquered
+# own_integrated
+# own_colony
+# control_core
+# control
+# our_cores_conquered_by_others
+
+countries = {
+	countries = {
+
+		A01 = {	#Morium Imperium
+			country_rank = rank_empire
+			own_control_core = {
+				eternalcity1 eternalcity2 eternalcity3 godhand1 godhand2 godhand3 godhand4 godhand5 godhand6 godhand7 godhand8 testprovince250
+				godhand9 godhand10 godhand11 godhand12 godhand13 godhand14 godhand15 godhand16 godhand17 godhand18 godhand19
+				godhand20 godhand21 godhand22 godhand23 godhand24 godhand25 godhand26 godhand27 godhand28 godhand29 godhand30
+				godhand31 godhand32 godhand33 godhand34 godhand35 godhand36 godhand37 godhand38 godhand39 godhand40 godhand41
+				godhand42 godhand43 godhand44 godhand45 godhand46 godhand47 godhand48 godhand49 godhand50 godhand51 godhand52
+				godhand53 godhand54 godhand55 godhand56 godhand57 godhand58 godhand59 godhand60 godhand61 godhand62 godhand63
+				godhand64 godhand65 godhand66 godhand67 godhand68 godhand69 godhand70 godhand71 godhand72 godhand73 godhand74
+				godhand75 godhand76 godhand77 godhand78 godhand79 godhand80 godhand81 godhand82 godhand83 godhand87 godhand88
+				godhand94 testprovince192 testprovince200 testprovince79 testprovince208 testprovince199 testprovince103
+				testprovince169 testprovince209
+			}
+
+			own_control_integrated = {
+				freehold32 freehold125
+			}
+
+			starting_technology_level = 3
+			
+			discovered_regions = {
+				godhand_region
+			}
+
+			include = "expl_western_aduna"
+			government = {
+				type = monarchy
+				heir_selection = elective_succession
+
+				ruler = A01_decius
+
+				ruler_term = { character = A01_decius start_date = 1328.5.24 regnal_number = 1 }
+
+				centralization_vs_decentralization = 20
+				traditionalist_vs_innovative = -60
+				spiritualist_vs_humanist = -60
+				aristocracy_vs_plutocracy = -70
+				serfdom_vs_free_subjects = -60
+				mercantilism_vs_free_trade = -70
+				belligerent_vs_conciliatory = -30
+				quality_vs_quantity = -25
+				offensive_vs_defensive = 50
+				land_vs_naval = -30
+				capital_economy_vs_traditional_economy = 60
+				individualism_vs_communalism = 20
+				outward_vs_inward = 70
+				xenophile_vs_xenophobe = 40
+
+				privilege = {
+					#Nobles
+					auxilium_et_consilium
+					nobles_land_rights
+					noble_marriage_rights
+					noble_fortification_licenses
+					elaborate_court_ceremonies
+					noble_serfdom_rights
+					manorial_courts
+					consolidated_corruption_of_the_nobles
+
+					#Clergy
+					embellish_great_works_of_faith
+					clergy_powerful_dioceses
+					clergy_strengthen_faith
+					consolidated_corruption_of_the_clergy
+					clergy_literacy_rights
+					clergy_enforced_unity
+
+					#Burghers
+					formal_guilds
+					land_of_commerce
+					market_fairs
+					sponsor_maritime_contracts
+					control_over_monetary_policy
+					control_over_the_coinage
+					consolidated_corruption_of_the_burghers
+					formal_guilds
+					building_roads_rights
+
+					#Commoners
+					access_to_royal_and_ecclesiastical_courts
+					consolidated_corruption_of_the_peasants
+					allow_hunting
+					communal_lands
+				}
+				reforms = {
+					autocracy
+				}
+				parliament = {
+					parliament_type = senatus_sempiternus
+				}
+
+				laws = {
+					feudal_de_jure_law = by_tradition
+					medieval_levy_law = noble_levies
+					royal_court_customs_law = aristocratic_court_policy
+					censorship = limited_censorship
+					education_masses_law = basic_religious_education
+					administrative_system = central_councils
+					cultural_traditions_law = martial_society
+					marriage_law = monogamous_marriage
+					heir_religion_law = heir_same_religion
+					legal_code_law = lux_aeterna
+					maritime_law = protect_trade_routes
+					piracy_law = anti_piracy_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					immigration_law = closed_borders_law
+					mining_law = nobles_mining_law
+					precious_metal_distribution_law = gold_export_ban
+				}
+			}
+
+			
+			
+			capital = eternalcity1
+			accepted_cultures = {
+				late_moran_culture
+				early_moran_culture
+				high_moran_culture
+			}
+
+		}
+		A02 = {	#Scarlet Orders
+			own_control_core = {
+				freehold17 freehold16 freehold126 freehold13 freehold14 freehold15 freehold18 freehold19 freehold20 testprovince223 adune102 adune99 adune119
+			}
+
+			own_control_integrated = {
+				freehold60 freehold61 freehold62 freehold68 freehold12 freehold47 freehold21 freehold22 freehold59 freehold46
+				freehold43 freehold44 freehold45 freehold11 freehold67 testprovince212 freehold58 testprovince222 testprovince242
+				testprovince243 testprovince91 testprovince229 testprovince216 testprovince241 testprovince210 aita66
+			}
+
+			starting_technology_level = 3
+
+			
+			discovered_regions = {
+				godhand_region
+			}
+
+		include = "eternalist_military_order"
+		include = "expl_western_aduna"
+		government = {
+			type = theocracy
+			ruler = A02_grand_master_theodoric
+			ruler_term = { character = A02_grand_master_theodoric start_date = 1335.4.18 regnal_number = 1	}
+
+			centralization_vs_decentralization = 20
+			aristocracy_vs_plutocracy = -95
+			serfdom_vs_free_subjects = -90
+			traditionalist_vs_innovative = -60
+			spiritualist_vs_humanist = -90
+			mercantilism_vs_free_trade = -30
+			offensive_vs_defensive = -40
+			land_vs_naval = -70
+			quality_vs_quantity = -60
+			belligerent_vs_conciliatory = -60
+			capital_economy_vs_traditional_economy = 100
+			individualism_vs_communalism = -20
+			outward_vs_inward = -70
+		}
+
+			country_rank = rank_duchy
+			
+			capital = freehold13
+		}
+		A03 = {	#Ventura
+			own_control_core = {
+				freehold9 freehold8 freehold7 freehold6 freehold4 freehold28 freehold3 freehold2 freehold1 freehold5 testprovince237
+				testprovince238 freehold81 freehold33
+			}
+
+			own_control_integrated = {
+				testprovince240 testprovince239
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "adune_republic"
+			government = {
+				ruler = random
+				type = republic
+				heir_selection = republic_2_year_terms
+			}
+
+			country_rank = rank_kingdom
+			capital = freehold5
+		}
+		A04 = {	#minitam
+			own_control_core = {
+				freehold10 testprovince186 testprovince193
+			}
+
+			own_control_integrated = {
+				godhand106
+			}
+			our_cores_conquered_by_others = {
+				freehold24 freehold11
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "adune_republic"
+					government = {
+						ruler = random
+						type = republic
+						heir_selection = podesta_elective
+
+					}
+
+			country_rank = rank_duchy
+			capital = freehold10
+		}
+		A05 = {	
+			own_control_core = {
+				freehold26 freehold27 freehold29
+			}
+			our_cores_conquered_by_others = {
+				freehold35 godhand97 godhand95 godhand98
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = freehold27
+		}
+		A06 = {	#Erentis
+			own_control_core = {
+				freehold36 freehold37 freehold25
+			}
+			our_cores_conquered_by_others = {
+				freehold42 freehold41 freehold40
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+			
+			capital = freehold36
+		}
+		A07 = {	#ortiber
+			own_control_core = {
+				godhand97 godhand98
+			}
+
+			own_control_integrated = {
+				godhand95
+			}
+			our_cores_conquered_by_others = {
+				freehold29 freehold27 freehold26
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				
+			}
+
+			country_rank = rank_duchy
+			capital = godhand95
+		}
+		A08 = {	#darette
+			own_control_core = {
+				godhand92 godhand96 godhand93 testprovince211
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+			
+			capital = godhand96
+		}	
+		A09 = {	#Cerim
+			own_control_core = {
+				godhand99 godhand105 godhand104 godhand103 godhand102 godhand101 godhand100 testprovince213 testprovince215 testprovince214
+			}
+			our_cores_conquered_by_others = {
+				godhand98
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+			
+			capital = godhand105
+		}		
+		A10 = {	#Iuvenia
+			own_control_core = {
+				freehold80 freehold77 freehold82 freehold85 freehold88 freehold86 freehold89 freehold83 testprovince206
+				testprovince230 freehold127 freehold128 freehold131 testprovince234 testprovince151 freehold130 freehold129
+			}
+
+			own_control_integrated = {
+				freehold78 freehold84 freehold87
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_duchy
+		
+			capital = freehold128
+		}
+		A11 = {	#The Sanguine Daughters
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				freehold57 freehold70 freehold56 freehold55 testprovince227
+			}
+
+			starting_technology_level = 3
+
+			include = "eternalist_military_order"
+			include = "expl_western_aduna"
+
+			government = {
+				heir_selection = grandmistress_elective
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = testprovince227
+		}
+		A12 = {	#The Eternal Watch
+				own_control_core = {
+				freehold65 freehold64 freehold63 aita71
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "eternalist_military_order"
+			include = "expl_western_aduna"
+			country_rank = rank_county
+			capital = aita71
+		}
+		A13 = { # Rattopaese
+			own_control_core = {
+				freehold50 freehold71 freehold72
+			}
+
+			own_control_integrated = {
+				freehold49 freehold97 freehold101 freehold102
+			}
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				regency = nobles_estate_regency
+				active_regent = A13_cecilia
+			
+				start_regency_date = 1337.3.30
+				end_regency_date = 1345.1.1
+				heir = rat_ratticar_the_young
+				ruler_term = { character = rat_verminus_supreme start_date = 1280.1.1 end_date = 1337.3.30 regnal_number = 1 }
+			}
+			capital = freehold50
+			dynasty = verminus_dynasty
+			country_rank = rank_kingdom
+			currency_data = {
+				government_power = 40
+			}
+		}
+		A14 = { # Cheq
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				freehold41 freehold42 testprovince228
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+			
+				ruler = rat_cheq
+				consort = rat_cheq_consort_valina
+			}
+			capital = freehold41
+			dynasty = verminus_dynasty
+		}
+		A15 = { # Jessaros
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				freehold40 freehold35 freehold39 freehold38 testprovince232
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_jex_the_second
+				consort = rat_jex_consort_catera
+			}
+			capital = freehold35
+			dynasty = verminus_dynasty
+		}
+		A16 = { # Vicitz
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				freehold34 freehold31 freehold30 freehold48 testprovince231
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_vikkit
+				consort = rat_vikkit_consort_beatra
+				ruler_term = { character = rat_vikkit start_date = 1330.1.1 regnal_number = 1 }
+			}
+			capital = testprovince231
+			dynasty = verminus_dynasty
+		}
+		A17 = { # Voserro
+			own_control_core = {
+				freehold53
+			}
+
+			own_control_integrated = { 
+				freehold54 testprovince217 testprovince67
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_kvos
+				consort = rat_kvos_consort_elina
+				ruler_term = { character = rat_kvos start_date = 1330.1.1 regnal_number = 1 }
+			}
+			capital = freehold54
+			dynasty = verminus_dynasty
+		}
+		A18 = { # vem
+			own_control_core = {
+				freehold76 freehold75
+			}
+
+	
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_vem
+				consort = rat_vem_consort_diana
+				ruler_term = { character = rat_vem start_date = 1330.1.1 regnal_number = 1 }
+			}
+			capital = freehold75
+			dynasty = verminus_dynasty
+		}
+		A19 = { # Rissto
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				freehold52
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_rikkek
+				consort = rat_rikkek_consort_saria
+			}
+			capital = freehold52
+			dynasty = verminus_dynasty
+		}	
+		A20 = { # Mavisci
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				freehold51 testprovince205
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_mavvis
+				consort = rat_mavvis_consort_catera
+				ruler_term = { character = rat_mavvis start_date = 1330.1.1 regnal_number = 1 }
+			}
+			capital = freehold51
+			dynasty = verminus_dynasty
+		}	
+		A21 = { # Strinaci
+			own_control_core = {
+				freehold90
+			}
+
+			own_control_integrated = {
+				freehold92 freehold93 freehold94 freehold91 testprovince49 testprovince226
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_zrindez
+				consort = rat_zrindez_consort_beatrix
+				ruler_term = { character = rat_zrindez start_date = 1330.1.1 regnal_number = 1 }
+			}
+			capital = freehold94
+			dynasty = verminus_dynasty
+		}	
+		A22 = { # Rosci
+			own_control_core = {
+				freehold74 freehold73 testprovince224
+			}
+
+			own_control_integrated = {
+				freehold96 testprovince225
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_rocdit_the_second
+				consort = rat_rocdit_consort_valina
+			}
+			capital = freehold73
+			dynasty = verminus_dynasty
+			}		
+		A23 = { # Ginoz
+			own_control_core = {
+				freehold95
+			}
+
+			own_control_integrated = {
+				freehold98 testprovince235 testprovince236
+			}
+
+			include = "rattolini_successor_state"
+			include = "expl_western_aduna"
+			government = {
+				ruler = rat_djigren
+				consort = rat_djigren_consort_ermengarda
+				ruler_term = { character = rat_djigren start_date = 1330.1.1 regnal_number = 1 }
+			}
+			capital = freehold95
+			dynasty = verminus_dynasty
+		}
+		A24 = { # placeholder
+			own_control_core = {
+				freehold100
+			}
+
+			own_control_integrated = {
+				freehold99 freehold104 freehold103 freehold105 freehold108 freehold106 testprovince133
+			}
+
+			include = "expl_western_aduna"
+			include = "rattolini_successor_state"
+			government = {
+				ruler = rat_nibblin
+				consort = rat_nibblin_consort_selene
+				ruler_term = { character = rat_nibblin start_date = 1330.1.1 regnal_number = 1 }
+			}
+			dynasty = verminus_dynasty
+			capital = freehold104
+		}	
+		A25 = { # placeholder
+			own_control_core = {
+				freehold110 freehold114 freehold111 freehold109 freehold132 testprovince109 testprovince244
+			}
+
+			own_control_integrated = {
+				freehold112 freehold107 freehold113 testprovince218 aita91 aita99 aita104
+			}
+
+			include = "expl_western_aduna"
+			include = "eastern_adunan_eternalist_monarchy"
+			government = {
+				#ruler_term = {	 character = tho_murtagh_o_brien				start_date = 1317.1.1 }
+				ruler = random
+			}
+			capital = freehold107
+			country_rank = rank_duchy
+		}
+		A26 = { # Legio I
+			own_control_core = {
+				testprovince220 freehold120
+			}
+
+			own_control_integrated = {
+				freehold118 freehold122 freehold119 freehold121 etra1
+			}
+
+		include = "eternalist_military_order"
+		include = "expl_western_aduna"
+			government = {
+				type = theocracy
+				ruler = A26_valerius
+				ruler_term = { character = A26_valerius start_date = 1317.1.1 regnal_number = 1 }
+
+				centralization_vs_decentralization = 20
+				aristocracy_vs_plutocracy = -95
+				serfdom_vs_free_subjects = -90
+				traditionalist_vs_innovative = -60
+				spiritualist_vs_humanist = -90
+				mercantilism_vs_free_trade = -30
+				offensive_vs_defensive = -40
+				land_vs_naval = -70
+				quality_vs_quantity = -60
+				belligerent_vs_conciliatory = -60
+				capital_economy_vs_traditional_economy = 100
+				individualism_vs_communalism = -20
+				outward_vs_inward = -70
+			}
+			capital = freehold119
+			accepted_cultures = {
+				rovina_culture
+			}
+		}
+		A27 = { # Hill Tribes, recently united under a local warlord
+			own_control_core = {
+				freehold116 freehold123 freehold124 testprovince233 testprovince221 testprovince219
+			}
+
+			own_control_integrated = {
+				freehold115 freehold117
+			}
+
+			include = "expl_western_aduna"
+			include = "eastern_adunan_eternalist_monarchy"
+			government = {
+				#ruler_term = {	 character = tho_murtagh_o_brien				start_date = 1317.1.1 }
+				ruler = random
+			}
+			capital = freehold116
+		}
+		A28 = { # City state which has lost a lot of land to the Iuvenians and the Crusaders, probably destined to be succumed by those powers, can you reverse fate?
+			own_control_core = {
+				freehold66 freehold79 freehold69
+			}
+			our_cores_conquered_by_others = {
+				freehold68 freehold65 freehold63 freehold64 freehold67
+			}
+			include = "expl_western_aduna"
+			include = "catholic_republic_no_coast"
+			government = {
+				type = republic
+				heir_selection = republic_2_year_terms
+				ruler = random
+			}
+			capital = freehold69
+		}
+		A29 = {	#The Preservers of the Mother
+			own_control_core = {
+				testprovince120 testprovince73 freehold23 freehold24
+			}
+
+			starting_technology_level = 3
+			government = {
+				ruler = random
+			}
+			include = "eternalist_military_order"
+			include = "expl_western_aduna"
+
+			country_rank = rank_county
+			capital = freehold23
+		}
+		A30 = {	#Kalistra
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				godhand86 godhand91 godhand85 godhand90 godhand89 godhand84
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand85
+		}
+		A31 = {	#Louirte 
+			own_control_core = {
+				testprovince98 testprovince204 testprovince28 testprovince203 testprovince27 testprovince7 testprovince207 islands_1 adune28 
+				commonweal67
+			}
+
+			own_control_integrated = {
+				testprovince74 testprovince99 testprovince96 testprovince8 testprovince65 testprovince34
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_republic"
+			government = {
+				ruler = random
+				type = republic
+				heir_selection = lottery_election
+				laws = {
+					republican_foundation_law = republicanism_policy
+				}
+				reforms = {
+					merchant_republic
+				}
+				centralization_vs_decentralization = -30
+				aristocracy_vs_plutocracy = 40
+				serfdom_vs_free_subjects = -20
+				traditionalist_vs_innovative = 30
+				spiritualist_vs_humanist = 60
+				mercantilism_vs_free_trade = -40
+				offensive_vs_defensive = 60
+				land_vs_naval = 60
+				quality_vs_quantity = -20
+				belligerent_vs_conciliatory = -20
+				capital_economy_vs_traditional_economy = -50
+				individualism_vs_communalism = -40
+				outward_vs_inward = -80
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = testprovince204
+		}		
+		A32 = {	#Druwen 
+			own_control_core = {
+				testprovince56 testprovince47 testprovince136 testprovince190 testprovince130 testprovince19 testprovince198 testprovince86 testprovince97 testprovince55 testprovince16 testprovince88 testprovince116 testprovince81 testprovince100 testprovince63 testprovince173 testprovince37 testprovince76
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = A32_alric_sunbreaker
+				ruler_term = { character = A32_alric_sunbreaker start_date = 1330.1.1 regnal_number = 1 }
+			}
+			accepted_cultures = {
+				stone_sordrenic_culture
+				salt_sordrenic_culture
+			}
+
+			country_rank = rank_kingdom
+			dynasty = sunbreaker_dynasty
+			capital = testprovince86
+		}
+		A33 = {	#Stoeste 
+			own_control_core = {
+				testprovince114 testprovince139 testprovince94 testprovince93 testprovince62 testprovince26 testprovince122
+				testprovince195 testprovince132 testprovince52 adune132 adune134 adune161 adune126 adune142 adune92 adune117
+			}
+
+			own_control_integrated = {
+				testprovince90
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_republic"
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = adune134
+		}
+		A34 = {	#Plelme 
+			own_control_core = {
+				 testprovince175   adune79 adune159 adune84 adune105 adune81
+				adune93 adune98 adune80 adune100 adune111 adune129 adune139 adune91
+			}
+
+			own_control_integrated = {
+				testprovince153
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = adune111
+		}	
+		
+		A35 = {	#nɑ̃lk->Nanlque 
+			own_control_core = {
+				testprovince31 testprovince66 testprovince202 testprovince57 testprovince113 adune116 adune141 
+			}
+
+			own_control_integrated = {
+				testprovince141
+			}
+			our_cores_conquered_by_others = {
+				testprovince122 testprovince139
+			}
+
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_duchy
+		
+			capital = testprovince31
+		}	
+		A36 = {	#Sonkst
+			own_control_core = {
+				testprovince12 testprovince107 testprovince92 testprovince87
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_county
+		
+			capital = testprovince12
+		}		
+		A37 = {	#Getru
+			own_control_core = {
+				testprovince201 testprovince126 testprovince89 testprovince36 testprovince13 testprovince112 testprovince59 testprovince21 testprovince197 testprovince69 testprovince95 testprovince14 testprovince48 testprovince23 
+			}
+
+			starting_technology_level = 3
+			
+			accepted_cultures = {
+				stone_sordrenic_culture
+				salt_sordrenic_culture
+			}
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+					ruler = A37_saria_valfaren
+				
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = testprovince89
+		}
+		A38 = {	#Brelm
+			own_control_core = {
+				testprovince60 testprovince85
+			}
+
+			own_control_integrated = {
+				testprovince194 testprovince110 testprovince80
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = A38_kyrihas
+			}
+
+			country_rank = rank_county
+		
+			capital = testprovince60
+		}
+		A39 = {	#Piurdre
+			own_control_core = {
+				testprovince138 testprovince24 testprovince68 testprovince82
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_duchy
+		
+			capital = testprovince138
+		}
+		A40 = {	#Enthos
+			own_control_core = {
+				testprovince70 testprovince150 adune86 adune82 adune127 adune149 adune90 testprovince61 testprovince196
+				testprovince40 testprovince125 testprovince149 testprovince167 testprovince154
+				testprovince106 testprovince42 testprovince77 testprovince119 testprovince78
+			}
+
+			own_control_integrated = {
+				testprovince105 testprovince108
+			}
+			
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = testprovince106
+		}
+		A41 = {	#Sunthramarka
+			own_control_core = {
+				adune160 testprovince54 testprovince72 testprovince111  testprovince129 testprovince71 testprovince84 testprovince155 testprovince102 testprovince32 adune124
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+
+			country_rank = rank_duchy
+		
+			capital = testprovince54
+		}
+		#A42 Sordren - Formable
+		
+		#Armonor
+		A43 = {
+			own_control_core = {
+				ardraine72 ardraine74 ardraine76 ardraine75 ardraine87 ardraine85 ardraine89 ardraine86 ardraine73 ardraine102
+				ardraine83 ardraine84 ardraine82 ardraine88 ardraine203 adune40 adune18 adune5 adune75 adune51 adune77 adune55 etra331 adune32 adune38 adune20 adune67 adune53 adune29 adune34 adune76 adune50
+				ardraine71
+			}
+
+			own_control_integrated = {
+				ardraine194 ardraine70 ardraine80 ardraine90 ardraine62 ardraine116 ardraine118 ardraine77 ardraine81
+				ardraine69 ardraine68 ardraine79 ardraine205
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+
+				centralization_vs_decentralization = 30
+				aristocracy_vs_plutocracy = -35
+				serfdom_vs_free_subjects = -35
+				traditionalist_vs_innovative = 10
+				spiritualist_vs_humanist = -50
+				mercantilism_vs_free_trade = 45
+				offensive_vs_defensive = 30
+				land_vs_naval = 30
+				quality_vs_quantity = 20
+				belligerent_vs_conciliatory = 10
+				capital_economy_vs_traditional_economy = 75
+				individualism_vs_communalism = -50
+				outward_vs_inward = -10
+				reforms = {
+					
+				}
+
+			}
+			capital = ardraine71
+			country_rank = rank_kingdom
+
+			tolerated_cultures = {
+				aggeuios_culture
+			}
+
+		}
+
+		A44 = { #Crelzerte
+			own_control_core = {
+				crelzerte beuzerte
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_republic"
+			include = "eternalist_free_city"
+			country_rank = rank_duchy
+			government = {
+				type = republic
+				ruler = random
+				reforms = {
+					merchant_republic
+				}
+
+
+				centralization_vs_decentralization = 25
+				aristocracy_vs_plutocracy = 25
+				serfdom_vs_free_subjects = -20
+				traditionalist_vs_innovative = 35
+				spiritualist_vs_humanist = 10
+				mercantilism_vs_free_trade = -40
+				offensive_vs_defensive = 50
+				land_vs_naval = 65
+				quality_vs_quantity = -20
+				belligerent_vs_conciliatory = 0
+				capital_economy_vs_traditional_economy = -60
+				individualism_vs_communalism = -20
+				outward_vs_inward = -70
+
+
+			}
+
+			capital = crelzerte
+		}
+		A45 = {	#Guarden
+			own_control_core = {
+				ardraine12 ardraine11 ardraine13 ardraine14 ardraine171 ardraine41 adune58 adune154 adune64
+				testprovince64 adune54
+			}
+
+			own_control_integrated = {
+				testprovince1 testprovince189 ardraine36 testprovince159 ardraine38 ardraine39 testprovince161 ardraine35
+				ardraine16 ardraine55 testprovince147 
+			}
+
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy_no_coast"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+				reforms = {
+					margraviate
+				}
+
+				centralization_vs_decentralization = 60
+				spiritualist_vs_humanist = -20
+				aristocracy_vs_plutocracy = -60
+				land_vs_naval = -20
+				outward_vs_inward = 0
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine12
+		}
+		A46 = {	#Wryne
+			own_control_core = {
+				ardraine1 ardraine2 adune61
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			country_rank = rank_county
+			government = {
+				ruler = A46_briouze_wryne
+
+			}
+
+			capital = ardraine1
+		}
+		A47 = {	#Gaurden City
+			own_control_core = {
+				ardraine8
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+
+			government = {
+				ruler = random
+			}
+
+			country_rank = rank_county
+			capital = ardraine8
+		}
+		A48 = {	#Euinkors
+			own_control_core = {
+				ardraine7 ardraine3 ardraine10 ardraine15
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine7
+
+		} 
+		A49 = {	#Élisa
+			own_control_core = {
+				ardraine9
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+
+			government = {
+				ruler = random
+			}
+
+			country_rank = rank_county
+			capital = ardraine9
+		}
+		A50 = { #Emarvine
+			own_control_core = {
+				adune66 ardraine6 ardraine4 testprovince39
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine4
+		}
+		A51 = {	#French Wood Elves
+			own_control_core = {
+				testprovince180 ardraine197 ardraine100 ardraine108 ardraine58 testprovince188 testprovince179 ardraine96 ardraine18
+				ardraine105 ardraine46 commonweal51 heartwoods1 commonweal17 ardraine23 testprovince15 commonweal25 ardraine24 adune19
+			}
+
+			own_control_integrated = {
+				torrent349
+			}
+
+			starting_technology_level = 3
+			
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+				
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = commonweal51
+		}
+		A52 = { #Ardrainic Regency
+			own_control_core = {
+				ardraine207
+			}
+			our_cores_conquered_by_others = {
+				ardraine160 ardraine65 ardraine64 testprovince168 ardraine160 ardraine150 commonweal13
+				ardraine209 ardraine160 ardraine154 ardraine155 torrent2 
+				torrent3 ardraine159 commonweal22
+				ardraine168 ardraine149
+				ardraine208 ardraine157 ardraine156 torrent277 torrent276 ardraine151 ardraine152
+				commonweal41 torrent276 commonweal42 ardraine159
+				commonweal21 ardraine158 torrent48 torrent49
+				ardraine144 ardraine140 ardraine195 ardraine201
+			}
+			starting_technology_level = 3
+			
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+				
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = ardraine207
+		}
+		A53 = { #Teron
+			own_control_core = {
+				ardraine5
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine5
+		}
+		A54 = { #SwanWatch
+			own_control_core = {
+				testprovince25 testprovince22 testprovince178 ardraine91 commonweal58
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_military_order"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = commonweal58
+		}
+		A55 = { #Gabrihel
+			own_control_core = {
+				torrent344 torrent284 torrent281 torrent270 torrent282 torrent333 torrent280 torrent332 torrent283
+				torrent337 torrent1 dis2 dis5 dis4 dis3  torrent20 commonweal50 commonweal43
+				commonweal68 etra231 etra229 etra230 etra240
+			}
+
+			starting_technology_level = 3
+			include = "eternalist_military_order"
+			include = "expl_western_aduna"
+			government = {
+				type = theocracy
+				ruler = random
+
+				centralization_vs_decentralization = 20
+				aristocracy_vs_plutocracy = -95
+				serfdom_vs_free_subjects = -90
+				traditionalist_vs_innovative = -60
+				spiritualist_vs_humanist = -90
+				mercantilism_vs_free_trade = -30
+				offensive_vs_defensive = -40
+				land_vs_naval = -70
+				quality_vs_quantity = -60
+				belligerent_vs_conciliatory = -60
+				capital_economy_vs_traditional_economy = 100
+				individualism_vs_communalism = -20
+				outward_vs_inward = -70
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_kingdom
+			capital = dis2
+		}
+		A56 = { #
+			own_control_core = {
+				torrent285 torrent286 torrent336 torrent343
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent285
+		}
+		A57 = { #Diesirae
+			own_control_core = {
+				torrent304
+			}
+
+			own_control_integrated = {
+				aita65 aita61
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent304
+		}
+		A58 = { #Uxor
+			own_control_core = {
+			}
+
+			own_control_integrated = {
+				torrent18
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent18
+		}
+		A59 = { #Azraelgau
+			own_control_core = {
+				torrent338
+			}
+
+			own_control_integrated = {
+				torrent24 torrent22
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent24
+		}
+		A60 = { #Zadkielburg
+			own_control_core = {
+				ardraine229 ardraine186
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine229
+		}
+		A61 = { #Skurtia
+			own_control_core = {
+				ardraine128 ardraine132 ardraine163 torrent339 ardraine164 torrent340 
+				ardraine216 torrent19 torrent334 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_republic"
+			government = {
+							type = republic
+			heir_selection = oligarchic_elective
+			ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_kingdom
+			capital = torrent339
+		}
+		A62 = { #Shtshbur
+			own_control_core = {
+				torrent17 torrent335 ardraine234
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent17
+		}
+		A63 = { #Shtshbur
+			own_control_core = {
+				torrent16
+			}
+
+			own_control_integrated = {
+				torrent30
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent30
+		}
+		A64 = { #stille Oase
+			own_control_core = {
+				torrent341
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city_no_coast"
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent341
+		}	
+		A65 = { #eckeldogh
+			own_control_core = {
+				torrent342 torrent23 torrent31
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent31
+		}
+		A66 = { #Zollirefin
+			own_control_core = {
+				torrent36 torrent34 torrent33 torrent131 torrent266 torrent135 torrent288 torrent133 torrent134
+				torrent130 torrent126 torrent29 torrent35 torrent127
+			}
+
+			own_control_integrated = {
+				torrent129
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_kingdom
+			capital = torrent130
+		}
+		A67 = { #Dornbruck
+			own_control_core = {
+				ardraine230 ardraine187 torrent287
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine187
+		}
+		A68 = { #Dornbruck
+			own_control_core = {
+				ardraine185 torrent289 ardraine214 etra427 etra425
+			}
+
+			own_control_integrated = {
+				torrent290
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine185
+		}
+		A69 = { #Zweilüsse
+			own_control_core = {
+				ardraine184
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A70 = { #Shangheda
+			own_control_core = {
+				torrent132 torrent125
+			}
+
+			own_control_integrated = {
+				torrent27 ardraine235 torrent32
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent125
+		}
+		A71 = { 
+			own_control_core = {
+ torrent73 torrent72 torrent116 torrent114 torrent14 torrent115 torrent120 torrent13 ardraine162
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_elven_realm"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = torrent114
+		}
+		A72 = { #
+			own_control_core = {
+				torrent123  torrent118 torrent117
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent123
+		}
+		A73 = { #
+			own_control_core = {
+				torrent204 torrent264 torrent211
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = A73_severian_serpentar
+				ruler_term = { character = A169_marcellian_serpentar start_date = 1300.1.1 end_date = 1334.10.9 regnal_number = 1 }
+				ruler_term = { character = A73_severian_serpentar start_date = 1334.10.9 regnal_number = 1 }
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent211
+		}
+		A74 = { #
+			own_control_core = {
+				torrent68 torrent69
+			}
+
+			own_control_integrated = {
+				torrent278
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent68
+		}
+		A75 = { #
+			own_control_core = {
+				torrent187 torrent188 torrent186 torrent141 torrent107 adune74
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent107
+		}
+		A76 = { #
+			own_control_core = {
+				torrent195 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent195
+		}
+		A77 = { #
+			own_control_core = {
+				torrent214 torrent213 torrent265 adune22
+				
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent265
+		}
+		A78 = { #
+			own_control_core = {
+				torrent245 torrent232
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent232
+		}
+		A79 = { #
+			own_control_core = {
+				torrent230 torrent208 torrent207
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent207
+		}
+		A80 = { #
+			own_control_core = {
+				torrent38
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent38
+		}
+		A81 = { #
+			own_control_core = {
+				torrent40  torrent291 commonweal35
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent40
+		}
+		A82 = { #
+			own_control_core = {
+				torrent233 torrent269 torrent234
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent269
+		}
+		A83 = { #
+			own_control_core = {
+				torrent189 torrent190 torrent143
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent143
+		}
+		A84 = { #
+			own_control_core = {
+				torrent209 torrent228 torrent267
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent228
+		}
+		A85 = { #
+			own_control_core = {
+				torrent268 torrent224
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent268
+		}
+		A86 = { #
+			own_control_core = {
+				torrent231 torrent248 torrent39
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent39
+		}
+		A87 = { #
+			own_control_core = {
+				torrent136 torrent128 torrent137 torrent193 torrent138
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = torrent136
+		}
+		A88 = { #
+			own_control_core = {
+				torrent311 torrent323 torrent331 torrent321 torrent320 commonweal52 torrent152 adune63
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent331
+		}
+		A89 = { #
+			own_control_core = {
+				 torrent346
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent346
+		}
+		A90 = { #
+			own_control_core = {
+				adune27
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = adune27
+		}
+		A91 = { #
+			own_control_core = {
+					torrent324  commonweal16 torrent313
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent324
+		}
+		A92 = { #
+			own_control_core = {
+				commonweal64 torrent235 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = commonweal64
+		}
+		A93 = { #
+			own_control_core = {
+				torrent217  torrent225
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent225
+		}
+		A94 = { #
+			own_control_core = {
+				torrent197 torrent196 torrent212
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_bishopric_no_coast"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent197
+		}
+		A95 = { #
+			own_control_core = {
+				torrent243 torrent246 torrent244
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent244
+		}
+
+		A97 = { #
+			own_control_core = {
+				torrent256 torrent251
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent256
+		}
+		A98 = { #
+			own_control_core = {
+				torrent250
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent250
+		}
+		A99 = { #
+			own_control_core = {
+				torrent249 torrent41
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent249
+		}
+		A100 = { #
+			own_control_core = {
+				torrent262 torrent258
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent262
+		}
+		A101 = { #
+			own_control_core = {
+				torrent253 torrent252 torrent242
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent253
+		}
+		A102 = { #
+			own_control_core = {
+				torrent236
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent236
+		}
+		A103 = { #
+			own_control_core = {
+				torrent298 torrent145 torrent198 torrent318 commonweal53
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_bishopric_no_coast"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A104 = { #
+			own_control_core = {
+				torrent301 torrent202 torrent218
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A105 = { #
+			own_control_core = {
+				torrent226
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A106 = { #
+			own_control_core = {
+				torrent240 commonweal59
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent240
+		}	
+		A107 = { #
+			own_control_core = {
+				torrent170 torrent171
+			}
+
+			own_control_integrated = {
+				torrent169
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A108 = { #
+			own_control_core = {
+				torrent303 torrent179 adune21 torrent180
+			}
+
+			own_control_integrated = {
+				torrent181
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}		
+		A109 = { #
+			own_control_core = {
+				torrent310 torrent158 torrent159 torrent294 torrent157
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A110 = { #
+			own_control_core = {
+				torrent300 torrent254 torrent259 torrent257 torrent255
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A111 = { #
+			own_control_core = {
+				torrent260 torrent261
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A112 = { #
+			own_control_core = {
+				torrent47 torrent44 torrent43
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A113 = { #
+			own_control_core = {
+				torrent21  
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}		
+		A114 = { #
+			own_control_core = {
+				torrent279
+			}
+
+			own_control_integrated = {
+				
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A115 = { #
+			own_control_core = {
+				torrent105 torrent106
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A116 = { #
+			own_control_core = {
+				torrent201 torrent296 torrent191
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A117 = { #
+			own_control_core = {
+				torrent200 torrent144
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A118 = { #
+			own_control_core = {
+				ardraine213
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A119 = { #
+			own_control_core = {
+				torrent319 torrent238
+			}
+
+			own_control_integrated = {
+				torrent317
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = A119_iyalana_tuluin
+				ruler_term = { character = A119_iyalana_tuluin start_date = 1331.5.12 regnal_number = 1 }
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent238
+		}
+
+
+
+		A121 = { #
+			own_control_core = {
+				 torrent178 torrent160
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A122 = { #
+			own_control_core = {
+				torrent182
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_bishopric_no_coast"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent182
+		}
+
+		A123 = { #
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				torrent241 torrent239
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A124 = { #
+			own_control_core = {
+				torrent183 torrent172 torrent184 torrent173 torrent45 adune65
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+
+		A125 = { #
+			own_control_core = {
+				torrent292 ardraine182 torrent312 ardraine181 etra784
+			}
+
+			own_control_integrated = {
+				etra354
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A126 = { #
+			own_control_core = {
+				ardraine236 torrent247
+			}
+
+			own_control_integrated = {
+				torrent215
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A127 = { #
+			own_control_core = {
+				torrent161 torrent162 torrent163 torrent164 torrent165
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A128 = { #
+			own_control_core = {
+				ardraine143 torrent177 torrent175 adune131 adune57
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A129 = { #
+			own_control_core = {
+				torrent176 torrent166 torrent167 torrent168 torrent305 adune69
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = torrent176
+		}
+
+		A130 = { #
+			own_control_core = {
+				ardraine232 torrent306
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A131 = { #
+			own_control_core = {
+ ardraine180
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A132 = { #
+			own_control_core = {
+				 torrent139 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A133 = { #
+			own_control_core = {
+				torrent192
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A134 = { #
+			own_control_core = {
+				ardraine227
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A135 = { #
+			own_control_core = {
+				torrent322 torrent102 torrent101 torrent104 torrent103 ardraine226
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A136 = { #
+			own_control_core = {
+				torrent327 adune43 adune49 torrent326 torrent315
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A137 = { #
+			own_control_core = {
+				ardraine212
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine212
+		}
+
+		A138 = { #
+			own_control_core = {
+				ardraine228
+			}
+
+			own_control_integrated = {
+				torrent119
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A139 = { #
+			own_control_core = {
+				torrent210
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A140 = { #
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				 torrent75 torrent71
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A141 = { #
+			own_control_core = {
+				 torrent12 ardraine129
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A142 = { #
+			own_control_core = {
+				ardraine131
+			}
+
+			own_control_integrated = {
+				ardraine125 ardraine130 ardraine126
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+
+
+		A144 = { #
+			own_control_core = {
+				ardraine107 testprovince267 testprovince115 
+				
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_bishopric"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine107
+		}
+
+		A145 = { #
+			own_control_core = {
+				torrent83 torrent88 torrent84 torrent82 torrent81 torrent89
+			}
+
+			own_control_integrated = {
+				torrent87
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A146 = { #
+			own_control_core = {
+				ardraine208 ardraine157 ardraine156 torrent277 ardraine151 ardraine201
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+
+		A147 = { #
+			own_control_core = {
+				ardraine147 ardraine169 ardraine196 ardraine145 ardraine146 commonweal1 torrent155 ardraine176
+			}
+			
+			own_control_integrated = {
+				torrent97 ardraine223
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A148 = { #
+			own_control_core = {
+				torrent86 torrent98 torrent273  torrent153 torrent147
+				torrent154 torrent150 ardraine211 torrent151 torrent146 torrent95 torrent148
+				 torrent99  torrent100 torrent96 adune3 adune4 adune2
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_bishopric"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_kingdom
+			capital = ardraine184
+		}
+		A149 = { #
+			own_control_core = {
+				torrent156 torrent263  torrent222 torrent271 torrent272
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A150 = { #
+			own_control_core = {
+				torrent297 torrent295 torrent274 ardraine224 ardraine225 torrent216
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A151 = { #
+			own_control_core = {
+ torrent92 torrent91 ardraine221
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+
+		A153 = { #
+			own_control_core = {
+				ardraine209 ardraine154 ardraine155 torrent2 
+				 torrent3 commonweal22
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+
+		A154 = { #
+			own_control_core = {
+				ardraine160 ardraine150 commonweal13
+			}
+
+			own_control_integrated = {
+				ardraine65 ardraine64 testprovince168
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+
+		A155 = { #
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				testprovince101 testprovince184 testprovince51
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A156 = { #
+			own_control_core = {
+				ardraine179
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine179
+		}
+
+		A157 = { #
+			own_control_core = {
+				 torrent140 torrent90 torrent109
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A158 = { #
+			own_control_core = {
+				torrent110 torrent111 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A159 = { #
+			own_control_core = {
+				ardraine220
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A160 = { #
+			own_control_core = {
+				torrent65 torrent66 torrent67
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A161 = { #
+			own_control_core = {
+				torrent8 torrent9 ardraine189
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A162 = { #
+			own_control_core = {
+				ardraine137
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A163 = { #
+			own_control_core = {
+				ardraine218
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = A163_valerand_de_hauteclaire
+				ruler_term = { character = A163_armand_de_hauteclaire start_date = 1298.1.1 end_date = 1317.6.12 regnal_number = 1 }
+				ruler_term = { character = A163_theobald_de_hauteclaire start_date = 1317.6.12 end_date = 1335.4.18 regnal_number = 1 }
+				ruler_term = { character = A163_valerand_de_hauteclaire start_date = 1335.4.18 regnal_number = 1 }
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A164 = { #
+			own_control_core = {
+				  
+				torrent4 torrent6
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+			}
+
+		A165 = { #
+			own_control_core = {
+				torrent52 torrent7
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A166 = { #
+			own_control_core = {
+				torrent5 ardraine48 ardraine161 ardraine119
+			}
+
+			own_control_integrated = {
+				ardraine45
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A167 = { #
+			own_control_core = {
+					ardraine139 ardraine177 testprovince134 testprovince131 testprovince148
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A168 = { #
+			own_control_core = {
+				ardraine231
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A169 = { #
+			own_control_core = {
+				torrent307 torrent309 torrent308
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = A169_aurelian_serpentar
+				ruler_term = { character = A169_marcellian_serpentar start_date = 1300.1.1 end_date = 1334.10.9 regnal_number = 1 }
+				ruler_term = { character = A169_aurelian_serpentar start_date = 1334.10.9 regnal_number = 1 }
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+
+
+		A171 = { #
+			own_control_core = {
+				torrent10 torrent11
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A172 = { #
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				ardraine217 ardraine121
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A173 = { #
+			own_control_core = {
+				ardraine120 ardraine50
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A174 = { #
+			own_control_core = {
+				ardraine123 ardraine122
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A175 = { #
+			own_control_core = {
+				ardraine97 ardraine94
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A176 = { #
+			own_control_core = {
+				ardraine99 testprovince124
+			}
+
+			own_control_integrated = {
+				testprovince172 ardraine98
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A177 = { #
+			own_control_core = {
+				ardraine53
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A178 = { #
+			own_control_core = {
+				testprovince10 ardraine101 testprovince9 ardraine26 testprovince20 ardraine200 testprovince29 adune41 adune17 adune70 adune72
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = A178_asiiriil_oladeji
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A179 = { #
+			own_control_core = {
+				testprovince140 ardraine138
+			}
+
+			own_control_integrated = {
+				testprovince166 testprovince142
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A180 = { #
+			own_control_core = {
+				ardraine191 ardraine78 ardraine67 ardraine202 ardraine198 ardraine170 adune73 adune36 adune48 adune52 adune6 ardraine144 ardraine195
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+
+		A181 = { #
+			own_control_core = {
+				ardraine140
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_abbey"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine140
+		}
+
+		A182 = { #
+			own_control_core = {
+				ardraine168 ardraine149
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A183 = { #
+			own_control_core = {
+				ardraine66 ardraine61 ardraine113 testprovince249 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A184 = { #
+			own_control_core = {
+				ardraine95 ardraine115 ardraine117 ardraine173 testprovince50 commonweal39
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A185 = { #
+			own_control_core = {
+				torrent203 torrent302 ardraine148 torrent57 torrent275 commonweal2
+			}
+
+			own_control_integrated = {
+				ardraine153 torrent221
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+
+			government = {
+				ruler = random
+				aristocracy_vs_plutocracy = -20
+				land_vs_naval = -20
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+
+		A186 = { #
+			own_control_core = {
+				testprovince6 testprovince5 adune31 adune25
+			}
+
+			own_control_integrated = {
+				ardraine239 ardraine238
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A187 = { #
+			own_control_core = {
+				ardraine152
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A188 = { #
+			own_control_core = {
+				ardraine175
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A189 = { #
+			own_control_core = {
+				ardraine215
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A190 = { #
+			own_control_core = {
+				torrent185
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent185
+		}
+
+		A191 = { #
+			own_control_core = {
+				testprovince156 testprovince4 testprovince157 ardraine114 ardraine25 testprovince165
+				ardraine219
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A192 = { #
+			own_control_core = {
+				testprovince185 ardraine17
+			}
+
+			own_control_integrated = {
+				
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A193 = { #
+			own_control_core = {
+ testprovince183
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A194 = { #
+			own_control_core = {
+				testprovince144 ardraine106 ardraine19  
+			}
+
+			own_control_integrated = {
+				testprovince41
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A195 = { #
+			own_control_core = {
+				testprovince33 ardraine109 ardraine40 testprovince191
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_bishopric_no_coast"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A196 = { #
+			own_control_core = {
+			ardraine31 ardraine60 	
+			ardraine34
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A197 = { #
+			own_control_core = {
+				ardraine21 ardraine193 ardraine63
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A198 = { #
+			own_control_core = {
+				torrent58 torrent59 torrent56 torrent60 torrent93 adune1
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A199 = { #
+			own_control_core = {
+				 torrent108
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A200 = { #
+			own_control_core = {
+				testprovince177 ardraine43 ardraine111 ardraine172 ardraine110 ardraine92
+			}
+
+			own_control_integrated = {
+				ardraine104 testprovince152 ardraine49 testprovince11 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine172
+		}
+		A201 = { #
+			own_control_core = {
+				  ardraine28 ardraine33 ardraine29   
+				testprovince164 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+				draquatin_culture
+			}
+
+			country_rank = rank_duchy
+			capital = ardraine184
+		}
+		
+
+		A202 = { #
+			own_control_core = {
+				testprovince127
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A203 = { #
+			own_control_core = {
+				testprovince160
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A204 = { #
+			own_control_core = {
+				testprovince128
+			}
+
+			own_control_integrated = {
+				testprovince58
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A205 = { #
+			own_control_core = {
+				ardraine124
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A206 = { #
+			own_control_core = {
+				torrent53
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A207 = { #
+			own_control_core = {
+				torrent142
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A208 = { #
+			own_control_core = {
+				torrent316
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A209 = { #
+			own_control_core = {
+				ardraine222
+			}
+
+			own_control_integrated = {
+				torrent85
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine222
+		}
+
+		A210 = { #
+			own_control_core = {
+				ardraine166 testprovince35 ardraine133
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_elven_realm"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine133
+		}
+
+		A211 = { #
+			own_control_core = {
+				testprovince30 ardraine32 ardraine44 testprovince171 ardraine141
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A212 = { #
+			own_control_core = {
+				testprovince170
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A213 = { #
+			own_control_core = {
+				ardraine199 testprovince182 testprovince181 testprovince145
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A214 = { #
+			own_control_core = {
+				ardraine54 testprovince38 adune37
+			}
+
+			own_control_integrated = {
+				ardraine165
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A215 = { #
+			own_control_core = {
+				testprovince146 testprovince104 ardraine52
+			}
+
+			own_control_integrated = {
+				aita44
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A216 = { #
+			own_control_core = {
+				ardraine42 ardraine51 ardraine190
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A217 = { #
+			own_control_core = {
+				ardraine136
+			}
+
+			own_control_integrated = {
+				ardraine135
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A218 = { #
+			own_control_core = {
+				testprovince121 ardraine37 testprovince118
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A219 = { #
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				ardraine188
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A220 = { #
+			own_control_core = {
+				ardraine112
+			}
+
+			own_control_integrated = {
+				testprovince43
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A224 = { #
+			own_control_core = {
+				testprovince176
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}	
+	A221 = { #
+		own_control_core = {
+			commonweal56 commonweal57
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_free_city"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A222 = { #
+		own_control_core = {
+			commonweal65 torrent293
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A223 = { #
+		own_control_core = {
+			torrent345 torrent229
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+
+	A225 = { #
+		own_control_core = {
+			commonweal12 commonweal49 commonweal62
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = commonweal12
+	}
+
+	A226 = { #
+		own_control_core = {
+			torrent42
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A227 = { #
+		own_control_core = {
+			commonweal63
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A228 = { #
+		own_control_core = {
+			commonweal34 torrent237
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A229 = { #
+		own_control_core = {
+			ardraine183 commonweal11
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A230 = { #
+		own_control_core = {
+			torrent227 ardraine210 
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A231 = { #
+		own_control_core = {
+			commonweal33
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A232 = { #
+		own_control_core = {
+			commonweal61 commonweal10 etra426
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A233 = { #
+		own_control_core = {
+			commonweal20 commonweal7 commonweal31 etra245 etra234 etra235 etra931
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A234 = { #
+		own_control_core = {
+			torrent77
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A235 = { #
+		own_control_core = {
+			commonweal3 torrent219
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A236 = { #
+		own_control_core = {
+			commonweal5 commonweal4
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A237 = { #
+		own_control_core = {
+			commonweal44 commonweal8 commonweal9 torrent55
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A238 = { #
+		own_control_core = {
+			testprovince135 commonweal18 commonweal73
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+
+	A240 = { #
+		own_control_core = {
+			commonweal46 commonweal38 testprovince137
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A241 = { #
+		own_control_core = {
+			commonweal37 commonweal23
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+
+	A243 = { #
+		own_control_core = {
+			commonweal41 torrent276 commonweal42 ardraine159
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_bishopric_no_coast"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = torrent276
+	}
+
+	A244 = { #
+		own_control_core = {
+			commonweal21 ardraine158 torrent48 torrent49
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A245 = { #
+		own_control_core = {
+			commonweal69 torrent51 torrent50 torrent54
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A246 = { #
+		own_control_core = {
+			commonweal66
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_free_city"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A247 = { #
+		own_control_core = {
+			commonweal30 torrent174
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A248 = { #
+		own_control_core = {
+			commonweal32 torrent124
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A249 = { #
+		own_control_core = {
+
+			torrent78 torrent74 torrent76 torrent70
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_bishopric_no_coast"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A250 = { #
+		own_control_core = {
+			commonweal6 torrent61 torrent62 torrent63 torrent64
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_bishopric_no_coast"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A251 = { #
+		own_control_core = {
+			commonweal71
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A252 = { #
+		own_control_core = {
+			commonweal47
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+	A253 = { #
+		own_control_core = { 
+			testprovince44 ardraine20 ardraine47
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_aduna"
+		include = "eternalist_monarchy"
+		include = "commonweal_principality"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+		}
+
+		country_rank = rank_county
+		capital = ardraine184
+	}
+
+		A254 = { #
+			own_control_core = {
+				torrent350
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A255 = { #
+			own_control_core = {
+				torrent220 commonweal40
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A256 = { #
+			own_control_core = {
+				commonweal55 torrent194
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A257 = { #
+			own_control_core = {
+				commonweal29
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A258 = { #
+			own_control_core = {
+				torrent206 torrent37
+			}
+
+			own_control_integrated = {
+				commonweal48
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A259 = { #
+			own_control_core = {
+				torrent205
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+
+		A260 = { #
+			own_control_core = {
+				ardraine127
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A261 = { #
+			own_control_core = {
+				testprovince162
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A262 = { #
+			own_control_core = {
+				ardraine59 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine59
+		}
+		A263 = { #
+			own_control_core = {
+				torrent223 commonweal28 commonweal27 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A264 = { #
+			own_control_core = {
+				torrent314 commonweal15 commonweal45
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A265 = { #
+			own_control_core = {
+				torrent28 torrent26 torrent25
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A266 = { #
+			own_control_core = {
+				commonweal14 ardraine192
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}
+		A267 = { #
+			own_control_core = {
+				 testprovince174
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = testprovince174
+		}
+		A268 = { #
+			own_control_core = {
+				ardraine167
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}
+		A269 = { #
+			own_control_core = {
+				torrent347 torrent348
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}
+		A270 = { #
+				own_control_core = {
+					commonweal54
+				}
+
+				starting_technology_level = 3
+				include = "expl_western_aduna"
+				include = "eternalist_free_city"
+				government = {
+					ruler = random
+				}
+
+
+				tolerated_cultures = {
+					torrentor_ratfolk_culture
+				}
+
+				country_rank = rank_county
+				capital = commonweal54
+		}
+		A271 = { #
+				own_control_core = {
+					commonweal60 aita41 aita42
+				}
+
+				starting_technology_level = 3
+				include = "expl_western_aduna"
+				include = "eternalist_monarchy"
+				include = "commonweal_principality"
+				government = {
+					ruler = random
+				}
+
+				tolerated_cultures = {
+				}
+
+				country_rank = rank_county
+				capital = ardraine184
+		}
+		A272 = { #
+				own_control_core = {
+					commonweal24
+				}
+
+				starting_technology_level = 3
+				include = "expl_western_aduna"
+				include = "eternalist_monarchy"
+				include = "commonweal_principality"
+				government = {
+					ruler = random
+				}
+
+				tolerated_cultures = {
+				}
+
+				country_rank = rank_county
+				capital = ardraine184
+		}
+		A273 = { #
+			own_control_core = {
+				ardraine57
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine57
+		}
+		A274 = { #
+			own_control_core = {
+				commonweal19
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}	
+		A275 = { #
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				commonweal36 torrent299
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}
+		A276 = { #
+			own_control_core = {
+				torrent46 commonweal26
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_principality"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine184
+		}	
+		A277 = { #
+			own_control_core = {
+				ardraine103
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}
+
+		A278 = { #
+			own_control_core = {
+				ardraine142
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+				ardrainien_culture
+			}
+
+			country_rank = rank_county
+			capital = ardraine142
+		}
+		
+		A279 = { #
+			own_control_core = {
+				testprovince158
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = testprovince158
+		}
+		A280 = { #Geneberg
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				torrent94
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent94
+		}	
+		A281 = { #
+			own_control_core = {
+				torrent15
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+			
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = torrent15
+		}
+		A282 = {	#Forest Rabbit Order
+			own_control_core = {
+				aita50 aita47 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+
+		}	
+		A283 = {	#Lions of the Unbroken Line
+			own_control_core = {
+				aita46 aita48 
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}		
+		A284 = {	#
+			own_control_core = {
+				aita23 aita43
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A285 = {
+			own_control_core = {
+				aita63 aita64
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A286 = {
+			own_control_core = {
+				aita29 aita28
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A287 = {
+			own_control_core = {
+				aita32 aita33
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A288 = {
+			own_control_core = {
+				aita35 aita34 aita36 aita37
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A289 = {
+			own_control_core = {
+				aita30 aita31
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A290 = {
+			own_control_core = {
+				aita26 aita27
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A291 = {
+			own_control_core = {
+				aita21 aita38
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A292 = {
+			own_control_core = {
+				aita10 aita11 aita20 aita19
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A293 = {
+			own_control_core = {
+				aita39
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A294 = {
+			own_control_core = {
+				aita24
+			}
+
+			own_control_integrated = {
+				aita16 aita40
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A295 = {
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				aita14 aita15
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A296 = {
+			own_control_core = {
+				aita68
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A297 = {
+			own_control_core = {
+				aita18 aita69
+			}
+
+			own_control_integrated = {
+				aita12 aita45 aita17
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A298 = {
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				aita13
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A299 = {
+			own_control_core = {
+				aita7 aita2 aita8 aita67
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+
+		A300 = {
+			own_control_core = {
+				aita5 aita9
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+		A301 = {
+			own_control_core = {
+				aita22 aita25
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+		A302 = {
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				aita1 aita3 aita6
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}
+		A303 = {
+			own_control_core = {
+				aita4 aita49
+			}
+
+			own_control_integrated = {
+				ardraine178 ardraine174
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			
+			
+			include = "aitan_theocracy"
+			country_rank = rank_county
+			capital = aita50
+			government = {
+				ruler = random
+				reforms = {
+					aitan_college_reform
+				}
+			}
+		}	
+
+		A304 = {
+			own_control_core = {
+				aita54 aita56 aita55 aita75 aita74 aita57 aita53 aita52 aita51 aita62 aita59 aita60 aita58 aita72 aita81 aita76
+				aita80 aita73 aita79 aita77 aita78 aita85 aita84 aita89 aita88 aita87 aita86 aita93 aita90 aita92 aita94 aita96
+				aita95 aita101 aita97 aita100 aita98 etra303 etra86 etra87 etra88 etra89 etra90 etra91 etra93 etra92 etra95 etra94
+				etra97 etra98 aita148 etra96 aita149 aita151 aita150
+			}
+
+			own_control_integrated = {
+				aita102 aita103
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+	
+			include = "aitan_republic"
+			country_rank = rank_kingdom
+			capital = aita50
+			government = {
+				ruler = random
+				
+				reforms = {
+					the_university_reform
+				}
+			}
+		}
+		A321 = {	#Hoggerland
+			own_control_core = {
+				etra377 etra379 etra393 etra394 etra484 etra482 etra481 etra399 etra917  etra380 etra396 etra483 etra398
+				etra397 etra383 etra401 etra391 etra389 etra395 etra480 etra878 etra891 etra880 etra909 etra872 etra375 etra300
+				etra284 etra352 etra374 etra349 etra347 etra353 etra341 etra307 etra346 etra290 etra274 etra283 etra783
+			}
+
+			own_control_integrated = {
+				etra402 etra276 etra275 etra940 etra416 etra415 etra400 etra387 etra388 etra279 etra879 etra881 etra873 etra890
+				etra318 etra376 etra418
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = etra394
+		}
+		A322 = {	#Wyrmwealth
+			type = building
+			starting_technology_level = 3
+			include = "catholic_republic_not_present"
+
+			capital = crelzerte
+			government = {
+				type = republic
+				heir_selection = bank_selection
+				reforms = {	banking_country }
+
+				centralization_vs_decentralization = 20
+				aristocracy_vs_plutocracy = 70
+				serfdom_vs_free_subjects = 70
+				traditionalist_vs_innovative = 30
+				spiritualist_vs_humanist = 20
+				mercantilism_vs_free_trade = -40
+				belligerent_vs_conciliatory = 0
+				quality_vs_quantity = -20
+				offensive_vs_defensive = 30
+				land_vs_naval = 40
+				capital_economy_vs_traditional_economy = -50
+				individualism_vs_communalism = -50
+				outward_vs_inward = -90
+				laws = {
+					marriage_law = monogamous_marriage
+					heir_religion_law = heir_same_religion
+				}
+
+				ruler = A322_artheonx_wyrmwealth
+			}
+
+			country_rank = rank_county
+
+			include = "expl_western_aduna"
+		}		
+		A323 = {	
+			own_control_core = {
+					etra2 etra6 etra7 etra19 etra4 etra3
+				}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra3
+		}
+		A324 = {	
+			own_control_core = {
+				etra765 etra768 etra659 etra661 etra158 etra656 etra654 etra655 etra764 etra462 etra159 etra712 etra950 etra952
+				etra967 etra711 etra2058 etra2023 etra2005  etra2098 etra2035 etra1961 etra2088 etra2032 etra1993
+			}
+
+			own_control_integrated = {
+				etra658 etra160 etra949
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = godhand1
+		}
+		A325 = {	
+			own_control_core = {
+				etra66 etra38 etra72 etra68 etra67 etra304 etra69 etra176 etra175 etra223 etra168 etra169 etra70 etra177 etra178 etra181 etra198
+				etra179 etra192 etra193 etra202 etra194 etra207 etra208 etra120 etra118 etra117 etra211 etra209 etra180 etra205 etra119 etra206 etra210 etra200 etra1808 etra1809 etra1813 etra1812 etra1810 etra1816 etra1814 etra1815 etra1811 etra1819 etra1818 etra1817 etra1821 etra1820 etra1822 etra1823 etra1827 etra1830 etra1828 etra1829 etra1833 etra1832 etra1831 etra1834 etra12075 etra1825 etra1826 etra1824 etra2018
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = A325_pyrrhion
+				heir = A325_alkaion
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				reforms = { a325_the_host_is_not_replaceable }
+				quality_vs_quantity = -40
+				land_vs_naval = -30
+				offensive_vs_defensive = -30
+				ruler_term = { character = A325_pyrrhion start_date = 1320.3.12 regnal_number = 1 }
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = etra304
+		}
+		A326 = {	
+			own_control_core = {
+				etra5 etra8 etra9 etra11 etra10 etra16 etra12  
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra11
+		}	
+		A327 = {	
+			own_control_core = {
+				etra37 etra35 etra34 etra78 etra43 etra42 etra33 etra32 etra31 etra61 etra36
+				etra77 etra85 etra79 etra80 etra71
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}	
+		A328 = {	
+			own_control_core = {
+				etra20 etra21 etra25 etra24 etra26 etra27 etra64 etra14 etra62 etra63 etra23 etra13 etra22 etra30 etra29
+				
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra24
+		}
+		A329 = {	
+			own_control_core = {
+				etra115 etra113 etra103 etra102 etra101 etra100 etra104 etra105 etra107 etra110 etra111 etra163 etra121 etra124 etra222 etra84 etra81 etra82 etra114 etra164 etra109
+				etra28 etra40 etra108 etra122 etra123 etra161 etra125 etra174 etra170 etra183 etra173 etra149 etra15 etra45 etra99
+				etra127 etra165 etra785 etra171 etra106 etra116 etra18 etra112 etra17 etra83
+				
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = etra110
+		}	
+		A330 = { #Qatharii Horde
+			type = army
+			own_control_core = {
+				etra772 etra132 etra136 etra138 etra153 etra747 etra738 etra528 etra514 etra634 etra627 etra628 etra636 etra637
+				etra635 etra515 etra516 etra517 etra518 etra519 etra521 etra745 etra746 etra743 etra638 etra742 etra520 etra529
+				etra530 etra576 etra577 etra522 etra752 etra523 etra608 etra603 etra579 etra773 etra650 etra651 etra652 etra739
+				etra740 etra749 etra653 etra751 etra750 etra744 etra578 etra947 etra948 etra955 etra982 etra976 etra977 etra975
+				etra974 etra139 etra143 etra148 
+			}
+
+			own_control_integrated = {
+				etra217 etra216 etra218 etra219 etra128 etra639 etra129 etra130 etra771 etra633 etra632 etra622 etra509 etra213
+				etra162 etra212 etra214 etra510 etra525 etra526 etra527 etra511 etra512 etra621 etra215 etra626 etra623 etra624
+				etra625 etra126 etra629 etra630 etra631 etra609 etra611 etra598 etra599 etra575 etra600 etra601 etra602 etra618
+				etra616 etra615 etra612 etra585 etra586 etra588 etra589 etra591 etra610 etra558 etra573 etra572 etra574 etra617
+				etra614 etra741 etra774 etra775 etra737 etra619 etra620 etra131 etra133 etra134 etra135 etra150 etra657 etra718
+				etra145 etra787 etra140 etra144 etra137 etra141 etra770 etra146 etra147 etra151 etra155 etra721 etra722 etra152
+				 etra142 aita117 aita115 aita118 etra524 etra506 				etra508 etra513 etra154 etra735 etra953 etra954
+				etra776 etra734 etra769 etra701 etra730 etra732 etra736 etra731 etra708 etra733 etra709  etra720   etra726 etra727 etra951 etra728 etra729 etra857
+			}
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "aduanic_horde"
+			country_rank = rank_kingdom
+
+			government = {
+				type = steppe_horde
+				heir_selection = tribal_oldest_male
+
+				ruler = random
+
+				privilege = {
+
+				}
+				laws = {
+					marriage_law = polygyny
+				}
+
+			}
+			capital = etra743
+			
+
+			accepted_cultures = {
+				
+
+			}
+
+
+			tolerated_cultures = {
+
+
+			}
+
+		}		
+		A331 = {	
+			own_control_core = {
+				testprovince245 aita133 aita136 aita120 aita126 aita121 aita125 aita116 aita105 aita135 aita108 aita132 aita131
+				aita129 aita127 aita110 aita138 aita139 aita124 aita122 aita123 aita134 aita130 aita147 aita144 aita143 aita111
+				aita141 aita142 aita140 aita114 aita153 aita146 aita145 
+			}
+				starting_technology_level = 3 
+				include = "expl_western_aduna"
+				include = "eternalist_monarchy"
+				government = {
+					ruler  = random 
+					type = monarchy
+					heir_selection = vexvec_matrilineal_primogeniture
+					reforms =  { vexvec_coven_throne_reform } 
+					laws = { marriage_law = vexvec_matron_unions }
+				}
+			own_control_integrated = {
+				 aita107 aita109 aita119   
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = aita120
+		}
+		A332 = {	#Arinera
+			own_control_core = {
+				etra797 etra320 etra790 etra796 etra865 etra864 etra963
+			}
+
+			own_control_integrated = {
+				etra306 etra315 etra314 aita154 etra802 aita155 etra467 etra763 etra321 etra469 etra471 etra470 etra324 etra919
+				etra803 etra305 etra798 aita137 aita128 etra799 etra468 etra382 etra761 etra791 etra789 etra792 etra326 etra465
+				etra703 etra702 etra788 etra325 etra317 etra313 etra312 etra311 etra308 etra316 aita152 etra323 etra713 etra466
+				etra795 etra714 etra794 etra384 etra793 etra863 etra866 etra867 etra884 etra494 etra964 etra939
+			}
+			government = {
+				ruler = A332_the_dragon_queen
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+			starting_technology_level = 3 
+			include = "expl_western_aduna" 
+			include = "eternalist_monarchy" 
+
+			country_rank = rank_kingdom
+		
+			capital = etra864
+		}		
+		A333 = {	
+			own_control_core = {
+					etra355 etra319 etra310 etra309 etra801 etra422 etra800 etra366 etra424 etra423 etra322 etra368
+				}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}		
+		A334 = {	
+			own_control_core = {
+				etra332 
+			}
+			starting_technology_level = 3 
+			include = "expl_western_aduna" 
+			include = "eternalist_monarchy" 
+			government = {
+				ruler = random
+				type = monarchy 
+				heir_selection = cognatic_primogeniture
+			}
+			own_control_integrated = {
+				etra364 etra291 etra334 etra356 etra286 etra339 etra357 etra362 etra361 etra253 etra289
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}		
+		A335 = {	
+			own_control_core = {
+					etra248 etra249 etra237 etra236 etra233 etra243 etra247 etra246 etra254 etra242 etra238 etra241 etra239 etra232 etra244 etra252 etra250 etra251
+				}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A336 = {	
+			own_control_core = {
+					etra327  etra704 etra705 etra707 etra644 etra643 etra299 
+					etra288   etra706 etra298 etra973
+				}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A337 = {	
+			own_control_core = {
+					etra265 etra263 etra264 etra261 etra260 etra255 etra257 etra256 etra297 etra359 etra358 etra262 etra258 etra259
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A338 = {	
+			own_control_core = {
+					etra502 etra503 etra504 etra505   aita112 aita106 aita113  
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra505
+		}
+		A339 = {	
+			own_control_core = {
+				etra534 etra535 etra544 etra545 etra557 etra559 etra571 etra533 etra531 etra547 etra532 etra641 etra642 etra710 etra537 etra536
+				etra546 etra556 etra548 etra560 etra540 etra549
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A340 = {	
+			own_control_core = {
+				 etra553 etra552 etra543 etra541 etra538 etra539 etra550 etra551 etra562 etra563 etra564 etra566 etra567 etra569 etra582 etra583 etra590 etra587 
+				etra561 etra568 etra570 etra580 etra581 etra542 
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A341 = {	
+			own_control_core = {
+				etra477 etra392 etra476 etra584  etra595  etra647 etra592 etra593 etra594 etra596 etra597 etra754 etra755 etra756 etra648 etra649 etra605
+				 etra565 etra753 etra757 etra604 etra613 etra607 etra606  etra887  etra886 etra959 etra972 etra957 etra938 etra966 etra960
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}			
+		A342 = {	
+			own_control_core = {
+
+			}
+
+			own_control_integrated = {
+				etra435 etra478 etra436 etra437 etra760 etra908 etra979
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A343 = {	
+			own_control_core = {
+				etra441 etra447 etra446 etra479 etra449 etra445 etra779 etra778 etra458 etra459 etra457 etra438 etra780 etra442 etra444 etra443  etra915  etra914 etra868
+				etra944 etra945 etra962 etra943 etra942 etra968
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A344 = {	
+			own_control_core = {
+				etra421 etra850 etra372 etra978 etra855 etra410 etra871 etra883 etra413 etra934 etra461 etra365 etra363 etra896 etra296
+				etra285 etra369 etra370 etra367 etra407 etra409 etra412  etra408 etra430 etra273 etra272  etra897  etra898  etra899 etra895
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			government = {
+				type = republic
+				heir_selection = veche_selection
+				reforms = {
+					cyrewin_ring_moot
+					merchant_republic
+				}
+				ruler = random
+
+				parliament = {
+					parliament_type = estate_parliament
+				}
+				centralization_vs_decentralization = 65
+				aristocracy_vs_plutocracy = 30
+				serfdom_vs_free_subjects = -20
+				traditionalist_vs_innovative = 0
+				spiritualist_vs_humanist = -50
+				mercantilism_vs_free_trade = 20
+				offensive_vs_defensive = 40
+				land_vs_naval = -50
+				quality_vs_quantity = 25
+				belligerent_vs_conciliatory = 20
+				capital_economy_vs_traditional_economy = -20
+				individualism_vs_communalism = -20
+				outward_vs_inward = -10
+
+				#Privileges (parallel to vanilla Novgorod; Etra-specific keys)
+				privilege = {
+					cyrewin_chartered_factors
+					cyrewin_shieldmarshal_charter
+					cyrewin_ring_compacts
+					#clergy_powerful_dioceses
+
+					#nobles
+					noble_leaders_only
+					banal_lordship
+					noble_serfdom_rights
+					nobles_land_rights
+					#kormlenije
+
+					#clergy
+					clergy_literacy_rights
+					clergy_enforced_unity
+
+					#burghers
+					trade_monopolies
+
+				}
+
+				#Laws
+				laws = {
+					administrative_system = pyatina_policy
+					republican_foundation_law = political_dynasties_policy
+					#patriarchate_law = separated_patriarchate_policy
+					censorship = limited_censorship
+					education_masses_law = basic_religious_education
+					administrative_system = feudal_administration
+					cultural_traditions_law = martial_society
+					marriage_law = monogamous_marriage
+					heir_religion_law = heir_same_religion
+					legal_code_law = civil_law_policy
+					maritime_law = protect_trade_routes
+					piracy_law = anti_piracy_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+				}
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = godhand1
+		}	
+		A345 = {	
+			own_control_core = {
+				etra420 etra371 etra385 etra417
+			}
+
+			own_control_integrated = {
+				etra870
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+				include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			
+			}
+
+			country_rank = rank_county
+		
+			capital = etra420
+		}
+		A346 = {	
+			own_control_core = {
+				etra269 etra348 etra268 etra345 etra343 etra344 etra342 etra892 etra338 etra337 etra336 etra302 etra335 etra333 etra270
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra268
+		}	
+		A347 = {	
+			own_control_core = {
+				etra292 etra293 etra294 etra266 etra474  etra475 etra295  etra360 etra301  
+				    etra901  etra902  etra903 etra980
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+				include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			}
+
+			country_rank = rank_county
+		
+			capital = etra301
+		}	
+		A348 = {	
+			own_control_core = {
+				etra411 etra485 etra452 etra451 etra906 etra910
+			}
+
+			own_control_integrated = {
+				etra486 etra455 etra450 etra454 etra456 etra453 etra825 etra821 etra820 etra946 etra877
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A349 = {	
+			own_control_core = {
+				etra927 etra813 etra815 etra958 etra759 etra227 etra492 etra271 etra491 etra487 etra490 etra758 etra905 etra894
+				etra900 etra893
+			}
+
+			own_control_integrated = {
+				etra926 etra918 etra500 etra499 etra497 etra495 etra489 etra488 etra498 etra496 etra493
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A350 = {
+			own_control_core = {
+				etra267 etra351 etra350 etra501  etra904 etra925 etra814 etra924
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "jasskadian_tribe"
+			government = {
+				ruler = random
+			
+			}
+
+			country_rank = rank_county
+		
+			capital = godhand1
+		}
+
+		A353 = {
+			own_control_core = {
+
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}	
+		A354 = {
+			own_control_core = {
+				etra166 etra507 etra463 etra186 etra786 etra191 etra167 etra660 etra190 etra187 etra172 etra203 etra204 etra184 etra224 etra225 etra221 etra189 etra196 etra199 etra220 etra195 etra201 etra2008
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_kingdom
+		
+			capital = godhand1
+		}	
+		A355 = {
+			own_control_core = {
+				  
+			}
+
+			own_control_integrated = {
+				
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A356 = {
+			own_control_core = {
+				etra723 etra766 etra156 etra157 etra715 etra724 etra767 etra777 etra719
+			}
+
+			own_control_integrated = {
+				etra188 etra197
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+			accepted_cultures = {
+				borili_giantsborn_culture
+			}
+		}
+				
+		A359 = {
+			own_control_core = {
+				etra41 etra39 etra52 etra51 etra50 etra48 etra47 etra49 etra54 etra55 etra60 etra59 etra56 etra57 etra58 etra53 etra76 etra75 etra44 etra74
+				
+				etra46 etra65 etra73
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra48
+		}	
+		A360 = {
+			own_control_core = {
+				etra882 etra419 etra278 etra874 etra448 etra875 etra851 etra281 etra277 etra852 etra429 etra781 etra406 etra941 etra280 etra405
+				etra782 etra428 etra403 etra404 etra460 etra414
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "jasskadian_tribe"
+			government = {
+				ruler = A360_sealda
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = etra941
+		}
+		A361 = {
+			own_control_core = {
+				etra340 etra287 etra932 etra328 etra929 etra930 etra330 etra329 etra933 etra645
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}	
+		A362 = {
+			own_control_core = {
+				etra386 etra969 etra970 etra439 etra440 etra913 etra916 etra907 etra472 etra390 etra888 etra889 etra434 etra716
+				etra433 etra432 etra640 etra431 etra876
+			}
+
+			own_control_integrated = {
+				etra971 etra717 etra725 etra762 etra473
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}	
+		A363 = {
+			own_control_core = {
+				etra885 etra554 etra378 etra555 etra646
+			}
+
+			own_control_integrated = {
+				etra862 etra861 etra464 etra381
+			}
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A364 = { #Northsteorra
+			own_control_core = {
+				etra282 etra922 etra923 etra920 etra921 etra373
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_republic"
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = etra922
+		}
+		A365 = { #Junvaria
+			own_control_core = {
+				adune15 adune11 adune10 adune14 adune16 adune12 adune13 torrent113 torrent121 torrent122 adune8
+				commonweal70 torrent79 torrent112 ardraine237 torrent80
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_republic"
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_duchy
+			capital = etra922
+		}
+		A366 = {
+			own_control_core = {
+				adune71
+			}
+
+			government = {
+				ruler = random
+			}
+			starting_technology_level = 3	
+			include = "eternalist_abbey"
+			include = "expl_western_aduna"
+
+			country_rank = rank_county
+			capital = adune71
+		}
+		A367 = {
+			own_control_core = {
+				adune87 adune26 torrent330 torrent329 adune42 torrent325 torrent328 torrent199 adune56 adune155 adune47
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A368 = {
+			own_control_core = {
+				torrent149 adune44 adune35
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = godhand1
+		}
+		A369 = {
+			own_control_core = {
+				adune33 adune23 adune103
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_county
+		
+			capital = adune23
+		}	
+		A370 = {
+			own_control_core = {
+				ardraine30 ardraine22 testprovince143 ardraine93 adune85 commonweal72  adune46 testprovince163 ardraine56 ardraine134 ardraine27
+				adune60 adune94 adune24 adune39
+			}
+
+			starting_technology_level = 3
+
+			
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = {
+				ruler = A370_caiyndor_marcellian
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+			
+			}
+
+			country_rank = rank_duchy
+		
+			capital = adune23
+		}	
+		A371 = { #
+			own_control_core = {
+				adune45
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_elven_realm"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = ardraine133
+		}
+		A372 = { #
+			own_control_core = {
+				adune30
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_elven_realm"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = adune30
+		}
+		A373 = { #
+			own_control_core = {
+				adune112
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_elven_realm"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = adune112
+		}
+		A374 = { #
+			own_control_core = {
+				adune62
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			include = "commonweal_elven_realm"
+			government = {
+				ruler = random
+			}
+
+			tolerated_cultures = {
+			}
+
+			country_rank = rank_county
+			capital = adune62
+		}	
+		A375 = {
+			own_control_core = {
+				adune59
+			}
+
+			government = {
+				ruler = random
+			}
+			starting_technology_level = 3	
+			include = "eternalist_abbey"
+			include = "expl_western_aduna"
+
+			country_rank = rank_county
+			capital = adune59
+		}
+		A376 = {	
+			own_control_core = {
+				adune68
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_aduna"
+			include = "eternalist_free_city"
+
+			government = {
+				type = republic
+				heir_selection = oligarchic_elective
+				ruler = random
+			}
+
+			country_rank = rank_county
+			capital = adune68
+		}
+		A378 = { #Iborros Empire
+			own_control_core = {
+				etra1164 etra1153 etra1138 etra1097 etra1086 etra1168 etra1156 etra1153 etra1169 etra1012 etra1173 etra1153 etra1133 etra1076 etra1115 etra1109 etra1125 etra1120 etra1098 etra1116 etra1096 etra1161 etra1147 etra1158 etra1180 etra1179 etra1135 etra1152 etra1175 adune106 adune135 etra1146 etra1487 etra1572 etra1494 etra1181 etra1142 etra1518 etra1497 etra1591 etra1663 etra1553 etra1670 etra1567 etra1536 etra1521 etra1542 etra1574 etra1486 etra1507 etra1523 etra1579 etra1582 etra1508 etra1535 etra1564 etra1566 etra1492 etra1504 etra1541 etra1576 etra1562 etra1549 etra1489 etra1570 etra1249 etra1208 etra1136 etra1134 etra1162 etra1209 etra1171 etra1211 etra1149 etra1185 etra1230 etra1210 etra1256 etra1228 etra1202 etra1244 etra1187 etra1272 etra1237 etra1282 etra1232 etra1243 etra1217 etra1276 etra1214 etra1223 etra1236 etra1246 etra1247 etra1279 etra1275 etra1250 etra1221 etra1235 etra1231 etra1251 etra1155 etra1151 etra1178 etra1172 etra1137 etra1260 etra1268 etra1159 etra1226 etra1239 etra1241 etra1262  etra1245 etra1268 etra1252 etra1215 etra1154  etra1284 etra1261 etra1240 etra1322 etra1253 etra1305 etra1222 etra1378 etra1233 etra1321 etra1307  	etra1197 etra1207 etra1312 etra1434 etra1361 etra1316 etra1314 etra1325 etra1347 etra1366 etra1448 etra1329 etra1339 etra1344 etra1373 etra1377 etra1332  etra1340 etra1205 etra1219 etra1327 etra1355  etra1435 etra1356 etra1454 etra1456 adune147 etra1337 adune114
+				etra1242 etra1286 etra1287 etra1285 etra1283 etra1218 etra1257 etra1298 etra1212 etra1303 etra1308 etra1306 etra1304 etra1381 etra1311 etra1376 etra1333 etra1372 etra1288 etra1290 etra1291 etra1295 etra1292 etra1294 etra1300 etra1206 etra1296 etra1297 etra1299 etra1289 etra1301 etra1302 etra1318 etra1040 etra1069 etra1013 etra1110 etra1010 etra1008 etra1118 
+				etra1357 etra1309 etra1334 etra1310 etra1225 etra1293 etra1088 etra1114 etra1103 etra1080 etra1107 etra1108 etra1124 etra1119 etra1106 etra1123 etra1094 etra1079 etra1117 etra1350 etra1315 etra1440 etra1346 etra11413 etra1348 etra1330 etra1319 etra1360
+				etra1037 etra1074 etra1093 etra1092 etra1413 etra1452 etra1342 etra1363 etra1353 etra1423 etra1418 etra1430  etra1445 etra1480 etra1386 etra1451 etra1447 etra1432 adune121 etra1324 etra1186 etra1192 etra988 etra1141 etra1281 etra1265 etra1196 etra1190 etra1199 etra1213 etra1167 etra1266 etra1248 etra1267 etra1271 etra1201 etra1200 etra1184 etra1183 etra1259 etra1270 etra1006 etra1188 etra1195 etra1189 etra1193 etra1264 etra1166 etra1254 etra1269 etra1216 etra1150 etra1280 etra1139 etra1263 etra1238 etra1234 etra1191 etra1224 etra1089 etra1091 etra1131 etra1128 etra1278 etra1258 etra1229 etra1277 etra1274 etra1140 etra1194 etra1203 etra1143 etra1273 etra1220 etra1163 etra1174 etra1145 etra1198 etra1255 etra1204 etra1170 etra1227 adune133 	etra983 etra984 etra986 etra985 etra1011 etra990  etra991 etra1407 etra989 etra995 etra1007 etra987 etra993 etra996 etra1003 adune123 etra1081 etra1082 etra1072 etra1071 etra1077 etra1105 etra1099 etra1132  etra1100 etra1127 etra1113 etra1101 etra1078 etra1111 etra1130 etra1087 etra1121 etra1085 etra1083 etra1126 etra1090 etra1084 etra1095 etra1129 etra1104 etra1122 etra1102 etra1368 etra1367 etra1380 etra1404 etra1463 etra1470 etra1382 etra1472 etra1468 etra1396 etra1458 etra1433 etra1476 etra1370 etra1384 etra1393 etra1403 etra1457 etra1406 etra1375 etra1394   etra1401 etra1391 etra1475 etra1482   etra999 etra1000 etra1462 etra1002 etra1001 etra1005 etra1112 adune130 adune107 
+				etra1320 etra1343 etra1317 etra1331 etra1351 etra1359 etra1365 etra1352 etra1326 etra1362 etra1369 etra1176 etra1160 etra1148 etra1165 etra1157 etra1177 etra1345 etra1371 etra1358 etra1338 etra1349 etra992 etra997 etra994 etra1004 etra998 etra1374 etra1341  etra1336 etra1354 etra1364 etra1402 etra1313 etra1328 etra1335 etra1144 etra1379 adune145 etra1483 etra1014 etra1397
+			
+			}
+			include = "expl_western_aduna"
+			include = "expl_northern_narkara"
+			include = "eternalist_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+
+				aristocracy_vs_plutocracy = -60
+				centralization_vs_decentralization = -60
+				traditionalist_vs_innovative = -50
+				spiritualist_vs_humanist = -25
+				serfdom_vs_free_subjects = -40
+				mercantilism_vs_free_trade = -80
+				belligerent_vs_conciliatory = -50
+				quality_vs_quantity = 20
+				offensive_vs_defensive = 10
+				land_vs_naval = -20
+				capital_economy_vs_traditional_economy = 80
+				individualism_vs_communalism = 20
+				outward_vs_inward = 50
+				parliament = {
+					parliament_type = council
+				}
+
+
+				laws = {
+					feudal_de_jure_law = by_blood
+					medieval_levy_law = peasant_levies
+					royal_court_customs_law = balanced_court_policy
+					administrative_system = central_councils
+					cultural_traditions_law = civil_society
+					marriage_law = monogamous_marriage
+					heir_religion_law = heir_any_religion
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_favor_the_ruler
+					immigration_law = open_borders_law
+					mining_law = nobles_mining_law
+					coin_laws = gold_and_silver_coins
+				}
+				privilege = {
+					#Nobles
+					nobles_land_rights
+					noble_fortification_licenses
+					elaborate_court_ceremonies
+					
+					#Clergy
+					clergy_literacy_rights
+					clergy_land_rights
+					embellish_great_works_of_faith
+					clerical_advisory_council
+					
+					#Burghers
+					market_fairs
+					formal_guilds
+					building_rights
+
+					#Peasants
+					communal_lands
+					allow_hunting
+				}
+
+				# Yuan analogue: recent succession turbulence → Alarico (Toghon Temur)
+				ruler = A378_alarico
+				ruler_term = { character = A378_odonar start_date = 1328.10.16 end_date = 1329.9.30 }
+				ruler_term = { character = A378_rinaldo start_date = 1332.10.23 end_date = 1332.12.14 }
+				ruler_term = { character = A378_alarico start_date = 1333.7.19 }
+			}
+			accepted_cultures = {
+				vocera_culture
+				anerrian_culture
+				sioran_culture
+			}
+		
+			currency_data = {
+				complacency = 25
+			}
+			country_rank = rank_empire
+			capital = etra1159
+
+			# Pre-RTR stress (Yuan-style), cleared/replaced by intensity scaling during the prelude chain
+			timed_modifier = {
+				modifier = "etra_rtr_factional_strife"
+				start_date = 1328.1.1
+				date = 1368.1.1
+				size = 1
+			}
+			timed_modifier = {
+				modifier = "etra_rtr_administration_in_disarray"
+				start_date = 1328.1.1
+				date = 1368.1.1
+				size = 1
+			}
+		}
+		A379 = { #Iboros - central plains
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1008
+		}
+		A380 = { #Iboros - forest marches
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+			capital = etra1088
+		}
+		A381 = { #Iboros - crossroads
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1173
+		}
+		A382 = { #Iboros - bundeli heartland
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1172
+		}
+		A383 = { #Iboros - deep interior
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1198
+		}
+		A384 = { #Iboros - northern frontier
+			own_control_core = {
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1185
+		}
+		A385 = { #Iboros - western hills
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1372
+		}
+		A386 = { #Iboros - southern lowlands
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_duchy
+			capital = etra1404
+		}
+		A387 = { #Iboros - eastern marches
+			own_control_core = {
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+			capital = etra1482
+		}
+		A388 = { #Iboros placeholder
+			own_control_core = { 
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+			capital = etra1160
+		}
+		A389 = { #Iboros placeholder
+			own_control_core = { 
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+			capital = etra1320
+		}
+		A390 = { #Iboros placeholder
+			own_control_core = {
+			
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+			capital = etra1343
+		}
+		A391 = { #Iboros placeholder
+			own_control_core = { #Suneroś
+				etra1415 etra1398 etra1437 etra1460 etra1453 etra1427 etra1420 etra1410 etrta1421 etra1411 etra1478 etra1421 etra1412 etra1428 etra1461 etra1425 etra1399 etra1444 etra1417 etra1388 etra1390 etra1422  etra1466 etra1465 etra1426
+			}
+			include = "expl_western_aduna"
+			include = "expl_northern_narkara"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A392 = { #Iboros placeholder
+			own_control_core = {
+				etra1424 etra1471 etra1429 etra1583 etra1584 etra1446 etra1395 etra1459 etra1477 etra1450 etra1442  
+			}
+			include = "expl_western_aduna"
+			include = "expl_northern_narkara"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A393 = { #Maszari
+			own_control_core = {
+				etra1436 etra1416 etra1389 etra1464 etra1383 etra1400 etra1431 etra1474 etra1449 adune140
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1436
+		}
+		A394 = { #Iboros placeholder
+			own_control_core = {
+				etra1488 etra1522  etra1611 etra1481 etra1603 etra1528 etra1613  etra1493 etra1610 etra1505
+			}
+			include = "expl_northern_narkara"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A395 = { #Iboros placeholder
+			own_control_core = {
+				etra1585 etra1586 etra1587 etra1588 etra1589 etra1590 etra1509 etra1517 etra1556 etra1581 etra1515 etra1605 etra1540 etra1182  
+			}
+			include = "expl_western_aduna"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A396 = { #Bajan
+			own_control_core = {
+				etra1613 etra1546 etra1455 etra1392 etra1561 etra1409 etra1469 etra1441 etra1538
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1613
+		}
+		A397 = { #Issin
+			own_control_core = {
+				etra1559 etra1558 etra1568 etra1601 etra1604 etra1467  etra1385 etra1578 etra1473 etra1439
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1559
+		}
+		A398 = { #Iboros placeholder
+			own_control_core = { 
+				 etra1495 etra1498 etra1530
+			}
+			include = "expl_northern_narkara"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A399 = { #Zayâno
+			own_control_core = {
+				 etra1548 etra1602 etra1443 etra1607 etra1500 etra1484 etra1554 etra1527 etra1580 etra1563
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1548
+		}
+		A400 = { #Iboros placeholder
+			own_control_core = { 
+				etra1569 etra1600 
+			}
+			include = "expl_northern_narkara"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A401 = { #Tilayah
+			own_control_core = { 
+				etra1501 etra1543 etra1512 etra1545 etra1557 etra1534 etra1537 etra1510 etra1577 etra1671 etra1532 etra1506 etra1547 etra1438 etra1408
+				}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1501
+		}
+		A402 = { #Aadentu
+			own_control_core = { 
+				etra1678 etra1614 etra1539 etra1571 etra1524 etra1531 etra1514 etra1544 etra1511 etra1565  etra1496 etra1615
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1678
+		}
+		A403 = { #Zuneska
+			own_control_core = { 
+				etra1551 etra1526 etra1529 etra1516 etra1503 etra1575 etra1525 etra1519 etra1803 etra1617 etra2112 etra2132 etra2148 etra2150
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1551
+		}
+		A404 = { #Tazzi
+			own_control_core = {
+				etra1513 etra1490 etra1550 etra1552 etra1560 etra1555 etra1387 etra1520 etra1419 etra1533 etra1499 etra1502  adune158 etra1573 etra2137
+			}
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_county
+			capital = etra1513
+		}
+		A405 = { #Iboros placeholder
+			own_control_core = { }
+			include = "expl_western_aduna"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A406 = { #Iboros placeholder
+			own_control_core = { }
+			include = "expl_western_aduna"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A407 = { #Iboros placeholder
+			own_control_core = { }
+			include = "expl_western_aduna"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_county
+		}
+		A408 = { #Crater placeholder
+			own_control_core = {
+				etra1009 etra1017 etra1018 etra1023 etra1026 etra1031 adune110 etra1060 etra1485 etra1592 etra1593 etra1594 etra1595 etra1596 etra1597 etra1598 etra1599 etra1606 etra1608 etra1609 etra1612 etra1616 etra1618 etra1619 etra1620 etra1621 etra1622 etra1623 etra1624 etra1625 etra1626 etra1627 etra1628 etra1629 etra1630 etra1631 etra1632 etra1633 etra1634 etra1635 etra1636 etra1637 etra1638 etra1639 etra1640 etra1641 etra1642 etra1643 etra1644 etra1646 etra1647 etra1648 etra1649 etra1650 etra1651 etra1652 etra1653 etra1654 etra1655 etra1656 etra1657 etra1658 etra1659 etra1660 etra1661 etra1662 etra1664 etra1665 etra1666 etra1667 etra1668 etra1669 etra1672 etra1673 etra1674 etra1675 etra1676 etra1677 etra1679 etra1680 etra1681 etra1682 etra1683 etra1684 etra1685 etra1686 etra1687 etra1688 etra1689 etra1690 etra1691 etra1692 etra1693 etra1694 etra1695 etra1696 etra1697 etra1698 etra1699 etra1700 etra1701 etra1702 etra1703 etra1704 etra1705 etra1706 etra1707 etra1708 etra1709 etra1710 etra1711 etra1712 etra1713 etra1714 etra1715 etra1716 etra1717 etra1718 etra1719 etra1720 etra1721 etra1722 etra1723 etra1724 etra1725 etra1726 etra1727 etra1728 etra1729 etra1730 etra1731 etra1732 etra1733 etra1734 etra1735 etra1736 etra1737 etra1738 etra1739 etra1740 etra1741 etra1742 etra1743 etra1744 etra1745 etra1746 etra1747 etra1748 etra1750 etra1751 etra1752 etra1753 etra1754 etra1755 etra1756 etra1757 etra1758 etra1759 etra1760 etra1761 etra1762 etra1763 etra1764 etra1765 etra1766 etra1767 etra1768 etra1769 etra1770 etra1771 etra1772 etra1773 etra1774 etra1775 etra1776 etra1777 etra1778 etra1779 etra1780 etra1781 etra1782 etra1788 etra1789 etra1790 etra1791 etra1792 etra1793 etra1794 etra1795 etra1796 etra1797 etra1798 etra1799 etra1800 etra1879 etra2070 etra2029 etra2009 etra1957 etra2052 etra1988 etra1934 etra1951 etra2039 etra2086 etra2092 etra2060 etra2020 etra2030 etra1989 etra2007 etra2061
+				etra2130 etra2116 etra2111
+			}
+			include = "expl_western_aduna"
+			include = "expl_northern_narkara"
+			include = "india_limited_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+			capital = etra1711
+		}
+		A409 = { #Tajjev — empty army shell until Rise of Tajjev
+			type = army
+			own_control_core = { }
+			our_cores_conquered_by_others = { }
+			include = "expl_northern_narkara"
+			include = "amalyarat_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+				ruler = random
+			}
+			country_rank = rank_kingdom
+			capital = etra1513
+		}
+		A410 = { # placeholder
+			own_control_core = { 
+				etra2089 etra1997 etra1999 etra2025 etra2095 etra2087 etra1992 etra1990 etra2006 etra2010 etra2051 etra2080
+				etra2019 etra2073 etra1996 etra2104 etra2024  etra1893 etra2022 etra1895 etra2021 etra2045 etra2056 etra1945
+				etra2053 etra2054 etra2079 etra2099 etra1946 etra1896 etra1943 etra2069 etra2094 etra2106 etra1887 etra2063 etra1978 etra2067 etra2038 etra1073 etra1985 etra2034 etra2015 etra2074 etra1974 etra1964 etra1944 etra1942 etra1932 etra1941 etra2066 etra1963 etra1966 etra1973 etra1968  etra1975  etra1970 etra1967 etra1965 etra1962 etra2011 etra1972 etra1952 etra2075 etra1860 etra1931 etra2081 etra1865 etra1930 etra1936  etra2159 etra2075 etra1860 etra2081 etra1931 etea1930 etra1941 etra1942 etra1936 etra1865 etra1930 	etra1878 etra2145 etra2146 etra1976 etra2072 etra1959 etra1928 etra2042 etra1969 etra2131 etra2026 etra2102 etra2083 etra1982 etra2048 etra1994 etra2043 adune109 etra2257 etra2230 etra2242 etra2189 etra2231 etra2214 etra2167
+				etra2205 etra2206 etra2250 etra2225 etra2201 etra2215 etra2223 etra2181 etra2175 etra2212 etra2235 etra2224 etra2187 etra2188 etra2168 etra2217 etra2166 etra2244 etra2183 etra2222
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A411 = { # Archonia
+			own_control_core = { 
+					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra1856 etra1853 etra1869 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1846 etra1847 etra1872 etra1873 etra1870 etra1838 etra1868 etra1839 etra2153 etra1871 etra2062 etra1858 etra1881 etra1874 etra1848 etra2127 etra1889 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 etra1851 etra1849 etra2097 etra1850 etra2113 adune157 etra1889 etra1881 etra1856 etra1853 etra1869 etra2153 etra1871 etra1870 etra2062 etra1858 etra1872 etra1846 etra1847 
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}	
+		A412 = { # Undead Pirates
+			own_control_core = { 
+					etra1925 etra1909 etra2049 etra1938 etra2108 etra2105
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A413 = { 
+			own_control_core = { 
+				etra1886 etra1882 etra2119 etra1926 etra1927 etra2114 etra1877 etra1876 etra1885 etra2028 etra2142 etra2124 etra2128 
+				etra1891 etra2107 etra2144 etra1890 etra2155 etra1905 etra1875 etra2157 etra1857 etra1888 etra2091 etra1884 etra2100 etra1914 etra1892 etra2152 etra1906 etra1907 etra1915 etra2084 etra1950 etra1913 etra1921 etra1919 etra2122 etra1883 etra1866 etra1864 etra1955 etra1880 etra1917 etra1918 etra1916 etra1922 etra1920 etra1923 etra19124 etra1912 etra1911 etra1910 etra1908 etra1904 etra1981 etra1979 etra1924 etra1947 etra2103 etra1858 etra1874 etra1848  etra1873     etra1881  etra2062 etra1870    etra2127 etra2097 etra1851 etra2113 etra1850 etra1849 				etra2085  etra2013 etra1983 etra2059 etra2036 etra1900 etra2118 etra2154 etra1998 etra1901 etra2093 etra1933 etra2041 etra2057 etra2125 etra2149  etra1933 etra1960 etra2078 etra2033 etra2076 etra2016 etra2050 etra1971 etra1956 etra1898 etra2101 
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+			capital = etra2107
+		}
+		A414 = { # Placeholder
+			own_control_core = { 
+				etra1935 etra1937 etra1897 etra2044 etra1897 etra1984 etra1902 etra1977 etra2031 etra1940 etra1939 
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A415 = { # Placeholder
+			own_control_core = { 
+			
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}	
+		A416 = { # Placeholder
+			own_control_core = { 
+				etra1958 etra1949 etra2090 etra1995 etra2027 etra2068 etra2047 etra2129 etra2156 etra1980
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A417 = { # Placeholder
+			own_control_core = { 
+				
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A418 = { # Placeholder
+			own_control_core = { 
+
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A419 = { # Placeholder
+			own_control_core = { 
+				etra1864 etra1922 etra1919 etra1866 etra1955 etra2122 etra1883 etra1917 etra1918 etra1916 etra1950 etra1880 etra2084 etra1913 etra1921 etra1920 etra1923 etra1924 etra1912
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A420 = { # Placeholder
+			own_control_core = { 
+				etra2203 etra2251 etra2249 etra2191 etra2229 etra2160 etra2164 etra2170 etra2218 etra2177 etra2170 etra2252 etra2182 etra2209 etra2193 etra2202 etra2245 etra2255 etra2207 etra2207 etra2195 etra2241 etra2216 etra2190 etra2184 etra2169 etra2161 etra2256 etra2253 etra2186 etra2165
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A421 = { # Placeholder
+			own_control_core = { etra2172 etra2248 etra2232 etra2198 etra2228 etra2208 etra2247 etra2180 etra2246 etra2174 etra2234 etra2254 etra2192 etra2220 etra2194 etra2236 etra2243 etra2238 etra2227 etra2237 etra2219 etra2179
+
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A422 = { # Placeholder
+			own_control_core = { etra2226 etra2233 etra2200 etra2240 etra2197 etra2199 etra2221 etra2259 etra2213 
+
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+		A423 = { # Placeholder
+			own_control_core = { etra2162 etra2163 etra2210 etra2173 etra2185 etra2196 etra2204 etra2239
+
+			}
+			include = "expl_western_aduna"
+			include = "eternalist_monarchy"
+			government = { ruler = random }
+			country_rank = rank_kingdom
+		}
+	}#
+
+	
+}#

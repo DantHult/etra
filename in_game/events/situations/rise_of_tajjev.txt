@@ -1,0 +1,306 @@
+﻿namespace = rise_of_tajjev
+
+rise_of_tajjev.1 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.1.title
+	desc = rise_of_tajjev.1.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+		save_scope_as = target_country
+		set_variable = rise_of_tajjev_situation_country
+	}
+	option = {
+		name = rise_of_tajjev.1.a
+		buff_tajjev_effect = { target = scope:target_country }
+	}
+}
+
+rise_of_tajjev.2 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.2.title
+	desc = rise_of_tajjev.1.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+	}
+	option = {
+		name = rise_of_tajjev.2.a
+		show_as_tooltip = {
+			buff_tajjev_effect = { target = c:A409 }
+		}
+	}
+}
+
+rise_of_tajjev.3 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.3.title
+	desc = rise_of_tajjev.3.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		c:A409 = {
+			save_scope_as = tajjev_country
+			capital ?= {
+				save_scope_as = target_location
+			}
+		}
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+		save_scope_as = target_country
+	}
+	option = {
+		name = rise_of_tajjev.3.a
+		disable_situation_effect = { type = rise_of_tajjev }
+		add_stability = stability_severe_bonus
+		add_prestige = prestige_severe_bonus
+		if = {
+			limit = { has_global_variable = tajjev_character global_var:tajjev_character = { is_alive = yes } }
+			kill_character = {
+				target = scope:target_character
+				reason = execution
+			}
+		}
+	}
+}
+
+rise_of_tajjev.5 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.5.title
+	desc = rise_of_tajjev.5.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+	}
+	option = {
+		name = rise_of_tajjev.5.a
+		disable_situation_effect = { type = rise_of_tajjev }
+		add_stability = stability_severe_bonus
+		add_prestige = prestige_severe_bonus
+		if = {
+			limit = { has_global_variable = tajjev_character global_var:tajjev_character = { is_alive = yes } }
+			kill_character = {
+				target = scope:target_character
+				reason = execution
+			}
+		}
+		remove_all_tajjev_cbs = yes
+	}
+	after = {
+		clear_tajjev_variables = yes
+	}
+}
+
+rise_of_tajjev.7 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.7.title
+	desc = rise_of_tajjev.7.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+		ruler ?= { save_scope_as = target_ruler }
+		save_scope_as = tajjev_country
+	}
+	option = {
+		name = rise_of_tajjev.7.a
+		disable_situation_effect = { type = rise_of_tajjev }
+		remove_all_tajjev_cbs = yes
+	}
+	after = {
+		clear_tajjev_variables = yes
+	}
+}
+
+# Campaign against Iborros (Timur China retarget)
+rise_of_tajjev.12 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.12.title
+	desc = rise_of_tajjev.12.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		flag_situation_event = {
+			situation = situation:rise_of_tajjev
+			event = roj_prepare_conquest_of_iborros
+		}
+		c:A378 ?= { save_scope_as = target_country }
+	}
+	option = {
+		name = rise_of_tajjev.12.a
+		add_casus_belli = {
+			type = casus_belli:cb_tajjev_conquests
+			target = scope:target_country
+		}
+		add_manpower = {
+			value = root.monthly_manpower
+			multiply = 8
+			add = 0.25
+		}
+	}
+}
+
+# Right to Conquer
+rise_of_tajjev.13 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.13.title
+	desc = rise_of_tajjev.13.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+		flag_situation_event = {
+			situation = situation:rise_of_tajjev
+			event = roj_right_to_conquer
+		}
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+	}
+	option = {
+		name = rise_of_tajjev.13.a
+		add_country_modifier = {
+			modifier = roj_legacy_exile
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = LASTS_UNTIL_END_OF_SITUATION_TT
+	}
+	option = {
+		name = rise_of_tajjev.13.b
+		add_country_modifier = {
+			modifier = roj_legacy_highlands
+			years = -1
+			mode = add_and_extend
+		}
+		custom_tooltip = LASTS_UNTIL_END_OF_SITUATION_TT
+	}
+}
+
+rise_of_tajjev.100 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.100.title
+	desc = rise_of_tajjev.100.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		random_neighbor_country = {
+			limit = {
+				NOT = { has_truce_with = root }
+				NOT = { has_target_casus_belli_on_us = root }
+				NOT = { is_allied_with = { target = root } }
+				NOT = { is_subject_of = root }
+				is_rebel_country = no
+				can_declare_war_on = root
+				military_strength < root.military_strength
+			}
+			save_scope_as = target_country
+		}
+	}
+	option = {
+		name = rise_of_tajjev.100.a
+		trigger = { exists = scope:target_country }
+		declare_war_with_cb = {
+			target = scope:target_country
+			type = casus_belli:cb_tajjev_conquests
+		}
+	}
+	option = {
+		name = rise_of_tajjev.100.b
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+rise_of_tajjev.101 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.101.title
+	desc = rise_of_tajjev.101.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+	option = {
+		name = rise_of_tajjev.101.a
+		add_war_exhaustion = war_exhaustion_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+rise_of_tajjev.102 = {
+	type = country_event
+	category = situation_event
+	title = rise_of_tajjev.102.title
+	desc = rise_of_tajjev.102.desc
+	outcome = neutral
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = rise_of_tajjev.102.a
+		add_manpower = {
+			value = root.monthly_manpower
+			multiply = 6
+			add = 0.25
+		}
+	}
+}

@@ -1,0 +1,59 @@
+﻿colors = {
+	luccinan_blue = rgb { 15 82 220 }
+	tiefling_red = rgb { 233 24 24  }
+	torrent_ratfolk = rgb  { 70 52 52 }
+	torrent_heuhian = rgb { 205 87 10 }
+	torrent_fullhorner = rgb { 119 201 94 }
+	borrikan_color = rgb { 220 182 73 } 
+	erlfolk_color = rgb { 72 18 24 } 
+	tyelkian_color = rgb { 120 134 107 } 
+	chesmeker_color = rgb { 194 136 158 }
+	afhaemeisan_color = rgb { 30 120 145	}
+	thaurfolk_color = rgb {  5 79 52 }
+	naurmen_color = rgb {  170 227 220 }
+	middle_serenic_color = rgb { 228 27 59 }
+	lower_serenic_color = rgb { 10 110 192 }
+	stedeling_color = rgb { 241 242 224 }
+	#naurmen_color = rgb {  170 227 220 }
+	draquatin_color = rgb { 15 38 17 }
+	caprainois_color = rgb { 213 201 176 }
+	pwasciards_color = rgb { 0 32 159 }
+	chevallois_color = rgb { 170  175 180 }
+	
+	crelzerte_orange = rgb { 255 102 0}
+	crelzerte_blue = rgb { 0 56 132 }
+	
+	map_A305 = rgb { 136 7 8 }
+	map_HCA = rgb { 15 35 135 }
+	map_A13 = rgb { 180 30 30 }
+
+	# Iborric Red Turban Rebellions situation mapmode
+	etra_rtr_emperor_color = rgb { 254 206 27 }
+	etra_rtr_strongest_rebel_color = rgb { 237 0 4 }
+	etra_rtr_loyalist_color = rgb { 70 200 12 }
+	etra_rtr_rebel_color = rgb { 237 122 46 }
+	etra_rtr_neutral_color = rgb { 100 100 100 }
+
+	map_A377 = rgb { 255 177 52 }
+
+	# Iborric Red Turban warlords (used by change_country_color = map_$tag$)
+	map_A378 = rgb { 204 102 0 }
+	map_A379 = rgb { 0 102 51 }
+	map_A380 = rgb { 128 64 0 }
+	map_A381 = rgb { 180 30 60 }
+	map_A382 = rgb { 255 153 51 }
+	map_A383 = rgb { 34 89 34 }
+	map_A384 = rgb { 70 130 180 }
+	map_A385 = rgb { 139 69 19 }
+	map_A386 = rgb { 160 90 40 }
+	map_A387 = rgb { 210 180 140 }
+	map_A388 = rgb { 55 95 160 }
+	map_A389 = rgb { 46 125 110 }
+	map_A390 = rgb { 95 55 20 }
+
+	# Underground map/terrain colors
+	climate_subterranean = rgb { 24 26 27 }
+	terrain_caverns = rgb { 32 34 36 }
+	terrain_dwarven_hold = rgb { 90 78 58 }
+	terrain_cave_fungus = rgb { 44 52 48 }
+}

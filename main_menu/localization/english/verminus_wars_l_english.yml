@@ -1,0 +1,109 @@
+﻿l_english:
+ verminus_wars: "War of the Verminus Succession"
+ verminus_wars_desc: "The great Verminus kingdom has shattered into rival ratfolk holds. A boy king sits beneath a contested regency while his uncles and their allies grasp for the crown of Rattopaese."
+
+ VERMINUS_REALMS_LEADER: "King of Rattopaese"
+ VERMINUS_REALMS_LEADER_MALE: "King of Rattopaese"
+ VERMINUS_REALMS_LEADER_FEMALE: "Queen of Rattopaese"
+
+ cb_verminus_succession: "$verminus_wars$"
+ cb_verminus_succession_desc: "The death of King Vernacius shattered Rattopaese. Every Verminus prince with spears to spare may press his claim against rival holds until one ruler reunites the Lands of the Rat."
+
+ verminus_realms: "Verminus Realms"
+ verminus_realms_desc: "The fractious ratfolk holds of the Lands of the Rat, bound by custom and mutual defense while their princes contest the crown of Rattopaese."
+ diplomatic_status_verminus_realms_name: "Fellow $verminus_realms$"
+ diplomatic_status_verminus_realms_tooltip: "#T Fellow $verminus_realms$#!\nBoth countries are members of the [GetUniqueInternationalOrganization('verminus_realms').GetName]."
+ verminus_realms_list_who_tt: "#T $LIST$#!\n$WHO$ is a member of the [GetUniqueInternationalOrganization('verminus_realms').GetName] with $LIST$"
+ verminus_press_claims_price: "Press Verminus Claims Cost"
+
+ war_goal_verminus_succession_wargoal: "$verminus_wars$"
+ war_goal_verminus_succession_wargoal_desc: "$war_goal_superiority_desc$"
+ VERMINUS_SUCCESSION_WAR_NAME: "The $NUM$$ORDER$ War Against $SECONDNAME$ in the $verminus_wars$"
+
+ hint_verminus_wars: "[GetSituationByKey('verminus_wars').GetNameWithNoTooltip]"
+ hint_verminus_wars_hint_text: "$hint_verminus_wars_hint_text_1$\n\n$hint_verminus_wars_hint_text_2$"
+ hint_verminus_wars_hint_text_1: "The [GetSituationByKey('verminus_wars').GetName] is a [situation_with_icon|e] engulfing the Lands of the Rat. The boy king Ratticar and Queen Regent Cecilia struggle to hold Rattopaese while uncle-kings and petty Verminus princes fight to reunite or replace them."
+ hint_verminus_wars_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Use [ShowGenericActionName('verminus_press_claims')] to gain a [casus_belli_with_icon|e] on a neighboring rival hold, or wield the [ShowCasusBelliName('cb_verminus_succession')] against fellow Verminus princes.\n@arrow_bonus_tier_2! As $VERMINUS_REALMS_LEADER_MALE$, defend the regency until Ratticar comes of age.\n@arrow_bonus_tier_1! Conquer enough of the Lands of the Rat to proclaim a unified Rattopaese before the war's end."
+
+ verminus_wars.1.title: "The Verminus Succession"
+ verminus_wars.1.desc: "The death of King Vernacius left no strong hand on the throne. Rattopaese is ruled in name only by an infant heir, and every Verminus prince now measures his claim in spears and scheming. The Lands of the Rat brace for a generation of war."
+ verminus_wars.1.desc.crown: "Our regency is beset on every side. Uncle-kings who once bent the knee now treat Rattopaese as just another prize in the succession. If Cecilia and young Ratticar falter, the Verminus line may be extinguished in fratricide."
+ verminus_wars.1.a: "We must endure until the boy is king."
+ verminus_wars.1.b: "Our claim is as good as any."
+
+ verminus_wars.3.title: "The Verminus Succession"
+ verminus_wars.3.desc: "War has come to the Lands of the Rat. The death of King Vernacius shattered Rattopaese, and now every Verminus prince with spears to spare marches against his kin. An infant king and his regent hold the capital while uncle-kings circle like vultures. The fratricide among the ratfolk cannot but reach [ShowRegionName('godhand_region')], and we must watch carefully lest the chaos spill across our borders."
+ verminus_wars.3.a: "The die has been cast."
+ verminus_wars_explanation_tooltip1: "The [GetSituationByKey('verminus_wars').GetName] is a [situation_with_icon|e] among the ratfolk holds of the Lands of the Rat.\n"
+ verminus_wars_explanation_tooltip2: "Every Verminus prince may press claims on rival holds until one ruler reunites Rattopaese.\n"
+ verminus_wars_explanation_tooltip3: "Bordering powers in [ShowRegionNameWithNoTooltip('godhand_region')] may find opportunity in the chaos — or face raids from desperate holds. The situation can be tracked from the Situations panel while we hold land in the region."
+
+ verminus_wars.2.title: "A Rat King Restored"
+ verminus_wars.2.desc: "The War of the Verminus Succession has run its course. [target_country.GetName] now dominates the Lands of the Rat, and the scattered Verminus holds must acknowledge a single ruler once more."
+ verminus_wars.2.desc.winner: "The Verminus Succession is settled in our favor. Rattopaese stands united under our banner — yet uncle-kings and rival holds still rule their own warrens. We must decide whether to offer them liege protection or break what remains by force."
+ verminus_wars.2.a: "Offer them liege protection."
+ verminus_wars.2.a.tt: "Every remaining independent Verminus hold will receive an offer of [vassalization|e]. Those who refuse grant us a [casus_belli|e] to subjugate them."
+ verminus_wars.2.b: "The crown tolerates no rival holds."
+ verminus_wars.2.b.tt: "Gain a [casus_belli|e] to subjugate every remaining independent Verminus hold."
+ verminus_wars.2.c: "The Lands of the Rat are ours alone."
+
+ verminus_wars.21.a: "So be it."
+
+ verminus_wars.22.title: "The King's Offer"
+ verminus_wars.22.desc: "Heralds from [from_country.GetName] arrive bearing the seal of unified Rattopaese. The new King offers us liege protection under the restored Verminus crown — kneel, and keep our hold; refuse, and face the armies that just conquered the succession."
+ verminus_wars.22.a: "We shall kneel and keep our hold."
+ verminus_wars.22.b: "We are Verminus princes, not vassals."
+
+ verminus_wars.23.title: "A Hold Bends the Knee"
+ verminus_wars.23.desc: "[target_country.GetName] has accepted our offer of liege protection. Another Verminus hold acknowledges the restored crown of Rattopaese."
+ verminus_wars.23.a: "One hold closer to true unity."
+
+ verminus_wars.24.title: "A Hold Defies the Crown"
+ verminus_wars.24.desc: "[target_country.GetName] has spurned our offer of liege protection. Their prince still styles himself a sovereign of the Lands of the Rat — we shall remind him who wears the Verminus crown."
+ verminus_wars.24.a: "Then they shall be broken."
+
+ cb_verminus_subjugate: "Subjugate Verminus Hold"
+ cb_verminus_subjugate_desc: "The War of the Verminus Succession is settled, yet this hold still defies the restored crown of Rattopaese. By right of victory, we may subjugate them and finish what the succession began."
+
+ verminus_wars.200.title: "The End of the Verminus Succession"
+ verminus_wars.200.desc: "The long-awaited end to the War of the Verminus Succession has come at last. One ratfolk prince has crushed his rivals and restored a unified Rattopaese over the Lands of the Rat. The Verminus Realms are no more, and the generation of fratricide that troubled [ShowRegionName('godhand_region')] is finally over — though a single Verminus power on our doorstep may prove no less dangerous."
+ verminus_wars.200.a: "The era of [target_country.GetNameWithNoTooltip] has begun."
+
+ verminus_wars.4.title: "A Moment of Weakness"
+ verminus_wars.4.desc: "Rival Verminus princes quarrel among themselves. Their levies are scattered, their councils divided — a chance to strike before they recover."
+ verminus_wars.4.a: "Press the advantage."
+
+ verminus_wars.5.title: "The Moment of Truth"
+ verminus_wars.5.desc: "We hold a righteous claim against a fellow Verminus hold. Our captains demand we honor it with steel rather than let another uncle seize what should be ours."
+ verminus_wars.5.a: "To war!"
+ verminus_wars.5.b: "Not yet."
+
+ verminus_wars.10.title: "An Uncle's Demand"
+ verminus_wars.10.desc: "Envoys from Rattopaese's court speak of regency and legitimacy, but our advisors argue the boy king's council is unfit to rule the Verminus lands. Some urge us to march on the capital and take the regency by force."
+ verminus_wars.10.a: "The regency belongs to a true Verminus."
+ verminus_wars.10.b: "Bide our time."
+
+ verminus_wars.11.title: "Ratticar Comes of Age"
+ verminus_wars.11.desc: "Young Ratticar has reached his majority, yet the regency's end brings no peace. The uncle-kings refuse to kneel to a boy they watched grow up powerless, and the succession war burns hotter than ever."
+ verminus_wars.11.a: "They will learn to fear their king."
+ verminus_wars.11.b: "We rule in fact if not in name."
+
+ SITUATION_VERMINUS_CROWN_PROGRESS: "The $game_concept_military_strength$ of the [GetUniqueInternationalOrganization('verminus_realms').GetName]"
+ SITUATION_VERMINUS_CROWN_PROGRESS_TEXT: "The total [military_strength|e] of [GetUniqueInternationalOrganization('verminus_realms').GetLeaderCountry.GetName] is [GetLandCombatPowerTooltipUI(Country.Self, '(bool)yes')]."
+ SITUATION_VERMINUS_CONTENDER_PROGRESS: "The $game_concept_military_strength$ of [Country.GetNameWithNoTooltip]"
+ SITUATION_VERMINUS_CONTENDER_PROGRESS_TEXT: "The total [military_strength|e] of the strongest rival hold, [Country.GetName], is [GetLandCombatPowerTooltipUI(Country.Self, '(bool)yes')]."
+ VERMINUS_STRONG_CONTENDERS: "Most powerful Verminus claimants in the [GetUniqueInternationalOrganization('verminus_realms').GetName]"
+
+ verminus_wars_end_decisive_tt: "At least 10 years have passed since the succession war began, and either only one Verminus hold remains or a claimant controls at least 75% of the Lands of the Rat."
+ verminus_wars_end_forced_tt: "25 years have passed since the succession war began. The strongest claimant will be crowned regardless of total conquest."
+ verminus_wars_can_start_tt: "The War of the Verminus Succession begins after 1337, once the Lands of the Rat have fractured among the Verminus princes."
+
+ opinion_verminus_succession_friction: "Verminus Succession Friction"
+
+ verminus_press_claims: "Press Verminus Claims"
+ verminus_press_claims_desc: "The Lands of the Rat are contested by every Verminus prince with spears to spare. By pressing our claim on a neighboring rival hold, we can strike before another uncle seizes what should be ours."
+ verminus_press_claims_explanation_tt: "Grants a [casus_belli|e] to conquer a neighboring [province|e] owned by a rival member of the [GetUniqueInternationalOrganization('verminus_realms').GetNameWithNoTooltip]."
+
+ verminus_wars.100.title: "Claim on [target.GetNameWithNoTooltip]"
+ verminus_wars.100.desc: "Our heralds have laid out the ancient Verminus rights to [target.GetProvince.GetName]. The [target_country.GetAdjective] hold cannot deny that the province borders our lands and that their prince is a rival in the succession. With claim in hand, our captains await the order to march."
+ verminus_wars.100.a: "[target.GetNameWithNoTooltip] will be ours!"

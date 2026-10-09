@@ -1,0 +1,19 @@
+﻿# These assets are then used in the genes (game/common/genes/..) at the bottom of the file. 
+
+## Glowing Eyes ##
+
+etra_blue_eyes = {
+   entity = {  required_tags = ""          shared_pose_entity = head   entity = male_eyes_etra_blue_entity }
+}
+etra_red_eyes = {
+   entity = {  required_tags = ""          shared_pose_entity = head   entity = male_eyes_etra_red_entity }
+}
+etra_purple_eyes = {
+   entity = {  required_tags = ""          shared_pose_entity = head   entity = male_eyes_etra_purple_entity }
+}
+etra_green_eyes = {
+   entity = {  required_tags = ""          shared_pose_entity = head   entity = male_eyes_etra_green_entity }
+}
+etra_yellow_eyes = {
+   entity = {  required_tags = ""          shared_pose_entity = head   entity = male_eyes_etra_yellow_entity }
+}

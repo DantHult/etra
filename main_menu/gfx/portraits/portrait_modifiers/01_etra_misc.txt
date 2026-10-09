@@ -1,0 +1,24 @@
+﻿etra_eye_accessory = {
+
+	usage = game
+	
+	blue_glowing = {
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = etra_eye_accessory
+				template = blue_glowing
+				range = { 0.0 1.0 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				portrait_clothing_trigger = { CULTURE_FLAG = elven_gfx }
+			}
+		}
+	}
+
+}
+

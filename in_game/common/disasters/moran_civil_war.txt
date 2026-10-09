@@ -1,0 +1,72 @@
+﻿moran_civil_war = {
+
+	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
+	
+	monthly_spawn_chance = monthly_spawn_chance_very_high
+	can_start = {
+		tag = A01
+		current_year > 1338
+		ruler ?= { total_abilities <= 300 } #its an impossible task
+		num_provinces > 2
+		has_any_active_disaster = no
+		custom_tooltip = {
+			text = had_csd_disaster_variable_tt
+			NOT = { has_variable = had_disaster_moran_civil_war_variable }
+		}
+	}
+	
+	can_end = {
+		moran_civil_war_end_trigger = yes
+	}
+	modifier = {
+		monthly_pretender_rebel_growth = 0.01
+		global_crown_estate_power = -0.2
+		global_estate_target_satisfaction = huge_permanent_target_satisfaction_penalty
+		monthly_legitimacy = 0.25
+	}
+	
+	on_start = {
+		set_variable = succession_crisis_disaster_counter
+		trigger_event_non_silently = moran_civil_war.101
+	}
+	on_end = {
+		every_character = {
+			limit = { has_character_modifier = plotting_rebellion_modifier }
+			remove_character_modifier = plotting_rebellion_modifier
+		}
+		set_variable = had_disaster_moran_civil_war_variable
+		remove_variable = pretender_rebel_character
+		clear_gui_variable = { type = pretender_rebel_character }
+		add_legitimacy = legitimacy_extreme_bonus
+		if = {
+			limit = { exists = var:succession_crisis_pretender_variable }
+			destroy_rebel = var:succession_crisis_pretender_variable
+		}
+		trigger_event_non_silently = moran_civil_war.100
+	}
+	
+	on_monthly = {
+		random_list = {
+			24 = { custom_tooltip = an_event_occurs_tt }
+			76 = { custom_tooltip = no_event_occurs_tt }
+		}
+		hidden_effect = {
+			random_list = {
+				80 = {}
+				2 = { trigger_event_silently = succession_crisis.2 }
+				2 = { trigger_event_silently = succession_crisis.3 }
+				2 = { trigger_event_silently = succession_crisis.4 }
+				2 = { trigger = { NOT = { has_variable = recently_demanded_aid_variable } } trigger_event_silently = succession_crisis.5  }
+				2 = { trigger_event_silently = moran_civil_war.1 }
+				2 = { trigger = { NOT = { has_variable = moran_nobles_refused_paying_taxes } } trigger_event_silently = moran_civil_war.2  }
+				2 = { trigger = { NOT = { has_variable = moran_nobles_supports_pretender_variable } } trigger_event_silently = moran_civil_war.3  }
+				2 = { trigger = { NOT = { has_variable = moran_mariners_guild_rose_up } } trigger_event_silently = moran_civil_war.4  }
+				2 = { trigger_event_silently = moran_civil_war.5 }
+				2 = { trigger_event_silently = moran_civil_war.6 }
+				2 = { trigger = { NOT = { has_variable = had_parliament_event_variable } } trigger_event_silently = moran_civil_war.7  }
+				2 = { trigger_event_silently = moran_civil_war.8 }
+				2 = { trigger_event_silently = moran_civil_war.9 }
+			}
+		}
+	}
+}

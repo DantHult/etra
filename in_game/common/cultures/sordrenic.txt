@@ -1,0 +1,41 @@
+﻿marcheur_culture = {
+	language = vulgar_moran_language
+	
+	color = map_TOU
+	
+	tags = { occitan_gfx greek_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		freeholder_group
+		human_group
+		sordrenic_group
+	}
+}
+
+salt_sordrenic_culture = {
+	language = sordrenic_language
+	
+	color = map_vezo
+	
+	tags = { occitan_gfx greek_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		sordrenic_group
+	}
+
+}
+
+stone_sordrenic_culture = {
+	language = sordrenic_language
+	
+	color = map_jin
+	
+	tags = { occitan_gfx french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		sordrenic_group
+	}
+
+}

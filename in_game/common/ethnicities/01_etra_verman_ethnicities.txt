@@ -1,0 +1,23 @@
+﻿# Receives data from /genes
+# Ethnicity templates are used in other ethnicities and templates in this folder
+
+ratfolk_ethnicity = {
+	template = "ethnicity_template"
+	# kindred_features = {
+		# 100 =  { name = human_like range = { 0.0 1.0 } }
+	# }
+	gene_skull_height = {
+		0 =  { name = template_1 		range = { 0.1 0.2 } }
+		98 =  { name = template_1 		range = { 0.2 0.4 } }
+	}
+	
+	gene_eye_size = {
+		10 =  { name = template_1 		range = { 0.6 0.8 } }
+		68 =  { name = template_1 		range = { 0.8 1.0 } }
+	}
+	gene_neck_length = {
+		70 =  { name = template_1 		range = { 0.1 0.3 } }
+		3 =  { name = template_1 		range = { 0.3 0.4 } }
+
+	}
+}

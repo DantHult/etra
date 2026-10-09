@@ -1,0 +1,58 @@
+﻿ratfolk_spies_accepted = {
+    game_data = {
+	    category = country
+    }
+	spy_network_construction = 0.10
+    monthly_towards_xenophile = societal_value_minor_monthly_move 
+
+}
+
+ratfolk_spies_rejected = {
+    game_data = {
+	    category = country
+    }
+	stability_investment = tiny_stability_investment
+    monthly_towards_xenophobe = societal_value_minor_monthly_move 
+
+}
+
+undead_tutor = {
+	game_data = {
+		category = character
+	}
+	adm = 5
+	dip = 5
+	mil = 5
+	court_spending_efficiency = -0.01 	#for his services
+	monthly_legitimacy = -0.05 	#people don't like him
+}
+
+A01_human_resources = {
+    game_data = {
+	    category = country
+    }
+    monthly_towards_xenophobe = societal_value_monthly_move 
+}
+
+A01_flesh_and_bone = {
+    game_data = {
+	    category = country
+    }
+    monthly_towards_xenophile = societal_value_monthly_move 
+} 
+
+A01_weathered_the_storm = {
+	game_data = {
+		category = country 
+	}
+	power_projection = 5
+	stability_cost_efficiency = 0.1
+}
+
+A01_the_mandate = {
+	game_data = {
+		category = country 
+	}
+	siege_ability = 0.05
+	global_war_score_efficiency = 0.025
+}

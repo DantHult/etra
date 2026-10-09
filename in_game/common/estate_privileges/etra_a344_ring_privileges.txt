@@ -1,0 +1,86 @@
+﻿# Cyrewin (A344): estate privileges parallel to vanilla Novgorod's setup, with separate keys for Etra localization.
+
+cyrewin_chartered_factors = {
+	estate = burghers_estate
+	potential = {
+		has_or_had_tag = A344
+	}
+	allow = {}
+	country_modifier = {
+		merchant_maintenance_efficiency = 0.50
+		global_burghers_estate_power = 0.25
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		monthly_republican_tradition = 0.2
+		global_crown_estate_power = -0.10
+	}
+	country_modifier = {
+		potential_trigger = {
+			custom_tooltip = {
+				text = cyrewin_factors_strengthened_requirement
+				has_variable = ivan_hundred_strengthened
+			}
+		}
+		global_crown_estate_power = -0.05
+		global_merchant_capacity_modifier = 0.2
+	}
+	country_modifier = {
+		potential_trigger = {
+			custom_tooltip = {
+				text = cyrewin_factors_beeswax_requirement
+				has_variable = ivan_hundred_beeswax
+			}
+		}
+		export_efficiency = small_trade_efficiency_bonus
+		global_beeswax_output_modifier = 0.25
+	}
+	can_revoke = {}
+}
+
+cyrewin_shieldmarshal_charter = {
+	estate = nobles_estate
+	potential = {
+		has_or_had_tag = A344
+	}
+	allow = {}
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.5
+		monthly_army_tradition = 0.1
+	}
+	country_modifier = {
+		potential_trigger = {
+			custom_tooltip = {
+				text = cyrewin_shieldmarshal_influential_requirement
+				has_variable = nov_influential_tysiatskii
+			}
+		}
+		global_nobles_estate_power = 0.25
+		army_heavy_infantry_power = 0.15
+	}
+	country_modifier = {
+		potential_trigger = {
+			custom_tooltip = {
+				text = cyrewin_shieldmarshal_weakened_requirement
+				has_variable = nov_tysiatskii_influence_weakened
+			}
+		}
+		stability_investment = large_stability_investment
+		global_nobles_estate_power = -0.25
+	}
+	can_revoke = {}
+}
+
+cyrewin_ring_compacts = {
+	estate = nobles_estate
+	potential = {
+		has_or_had_tag = A344
+	}
+	allow = {}
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.5
+		country_cabinet_efficiency = 0.05
+		stability_decay = -0.00025
+	}
+	can_revoke = {}
+}

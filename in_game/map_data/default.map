@@ -1,0 +1,136 @@
+provinces = "locations.png"
+rivers = "rivers.png"
+adjacencies = "adjacencies.csv"
+setup = "definitions.txt"
+ports = "ports.csv"
+location_templates = "location_templates.txt"
+
+equator_y = 3340
+wrap_x = yes
+
+sound_toll = {
+
+}
+
+#############
+# VOLCANOES
+#############
+volcanoes = {
+}
+###################################
+# All possible earthquake zones
+###################################
+earthquakes = {
+}
+#############
+# SEA ZONES
+#############
+# European Seas
+sea_zones = {
+	etra_sea101 my_sea_zone etra_sea85 etra_sea86 etra_sea87 etra_sea93 etra_sea88 etra_sea90 etra_sea100 etra_sea98
+	etra_sea97 etra_sea92 etra_sea103 etra_sea96 etra_sea91 etra_sea104
+	etra_sea105 etra_sea106 etra_sea107 etra_sea108 etra_sea109 etra_sea110 etra_sea111 etra_sea112 etra_sea113 etra_sea114 etra_sea115 etra_sea116 etra_sea117 etra_sea118 etra_sea119 etra_sea120 etra_sea121 etra_sea122 etra_sea123 etra_sea124 etra_sea125 etra_sea126 etra_sea127 etra_sea128 etra_sea129 etra_sea130 etra_sea131 etra_sea132 etra_sea133 etra_sea134 etra_sea135 etra_sea136 etra_sea137 etra_sea138 etra_sea139 etra_sea140 etra_sea141 etra_sea142 etra_sea143 etra_sea144 etra_sea145 etra_sea146 etra_sea147 etra_sea148 etra_sea149 etra_sea150 etra_sea151 etra_sea152 etra_sea153 etra_sea154 etra_sea155 etra_sea156 etra_sea157 etra_sea158 etra_sea159
+	my_sea_zone_1 my_sea_zone_2 my_sea_zone_3 my_sea_zone_4 my_sea_zone_5 my_sea_zone_6 my_sea_zone_7 my_sea_zone_8 my_sea_zone_9 my_sea_zone_10
+	my_sea_zone_11 my_sea_zone_12 my_sea_zone_13 my_sea_zone_14 my_sea_zone_15 my_sea_zone_16 my_sea_zone_17 my_sea_zone_18 my_sea_zone_19 my_sea_zone_20
+	my_sea_zone_21 my_sea_zone_22 my_sea_zone_23 my_sea_zone_24 my_sea_zone_25 my_sea_zone_26 my_sea_zone_27 my_sea_zone_28 my_sea_zone_29 my_sea_zone_30
+	wasteland2 wasteland1 wasteland3 wasteland4 wasteland5 wasteland6 wasteland7 wasteland8 wasteland9
+	wasteland10 testprovince3 testprovince2 testprovince17 testprovince18 testprovince46 testprovince45 testprovince83
+	adunic_sea1 adunic_sea2 adunic_sea3 adunic_sea4 adunic_sea5 adunic_sea6 adunic_sea7 adunic_sea8 adunic_sea9 adunic_sea10 adunic_sea11 adunic_sea12
+	adunic_sea13 adunic_sea14 adunic_sea15 adunic_sea16 adunic_sea17 adunic_sea18 adunic_sea19 adunic_sea20 adunic_sea21 adunic_sea22 adunic_sea23
+	adunic_sea24 adunic_sea25 adunic_sea26 adunic_sea27 adunic_sea28 adunic_sea29 adunic_sea30 adunic_sea31 adunic_sea32
+	etra_sea1 etra_sea2 etra_sea3 etra_sea4 etra_sea6 etra_sea7 etra_sea8 etra_sea9 etra_sea10 etra_sea11 etra_sea12 etra_sea13 etra_sea14 etra_sea15 etra_sea16 etra_sea17
+	etra_sea18 etra_sea19 etra_sea20 etra_sea21 etra_sea22 etra_sea23 etra_sea24 etra_sea25 etra_sea26 etra_sea27 etra_sea28 etra_sea29 etra_sea30 etra_sea31 etra_sea32 etra_sea33
+	etra_sea34 etra_sea35 etra_sea36 etra_sea37 etra_sea38 etra_sea39 etra_sea40 etra_sea41 etra_sea42 etra_sea43 etra_sea44 etra_sea45 etra_sea46 etra_sea47 etra_sea48 etra_sea49 etra_sea50 etra_sea51 etra_sea52 etra_sea53 etra_sea54 etra_sea55 etra_sea56 etra_sea57
+	etra_sea58 etra_sea59 etra_sea60 etra_sea61 etra_sea62 etra_sea63 etra_sea64 etra_sea65 etra_sea66 etra_sea67 etra_sea68 etra_sea69 etra_sea70 etra_sea71 etra_sea72 etra_sea73
+	etra_sea74 etra_sea75 etra_sea76 etra_sea77 etra_sea78 etra_sea79 etra_sea80 etra_sea81 etra_sea82
+	etra_sea83 etra_sea84 east_gate etra_sea99 etra_sea102 etra_sea94 etra_sea95
+	etra_sea160 etra_sea161 etra_sea162 etra_sea163 etra_sea164 etra_sea165 etra_sea166 etra_sea167 etra_sea168 etra_sea169 etra_sea170 etra_sea171
+	etra_sea172 etra_sea173 etra_sea174 etra_sea175 etra_sea176 etra_sea177 etra_sea178 etra_sea179 etra_sea180 etra_sea181 etra_sea182 etra_sea183
+	etra_sea184 etra_sea185 etra_sea186 etra_sea187 etra_sea188 etra_sea189 etra_sea190 etra_sea191 etra_sea192 etra_sea193 etra_sea194 etra_sea195
+	etra_sea196 etra_sea197 etra_sea198 etra_sea199 etra_sea200 etra_sea201 etra_sea202 etra_sea203 etra_sea204 etra_sea205 etra_sea206 etra_sea207
+	etra_sea208 etra_sea209
+}
+###############
+# MAJOR RIVERS
+###############
+#river_provinces = { 628 630 }		#Thames
+########
+# LAKES
+########
+lakes = {
+		hykrios_lake_1
+}
+#####################
+# IMPASSABLE TERRAIN
+#####################
+# Can be colored by whoever owns the most of the province's neighbors.
+# Blocks unit movement.
+impassable_mountains = {
+	etra1033 etra1034 etra1035 etra1036 etra1039 etra1041 etra1042 etra1043 etra1044 etra1045 etra1046 etra1047 etra1048 etra1049 etra1050 etra1051 etra1052 etra1053 etra1054 etra1055 etra1056 etra1057 etra1058 etra1059 etra1060 etra1061 etra1062 etra1063 etra1064 etra1065 etra1066 etra1067 etra1068 etra1070
+	etra1015 etra1016 etra1017 etra1018 etra1019 etra1020 etra1021 etra1022 etra1023 etra1024 etra1025 etra1026 etra1027 etra1028 etra1029 etra1030 etra1031 etra1032
+	hykrios_mountains_1 adune7 adune9 adune146 adune113 etra1491 etra1405 etra1786 etra1783 etra1075 etra1787 etra1785 etra1784
+	etra_sea76 adunic_sea29 wasteland7 wasteland8 wasteland9 wasteland10 my_sea_zone_1
+	 etra810 etra812 etra811 etra809 etra808 etra834 etra807 etra806 etra854 etra956 etra856 etra912 etra818 etra819 etra859 etra935 etra833 etra936
+	etra928 etra847 etra843 etra869 etra961 etra845 etra841 etra844 etra839 etra822 etra858 etra860 etra748 etra838 etra840 etra842 etra981 etra827 etra848 etra853
+	etra846 etra965 etra824 etra832 etra817 etra816 etra837 etra849 etra835 etra911 etra805 etra831 etra830 etra804 etra836
+	etra228 etra1414 etra_sea146 etra1801 etra1807 etra1991 etra2055 etra2123 etra2121 etra2133 etra1038 etra1929
+	dis1
+	wasteland_blocker
+	aita
+	milgearth_mountains1
+	milgearth_mountains2
+	western_aita
+	testprovince123
+	testprovince251
+	testprovince53
+	testprovince75
+	etra937
+	testprovince117
+	testprovince265
+	testprovince260
+	testprovince261
+	testprovince262
+	testprovince263
+	testprovince264
+	testprovince266
+	testprovince257
+	testprovince268
+	testprovince269
+	testprovince270
+	testprovince187
+	testprovince252
+	testprovince253
+	testprovince246
+	testprovince247
+	testprovince248
+	testprovince259
+	testprovince256 etra226 etra182 etra185
+	testprovince254 wasteland6 wasteland4 wasteland5 testprovince255 testprovince258 aita70 aita82 aita83 wasteland3 wasteland2 wasteland1
+	 adune108
+	 etra1323
+}
+non_ownable = {
+	testprovince187 testprovince254 etra1805 etra1749 etra1804 etra1806 etra1802
+	aita adune113 etra2141 etra2136
+	western_aita adune108 etra2004 etra2017 etra2046 etra1899 etra2096 etra1954 etra2000 etra1987 testprovince256
+	testprovince257 etra2117 etra2151 etra2138  etra2109 etra2115 etra2139 etra2110 etra2134 etra2143
+	testprovince259
+	testprovince123
+	testprovince251
+	testprovince265
+	testprovince260
+	testprovince261
+	testprovince262
+	testprovince263
+	testprovince264
+	testprovince266
+	testprovince255
+	testprovince268
+	testprovince269
+	testprovince270
+	testprovince252
+	testprovince253
+	testprovince246
+	testprovince247
+	testprovince248 testprovince258
+}

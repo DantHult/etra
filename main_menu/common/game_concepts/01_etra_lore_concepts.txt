@@ -1,0 +1,36 @@
+﻿end_times = {
+	texture = "events/history"
+}
+
+day_of_apokatastasis = {
+	texture = "events/history"
+}
+
+compact_of_adune = {
+	alias = { covenant_of_ends }
+	texture = "events/history"
+}
+
+the_junil = {
+	texture = "character_roles/ruler"
+}
+
+undying_emperor = {
+	texture = "character_roles/ruler"
+}
+
+war_of_37_imperators = {
+	texture = "flat_icons/disaster"
+}
+
+godhand_crusades = {
+	texture = "events/history"
+}
+
+long_siege_of_moras = {
+	texture = "events/history"
+}
+
+pale_one = {
+	texture = "flat_icons/disaster"
+}

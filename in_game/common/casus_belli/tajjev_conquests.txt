@@ -1,0 +1,26 @@
+﻿#root is country
+#scope:target is the target
+
+cb_tajjev_conquests = {
+	create_visible = {
+		tag = A409
+		is_situation_active = situation:rise_of_tajjev
+	}
+	declare_enabled = {
+		tag = A409
+		is_situation_active = situation:rise_of_tajjev
+	}
+	create_enabled = {
+		tag = A409
+		is_situation_active = situation:rise_of_tajjev
+		is_neighbor_of = scope:target
+	}
+	war_goal_type = tajjev_war_superiority
+
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 100
+		}
+	}
+}

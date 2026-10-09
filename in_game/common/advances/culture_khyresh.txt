@@ -1,0 +1,77 @@
+############################
+# age_1_traditions
+############################
+
+khyresh_the_crater_garden = {
+	age = age_1_traditions
+	icon = agriculture_advance
+
+	potential = {
+		culture = culture:khyresh_culture
+	}
+
+	global_fruit_output_modifier = 0.1
+	global_monthly_food_modifier = 0.1
+
+	requires = agriculture_advance
+}
+
+khyresh_the_crater_civilization = {
+	age = age_1_traditions
+	icon = city_building_advance
+
+	potential = {
+		culture = culture:khyresh_culture
+	}
+
+	global_monthly_development = 0.001
+	requires = city_building_advance
+}
+
+khyresh_the_crater_coast = {
+	age = age_1_traditions
+	icon = merchant_power_from_maritime_rev_dip_choice
+
+	potential = {
+		culture = culture:khyresh_culture
+	}
+
+	global_sailors_modifier = 0.1
+	global_maritime_presence_modifier = 0.2
+
+	requires = unlock_cog_advance
+}
+
+############################
+# age_2_renaissance
+############################
+
+khyresh_star_blades = {
+	age = age_2_renaissance
+	icon = glorious_arms
+
+	potential = {
+		culture = culture:khyresh_culture
+	}
+
+	army_heavy_infantry_power = 0.1
+	ai_weight = { add = 10 }
+
+	requires = renaissance_advance
+}
+
+############################
+# age_3_discovery
+############################
+
+############################
+# age_4_reformation
+############################
+
+############################
+# age_5_absolutism
+############################
+
+############################
+# age_6_revolutions
+############################

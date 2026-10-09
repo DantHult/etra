@@ -1,0 +1,497 @@
+namespace = flavor_tak
+
+#########################################################
+# Rise of Tajjev — House Izem destruction, exile, founding
+#########################################################
+
+# A378 — The Destruction of House Izem (always happens)
+flavor_tak.2 = {
+	type = country_event
+	title = flavor_tak.2.title
+	desc = flavor_tak.2.desc
+	outcome = bad
+	fire_only_once = yes
+	major = yes
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	trigger = {
+		tag = A378
+		current_year >= 1345
+		current_year < 1370
+		character:A378_massin = {
+			is_alive = yes
+		}
+		NOT = { has_global_variable = izem_house_destroyed }
+		OR = {
+			is_situation_active = situation:etra_red_turban_rebellions
+			current_year >= 1355
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		character:A378_massin = {
+			save_scope_as = target_character
+		}
+		character:A378_aghilas ?= {
+			save_scope_as = izem_patriarch
+		}
+		character:A378_udaden ?= {
+			save_scope_as = izem_sibling
+		}
+		location:etra1513 = {
+			save_scope_as = exile_location
+			owner ?= {
+				save_scope_as = exile_host
+			}
+		}
+		set_global_variable = {
+			name = izem_house_destroyed
+			value = 1
+		}
+		set_global_variable = {
+			name = tajjev_exile_pending
+			value = 1
+		}
+	}
+
+	option = {
+		name = flavor_tak.2.a
+		custom_tooltip = flavor_tak.2.a.tt
+		add_prestige = prestige_mild_penalty
+		add_legitimacy = legitimacy_mild_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_penalty }
+		if = {
+			limit = { exists = scope:izem_patriarch scope:izem_patriarch = { is_alive = yes } }
+			kill_character = {
+				target = scope:izem_patriarch
+				reason = execution
+			}
+		}
+		if = {
+			limit = { exists = scope:izem_sibling scope:izem_sibling = { is_alive = yes } }
+			kill_character = {
+				target = scope:izem_sibling
+				reason = execution
+			}
+		}
+	}
+
+	option = {
+		name = flavor_tak.2.b
+		custom_tooltip = flavor_tak.2.b.tt
+		add_prestige = prestige_weak_penalty
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_penalty }
+		if = {
+			limit = { exists = scope:izem_patriarch scope:izem_patriarch = { is_alive = yes } }
+			kill_character = {
+				target = scope:izem_patriarch
+				reason = execution
+			}
+		}
+		if = {
+			limit = { exists = scope:izem_sibling scope:izem_sibling = { is_alive = yes } }
+			kill_character_silently = scope:izem_sibling
+		}
+	}
+
+	after = {
+		if = {
+			limit = { exists = scope:exile_host }
+			scope:exile_host = {
+				trigger_event_non_silently = {
+					id = flavor_tak.3
+					days = 15
+				}
+			}
+		}
+	}
+}
+
+# Exile arrives for whoever owns etra1513
+flavor_tak.3 = {
+	type = country_event
+	title = flavor_tak.3.title
+	desc = flavor_tak.3.desc
+	outcome = neutral
+	fire_only_once = yes
+	major = yes
+
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+
+	trigger = {
+		is_tajjev_exile_destination_owner = yes
+		has_global_variable = tajjev_exile_pending
+		character:A378_massin = {
+			is_alive = yes
+		}
+		NOT = { has_global_variable = tajjev_exiles_arrived }
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:peasants_estate }
+		character:A378_massin = {
+			save_scope_as = target_character
+			move_country = root
+		}
+		location:etra1513 = {
+			save_scope_as = exile_location
+		}
+		c:A378 ?= {
+			save_scope_as = origin_country
+		}
+		set_global_variable = {
+			name = tajjev_exiles_arrived
+			value = 1
+		}
+		remove_global_variable = tajjev_exile_pending
+	}
+
+	option = {
+		name = flavor_tak.3.a
+		add_prestige = prestige_mild_bonus
+		add_gold = 50
+		custom_tooltip = flavor_tak.3.a.tt
+	}
+}
+
+# Settling among the highlanders
+flavor_tak.4 = {
+	type = country_event
+	title = flavor_tak.4.title
+	desc = flavor_tak.4.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+
+	trigger = {
+		has_variable = tajjev_exiles_arrived
+		character:A378_massin = {
+			is_alive = yes
+		}
+		current_year >= 1350
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:nobles_estate }
+		character:A378_massin = {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_tak.4.a
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_bonus }
+		scope:target_character = {
+			add_prestige = prestige_mild_bonus
+		}
+	}
+}
+
+# Embassy to Iborros (late flavor)
+flavor_tak.5 = {
+	type = country_event
+	title = flavor_tak.5.title
+	desc = flavor_tak.5.desc
+	outcome = neutral
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = A409
+		from = 1400.1.1
+		to = 1450.1.1
+		monthly_chance = 2
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	trigger = {
+		tag = A409
+		country_exists = c:A378
+		c:A378 = {
+			this != root
+			opinion = { target = root value > 0 }
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:A378 = { save_scope_as = target_country }
+	}
+
+	option = {
+		name = flavor_tak.5.a
+		change_gold_effect = { scale = -3 }
+		add_prestige = prestige_mild_bonus
+	}
+	option = {
+		name = flavor_tak.5.b
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+# Founding of Tajjev
+flavor_tak.8 = {
+	type = country_event
+	title = flavor_tak.8.title
+	desc = flavor_tak.8.desc
+	outcome = neutral
+	fire_only_once = yes
+	major = yes
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	trigger = {
+		current_year >= 1360
+		current_year < 1405
+		has_global_variable = tajjev_exiles_arrived
+		character:A378_massin = {
+			is_alive = yes
+			is_adult = yes
+		}
+		NOT = { country_exists = c:A409 }
+		OR = {
+			owns = location:etra1513
+			any_owned_location = {
+				region = region:amalyarat_region
+			}
+		}
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		every_owned_location = {
+			add_to_list = own_locations
+		}
+		character:A378_massin = {
+			save_scope_as = target_character
+		}
+		set_global_variable = {
+			name = tajjev_character
+			value = character:A378_massin
+		}
+		c:A409 = { save_scope_as = target_country }
+		if = {
+			limit = { owns = location:etra1513 }
+			location:etra1513 = {
+				save_scope_as = target_location
+			}
+		}
+		else = {
+			random_owned_location = {
+				limit = { region = region:amalyarat_region }
+				save_scope_as = target_location
+			}
+		}
+		scope:target_location = {
+			area = {
+				every_location_in_area = {
+					limit = {
+						owner ?= root
+					}
+					add_core = scope:target_country
+				}
+			}
+			floodfill_locations = {
+				limit = {
+					owner ?= root
+					OR = {
+						is_core_of = scope:target_country
+						region = region:amalyarat_region
+					}
+				}
+				add_core = scope:target_country
+				if = {
+					limit = { is_in_list = own_locations }
+					remove_from_list = own_locations
+				}
+			}
+			while = {
+				count = 10
+				create_sub_unit_with_owner = {
+					type = a_takkev_cavalry
+					owner = scope:target_country
+				}
+			}
+		}
+		save_scope_as = root_country
+		create_country_from_cores_in_our_locations = scope:target_country
+		scope:target_country = {
+			set_capital = scope:target_location
+			set_new_ruler = global_var:tajjev_character
+			set_variable = {
+				name = tak_founding_father
+				value = global_var:tajjev_character
+			}
+			change_culture = culture:takkev_culture
+			change_country_type = army
+			change_government_type = government_type:tribe
+			change_heir_selection = heir_selection:tribal_oldest_male
+			if = {
+				limit = { country_rank_level < 3 }
+				set_country_rank = country_rank:rank_kingdom
+			}
+			add_gold = 2000
+			add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_radical_bonus }
+			add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_radical_bonus }
+			every_owned_location = {
+				change_control = control_radical_bonus
+			}
+		}
+		cancel_subject = scope:target_country
+	}
+
+	option = {
+		name = flavor_tak.8.a
+		trigger = {
+			OR = {
+				is_ai = yes
+				list_size = {
+					name = own_locations
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = flavor_tak.8.a.tt
+		enable_situation_effect = { type = rise_of_tajjev }
+		if = {
+			limit = {
+				list_size = {
+					name = own_locations
+					value = 0
+				}
+			}
+			scope:target_country = { annex_country = { country = scope:root_country reason = MilitaryConquest transfer = yes } }
+		}
+	}
+	option = {
+		name = flavor_tak.8.b
+		high_risk_option = yes
+		trigger = {
+			is_ai = no
+		}
+		custom_tooltip = flavor_tak.8.a.tt
+		change_player = scope:target_country
+		enable_situation_effect = { type = rise_of_tajjev }
+		scope:target_country = { annex_country = { country = scope:root_country reason = MilitaryConquest transfer = yes } }
+	}
+
+	after = {
+		activate_situation = situation:rise_of_tajjev
+		scope:target_country = {
+			every_neighbor_country = {
+				limit = {
+					this != scope:target_country
+					culture ?= culture:takkev_culture
+				}
+				set_variable = { name = had_tak_rise_event value = 1 months = 1 }
+				trigger_event_silently = flavor_tak.81
+			}
+		}
+	}
+}
+
+# Neighbor fold offer
+flavor_tak.81 = {
+	type = country_event
+	title = flavor_tak.81.title
+	desc = flavor_tak.81.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:A409 = { save_scope_as = target_country }
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+	}
+	option = {
+		name = flavor_tak.81.a
+		high_risk_option = yes
+		trigger = {
+			OR = {
+				is_ai = yes
+				scope:target_country = { is_ai = yes }
+			}
+		}
+		scope:target_country = {
+			annex_country = { country = root reason = MilitaryConquest transfer = yes }
+		}
+	}
+	option = {
+		name = flavor_tak.81.b
+		add_prestige = prestige_mild_bonus
+		scope:target_country = {
+			add_casus_belli = {
+				type = casus_belli:cb_tajjev_conquests
+				target = root
+			}
+		}
+	}
+}
+
+# Massin's death
+flavor_tak.9 = {
+	type = country_event
+	title = flavor_tak.9.title
+	desc = flavor_tak.9.desc
+	outcome = bad
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+
+	trigger = {
+		tag = A409
+		has_global_variable = tajjev_character
+		global_var:tajjev_character = {
+			is_alive = no
+		}
+		is_situation_active = situation:rise_of_tajjev
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		global_var:tajjev_character = {
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = flavor_tak.9.a
+		add_stability = stability_severe_penalty
+		add_prestige = prestige_mild_penalty
+		every_neighbor_country = {
+			limit = {
+				culture ?= culture:takkev_culture
+			}
+			add_casus_belli = {
+				type = casus_belli:cb_tajjev_conquests
+				target = root
+			}
+		}
+	}
+}

@@ -1,0 +1,439 @@
+﻿etra_red_turban_rebellions = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_etra_red_turban_rebellions
+	can_start = {
+		current_age = age_2_renaissance
+		current_year > 1350
+		country_exists = c:A378
+		c:A378 = {
+			government_type = government_type:monarchy
+			in_civil_war = no
+			OR = {
+				stability < 95
+				legitimacy < 50
+				weighted_calc_true_if = {
+					amount >= 2
+					1 = { estate_satisfaction:nobles_estate < 0.75 }
+					1 = { estate_satisfaction:clergy_estate < 0.75 }
+					1 = { estate_satisfaction:burghers_estate < 0.75 }
+					2 = { estate_satisfaction:peasants_estate < 0.75 }
+				}
+				custom_tooltip = {
+					text = etra_rtr_sped_up_red_turban_rebellions
+					has_variable = etra_rtr_leader_arrested
+				}
+			}
+		}
+	}
+	can_end = {
+		etra_rtr_situation_end_requirements = yes
+	}
+	visible = {
+		OR = {
+			tag = A378
+			AND = {
+				country_exists = c:A378
+				OR = {
+					is_neighbor_of = c:A378
+					is_subject_of = c:A378
+					is_enemy_of = c:A378
+					is_rival_of = c:A378
+				}
+			}
+			capital ?= {
+				region ?= region:iboros_region
+			}
+			is_member_of_international_organization = international_organization:etra_red_turban_rebels
+		}
+	}
+	on_start = {
+		c:A378 = {
+			trigger_event_non_silently = etra_red_turban_rebellions.1
+			add_to_global_variable_list = {
+				name = etra_rtr_loyal_faction
+				target = c:A378
+			}
+			
+			remove_list_global_variable = {
+				name = etra_rtr_faction_list
+				target = this
+			}
+
+		}
+		every_country = {
+			limit = {
+				NOT = { tag = A378 }
+				OR = {
+					is_neighbor_of = c:A378
+					is_subject_of = c:A378
+					is_enemy_of = c:A378
+					is_rival_of = c:A378
+					capital.region = region:iboros_region
+				}
+			}
+			trigger_event_non_silently = {
+				id = etra_red_turban_rebellions.2
+				days = 1
+			}
+		}
+	}
+	on_monthly = {
+		if = {
+			limit = {
+				country_exists = c:A378
+			}
+			c:A378 = {
+				#The Song rebellion should ALWAYS happen
+				trigger_event_non_silently = { id = etra_red_turban_rebellions.3 days = { 5 15 } }
+				if = {
+					limit = {
+						has_variable = etra_rtr_historical_countries_to_release
+						var:etra_rtr_historical_countries_to_release > 0
+					}
+					random = {
+						chance = 20
+						switch = {
+							trigger = has_variable
+							etra_rtr_release_tag_A380 = { trigger_event_non_silently = { id = etra_red_turban_rebellions.5 days = { 5 15 } } }
+							etra_rtr_release_tag_A381 = { trigger_event_non_silently = { id = etra_red_turban_rebellions.6 days = { 5 15 } } }
+							etra_rtr_release_tag_A382 = { trigger_event_non_silently = { id = etra_red_turban_rebellions.7 days = { 5 15 } } }
+							etra_rtr_release_tag_A387 = { trigger_event_non_silently = { id = etra_red_turban_rebellions.12 days = { 5 15 } } }
+							etra_rtr_release_tag_A388 = { trigger_event_non_silently = { id = etra_red_turban_rebellions.13 days = { 5 15 } } }
+						}
+					}
+				}
+				#Releasing a generic culture tag should happen very rarely
+				if = {
+					limit = {
+						has_variable = etra_rtr_historical_countries_to_release
+						var:etra_rtr_historical_countries_to_release < 4
+						var:etra_rtr_country_additional_releaser_counter > 0
+					}
+					random = {
+						chance = 1
+						modifier = {
+							var:etra_rtr_historical_countries_to_release < 3
+							add = 1
+						}
+						modifier = {
+							var:etra_rtr_historical_countries_to_release < 2
+							add = 1
+						}
+						modifier = {
+							var:etra_rtr_historical_countries_to_release < 1
+							add = 1
+						}
+						trigger_event_non_silently = { id = etra_red_turban_rebellions.18 days = { 20 50 } }
+					}
+				}
+				random_list = {
+					10 = { trigger_event_non_silently = etra_red_turban_rebellions.20 }
+					10 = { trigger_event_non_silently = etra_red_turban_rebellions.21 }
+					500 = {}
+				}
+
+				random = { chance = 5 trigger_event_non_silently = etra_red_turban_rebellions.40 }
+				random = { chance = 5 trigger_event_non_silently = etra_red_turban_rebellions.41 }
+				random = { chance = 10 trigger_event_non_silently = etra_red_turban_rebellions.42 }
+				random = { chance = 10 trigger_event_non_silently = etra_red_turban_rebellions.43 }
+				random = { chance = 10 trigger_event_non_silently = etra_red_turban_rebellions.44 }
+			}
+		
+			# etra: Korea breakaway chain dropped
+
+		}
+	}
+	on_ended = {
+		if = {
+			limit = {
+				country_exists = c:A378
+			}
+			c:A378 = {
+				if = {
+					limit = { has_country_modifier = etra_rtr_propaganda }
+					remove_country_modifier = etra_rtr_propaganda
+				}
+				if = {
+					limit = { has_country_modifier = etra_rtr_flood_works }
+					remove_country_modifier = etra_rtr_flood_works
+				}
+				if = {
+					limit = { has_country_modifier = etra_rtr_disrupted_waterways }
+					remove_country_modifier = etra_rtr_disrupted_waterways
+				}
+				if = {
+					limit = { has_variable = etra_rtr_leader_arrested }
+					remove_variable = etra_rtr_leader_arrested
+				}
+				remove_variable = etra_rtr_modifier_intensity
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = international_organization:etra_red_turban_rebels.leader_country
+				region:iboros_region = {
+					any_location_in_region = {
+						is_owned_or_owned_by_subjects_or_below_of = international_organization:etra_red_turban_rebels.leader_country
+						percent >= 0.8
+					}
+				}
+			}
+			international_organization:etra_red_turban_rebels = {
+				leader_country = {
+					trigger_event_non_silently = etra_red_turban_rebellions.100
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				c:A378 ?= {
+					legitimacy >= 90
+					stability >= 30
+					international_organization:iboric_mandate = { var:iboric_authority >= 50 }
+					trigger_if = {
+						limit = {
+							exists = international_organization:etra_red_turban_rebels
+						}
+						international_organization:etra_red_turban_rebels = { total_members < 1 }
+					}
+				}
+			}
+			c:A378 = {
+				trigger_event_non_silently = etra_red_turban_rebellions.103
+			}
+		}
+		else = {
+			if = { #Yuán still exists
+				limit = { country_exists = c:A378 }
+				c:A378 = { save_scope_as = new_china }
+			}
+			else_if = { #Yuán doesn't exist but there's a leader of the red turban rebels
+				limit = {
+					international_organization:etra_red_turban_rebels ?= {
+						exists = leader_country
+					}
+				}
+				international_organization:etra_red_turban_rebels.leader_country = { save_scope_as = new_china }
+			}
+			else_if = { #Neither Yuán, the middle kingdom, or the red turban rebels exist
+				limit = {
+					location:etra1159.owner ?= {
+						culture = {
+							OR = {
+								has_culture_group = culture_group:iborian_group
+								has_culture_group = culture_group:iborian_group
+								has_culture_group = culture_group:giantsborn_group
+							}
+						}
+					}
+				}
+				location:etra1159.owner = { save_scope_as = new_china }
+			}
+			else_if = {
+				limit = {
+					location:etra1482.owner ?= {
+						culture = {
+							OR = {
+								has_culture_group = culture_group:iborian_group
+								has_culture_group = culture_group:iborian_group
+								has_culture_group = culture_group:giantsborn_group
+							}
+						}
+					}
+				}
+				location:etra1482.owner = { save_scope_as = new_china }
+			}
+			else = {
+				region:iboros_region = {
+					ordered_present_country = {
+						limit = {
+							culture = {
+								OR = {
+									has_culture_group = culture_group:iborian_group
+									has_culture_group = culture_group:iborian_group
+									has_culture_group = culture_group:giantsborn_group
+								}
+							}
+						}
+						order_by = total_population
+						max = 1
+						save_scope_as = new_china
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = international_organization:iboric_mandate }
+				}
+				every_country = {
+					limit = {
+						OR = {
+							capital.region = region:iboros_region
+							is_member_of_international_organization = international_organization:etra_red_turban_rebels
+						}
+					}
+					trigger_event_non_silently = etra_red_turban_rebellions.105
+				}
+			}
+			else = {
+				every_country = {
+					limit = {
+						OR = {
+							capital.region = region:iboros_region
+							is_member_of_international_organization = international_organization:etra_red_turban_rebels
+						}
+					}
+					trigger_event_non_silently = etra_red_turban_rebellions.106
+				}
+			}
+			destroy_international_organization_no_instigator = { target = international_organization:etra_red_turban_rebels }
+		}
+		if = {
+			limit = { country_exists = c:A378 }
+			c:A378 = {
+				if = {
+					limit = { has_country_modifier = etra_rtr_red_turban_rebellions }
+					remove_country_modifier = etra_rtr_red_turban_rebellions
+				}
+			}
+		}
+	}
+	tooltip = {
+		if = {
+			limit = { owner = c:A378 }
+			custom_tooltip = ETRA_RTR_EMPEROR
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				exists = international_organization:etra_red_turban_rebels
+				owner ?= {
+					is_leader_of_international_organization = international_organization:etra_red_turban_rebels
+				}
+			}
+			custom_tooltip = ETRA_RTR_STRONGEST_REBEL
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				owner ?= { 
+					has_reform = government_reform:etra_warring_state
+					OR = {
+						is_allied_with = { target = c:A378 }
+						var:etra_rtr_iborros_allegiance >= 50
+					}
+				}
+			}
+			custom_tooltip = ETRA_RTR_LOYALIST
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				owner ?= { 
+					has_reform = government_reform:etra_warring_state
+					OR = {
+						is_at_war_with = c:A378
+						var:etra_rtr_iborros_allegiance < 0
+					}
+				}
+			}
+			custom_tooltip = ETRA_RTR_REBEL
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				owner ?= { 
+					has_reform = government_reform:etra_warring_state
+				}
+			}
+			custom_tooltip = ETRA_RTR_NEUTRAL
+		}
+	}
+	map_color = {
+		if = {
+			limit = { 
+				has_owner = yes
+				owner ?= c:A378 
+			}
+			value = etra_rtr_emperor_color
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				exists = international_organization:etra_red_turban_rebels
+				owner ?= {
+					is_leader_of_international_organization = international_organization:etra_red_turban_rebels
+				}
+			}
+			value = etra_rtr_strongest_rebel_color
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				owner ?= { 
+					has_reform = government_reform:etra_warring_state
+					OR = {
+						is_allied_with = { target = c:A378 }
+						AND = {
+							has_variable = etra_rtr_iborros_allegiance
+							var:etra_rtr_iborros_allegiance > 50
+						}
+					}
+				}
+			}
+			value = etra_rtr_loyalist_color
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				owner ?= { 
+					has_reform = government_reform:etra_warring_state
+					OR = {
+						is_at_war_with = c:A378
+						AND = {
+							has_variable = etra_rtr_iborros_allegiance
+							var:etra_rtr_iborros_allegiance < -25
+						}
+					}
+				}
+			}
+			value = etra_rtr_rebel_color
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				owner ?= { 
+					has_reform = government_reform:etra_warring_state
+				}
+			}
+			value = etra_rtr_neutral_color
+		}
+	}
+	
+	legend_key = { 
+		desc = "emperor"
+		color = etra_rtr_emperor_color
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "STATIC_MODIFIER_NAME_rebel_leader_modifier"
+		color = etra_rtr_strongest_rebel_color
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "loyalist"
+		color = etra_rtr_loyalist_color
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "game_concept_rebel"
+		color = etra_rtr_rebel_color
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "ETRA_RTR_NEUTRALS_TITLE"
+		color = etra_rtr_neutral_color
+		require_color_on_map = yes
+	}
+}

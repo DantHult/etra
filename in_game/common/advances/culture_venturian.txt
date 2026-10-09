@@ -1,0 +1,50 @@
+﻿#Age of Traditions#
+
+venturian_peasant_heritage = {
+	potential = { 
+		culture = culture:venturian_culture
+	}
+	
+	age = age_1_traditions
+	icon = feudalism_advance
+	
+	requires = feudalism_advance
+
+	peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+}
+
+#Age of Renaissance#
+venturian_legacy_of_adventurers = {
+	age = age_2_renaissance
+	icon = regimental_system
+	potential = { 
+		culture = culture:venturian_culture
+	}
+	global_mercenaries_modifier = 0.10
+	mercenary_maintenance_efficiency = -0.10
+
+	requires = medieval_military
+}
+
+venturian_empowered_assemblies = {
+	age = age_2_renaissance
+	potential = { 
+		culture = culture:venturian_culture
+	}
+	requires = late_feudal_relations
+	
+	icon = colonial_assembly
+
+	parliament_base_support = 0.1
+}
+
+
+#Age of Discovery# 
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

@@ -1,0 +1,39 @@
+﻿salusian_culture = {
+	language = jasskadian_language
+	
+	color = map_IRE
+	
+	tags = { irish_gfx gaelic_gfx celtic_gfx baltic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		jaskadian_group
+	}
+	dynasty_name_type = descendant
+}
+highlander_salusian_culture = {
+	language = jasskadian_language
+	
+	color = map_highland
+	
+	tags = { scottish_highland_gfx gaelic_gfx scottish_gfx celtic_gfx north_british_gfx british_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		jaskadian_group
+	}
+	dynasty_name_type = descendant
+}
+ashenborn_culture = {
+	language = jasskadian_language
+	
+	color = rgb { 15 15 15 }
+	
+	tags = { irish_gfx gaelic_gfx celtic_gfx baltic_gfx eastern_european_gfx european_gfx }
+
+	culture_groups = {
+		human_group
+		jaskadian_group
+	}
+	dynasty_name_type = descendant
+}

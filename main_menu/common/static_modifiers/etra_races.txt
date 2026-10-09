@@ -1,0 +1,293 @@
+﻿is_undead_modifier = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	diplomatic_reputation = diplomatic_reputation_weak_penalty
+	character_fertility = -1000
+}
+
+is_elven_modifier = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 200
+	character_fertility = -40
+	adm = 5
+	dip = 5
+	mil = 5
+}
+
+is_dragon_modifier = {
+	game_data = {
+		category = character
+	}
+	is_immortal = yes
+	character_fertility = -40
+}
+
+giant_of_borili_modifier = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 220
+	character_fertility = -20
+}
+
+is_human_modifier = {
+	game_data = {
+		category = character
+	}
+	adm = 1
+	dip = 1
+	mil = 1
+}
+
+is_ratfolk_modifier = {
+	game_data = {
+		category = character
+	}
+	character_fertility = 25
+	character_life_expectancy = -10
+	dip = 10
+	mil = -5
+}
+
+is_giantsborn_modifier = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 120
+	character_fertility = -15
+}
+
+is_tiefling_modifier = {
+	game_data = {
+		category = character
+	}
+	diplomatic_reputation = diplomatic_reputation_weak_penalty
+}
+
+is_aasimar_modifier = {
+	game_data = {
+		category = character
+	}
+	monthly_prestige = 0.1
+	diplomatic_reputation = diplomatic_reputation_weak_bonus
+}
+
+is_beastfolk_modifier = {
+	game_data = {
+		category = character
+	}
+	dip = -5
+	mil = 10
+}
+
+is_pigmen_modifier = {
+	game_data = {
+		category = character
+	}
+	character_fertility = 10
+}
+
+is_lupusfolk_modifier = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 5
+}
+
+is_catfolk_modifier = {
+	game_data = {
+		category = character
+	}
+	character_life_expectancy = 5
+}
+
+
+#Undead don't need to eat, but cannot reproduce
+
+undead_majority = {
+	game_data = { category = location }
+	
+	cap_maximum_population_growth_at_zero = yes
+	local_pop_food_consumption = -1
+	local_disease_resistance = 1 #immune to disease
+}
+
+
+undead_large_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = -0.5
+	local_population_growth = -0.003
+	local_disease_resistance = 0.66
+}
+
+undead_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = -0.25
+	local_population_growth = -0.002
+	local_disease_resistance = 0.33
+}
+
+#humans adaptable
+
+human_majority = {
+	game_data = { category = location }
+	local_pop_promotion_speed_modifier = 0.1
+}
+
+
+human_large_minority = {
+	game_data = { category = location }
+	local_pop_promotion_speed_modifier = 0.05
+}
+
+human_minority = {
+	game_data = { category = location }
+	local_pop_promotion_speed_modifier = 0.01
+}
+
+#ratfolk - Hungary Rats And Fast breeders
+ratfolk_majority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.3 
+	local_population_growth = 0.005 
+}
+
+
+ratfolk_large_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.2
+	local_population_growth = 0.003 
+}
+
+ratfolk_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.1
+	local_population_growth = 0.001
+}
+
+#giantsborn, your a big guy
+giantsborn_majority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.3 
+	local_population_growth = -0.002 
+	local_manpower_modifier = 0.25 #love to fight
+	local_defensive = 0.25
+}
+
+
+giantsborn_large_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.2
+	local_population_growth = -0.0015 
+	local_manpower_modifier = 0.10 #love to fight
+	local_defensive = 0.10
+}
+
+giantsborn_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.1
+	local_population_growth = -0.001
+	local_manpower_modifier = 0.05 #love to fight
+	local_defensive = 0.05
+}
+
+#elven
+elven_majority = {
+	game_data = { category = location }
+	local_population_growth = -0.002
+	local_max_literacy = 10.0
+	local_production_efficiency = medium_production_efficiency_bonus
+	local_disease_resistance = 0.50
+	local_levy_size_modifier = -0.50
+}
+
+
+elven_large_minority = {
+	game_data = { category = location }
+	local_population_growth = -0.0015 
+	local_max_literacy = 5.0
+	local_production_efficiency = small_production_efficiency_bonus
+	local_disease_resistance = 0.25
+	local_levy_size_modifier = -0.25
+}
+
+elven_minority = {
+	game_data = { category = location }
+	local_population_growth = -0.001
+	local_max_literacy = 2.5
+	local_production_efficiency = tiny_production_efficiency_bonus
+	local_disease_resistance = 0.10
+	local_levy_size_modifier = -0.10
+}
+
+
+#tiefling
+tiefling_majority = {
+	game_data = { category = location }
+	local_pop_conversion_speed_modifier = -0.10
+	local_unrest = 0.10
+	local_production_efficiency = tiny_production_efficiency_bonus
+}
+
+
+tiefling_large_minority = {
+	game_data = { category = location }
+	local_pop_conversion_speed_modifier = -0.05
+	local_unrest = 0.05
+	local_production_efficiency = 0.005
+}
+
+tiefling_minority = {
+	game_data = { category = location }
+	local_pop_conversion_speed_modifier = -0.02
+	local_unrest = 0.02
+	local_production_efficiency = 0.0025
+}
+#aasimar
+aasimar_majority = {
+	game_data = { category = location }
+	local_pop_conversion_speed_modifier = 0.05
+	local_unrest = -0.05
+	local_monthly_control = -0.0005
+}
+
+
+aasimar_large_minority = {
+	game_data = { category = location }
+	local_pop_conversion_speed_modifier = 0.03
+	local_unrest = -0.03
+	local_monthly_control = -0.0003
+}
+
+aasimar_minority = {
+	game_data = { category = location }
+	local_pop_conversion_speed_modifier = 0.01
+	local_unrest = -0.01
+	local_monthly_control = -0.0001
+}
+
+# beastfolk — hardy metabolisms, keen noses, tight packs that field more levies
+beastfolk_majority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.15
+	local_disease_resistance = 0.25
+	local_manpower_modifier = 0.10
+}
+
+beastfolk_large_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.10
+	local_disease_resistance = 0.15
+	local_manpower_modifier = 0.5
+}
+
+beastfolk_minority = {
+	game_data = { category = location }
+	local_pop_food_consumption = 0.05
+	local_disease_resistance = 0.10
+	local_manpower_modifier = 0.025
+}

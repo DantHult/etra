@@ -1,0 +1,47 @@
+﻿#Age of Traditions#
+
+hac_memory_of_the_junil = {
+	age = age_1_traditions
+	icon = warriors_unity
+	starting_technology_level = 4
+	depth = 0
+	potential = {
+		is_member_of_international_organization = international_organization:hre
+	}
+	monthly_devotion = 0.1
+	monthly_legitimacy = 0.1
+	monthly_republican_tradition = 0.1
+}
+
+hac_the_covenant = {
+	age = age_1_traditions
+	requires = hac_memory_of_the_junil
+	icon = swiss_eternal_alliance
+	potential = {
+		is_member_of_international_organization = international_organization:hre
+	}
+	legislative_efficiency = 0.1
+}
+
+hac_the_compact = {
+	age = age_1_traditions
+	requires = hac_the_covenant
+	icon = swiss_eternal_alliance
+	potential = {
+		is_member_of_international_organization = international_organization:hre
+	}
+	cultures_capacity = 1
+}
+
+#Age of Renaissance#
+
+
+#Age of Discovery# 
+
+
+#Age of Reformation#
+
+#Age of Absolutism#
+
+#Age of Revolutions#
+

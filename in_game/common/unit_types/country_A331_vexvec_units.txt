@@ -1,0 +1,205 @@
+﻿# Vexvec (A331): Gloom Stalker — replaces elven longbow levy line; excels in subterranean terrain
+
+a_a331_gloom_stalker = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_1_traditions_light_infantry
+	upgrades_to = a_a331_gloom_stalker_2
+
+	initiative = 4
+	buildable = no
+	levy = yes
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	combat = {
+		subterranean = 0.10
+		caverns = 0.10
+	}
+
+	country_potential = {
+		has_or_had_tag = A331
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+a_a331_gloom_stalker_2 = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	upgrades_to = a_a331_gloom_stalker_3
+
+	initiative = 4
+	strength_damage_taken = -0.10
+	buildable = no
+	levy = yes
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	combat = {
+		subterranean = 0.15
+		caverns = 0.15
+	}
+
+	country_potential = {
+		has_or_had_tag = A331
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+a_a331_gloom_stalker_3 = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_3_discovery_light_infantry
+	upgrades_to = a_a331_gloom_stalker_4
+
+	initiative = 4
+	strength_damage_taken = -0.20
+	buildable = no
+	levy = yes
+
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	combat = {
+		subterranean = 0.20
+		caverns = 0.20
+	}
+
+	country_potential = {
+		has_or_had_tag = A331
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+a_a331_gloom_stalker_4 = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_4_reformation_light_infantry
+	upgrades_to = a_a331_gloom_stalker_5
+
+	combat = {
+		subterranean = 0.20
+		caverns = 0.20
+	}
+
+	country_potential = {
+		has_or_had_tag = A331
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_a331_gloom_stalker_5 = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_5_absolutism_light_infantry
+	upgrades_to = a_a331_gloom_stalker_6
+
+	combat = {
+		subterranean = 0.25
+		caverns = 0.25
+	}
+
+	country_potential = {
+		has_or_had_tag = A331
+	}
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+a_a331_gloom_stalker_6 = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_6_revolutions_light_infantry
+	buildable = yes
+
+	initiative = 5
+	flanking_ability = 0.25
+
+	combat = {
+		subterranean = 0.30
+		caverns = 0.30
+	}
+
+	country_potential = {
+		has_or_had_tag = A331
+	}
+
+	maintenance_demand = rifle_infantry_maintenance
+	construction_demand = rifle_infantry_construction
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.05
+	}
+
+	limit = {
+		value = {
+			value = 10
+			desc = "SUBUNIT_LIMIT_MAX"
+		}
+		multiply = {
+			value = societal_value:quality_vs_quantity
+			multiply = -1
+			multiply = 0.01
+			desc = "SUBUNIT_LIMIT_SCALE_WITH_QUALITY"
+		}
+		min = {
+			value = 1
+			desc = "SUBUNIT_LIMIT_MIN"
+		}
+	}
+
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+INJECT:a_elven_early_longbowmen = {
+	country_potential = {
+		NOT = { has_or_had_tag = A331 }
+	}
+}
+
+INJECT:a_elven_longbowmen = {
+	country_potential = {
+		NOT = { has_or_had_tag = A331 }
+	}
+}
+
+INJECT:a_elven_late_longbowmen = {
+	country_potential = {
+		NOT = { has_or_had_tag = A331 }
+	}
+}

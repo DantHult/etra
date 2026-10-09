@@ -1,0 +1,51 @@
+﻿ayarena_culture = { #Ayareña Iboros influenced 
+	language = ayarenan_dialect
+	
+	color = RGB { 0 165 240 }
+	
+	tags = { andalusi_gfx maghrebi_gfx middle_east_gfx  }
+	use_patronym = yes	
+	culture_groups = {
+		amalyarat_group
+		human_group
+	}
+}
+
+keluj_culture = { #Non-urban tribes
+	language = amalyarat_language
+	
+	color = map_eastern_amazigh
+	
+	tags = { middle_east_gfx amazigh_gfx }
+	use_patronym = yes	
+	culture_groups = {
+		amalyarat_group
+		human_group
+	}
+}
+
+takkev_culture = { #Highlanders
+	language = amalyarat_language
+	
+	color = RGB { 5 30 100 }
+	
+	tags = { middle_east_gfx amazigh_gfx }
+	use_patronym = yes	
+	culture_groups = {
+		amalyarat_group
+		human_group
+	}
+}
+
+khyresh_culture = { 
+	language = amalyarat_language
+	
+	color = RGB { 190 170 90 }
+	
+	tags = { egyptian_gfx middle_east_gfx }
+	use_patronym = yes	
+	culture_groups = {
+		amalyarat_group
+		human_group
+	}
+}

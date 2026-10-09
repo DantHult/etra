@@ -1,0 +1,72 @@
+﻿l_english:
+
+
+ elven_grove_realm: "Grove Realm"
+ elven_grove_realm_desc: "The Grove Realms are the Commonweal's recognized self-governing Elven territories. The privileges of self-governance are attached to the grove itself, and the Realm is organized around one or, in rarer cases, two such groves, which root its governance."
+ purge_kindred: "Purge Kindred"
+
+ purge_kindred_desc: "Systematically eliminate unaccepted [pops|e] of a foreign [culture_group|e] in a targeted [province|e]. Each month, survivors across the [country|e] lose [pop_satisfaction|e]. Unavailable at extreme [ShowSocietyDirectionName('xenophile')] (-50 or below on [ShowSocietyValueName('xenophile_vs_xenophobe')])."
+
+ purge_kindred_select_kindred: "Select the foreign [culture_group|e] to purge:"
+
+ purge_kindred_select_province: "Select the [province|e] to purge them from:"
+
+ purge_kindred_no_kindreds: "@trigger_no! No foreign kindreds with significant [population|e] are present."
+
+ purge_kindred_no_provinces: "$no_valid_provinces$"
+
+ purge_kindred_action: "Purge [target.GetNameWithNoTooltip] in [SCOPE.sProvince('target_1').GetNameWithNoTooltip]"
+
+ purge_kindred_active: "Purging [target.GetNameWithNoTooltip] in [SCOPE.sProvince('target_1').GetNameWithHighlightOnly]"
+
+ purge_kindred_action_progress: "[Cabinet.GetActionNumProgress|V2%]"
+
+ purge_kindred_action_progress_wordier: "Purging [target.GetName] [population|e] in [SCOPE.sProvince('target_1').GetNameWithNoTooltip]: [Cabinet.GetActionNumProgress|V2%] complete"
+
+ purge_kindred_action_progress_long_wordier: "@population! [Cabinet.GetActionNumProgress|V2%] \n\n@unrest! [SCOPE.sProvince('target_1').GetProvinceLocationModifier('local_unrest')|+=2]"
+
+ purge_kindred_action_progress_tooltip: "Purging [target.GetName] in @province! [SCOPE.sProvince('target_1').GetName]"
+
+ purge_kindred_monthly_satisfaction_tt: "All unaccepted pops of actively purged kindreds lose [pop_satisfaction|e] each month."
+ 
+ senatus_sempiternus: "Senatus Sempiternus"
+ senatus_sempiternus_desc: "The Senatus Sempiternus is the governing council of the Moran Imperium. These senators have lived for centuries and their combined memory forms the backbone of Moran governance. While the Emperor is the ultimate authority, the Senate wields immense influence over domestic policy, military strategy, and long-term planning. Unlike mortal governments, the Senate does not suffer from the natural turbulence of political succession, but internal factionalism, based on philosophical ideals, military tradition, ambition and the pursuit of power, still emerge."
+ grandmistress_elective: "Grandmistress elective"
+ grandmistress_elective_desc: "It is a type of [heir_selection|e] of a [ShowGovernmentTypeName('theocracy')] with the [ShowGovernmentReformName('military_order_reform')] [government_reform|e], in which the [ruler|e] is selected from the ranks of the order by [election|e]."
+ the_university_reform: "Technocracy"
+ the_university_reform_desc: "Technocracy is a system of governance structured around empirical evidence, scientific management, and demonstrable expertise rather than heredity or popularity. Authority is vested in individuals whose competence is proven through rigorous education, research, and practical achievement."
+
+ accepting_elf_gov_reform: "Elven Administration"
+ accepting_elf_gov_reform_desc: "Elven bureaucrats recall treaties from centuries past without consulting archives, their institutional memory outliving entire dynasties. What they lack in urgency they compensate for with precision—infrastructure projects become achievable rather than generational burdens when your architects measure time in centuries."
+ accepting_undead_gov_reform: "Tireless Governance"
+ accepting_undead_gov_reform_desc: "The walking dead make incorruptible customs officials and night watchmen, their unblinking vigil exposing smuggling operations no living guard could catch. They labor through plagues and blizzards without complaint, though the smell of preservation oils and incenses now permeates every government building."
+ accepting_giantsborn_gov_reform: "Monumental Projects"
+ accepting_giantsborn_gov_reform_desc: "Harbor walls rise in months instead of decades when your laborers move foundation stones by hand rather than pulley. Giantsborn accomplish in one afternoon what requires twenty good men and elaborate scaffolding, though every doorway must now be rebuilt and food budgets tripled."
+ accepting_tiefling_gov_reform: "Infernal Contracts"
+ accepting_tiefling_gov_reform_desc: "Tiefling negotiators inherit their diabolic ancestors' talent for parsing loopholes, trade deals appear equitable until obscure clauses activate years later. Their ability to smell deception and argue contract law with literally supernatural precision makes them unsettling but irreplaceable diplomats and tax collectors."
+ accepting_aasimar_gov_reform: "Celestial Authority"
+ accepting_aasimar_gov_reform_desc: "Divine-touched administrators radiate an unsettling certainty that lesser beings mistake for genuine moral authority. Their presence inspires loyalty in common soldiers and unease in corrupt officials, though whether their counsel stems from celestial wisdom or merely inherited arrogance remains conveniently ambiguous."
+ accepting_ratfolk_gov_reform: "Adaptable Expansion"
+ accepting_ratfolk_gov_reform_desc: "Ratfolk breed enthusiastically and die inconveniently fast, but their frantic ambition fills every gap in governance. Where others deliberate, Ratfolk act, adopting foreign innovations before the ink dries, colonizing unprofitable lands through sheer optimism, and generating enough terrible ideas that a few brilliant ones slip through."
+ accepting_human_gov_reform: "Cosmopolitan Networks"
+ accepting_human_gov_reform_desc: "Humans possess an unmatched talent for making themselves useful to everyone, brokering deals between ancient rivals, speak every trade tongue, badly but adequately, and maintain commercial contacts that span continents. Their lack of centuries-old grudges makes them acceptable intermediaries when elven and giantsborn diplomats refuse to occupy the same room, though their tendency to promise slightly different things to each party occasionally creates spectacular disasters."
+ 
+ aitan_college_reform: "The Stone Oath Compact"
+ aitan_college_reform_desc: "Two centuries ago, the warrior-monks of the Aita Mountains rose against the Undying Emperor and shattered the chains of eldritch tyranny. The Stone Oath they swore—to stand immovable against oppression, to remain steadfast when reality itself cracked—was not taken by monks alone, but by every freeman who picked up a weapon and chose liberation over submission. The Compact that emerged from those blood-soaked years reflects this shared sacrifice: the monasteries command in matters of war and faith, but the people govern themselves in assembly, their voices carrying weight no crowned head could silence. Former serfs now work their own land with the fierce pride of those who won their freedom through steel and suffering. The old noble privileges died with the empire they served, and the Academies permit no return to hereditary rule. Each canton remains independent, bound only by mutual defense and shared memory of what they overcame together. Imperfect, contentious, and alive with argument—and that is precisely as it should be. As free people are never silent."
+ cyrewin_ring_moot: "Ring Moot"
+ cyrewin_ring_moot_desc: "Cyrewin is ruled by the Ring Moot, a supreme assembly where law and judgment are argued in the open air of the exchange-halls. Seats are claimed not by blood alone but by charter, debt, and the consent of guild and canton. The [ShowEstateTypeName('nobles_estate')] bring retainers and old compacts, the [ShowEstateTypeName('burghers_estate')] bring ledgers and sea-routes, and even the [ShowEstateTypeName('peasants_estate')] send speakers when a decree would empty the wharves or the ring-roads. It is noisy, litigious, and resistant to crowned will—which is precisely how Cyrewin prefers it."
+ professor_election: "Professor Election"
+ professor_election_desc: "It is a type of [heir_selection|e] of a [ShowGovernmentTypeName('theocracy')] in which the [ruler|e] is an abbot selected by [election|e]."
+
+ vexvec_matrilineal_primogeniture: "Matrilineal Primacy"
+ vexvec_matrilineal_primogeniture_desc: "It is a type of [heir_selection|e] of a [ShowGovernmentTypeName('monarchy')] in which the [heir|e] is the eldest eligible daughter in the direct line. Males are barred from inheriting the sovereign office; when a [ruler|e] dies, the succession passes among women of the [dynasty|e] by seniority within each generation."
+
+ vexvec_coven_throne_reform: "Rite of the First Matron"
+ vexvec_coven_throne_reform_desc: "The veiled houses of [GetCountry('A331').GetName] acknowledge no crown but that sworn in the First Matron's rite: law is mother's word, and the great families ratify each sovereign only through the matriline. This compact is theirs alone; foreign courts may mimic its pageantry, but not its blood-right.\n\nAmong the [GetCountry('A331').GetAdjective] elite, a reigning matron does not wed once in timid monogamy but binds several consorts in parallel—each alliance a thread in the household web, each husband a seal upon a different pact. The practice is codified nowhere else; outsiders call it scandal, they call it sovereignty."
+
+ a325_the_host_is_not_replaceable: "The Host Is Not Replaceable"
+ a325_the_host_is_not_replaceable_desc: "The Companion Host is not a levy to be spent and grown back. Every Foot Companion and Hawk-Rider is a Hyriovari who will not be replaced in a generation, nor in two. [GetCountry('A325').GetName] therefore drills for quality that other courts call wasteful, and refuses battles that would win the field at the price of the army. Kingship, as Pyrrhion has it, is a glorious servitude: to keep the Host intact is the first duty of the anax, even when the tombs and the south both call for a second sun."
+
+ legio_reform: "Legio"
+ legio_reform_desc: "The Legio is not a knightly order sworn to temple and altar, but the living memory of the Empire-That-Was made manifest in arms. Its ranks are filled by veterans who marched when Moran still breathed, and who march still—bone and sinew alike—because the charge has not ended. Officers are elected from among proven commanders, monks of the imperial creeds keep the rites of muster and burial, and every cohort drills as though the next campaign were already sounding.\n\n[GetCountry('A26').GetName] holds Ellyria by final command of They-Who-With-True-Authority. No court, no council, and no foreign prince may dissolve that oath. The Legio endures so long as a single standard-bearer remembers the watch."
+

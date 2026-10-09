@@ -1,0 +1,26 @@
+﻿# Starting Verminus Realms holdings (A13–A24) at the 1337 bookmark.
+# Areas and provinces contain partial ownership; the location list is the exact owned set.
+
+rattokars_kingdom = {
+
+
+	province_definition = {
+		freehold6_province
+		freehold4_province
+		freehold7_province 
+		freehold14_province 
+		freehold18_province
+		freehold20_province
+		freehold19_province
+	}
+
+	location = {
+		testprovince228 
+		freehold42 
+		freehold41
+		testprovince232
+		freehold90
+		freehold91
+		freehold92
+	}
+}

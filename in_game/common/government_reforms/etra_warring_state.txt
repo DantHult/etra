@@ -1,0 +1,35 @@
+etra_warring_state = {
+	age = age_1_traditions
+	potential = {
+		NOT = { tag = A378 }
+		has_reform = government_reform:etra_warring_state
+		OR = {
+			is_situation_active = situation:etra_red_turban_rebellions
+			has_variable = unlocked_etra_warring_state
+		}
+		exists = international_organization:iboric_mandate
+		NOT = { is_leader_of_international_organization = international_organization:iboric_mandate }
+		culture = { has_culture_group = culture_group:iborian_group }
+	}
+	locked = {
+		NOT = { tag = A378 }
+		has_reform = government_reform:etra_warring_state
+		exists = international_organization:iboric_mandate
+		culture = { has_culture_group = culture_group:iborian_group }
+	}
+	country_modifier = {
+		monthly_war_exhaustion = -0.1
+		monthly_towards_belligerent = societal_value_monthly_move
+		can_create_red_turban_rebellions_cb = yes
+		government_reform_slots = 1
+		global_levy_size_modifier = 0.1
+		global_levy_recruitment_speed_modifier = 0.1
+		blocked_from_creating_subjects = yes
+		government_size = 1
+		peace_offer_fairness = -0.5
+		aggressiveness_modifier = 0.33
+		expected_warscore_modifier = 0.33
+		win_war_chance_threshold = -0.2
+		coalition_strength_tolerance = 0.15
+	}
+}

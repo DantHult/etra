@@ -1,0 +1,37 @@
+﻿
+#root = country, scope:character = newborn
+on_character_birth = {
+	on_actions = {
+		etra_assign_kindred_racial_trait_on_birth
+	}
+}
+
+etra_assign_kindred_racial_trait_on_birth = {
+	trigger = {
+		scope:character = {
+			character_is_etra_kindred = yes
+		}
+	}
+	effect = {
+		scope:character = {
+			etra_assign_kindred_racial_trait_from_culture = yes
+		}
+	}
+}
+
+#root = character
+#only from create_character effect
+on_character_created = {
+	on_actions = {
+		etra_assign_kindred_racial_trait_on_created
+	}
+}
+
+etra_assign_kindred_racial_trait_on_created = {
+	trigger = {
+		character_is_etra_kindred = yes
+	}
+	effect = {
+		etra_assign_kindred_racial_trait_from_culture = yes
+	}
+}

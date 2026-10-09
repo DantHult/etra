@@ -1,0 +1,117 @@
+﻿namespace = ratfolk_events
+ratfolk_events.1	= { 					#Ratfolk are good at being Spies, one wants to work for us
+ 	type = country_event 				 	# type of event 
+ 	title = ratfolk_events.1.title 			# title key to be localized
+ 	desc = ratfolk_events.1.desc 			# description key to be localized 
+	
+	trigger = {
+		NOT = { culture = { has_culture_group = culture_group:ratfolk_group } }
+	}
+	immediate = {
+		event_illustration_government_estate_effect = yes
+	}
+
+	option = {
+		name = ratfolk_events.1.a
+		random_rival = {
+			root = {
+				add_spy_network = { target = prev value = 25 }
+			}
+		}
+		add_country_modifier = { modifier = ratfolk_spies_accepted years = 10 mode = add_and_extend }
+		change_gold_effect = { scale = -1 }
+
+	}
+	option = {
+		name = ratfolk_events.1.b
+		add_country_modifier = { modifier = ratfolk_spies_rejected years = 10 mode = add_and_extend }
+	}
+}
+
+# Ratfolk petitioners – tolerance / local autonomy (adapted from EU4 racial pop demand)
+ratfolk_events.2 = {
+	type = country_event
+	title = ratfolk_events.2.title
+	desc = ratfolk_events.2.desc
+
+	trigger = {
+		NOT = { culture = { has_culture_group = culture_group:ratfolk_group } }
+		any_owned_location = {
+			has_vermen = yes
+			is_capital = no
+		}
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+		random_owned_location = {
+			limit = {
+				has_vermen = yes
+				is_capital = no
+			}
+			save_scope_as = racial_pop_location_target
+		}
+	}
+
+	option = {
+		name = ratfolk_events.2.a
+		ai_chance = { factor = 50 }
+
+		add_government_power = government_power_severe_penalty
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_left }
+
+		if = {
+			limit = { exists = scope:racial_pop_location_target }
+			scope:racial_pop_location_target = {
+				change_control = control_severe_penalty
+			}
+		}
+	}
+
+	option = {
+		name = ratfolk_events.2.b
+		ai_chance = { factor = 50 }
+
+		add_government_power = government_power_mild_penalty
+
+		if = {
+			limit = { exists = scope:racial_pop_location_target }
+			scope:racial_pop_location_target = {
+				change_control = control_mild_penalty
+			}
+		}
+	}
+
+	option = {
+		name = ratfolk_events.2.c
+		ai_chance = { factor = 50 }
+
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_right }
+	}
+
+	option = {
+		name = ratfolk_events.2.e
+		trigger = {
+			ruler_or_regent = {
+				has_personality = charismatic_negotiator_personality
+			}
+		}
+		highlight = yes
+		ai_chance = { factor = 25 }
+
+		add_government_power = government_power_weak_penalty
+		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_left }
+
+		if = {
+			limit = { exists = scope:racial_pop_location_target }
+			scope:racial_pop_location_target = {
+				change_control = control_weak_penalty
+			}
+		}
+	}
+}

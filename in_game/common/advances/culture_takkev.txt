@@ -1,0 +1,62 @@
+﻿############################
+# age_1_traditions
+############################
+
+takkev_horsemanship = {
+	age = age_1_traditions
+	icon = glorious_arms
+
+	potential = {
+		culture = culture:takkev_culture
+	}
+	global_horses_output_modifier = 0.2
+	army_light_cavalry_power = 0.1
+
+	requires = guilds
+}
+
+############################
+# age_2_renaissance
+############################
+
+takkev_desert_warfare = {
+	age = age_2_renaissance
+	icon = glorious_arms
+	potential = {
+		culture = culture:takkev_culture
+	}
+	land_morale_modifier = 0.1
+	ai_weight = { add = 10 }
+
+	requires = correct_box_advance_renaissance
+}
+
+takkev_cavalry_advance = {
+	age = age_2_renaissance
+	icon = glorious_arms
+	unlock_unit = a_takkev_cavalry
+
+	potential = {
+		culture = culture:takkev_culture
+	}
+
+	requires = unlock_cavalry_advance
+}
+
+
+############################
+# age_3_discovery
+############################
+
+############################
+# age_4_reformation
+############################
+
+############################
+# age_5_absolutism
+############################
+
+
+############################
+# age_6_revolutions
+############################

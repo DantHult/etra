@@ -1,0 +1,42 @@
+##############################################
+# Iboric Mandate International Organization  #
+##############################################
+
+change_iboric_authority = {
+	international_organization:iboric_mandate ?= {
+		custom_description = {
+			text = change_iboric_authority_text
+			value = $value$
+			change_variable = {
+				name = iboric_authority
+				add = $value$
+			}
+			if = {
+				limit = { has_variable = iboric_authority }
+				if = {
+					limit = { var:iboric_authority > 100 }
+					set_variable = { name = iboric_authority value = 100 }
+				}
+				if = {
+					limit = { var:iboric_authority < 0 }
+					set_variable = { name = iboric_authority value = 0 }
+				}
+			}
+		}
+	}
+}
+
+# If changed, apply changes too to the definition of the IO at start
+set_up_iboros_for_iboric_mandate = {
+	international_organization:iboric_mandate ?= {
+		set_variable = { name = iboric_authority value = 70 }
+	}
+	region:iboros_region = {
+		every_location_in_region = {
+			limit = { is_ownable = yes }
+			international_organization:iboric_mandate ?= {
+				add_location_to_international_organization = prev
+			}
+		}
+	}
+}

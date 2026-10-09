@@ -1,0 +1,19 @@
+﻿# Allow Cyrewin (A344) to use the same administrative policy as vanilla Novgorod.
+
+REPLACE:pyatina_policy = {
+	unique = yes
+	potential = {
+		OR = {
+			has_or_had_tag = NOV
+			has_or_had_tag = A344
+		}
+	}
+	country_modifier = {
+		global_monthly_prosperity = 0.001
+		global_monthly_development = 0.001
+	}
+	estate_preferences = {
+		burghers_estate
+	}
+	years = 2
+}

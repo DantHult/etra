@@ -1,0 +1,18 @@
+﻿# Receives data from /genes
+# Ethnicity templates are used in other ethnicities and templates in this folder
+
+aasimar_ethnicity = {
+	template = "european_ethnicity"
+	eyes = {
+		1 = { name = yellow_glowing		range = { 1.0 1.0 } }
+	}
+	hair_color = {
+	# Blonde Light
+		# White
+		60 = { 0.0 0.0 0.0 0.0 }
+	   # Blonde Light
+	   10 = { 0.1 0.0 0.5 0.2 }
+	   # Blonde Dark
+	   10 = { 0.2 0.2 0.6 0.5 }
+	}
+}

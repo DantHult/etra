@@ -1,0 +1,168 @@
+﻿# ############################
+# # age_1_traditions
+# ############################
+draquatin_sail_tradition = {
+	age = age_1_traditions
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = merchant_power_from_maritime_rev_dip_choice
+	global_sailors_modifier = 0.1
+	global_maritime_presence_modifier = 0.2
+	requires = unlock_cog_advance
+}
+
+draquatin_construction_speed = {
+	age = age_1_traditions
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = defenses_of_novgorod
+	global_construction_speed = 0.08
+	diplomatic_reputation = 1.0
+	requires = city_building_advance
+}
+
+draquatin_fireproof_hulls = {
+	age = age_1_traditions
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = ven_venetian_thalassocracy
+	navy_initiative = 0.2
+	requires = guilds
+}
+
+# ############################
+# # age_2_renaissance
+# ############################
+draquatin_water_magic = {
+	age = age_2_renaissance
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = ven_gothic_architecture
+	global_monthly_development = 0.001
+	requires = university_advance
+}
+
+draquatin_gardening = {
+	age = age_2_renaissance
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	unlock_building = draquatin_gardens
+	global_monthly_food_modifier = 0.10
+	requires = patron_of_art
+}
+
+draquatin_dragon_loans = {
+	age = age_2_renaissance
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = lub_hanseatic_coins
+	bank_interest = -0.01
+	requires = banking_advance
+}
+
+# ############################
+# # age_3_discovery
+# ############################
+draquatin_western_seas = {
+	age = age_3_discovery
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = pioneer_spirit
+	exploration_preparation_time_modifier = -0.25
+	exploration_mission_speed = 0.15
+	colonial_migration_size_modifier = 0.25
+	requires = open_sea_exploration
+}
+
+draquatin_tonvagues = {
+	age = age_3_discovery
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = nor_shipbuilding
+	unlock_unit = n_tonvague_caravel
+	requires = unlock_caravel_advance
+}
+
+draquatin_professional_marines = {
+	age = age_3_discovery
+	potential = {
+			culture = culture:draquatin_culture
+	}
+	icon = cas_marine_infantry
+	army_disembark_speed = 0.25
+	unlock_unit = a_pwasciards_marines
+	requires = merchant_power_from_maritime_discovery_advance
+}
+
+# ############################
+# # age_4_reformation
+# ############################
+draquatin_moon_ports = {
+	age = age_4_reformation
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	unlock_building = draquatin_moon_fall_shipyards
+	requires = shipyard_advance
+}
+
+draquatin_dragonslayer_order = {
+	age = age_4_reformation
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = wallachian_heritage
+	army_initiative = 0.1
+	army_light_infantry_power = 0.05
+	requires = war_score_reformations_advance
+}
+
+# ############################
+# # age_5_absolutism
+# ############################
+draquatin_marble_decade = {
+	age = age_5_absolutism
+	potential = {
+		culture = culture:draquatin_culture
+	}
+	icon = a_permanent_capital
+	skill_of_new_artists = 0.2
+	global_marble_output_modifier = 0.5
+	num_possible_artists = 1
+	requires = government_size_absolutism
+}
+	
+# ############################
+# # age_6_revolutions
+# ############################
+draquatin_republic_revolutions = {
+	age = age_6_revolutions
+	potential = {
+		government_type = government_type:republic
+		culture = culture:draquatin_culture
+	}
+	icon = abolished_serfdom
+	monthly_republican_tradition = 0.25
+	land_morale_modifier = 0.2
+	requires = enlightenment_advance
+}
+	
+draquatin_monarchy_revolutions = {
+	age = age_6_revolutions
+	potential = {
+		government_type = government_type:monarchy
+		culture = culture:draquatin_culture
+	}
+	icon = elan
+	improve_relation_impact = 0.2
+	army_heavy_cavalry_power = 0.15
+	requires = enlightenment_advance
+}

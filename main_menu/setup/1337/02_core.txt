@@ -1,0 +1,16 @@
+institution_manager = {
+	institutions = {
+		feudalism = {
+			active = yes
+			birth_place = ardraine207
+		}
+		legalism = {
+			active = yes
+			birth_place = eternalcity1
+		}
+		meritocracy = {
+			active = yes
+			birth_place = aita58
+		}
+	}
+}

@@ -1,0 +1,93 @@
+﻿# Unique Levies
+levy_a_elven_militiamen = {
+	size = levy_generic_infantry_size
+	unit = a_elven_militiamen
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+	allow = {
+		culture = { has_culture_group = culture_group:elven_group }
+	}
+}
+
+levy_a_giantsborn_militiamen = {
+	size = levy_generic_infantry_size
+	unit = a_giantsborn_militiamen
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+	allow = {
+		culture = { has_culture_group = culture_group:giantsborn_group }
+	}
+}
+
+levy_a_ratfolk_militiamen = {
+	size = levy_generic_infantry_size
+	unit = a_ratfolk_militiamen
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+	allow = {
+		culture = { has_culture_group = culture_group:ratfolk_group }
+	}
+}
+
+levy_a_moran_militiamen = {
+	size = levy_generic_infantry_size
+	unit = a_moran_militiamen
+	
+	allowed_culture = novus_moran_culture
+	allowed_culture = late_moran_culture
+	allowed_culture = high_moran_culture
+	allowed_culture = early_moran_culture
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+}
+
+
+
+# levy_a_scottish_highlander = {
+	# size = levy_generic_infantry_size
+	# unit = a_scottish_highlander
+	
+	# allowed_pop_type = peasants
+	# allowed_pop_type = laborers
+	# allowed_pop_type = tribesmen
+
+	# allowed_culture = highland
+	# allowed_culture = norse_gael
+# }
+
+# levy_a_late_paik = {
+	# size = levy_generic_infantry_size
+	# allow = {
+		# unit_indian_paik_location_levy_trigger = yes
+	# }
+	# unit = a_late_paik
+# }
+
+# Unlockable Levies
+
+levy_a_militiamen = {
+	size = levy_generic_infantry_size
+	unit = a_militiamen
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allowed_pop_type = soldiers
+	allowed_pop_type = burghers
+}
+
+levy_provincial_cavalry = {
+	size = levy_generic_noble_cavalry_size
+	
+	allowed_pop_type = nobles
+	
+	unit = a_provincial_cavalry
+}

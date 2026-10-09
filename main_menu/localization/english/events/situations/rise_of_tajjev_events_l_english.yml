@@ -1,0 +1,41 @@
+﻿l_english:
+ rise_of_tajjev.1.title: "The Rise of Tajjev"
+ rise_of_tajjev.1.desc: "[target_character.GetName] has unbound the highland hosts. Under the banner of Tajjev, Takkev marches — and the lowlands will learn to fear the dust of their cavalry."
+ rise_of_tajjev.1.a: "Then we ride."
+
+ rise_of_tajjev.2.title: "Dust on the Horizon"
+ rise_of_tajjev.2.a: "Watch them carefully."
+
+ rise_of_tajjev.3.title: "The Fall of Tajjev"
+ rise_of_tajjev.3.desc: "The rising of Tajjev is broken. The banners fall, and the highland conqueror’s dream ends beneath foreign boots."
+ rise_of_tajjev.3.a: "So ends the scourge."
+
+ rise_of_tajjev.5.title: "Tajjev Subjugated"
+ rise_of_tajjev.5.desc: "Tajjev bends the knee. The threat that rode out of Takkev is chained — for now."
+ rise_of_tajjev.5.a: "Let them serve."
+
+ rise_of_tajjev.7.title: "Stagnation of Tajjev"
+ rise_of_tajjev.7.desc: "Without the driving will of [target_character.GetName], Tajjev’s conquests stall. Ambition fades into quarrel and caution."
+ rise_of_tajjev.7.a: "The tide turns."
+
+ rise_of_tajjev.12.title: "The Riches of Iborros"
+ rise_of_tajjev.12.desc: "Iborros has long been the glittering heart of neighboring power. Now it reels from revolt and weak succession. For [ROOT.GetName], the old empire looks like prey, and for Massin’s line, a debt unpaid."
+ rise_of_tajjev.12.a: "Iborros shall fall to us."
+
+ rise_of_tajjev.13.title: "The Right to Conquer"
+ rise_of_tajjev.13.desc: "Champions of Tajjev argue over the soul of the rising state: vengeance for exile, or a lasting highland dominion."
+ rise_of_tajjev.13.a: "Claim the legacy of exile."
+ rise_of_tajjev.13.b: "Bind the highland realm."
+
+ rise_of_tajjev.100.title: "A Weaker Neighbor"
+ rise_of_tajjev.100.desc: "Our scouts report a vulnerable neighbor. The riders of Tajjev urge an immediate descent."
+ rise_of_tajjev.100.a: "Strike now."
+ rise_of_tajjev.100.b: "Not yet."
+
+ rise_of_tajjev.101.title: "Breathing Room"
+ rise_of_tajjev.101.desc: "Fear and opportunity rearrange themselves. For a moment, the coalition arrayed against us loses its bite, and our hosts take heart."
+ rise_of_tajjev.101.a: "Press the advantage."
+
+ rise_of_tajjev.102.title: "Fresh Riders"
+ rise_of_tajjev.102.desc: "Clans from the arid hills answer the call. Fresh cavalry fills our ranks."
+ rise_of_tajjev.102.a: "Welcome them."

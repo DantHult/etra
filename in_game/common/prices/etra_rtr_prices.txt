@@ -1,0 +1,20 @@
+﻿etra_rtr_grant_titles_price = {
+	legitimacy = 5
+}
+
+etra_rtr_negotiate_with_rebels_price = {
+	scaled_gold = 1.0
+}
+
+etra_rtr_appease_the_court_price = {
+	scaled_gold = 4.0
+}
+
+etra_rtr_rein_in_area_price = {
+	gold = 2 #scaled in the action
+}
+
+etra_rtr_demand_annexation_price = {
+	scaled_gold = 10
+	prestige = 25
+}

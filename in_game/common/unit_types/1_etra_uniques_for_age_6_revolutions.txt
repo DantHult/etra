@@ -1,0 +1,70 @@
+﻿
+a_moran_sharpshooters = {
+	category = army_light_infantry
+	copy_from = a_age_6_undead_revolutions_light_infantry
+	
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green 
+}
+
+a_moran_fusiliers = {
+	category = army_heavy_infantry
+	copy_from = a_age_6_undead_revolutions_heavy_infantry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+		country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+	maintenance_demand =  heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+
+
+a_moran_conscripts = {
+	category = army_light_infantry
+	copy_from = a_age_6_undead_revolutions_light_infantry
+	buildable = no
+	levy = yes
+	gfx_tags = { musket_tag light_tag }
+		country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+}

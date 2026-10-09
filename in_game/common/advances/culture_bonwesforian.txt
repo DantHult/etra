@@ -1,0 +1,89 @@
+﻿bonwesforian_blood_borne = {
+	age = age_1_traditions
+	icon = a_central_power
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	
+	requires = written_alphabet
+	
+	global_crown_estate_power = 0.1
+}
+
+bonwesforian_blood_moon_rising = {
+	age = age_1_traditions
+	icon = offensive_army
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	monthly_towards_belligerent = societal_value_monthly_move
+	requires = feudalism_advance
+	
+}
+
+
+
+
+############################
+# age_2_renaissance
+############################
+bonwesforian_shadow_of_the_city = {
+	age = age_2_renaissance
+	icon = renaissance_advance
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	requires = crown_power_advance_renaissance
+
+	cultural_tradition_modifier = 0.10
+}
+bonwesforian_fen_wardens = {
+	age = age_2_renaissance
+	icon = fortified_towns
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+
+	requires = army_initiative_ren
+	global_defensive = 0.1
+	
+	monthly_army_tradition = 0.05
+}
+
+
+#AGE 3
+
+bonwesforian_the_surgeons_calling = {
+	age = age_3_discovery
+	icon = alchemy_advance
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	requires = surgery_advance
+	global_life_expectancy = 3
+	global_disease_resistance = 0.05
+}
+#AGE 4
+bonwesforian_the_crimson_vintners = {
+	age = age_4_reformation
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	global_wine_output_modifier = 0.3
+
+	requires = global_trade_routes_advance
+
+	icon = expanded_supply_trains
+}
+
+#Age 5
+bonwesforian_tainted_harvest = {
+	age = age_5_absolutism
+	icon = pun_breadbasket_of_india
+	potential = {
+		culture = culture:bonwesforian_culture
+	}
+	global_monthly_food_modifier = 0.2
+
+	requires = pop_promotion_speed_age_5
+}

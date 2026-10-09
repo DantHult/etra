@@ -1,0 +1,129 @@
+﻿# Scales pre-RTR stress modifiers for Iborros (A378), mirroring chi_adjust_pre_rtr_modifiers.
+# Shared RTR helpers used from peace treaties, formables, generic actions, and events.
+
+etra_adjust_pre_rtr_modifiers = {
+	if = {
+		limit = {
+			current_date < 1368.1.1
+			situation:etra_red_turban_rebellions = {
+				situation_is_active = no
+				situation_has_ended = no
+			}
+		}
+		custom_description = {
+			text = etra_adjust_pre_rtr_modifiers_text
+			value = $value$
+			if = {
+				limit = { NOT = { has_variable = etra_rtr_modifier_intensity } }
+				set_variable = {
+					name = etra_rtr_modifier_intensity
+					value = {
+						value = 1
+						add = $value$
+					}
+				}
+			}
+			else = {
+				change_variable = {
+					name = etra_rtr_modifier_intensity
+					add = $value$
+				}
+			}
+			if = {
+				limit = {
+					has_variable = etra_rtr_modifier_intensity
+					var:etra_rtr_modifier_intensity > 0
+				}
+				add_country_modifier = {
+					modifier = etra_rtr_factional_strife
+					months = {
+						value = 1368
+						add = 1
+						subtract = current_year
+						multiply = 12
+					}
+					mode = replace
+					size = var:etra_rtr_modifier_intensity
+				}
+			}
+			else = {
+				remove_country_modifier = etra_rtr_factional_strife
+			}
+		}
+		custom_tooltip = etra_adjust_pre_rtr_modifiers_base_text
+	}
+}
+
+etra_rtr_change_allegiance_points = {
+	custom_description = {
+		text = etra_rtr_change_allegiance_points
+		value = $value$
+		if = {
+			limit = { NOT = { has_variable = etra_rtr_iborros_allegiance } }
+			set_variable = {
+				name = etra_rtr_iborros_allegiance
+				value = 0
+			}
+		}
+		change_variable = {
+			name = etra_rtr_iborros_allegiance
+			add = $value$
+		}
+		if = {
+			limit = { has_variable = etra_rtr_iborros_allegiance }
+			if = {
+				limit = { var:etra_rtr_iborros_allegiance > 100 }
+				set_variable = {
+					name = etra_rtr_iborros_allegiance
+					value = 100
+				}
+			}
+			if = {
+				limit = { var:etra_rtr_iborros_allegiance < -100 }
+				set_variable = {
+					name = etra_rtr_iborros_allegiance
+					value = -100
+				}
+			}
+		}
+	}
+}
+
+etra_rtr_recreate_middle_kingdom = {
+	# etra: retargeted from middle_kingdom to iboric_mandate
+	custom_tooltip = {
+		text = etra_rtr_recreate_middle_kingdom.tt
+		if = {
+			limit = { NOT = { exists = international_organization:iboric_mandate } }
+			create_international_organization = {
+				type = international_organization_type:iboric_mandate
+			}
+			set_up_iboros_for_iboric_mandate = yes
+		}
+		international_organization:iboric_mandate ?= {
+			add_country_to_international_organization = prev
+			set_leader_country = prev
+		}
+		change_iboric_authority = { value = 20 }
+	}
+}
+
+etra_rtr_core_all_of_china_effect = {
+	custom_description = {
+		text = etra_rtr_core_all_of_china
+		object = $country$
+		region:iboros_region = {
+			every_location_in_region = {
+				limit = {
+					is_ownable = yes
+					is_owned_by_international_organization = international_organization:iboric_mandate
+				}
+				add_core = $country$
+				if = {
+					limit = { owner = $country$ }
+					change_integration_level = core
+				}
+			}
+		}
+	}
+}

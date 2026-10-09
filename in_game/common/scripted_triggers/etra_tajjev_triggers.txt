@@ -1,0 +1,40 @@
+﻿has_tajjev_stagnate = {
+	custom_tooltip = {
+		text = has_tajjev_stagnate_tt
+		c:A409 ?= {
+			OR = {
+				AND = {
+					has_ruler = yes
+					ruler ?= {
+						this != global_var:tajjev_character
+						total_abilities < 150
+					}
+				}
+				AND = {
+					has_heir = no
+					has_ruler = no
+				}
+			}
+		}
+	}
+}
+
+has_subjugated_tajjev = {
+	custom_tooltip = {
+		text = has_annexed_tajjev_tt
+		NOT = { has_enabled_situation_trigger = { type = rise_of_tajjev } }
+	}
+}
+
+rise_of_tajjev_end_conditions = {
+	OR = {
+		has_tajjev_stagnate = yes
+		has_subjugated_tajjev = yes
+	}
+}
+
+is_tajjev_exile_destination_owner = {
+	location:etra1513 = {
+		owner ?= root
+	}
+}

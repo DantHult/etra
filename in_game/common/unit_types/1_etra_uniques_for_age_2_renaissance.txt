@@ -1,0 +1,148 @@
+﻿a_elven_longbowmen = {
+	is_special = yes
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_light_infantry
+	upgrades_to = a_elven_late_longbowmen
+	initiative = 4
+	strength_damage_taken = -0.10
+
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.01
+	}
+
+	gfx_tags = { longbow_tag archer_tag light_tag }
+}
+
+#
+#moran
+#
+a_moran_men_at_arms = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_undead_heavy_infantry
+	strength_damage_taken = -0.1
+	combat_speed = 1
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	upgrades_to = a_moran_halberdiers
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+	
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+	
+	gfx_tags = { medium_tag }
+}
+
+a_moran_crossbowmen = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_undead_light_infantry
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	upgrades_to = a_moran_early_arquebusiers
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { crossbow_tag medium_tag }
+}
+
+
+a_moran_handgonners = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_undead_heavy_infantry
+	
+	morale_damage_done = 0.10
+	build_time_modifier = 0.25
+	food_consumption_per_strength = 0.25
+	combat_speed = -0.5
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+	
+	maintenance_demand =  infantry_maintenance
+	construction_demand = infantry_construction
+	
+	upgrades_to = a_moran_early_arquebusiers
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_moran_men_at_arms_levy = {
+	category = army_heavy_infantry
+	copy_from = a_age_2_renaissance_undead_heavy_infantry
+	buildable = no
+	levy = yes
+	
+	country_potential = {
+		culture = { has_culture_group = culture_group:moran_group }
+		culture = { has_culture_group = culture_group:undead_group }
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:moran_group }
+		dominant_culture = { has_culture_group = culture_group:undead_group }
+	}
+	
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { medium_tag }
+}
+
+a_moran_peasant_levy = {
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_undead_light_infantry
+	buildable = no
+	levy = yes
+	gfx_tags = { light_tag }
+}
+

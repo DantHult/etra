@@ -1,0 +1,15 @@
+﻿l_english:
+  
+ xenophile_focus: "Xenophile"
+ xenophobe_focus: "Xenophobe"
+ xenophile_vs_xenophobe: "Xenophile vs Xenophobe"
+ xenophile_vs_xenophobe_desc: "A xenophile country welcomes other sentient kindreds, integrating their skills and traditions into society, while a xenophobic country mistrusts all outsiders and favors only its own kindred."
+ 
+ MODIFIER_TYPE_NAME_monthly_towards_xenophile: "Monthly Progress to Xenophile"
+ MODIFIER_TYPE_DESC_monthly_towards_xenophile: "This impacts the change towards the [ShowSocietyDirectionName('xenophile')] [societal_values|e]."
+ MODIFIER_TYPE_NAME_monthly_towards_xenophobe: "Monthly Progress to Xenophobe"
+ MODIFIER_TYPE_DESC_monthly_towards_xenophobe: "This impacts the change towards the [ShowSocietyDirectionName('Xenophobe')] [societal_values|e]."
+ STATIC_MODIFIER_NAME_xenophobe_progress_cabinet_efficiency: "$CABINET_INFLUENCING$"
+ STATIC_MODIFIER_NAME_xenophile_progress_cabinet_efficiency: "$CABINET_INFLUENCING$"
+ 
+ 

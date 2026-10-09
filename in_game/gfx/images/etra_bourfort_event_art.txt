@@ -1,0 +1,44 @@
+﻿etra_bourfort_backgrounds_exterior = {
+	tag = "exterior_backgrounds"
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/event/backgrounds/exterior/peasants/french_peasants_exterior.dds"
+		priority = 1000
+		scope = country
+		trigger = {
+			event_illustration_background_trigger = yes
+			tag = A163
+			scope:target_pop_type_bckg ?= { this = pop_type:peasants }
+		}
+	}
+}
+
+etra_bourfort_characters_regular = {
+	tag = "characters_regular"
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/event/characters/peasants/french/french_peasants_regular_metadata_os1080x440_d0x0.dds"
+		priority = 1000
+		scope = country
+		trigger = {
+			event_illustration_foreground_trigger = yes
+			tag = A163
+			scope:target_pop_type ?= { this = pop_type:peasants }
+		}
+	}
+}
+
+etra_bourfort_frontobjects_exterior = {
+	tag = "frontobjects_exterior"
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/event/frontobjects/exterior/peasants/french/fo_peasants_french_metadata_os1080x440_d0x0.dds"
+		priority = 1000
+		scope = country
+		trigger = {
+			event_illustration_background_trigger = yes
+			tag = A163
+			scope:target_pop_type_bckg ?= { this = pop_type:peasants }
+		}
+	}
+}
