@@ -1,16 +1,18 @@
 ﻿{
+	"layer_id":	"1XaVf7fVmQl",
 	"tags":	[],
-	"strength":	0.250000,
-	"ground_level":	0.200000,
+	"strength":	0.25,
+	"ground_level":	0.20000000298023224,
 	"height_blend_mode":	0,
-	"rotation":	-95.690796,
+	"materialblendmode":	"min",
+	"curvatureblendmode":	"addsub",
+	"rotation":	-95.6907958984375,
 	"fade_margin":	1,
 	"position.x":	32818,
 	"position.y":	20158,
-	"scale.x":	0.400000,
-	"scale.y":	0.240000,
-	"depth_priority":	2594,
+	"scale.x":	0.40000000596046448,
+	"scale.y":	0.239999994635582,
+	"depth_priority":	3097,
 	"locked":	false,
-	"disabled":	false,
-	"dynamic":	false
+	"disabled":	false
 }

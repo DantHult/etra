@@ -1,0 +1,19 @@
+﻿{
+	"lod_properties":	{
+		"screen_space_error_threshold":	20,
+		"use_lod_lerp":	true
+	},
+	"terrain_properties":	{
+		"normal_step_size":	1,
+		"global_curvature_strength":	0.20000000298023224,
+		"resolution":	{
+			"x":	65536,
+			"y":	32768
+		},
+		"height_cache_resident_mip":	2,
+		"decal_grid_cell_size":	-1
+	},
+	"material_properties":	{
+		"material_detail_tiling":	2048
+	}
+}

@@ -22,5 +22,13 @@
 	"height_blend_mode":	{
 		"active":	false,
 		"value":	0
+	},
+	"materialblendmode":	{
+		"active":	false,
+		"value":	"min"
+	},
+	"curvatureblendmode":	{
+		"active":	false,
+		"value":	"addsub"
 	}
 }

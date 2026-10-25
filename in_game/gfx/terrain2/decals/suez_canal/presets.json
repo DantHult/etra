@@ -1,7 +1,7 @@
 ﻿{
 	"strength":	{
 		"active":	false,
-		"value":	1
+		"value":	0
 	},
 	"ground_level":	{
 		"active":	false,
@@ -13,7 +13,7 @@
 	},
 	"scale":	{
 		"active":	false,
-		"value":	[1, 1]
+		"value":	[0, 0]
 	},
 	"fade_margin":	{
 		"active":	false,
@@ -22,5 +22,13 @@
 	"height_blend_mode":	{
 		"active":	false,
 		"value":	0
+	},
+	"materialblendmode":	{
+		"active":	false,
+		"value":	"min"
+	},
+	"curvatureblendmode":	{
+		"active":	false,
+		"value":	"addsub"
 	}
 }
