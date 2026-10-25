@@ -16,9 +16,6 @@ etra_has_any_racial_trait = {
 		has_character_modifier = is_tiefling_modifier
 		has_character_modifier = is_aasimar_modifier
 		has_character_modifier = is_beastfolk_modifier
-		has_character_modifier = is_pigmen_modifier
-		has_character_modifier = is_lupusfolk_modifier
-		has_character_modifier = is_catfolk_modifier
 		has_character_modifier = is_dragon_modifier
 		has_character_modifier = giant_of_borili_modifier
 	}
@@ -35,9 +32,6 @@ character_is_etra_kindred = {
 			has_culture_group = culture_group:tiefling_group
 			has_culture_group = culture_group:aasimar_group
 			has_culture_group = culture_group:beastfolk_group
-			has_culture_group = culture_group:pigmen_group
-			has_culture_group = culture_group:lupusfolk_group
-			has_culture_group = culture_group:catfolk_group
 		}
 	}
 }

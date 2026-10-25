@@ -1,4 +1,6 @@
 ﻿# Uses static character modifiers from main_menu/common/static_modifiers/etra_races.txt.
+# Assigns kindred identity markers; numeric heritage bonuses come from culture_group character_modifier.
+# Beastfolk covers pigmen / lupus / catfolk — subtypes are not separate kindred traits.
 
 etra_assign_racial_trait = {
 	add_character_modifier = {
@@ -68,27 +70,6 @@ etra_assign_kindred_racial_trait_from_culture = {
 			NOT = { etra_has_racial_trait = { trait = is_beastfolk_modifier } }
 		}
 		etra_assign_racial_trait = { trait = is_beastfolk_modifier }
-	}
-	else_if = {
-		limit = {
-			culture = { has_culture_group = culture_group:pigmen_group }
-			NOT = { etra_has_racial_trait = { trait = is_pigmen_modifier } }
-		}
-		etra_assign_racial_trait = { trait = is_pigmen_modifier }
-	}
-	else_if = {
-		limit = {
-			culture = { has_culture_group = culture_group:lupusfolk_group }
-			NOT = { etra_has_racial_trait = { trait = is_lupusfolk_modifier } }
-		}
-		etra_assign_racial_trait = { trait = is_lupusfolk_modifier }
-	}
-	else_if = {
-		limit = {
-			culture = { has_culture_group = culture_group:catfolk_group }
-			NOT = { etra_has_racial_trait = { trait = is_catfolk_modifier } }
-		}
-		etra_assign_racial_trait = { trait = is_catfolk_modifier }
 	}
 }
 

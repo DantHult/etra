@@ -17,6 +17,7 @@ can_use_generic_line_infantry_cavalry = {
 
 
 
+# Purgeable kindred heritages. Beastfolk covers pigmen / lupus / catfolk.
 is_etra_kindred_culture_group = {
 
 	OR = {
@@ -36,12 +37,6 @@ is_etra_kindred_culture_group = {
 		this = culture_group:aasimar_group
 
 		this = culture_group:beastfolk_group
-
-		this = culture_group:pigmen_group
-
-		this = culture_group:lupusfolk_group
-
-		this = culture_group:catfolk_group
 
 	}
 

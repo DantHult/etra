@@ -27,10 +27,8 @@
 			culture_group:giantsborn_group = { add_to_list = source }
 			culture_group:tiefling_group = { add_to_list = source }
 			culture_group:aasimar_group = { add_to_list = source }
+			# Beastfolk = pigmen + lupus/houndsfolk + catfolk
 			culture_group:beastfolk_group = { add_to_list = source }
-			culture_group:pigmen_group = { add_to_list = source }
-			culture_group:lupusfolk_group = { add_to_list = source }
-			culture_group:catfolk_group = { add_to_list = source }
 		}
 		visible = {
 			is_etra_kindred_culture_group = yes
