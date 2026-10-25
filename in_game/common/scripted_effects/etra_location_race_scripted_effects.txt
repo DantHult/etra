@@ -1,4 +1,5 @@
 ﻿# Location demographic race modifiers — parameterized replacement for races_set_up copy-paste.
+# Beastfolk is one heritage (pigmen / lupus / catfolk); do not pulse subtypes separately.
 
 update_location_race_modifiers_for_group = {
 	if = {
@@ -56,7 +57,6 @@ etra_update_location_race_modifiers = {
 	update_location_race_modifiers_for_group = { culture_group = culture_group:tiefling_group prefix = tiefling }
 	update_location_race_modifiers_for_group = { culture_group = culture_group:aasimar_group prefix = aasimar }
 	update_location_race_modifiers_for_group = { culture_group = culture_group:beastfolk_group prefix = beastfolk }
-	# TODO: add location modifiers for pigmen, lupusfolk, catfolk when defined in etra_races.txt
 }
 
 races_set_up = {

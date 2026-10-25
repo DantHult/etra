@@ -41,22 +41,146 @@ adnkhalan_group = { }
 ####################
 ##heritages#########
 ####################
-undead_group = {}
+# Kindred heritage groups: country/location/character modifiers apply when
+# primary / dominant / character culture belongs to the group.
+# Demographic share modifiers (majority/minority) live in etra_races.txt.
 
-human_group = {}
+undead_group = {
+	country_modifier = {
+		global_monthly_food_modifier = -0.10
+		monthly_prestige = -0.05
+		diplomatic_reputation = diplomatic_reputation_weak_penalty
+	}
+	location_modifier = {
+		local_pop_food_consumption = -0.25
+		local_disease_resistance = 0.25
+		local_population_growth = -0.001
+	}
+	character_modifier = {
+		is_immortal = yes
+		diplomatic_reputation = diplomatic_reputation_weak_penalty
+		character_fertility = -1000
+	}
+}
 
-ratfolk_group = {}
+human_group = {
+	country_modifier = {
+		global_pop_promotion_speed_modifier = 0.05
+		monthly_legitimacy = 0.05
+	}
+	location_modifier = {
+		local_pop_promotion_speed_modifier = 0.05
+	}
+	character_modifier = {
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
-elven_group = {}
+ratfolk_group = {
+	country_modifier = {
+		global_monthly_food_modifier = 0.05
+		diplomatic_reputation = diplomatic_reputation_weak_bonus
+	}
+	location_modifier = {
+		local_pop_food_consumption = 0.10
+		local_population_growth = 0.001
+	}
+	character_modifier = {
+		character_fertility = 25
+		character_life_expectancy = -10
+		dip = 10
+		mil = -5
+	}
+}
 
-giantsborn_group = {}
+elven_group = {
+	country_modifier = {
+		global_max_literacy = 5.0
+		global_levy_size_modifier = -0.15
+	}
+	location_modifier = {
+		local_max_literacy = 5.0
+		local_production_efficiency = tiny_production_efficiency_bonus
+		local_population_growth = -0.001
+		local_levy_size_modifier = -0.10
+	}
+	character_modifier = {
+		character_life_expectancy = 200
+		character_fertility = -40
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
 
-tiefling_group = {}
+giantsborn_group = {
+	country_modifier = {
+		global_army_levy_size_modifier = 0.10
+		land_morale_modifier = 0.05
+	}
+	location_modifier = {
+		local_pop_food_consumption = 0.10
+		local_population_growth = -0.001
+		local_manpower_modifier = 0.05
+		local_defensive = 0.05
+	}
+	character_modifier = {
+		character_life_expectancy = 120
+		character_fertility = -15
+	}
+}
 
-aasimar_group = {}
+tiefling_group = {
+	country_modifier = {
+		diplomatic_reputation = diplomatic_reputation_weak_penalty
+		monthly_rebel_growth = 0.02
+	}
+	location_modifier = {
+		local_pop_conversion_speed_modifier = -0.05
+		local_unrest = 0.05
+		local_production_efficiency = 0.005
+	}
+	character_modifier = {
+		diplomatic_reputation = diplomatic_reputation_weak_penalty
+	}
+}
 
-beastfolk_group = { }
+aasimar_group = {
+	country_modifier = {
+		monthly_prestige = 0.05
+		diplomatic_reputation = diplomatic_reputation_weak_bonus
+	}
+	location_modifier = {
+		local_pop_conversion_speed_modifier = 0.03
+		local_unrest = -0.03
+		local_monthly_control = -0.0002
+	}
+	character_modifier = {
+		monthly_prestige = 0.1
+		diplomatic_reputation = diplomatic_reputation_weak_bonus
+	}
+}
 
+# Beastfolk = one kindred heritage covering pigmen, lupus/houndsfolk, and catfolk.
+beastfolk_group = {
+	country_modifier = {
+		global_army_levy_size_modifier = 0.05
+		land_morale_modifier = 0.05
+	}
+	location_modifier = {
+		local_pop_food_consumption = 0.05
+		local_disease_resistance = 0.10
+		local_manpower_modifier = 0.05
+	}
+	character_modifier = {
+		dip = -5
+		mil = 10
+	}
+}
+
+# Sub-kind labels under Beastfolk heritage (not separate kindreds for purge / race pulse).
 pigmen_group = { }
 
 lupusfolk_group = { }
