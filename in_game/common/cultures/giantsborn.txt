@@ -60,7 +60,6 @@ pahhuar_culture = {
 	}
 	opinions = {
 		ekuniman_culture = kindred
-		high_astanun_culture = kindred
 	}
 }
 
@@ -77,23 +76,5 @@ ekuniman_culture = {
 	}
 	opinions = {
 		pahhuar_culture = kindred
-		high_astanun_culture = kindred
-	}
-}
-
-high_astanun_culture = {
-	language = astanun_language
-	
-	color = rgb { 180 140 70 }
-	
-	tags = { giantsborn_gfx persian_gfx persianate_gfx middle_east_gfx  }
-
-	culture_groups = {
-		astanun_group
-		giantsborn_group
-	}
-	opinions = {
-		pahhuar_culture = kindred
-		ekuniman_culture = kindred
 	}
 }

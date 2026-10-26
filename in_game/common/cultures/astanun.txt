@@ -1,0 +1,18 @@
+# Human Astanun cultures (heritage: human_group). Giantsborn Astanun remain in giantsborn.txt.
+
+high_astanun_culture = {
+	language = astanun_language
+	
+	color = rgb { 180 140 70 }
+	
+	tags = { persian_gfx persianate_gfx middle_east_gfx }
+
+	culture_groups = {
+		astanun_group
+		human_group
+	}
+	opinions = {
+		pahhuar_culture = positive
+		ekuniman_culture = positive
+	}
+}
