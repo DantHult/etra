@@ -1,0 +1,175 @@
+l_english:
+ # A412 Imperator of the Deep — Essential playable English (placeholders OK)
+
+ # --- Opening / C01 ---
+ flavor_A412.1.title: "Court of the Taken Fleet"
+ flavor_A412.1.desc: "On [target_location.GetName], three courts share one throne-ship. The Admiralty of the Taken Fleet counts prizes not yet stolen. The Pale Senate drafts abdication speeches in advance. The Deep Covenant opens the temple windows so the tide can listen.\n\n[target_character.GetName] — Imperator of the Deep, placeholder name pending — smiles with too many teeth. The barge-throne rides the roadstead like a floating palace that remembers it was always a weapon."
+ flavor_A412.1.a: "Let the dead kneel. Let the living learn."
+ flavor_A412.1.a.tt: "Faction favors begin as court lean. Ritual I is your first ambition."
+
+ flavor_A412.12.title: "The Leash from the Pale Shore"
+ flavor_A412.12.desc: "A barge painted in Moran mourning-white crosses the roadstead. The envoy of [target_country.GetName] does not kneel. He offers [target_character.GetName] a title that was always a collar: Subject-Admiral of the Taken Fleet, wages in imperial coin, and the barge returned to 'proper' service.\n\nBehind him, the Deep Covenant hisses like tide over bone. The Admiralty already counts the insult in prizes not yet stolen."
+ flavor_A412.12.a: "Hang the collar on his mast."
+ flavor_A412.12.b: "Send him home with silence."
+ flavor_A412.12.c: "Tell him you will 'consider' it."
+
+ flavor_A412.13.title: "The Covenant Opens the Bilge"
+ flavor_A412.13.desc: "Captive clergy chant a new name into the dark. The Deep Covenant says the barge is hungry, the Imperator unfinished, and Ritual I must begin before Moran invents a kinder leash.\n\n[target_character.GetName] can prepare the rite — or let the Pale Senate delay until the deep grows impatient."
+ flavor_A412.13.a: "Prepare the rite. Unlock the ambition."
+ flavor_A412.13.a.tt: "The decision Launch Ritual I becomes available."
+ flavor_A412.13.b: "Delay. The Senate prefers breath."
+
+ flavor_A412.14.title: "Night Oil on the Gunwales"
+ flavor_A412.14.desc: "Blue flame crawls the barge's rails. Sailors pay in coin and breath. The Deep Covenant wants feeding; the Admiralty wants a tithe of prizes; the Pale Senate wants delay dressed as dignity.\n\n[target_character.GetName] chooses how the Taken Fleet consecrates its throne."
+ flavor_A412.14.a: "Feed the deep — gold and sailors."
+ flavor_A412.14.b: "Admiralty prize tithe."
+ flavor_A412.14.c: "Senate 'proper' delay."
+
+ flavor_A412.15.title: "The Barge Takes the Deep"
+ flavor_A412.15.desc: "Night oil burns blue along the gunwales. Captive clergy chant the Imperator's new name into the bilge. Something answers — not kindly — and the pleasure-deck remembers it was always a weapon.\n\nWhen dawn comes, [target_location.GetName] smells of salt and opened graves. The Taken Fleet has a throne. Chapter II opens."
+ flavor_A412.15.a: "We sail as gods pretend to."
+
+ flavor_A412.16.title: "The Rite Goes Hungry"
+ flavor_A412.16.desc: "The coffers are thin. The barge waits. The Covenant does not forgive starvation — but neither does it close the gate forever. [target_character.GetName] must find gold before the deep loses interest."
+ flavor_A412.16.a: "We will bleed the island and sail again."
+ flavor_A412.16.a.tt: "Ritual I remains available. Extort and raid to fund the climax."
+
+ # --- C02 ---
+ flavor_A412.20.title: "Inner Sea Terror"
+ flavor_A412.20.desc: "Ritual I is done. Charts in foreign admiralties will ink a new stain around this island. Merchants will price fear into their ledgers. [target_character.GetName] names the terror aloud — privateers, slave raids, and island tithe — and asks which empire will learn the hymn next."
+ flavor_A412.20.a: "Let the Inner Sea learn our name."
+ flavor_A412.20.a.tt: "Corsair havens (D03), prizes, and notoriety toward provocation are unlocked."
+
+ flavor_A412.22.title: "Corsair Havens Raised"
+ flavor_A412.22.desc: "No brethren stronghold rises on [target_location.GetName] — the Imperator will not wear that republic's clothes. Instead gold buys shadow: sailors, fences, and a footprint that mimics cove and tavern without their gates.\n\nShady clients will come. The Admiralty drinks to it."
+ flavor_A412.22.a: "Raise the havens. Keep the collar off."
+
+ flavor_A412.23.title: "A Second Imperator Project"
+ flavor_A412.23.desc: "The barge has tasted consecration. The Deep Covenant wants Ritual II — a deeper claim, a louder Imperator. The Admiralty wants the gold spent on hulls instead. [target_character.GetName] chooses whether capability grows now or waits."
+ flavor_A412.23.a: "Begin Ritual II."
+ flavor_A412.23.b: "Not yet. Keep the fleet hungry for prizes."
+
+ flavor_A412.24.title: "Capability Pageant"
+ flavor_A412.24.desc: "Ritual II closes. The Imperator's name sits heavier on foreign tongues. The Admiralty peaks in prizes and swagger. The Pale Senate counts enemies. The Covenant smiles with wet teeth."
+ flavor_A412.24.a: "Grow. Then provoke."
+
+ flavor_A412.25.title: "The Inner Sea Learns Our Name"
+ flavor_A412.25.desc: "Notoriety has crossed the threshold. The Pale Senate calls it reckoning; the Admiralty calls it harvest; the Deep Covenant calls it appetite. [target_character.GetName] smiles and asks which empire to teach next.\n\nMoran's coasts still wear stolen colors."
+ flavor_A412.25.a: "Moran still wears our stolen colors."
+ flavor_A412.25.b: "Let hymns frighten pulpits — later."
+ flavor_A412.25.c: "A symbolic prize would be quieter."
+ flavor_A412.25.a.tt: "Decision Provoke Moran (D04) is available."
+
+ # --- C03 ---
+ flavor_A412.30.title: "Ink Over the Truce"
+ flavor_A412.30.desc: "You send privateers into seas [target_country.GetName] still calls sacred. The envoy's collar — long since hung on a mast — is raised again as a banner. The Pale Senate drafts abdication speeches. The Covenant opens the temple windows so the deep can listen."
+ flavor_A412.30.a: "Let the truce drown."
+ flavor_A412.30.b: "Raid the marches only."
+
+ flavor_A412.32.title: "The Pale Shore Answers"
+ flavor_A412.32.desc: "[target_country.GetName] has noticed. Envoys grow fewer; hulls grow more. Whether war comes as a formal CB or as a fist of anti-piracy heat, the Taken Fleet must survive the window without losing its capital — or its Imperator."
+ flavor_A412.32.a: "Hold the reef. Bleed them on the rocks."
+
+ flavor_A412.34.title: "Still Breathing Salt"
+ flavor_A412.34.desc: "The great powers have bloodied their fists on your reef and drawn back — for now. [target_character.GetName] does not thank the living. He thanks the barge, the deep, and the cowardice of empires.\n\nThe next rite will not be hidden."
+ flavor_A412.34.a: "Begin the public claim."
+ flavor_A412.34.a.tt: "Decision Begin Apotheosis (D06) is available."
+
+ flavor_A412.35.a: "OK"
+
+ # --- C04 ---
+ flavor_A412.40.title: "Name Upon the Water"
+ flavor_A412.40.desc: "Heralds — living, dead, and something between — cry [target_character.GetName]'s godhood across the Inner Sea. The captive cult weeps with joy. Foreign pulpits call for fire. The barge is painted with prayers that are also charts to nowhere safe.\n\nThis is title, trait, and terror — not a new religion, not a new government."
+ flavor_A412.40.a: "Let them pray against the tide."
+
+ flavor_A412.42.title: "The Rite Demands"
+ flavor_A412.42.desc: "Gold. Sailors. Stability. The Apotheosis eats what you feed it. Protect [target_location.GetName]. Keep the capital. Finish the claim — or abort and let the deep spit him out."
+ flavor_A412.42.a: "Pay the sink. Continue the rite."
+ flavor_A412.42.b: "Abort. Better exile than a hollow crown."
+
+ flavor_A412.43.title: "Imperator of the Deep"
+ flavor_A412.43.desc: "The rite does not make him a new religion. It makes him undeniable. Sailors spit and sign themselves; kings write his title in the margins of their hatred. On the island, the dead kneel because they remember how. The living kneel because the alternative is the bilge."
+ flavor_A412.43.a: "The deep keeps what it crowns."
+ flavor_A412.43.a.tt: "Success: lasting coda modifier and title-adjacent glory. No government or religion rewrite."
+
+ flavor_A412.44.title: "The Deep Spits Him Out"
+ flavor_A412.44.desc: "Whether by Moran steel, Commonweal fire, or a rite that ate its priest, the Imperator is gone. The island remains — smaller somehow. Captains argue. The barge, if any hulk is left, is only wood.\n\nBespoke glory ends here."
+ flavor_A412.44.a: "We endure without him."
+ flavor_A412.44.a.tt: "Imperator content ends. Pack-ended suppresses further A412 DHE."
+
+ # --- Standalones ---
+ flavor_A412.50.title: "Tithe of the Living Quarters"
+ flavor_A412.50.desc: "The Imperator's collectors walk the only city that matters. Elves and humans pay in coin, cargo, and quiet hatred. Mindless dead watch from the seawall and learn nothing about mercy."
+ flavor_A412.50.a: "Bleed them properly."
+ flavor_A412.50.b: "Bleed them gently."
+ flavor_A412.50.c: "Spare them this season."
+
+ flavor_A412.51.title: "Hulls With Foreign Names"
+ flavor_A412.51.desc: "A convoy learns too late that the Inner Sea has a new etiquette. Chains, cargo, and one proud escort that might yet fly your colors."
+ flavor_A412.51.a: "Strip and sell."
+ flavor_A412.51.b: "Raise what we can — for now, take the gold."
+ flavor_A412.51.b.tt: "Unique prize escort (U02) deferred to Secondary."
+ flavor_A412.51.c: "Offer a shady cut to a living fence."
+
+ flavor_A412.58.title: "Moran Watches"
+ flavor_A412.58.desc: "[target_country.GetName] still calls the truce sacred. Their coast-watchers ink your privateers into ledgers. No war yet — only the sound of a leash being measured for a second offer."
+ flavor_A412.58.a: "Let them watch. We raid anyway."
+
+ flavor_A412.60.title: "The Deep Grows Bored"
+ flavor_A412.60.desc: "Notoriety stalls. Captains idle. The Covenant mutters that a quiet Imperator is a dying one. Raid, extort, or face a court that invents crisis for you."
+ flavor_A412.60.a: "Stage a raid. Feed the name."
+ flavor_A412.60.b: "Endure the faction crisis."
+
+ flavor_A412.61.title: "Hammer Rumor"
+ flavor_A412.61.desc: "Word rides the coasts: anti-piracy letters, hunt-pirate orders, markets naming your privateers as casus. Heat is the price of Inner Sea terror."
+ flavor_A412.61.a: "Hush the Admiralty. Weather it."
+ flavor_A412.61.b: "Louder. If they come, let them come."
+
+ flavor_A412.70.title: "Glad He's Dead"
+ flavor_A412.70.desc: "The Imperator of the Deep is a story people tell to frighten cabin boys — and today the story ends in your dungeon ledger. On [target_location.GetName], the islanders do not mourn. They cheer with the awkward joy of people who have been holding their breath for decades."
+ flavor_A412.70.a: "Let them cheer."
+ flavor_A412.70.a.tt: "Bespoke A412 Imperator content ends with the tag."
+
+ # --- Decisions ---
+ a412_launch_ritual_i_decision: "Launch Ritual I"
+ a412_launch_ritual_i_decision_desc: "Consecrate the barge-throne. Gold and sailors begin the HARD gate to Inner Sea Terror."
+ a412_launch_ritual_i_decision_opt: "Begin the rite."
+
+ a412_extort_island_decision: "Extort the Island"
+ a412_extort_island_decision_desc: "Squeeze the living quarters of the Taken Fleet's island for coin and quiet hatred."
+ a412_extort_island_decision_opt: "Send the collectors."
+
+ a412_raise_corsair_havens_decision: "Raise Corsair Havens"
+ a412_raise_corsair_havens_decision_desc: "Spend gold for haven-like corsair modifiers — a substitute for pirate-brethren buildings."
+ a412_raise_corsair_havens_decision_opt: "Raise the shadow footprint."
+
+ a412_provoke_moran_decision: "Provoke Moran"
+ a412_provoke_moran_decision_desc: "Ink over the hostile truce. Survive the heat to unlock Apotheosis."
+ a412_provoke_moran_decision_opt: "Raise the collar as a banner."
+
+ a412_begin_apotheosis_decision: "Begin Apotheosis"
+ a412_begin_apotheosis_decision_desc: "Public godhood claim: title, traits, and modifiers only — no government or religion rewrite."
+ a412_begin_apotheosis_decision_opt: "Cry the name upon the water."
+
+ # --- Static modifiers ---
+ STATIC_MODIFIER_NAME_a412_barge_throne: "Barge-Throne"
+ STATIC_MODIFIER_DESC_a412_barge_throne: "The Taken Fleet's pleasure-barge is also its war-throne: prestige and navy morale, paid for in sailors."
+ STATIC_MODIFIER_NAME_a412_ritual_i_blessing: "Ritual I Blessing"
+ STATIC_MODIFIER_DESC_a412_ritual_i_blessing: "The barge has been consecrated. Galley power and privateer durability rise with the deep's favor."
+ STATIC_MODIFIER_NAME_a412_ritual_ii_blessing: "Ritual II Blessing"
+ STATIC_MODIFIER_DESC_a412_ritual_ii_blessing: "A second Imperator project complete. The fleet fights louder; the name travels farther."
+ STATIC_MODIFIER_NAME_a412_inner_sea_terror: "Inner Sea Terror"
+ STATIC_MODIFIER_DESC_a412_inner_sea_terror: "Charts ink a stain around the island. Privateers thrive; diplomats flinch."
+ STATIC_MODIFIER_NAME_a412_corsair_havens: "Corsair Havens"
+ STATIC_MODIFIER_DESC_a412_corsair_havens: "Shadow footprint of cove and tavern bought with gold — not pirate-brethren buildings."
+ STATIC_MODIFIER_NAME_a412_sea_god_claimant: "Sea-God Claimant"
+ STATIC_MODIFIER_DESC_a412_sea_god_claimant: "Public godhood claimed. Prestige rises; living courts despise the hymn."
+ STATIC_MODIFIER_NAME_a412_apotheosis_coda: "Apotheosis Coda"
+ STATIC_MODIFIER_DESC_a412_apotheosis_coda: "The rite made him undeniable. Lasting pirate identity and naval swagger — no new faith, no new reform."
+ STATIC_MODIFIER_NAME_a412_extortion_fatigue: "Extortion Fatigue"
+ STATIC_MODIFIER_DESC_a412_extortion_fatigue: "The living quarters have been bled too often. Estates sour; prosperity frays."
+
+ # --- Opinions ---
+ a412_hostile_truce: "Hostile Truce with the Taken Fleet"
+ a412_subject_admiral_refused: "Subject-Admiral Refused"
+ a412_moran_provocation: "Imperator Provocation"
