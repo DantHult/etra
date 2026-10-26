@@ -1,4 +1,4 @@
-﻿europe = {
+europe = {
 	western_europe = {####
 		south_torrent_region = {
 			aita_east_area = {
@@ -1286,7 +1286,7 @@
 
 					
 			}
-			placeholder_baltic_area_1 = {#Jassskara Eljanas Vihityla Wilararä
+			placeholder_baltic_area_1 = {#Jassskara Eljanas Vihityla WilararÃ¤
 				ph_baltic_prov_1 = { etra376  }
 			}
 		
@@ -1457,17 +1457,17 @@ asia = {
 			}
 			astivan_area = {
 				astivan_area_prov_1 = {
-					etra2171 etra2203 etra2249 etra2160 etra2218 etra2164 etra2229 etra2251 etra2255 etra2164 etra2177 etra2170 etra2252 etra2207 
+					etra2171 etra2203 etra2249 etra2160 etra2218 etra2164 etra2229 etra2251 etra2255 etra2177 etra2170 etra2252 etra2207 
 					etra2195 etra2241 etra2216 etra2190 etra2184 etra2169 etra2161 etra2256 etra2253 etra2186 etra2165 etra2191
 				}
 			}
 			goron_area = {
-				goron_prov_1 = { etra2205 etra2257 etra222 etra2244 etra2166 etra2217 etra2175 etra2212 etra2181 etra2223 etra2215 etra2225 etra2231 etra2214 etra2167 etra2205 etra2206 etra2250 etra2242 etra2230 etra2189 etra2222 etra2183 etra2168 etra2224 etra2235 etra2187 etra2188 etra2201
+				goron_prov_1 = { etra2205 etra2257 etra2244 etra2166 etra2217 etra2175 etra2212 etra2181 etra2223 etra2215 etra2225 etra2231 etra2214 etra2167 etra2206 etra2250 etra2242 etra2230 etra2189 etra2222 etra2183 etra2168 etra2224 etra2235 etra2187 etra2188 etra2201
 				}
 				astanu_area_1_prov_27 = { etra1982 etra1994 etra2048 adune109 etra2043 }
 			}
 			high_astanu_area = {
-				high_astanu_prov_1 = { etra2233 etra220 etra2186 etra2221 etra2240 etra2259 etra2213 etra2221 etra2199 }
+				high_astanu_prov_1 = { etra2233 etra2221 etra2240 etra2259 etra2213 etra2199 }
 				high_astanu_prov_2 = { etra2182 etra2209 etra2193 etra2202 }
 				high_astanu_prov_3 = { etra2248 etra2198 etra2228 etra2208 }
 				high_astanu_prov_4 = { etra2179 etra2227 etra2211 etra2258 etra2238 }
@@ -1530,7 +1530,7 @@ africa = {
 				inner_isles = { etra1637 etra1790 etra1794 etra1658 etra1656 etra1788 etra1621 etra1649 etra1789 }
 			}
 		}
-		amalyarat_region = { #Âmistah
+		amalyarat_region = { #Ã‚mistah
 			amalyarat_area_1 = {
 				amalyarat_area_1_prov_1 = { etra1424 etra1459 etra1395 etra1429 etra1471 etra1324}
 				amalyarat_area_1_prov_2 = { etra1477  etra1442 etra1426 etra1465 etra1412 }
