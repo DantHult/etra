@@ -1,0 +1,16 @@
+# A412 Moran hostility / provocation opinion biases
+
+a412_hostile_truce = {
+	value = -50
+	yearly_decay = 0.25
+}
+
+a412_subject_admiral_refused = {
+	value = -75
+	yearly_decay = 0.5
+}
+
+a412_moran_provocation = {
+	value = -100
+	yearly_decay = 1
+}

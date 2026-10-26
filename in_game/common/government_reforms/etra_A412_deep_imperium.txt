@@ -1,0 +1,36 @@
+# A412 Imperator of the Deep — custom corsair monarchy (R01).
+# Not pirate_brethren. Mix of galley_lords / crusade_sea privateer lean.
+
+a412_deep_imperium_reform = {
+	unique = yes
+	government = monarchy
+
+	potential = {
+		tag = A412
+	}
+
+	allow = {
+		tag = A412
+	}
+
+	locked = {
+		tag = A412
+	}
+
+	country_modifier = {
+		can_hire_privateers = yes
+		allow_privateers_slave_raid = yes
+		auto_slave_raid_different_religion = yes
+
+		monthly_towards_naval = societal_value_monthly_move
+		monthly_towards_belligerent = societal_value_tiny_monthly_move
+		diplomatic_reputation = diplomatic_reputation_mild_penalty
+
+		navy_galley_build_cost_modifier = -0.35
+		navy_galley_maintenance_cost_modifier = -0.25
+		navy_maintenance_efficiency = 0.05
+		army_disembark_speed = 0.05
+	}
+
+	years = 2
+}
