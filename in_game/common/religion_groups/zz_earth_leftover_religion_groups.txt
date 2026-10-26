@@ -1,24 +1,8 @@
-﻿adunan = {
-	color = color_hindu
-	convert_slaves_at_start = no
-	allow_slaves_of_same_group = no
-}
-
-folk_adunan = {
-	color = map_votian
-	convert_slaves_at_start = no
-	modifier = {
-		allow_rgo_slave_demand = yes
-	}
-}
-
-the_forgotten_ones = {
-	color = map_votian
-	convert_slaves_at_start = no
-	modifier = {
-		allow_rgo_slave_demand = yes
-	}
-}
+# Isolated Earth / vanilla religion groups.
+# Kept only because this mod does not replace_path common/religions, so vanilla
+# faith definitions still merge in and still reference these groups.
+# ETRA gameplay uses adunan / folk_adunan / the_forgotten_ones only
+# (see 00_etra_religion_groups.txt). Do not add new ETRA groups here.
 
 christian = {
 	color = religion_catholic

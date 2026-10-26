@@ -1,6 +1,8 @@
 ﻿spider_cult_religion = { 
 	color = rgb { 25 25 25 }
 	group = folk_adunan
+
+	religious_aspects = 1
 	
 	definition_modifier = {
 		auto_slave_raid_different_religion = yes
@@ -10,7 +12,12 @@
 	}
 	
 	opinions = {
-
+		manyfold = enemy
+		imperial_creeds = negative
+		tajjev_rites = enemy
+		green_pact_religion = positive
+		maw_of_ur_khal = positive
+		faith_saurethii = positive
 	}
 	
 	tags = { folk_european_gfx pagan_gfx }
@@ -19,6 +26,8 @@
 green_pact_religion = { 
 	color = rgb { 75 182 103 }
 	group = folk_adunan
+
+	religious_aspects = 1
 	
 	definition_modifier = {
 		expand_rgo_forestry_cost_modifier = 0.2
@@ -28,7 +37,12 @@ green_pact_religion = {
 	}
 	
 	opinions = {
-
+		manyfold = negative
+		imperial_creeds = negative
+		tajjev_rites = negative
+		spider_cult_religion = positive
+		maw_of_ur_khal = kindred
+		faith_saurethii = positive
 	}
 	
 	tags = { folk_european_gfx pagan_gfx }
@@ -38,6 +52,8 @@ maw_of_ur_khal = {
 	color = rgb { 91 38 35 }
 	group = the_forgotten_ones
 
+	religious_aspects = 1
+
 	definition_modifier = {
 		global_burghers_estate_power = -0.1
 		global_hostile_attrition = 0.5
@@ -45,7 +61,12 @@ maw_of_ur_khal = {
 	}
 
 	opinions = {
-
+		manyfold = enemy
+		imperial_creeds = enemy
+		tajjev_rites = enemy
+		spider_cult_religion = positive
+		green_pact_religion = kindred
+		faith_saurethii = positive
 	}
 
 	tags = { folk_european_gfx pagan_gfx }
@@ -56,10 +77,21 @@ faith_saurethii = {
 	color = color_tengri
 	group = folk_adunan
 
+	religious_aspects = 1
 	
 	definition_modifier = {
 		monthly_legitimacy = 0.1
-        army_light_cavalry_power = 0.1
+		army_light_cavalry_power = 0.1
 	}
 
+	opinions = {
+		manyfold = negative
+		imperial_creeds = negative
+		tajjev_rites = negative
+		spider_cult_religion = positive
+		green_pact_religion = positive
+		maw_of_ur_khal = positive
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
 }

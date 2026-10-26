@@ -1,21 +1,121 @@
-﻿eternal_city_holy_site = {
-    location = eternalcity1
-    type = city
-    importance = 5
-	religions = { imperial_creeds}
+﻿# ETRA holy sites — locations chosen from 1337 pop/setup presence.
+# Documented pairing lives in the PR body for this pack.
+
+# Imperial Creeds
+eternal_city_holy_site = {
+	location = eternalcity1
+	type = city
+	importance = 5
+	religions = { imperial_creeds }
 }
 
+oaracta_creed_holy_site = {
+	location = godhand1
+	type = temple
+	importance = 3
+	religions = { imperial_creeds }
+}
 
+# Eternal Truth (manyfold)
 dawn_watch_holy_site = {
-    location = freehold13
-    type = temple
-    importance = 2
-	religions = { manyfold}
+	location = freehold13
+	type = temple
+	importance = 3
+	religions = { manyfold }
 }
 
 the_crater_holy_site = {
-    location = etra1637
-    type = temple
-    importance = 2
-	religions = { manyfold}
+	location = etra1637
+	type = temple
+	importance = 2
+	religions = { manyfold }
+}
+
+aurelia_sancta_holy_site = {
+	location = freehold43
+	type = temple
+	importance = 2
+	religions = { manyfold }
+}
+
+sanctovara_holy_site = {
+	location = freehold19
+	type = shrine
+	importance = 1
+	religions = { manyfold }
+}
+
+# Ebony Web
+cegiri_web_holy_site = {
+	location = aita105
+	type = temple
+	importance = 3
+	religions = { spider_cult_religion }
+}
+
+akarara_web_holy_site = {
+	location = aita140
+	type = shrine
+	importance = 1
+	religions = { spider_cult_religion }
+}
+
+# Green Pact
+buidh_grove_holy_site = {
+	location = etra333
+	type = mountain
+	importance = 2
+	religions = { green_pact_religion }
+}
+
+adrnir_pact_holy_site = {
+	location = etra400
+	type = shrine
+	importance = 1
+	religions = { green_pact_religion }
+}
+
+# Maw of Ur-Khal
+borili_maw_holy_site = {
+	location = etra766
+	type = mountain
+	importance = 4
+	religions = { maw_of_ur_khal }
+}
+
+darinrto_maw_holy_site = {
+	location = etra197
+	type = shrine
+	importance = 2
+	religions = { maw_of_ur_khal }
+}
+
+# Tajjevi Rites
+namlek_rites_holy_site = {
+	location = etra1500
+	type = temple
+	importance = 3
+	religions = { tajjev_rites }
+}
+
+pharesko_rites_holy_site = {
+	location = etra1481
+	type = shrine
+	importance = 2
+	religions = { tajjev_rites }
+}
+
+# Pyrrhakic (Saurethii)
+gomal_pyrrhakic_holy_site = {
+	location = etra509
+	type = mountain
+	importance = 3
+	religions = { faith_saurethii }
+}
+
+algli_pyrrhakic_holy_site = {
+	location = etra520
+	type = shrine
+	importance = 1
+	religions = { faith_saurethii }
 }

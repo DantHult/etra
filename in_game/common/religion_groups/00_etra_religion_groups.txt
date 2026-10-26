@@ -1,0 +1,23 @@
+# Active ETRA religion groups used by custom faiths.
+
+adunan = {
+	color = color_hindu
+	convert_slaves_at_start = no
+	allow_slaves_of_same_group = no
+}
+
+folk_adunan = {
+	color = map_votian
+	convert_slaves_at_start = no
+	modifier = {
+		allow_rgo_slave_demand = yes
+	}
+}
+
+the_forgotten_ones = {
+	color = map_votian
+	convert_slaves_at_start = no
+	modifier = {
+		allow_rgo_slave_demand = yes
+	}
+}

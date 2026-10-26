@@ -1,0 +1,148 @@
+# Small aspect hooks for ETRA faiths (folk/Norse-style, not a reformation pack).
+
+# Imperial Creeds
+creed_of_the_undying_axis = {
+	icon = religious_aspect_folk_purple
+	religion = imperial_creeds
+
+	modifier = {
+		monthly_legitimacy = 0.05
+		stability_cost_efficiency = 0.1
+	}
+}
+
+creed_of_apokatastasis_memory = {
+	icon = religious_aspect_folk_white
+	religion = imperial_creeds
+
+	modifier = {
+		global_max_literacy = 5
+		monthly_religious_influence = 0.05
+	}
+}
+
+# Eternal Truth
+doctrine_of_the_many_and_one = {
+	icon = religious_aspect_folk_yellow
+	religion = manyfold
+
+	modifier = {
+		tolerance_heretic = 1
+		global_clergy_max_literacy = 10
+	}
+}
+
+commonweal_patronage_canon = {
+	icon = religious_aspect_folk_blue
+	religion = manyfold
+
+	modifier = {
+		stability_investment = small_stability_investment
+		clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+	}
+}
+
+# Tajjevi Rites
+rite_of_the_bound_sword = {
+	icon = religious_aspect_folk_red
+	religion = tajjev_rites
+
+	modifier = {
+		land_morale_modifier = 0.05
+		monthly_army_tradition = 0.05
+	}
+}
+
+rite_of_the_separated_flame = {
+	icon = religious_aspect_folk_orange
+	religion = tajjev_rites
+
+	modifier = {
+		global_pop_conversion_speed_modifier = 0.1
+		tolerance_heathen = -1
+	}
+}
+
+# Ebony Web
+aspect_of_the_great_weaver = {
+	icon = religious_aspect_folk_black
+	religion = spider_cult_religion
+
+	modifier = {
+		spy_network_construction = 0.1
+		prestige_from_land_battle = 0.05
+	}
+}
+
+aspect_of_patient_hunger = {
+	icon = religious_aspect_folk_purple
+	religion = spider_cult_religion
+
+	modifier = {
+		global_hostile_attrition = 0.25
+		retreat_delay = -5
+	}
+}
+
+# Green Pact
+pact_of_living_wood = {
+	icon = religious_aspect_folk_green
+	religion = green_pact_religion
+
+	modifier = {
+		global_monthly_food_modifier = monthly_food_productivity_weak_bonus
+		global_defensive = 0.1
+	}
+}
+
+pact_of_wild_oaths = {
+	icon = religious_aspect_folk_brown
+	religion = green_pact_religion
+
+	modifier = {
+		land_morale_modifier = 0.05
+		global_pop_food_consumption = -0.05
+	}
+}
+
+# Maw of Ur-Khal
+vow_of_the_open_maw = {
+	icon = religious_aspect_folk_red
+	religion = maw_of_ur_khal
+
+	modifier = {
+		global_hostile_attrition = 0.25
+		expand_rgo_mining_cost_modifier = -0.025
+	}
+}
+
+vow_of_returned_stone = {
+	icon = religious_aspect_folk_brown
+	religion = maw_of_ur_khal
+
+	modifier = {
+		global_defensive = 0.15
+		stability_cost_efficiency = 0.1
+	}
+}
+
+# Pyrrhakic
+aspect_of_pyrrhakos_sky = {
+	icon = religious_aspect_folk_blue
+	religion = faith_saurethii
+
+	modifier = {
+		army_light_cavalry_power = 0.05
+		monthly_legitimacy = 0.05
+	}
+}
+
+aspect_of_returning_ancestors = {
+	icon = religious_aspect_folk_white
+	religion = faith_saurethii
+
+	modifier = {
+		cultural_tradition_modifier = 0.15
+		global_population_growth = 0.0001
+	}
+}
