@@ -2631,10 +2631,10 @@ A411 = { # Archonia
 	culture_definition = archonian_culture
 	religion_definition = manyfold
 }
-A412 = { # Roman Undead Pirates
+A412 = { # Imperator of the Deep — Taken Fleet island
 	color = rgb { 22 117 178 }
-	culture_definition = novus_moran_culture
-	religion_definition = manyfold
+	culture_definition = hyriovari_culture
+	religion_definition = imperial_creeds
 }
 A413 = { # Tieflings
 	color = rgb { 125 10 10 }
