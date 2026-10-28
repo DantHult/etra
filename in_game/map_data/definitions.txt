@@ -1456,13 +1456,21 @@ asia = {
 								
 			}
 			astivan_area = {
-				astivan_area_prov_1 = {
-					etra2171 etra2203 etra2249 etra2160 etra2218 etra2164 etra2229 etra2251 etra2255 etra2177 etra2170 etra2252 etra2207 
-					etra2195 etra2241 etra2216 etra2190 etra2184 etra2169 etra2161 etra2256 etra2253 etra2186 etra2165 etra2191
-				}
+					astivan_prov_2 = { etra2203 etra2249 etra2191 etra2171 }
+					astivan_prov_3 = { etra2251 etra2255 etra2229 etra2164 }
+					astivan_prov_4 = { etra2160 etra2218 }
+					astivan_prov_5 = { etra2170 etra2177 etra2252 }
+					astivan_prov_6 = { etra2207 etra2195 etra2241 }
+					astivan_prov_7 = { etra2216 etra2190 etra2184 etra2169 }
+					astivan_prov_8 = { etra2161 etra2256 etra2253 etra2186 etra2165 } 
+					astivan_prov_1 = { etra2171  }
 			}
 			goron_area = {
-				goron_prov_1 = { etra2205 etra2257 etra2244 etra2166 etra2217 etra2175 etra2212 etra2181 etra2223 etra2215 etra2225 etra2231 etra2214 etra2167 etra2206 etra2250 etra2242 etra2230 etra2189 etra2222 etra2183 etra2168 etra2224 etra2235 etra2187 etra2188 etra2201
+				goron_prov_2 = { etra2205 etra2167 etra2242 etra2214 etra2231 etra1044 }
+				goron_prov_3 = { etra2166 etra2217 etra2212 etra2175 }
+				goron_prov_4 = { etra2236 etra2224 etra2168 etra2183 }
+				goron_prov_5 = { etra2257 etra2230 etra2222 etra2244 }
+				goron_prov_1 = {  etra2257 etra2244 etra2166 etra2217 etra2175 etra2212 etra2181 etra2223 etra2215 etra2225   etra2206 etra2250  etra2230 etra2189 etra2222 etra2183 etra2168 etra2224 etra2235 etra2187 etra2188 etra2201
 				}
 				astanu_area_1_prov_27 = { etra1982 etra1994 etra2048 adune109 etra2043 }
 			}

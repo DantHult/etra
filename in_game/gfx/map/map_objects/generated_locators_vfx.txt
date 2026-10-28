@@ -5,7 +5,7 @@ game_object_locator={
 	generated_content=no
 	disable_transform_packing=no
 	disable_instance_clearing=no
-	layer=""
+	layer="vfx_layer"
 	instances={
 		{
 			id=aita44
