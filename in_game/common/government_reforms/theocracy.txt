@@ -1,4 +1,4 @@
-﻿military_order_reform = {
+military_order_reform = {
 	age = age_1_traditions
 	government = theocracy
 	major = yes
@@ -14,7 +14,7 @@
 
 	
 	country_modifier = {
-		allow_military_order_units = yes
+		can_recruit_crusader_regiments = yes
 		clergy_estate_allowed_leading_military = yes
 		clergy_estate_blocked_from_leading_military = no
 		monthly_towards_offensive = societal_value_monthly_move

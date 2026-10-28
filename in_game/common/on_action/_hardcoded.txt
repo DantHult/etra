@@ -1,4 +1,4 @@
-ï»¿on_game_start = {
+on_game_start = {
 	effect = {
 		setup_area_preferences = yes
 		hidden_effect = {
@@ -3220,7 +3220,7 @@ on_dependency_gained = {
 				second = root
 			}
 		}
-		# HRE member falls under a non-Christian overlord â€” notify the Emperor
+		# HRE member falls under a non-Christian overlord — notify the Emperor
 		if = {
 			limit = {
 				is_member_of_international_organization = international_organization:hre
@@ -5184,8 +5184,6 @@ on_cabinet_assigned = {
 							mode = replace
 						}
 					}
-
-					add_complacency = complacency_weak_penalty
 				}
 			}
 		}
@@ -5795,4 +5793,198 @@ on_transfer_subject = {
 #root = actor, scope:recipient = country actor broke the truce with, scope:war = war that broke the truce
 on_truce_broken = {
 
+}
+
+###############################################################################
+# EU5 1.4.0–1.4.2 compat: on_actions present in vanilla _hardcoded.txt but
+# missing from this ETRA override. Stubs keep hooks registered; Earth-only
+# flavor event lists omitted intentionally (TC).
+###############################################################################
+
+# Fires after lobby when a game has started
+on_game_started_after_lobby = {
+}
+
+# root = original country which gets targeted by the revolt, scope:target = rebel country which declares the war, scope:war = the revolt, scope:rebel is the rebel
+on_revolt_start = {
+}
+
+# root = building
+on_building_construction_started = {
+}
+
+# root = building
+on_building_construction_ended = {
+}
+
+# root = building
+on_building_built = {
+}
+
+# root = building
+on_building_destroyed = {
+}
+
+# root = country, scope:from = location, scope:to = location, scope:road_type = road_type
+on_road_construction_started = {
+}
+
+# root = country, scope:from = location, scope:to = location, scope:road_type = road_type
+on_road_construction_ended = {
+}
+
+# root = country, scope:from = location, scope:to = location, scope:road_type = road_type
+on_road_built = {
+}
+
+# root = country; scope:old_ruler is the one who died, fires at the next daily tick
+# Earth flavor events omitted; keep generic succession / union / horde hooks.
+on_ruler_death_delayed = {
+	effect = {
+		if = {
+			limit = {
+				has_heir = no
+				OR = {
+					scope:old_ruler = { has_dynasty = no }
+					ruler ?= {
+						OR = {
+							has_dynasty = no
+							NOT = { dynasty = scope:old_ruler.dynasty }
+						}
+					}
+					AND = {
+						has_regent = yes
+						OR = {
+							has_heir = no
+							heir ?= {
+								OR = {
+									has_dynasty = no
+									NOT = { dynasty = scope:old_ruler.dynasty }
+								}
+							}
+						}
+					}
+				}
+				OR = {
+					AND = {
+						succession_law = heir_selection:union_of_crowns_succession
+						any_known_country = {
+							succession_law = heir_selection:union_of_crowns_succession
+							has_mutual_scripted_relation = { target = prev type = relation_type:union_of_crowns_pact }
+						}
+					}
+					AND = {
+						has_dlc = "d009_across_the_pillars"
+						succession_law = heir_selection:iberian_union_succession
+						any_known_country = {
+							succession_law = heir_selection:iberian_union_succession
+							has_mutual_scripted_relation = { target = prev type = relation_type:iberian_wedding_pact }
+						}
+					}
+				}
+			}
+			trigger_event_non_silently = {
+				id = succession.101
+			}
+		}
+		if = {
+			limit = {
+				government_type = government_type:steppe_horde
+				modifier:horde_unity_hit_at_ruler_death < 0
+			}
+			add_horde_unity = root.modifier:horde_unity_hit_at_ruler_death
+		}
+		if = {
+			limit = {
+				is_in_union = yes
+				union ?= {
+					international_organization_has_leader = yes
+					leader_country ?= { this = root }
+				}
+			}
+			union = {
+				every_international_organization_member = {
+					trigger_event_silently = unionevents.98
+				}
+			}
+		}
+	}
+}
+
+# root = location, new_rank = location_rank, actor = country
+on_pre_location_changed_rank = {
+}
+
+# root = primary character being betrothed, scope:target = secondary character being betrothed
+on_character_betrothal = {
+}
+
+# root = primary character whose betrothal is broken, scope:target = secondary character
+on_character_betrothal_broken = {
+}
+
+# root = character who died, breaking the betrothal, scope:target = surviving betrothed character
+on_character_betrothal_broken_by_death = {
+}
+
+# root = primary character, scope:target = secondary character. Both are adults at confirmation.
+on_character_betrothal_confirmed = {
+}
+
+# root = character, scope:old_religion = old religion
+on_character_changed_religion = {
+	effect = {
+		if = {
+			limit = {
+				is_religious_figure = yes
+				religious_figure = religious_figure:cardinal
+				religion != religion:catholic
+			}
+			remove_cardinal_variables = yes
+			location = {
+				if = {
+					limit = {
+						has_building = building_type:seat_of_cardinal
+					}
+					set_up_cardinal = yes
+				}
+			}
+		}
+	}
+}
+
+# root, scope:actor = sender, scope:recipient = recipient, scope:war = war
+on_unconditional_surrender = {
+}
+
+# root, scope:actor = country arranging the marriage, scope:recipient = character of scope:actor who gets married, scope:target = the noble they are married to
+on_noble_marriage = {
+	effect = {
+		if = {
+			limit = {
+				scope:actor ?= {
+					NOT = { has_estate_privilege = estate_privilege:noble_marriage_rights }
+					NOR = {
+						government_type = government_type:tribe
+						government_type = government_type:steppe_horde
+					}
+				}
+			}
+			scope:actor = {
+				add_legitimacy = legitimacy_mild_penalty
+			}
+		}
+
+		if = {
+			limit = {
+				scope:target = { modifier:marriage_desirability < 0 }
+			}
+			scope:actor = {
+				add_prestige = {
+					value = scope:target.modifier:marriage_desirability
+					multiply = 0.5
+				}
+			}
+		}
+	}
 }
