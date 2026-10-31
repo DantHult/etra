@@ -6583,6 +6583,7 @@ countries = {
 				etra145 etra787 etra140 etra144 etra137 etra141 etra770 etra146 etra147 etra151 etra155 etra721 etra722 etra152
 				 etra142 aita117 aita115 aita118 etra524 etra506 				etra508 etra513 etra154 etra735 etra953 etra954
 				etra776 etra734 etra769 etra701 etra730 etra732 etra736 etra731 etra708 etra733 etra709  etra720   etra726 etra727 etra951 etra728 etra729 etra857
+				 etra2135 etra2158 etra2014 etra2071 etra2003 etra2002 etra1903 etra2077 etra1948 etra1986 etra2064 etra2040 etra1953 etra2001
 			}
 			starting_technology_level = 3
 			include = "expl_western_aduna"
@@ -7991,7 +7992,7 @@ countries = {
 				etra2089 etra1997 etra1999 etra2025 etra2095 etra2087 etra1992 etra1990 etra2006 etra2010 etra2051 etra2080
 				etra2019 etra2073 etra1996 etra2104 etra2024  etra1893 etra2022 etra1895 etra2021 etra2045 etra2056 etra1945
 				etra2053 etra2054 etra2079 etra2099 etra1946 etra1896 etra1943 etra2069 etra2094 etra2106 etra1887 etra2063 etra1978 etra2067 etra2038 etra1073 etra1985 etra2034 etra2015 etra2074 etra1974 etra1964 etra1944 etra1942 etra1932 etra1941 etra2066 etra1963 etra1966 etra1973 etra1968  etra1975  etra1970 etra1967 etra1965 etra1962 etra2011 etra1972 etra1952 etra2075 etra1860 etra1931 etra2081 etra1865 etra1930 etra1936  etra2159 etra2075 etra1860 etra2081 etra1931 etea1930 etra1941 etra1942 etra1936 etra1865 etra1930 	etra1878 etra2145 etra2146 etra1976 etra2072 etra1959 etra1928 etra2042 etra1969 etra2131 etra2026 etra2102 etra2083 etra1982 etra2048 etra1994 etra2043 adune109 etra2257 etra2230 etra2242 etra2189 etra2231 etra2214 etra2167
-				etra2205 etra2206 etra2250 etra2225 etra2201 etra2215 etra2223 etra2181 etra2175 etra2212 etra2235 etra2224 etra2187 etra2188 etra2168 etra2217 etra2166 etra2244 etra2183 etra2222
+				etra2205 etra2206 etra2250 etra2225 etra2201 etra2215 etra2223 etra2181 etra2175 etra2212 etra2235 etra2224 etra2187 etra2188 etra2168 etra2217 etra2166 etra2244 etra2183 etra2222 etra2171
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8091,7 +8092,7 @@ countries = {
 			country_rank = rank_kingdom
 		}
 		A421 = { # Placeholder
-			own_control_core = { etra2172 etra2248 etra2232 etra2198 etra2228 etra2208 etra2247 etra2180 etra2246 etra2174 etra2234 etra2254 etra2192 etra2220 etra2194 etra2236 etra2243 etra2238 etra2227 etra2237 etra2219 etra2179
+			own_control_core = { etra2172 etra2248 etra2232 etra2198 etra2228 etra2208 etra2247 etra2180 etra2246 etra2174 etra2234 etra2254 etra2192 etra2220 etra2194 etra2236 etra2243 etra2238 etra2227 etra2237 etra2219 etra2179 etra2258 etra2211
 
 			}
 			include = "expl_western_aduna"

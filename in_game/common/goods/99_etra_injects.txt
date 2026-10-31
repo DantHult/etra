@@ -1,0 +1,135 @@
+﻿TRY_REPLACE:cocoa = {
+	method = farming
+	category = raw_material
+	color = goods_cocoa
+	default_market_price = 4
+	ai_rgo_size_importance = 5
+
+	location_potential = {
+		NOR = {
+			vegetation = desert
+			vegetation = sparse
+			vegetation = grasslands
+		}
+		area = {
+			is_area_sea = no
+		}
+		NOR = {
+			topography = atoll
+			topography = wetlands
+		}
+		OR = {
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+		}
+		NOR = {
+			# region = region:bengal_region
+			# region = region:western_india_region
+			# # area = area:mozambique_area
+			# # area = area:ruvuma_lurio_area
+			# # area = area:gondwana_area
+			# # area = area:andhra_area
+			# # area = area:telingana_area
+			# # area = area:vidarbha_area
+			# # area = area:maharashtra_area
+			# # area = area:konkan_area
+			# # area = area:lower_mekong_area
+			# # area = area:northern_tai_highland_area
+			# # area = area:champa_area
+			# # area = area:arakhan_area
+			# # area = area:irrawady_area
+			# # area = area:shan_highland_area
+			# # area = area:kachin_area
+			# # area = area:mayaab_area
+			# # area = area:puuk_area
+			# # area = area:chactemal_area
+		}
+	}
+	demand_add = {
+		nobles = 0.1
+		burghers = 0.01
+		clergy = 0.01
+	}
+
+	wealth_impact_threshold = {
+		all = 0.75
+	}
+
+	origin_in_new_world = yes
+	custom_tags = { new_world_goods }
+
+}
+
+TRY_REPLACE:tobacco = {
+	method = farming
+	category = raw_material
+	color = goods_tobacco
+	default_market_price = 3
+	ai_rgo_size_importance = 5
+
+	location_potential = {
+		NOT = {vegetation = desert }
+		OR = {
+			topography = flatland
+			topography = hills
+		}
+		OR = {					
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+		}
+		NOR = {
+			# region = region:scandinavian_region
+			# region = region:north_atlantic_islands_region
+			# region = region:great_britain_region
+			# region = region:ireland_region
+			# region = region:ruthenia_region
+			# region = region:steppes_region
+			# region = region:russian_region
+			# region = region:ural_region
+			# region = region:mongolia_region
+			# region = region:kongo_region
+			# region = region:ethiopia_region
+			# region = region:nubia_region
+			# region = region:somalia_region
+			# region = region:madagascar_region
+			# region = region:southern_africa_islands_region
+			# region = region:sahel_region
+			# region = region:canada_region
+			# area = area:new_hampshire_area
+			# area = area:southern_new_england_area
+			# area = area:maine_area
+			# area = area:hudson_area
+			# area = area:haudenosaunee_area
+			# area = area:westsylvania_area
+			# area = area:maryland_area
+			# area = area:west_virginia_area
+			# area = area:ohio_area
+			# area = area:indiana_area
+			# area = area:michigan_area
+			# area = area:illinois_area
+			# area = area:wisconsin_area
+			# area = area:alabama_area
+			# area = area:mississippi_area
+			# region = region:west_coast_region
+			# region = region:great_plains_region
+			# region = region:alaska_region
+			# region = region:brazil_region
+			# region = region:chaco_region
+			# region = region:australia_region
+			# region = region:new_zealand_region
+		}
+	}
+
+	demand_add = {
+		nobles = 0.05
+		burghers = 0.005
+		clergy = 0.005
+	}
+
+	origin_in_new_world = yes
+	custom_tags = { new_world_goods }
+}
