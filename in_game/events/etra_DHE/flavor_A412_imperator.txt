@@ -1,0 +1,1056 @@
+namespace = flavor_A412
+
+# =============================================================================
+# Opening court (C01.1) — introduces factions / barge identity
+# =============================================================================
+flavor_A412.1 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.1.title
+	desc = flavor_A412.1.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A412
+		from = 1337.1.1
+		to = 1338.6.1
+		monthly_chance = 80
+	}
+	trigger = {
+		a412_pack_active_trigger = yes
+		NOT = { has_variable = a412_opening_done }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:clergy_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+		location:etra1938 = { save_scope_as = target_location }
+		set_variable = { name = a412_opening_done value = 1 }
+	}
+	option = {
+		name = flavor_A412.1.a
+		historical_option = yes
+		a412_favor_admiralty_effect = { VALUE = 5 }
+		add_prestige = prestige_weak_bonus
+		custom_tooltip = flavor_A412.1.a.tt
+	}
+}
+
+# =============================================================================
+# C01.2 — Subject-admiral offer (refuse only for player)
+# =============================================================================
+flavor_A412.12 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.12.title
+	desc = flavor_A412.12.desc
+	fire_only_once = no
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A412
+		from = 1337.4.1
+		to = 1340.1.1
+		monthly_chance = 18
+	}
+	trigger = {
+		a412_ch1_active_trigger = yes
+		exists = c:A01
+		NOT = { is_at_war_with = c:A01 }
+		NOT = { has_variable = a412_subject_admiral_refused }
+		NOT = { has_variable = a412_subject_admiral_stalled }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:A01 = { save_scope_as = target_country }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.12.a
+		historical_option = yes
+		set_variable = { name = a412_subject_admiral_refused value = 1 }
+		add_prestige = prestige_mild_bonus
+		a412_favor_admiralty_effect = { VALUE = 8 }
+		a412_favor_covenant_effect = { VALUE = 5 }
+		a412_favor_senate_effect = { VALUE = -3 }
+		if = {
+			limit = { exists = c:A01 }
+			add_opinion = { modifier = a412_subject_admiral_refused target = c:A01 }
+			c:A01 = { add_opinion = { modifier = a412_subject_admiral_refused target = c:A412 } }
+		}
+	}
+	option = {
+		name = flavor_A412.12.b
+		set_variable = { name = a412_subject_admiral_refused value = 1 }
+		add_prestige = prestige_weak_bonus
+		a412_favor_senate_effect = { VALUE = 5 }
+		if = {
+			limit = { exists = c:A01 }
+			add_opinion = { modifier = a412_subject_admiral_refused target = c:A01 }
+			c:A01 = { add_opinion = { modifier = a412_subject_admiral_refused target = c:A412 } }
+		}
+	}
+	option = {
+		name = flavor_A412.12.c
+		set_variable = { name = a412_subject_admiral_stalled value = 1 months = 3 }
+		add_stability = stability_weak_penalty
+		a412_favor_senate_effect = { VALUE = 3 }
+		a412_favor_covenant_effect = { VALUE = -3 }
+		after = {
+			trigger_event_silently = { id = flavor_A412.12 months = 3 }
+		}
+	}
+}
+
+# =============================================================================
+# C01.3 — Covenant urges Ritual I
+# =============================================================================
+flavor_A412.13 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.13.title
+	desc = flavor_A412.13.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A412
+		from = 1337.6.1
+		to = 1342.1.1
+		monthly_chance = 14
+	}
+	trigger = {
+		a412_ch1_active_trigger = yes
+		OR = {
+			has_variable = a412_subject_admiral_refused
+			has_variable = a412_opening_done
+		}
+		NOT = { has_variable = a412_ritual_i_started }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.13.a
+		historical_option = yes
+		set_variable = { name = a412_ritual_i_urged value = 1 }
+		a412_favor_covenant_effect = { VALUE = 8 }
+		a412_favor_senate_effect = { VALUE = -2 }
+		custom_tooltip = flavor_A412.13.a.tt
+	}
+	option = {
+		name = flavor_A412.13.b
+		a412_favor_senate_effect = { VALUE = 6 }
+		a412_favor_covenant_effect = { VALUE = -6 }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+# =============================================================================
+# C01.4 — Ritual I underway (from D01)
+# =============================================================================
+flavor_A412.14 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.14.title
+	desc = flavor_A412.14.desc
+	fire_only_once = no
+	outcome = neutral
+	trigger = {
+		a412_ch1_active_trigger = yes
+		has_variable = a412_ritual_i_started
+		NOT = { has_variable = a412_ritual_i_done }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:nobles_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+		location:etra1938 = { save_scope_as = target_location }
+	}
+	option = {
+		name = flavor_A412.14.a
+		historical_option = yes
+		add_gold = { value = -40 }
+		add_sailors = { value = root.monthly_sailors multiply = -2 }
+		a412_favor_covenant_effect = { VALUE = 5 }
+		change_variable = { name = a412_ritual_i_progress add = 2 }
+		if = {
+			limit = { var:a412_ritual_i_progress >= 2 }
+			trigger_event_non_silently = flavor_A412.15
+		}
+		else = {
+			trigger_event_silently = { id = flavor_A412.14 months = 4 }
+		}
+	}
+	option = {
+		name = flavor_A412.14.b
+		add_gold = { value = -25 }
+		a412_favor_admiralty_effect = { VALUE = 5 }
+		a412_add_notoriety_effect = { VALUE = 3 }
+		change_variable = { name = a412_ritual_i_progress add = 1 }
+		if = {
+			limit = { var:a412_ritual_i_progress >= 2 }
+			trigger_event_non_silently = flavor_A412.15
+		}
+		else = {
+			trigger_event_silently = { id = flavor_A412.14 months = 5 }
+		}
+	}
+	option = {
+		name = flavor_A412.14.c
+		a412_favor_senate_effect = { VALUE = 5 }
+		a412_favor_covenant_effect = { VALUE = -4 }
+		trigger_event_silently = { id = flavor_A412.14 months = 8 }
+	}
+}
+
+# =============================================================================
+# C01.5 — Ritual I climax (HARD GATE → CH2)
+# =============================================================================
+flavor_A412.15 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.15.title
+	desc = flavor_A412.15.desc
+	fire_only_once = yes
+	outcome = positive
+	trigger = {
+		a412_ch1_active_trigger = yes
+		has_variable = a412_ritual_i_started
+		NOT = { has_variable = a412_ritual_i_done }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+		ruler_or_regent = { save_scope_as = target_character }
+		location:etra1938 = { save_scope_as = target_location }
+	}
+	option = {
+		name = flavor_A412.15.a
+		historical_option = yes
+		a412_unlock_ch2_effect = yes
+		a412_favor_covenant_effect = { VALUE = 12 }
+		a412_add_notoriety_effect = { VALUE = 10 }
+		add_prestige = prestige_mild_bonus
+		trigger_event_non_silently = flavor_A412.20
+	}
+}
+
+# Soft debt path if ritual starved (never soft-locks HARD gate)
+flavor_A412.16 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.16.title
+	desc = flavor_A412.16.desc
+	fire_only_once = yes
+	outcome = negative
+	dynamic_historical_event = {
+		tag = A412
+		from = 1339.1.1
+		to = 1350.1.1
+		monthly_chance = 6
+	}
+	trigger = {
+		a412_ch1_active_trigger = yes
+		has_variable = a412_ritual_i_started
+		NOT = { has_variable = a412_ritual_i_done }
+		gold < 20
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.16.a
+		add_stability = stability_weak_penalty
+		a412_favor_senate_effect = { VALUE = -3 }
+		custom_tooltip = flavor_A412.16.a.tt
+	}
+}
+
+# =============================================================================
+# C02 — Inner Sea Terror
+# =============================================================================
+flavor_A412.20 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.20.title
+	desc = flavor_A412.20.desc
+	fire_only_once = yes
+	outcome = positive
+	trigger = {
+		a412_ch2_active_trigger = yes
+		NOT = { has_variable = a412_terror_declared }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		set_variable = { name = a412_terror_declared value = 1 }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.20.a
+		historical_option = yes
+		a412_favor_admiralty_effect = { VALUE = 8 }
+		a412_add_notoriety_effect = { VALUE = 5 }
+		custom_tooltip = flavor_A412.20.a.tt
+	}
+}
+
+# C02.2 haven beat (from D03)
+flavor_A412.22 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.22.title
+	desc = flavor_A412.22.desc
+	fire_only_once = yes
+	outcome = positive
+	trigger = {
+		a412_ch2_active_trigger = yes
+		has_variable = a412_havens_raised
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+		location:etra1938 = { save_scope_as = target_location }
+	}
+	option = {
+		name = flavor_A412.22.a
+		historical_option = yes
+		add_prestige = prestige_weak_bonus
+		a412_favor_admiralty_effect = { VALUE = 5 }
+	}
+}
+
+# C02.3 Ritual II offer (A02)
+flavor_A412.23 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.23.title
+	desc = flavor_A412.23.desc
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = A412
+		from = 1338.1.1
+		to = 1360.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		a412_ch2_active_trigger = yes
+		has_variable = a412_terror_declared
+		NOT = { has_variable = a412_ritual_ii_done }
+		NOT = { has_variable = a412_ritual_ii_started }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.23.a
+		historical_option = yes
+		trigger = { gold >= 80 }
+		add_gold = { value = -80 }
+		add_sailors = { value = root.monthly_sailors multiply = -4 }
+		set_variable = { name = a412_ritual_ii_started value = 1 }
+		a412_favor_covenant_effect = { VALUE = 6 }
+		a412_favor_admiralty_effect = { VALUE = -2 }
+		trigger_event_silently = { id = flavor_A412.24 months = 6 }
+	}
+	option = {
+		name = flavor_A412.23.b
+		a412_favor_senate_effect = { VALUE = 4 }
+		a412_favor_covenant_effect = { VALUE = -4 }
+	}
+}
+
+# C02.4 Ritual II climax (A02)
+flavor_A412.24 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.24.title
+	desc = flavor_A412.24.desc
+	fire_only_once = yes
+	outcome = positive
+	trigger = {
+		a412_ch2_active_trigger = yes
+		has_variable = a412_ritual_ii_started
+		NOT = { has_variable = a412_ritual_ii_done }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.24.a
+		historical_option = yes
+		set_variable = { name = a412_ritual_ii_done value = 1 }
+		add_country_modifier = {
+			modifier = a412_ritual_ii_blessing
+			years = -1
+			mode = replace
+		}
+		a412_favor_covenant_effect = { VALUE = 8 }
+		a412_add_notoriety_effect = { VALUE = 8 }
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+# C02.5 Notoriety threshold → unlock provocation (A03)
+flavor_A412.25 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.25.title
+	desc = flavor_A412.25.desc
+	fire_only_once = yes
+	outcome = neutral
+	trigger = {
+		a412_ch2_active_trigger = yes
+		has_variable = a412_notoriety_threshold
+		NOT = { has_variable = a412_threshold_announced }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		set_variable = { name = a412_threshold_announced value = 1 }
+		ruler_or_regent = { save_scope_as = target_character }
+		if = {
+			limit = { exists = c:A01 }
+			c:A01 = { save_scope_as = target_country }
+		}
+	}
+	option = {
+		name = flavor_A412.25.a
+		historical_option = yes
+		a412_favor_admiralty_effect = { VALUE = 6 }
+		custom_tooltip = flavor_A412.25.a.tt
+	}
+	option = {
+		name = flavor_A412.25.b
+		a412_favor_covenant_effect = { VALUE = 6 }
+		custom_tooltip = flavor_A412.25.a.tt
+	}
+	option = {
+		name = flavor_A412.25.c
+		a412_favor_senate_effect = { VALUE = 6 }
+		custom_tooltip = flavor_A412.25.a.tt
+	}
+}
+
+# =============================================================================
+# C03 — Moran provocation
+# =============================================================================
+flavor_A412.30 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.30.title
+	desc = flavor_A412.30.desc
+	fire_only_once = yes
+	outcome = negative
+	trigger = {
+		a412_pack_active_trigger = yes
+		has_variable = a412_provoke_active
+		NOT = { has_variable = a412_provoke_announced }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		set_variable = { name = a412_provoke_announced value = 1 }
+		ruler_or_regent = { save_scope_as = target_character }
+		if = {
+			limit = { exists = c:A01 }
+			c:A01 = { save_scope_as = target_country }
+		}
+	}
+	option = {
+		name = flavor_A412.30.a
+		historical_option = yes
+		if = {
+			limit = { exists = c:A01 }
+			add_opinion = { modifier = a412_moran_provocation target = c:A01 }
+			c:A01 = { add_opinion = { modifier = a412_moran_provocation target = c:A412 } }
+		}
+		a412_favor_covenant_effect = { VALUE = 8 }
+		a412_favor_senate_effect = { VALUE = -8 }
+		a412_add_notoriety_effect = { VALUE = 10 }
+	}
+	option = {
+		name = flavor_A412.30.b
+		if = {
+			limit = { exists = c:A01 }
+			add_opinion = { modifier = a412_subject_admiral_refused target = c:A01 }
+		}
+		a412_favor_admiralty_effect = { VALUE = 6 }
+		a412_favor_senate_effect = { VALUE = -3 }
+		a412_add_notoriety_effect = { VALUE = 5 }
+		change_variable = { name = a412_provoke_years add = 1 } # milder path still counts
+	}
+}
+
+# C03.2 Moran response flavor
+flavor_A412.32 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.32.title
+	desc = flavor_A412.32.desc
+	fire_only_once = yes
+	outcome = negative
+	dynamic_historical_event = {
+		tag = A412
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		a412_pack_active_trigger = yes
+		has_variable = a412_provoke_announced
+		NOT = { has_variable = a412_provocation_survived }
+		exists = c:A01
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		c:A01 = { save_scope_as = target_country }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.32.a
+		historical_option = yes
+		add_prestige = prestige_weak_bonus
+		a412_favor_admiralty_effect = { VALUE = 4 }
+		a412_favor_senate_effect = { VALUE = -4 }
+	}
+}
+
+# C03.4 / A04 — survive provocation window (yearly pulse)
+flavor_A412.34 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.34.title
+	desc = flavor_A412.34.desc
+	fire_only_once = yes
+	outcome = positive
+	trigger = {
+		a412_pack_active_trigger = yes
+		has_variable = a412_provoke_active
+		NOT = { has_variable = a412_provocation_survived }
+		OR = {
+			var:a412_provoke_years >= 3
+			AND = {
+				has_variable = a412_provoke_announced
+				at_war = no
+				NOT = { capital = { controller != root } }
+				# white peace / cooled heat after announcement + time
+				has_variable = a412_provoke_years
+				var:a412_provoke_years >= 2
+			}
+		}
+		NOT = { capital = { controller != root } }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.34.a
+		historical_option = yes
+		set_variable = { name = a412_provocation_survived value = 1 }
+		remove_variable = a412_provoke_active
+		add_prestige = prestige_mild_bonus
+		a412_favor_covenant_effect = { VALUE = 6 }
+		custom_tooltip = flavor_A412.34.a.tt
+	}
+}
+
+# Yearly provoke year ticker (silent helper via E08 path also bumps)
+flavor_A412.35 = {
+	type = country_event
+	hidden = yes
+	trigger = {
+		tag = A412
+		has_variable = a412_provoke_active
+		NOT = { has_variable = a412_provocation_survived }
+		NOT = { has_variable = a412_pack_ended }
+	}
+	immediate = {
+		change_variable = { name = a412_provoke_years add = 1 }
+	}
+	option = {
+		name = flavor_A412.35.a
+	}
+}
+
+# =============================================================================
+# C04 — Apotheosis
+# =============================================================================
+flavor_A412.40 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.40.title
+	desc = flavor_A412.40.desc
+	fire_only_once = yes
+	outcome = neutral
+	trigger = {
+		a412_pack_active_trigger = yes
+		has_variable = a412_apotheosis_active
+		NOT = { has_variable = a412_apotheosis_claim_done }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		set_variable = { name = a412_apotheosis_claim_done value = 1 }
+		ruler_or_regent = { save_scope_as = target_character }
+		add_country_modifier = {
+			modifier = a412_sea_god_claimant
+			years = -1
+			mode = replace
+		}
+	}
+	option = {
+		name = flavor_A412.40.a
+		historical_option = yes
+		a412_favor_covenant_effect = { VALUE = 10 }
+		a412_favor_senate_effect = { VALUE = -5 }
+		after = { trigger_event_silently = { id = flavor_A412.42 months = 8 } }
+	}
+}
+
+# C04 mid-ritual sink
+flavor_A412.42 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.42.title
+	desc = flavor_A412.42.desc
+	fire_only_once = no
+	outcome = neutral
+	trigger = {
+		a412_pack_active_trigger = yes
+		has_variable = a412_apotheosis_active
+		NOT = { has_variable = a412_apotheosis_done }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+		location:etra1938 = { save_scope_as = target_location }
+	}
+	option = {
+		name = flavor_A412.42.a
+		historical_option = yes
+		trigger = {
+			gold >= 50
+			NOT = { capital = { controller != root } }
+		}
+		add_gold = { value = -50 }
+		add_sailors = { value = root.monthly_sailors multiply = -3 }
+		add_stability = stability_weak_penalty
+		change_variable = { name = a412_apotheosis_progress add = 1 }
+		a412_favor_covenant_effect = { VALUE = 4 }
+		if = {
+			limit = { var:a412_apotheosis_progress >= 2 }
+			trigger_event_non_silently = flavor_A412.43
+		}
+		else = {
+			trigger_event_silently = { id = flavor_A412.42 months = 6 }
+		}
+	}
+	option = {
+		name = flavor_A412.42.b
+		# Abort under pressure → fail path
+		trigger_event_non_silently = flavor_A412.44
+	}
+}
+
+# C04 success coda
+flavor_A412.43 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.43.title
+	desc = flavor_A412.43.desc
+	fire_only_once = yes
+	outcome = positive
+	trigger = {
+		a412_pack_active_trigger = yes
+		has_variable = a412_apotheosis_active
+		NOT = { has_variable = a412_apotheosis_done }
+		NOT = { capital = { controller != root } }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.43.a
+		historical_option = yes
+		set_variable = { name = a412_apotheosis_done value = 1 }
+		remove_variable = a412_apotheosis_active
+		add_country_modifier = {
+			modifier = a412_apotheosis_coda
+			years = -1
+			mode = replace
+		}
+		add_prestige = prestige_extreme_bonus
+		a412_favor_covenant_effect = { VALUE = 15 }
+		a412_favor_admiralty_effect = { VALUE = 8 }
+		custom_tooltip = flavor_A412.43.a.tt
+	}
+}
+
+# C04 fail — Imperator gone / pack end
+flavor_A412.44 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.44.title
+	desc = flavor_A412.44.desc
+	fire_only_once = yes
+	outcome = bad
+	trigger = {
+		tag = A412
+		has_variable = a412_apotheosis_active
+		NOT = { has_variable = a412_apotheosis_done }
+		NOT = { has_variable = a412_pack_ended }
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.44.a
+		historical_option = yes
+		a412_end_pack_effect = yes
+		add_prestige = prestige_extreme_penalty
+		add_stability = stability_mild_penalty
+		custom_tooltip = flavor_A412.44.a.tt
+	}
+}
+
+# Capital occupied during apotheosis → fail
+flavor_A412.45 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.44.title
+	desc = flavor_A412.44.desc
+	fire_only_once = yes
+	outcome = bad
+	dynamic_historical_event = {
+		tag = A412
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 40
+	}
+	trigger = {
+		tag = A412
+		has_variable = a412_apotheosis_active
+		NOT = { has_variable = a412_pack_ended }
+		capital = { controller != root }
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.44.a
+		a412_end_pack_effect = yes
+		add_prestige = prestige_extreme_penalty
+		custom_tooltip = flavor_A412.44.a.tt
+	}
+}
+
+# =============================================================================
+# Standalone Essential events
+# =============================================================================
+
+# E01 Island extort (from D02)
+flavor_A412.50 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.50.title
+	desc = flavor_A412.50.desc
+	fire_only_once = no
+	outcome = neutral
+	trigger = {
+		a412_pack_active_trigger = yes
+		owns = location:etra1938
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		location:etra1938 = { save_scope_as = target_location }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.50.a
+		historical_option = yes
+		add_gold = { value = 60 }
+		add_stability = stability_weak_penalty
+		a412_favor_admiralty_effect = { VALUE = 4 }
+		a412_add_notoriety_effect = { VALUE = 2 }
+		random = {
+			chance = 35
+			add_country_modifier = {
+				modifier = a412_extortion_fatigue
+				years = 5
+				mode = add_and_extend
+			}
+		}
+	}
+	option = {
+		name = flavor_A412.50.b
+		add_gold = { value = 30 }
+		a412_favor_senate_effect = { VALUE = 4 }
+		a412_add_notoriety_effect = { VALUE = 1 }
+	}
+	option = {
+		name = flavor_A412.50.c
+		a412_favor_covenant_effect = { VALUE = -3 }
+		a412_favor_admiralty_effect = { VALUE = -3 }
+		add_prestige = prestige_weak_penalty
+	}
+}
+
+# E02 Prize fleet
+flavor_A412.51 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.51.title
+	desc = flavor_A412.51.desc
+	fire_only_once = no
+	outcome = positive
+	dynamic_historical_event = {
+		tag = A412
+		from = 1338.1.1
+		to = 9999.1.1
+		monthly_chance = 6
+	}
+	trigger = {
+		a412_ch2_active_trigger = yes
+		NOT = { has_variable = a412_pack_ended }
+		navy_size > 0
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.51.a
+		historical_option = yes
+		add_gold = { value = 45 }
+		add_sailors = { value = root.monthly_sailors multiply = 2 }
+		a412_add_notoriety_effect = { VALUE = 4 }
+		a412_favor_admiralty_effect = { VALUE = 4 }
+	}
+	option = {
+		name = flavor_A412.51.b
+		add_gold = { value = 25 }
+		a412_favor_admiralty_effect = { VALUE = 8 }
+		a412_add_notoriety_effect = { VALUE = 3 }
+		custom_tooltip = flavor_A412.51.b.tt
+	}
+	option = {
+		name = flavor_A412.51.c
+		add_gold = { value = 35 }
+		a412_add_notoriety_effect = { VALUE = 2 }
+	}
+}
+
+# E08 Moran watches
+flavor_A412.58 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.58.title
+	desc = flavor_A412.58.desc
+	fire_only_once = no
+	outcome = neutral
+	trigger = {
+		a412_pack_active_trigger = yes
+		exists = c:A01
+		NOT = { is_at_war_with = c:A01 }
+		NOT = { has_variable = a412_provocation_survived }
+		OR = {
+			has_variable = a412_ch1
+			has_variable = a412_ch2
+		}
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		c:A01 = { save_scope_as = target_country }
+		ruler_or_regent = { save_scope_as = target_character }
+		if = {
+			limit = { has_variable = a412_provoke_active }
+			change_variable = { name = a412_provoke_years add = 1 }
+		}
+	}
+	option = {
+		name = flavor_A412.58.a
+		historical_option = yes
+		add_prestige = prestige_weak_bonus
+		a412_favor_senate_effect = { VALUE = -2 }
+		a412_favor_admiralty_effect = { VALUE = 2 }
+	}
+}
+
+# E10 Too peaceful
+flavor_A412.60 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.60.title
+	desc = flavor_A412.60.desc
+	fire_only_once = no
+	outcome = negative
+	trigger = {
+		a412_ch2_active_trigger = yes
+		NOT = { has_variable = a412_notoriety_threshold }
+		OR = {
+			NOT = { has_variable = a412_notoriety }
+			var:a412_notoriety < 25
+		}
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.60.a
+		historical_option = yes
+		a412_add_notoriety_effect = { VALUE = 8 }
+		a412_favor_admiralty_effect = { VALUE = 4 }
+		add_gold = { value = 20 }
+	}
+	option = {
+		name = flavor_A412.60.b
+		add_stability = stability_weak_penalty
+		a412_favor_senate_effect = { VALUE = -4 }
+		a412_favor_covenant_effect = { VALUE = -4 }
+	}
+}
+
+# E11 Anti-piracy hammer rumor
+flavor_A412.61 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.61.title
+	desc = flavor_A412.61.desc
+	fire_only_once = no
+	outcome = neutral
+	trigger = {
+		a412_ch2_active_trigger = yes
+		OR = {
+			has_variable = a412_terror_declared
+			has_variable = a412_havens_raised
+		}
+	}
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+	immediate = {
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.61.a
+		historical_option = yes
+		a412_favor_senate_effect = { VALUE = 3 }
+		add_prestige = prestige_weak_penalty
+	}
+	option = {
+		name = flavor_A412.61.b
+		a412_favor_admiralty_effect = { VALUE = 3 }
+		a412_add_notoriety_effect = { VALUE = 2 }
+	}
+}
+
+# E14 Annexer glad he's dead (Naiha-style ownership poll)
+flavor_A412.70 = {
+	hide_portraits = yes
+	type = country_event
+	title = flavor_A412.70.title
+	desc = flavor_A412.70.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 35
+	}
+	trigger = {
+		NOT = { tag = A412 }
+		NOT = { has_variable = a412_e14_fired }
+		owns = location:etra1938
+		NOT = { country_exists = c:A412 }
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		set_variable = { name = a412_e14_fired value = 1 }
+		location:etra1938 = { save_scope_as = target_location }
+		ruler_or_regent = { save_scope_as = target_character }
+	}
+	option = {
+		name = flavor_A412.70.a
+		historical_option = yes
+		add_prestige = prestige_mild_bonus
+		add_stability = stability_weak_bonus
+		custom_tooltip = flavor_A412.70.a.tt
+	}
+}

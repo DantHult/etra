@@ -8008,14 +8008,26 @@ countries = {
 			government = { ruler = random }
 			country_rank = rank_kingdom
 		}	
-		A412 = { # Undead Pirates
-			own_control_core = { 
-					etra1925 etra1909 etra2049 etra1938 etra2108 etra2105
+		A412 = { # Imperator of the Deep — Taken Fleet
+			own_control_core = {
+				etra1925 etra1909 etra2049 etra1938 etra2108 etra2105
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			starting_technology_level = 3
+			government = {
+				ruler = random
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				reforms = { a412_deep_imperium_reform }
+				land_vs_naval = 80
+				belligerent_vs_conciliatory = -40
+				laws = {
+					piracy_law = state_piracy_policy
+				}
+			}
 			country_rank = rank_kingdom
+			capital = etra1938
 		}
 		A413 = { 
 			own_control_core = { 

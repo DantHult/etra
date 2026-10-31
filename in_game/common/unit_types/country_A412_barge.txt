@@ -1,0 +1,23 @@
+# A412 unique barge-throne (U01 / SH01). Combat + narrative asset only.
+# Barge-loss recoverable arc OMITTED per Lead sign-off.
+
+n_a412_barge_throne = {
+	is_special = yes
+	category = navy_galley
+	copy_from = n_age_1_traditions_galley
+	buildable = no
+
+	movement_speed = 2
+	cannons = 4
+	crew_size = 0.08
+	hull_size = 2
+	morale_damage_done = 0.10
+	strength_damage_taken = -0.05
+
+	country_potential = {
+		has_or_had_tag = A412
+		has_unlocked_unit_trigger = { type = n_a412_barge_throne }
+	}
+
+	gfx_tags = { mediterranean_galley_tag }
+}

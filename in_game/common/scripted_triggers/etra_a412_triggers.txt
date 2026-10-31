@@ -1,0 +1,31 @@
+a412_pack_active_trigger = {
+	tag = A412
+	NOT = { has_variable = a412_pack_ended }
+	NOT = { has_variable = a412_imperator_gone }
+}
+
+a412_ch1_active_trigger = {
+	a412_pack_active_trigger = yes
+	has_variable = a412_ch1
+	NOT = { has_variable = a412_ritual_i_done }
+}
+
+a412_ch2_active_trigger = {
+	a412_pack_active_trigger = yes
+	has_variable = a412_ritual_i_done
+	has_variable = a412_ch2
+}
+
+a412_can_provoke_trigger = {
+	a412_pack_active_trigger = yes
+	has_variable = a412_notoriety_threshold
+	NOT = { has_variable = a412_provocation_survived }
+	NOT = { has_variable = a412_provoke_active }
+}
+
+a412_can_apotheosis_trigger = {
+	a412_pack_active_trigger = yes
+	has_variable = a412_provocation_survived
+	NOT = { has_variable = a412_apotheosis_done }
+	NOT = { has_variable = a412_apotheosis_active }
+}

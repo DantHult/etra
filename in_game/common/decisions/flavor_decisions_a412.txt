@@ -1,0 +1,139 @@
+# A412 Imperator of the Deep — Essential decisions (D01–D04, D06 + D03 substitute)
+
+a412_launch_ritual_i_decision = {
+	decision_category = country_specific_decisions
+	potential = {
+		a412_ch1_active_trigger = yes
+		NOT = { has_variable = a412_ritual_i_started }
+	}
+	allow = {
+		gold >= 50
+		stability >= 0
+	}
+	only_once = yes
+	ai_will_do = { value = 80 }
+
+	option = {
+		ai_chance = { value = 100 }
+		name = a412_launch_ritual_i_decision_opt
+		effect = {
+			add_gold = { value = -50 }
+			add_sailors = { value = root.monthly_sailors multiply = -3 }
+			set_variable = { name = a412_ritual_i_started value = 1 }
+			set_variable = { name = a412_ritual_i_progress value = 0 }
+			a412_favor_covenant_effect = { VALUE = 5 }
+			trigger_event_non_silently = flavor_A412.14
+		}
+	}
+}
+
+a412_extort_island_decision = {
+	decision_category = country_specific_decisions
+	potential = {
+		a412_pack_active_trigger = yes
+	}
+	allow = {
+		owns = location:etra1938
+		NOT = { has_variable = a412_extort_cooldown }
+	}
+	ai_will_do = { value = 40 }
+
+	option = {
+		ai_chance = { value = 70 }
+		name = a412_extort_island_decision_opt
+		effect = {
+			set_variable = { name = a412_extort_cooldown value = 1 years = 3 }
+			trigger_event_non_silently = flavor_A412.50
+		}
+	}
+}
+
+a412_raise_corsair_havens_decision = {
+	decision_category = country_specific_decisions
+	potential = {
+		a412_ch2_active_trigger = yes
+		NOT = { has_variable = a412_havens_raised }
+	}
+	allow = {
+		gold >= 75
+		has_variable = a412_ritual_i_done
+	}
+	only_once = yes
+	ai_will_do = { value = 70 }
+
+	option = {
+		ai_chance = { value = 100 }
+		name = a412_raise_corsair_havens_decision_opt
+		effect = {
+			add_gold = { value = -75 }
+			set_variable = { name = a412_havens_raised value = 1 }
+			add_country_modifier = {
+				modifier = a412_corsair_havens
+				years = -1
+				mode = replace
+			}
+			a412_favor_admiralty_effect = { VALUE = 8 }
+			a412_add_notoriety_effect = { VALUE = 5 }
+			trigger_event_non_silently = flavor_A412.22
+		}
+	}
+}
+
+a412_provoke_moran_decision = {
+	decision_category = country_specific_decisions
+	potential = {
+		a412_can_provoke_trigger = yes
+		country_exists = c:A01
+	}
+	allow = {
+		exists = c:A01
+		NOT = { is_at_war_with = c:A01 }
+		stability >= 0
+	}
+	only_once = yes
+	ai_will_do = { value = 50 }
+
+	option = {
+		ai_chance = { value = 100 }
+		name = a412_provoke_moran_decision_opt
+		effect = {
+			set_variable = { name = a412_provoke_active value = 1 }
+			set_variable = { name = a412_provoke_mode value = 1 } # 1 = moran
+			set_variable = { name = a412_provoke_years value = 0 }
+			set_variable = { name = a412_ch3 value = 1 }
+			a412_favor_covenant_effect = { VALUE = 10 }
+			a412_favor_senate_effect = { VALUE = -10 }
+			a412_favor_admiralty_effect = { VALUE = 5 }
+			trigger_event_non_silently = flavor_A412.30
+		}
+	}
+}
+
+a412_begin_apotheosis_decision = {
+	decision_category = country_specific_decisions
+	potential = {
+		a412_can_apotheosis_trigger = yes
+	}
+	allow = {
+		gold >= 150
+		stability >= 0
+		owns = location:etra1938
+	}
+	only_once = yes
+	ai_will_do = { value = 60 }
+
+	option = {
+		ai_chance = { value = 100 }
+		name = a412_begin_apotheosis_decision_opt
+		effect = {
+			add_gold = { value = -150 }
+			add_sailors = { value = root.monthly_sailors multiply = -6 }
+			add_stability = stability_mild_penalty
+			set_variable = { name = a412_apotheosis_active value = 1 }
+			set_variable = { name = a412_apotheosis_progress value = 0 }
+			set_variable = { name = a412_ch4 value = 1 }
+			a412_favor_covenant_effect = { VALUE = 10 }
+			trigger_event_non_silently = flavor_A412.40
+		}
+	}
+}
