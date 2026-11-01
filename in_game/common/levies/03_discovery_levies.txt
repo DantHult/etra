@@ -85,15 +85,15 @@ levy_a_late_longbowmen = {
 	unit = a_late_longbowmen
 }
 
-# levy_a_late_gallowglass = {
-	# size = levy_generic_infantry_size
+levy_a_late_gallowglass = {
+	size = levy_generic_infantry_size
 	
 	# allow = {
 		# unit_gallowglass_pop_trigger = yes
 	# }
 	
 	# unit = a_late_gallowglass
-# }
+}
 
 # levy_a_paik = {
 	# size = levy_generic_infantry_size
@@ -122,4 +122,27 @@ levy_cavaliers = {
 	allowed_pop_type = nobles
 	
 	unit = a_cavaliers
+}
+
+# Camelry levy setups the age advances still unlock.
+levy_heavy_camelry_3 = {
+	size = levy_generic_noble_cavalry_size
+	allowed_pop_type = soldiers
+	allowed_pop_type = nobles
+	allowed_pop_type = clergy
+	allowed_pop_type = burghers
+	allow = {
+		location ?= { raw_material = goods:camels }
+	}
+	unit = a_heavy_camelry_levy_3
+}
+
+levy_light_camelry_3 = {
+	size = levy_generic_infantry_size
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allow = {
+		location ?= { raw_material = goods:camels }
+	}
+	unit = a_light_camelry_levy_3
 }

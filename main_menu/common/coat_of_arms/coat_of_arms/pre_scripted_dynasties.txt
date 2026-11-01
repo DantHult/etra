@@ -12098,12 +12098,6 @@ nogarola_dynasty = {
 	pattern = "pattern_solid.dds"
 	color1 = "white"
 	color2 = "blue"
-
-	colored_emblem = {
-		texture = "ce_bends_03_embattled_shield.dds"
-		color1 = color2
-		color2 = color2
-	}
 }
 
 normandy_dynasty = {
@@ -12517,13 +12511,6 @@ oberndorf_dynasty = {
 	pattern = "pattern_solid.dds"
 	color1 = "white"
 	color2 = "blue"
-
-	colored_emblem = {
-		texture = "ce_barruly_embattled_shield.dds"
-		color1 = color1
-		color2 = color2
-		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }			
-	}			
 }
 
 oda_dynasty = { # Oda

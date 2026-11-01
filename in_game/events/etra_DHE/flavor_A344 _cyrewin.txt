@@ -5,6 +5,7 @@ namespace = flavor_cyrewin
 # location:novgorod -> location:etra370 where applicable.
 
 flavor_cyrewin.1 = {
+	outcome = neutral
 	type = country_event
 	fire_only_once = yes
 	title = flavor_cyrewin.1.title
@@ -67,6 +68,7 @@ flavor_cyrewin.1 = {
 }
 
 flavor_cyrewin.10 = {
+	outcome = neutral
 	type = country_event
 	fire_only_once = yes
 	title = flavor_cyrewin.10.title
@@ -128,6 +130,7 @@ flavor_cyrewin.10 = {
 }
 
 flavor_cyrewin.12 = {
+	outcome = neutral
 	type = country_event
 	fire_only_once = yes
 	title = flavor_cyrewin.12.title
@@ -176,6 +179,7 @@ flavor_cyrewin.12 = {
 }
 
 flavor_cyrewin.33 = {
+	outcome = neutral
 	type = country_event
 	fire_only_once = yes
 	title = flavor_cyrewin.33.title
@@ -235,6 +239,7 @@ flavor_cyrewin.33 = {
 }
 
 flavor_cyrewin.34 = {
+	outcome = neutral
 	type = country_event
 	fire_only_once = yes
 	title = flavor_cyrewin.34.title
@@ -286,6 +291,7 @@ flavor_cyrewin.34 = {
 }
 
 flavor_cyrewin.36 = {
+	outcome = neutral
 	type = country_event
 	fire_only_once = yes
 	title = flavor_cyrewin.36.title
@@ -317,6 +323,7 @@ flavor_cyrewin.36 = {
 }
 
 flavor_cyrewin.100 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.100.title
 	desc = flavor_cyrewin.100.desc
@@ -365,6 +372,7 @@ flavor_cyrewin.100 = {
 }
 
 flavor_cyrewin.101 = {
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = flavor_cyrewin.101.title
@@ -412,6 +420,7 @@ flavor_cyrewin.101 = {
 }
 
 flavor_cyrewin.104 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.104.title
 	desc = flavor_cyrewin.104.desc
@@ -459,6 +468,7 @@ flavor_cyrewin.104 = {
 }
 
 flavor_cyrewin.105 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.105.title
 	desc = flavor_cyrewin.105.desc
@@ -508,6 +518,7 @@ flavor_cyrewin.105 = {
 }
 
 flavor_cyrewin.106 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.106.title
 	desc = flavor_cyrewin.106.desc
@@ -570,6 +581,7 @@ flavor_cyrewin.106 = {
 }
 
 flavor_cyrewin.107 = {
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = flavor_cyrewin.107.title
@@ -625,6 +637,7 @@ flavor_cyrewin.107 = {
 }
 
 flavor_cyrewin.108 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.108.title
 	desc = flavor_cyrewin.108.desc
@@ -678,6 +691,7 @@ flavor_cyrewin.108 = {
 }
 
 flavor_cyrewin.109 = {
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = flavor_cyrewin.109.title
@@ -752,6 +766,7 @@ flavor_cyrewin.109 = {
 }
 
 flavor_cyrewin.110 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.110.title
 	desc = flavor_cyrewin.110.desc
@@ -799,6 +814,7 @@ flavor_cyrewin.110 = {
 }
 
 flavor_cyrewin.111 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.111.title
 	desc = flavor_cyrewin.111.desc
@@ -839,6 +855,7 @@ flavor_cyrewin.111 = {
 }
 
 flavor_cyrewin.112 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.112.title
 	desc = flavor_cyrewin.112.desc
@@ -876,6 +893,7 @@ flavor_cyrewin.112 = {
 }
 
 flavor_cyrewin.113 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.113.title
 	desc = flavor_cyrewin.113.desc
@@ -913,6 +931,7 @@ flavor_cyrewin.113 = {
 }
 
 flavor_cyrewin.114 = {
+	outcome = neutral
 	type = country_event
 	title = flavor_cyrewin.114.title
 	desc = flavor_cyrewin.114.desc
@@ -946,3 +965,4 @@ flavor_cyrewin.114 = {
 		add_country_modifier = { modifier = nov_beeswax_and_fur_trade years = 30 mode = add }
 	}
 }
+

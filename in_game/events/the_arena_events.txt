@@ -1,6 +1,7 @@
 ﻿namespace = arena_events
 
 arena_events.1 = { #The Games Begin
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = arena_events.1.title
@@ -15,7 +16,7 @@ arena_events.1 = { #The Games Begin
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
 		location:eternalcity1 = { save_scope_as = target_location }
-		ruler_or_ruler ?= { save_scope_as = target_character }
+		ruler_or_regent ?= { save_scope_as = target_character }
 		add_cooldown = {
 			type = arena_games_cooldown
 			years = 25
@@ -96,6 +97,7 @@ arena_events.1 = { #The Games Begin
 
 
 arena_events.2 = { #Winning
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = arena_events.2.title
@@ -123,6 +125,7 @@ arena_events.2 = { #Winning
 }
 
 arena_events.3 = { #Losing
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = arena_events.3.title
@@ -136,6 +139,7 @@ arena_events.3 = { #Losing
 }
 
 arena_events.4 = { #ruler Winning
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = arena_events.4.title
@@ -150,6 +154,7 @@ arena_events.4 = { #ruler Winning
 }
 
 arena_events.5 = { #ruler Losing
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	title = arena_events.5.title
@@ -161,4 +166,3 @@ arena_events.5 = { #ruler Losing
 			add_prestige = prestige_mild_penalty
 	}
 }
-

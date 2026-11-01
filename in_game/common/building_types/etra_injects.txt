@@ -40,7 +40,7 @@ REPLACE:slave_market = {
 
 	unique_production_methods = {
 
-		slave_market_maintenance = {
+		etra_slave_market_maintenance = {
 			leather = 0.35
 			tools = 0.3
 			weaponry = 0.25

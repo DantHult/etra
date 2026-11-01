@@ -74,21 +74,29 @@ purge_kindred_monthly_satisfaction_effect = {
 
 		}
 
-		every_pop = {
+		interaction_target:target_1 = {
 
-			limit = {
+			every_location_in_province = {
 
-				culture = {
+				every_pop = {
 
-					has_culture_group = scope:purge_kindred_group
+					limit = {
 
-					NOT = { is_accepted_in = owner }
+						culture = {
+
+							has_culture_group = scope:purge_kindred_group
+
+							NOT = { is_accepted_in = owner }
+
+						}
+
+					}
+
+					add_pop_satisfaction = pop_satisfaction_weak_penalty
 
 				}
 
 			}
-
-			add_pop_satisfaction = pop_satisfaction_weak_penalty
 
 		}
 

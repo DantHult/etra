@@ -7,7 +7,9 @@ caverns = {
 	defender = 2
 	vegetation_density = 0.2
 	movement_cost = 2
-	proximity = -0.5
+	proximity = {
+		default = -0.5
+	}
 	weather_front_strength_change_percent = 0
 	weather_cyclone_strength_change_percent = 0
 	weather_tornado_strength_change_percent = 0
@@ -27,3 +29,4 @@ caverns = {
 
 	debug_color = rgb { 5 5 5 } 
 }
+

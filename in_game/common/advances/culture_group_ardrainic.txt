@@ -83,7 +83,7 @@ ardrainien_knights_errant = {
 }
 
 ardrainien_sisterhood_of_the_sword_maiden = {
-	age = age_2_renaissance
+	age = age_1_traditions
 	icon = preserve_theogony_advance
 	potential = {
 		or = {

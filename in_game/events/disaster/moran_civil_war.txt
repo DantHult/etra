@@ -1,5 +1,20 @@
 ﻿namespace = moran_civil_war
+
+scripted_trigger character_valid_pretender_trigger = {
+	is_ruler = no
+	owner = ROOT
+	is_adult = yes
+	is_female = no
+	has_estate = estate_type:crown_estate
+	NOR = {
+		has_trait = blind
+		has_trait = castrated
+		has_trait = eunuch
+	}
+}
+
 moran_civil_war.1 = { #Nobles Demand Compensation
+	outcome = neutral
 	image = "gfx/interface/illustrations/disaster/byzantine_succession_crisis.dds"
 	hide_portraits = yes
 	type = country_event
@@ -97,6 +112,7 @@ moran_civil_war.1 = { #Nobles Demand Compensation
 }
 
 moran_civil_war.2 = { #Nobles Refuse to Pay Taxes
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -157,6 +173,7 @@ moran_civil_war.2 = { #Nobles Refuse to Pay Taxes
 }
 
 moran_civil_war.3 = { #Our Nobility Supports the Pretender
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -227,6 +244,7 @@ moran_civil_war.3 = { #Our Nobility Supports the Pretender
 }
 
 moran_civil_war.4 = { #Mariners Guild Rises Up
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -352,6 +370,7 @@ moran_civil_war.4 = { #Mariners Guild Rises Up
 }
 
 moran_civil_war.5 = { #Commoners Demand Noble Purge
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -454,6 +473,7 @@ moran_civil_war.5 = { #Commoners Demand Noble Purge
 }
 
 moran_civil_war.6 = { #General Abandons the Court
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -645,6 +665,7 @@ moran_civil_war.6 = { #General Abandons the Court
 }
 
 moran_civil_war.7 = { 
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -709,6 +730,7 @@ moran_civil_war.7 = {
 }
 
 moran_civil_war.8 = { #Church Dissaproves of Pretender 
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -819,6 +841,7 @@ moran_civil_war.8 = { #Church Dissaproves of Pretender
 }
 
 moran_civil_war.9 = { #The Ravages of Civil War
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -921,6 +944,7 @@ moran_civil_war.9 = { #The Ravages of Civil War
 
 # A New Dawn for Moran
 moran_civil_war.100 = {
+	outcome = neutral
 	type = country_event
     category = disaster_event
 	title = moran_civil_war.100.title
@@ -947,6 +971,7 @@ moran_civil_war.100 = {
 
 
 moran_civil_war.101 = { #start event
+	outcome = neutral
 	hide_portraits = yes
 	type = country_event
 	category = disaster_event
@@ -1171,3 +1196,4 @@ moran_civil_war.101 = { #start event
 	}
 
 }
+

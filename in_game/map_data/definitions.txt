@@ -1482,7 +1482,7 @@ asia = {
 			high_astanu_area = {
 				high_astanu_prov_7 = { etra2233 etra2200 etra2197 etra2226 etra2221 etra2199 }
 				high_astanu_prov_8 = { etra2163 etra2162 etra2173 }
-				high_astanu_prov_1 = { etra2240 etra2259 etra2213 etra2199 }
+				high_astanu_prov_1 = { etra2240 etra2259 etra2213 }
 				high_astanu_prov_2 = { etra2182 etra2209 etra2193 etra2202 etra2245 }
 				high_astanu_prov_3 = { etra2248 etra2198 etra2228 etra2208 etra2247 }
 				high_astanu_prov_4 = { etra2179 etra2227 etra2211 etra2258 etra2238 }
@@ -1764,8 +1764,8 @@ unused_continent = {
 				unused_province = { }
 								placeholder_ee_prov_12 = { etra1479}
 				placeholder_ee_prov_14 = { etra1645}
-				placeholder_ee_prov_7 = { etra1038 etra1043 etra1046 etra1051 etra1057 etra1058}
-				placeholder_ee_prov_6 = { etra1030}
+				placeholder_ee_prov_7 = { etra1051 etra1058 }
+				placeholder_ee_prov_6 = { }
 				placeholder_ee_prov_15 = { etra1929}
 				placeholder_ee_prov_16 = { }
 				placeholder_ee_prov_17 = { etra2176 }
@@ -1890,3 +1890,4 @@ unused_continent = {
 		great_lakes_region = {}
 	}
 }
+

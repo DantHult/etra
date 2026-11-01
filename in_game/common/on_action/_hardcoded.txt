@@ -1,4 +1,4 @@
-on_game_start = {
+ï»¿on_game_start = {
 	effect = {
 		setup_area_preferences = yes
 		hidden_effect = {
@@ -2871,9 +2871,6 @@ on_great_battle_lost = {
 # scope:lost_navy_units -> how many ships lost during navy battle
 # scope:war_score -> how much war score the winner gains from that battle
 on_battle_won = {
-	events = {
-		flavor_cas.76
-	}
 	effect = {
 		# if = {
 			# limit = {
@@ -3220,7 +3217,7 @@ on_dependency_gained = {
 				second = root
 			}
 		}
-		# HRE member falls under a non-Christian overlord — notify the Emperor
+		# HRE member falls under a non-Christian overlord â€” notify the Emperor
 		if = {
 			limit = {
 				is_member_of_international_organization = international_organization:hre
@@ -5796,7 +5793,7 @@ on_truce_broken = {
 }
 
 ###############################################################################
-# EU5 1.4.0–1.4.2 compat: on_actions present in vanilla _hardcoded.txt but
+# EU5 1.4.0â€“1.4.2 compat: on_actions present in vanilla _hardcoded.txt but
 # missing from this ETRA override. Stubs keep hooks registered; Earth-only
 # flavor event lists omitted intentionally (TC).
 ###############################################################################
@@ -5933,24 +5930,6 @@ on_character_betrothal_confirmed = {
 
 # root = character, scope:old_religion = old religion
 on_character_changed_religion = {
-	effect = {
-		if = {
-			limit = {
-				is_religious_figure = yes
-				religious_figure = religious_figure:cardinal
-				religion != religion:catholic
-			}
-			remove_cardinal_variables = yes
-			location = {
-				if = {
-					limit = {
-						has_building = building_type:seat_of_cardinal
-					}
-					set_up_cardinal = yes
-				}
-			}
-		}
-	}
 }
 
 # root, scope:actor = sender, scope:recipient = recipient, scope:war = war

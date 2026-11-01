@@ -1,5 +1,6 @@
 ﻿namespace = ratfolk_events
 ratfolk_events.1	= { 					#Ratfolk are good at being Spies, one wants to work for us
+	outcome = neutral
  	type = country_event 				 	# type of event 
  	title = ratfolk_events.1.title 			# title key to be localized
  	desc = ratfolk_events.1.desc 			# description key to be localized 
@@ -30,6 +31,7 @@ ratfolk_events.1	= { 					#Ratfolk are good at being Spies, one wants to work fo
 
 # Ratfolk petitioners – tolerance / local autonomy (adapted from EU4 racial pop demand)
 ratfolk_events.2 = {
+	outcome = neutral
 	type = country_event
 	title = ratfolk_events.2.title
 	desc = ratfolk_events.2.desc
@@ -101,7 +103,7 @@ ratfolk_events.2 = {
 				has_personality = charismatic_negotiator_personality
 			}
 		}
-		highlight = yes
+		historical_option = yes
 		ai_chance = { factor = 25 }
 
 		add_government_power = government_power_weak_penalty

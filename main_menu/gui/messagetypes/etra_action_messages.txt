@@ -1,0 +1,189 @@
+﻿WE_PERFORM_etra_rtr_demand_annexation_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+ACTION_etra_rtr_demand_annexation_PERFORMED_ON_US={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_grant_titles_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_negotiate_with_rebels_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_call_loyalists_to_arms_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_appease_the_court_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_rekindle_revolt_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_rein_in_area_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_declare_war_for_regional_supremacy_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_support_faction_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_join_iborric_defense_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_etra_rtr_declare_independence_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_intervene_in_italian_campaign_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_attract_condottieri_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_roj_declare_conquest_ambition_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_roj_plan_invasion_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_roj_select_core_region_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_roj_reform_into_monarchy_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}
+
+PERFORM_roj_promote_regional_culture_ACTION={
+log=yes
+onmap=no
+popup=yes
+idle=no
+option=yes
+pausepopup=no
+message_category = diplomacy
+}

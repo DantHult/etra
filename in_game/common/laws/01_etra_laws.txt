@@ -48,18 +48,3 @@ INJECT:legal_code_law = {
 
 }
 
-INJECT:civil_law_policy = {
-	potential = {
-		OR = {
-			capital.continent = continent:europe
-			religion.group = religion_group:christian
-			religion.group = religion_group:adunan
-		}
-	}
-	allow = {
-		OR = {
-			has_embraced_institution = institution:legalism
-			capital = { has_institution = institution:legalism }
-		}
-	}
-}

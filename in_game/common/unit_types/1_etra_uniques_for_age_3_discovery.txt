@@ -89,7 +89,7 @@ a_elven_late_longbowmen = {
 		multiply = 0.01
 	}
 
-	upgrades_to = a_age_4_reformation_light_infantry
+	upgrades_to = a_elven_arquebusiers
 
 	gfx_tags = { longbow_tag archer_tag light_tag }
 }
