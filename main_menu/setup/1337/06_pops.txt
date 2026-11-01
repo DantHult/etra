@@ -31986,7 +31986,14 @@ adune119 = {
 		define_pop = { type = peasants size = 11.701 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = peasants size = 7.172 culture = ekuniman_culture religion = manyfold }
 	}
-	etra1903 = { }
+	# gs_prov_122 from vanilla soldaia (southern Crimea coast)
+	etra1903 = {
+		define_pop = { type = nobles size = 0.003 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.030 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.617 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.123 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = slaves size = 1.830 culture = mavisan_culture religion = manyfold }
+	}
 	etra1904 = {
 		define_pop = { type = clergy size = 0.038 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 4.452 culture = nephion_tieflings_culture religion = manyfold }
@@ -32225,7 +32232,13 @@ adune119 = {
 		define_pop = { type = peasants size = 1.294 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = tribesmen size = 1.659 culture = ekuniman_culture religion = manyfold }
 	}
-	etra1948 = { }
+	# gs_prov_121 from vanilla or_qapi (northern Crimea steppe)
+	etra1948 = {
+		define_pop = { type = clergy size = 0.008 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.108 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.174 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.153 culture = mavisan_culture religion = manyfold }
+	}
 	etra1949 = {
 		define_pop = { type = clergy size = 0.029 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 5.017 culture = ekuniman_culture religion = manyfold }
@@ -32245,7 +32258,13 @@ adune119 = {
 		define_pop = { type = peasants size = 2.263 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = tribesmen size = 2.901 culture = ekuniman_culture religion = manyfold }
 	}
-	etra1953 = { }
+	# gs_prov_120 from vanilla aqmecit (northern Crimea steppe)
+	etra1953 = {
+		define_pop = { type = clergy size = 0.007 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.929 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.875 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.916 culture = mavisan_culture religion = manyfold }
+	}
 	etra1954 = { }
 	etra1955 = {
 		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
@@ -32425,7 +32444,13 @@ adune119 = {
 		define_pop = { type = peasants size = 8.106 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.474 culture = pahhuar_culture religion = manyfold }
 	}
-	etra1986 = { }
+	# gs_prov_121 repeats vanilla or_qapi (northern Crimea steppe)
+	etra1986 = {
+		define_pop = { type = clergy size = 0.008 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.108 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.174 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.153 culture = mavisan_culture religion = manyfold }
+	}
 	etra1987 = { }
 	etra1988 = { }
 	etra1989 = { }
@@ -32481,9 +32506,34 @@ adune119 = {
 		define_pop = { type = peasants size = 3.504 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2000 = { }
-	etra2001 = { }
-	etra2002 = { }
-	etra2003 = { }
+	# gs_prov_121 repeats vanilla aqmecit (northern Crimea steppe)
+	etra2001 = {
+		define_pop = { type = clergy size = 0.007 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.929 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.875 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.916 culture = mavisan_culture religion = manyfold }
+	}
+	# gs_prov_122 from vanilla vosporo (southern Crimea coast)
+	etra2002 = {
+		define_pop = { type = nobles size = 0.007 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.061 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.234 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.246 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.720 culture = mavisan_culture religion = manyfold }
+	}
+	# gs_prov_122 from vanilla kaffa (southern Crimea coast)
+	etra2003 = {
+		define_pop = { type = nobles size = 0.004 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.003 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.038 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.910 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.118 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.068 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.389 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.291 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.194 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.097 culture = mavisan_culture religion = manyfold }
+	}
 	etra2004 = { }
 	etra2005 = {
 		define_pop = { type = clergy size = 0.056 culture = pahhuar_culture religion = manyfold }
@@ -32528,7 +32578,13 @@ adune119 = {
 		define_pop = { type = peasants size = 1.111 culture = pahhuar_culture religion = manyfold }
 	}
 
-	etra2014 = { }
+	# gs_prov_120 from vanilla kalay (northern Crimea steppe)
+	etra2014 = {
+		define_pop = { type = clergy size = 0.006 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.526 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.663 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.201 culture = mavisan_culture religion = manyfold }
+	}
 	etra2015 = {
 		define_pop = { type = clergy size = 0.034 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 5.933 culture = ekuniman_culture religion = manyfold }
@@ -32650,7 +32706,14 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.732 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2039 = { }
-	etra2040 = { }
+	# gs_prov_122 repeats vanilla vosporo (southern Crimea coast)
+	etra2040 = {
+		define_pop = { type = nobles size = 0.007 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.061 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.234 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.246 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.720 culture = mavisan_culture religion = manyfold }
+	}
 	etra2041 = {
 		define_pop = { type = clergy size = 0.017 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 2.002 culture = nephion_tieflings_culture religion = manyfold }
@@ -32768,7 +32831,13 @@ adune119 = {
 		define_pop = { type = peasants size = 8.977 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.847 culture = pahhuar_culture religion = manyfold }
 	}
-	etra2064 = { }
+	# gs_prov_120 from vanilla jurchi (northern Crimea steppe)
+	etra2064 = {
+		define_pop = { type = clergy size = 0.008 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.857 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.887 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.381 culture = mavisan_culture religion = manyfold }
+	}
 	etra2065 = {
 		define_pop = { type = clergy size = 0.072 culture = abashvan_culture religion = manyfold }
 		define_pop = { type = peasants size = 12.677 culture = abashvan_culture religion = manyfold }
@@ -32803,7 +32872,13 @@ adune119 = {
 		define_pop = { type = peasants size = 3.522 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2070 = { }
-	etra2071 = { }
+	# gs_prov_120 from vanilla kezlev (northern Crimea steppe)
+	etra2071 = {
+		define_pop = { type = clergy size = 0.007 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.699 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.703 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.373 culture = mavisan_culture religion = manyfold }
+	}
 	etra2072 = {
 		define_pop = { type = clergy size = 0.035 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 5.492 culture = ekuniman_culture religion = manyfold }
@@ -32835,7 +32910,19 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.379 culture = nephion_tieflings_culture religion = manyfold }
 	}
 
-	etra2077 = { }
+	# gs_prov_122 repeats vanilla kaffa (southern Crimea coast)
+	etra2077 = {
+		define_pop = { type = nobles size = 0.004 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.003 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.038 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.910 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.118 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.068 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.389 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.291 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.194 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.097 culture = mavisan_culture religion = manyfold }
+	}
 	etra2078 = {
 		define_pop = { type = clergy size = 0.031 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.591 culture = nephion_tieflings_culture religion = manyfold }
