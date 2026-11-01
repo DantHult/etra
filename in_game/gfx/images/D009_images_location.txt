@@ -1,0 +1,993 @@
+﻿
+d009_settlement1 = {
+	tag = "settlement1"
+
+	### TUAREG city
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/taureg/settlement1/city/taureg_city1_metadata_os2654x440_d0x134.dds"
+		priority = 202
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = saharan_gfx
+				owner = { gfx_culture_applicable = saharan_gfx }
+			}
+		}
+	}
+
+	### TUAREG town
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/taureg/settlement1/town/taureg_town1_metadata_os2654x440_d64x128.dds"
+		priority = 201
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = saharan_gfx
+				owner = { gfx_culture_applicable = saharan_gfx }
+			}
+		}
+	}
+
+	### TUAREG rural
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/taureg/settlement1/rural/taureg_rural1_metadata_os2654x440_d200x160.dds"
+		priority = 200
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = saharan_gfx
+				owner = { gfx_culture_applicable = saharan_gfx }
+			}
+		}
+	}
+
+	### MOROCCO city
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/settlement1/morocco_city1_metadata_os2654x440_d0x134.dds"
+		priority = 223
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	### MOROCCO town
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/settlement1/morocco_town1_metadata_os2654x440_d70x128.dds"
+		priority = 222
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	### MOROCCO rural
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/settlement1/morocco_rural1_metadata_os2654x440_d360x160.dds"
+		priority = 221
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	
+	### Castile
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement1/castile_city1_metadata_os2654x440_d0x134.dds"
+		priority = 202
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			secondary_otherwise_primary_culture = { gfx_culture_applicable = castilian_gfx }
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement1/castile_town1_metadata_os2654x440_d70x128.dds"
+		priority = 201
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			secondary_otherwise_primary_culture = { gfx_culture_applicable = castilian_gfx }
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement1/castile_rural1_metadata_os2654x440_d360x160.dds"
+		priority = 200
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Med
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement1/castile_city1_metadata_os2654x440_d0x134.dds"
+		priority = 102
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			secondary_otherwise_primary_culture = { gfx_culture_applicable = mediterranean_gfx }
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement1/castile_town1_metadata_os2654x440_d70x128.dds"
+		priority = 101
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			secondary_otherwise_primary_culture = { gfx_culture_applicable = mediterranean_gfx }
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement1/castile_rural1_metadata_os2654x440_d360x160.dds"
+		priority = 100
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+}
+
+d009_settlement2 = {
+	tag = "settlement2"
+
+	### TUAREG city
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/taureg/settlement2/city/taureg_city2_metadata_os2654x440_d0x60.dds"
+		priority = 212
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = saharan_gfx
+				owner = { gfx_culture_applicable = saharan_gfx }
+			}
+		}
+	}
+
+	### TUAREG town
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/taureg/settlement2/town/taureg_town2_metadata_os2654x440_d700x90.dds"
+		priority = 211
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = saharan_gfx
+				owner = { gfx_culture_applicable = saharan_gfx }
+			}
+		}
+	}
+
+	### TUAREG rural
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/taureg/settlement2/rural/taureg_rural2_metadata_os2654x440_d700x90.dds"
+		priority = 210
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = saharan_gfx
+				owner = { gfx_culture_applicable = saharan_gfx }
+			}
+		}
+	}
+
+	### MOROCCO city
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/settlement2/morocco_city2_metadata_os2654x440_d0x60.dds"
+		priority = 215
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	### MOROCCO town
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/settlement2/morocco_town2_metadata_os2654x440_d140x80.dds"
+		priority = 214
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	### MOROCCO rural
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/settlement2/morocco_rural2_metadata_os2654x440_d480x90.dds"
+		priority = 213
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	
+	# Castilian
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_city2_metadata_os2654x440_d0x60.dds"
+		priority = 202
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_town2_metadata_os2654x440_d140x80.dds"
+		priority = 201
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_rural2_metadata_os2654x440_d480x90.dds"
+		priority = 200
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	# Mediterranean
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_city2_metadata_os2654x440_d0x60.dds"
+		priority = 102
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			city_illustration_trigger = yes
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_town2_metadata_os2654x440_d140x80.dds"
+		priority = 101
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			town_illustration_trigger = yes
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_rural2_metadata_os2654x440_d480x90.dds"
+		priority = 100
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			rural_illustration_trigger = yes
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+}
+
+d009_settlement3 = {
+	tag = "settlement3"
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_city2_metadata_os2654x440_d0x60.dds"
+		priority = 200
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			location_rank ?= location_rank:megalopolis
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/settlement2/castile_city2_metadata_os2654x440_d0x60.dds"
+		priority = 100
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			location_rank ?= location_rank:megalopolis
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+}
+
+d009_fortifications = {
+	tag = "fortifications"
+
+	###MOROCCO castle
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/fortification/morocco_castle_metadata_os2654x440_d0x75.dds"
+		priority = 110
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 2
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO bastion
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/fortification/morocco_bastion_metadata_os2654x440_d0x50.dds"
+		priority = 111
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 4
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO starfort
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/fortification/morocco_starfort_metadata_os2654x440_d0x50.dds"
+		priority = 112
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 6
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO fortress
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/fortification/morocco_fortress_metadata_os2654x440_d0x50.dds"
+		priority = 113
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 8
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	### Star Fort
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_starfort_metadata_os2654x440_d0x50.dds"
+		priority = 203
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 8
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Fortress
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_fortress_metadata_os2654x440_d0x20.dds"
+		priority = 202
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 6
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Bastion
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_bastion_metadata_os2654x440_d0x50.dds"
+		priority = 201
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 4
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Castle
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_castle_metadata_os2654x440_d0x90.dds"
+		priority = 200
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 2
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Star Fort
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_starfort_metadata_os2654x440_d0x50.dds"
+		priority = 103
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 8
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+
+	### Fortress
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_fortress_metadata_os2654x440_d0x20.dds"
+		priority = 102
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 6
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+
+	### Bastion
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_bastion_metadata_os2654x440_d0x50.dds"
+		priority = 101
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 4
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+
+	### Castle
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/fortification/castile_castle_metadata_os2654x440_d0x90.dds"
+		priority = 100
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:fort_level >= 2
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+}
+
+d009_factories = {
+	tag = "factories"
+
+	###MOROCCO FACTORY SMALL
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/factories/morocco_factory_1_metadata_os2654x440_d0x10.dds"
+		priority = 150
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_small
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO FACTORY MEDIUM
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/factories/morocco_factory_2_metadata_os2654x440_d0x10.dds"
+		priority = 151
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_medium
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO FACTORY BIG
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/factories/morocco_factory_3_metadata_os2654x440_d0x10.dds"
+		priority = 152
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_large
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	### Factory 3 — large (Castilian)
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/factories/castile_factory_3_metadata_os2654x440_d0x35.dds"
+		priority = 202
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_large
+		}
+	}
+
+	### Factory 2 — medium (Castilian)
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/factories/castile_factory_2_metadata_os2654x440_d0x35.dds"
+		priority = 201
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_medium
+		}
+	}
+
+	### Factory 1 — small (Castilian)
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/factories/castile_factory_metadata_os2654x440_d0x35.dds"
+		priority = 200
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_small
+		}
+	}
+
+	### Factory 3 — large (Mediterranean fallback)
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/factories/castile_factory_3_metadata_os2654x440_d0x35.dds"
+		priority = 102
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = mediterranean_gfx
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_large
+		}
+	}
+
+	### Factory 2 — medium (Mediterranean fallback)
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/factories/castile_factory_2_metadata_os2654x440_d0x35.dds"
+		priority = 101
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = mediterranean_gfx
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_medium
+		}
+	}
+
+	### Factory 1 — small (Mediterranean fallback)
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/factories/castile_factory_metadata_os2654x440_d0x35.dds"
+		priority = 100
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = mediterranean_gfx
+			show_production_building_trigger = yes
+			has_building_with_graphical_tag = factory_small
+		}
+	}
+}
+
+d009_dock = {
+	tag = "dock"
+
+	###MOROCCO DOCK 1
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/dock/morocco_dock1_metadata_os2654x440_d500x168.dds"
+		priority = 200
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 1
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO DOCK 2
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/dock/morocco_dock2_metadata_os2654x440_d500x168.dds"
+		priority = 121
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 5
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###MOROCCO DOCK 3
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/dock/morocco_dock3_metadata_os2654x440_d500x168.dds"
+		priority = 122
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 10
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	
+	### Dock 3
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/dock/castile_dock3_metadata_os2654x440_d426x190.dds"
+		priority = 202
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 10
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Dock 2
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/dock/castile_dock2_metadata_os2654x440_d426x220.dds"
+		priority = 201
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 5
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Dock 1
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/dock/castile_dock1_metadata_os2654x440_d426x230.dds"
+		priority = 200
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 1
+			gfx_culture_applicable = castilian_gfx
+		}
+	}
+
+	### Dock 3
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/dock/castile_dock3_metadata_os2654x440_d426x190.dds"
+		priority = 102
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 10
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+
+	### Dock 2
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/dock/castile_dock2_metadata_os2654x440_d426x220.dds"
+		priority = 101
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 5
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+
+	### Dock 1
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/dock/castile_dock1_metadata_os2654x440_d426x230.dds"
+		priority = 100
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			modifier:max_ships_built_at_same_time > 1
+			gfx_culture_applicable = mediterranean_gfx
+		}
+	}
+}
+
+d009_wall = {
+	tag = "wall"
+
+	###MOROCCAN wall
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/wall/moroccan_wall_metadata_os2654x440_d680x172.dds"
+		priority = 130
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			has_building_with_graphical_tag = city_walls
+			OR = {
+				gfx_culture_applicable = maghrebi_gfx
+				owner = { gfx_culture_applicable = maghrebi_gfx }
+			}
+		}
+	}
+
+	###CASTILE WALL 1
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/wall/castile_wall_metadata_os2654x440_d680x156.dds"
+		priority = 30
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			has_building_with_graphical_tag = city_walls
+		}
+	}
+
+	###CASTILE WALL 1
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/wall/castile_wall_metadata_os2654x440_d680x156.dds"
+		priority = 20
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = mediterranean_gfx
+			has_building_with_graphical_tag = city_walls
+		}
+	}
+
+
+}
+
+d009_religious_buildings = {
+	tag = "religious_buildings"
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/religious_buildings/castile_religious1_metadata_os2654x440_d0x100.dds"
+		priority = 130
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			has_building_with_graphical_tag = small_religious
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/religious_buildings/castile_religious2_metadata_os2654x440_d0x80.dds"
+		priority = 131
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			has_building_with_graphical_tag = medium_religious
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/religious_buildings/castile_religious3_metadata_os2654x440_d0x60.dds"
+		priority = 132
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = castilian_gfx
+			has_building_with_graphical_tag = large_religious
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/religious_buildings/morocco_religious1_metadata_os2654x440_d0x105.dds"
+		priority = 133
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = maghrebi_gfx
+			owner ?= { gfx_culture_applicable = maghrebi_gfx }
+			has_building_with_graphical_tag = small_religious
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/religious_buildings/morocco_religious2_metadata_os2654x440_d0x78.dds"
+		priority = 134
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = maghrebi_gfx
+			owner ?= { gfx_culture_applicable = maghrebi_gfx }
+			has_building_with_graphical_tag = medium_religious
+		}
+	}
+
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/morocco/religious_buildings/morocco_religious3_metadata_os2654x440_d0x49.dds"
+		priority = 135
+		scope = location
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			gfx_culture_applicable = maghrebi_gfx
+			owner ?= { gfx_culture_applicable = maghrebi_gfx }
+			has_building_with_graphical_tag = large_religious
+		}
+	}
+}
+
+d009_monuments = {
+	tag = "monuments2"
+
+	# #ALCAZAR OF SEGOVIA
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/castile/monuments/alcazar_of_segovia_metadata_os2654x440_d1000x55.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:segovia
+		# }
+	# }
+
+	# #CATHEDRAL OF CORDOBA
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/castile/monuments/cathedral_of_cordoba_metadata_os2654x440_d1280x68.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:cordoba
+		# }
+	# }
+
+	# #CATHEDRAL OF SANTIAGO DE COMPOSTELA
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/castile/monuments/cathedral_of_santiago_de_compostela_metadata_os2654x440_d1491x70.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:santiago_compostela
+		# }
+	# }
+
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/morocco/monuments/al_qarawiyyin_madrasa_metadata_os5115x848_d2500x150.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:fez
+		# }
+	# }
+
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/morocco/monuments/kutubiyya_mosque_metadata_os5115x848_d2500x150.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:marrakesh
+		# }
+	# }
+
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/morocco/monuments/gibraltar_metadata_os2654x440_d1400x0.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:gibraltar
+		# }
+	# }
+
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/morocco/monuments/ait_benhaddou_metadata_os5115x848_d2000x130.dds"
+		# priority = 201
+		# scope = location
+
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:ait_benhaddou
+		# }
+	# }
+
+}
+
+d009_topostatus = {
+	tag = "topostatus"
+
+	#ALHAMBRA OF GRANADA
+	illustration_image = {
+		texture_file = "gfx/interface/illustrations/location/castile/monuments/alhambra_of_granada_metadata_os2654x440_d850x50.dds"
+		priority = 201
+		scope = location
+
+		trigger = {
+			has_local_dlc = "d009_across_the_pillars"
+			this = location:granada
+		}
+	}
+}
