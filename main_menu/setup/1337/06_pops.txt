@@ -32020,7 +32020,14 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.704 culture = nephion_tieflings_culture religion = manyfold }
 	}
 
-	etra1909 = { }
+	etra1909 = {
+		# A412 island — Gate 1 mix (~70% hyriovari / ~20% human / ~10% undead), imperial_creeds
+		define_pop = { type = clergy size = 0.040 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = burghers size = 0.350 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 6.500 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 1.900 culture = abashvan_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 0.900 culture = novus_moran_culture religion = imperial_creeds }
+	}
 	etra1910 = {
 		define_pop = { type = clergy size = 0.064 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 8.494 culture = nephion_tieflings_culture religion = manyfold }
@@ -32118,7 +32125,15 @@ adune119 = {
 		define_pop = { type = peasants size = 8.506 culture = nephion_tieflings_culture religion = manyfold }
 	}
 
-	etra1925 = { }
+	etra1925 = {
+		# A412 harbor shore
+		define_pop = { type = clergy size = 0.055 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = burghers size = 0.550 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 8.200 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 2.400 culture = abashvan_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 1.200 culture = novus_moran_culture religion = imperial_creeds }
+		define_pop = { type = laborers size = 0.400 culture = hyriovari_culture religion = imperial_creeds }
+	}
 	etra1926 = {
 		define_pop = { type = clergy size = 0.065 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 9.763 culture = nephion_tieflings_culture religion = manyfold }
@@ -32174,7 +32189,17 @@ adune119 = {
 		define_pop = { type = peasants size = 2.636 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = tribesmen size = 2.478 culture = pahhuar_culture religion = manyfold }
 	}
-	etra1938 = { }
+	etra1938 = {
+		# A412 capital — urban center of the Taken Fleet
+		define_pop = { type = nobles size = 0.080 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = clergy size = 0.120 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = burghers size = 1.400 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 12.000 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 3.500 culture = abashvan_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 1.800 culture = novus_moran_culture religion = imperial_creeds }
+		define_pop = { type = laborers size = 0.800 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = soldiers size = 0.200 culture = novus_moran_culture religion = imperial_creeds }
+	}
 	etra1939 = {
 		define_pop = { type = clergy size = 0.022 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.760 culture = ekuniman_culture religion = manyfold }
@@ -32700,7 +32725,14 @@ adune119 = {
 		define_pop = { type = peasants size = 5.698 culture = ekuniman_culture religion = manyfold }
 	}
 
-	etra2049 = { }
+	etra2049 = {
+		# A412 island inland
+		define_pop = { type = clergy size = 0.035 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = burghers size = 0.280 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 5.800 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 1.700 culture = abashvan_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 0.850 culture = novus_moran_culture religion = imperial_creeds }
+	}
 	etra2050 = {
 		define_pop = { type = clergy size = 0.044 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 5.161 culture = nephion_tieflings_culture religion = manyfold }
@@ -32991,7 +33023,9 @@ adune119 = {
 		define_pop = { type = peasants size = 1.489 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = tribesmen size = 1.909 culture = ekuniman_culture religion = manyfold }
 	}
-	etra2105 = { }
+	etra2105 = {
+		# inland_sea tile in ethes_prov — no land pops
+	}
 	etra2106 = {
 		define_pop = { type = clergy size = 0.043 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 8.655 culture = ekuniman_culture religion = manyfold }
@@ -33006,7 +33040,15 @@ adune119 = {
 		define_pop = { type = peasants size = 11.324 culture = abashvan_culture religion = manyfold }
 	}
 
-	etra2108 = { }
+	etra2108 = {
+		# A412 wetland harbor fringe
+		define_pop = { type = clergy size = 0.030 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = burghers size = 0.220 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 4.200 culture = hyriovari_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 1.200 culture = abashvan_culture religion = imperial_creeds }
+		define_pop = { type = peasants size = 0.600 culture = novus_moran_culture religion = imperial_creeds }
+		define_pop = { type = laborers size = 0.300 culture = hyriovari_culture religion = imperial_creeds }
+	}
 	etra2109 = { }
 	etra2110 = { }
 	etra2111 = { }

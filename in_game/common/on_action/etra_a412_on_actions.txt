@@ -1,0 +1,79 @@
+# A412 Imperator of the Deep — start init + yearly progression pulse
+
+on_game_start = {
+	on_actions = {
+		a412_game_start_setup
+	}
+}
+
+a412_game_start_setup = {
+	effect = {
+		if = {
+			limit = { country_exists = c:A412 }
+			c:A412 = {
+				# Chapter / identity spine
+				set_variable = { name = a412_ch1 value = 1 }
+				set_variable = { name = a412_barge_alive value = 1 }
+				set_variable = { name = a412_notoriety value = 0 }
+				set_variable = { name = a412_favor_admiralty value = 10 }
+				set_variable = { name = a412_favor_senate value = 10 }
+				set_variable = { name = a412_favor_covenant value = 10 }
+
+				# Day-one privateers / slave raids / barge unlock
+				unlock_policy_effect = { type = state_piracy_policy }
+				research_advance = advance_type:a412_slave_raid_advance
+				research_advance = advance_type:a412_barge_throne_advance
+
+				add_country_modifier = {
+					modifier = a412_barge_throne
+					years = -1
+					mode = replace
+				}
+
+				# Spawn unique barge-throne at capital
+				if = {
+					limit = { exists = capital }
+					spawn_unit_type = {
+						type = unit_type:n_a412_barge_throne
+						location = capital
+					}
+				}
+
+				# Hostile Moran truce flavor
+				if = {
+					limit = { country_exists = c:A01 }
+					add_opinion = {
+						modifier = a412_hostile_truce
+						target = c:A01
+					}
+					c:A01 = {
+						add_opinion = {
+							modifier = a412_hostile_truce
+							target = c:A412
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+yearly_country_pulse = {
+	on_actions = {
+		yearly_flavor_a412_pulse
+	}
+}
+
+yearly_flavor_a412_pulse = {
+	trigger = {
+		tag = A412
+		NOT = { has_variable = a412_pack_ended }
+	}
+	events = {
+		flavor_A412.35 # provoke year ticker
+		flavor_A412.34 # provocation survive check (A04)
+		flavor_A412.60 # too-peaceful crisis (E10)
+		flavor_A412.58 # Moran watches (E08)
+		flavor_A412.61 # anti-piracy rumor (E11)
+	}
+}

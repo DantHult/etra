@@ -1,0 +1,31 @@
+# A412 Imperator of the Deep — Essential advances (R02 + barge unlock).
+
+a412_slave_raid_advance = {
+	age = age_1_traditions
+	icon = slavery_before_death
+
+	potential = {
+		has_or_had_tag = A412
+	}
+
+	allow_privateers_slave_raid = yes
+	auto_slave_raid_different_religion = yes
+	can_hire_privateers = yes
+
+	requires = feudalism_advance
+}
+
+a412_barge_throne_advance = {
+	age = age_1_traditions
+	icon = ship_building_advance
+
+	potential = {
+		has_or_had_tag = A412
+	}
+
+	unlock_unit = n_a412_barge_throne
+	navy_galley_power = 0.05
+	monthly_navy_tradition = 0.02
+
+	requires = feudalism_advance
+}

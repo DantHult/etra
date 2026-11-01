@@ -1,0 +1,75 @@
+# A412 Imperator of the Deep — Essential country modifiers (no hollow throne).
+
+a412_barge_throne = {
+	game_data = {
+		category = country
+	}
+	prestige_decay = -0.01
+	naval_morale_modifier = 0.05
+	global_sailors_modifier = -0.05
+}
+
+a412_ritual_i_blessing = {
+	game_data = {
+		category = country
+	}
+	navy_galley_power = 0.10
+	privateer_durability = 0.10
+	hire_privateer_cost_modifier = -0.10
+	naval_morale_modifier = 0.05
+}
+
+a412_ritual_ii_blessing = {
+	game_data = {
+		category = country
+	}
+	navy_galley_power = 0.10
+	naval_morale_modifier = 0.05
+	monthly_prestige = 0.05
+}
+
+a412_inner_sea_terror = {
+	game_data = {
+		category = country
+	}
+	privateer_durability = 0.15
+	hire_privateer_cost_modifier = -0.15
+	diplomatic_reputation = diplomatic_reputation_mild_penalty
+}
+
+a412_corsair_havens = {
+	game_data = {
+		category = country
+	}
+	global_sailors_modifier = 0.10
+	privateer_durability = 0.10
+	privateer_maintenance_cost_modifier = -0.15
+	global_maritime_presence_modifier = 0.15
+	trade_range_modifier = 0.10
+}
+
+a412_sea_god_claimant = {
+	game_data = {
+		category = country
+	}
+	monthly_prestige = 0.10
+	diplomatic_reputation = diplomatic_reputation_mild_penalty
+}
+
+a412_apotheosis_coda = {
+	game_data = {
+		category = country
+	}
+	monthly_prestige = 0.15
+	privateer_durability = 0.10
+	naval_morale_modifier = 0.10
+	diplomatic_reputation = diplomatic_reputation_mild_penalty
+}
+
+a412_extortion_fatigue = {
+	game_data = {
+		category = country
+	}
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	global_prosperity_decay = 0.05
+}

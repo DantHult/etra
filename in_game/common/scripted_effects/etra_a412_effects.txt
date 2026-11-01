@@ -1,0 +1,64 @@
+a412_add_notoriety_effect = {
+	if = {
+		limit = { NOT = { has_variable = a412_notoriety } }
+		set_variable = { name = a412_notoriety value = 0 }
+	}
+	change_variable = {
+		name = a412_notoriety
+		add = $VALUE$
+	}
+	if = {
+		limit = {
+			var:a412_notoriety >= 40
+			NOT = { has_variable = a412_notoriety_threshold }
+			has_variable = a412_ritual_i_done
+		}
+		set_variable = { name = a412_notoriety_threshold value = 1 }
+		trigger_event_non_silently = flavor_A412.25
+	}
+}
+
+a412_favor_admiralty_effect = {
+	if = {
+		limit = { NOT = { has_variable = a412_favor_admiralty } }
+		set_variable = { name = a412_favor_admiralty value = 10 }
+	}
+	change_variable = { name = a412_favor_admiralty add = $VALUE$ }
+}
+
+a412_favor_senate_effect = {
+	if = {
+		limit = { NOT = { has_variable = a412_favor_senate } }
+		set_variable = { name = a412_favor_senate value = 10 }
+	}
+	change_variable = { name = a412_favor_senate add = $VALUE$ }
+}
+
+a412_favor_covenant_effect = {
+	if = {
+		limit = { NOT = { has_variable = a412_favor_covenant } }
+		set_variable = { name = a412_favor_covenant value = 10 }
+	}
+	change_variable = { name = a412_favor_covenant add = $VALUE$ }
+}
+
+a412_end_pack_effect = {
+	set_variable = { name = a412_pack_ended value = 1 }
+	set_variable = { name = a412_imperator_gone value = 1 }
+}
+
+a412_unlock_ch2_effect = {
+	set_variable = { name = a412_ritual_i_done value = 1 }
+	set_variable = { name = a412_ch2 value = 1 }
+	remove_variable = a412_ch1
+	add_country_modifier = {
+		modifier = a412_ritual_i_blessing
+		years = -1
+		mode = replace
+	}
+	add_country_modifier = {
+		modifier = a412_inner_sea_terror
+		years = -1
+		mode = replace
+	}
+}

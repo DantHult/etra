@@ -67,6 +67,9 @@
  a325_the_host_is_not_replaceable: "The Host Is Not Replaceable"
  a325_the_host_is_not_replaceable_desc: "The Companion Host is not a levy to be spent and grown back. Every Foot Companion and Hawk-Rider is a Hyriovari who will not be replaced in a generation, nor in two. [GetCountry('A325').GetName] therefore drills for quality that other courts call wasteful, and refuses battles that would win the field at the price of the army. Kingship, as Pyrrhion has it, is a glorious servitude: to keep the Host intact is the first duty of the anax, even when the tombs and the south both call for a second sun."
 
+ a412_deep_imperium_reform: "Deep Imperium"
+ a412_deep_imperium_reform_desc: "The Taken Fleet is not a pirate brethren republic. It is an Imperator's corsair monarchy: privateers, Maghreb-style slave raids, cheap galleys, and a locked reform that never elects a pirate captain in place of the Deep's chosen throne. Moran calls it theft. The barge answers."
+
  legio_reform: "Legio"
  legio_reform_desc: "The Legio is not a knightly order sworn to temple and altar, but the living memory of the Empire-That-Was made manifest in arms. Its ranks are filled by veterans who marched when Moran still breathed, and who march still—bone and sinew alike—because the charge has not ended. Officers are elected from among proven commanders, monks of the imperial creeds keep the rites of muster and burial, and every cohort drills as though the next campaign were already sounding.\n\n[GetCountry('A26').GetName] holds Ellyria by final command of They-Who-With-True-Authority. No court, no council, and no foreign prince may dissolve that oath. The Legio endures so long as a single standard-bearer remembers the watch."
 
