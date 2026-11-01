@@ -306,16 +306,16 @@ d008_wall = {
 	}
 
 	### Theodosian Walls
-	illustration_image = {
-		texture_file = "gfx/interface/illustrations/location/monuments/theodosian_wall_metadata_os2654x440_d680x160.dds"
-		priority = 1000
-		scope = location
-
-		trigger = {
-			has_local_dlc = "d008_fate_of_the_phoenix"
-			has_building = building_type:theodosian_walls
-		}
-	}
+#	illustration_image = {
+#		texture_file = "gfx/interface/illustrations/location/monuments/theodosian_wall_metadata_os2654x440_d680x160.dds"
+#		priority = 1000
+#		scope = location
+#
+#		trigger = {
+#			has_local_dlc = "d008_fate_of_the_phoenix"
+#			has_building = building_type:theodosian_walls
+#		}
+#	}
 }
 d008_religious_buildings = {
 	tag = "religious_buildings"
@@ -357,36 +357,40 @@ d008_religious_buildings = {
 	}
 }
 
-
+# Anbennar: These are commented out as if the "this = location:" does not exist it spams the error log
 d008_monuments = {
 	tag = "monuments2"
-
-	# #HAGIA SOPHIA
-	# illustration_image = {
-		# texture_file = "gfx/interface/illustrations/location/monuments/hagia_sofia2_metadata_os2654x440_d1482x52.dds"
-		# priority = 201
-		# scope = location
-
-		# trigger = {
-			# has_local_dlc = "d008_fate_of_the_phoenix"
-			# this = location:constantinople
-			# has_global_variable = hagia_sophia_now_mosque
-		# }
-	# }
-
-	# illustration_image = {
-		# texture_file = "gfx/interface/illustrations/location/monuments/hagia_sofia1_metadata_os2654x440_d1491x55.dds"
-		# priority = 200
-		# scope = location
-
-		# trigger = {
-			# has_local_dlc = "d008_fate_of_the_phoenix"
-			# this = location:constantinople
-		# }
-	# }
-
+	illustration_image = {
+		texture_file = "gfx/illustrations/assets/location_view/test/empty.dds"
+		priority = 1
+		scope = location
+	}
+#
+#	#HAGIA SOPHIA
+#	illustration_image = {
+#		texture_file = "gfx/interface/illustrations/location/monuments/hagia_sofia2_metadata_os2654x440_d1482x52.dds"
+#		priority = 201
+#		scope = location
+#
+#		trigger = {
+#			has_local_dlc = "d008_fate_of_the_phoenix"
+#			this = location:constantinople
+#			has_global_variable = hagia_sophia_now_mosque
+#		}
+#	}
+#
+#	illustration_image = {
+#		texture_file = "gfx/interface/illustrations/location/monuments/hagia_sofia1_metadata_os2654x440_d1491x55.dds"
+#		priority = 200
+#		scope = location
+#
+#		trigger = {
+#			has_local_dlc = "d008_fate_of_the_phoenix"
+#			this = location:constantinople
+#		}
+#	}
+#
 }
-
 d008_statusback = {
 	tag = "statusback"
 
@@ -395,19 +399,19 @@ d008_statusback = {
 		priority = 1
 		scope = location
 	}
-
-	#METEORA
-	# illustration_image = {
-		# texture_file = "gfx/interface/illustrations/location/monuments/meteora_metadata_os2654x440_d787x-10.dds"
-		# priority = 200
-		# scope = location
-
-		# trigger = {
-			# has_local_dlc = "d008_fate_of_the_phoenix"
-			# this = location:trikala
-			# #has_global_variable = meteora_monasteries
-		# }
-	# }
+#
+#	#METEORA
+#	illustration_image = {
+#		texture_file = "gfx/interface/illustrations/location/monuments/meteora_metadata_os2654x440_d787x-10.dds"
+#		priority = 200
+#		scope = location
+#
+#		trigger = {
+#			has_local_dlc = "d008_fate_of_the_phoenix"
+#			this = location:trikala
+#			#has_global_variable = meteora_monasteries
+#		}
+#	}
 }
 
 d008_fortifications = {
