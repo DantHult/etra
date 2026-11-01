@@ -5,7 +5,7 @@ tiefling_ethnicity = {
 	template = "mediterranean_italian_ethnicity"
 	eyes = {
 		10 = { name = purple_glowing	range = { 1.0 1.0 } }
-		10 = { name = green_glowing		range = { 1.0 1.0 } }
+		10 = { name = yellow_glowing		range = { 1.0 1.0 } }
 		10 = { name = red_glowing		range = { 1.0 1.0 } }
 	}
 	skin_color_hue = {

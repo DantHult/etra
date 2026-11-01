@@ -11,7 +11,12 @@
     "replace_paths": [
       "common/holy_sites",
       "setup/countries",
-      "events/DHE"
+      "events/DHE",
+      "common/scripted_geography",
+      "common/expedition_types",
+      "events/expeditions",
+      "gfx/map/city_data",
+      "common/achievements"
     ]
   }
 }

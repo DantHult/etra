@@ -4712,6 +4712,7 @@ scripted_effect catastrophic_earthquake_damage = {
 
 
 earthquake_events.90 = { #generic minor earthquake
+	outcome = neutral
 	type = location_event
 	title = earthquake_events.title
 	desc = earthquake_events_minor.desc
@@ -4757,6 +4758,7 @@ earthquake_events.90 = { #generic minor earthquake
 }
 
 earthquake_events.91 = { #generic major earthquake
+	outcome = neutral
 	type = location_event
 	title = earthquake_events.title
 	desc = earthquake_events_major.desc
@@ -4800,6 +4802,7 @@ earthquake_events.91 = { #generic major earthquake
 }
 
 earthquake_events.92 = { #generic catastrophic earthquake
+	outcome = neutral
 	type = location_event
 	title = earthquake_events.title
 	desc = earthquake_events_catastrophic.desc
@@ -5291,3 +5294,4 @@ scripted_trigger earthquake_is_turkish_new_nemesis = {
 		# remove_variable = gallipoli_earthquake
 	# }		
 # }
+

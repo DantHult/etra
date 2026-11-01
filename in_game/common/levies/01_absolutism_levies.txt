@@ -52,9 +52,9 @@ levy_a_moran_militiamen = {
 
 
 
-# levy_a_scottish_highlander = {
-	# size = levy_generic_infantry_size
-	# unit = a_scottish_highlander
+levy_a_scottish_highlander = {
+	size = levy_generic_infantry_size
+	unit = a_scottish_highlander
 	
 	# allowed_pop_type = peasants
 	# allowed_pop_type = laborers
@@ -64,13 +64,13 @@ levy_a_moran_militiamen = {
 	# allowed_culture = norse_gael
 # }
 
-# levy_a_late_paik = {
-	# size = levy_generic_infantry_size
-	# allow = {
-		# unit_indian_paik_location_levy_trigger = yes
-	# }
-	# unit = a_late_paik
-# }
+levy_a_late_paik = {
+	size = levy_generic_infantry_size
+	allow = {
+		unit_indian_paik_location_levy_trigger = yes
+	}
+	unit = a_late_paik
+}
 
 # Unlockable Levies
 
@@ -90,4 +90,27 @@ levy_provincial_cavalry = {
 	allowed_pop_type = nobles
 	
 	unit = a_provincial_cavalry
+}
+
+# Camelry levy setups the age advances still unlock.
+levy_heavy_camelry_5 = {
+	size = levy_generic_noble_cavalry_size
+	allowed_pop_type = soldiers
+	allowed_pop_type = nobles
+	allowed_pop_type = clergy
+	allowed_pop_type = burghers
+	allow = {
+		location ?= { raw_material = goods:camels }
+	}
+	unit = a_heavy_camelry_levy_5
+}
+
+levy_light_camelry_5 = {
+	size = levy_generic_infantry_size
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+	allow = {
+		location ?= { raw_material = goods:camels }
+	}
+	unit = a_light_camelry_levy_5
 }

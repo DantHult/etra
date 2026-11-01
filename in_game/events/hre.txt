@@ -581,6 +581,7 @@ hre.901 = {
 
 # On Action: HRE Prince converts to non-Emperor religion
 hre.902 = {
+	outcome = neutral
 	type = country_event
 	title = hre.902.title
 	desc = hre.902.desc
@@ -1239,3 +1240,4 @@ hre.15 = {
 		add_prestige = prestige_extreme_bonus
 	}
 }
+

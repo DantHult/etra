@@ -336,7 +336,7 @@ a_triarii_levy = {
 }
 
 a_accensi_levy = {
-	category = army_heavy_infantry
+	category = army_light_infantry
 	copy_from = a_age_1_traditions_undead_light_infantry
 	strength_damage_done = -0.1
 	

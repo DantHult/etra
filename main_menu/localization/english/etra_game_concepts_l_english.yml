@@ -17,3 +17,5 @@
  game_concept_long_siege_of_moras_desc: "The 1238-1248 siege that marked the high-water mark of the Godhand Crusades. Commonweal armies, driven by holy fervor, closed around Moras and sought what they called the end of an abomination, until [GetCharacter('A01_decius').GetName] broke the siege and ensured the eternal city would never again be directly threatened."
  game_concept_pale_one: "The Pale One"
  game_concept_pale_one_desc: "A fearful name that spread through Commonweal lands after [GetCharacter('A01_decius').GetName] broke the siege of Moras. Some used it for [GetCharacter('A01_decius').GetName] himself, others for the Undying Emperor's lingering curse, and others for any pale sickness, famine, or disaster believed to have followed the undead out of Godhand."
+ game_concept_covenant_of_ends: "Covenant of Ends"
+ game_concept_covenant_of_ends_desc: "Another name for the Compact of Edorinn, the 1107 settlement that turned the Junil's coalition into the Holy Commonweal."

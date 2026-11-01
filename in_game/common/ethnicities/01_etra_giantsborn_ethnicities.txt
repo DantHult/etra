@@ -141,7 +141,7 @@ giantsborn_ethnicity = {
     gene_head_width = {
 
         16 = { name = template_1   range = { 0.55 0.8 }      }
-        64 = { name = template_1   range = { 9.8 1.0 }      }
+        64 = { name = template_1   range = { 0.8 1.0 }      }
 
     }
 	

@@ -1,5 +1,6 @@
 ﻿namespace = undead_events
 undead_events.1	= { 						#Undead have centuries of knowledge they will be willing to pass on
+	outcome = neutral
  	type = country_event 				 	# type of event 
  	title = undead_events.1.title 			# title key to be localized
  	desc = undead_events.1.desc 			# description key to be localized 
@@ -34,6 +35,7 @@ undead_events.1	= { 						#Undead have centuries of knowledge they will be willi
 }
 
 undead_events.2 = {
+	outcome = neutral
 	type = country_event
 	title = undead_events.2.title
 	desc = undead_events.2.desc
@@ -70,7 +72,7 @@ undead_events.2 = {
 	}
 	option = { name = racial_petitioners_events.undead_1.e
 		trigger = { ruler_or_regent = { has_personality = charismatic_negotiator_personality } }
-		highlight = yes  ai_chance = { factor = 25 }
+		historical_option = yes  ai_chance = { factor = 25 }
 		add_government_power = government_power_weak_penalty
 		change_societal_value = { type = xenophile_vs_xenophobe value = societal_value_minor_move_to_left }
 		if = { limit = { exists = scope:racial_pop_location_target }

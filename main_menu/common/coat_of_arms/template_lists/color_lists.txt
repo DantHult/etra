@@ -498,58 +498,58 @@ color_lists = {
 		10 = "yellow_dark"
 	}
 	# for semi random quarterly designs (opposing tincture)
-	# normal_colors_dynastic_quarterly = {
-		# 1 = "blue"
-		# 1 = "red"
-		# 1 = "green"	
-		# 1 = "black"
+	normal_colors_dynastic_quarterly = {
+		1 = "blue"
+		1 = "red"
+		1 = "green"	
+		1 = "black"
 		
-		# special_selection = {
-			# trigger = {
-				# OR = {
-					# coa_def_plantagenet_trigger = yes 
-					# coa_def_ENG_ensign_trigger = yes
-				# }
-			# }
-			# 100 = "blue"
-			# 25 = "black"
-			# 5 = "green"
-		# }
-		# special_selection = {
-			# trigger = {
-				# OR = {
-					# coa_def_capetian_semy_trigger = yes
-					# coa_def_FRA_ensign_trigger = yes
-				# }
-			# }
-			# 100 = "red"
-			# 20 = "black"
-			# 10 = "green"
-		# }
-		# special_selection = {
-			# trigger = {
-				# OR = {
-					# coa_def_burgundy_portugal_trigger = yes 
-					# coa_def_POR_ensign_trigger = yes
-				# }
-			# }
-			# 100 = "blue"
-			# 25 = "black"
-			# 25 = "green"
-			# 10 = "red" # usually using variant of Portugal without border instead if the field is red (ie Sousa)
-		# }
-		# special_selection = {
-			# trigger = {
-				# OR = {
-					# coa_def_navarre_trigger = yes 
-					# coa_def_NAV_ensign_trigger = yes
-				# }
-			# }
-			# 100 = "blue"
-			# 50 = "green"
-			# 10 = "black"
-		# }		
-	# }	# normal_colors_dynastic_quarterly = {
+		special_selection = {
+			trigger = {
+				OR = {
+					coa_def_plantagenet_trigger = yes 
+					coa_def_ENG_ensign_trigger = yes
+				}
+			}
+			100 = "blue"
+			25 = "black"
+			5 = "green"
+		}
+		special_selection = {
+			trigger = {
+				OR = {
+					coa_def_capetian_semy_trigger = yes
+					coa_def_FRA_ensign_trigger = yes
+				}
+			}
+			100 = "red"
+			20 = "black"
+			10 = "green"
+		}
+		special_selection = {
+			trigger = {
+				OR = {
+					coa_def_burgundy_portugal_trigger = yes 
+					coa_def_POR_ensign_trigger = yes
+				}
+			}
+			100 = "blue"
+			25 = "black"
+			25 = "green"
+			10 = "red" # usually using variant of Portugal without border instead if the field is red (ie Sousa)
+		}
+		special_selection = {
+			trigger = {
+				OR = {
+					coa_def_navarre_trigger = yes 
+					coa_def_NAV_ensign_trigger = yes
+				}
+			}
+			100 = "blue"
+			50 = "green"
+			10 = "black"
+		}		
+	}	# normal_colors_dynastic_quarterly = {
 		# 1 = "blue"
 		# 1 = "red"
 		# 1 = "green"	

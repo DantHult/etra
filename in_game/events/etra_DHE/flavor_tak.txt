@@ -1,4 +1,4 @@
-namespace = flavor_tak
+﻿namespace = flavor_tak
 
 #########################################################
 # Rise of Tajjev — House Izem destruction, exile, founding
@@ -9,7 +9,7 @@ flavor_tak.2 = {
 	type = country_event
 	title = flavor_tak.2.title
 	desc = flavor_tak.2.desc
-	outcome = bad
+	outcome = neutral
 	fire_only_once = yes
 	major = yes
 
@@ -456,7 +456,7 @@ flavor_tak.9 = {
 	type = country_event
 	title = flavor_tak.9.title
 	desc = flavor_tak.9.desc
-	outcome = bad
+	outcome = neutral
 	fire_only_once = yes
 
 	illustration_tags = {
@@ -495,3 +495,4 @@ flavor_tak.9 = {
 		}
 	}
 }
+

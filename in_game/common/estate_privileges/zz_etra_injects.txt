@@ -1,14 +1,4 @@
-﻿INJECT:right_to_inherit = {
-	potential = {
-		OR = {
-			culture ?= { has_culture_group = culture_group:german_group }
-			succession_law ?= heir_selection:partition_inheritance
-		}
-	}
-}
-
-
-REPLACE:clergy_powerful_dioceses = {
+﻿REPLACE:clergy_powerful_dioceses = {
 	estate = clergy_estate
 	potential = {
 		religion ?= {
