@@ -65,3 +65,53 @@ REPLACE:slave_market = {
 	construction_demand = town_building_construction
 
 }
+
+
+REPLACE:library = {
+	audio_tier = 2
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	
+	category = cultural_category
+	employment_size = cultural_employment
+	
+	AI_ignore_available_worker_flag = yes #since we may build this to increase pop promotion we don't want lack of workers to block it
+
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	forbidden_for_estates = yes
+
+	
+	graphical_tags = { medium_religious }
+
+	build_time = cultural_building_time
+
+	allow = {
+		# trigger_if = {
+			# limit = {
+				# has_dlc = "d009_across_the_pillars"
+				# this = location:cordoba
+				# has_building = building_type:library_cordoba
+			# }
+			# NOT = { has_building = building_type:library_cordoba }
+		# }
+	}
+	
+	modifier = {
+		local_cultural_influence = 0.1
+		local_max_literacy = 5
+		local_monthly_literacy = 0.1
+		local_pop_promotion_speed = 0.001
+		local_institution_growth_modifier = 0.25
+	}
+	
+	possible_production_methods = {
+		library_maintenance
+	}
+
+	
+	construction_demand = library_construction
+}

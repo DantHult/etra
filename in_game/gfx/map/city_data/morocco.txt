@@ -1,0 +1,532 @@
+
+##################################################
+## MOROCCO BUILDINGS
+##
+## Asset count: 32 real  |  4 using fallback
+##   Population  nobles 3/3   burghers 4/4   peasants 4/4
+##   Religion    small 1/1    medium 1/1     large 1/1
+##   Forts       castle 1/1   bastion 1/1    starfort 1/1   fortress 1/1
+##   Ports       dock 1/1     drydock 1/1    shipyard 1/1   grand 1/1   naval 1/1
+##   Production  factory_a 1/1  factory_b 1/1  factory_c 1/1
+##   Market      market 2/2 (market_a, market_b)
+##   Military    noble_military 3/1 (a, b, c)  palace 1/1
+##   Walls       main 0/1     tower 0/1      gate 0/1       uc 0/1
+##   Decorative  square 1 (folded into burgher mesh_list)
+##   Monuments   5/5 (ait_ben_haddou=ouarzazate, al_qarawiyyin=fez, kutubiyya=marrakesh, alhambra=granada, gibraltar=gibraltar)
+##
+## Sections:
+##   1. TEMPLATES
+##   2. MONUMENTS
+##   3. RELIGION
+##   4. FORTS
+##   5. PORTS
+##   6. PRODUCTION
+##   7. MILITARY
+##   8. POPULATION
+##   9. CULTURE DATA
+##
+## Not in use (using fallback mesh):
+##   - Walls (main / tower / gate / under construction)
+##################################################
+
+
+##################################################
+## 1. TEMPLATES
+##################################################
+
+template unique_buildings
+{
+	# code =
+	# [[
+		# D009_building_ait_ben_haddou = {
+			# # dlc = "d009_across_the_pillars"
+			# only_in_location = ait_benhaddou
+			# order = 0
+			# size = large
+			# mesh_list = ait_ben_haddou_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7369.8667 9.228683 5082}   # TODO: replace with real world coordinates in Ouarzazate
+
+			# allow_demote = no
+			# link_tooltip = {
+				# type = work_of_art
+				# data = ait_ben_haddou
+			# }
+		# }
+
+		# D009_building_al_qarawiyyin = {
+			# # dlc = "d009_across_the_pillars"
+			# only_in_location = fez
+			# order = 0
+			# size = large
+			# mesh_list = al_qarawiyyin_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7462.031 5.2969837 5276.9673}   # TODO: replace with real world coordinates in Fez
+
+			# allow_demote = no
+			# link_tooltip = {
+				# type = work_of_art
+				# data = qarawiyyin_fez_work_of_art
+			# }
+		# }
+
+		# D009_building_kutubiyya = {
+			# # dlc = "d009_across_the_pillars"
+			# only_in_location = marrakesh
+			# order = 0
+			# size = large
+			# mesh_list = kutubiyya_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7319.448 4.2332 5131.789}   # TODO: replace with real world coordinates in Marrakesh
+
+			# allow_demote = no
+			# link_tooltip = {
+				# type = work_of_art
+				# data = koutoubia_marrakesh_work_of_art
+			# }
+		# }
+		# d009_building_monument_alhambra = {
+			# # dlc = "d009_across_the_pillars"
+			# only_in_location = granada
+			# order = 0
+			# size = large
+			# mesh_list = alhambra_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7526.3003 6.045659 5462.0757}   # TODO: replace with real Granada world coordinates
+
+			# allow_demote = no
+		# }
+		# d009_building_monument_gibraltar = {
+			# only_in_location = gibraltar
+			# order = 0
+			# size = large
+			# mesh_list = gibraltar_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7447.368 3.0568714 5403.1265}
+
+			# allow_demote = no
+		# }
+	# ]]
+}
+
+
+##################################################
+## 2. MONUMENTS
+##################################################
+
+mesh_list =
+{
+	name = "ait_ben_haddou_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_maghrebi_ait_ben_haddou_mesh = 1
+}
+
+mesh_list =
+{
+	name = "al_qarawiyyin_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_maghrebi_al_qarawiyyin_mesh = 1
+}
+
+mesh_list =
+{
+	name = "kutubiyya_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_maghrebi_kutubiyya_mesh = 1
+}
+
+mesh_list =
+{
+	name = "alhambra_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_alhambra_mesh = 1
+}
+
+mesh_list =
+{
+	name = "gibraltar_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_gibraltar_mesh = 1
+}
+
+
+##################################################
+## 3. RELIGION
+##################################################
+
+mesh_list = {
+	name = "morocco_small_clergy"
+	scale_settings_small = { bias = 0 min = 0.95 max = 1 }
+	D009_building_moroccan_clergy_small_mesh = 1
+	should_spawn_flags = no
+	material_index = 0
+}
+
+mesh_list = {
+	name = "morocco_medium_clergy"
+	scale_settings_small = { bias = -0.5 min = 0.95 max = 1 }
+	D009_building_moroccan_clergy_medium_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_large_clergy"
+	scale_settings_small = { bias = 0 min = 0.85 max = 1 }
+	D009_building_moroccan_clergy_large_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 4. FORTS
+##################################################
+
+mesh_list = {
+	name = "morocco_fort"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	D009_building_moroccan_castle_mesh = 1
+	material_index = 1
+	tag = fort
+	should_spawn_flags = yes
+}
+
+mesh_list = {
+	name = "morocco_bastion"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	D009_building_moroccan_bastion_mesh = 1
+	material_index = 1
+	tag = fort
+	should_spawn_flags = yes
+}
+
+mesh_list = {
+	name = "morocco_starfort"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	D009_building_moroccan_starfort_mesh = 1
+	material_index = 1
+	should_spawn_flags = yes
+	tag = fort
+}
+
+mesh_list = {
+	name = "morocco_fortress"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	D009_building_moroccan_fortress_mesh = 1
+	material_index = 1
+	should_spawn_flags = yes
+	tag = fort
+}
+
+
+##################################################
+## 5. PORTS
+##################################################
+
+mesh_list = {
+	name = "morocco_dock"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_moroccan_dock_mesh = 1
+	material_index = 0
+}
+
+mesh_list = {
+	name = "morocco_dry_dock"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_moroccan_dry_dock_mesh = 1
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_shipyard"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_moroccan_shipyard_mesh = 1
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_grand_shipyard"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_moroccan_grand_shipyard_mesh = 1
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_naval_base"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_moroccan_naval_base_mesh = 1
+	material_index = 1
+}
+
+
+##################################################
+## 6. PRODUCTION
+##################################################
+
+mesh_list = {
+	name = "morocco_factory"
+	scale_settings_small = { bias = -0.5 min = 1.0 max = 10 }
+	D009_building_moroccan_factory_a_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_factory_tier_2"
+	scale_settings_small = { bias = -0.5 min = 0.9 max = 10 }
+	D009_building_moroccan_factory_b_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_factory_tier_3"
+	scale_settings_small = { bias = -0.5 min = 1.3 max = 10 }
+	D009_building_moroccan_factory_c_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "morocco_market"
+	scale_settings_small = { bias = -0.5 min = 0.9 max = 10 }
+	D009_building_moroccan_market_a_mesh = 1
+	D009_building_moroccan_market_b_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 7. MILITARY
+##################################################
+
+mesh_list = {
+	name = "morocco_noble_military"
+	scale_settings_small = { bias = 0 min = 0.6 max = 0.7 }
+	D009_building_moroccan_noble_military_mesh = 1
+	D009_building_moroccan_noble_military_b_mesh = 1
+	D009_building_moroccan_noble_military_c_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 8. POPULATION
+##################################################
+
+mesh_list = {
+	name = "morocco_noble"
+	scale_settings_small = { bias = -0.5 min = 0.6 max = 1 }
+
+	D009_building_moroccan_noble_a_mesh = 0.7
+	D009_building_moroccan_noble_b_mesh = 1
+	D009_building_moroccan_noble_c_mesh = 2
+
+	material_index = 1
+	spawn_count = { curve = "standard_pop_curve" }
+}
+
+mesh_list = {
+	name = "morocco_burgher"
+	scale_settings_small = { bias = -0.5 min = 1.2 max = 10 }
+	D009_building_moroccan_burgher_diorama_a_mesh = 1
+	D009_building_moroccan_burgher_diorama_b_mesh = 1
+	D009_building_moroccan_burgher_diorama_c_mesh = 1
+	D009_building_moroccan_burgher_diorama_d_mesh = 1
+	D009_building_moroccan_square_mesh = 1
+	material_index = 1
+	spawn_count = { curve = "standard_pop_curve" }
+}
+
+mesh_list = {
+	name = "morocco_peasant"
+	scale_settings_small = { bias = -0.5 min = 1.2 max = 10 }
+	D009_building_moroccan_peasant_diorama_a_mesh = 100
+	D009_building_moroccan_peasant_diorama_b_mesh = 100
+	D009_building_moroccan_peasant_diorama_c_mesh = 100
+	D009_building_moroccan_peasant_diorama_d_mesh = 100
+	material_index = 0
+	spawn_count = { curve = "standard_pop_curve" }
+}
+
+mesh_list = {
+	name = "morocco_peasant_rural_mesh"
+	scale_settings_small = { bias = 0 min = 1.3 max = 10 }
+	D009_building_moroccan_peasant_diorama_a_mesh = 100
+	D009_building_moroccan_peasant_diorama_b_mesh = 100
+	D009_building_moroccan_peasant_diorama_c_mesh = 100
+	D009_building_moroccan_peasant_diorama_d_mesh = 100
+	material_index = 0
+	spawn_count = { curve = "standard_pop_peasants_curve" }
+}
+
+mesh_list = {
+	name = "morocco_republic_assembly"
+	scale_settings_small = { bias = -0.5 min = 1 max = 1 }
+	D009_building_moroccan_palace_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 9. CULTURE DATA
+##################################################
+
+culture_data = {
+	graphical_culture = maghrebi_gfx
+	# dlc = "d009_across_the_pillars"
+
+	@noble_mesh_list    = morocco_noble
+	@burgher_mesh_list  = morocco_burgher
+	@peasant_mesh_list  = morocco_peasant
+	@peasant_rural_mesh = morocco_peasant_rural_mesh
+	@farming_mesh_list  = morocco_farming_mesh_list
+
+	##SPECIAL BUILDINGS##
+	load_template player_buildings {
+		##PORTS##
+		dock_meshes           = morocco_dock
+		dry_dock_meshes       = morocco_dry_dock
+		shipyard_meshes       = morocco_shipyard
+		grand_shipyard_meshes = morocco_grand_shipyard
+		naval_base_meshes     = morocco_naval_base
+
+		##PRODUCTION##
+		factory_meshes        = morocco_factory
+		factory_tier_2_meshes = morocco_factory_tier_2
+		factory_tier_3_meshes = morocco_factory_tier_3
+		market_meshes         = morocco_market
+
+		##MILITARY##
+		noble_military_meshes      = morocco_noble_military
+		republican_assembly_meshes = morocco_republic_assembly
+
+		##FORTS##
+		fort_meshes     = morocco_fort
+		bastion_meshes  = morocco_bastion
+		starfort_meshes = morocco_starfort
+		fortress_meshes = morocco_fortress
+	}
+
+	##RELIGION##
+	load_template religius_buildings
+	{
+		small_clergy_meshes  = morocco_small_clergy
+		medium_clergy_meshes = morocco_medium_clergy
+		large_clergy_meshes  = morocco_large_clergy
+	}
+
+	##UNIQUE BUILDINGS##
+	load_template unique_buildings {}
+
+	##POPULATION##
+	load_template nobles        { mesh_list = @noble_mesh_list }
+	load_template burghers      { mesh_list = @burgher_mesh_list }
+	load_template peasants      { mesh_list = @peasant_mesh_list }
+	load_template peasant_rural { mesh_list = @peasant_rural_mesh }
+
+	##RGO##
+	load_template rgo_all { farming_mesh_list = @farming_mesh_list }
+
+	##WALLS##  (no assets yet - using fallback)
+	# load_template small_city_walls {
+	# 	wall_mesh_list  = morocco_wall
+	# 	tower_mesh_list = morocco_wall_tower
+	# 	gate_mesh_list  = morocco_wall_gate
+	# }
+	# load_template small_city_walls_under_construction {
+	# 	wall_mesh_list  = morocco_wall_underconstruction
+	# 	gate_mesh_list  = morocco_wall_gate
+	# }
+}
+
+
+##################################################
+## PLACEHOLDER
+##################################################
+
+# ##WALLS##
+
+# mesh_list = {
+# 	name = "morocco_wall"
+# 	city_wall_basic_mesh = 1
+# }
+
+# mesh_list = {
+# 	name = "morocco_wall_tower"
+# 	city_wall_tower_basic_mesh = 1
+# }
+
+# mesh_list = {
+# 	name = "morocco_wall_gate"
+# 	city_wall_gate_basic_mesh = 1
+# }
+
+# mesh_list = {
+# 	name = "morocco_wall_underconstruction"
+# 	city_wall_basic_mesh = 1
+# }

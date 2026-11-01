@@ -1,0 +1,529 @@
+﻿##################################################
+## CASTILLE BUILDINGS
+##
+## Monuments   4 (alcazar_of_segovia, santiago_de_compostela, cordoba_phase1, cordoba_phase2)
+## Religion    small 1/1   medium 1/1   large 1/1
+## Forts       castle 1/1  bastion 1/1  starfort 1/1  fortress 1/1
+## Walls       main 2 (main1, main2)   tower 1/1   gate 1/1
+## Ports       dock 1/1    drydock 1/1  shipyard 1/1  grand 1/1  naval 1/1
+## Special     market 2 (a, b)   bridges 2 (small, medium)   culture 1/1
+## Production  factory_a 1/1  factory_b 1/1  factory_c 1/1
+## Military    noble_military 1/1
+## Population  nobles 3/3  burghers 4/4 (+square_a)  peasants 4/4  palace 1/1
+##
+## Sections:
+##   1. TEMPLATES
+##   2. MONUMENTS
+##   3. RELIGION
+##   4. FORTS
+##   5. WALLS
+##   6. PORTS
+##   7. SPECIAL
+##   8. PRODUCTION
+##   9. MILITARY
+##   10. POPULATION
+##   11. CULTURE DATA
+##################################################
+
+
+##################################################
+## 1. TEMPLATES
+##################################################
+
+template unique_buildings
+{
+	# code =
+	# [[
+		# D008_building_alcazar_of_segovia = {
+			# only_in_location = segovia
+			# order = 0
+			# size = large
+			# mesh_list = alcazar_of_segovia_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7494.5938 6.629739 5694.859}
+
+			# allow_demote = no
+		# }
+	# ]]
+}
+
+template santiago_de_compostela
+{
+	# default_variables =
+	# {
+		# mesh_list = cathedral_of_santiago_de_compostela_meshes
+		# replace_meshes = @large_clergy_meshes
+	# }
+	# code = [[
+		# sitges_church = {
+			# only_in_location = santiago_compostela
+			# order = 0
+			# size = large
+			# mesh_list = @mesh_list
+			# add_count_to_mesh_list = @replace_meshes
+			# contributors =
+			# {
+				# has_building_with_graphical_tag_and_at_least_one_level:large_religious = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7301.0254 4.2443333 5824.533}
+		# }
+	# ]]
+}
+
+template cordoba_mosque
+{
+	# code =
+	# [[
+		# mosque_cathedral_of_cordoba = {
+			# only_in_location = cordoba
+			# order = 0
+			# size = large
+			# limit = { dominant_religion = { group = religion_group:muslim } }
+			# mesh_list = mosque_cathedral_of_cordoba_phase1_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7476.579 3.2595234 5508.2534}
+
+			# allow_demote = no
+		# }
+	# ]]
+}
+
+template cordoba_cathedral
+{
+	# code =
+	# [[
+		# mosque_cathedral_of_cordoba = {
+			# only_in_location = cordoba
+			# order = 0
+			# size = large
+			# limit = { NOT = { dominant_religion = { group = religion_group:muslim } } }
+			# mesh_list = mosque_cathedral_of_cordoba_phase2_meshes
+			# contributors =
+			# {
+				# always_one = 1.0
+			# }
+			# filter_func = closest_to_position
+			# weight_func = close_to_center_weights
+
+			# filter_data = {7476.579 3.2595234 5508.2534}
+
+			# allow_demote = no
+		# }
+	# ]]
+}
+
+
+##################################################
+## 2. MONUMENTS
+##################################################
+
+mesh_list =
+{
+	name = "alcazar_of_segovia_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_castilian_alcazar_of_segovia_mesh = 1
+}
+
+mesh_list =
+{
+	name = "cathedral_of_santiago_de_compostela_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_castilian_cathedral_of_santiago_de_compostela_mesh = 1
+}
+
+mesh_list =
+{
+	name = "mosque_cathedral_of_cordoba_phase1_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_castilian_mosque_cathedral_of_cordoba_phase1_mesh = 1
+}
+
+mesh_list =
+{
+	name = "mosque_cathedral_of_cordoba_phase2_meshes"
+	scale_settings_large = { bias = 0 min = 1 max = 1 }
+	should_spawn_flags = no
+	d009_building_monument_castilian_mosque_cathedral_of_cordoba_phase2_mesh = 1
+}
+
+
+##################################################
+## 3. RELIGION
+##################################################
+
+mesh_list = {
+	name = "castilian_small_clergy"
+	scale_settings_small = { bias = 0 min = 0.95 max = 1 }
+	d009_building_castilian_clergy_small_mesh = 1
+	should_spawn_flags = no
+	material_index = 0
+}
+
+mesh_list = {
+	name = "castilian_medium_clergy"
+	scale_settings_small = { bias = -0.5 min = 0.95 max = 1 }
+	d009_building_castilian_clergy_medium_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_large_clergy"
+	scale_settings_small = { bias = 0 min = 0.85 max = 1 }
+	d009_building_castilian_clergy_large_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 4. FORTS
+##################################################
+
+mesh_list = {
+	name = "castilian_fort"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	d009_building_castilian_castle_mesh = 1
+	material_index = 1
+	tag = fort
+	should_spawn_flags = yes
+}
+
+mesh_list = {
+	name = "castilian_bastion"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	d009_building_castilian_bastion_mesh = 1
+	material_index = 1
+	tag = fort
+	should_spawn_flags = yes
+}
+
+mesh_list = {
+	name = "castilian_starfort"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	d009_building_castilian_starfort_mesh = 1
+	material_index = 1
+	should_spawn_flags = yes
+	tag = fort
+}
+
+mesh_list = {
+	name = "castilian_fortress"
+	scale_settings_large = { bias = -0.5 min = 1.4 max = 10 }
+	d009_building_castilian_fortress_mesh = 1
+	material_index = 1
+	should_spawn_flags = yes
+	tag = fort
+}
+
+
+##################################################
+## 5. WALLS
+##################################################
+
+mesh_list = {
+	name = "castilian_wall"
+	d009_building_castille_walls_main1_mesh = 0.1
+	d009_building_castille_walls_main2_mesh = 1
+}
+
+mesh_list = {
+	name = "castilian_wall_tower"
+	d009_building_castille_walls_tower_mesh = 1
+}
+
+mesh_list = {
+	name = "castilian_wall_gate"
+	d009_building_castille_walls_door_mesh = 1
+}
+
+
+##################################################
+## 6. PORTS
+##################################################
+
+mesh_list = {
+	name = "castilian_dock"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_castilian_dock_mesh = 1
+	material_index = 0
+}
+
+mesh_list = {
+	name = "castilian_dry_dock"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_castilian_drydock_mesh = 1
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_shipyard"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_castilian_shipyard_mesh = 1
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_grand_shipyard"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_castilian_grandshipyard_mesh = 1
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_naval_base"
+	scale_settings_small = { min = 1.0 max = 1.0 }
+	scale_settings_large = { min = 1.0 max = 1.0 }
+	render_under_water = yes
+	clamp_to_water_level = yes
+	rotation = port
+	tag = port
+	D009_building_castilian_naval_base_mesh = 1
+	material_index = 1
+}
+
+
+##################################################
+## 7. SPECIAL
+##################################################
+
+mesh_list = {
+	name = "castilian_market"
+	scale_settings_small = { bias = -0.5 min = 0.9 max = 10 }
+	D009_building_castilian_market_a_mesh = 1
+	D009_building_castilian_market_b_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_bridges"
+	rotation = bridge
+	connect_to_road_network = no
+	clear_map_objects = no
+	D009_building_castilian_bridge_small_mesh = 1
+	D009_building_castilian_bridge_medium_mesh = 1
+}
+
+mesh_list = {
+	name = "castilian_culture"
+	scale_settings_small = { bias = -0.1 min = 0.8 max = 0.9 }
+	D009_building_castilian_culture_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 8. PRODUCTION
+##################################################
+
+mesh_list = {
+	name = "castilian_factory"
+	scale_settings_small = { bias = -0.5 min = 1.0 max = 10 }
+	D009_building_castilian_factory_a_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_factory_tier_2"
+	scale_settings_small = { bias = -0.5 min = 0.9 max = 10 }
+	D009_building_castilian_factory_b_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+mesh_list = {
+	name = "castilian_factory_tier_3"
+	scale_settings_small = { bias = -0.5 min = 1.3 max = 10 }
+	D009_building_castilian_factory_c_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 9. MILITARY
+##################################################
+
+mesh_list = {
+	name = "castilian_noble_military"
+	scale_settings_small = { bias = 0 min = 0.6 max = 0.7 }
+	D009_building_castilian_noble_military_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 10. POPULATION
+##################################################
+
+mesh_list = {
+	name = "castillian_noble"
+	scale_settings_small = { bias = -0.5 min = 0.8 max = 1 }
+
+	d009_building_castilian_noble_a_mesh = 0.7
+	d009_building_castilian_noble_b_mesh = 1
+	d009_building_castilian_noble_c_mesh = 2
+
+	material_index = 1
+	spawn_count = { curve = "standard_pop_curve" }
+}
+
+mesh_list = {
+	name = "castillian_burgher"
+	scale_settings_small = { bias = -0.5 min = 0.9 max = 10 }
+	d009_building_castilian_burgher_diorama_a_mesh = 1
+	d009_building_castilian_burgher_diorama_b_mesh = 1
+	d009_building_castilian_burgher_diorama_c_mesh = 1
+	d009_building_castilian_burgher_diorama_d_mesh = 1
+	d009_building_castilian_square_a_mesh = 1
+	material_index = 1
+	spawn_count = { curve = "standard_pop_curve" }
+}
+
+mesh_list = {
+	name = "castillian_peasant"
+	scale_settings_small = { bias = -0.5 min = 1.2 max = 10 }
+	d009_building_castilian_peasant_diorama_a_mesh = 100
+	d009_building_castilian_peasant_diorama_b_mesh = 100
+	d009_building_castilian_peasant_diorama_c_mesh = 100
+	d009_building_castilian_peasant_diorama_d_mesh = 100
+	material_index = 0
+	spawn_count = { curve = "standard_pop_curve" }
+}
+
+mesh_list = {
+	name = "castillian_peasant_rural_mesh"
+	scale_settings_small = { bias = 0 min = 1.3 max = 10 }
+	d009_building_castilian_peasant_diorama_a_mesh = 100
+	d009_building_castilian_peasant_diorama_b_mesh = 100
+	d009_building_castilian_peasant_diorama_c_mesh = 100
+	d009_building_castilian_peasant_diorama_d_mesh = 100
+	material_index = 0
+	spawn_count = { curve = "standard_pop_peasants_curve" }
+}
+
+mesh_list = {
+	name = "castillian_republic_assembly"
+	scale_settings_small = { bias = -0.5 min = 1 max = 1 }
+	d009_building_castilian_palace_mesh = 1
+	should_spawn_flags = no
+	material_index = 1
+}
+
+
+##################################################
+## 11. CULTURE DATA
+##################################################
+
+culture_data = {
+	graphical_culture = west_mediterranean_gfx
+
+	@noble_mesh_list    = castillian_noble
+	@burgher_mesh_list  = castillian_burgher
+	@peasant_mesh_list  = castillian_peasant
+	@peasant_rural_mesh = castillian_peasant_rural_mesh
+	@farming_mesh_list  = castillian_farming_mesh_list
+
+	load_template player_buildings {
+		##INFRASTRUCTURE##
+		default_bridge_meshes = castilian_bridges
+
+		##PORTS##
+		dock_meshes           = castilian_dock
+		dry_dock_meshes       = castilian_dry_dock
+		shipyard_meshes       = castilian_shipyard
+		grand_shipyard_meshes = castilian_grand_shipyard
+		naval_base_meshes     = castilian_naval_base
+
+		##FORTS##
+		fort_meshes     = castilian_fort
+		bastion_meshes  = castilian_bastion
+		starfort_meshes = castilian_starfort
+		fortress_meshes = castilian_fortress
+
+		##SPECIAL##
+		market_meshes  = castilian_market
+		culture_meshes = castilian_culture
+
+		##PRODUCTION##
+		factory_meshes        = castilian_factory
+		factory_tier_2_meshes = castilian_factory_tier_2
+		factory_tier_3_meshes = castilian_factory_tier_3
+
+		##MILITARY##
+		noble_military_meshes = castilian_noble_military
+		# republican_assembly_meshes = castillian_republic_assembly
+	}
+
+	load_template religius_buildings {
+		small_clergy_meshes  = castilian_small_clergy
+		medium_clergy_meshes = castilian_medium_clergy
+		large_clergy_meshes  = castilian_large_clergy
+	}
+
+	load_template unique_buildings {}
+	load_template = santiago_de_compostela { replace_meshes = castilian_large_clergy }
+	load_template cordoba_mosque {}
+	load_template cordoba_cathedral {}
+
+	load_template nobles        { mesh_list = @noble_mesh_list }
+	load_template burghers      { mesh_list = @burgher_mesh_list }
+	load_template peasants      { mesh_list = @peasant_mesh_list }
+	load_template peasant_rural { mesh_list = @peasant_rural_mesh }
+
+	load_template rgo_all { farming_mesh_list = @farming_mesh_list }
+
+	load_template large_city_walls {
+		wall_mesh_list  = castilian_wall
+		tower_mesh_list = castilian_wall_tower
+		gate_mesh_list  = castilian_wall_gate
+	}
+	load_template small_city_walls {
+		wall_mesh_list  = castilian_wall
+		tower_mesh_list = castilian_wall_tower
+		gate_mesh_list  = castilian_wall_gate
+	}
+	load_template small_city_walls_under_construction {}
+}
