@@ -33197,7 +33197,13 @@ adune119 = {
 	etra2132 = { }
 	etra2133 = { }
 	etra2134 = { }
-	etra2135 = { }
+	# gs_prov_104 from vanilla kalay (northern Crimea steppe)
+	etra2135 = {
+		define_pop = { type = clergy size = 0.006 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.526 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.663 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.201 culture = mavisan_culture religion = manyfold }
+	}
 	etra2136 = { }
 	etra2137 = { }
 	etra2138 = { }
@@ -33289,7 +33295,13 @@ adune119 = {
 		define_pop = { type = peasants size = 4.978 culture = abashvan_culture religion = manyfold }
 	}
 
-	etra2158 = { }
+	# gs_prov_104 from vanilla kezlev (northern Crimea steppe)
+	etra2158 = {
+		define_pop = { type = clergy size = 0.007 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.699 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.703 culture = mavisan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.373 culture = mavisan_culture religion = manyfold }
+	}
 	etra2159 = {
 		define_pop = { type = clergy size = 0.028 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 4.787 culture = ekuniman_culture religion = manyfold }
