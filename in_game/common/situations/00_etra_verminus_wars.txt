@@ -91,6 +91,7 @@
 	map_color = {
 		if = {
 			limit = {
+				exists = owner
 				OR = {
 					international_organization:verminus_realms.leader_country = prev.owner
 					situation:verminus_wars.var:verminus_threatening_contender = prev.owner
@@ -109,6 +110,7 @@
 
 	legend_key = {
 		limit = {
+			exists = owner
 			OR = {
 				international_organization:verminus_realms.leader_country = prev.owner
 				situation:verminus_wars.var:verminus_threatening_contender = prev.owner
