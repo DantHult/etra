@@ -3516,7 +3516,7 @@ etra2156 = { topography = hills vegetation = sparse climate = cold_arid religion
 etra2157 = { topography = wetlands vegetation = farmland climate = cold_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice  }
 etra2158 = { topography = flatland vegetation = sparse climate = cold_arid religion = kalge_religion culture = tunjur_culture raw_material = livestock  }
 etra2159 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = ekuniman_culture raw_material = livestock  }
-etra2160 = { topography = hills vegetation = desert climate = cold_arid religion = manyfold culture = ekuniman_culture raw_material = livestock }
+etra2160 = { topography = hills vegetation = desert climate = cold_arid }
 etra2161 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = ekuniman_culture raw_material = fish natural_harbor_suitability = 0.75 }
 etra2162 = { topography = mountains vegetation = sparse climate = cold_semi_arid religion = manyfold culture = high_astanun_culture raw_material = lead }
 etra2163 = { topography = plateau vegetation = sparse climate = hot_semi_arid religion = manyfold culture = high_astanun_culture raw_material = saffron }
