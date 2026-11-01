@@ -7,7 +7,7 @@
 		scope = location
 	}
 
-# 	Etra: Might re-use these later
+# Anbennar: These are commented out as if the "this = location:" does not exist it spams the error log
 #	#Ancient Monuments Pack
 #	
 #	#leshan_buddhaleshan_buddha
