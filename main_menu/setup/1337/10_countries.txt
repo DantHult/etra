@@ -6430,12 +6430,12 @@ countries = {
 		}
 		A324 = {	
 			own_control_core = {
-				etra765 etra768 etra659 etra661 etra158 etra656 etra654 etra655 etra764 etra462 etra159 etra712 etra950 etra952
+				etra765 etra768 etra659 etra661 etra158 etra656 etra654 etra655 etra764 etra462 etra712 etra950 etra952
 				etra967 etra711 etra2058 etra2023 etra2005  etra2098 etra2035 etra1961 etra2088 etra2032 etra1993
 			}
 
 			own_control_integrated = {
-				etra658 etra160 etra949
+				etra658 etra949
 			}
 			starting_technology_level = 3
 
@@ -6583,7 +6583,7 @@ countries = {
 				etra145 etra787 etra140 etra144 etra137 etra141 etra770 etra146 etra147 etra151 etra155 etra721 etra722 etra152
 				 etra142 aita117 aita115 aita118 etra524 etra506 				etra508 etra513 etra154 etra735 etra953 etra954
 				etra776 etra734 etra769 etra701 etra730 etra732 etra736 etra731 etra708 etra733 etra709  etra720   etra726 etra727 etra951 etra728 etra729 etra857
-				 etra2135 etra2158 etra2014 etra2071 etra2003 etra2002 etra1903 etra2077 etra1948 etra1986 etra2064 etra2040 etra1953 etra2001
+				 etra2135 etra2158 etra2014 etra2071 etra2003 etra2002 etra1903 etra2077 etra1948 etra1986 etra2064 etra2040 etra1953 etra2001 etra160 etra159
 			}
 			starting_technology_level = 3
 			include = "expl_western_aduna"

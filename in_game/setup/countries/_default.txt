@@ -2454,11 +2454,6 @@ A376 = { #Lenene
 
 }
 
-A377 = { # Reunited Kingdom — Typheraii formable
-	color = rgb { 255 177 52 }
-	culture_definition = hyriovari_culture
-	religion_definition = manyfold
-}
 
 A378 = { #Iboros placeholder - northwest highlands
 	color = rgb { 204 102 0 }
