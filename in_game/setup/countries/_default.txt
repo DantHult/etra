@@ -2669,21 +2669,21 @@ A419 = { # Placeholder
 }
 A420 = { # Placeholder
 	color = rgb { 60 40 180 }
-	culture_definition = novus_moran_culture
+	culture_definition = high_astanun_culture
 	religion_definition = manyfold
 }
 A421 = { # Placeholder
 	color = rgb { 180 60 140 }
-	culture_definition = abashvan_culture
+	culture_definition = high_astanun_culture
 	religion_definition = manyfold
 }
 A422 = { # Placeholder
 	color = rgb { 30 90 160 }
-	culture_definition = novus_moran_culture
+	culture_definition = high_astanun_culture
 	religion_definition = manyfold
 }
 A423 = { # Placeholder
 	color = rgb { 160 110 30 }
-	culture_definition = abashvan_culture
+	culture_definition = high_astanun_culture
 	religion_definition = manyfold
 }
