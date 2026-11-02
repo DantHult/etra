@@ -185,10 +185,16 @@ locations = {
 	#maitha
 	etra1842 = { rank = city 	town_setup	 = damascus_city }	
 	etra1841 = { rank = city 	town_setup	 = levant_city }
+	etra2107 = { rank = city 	town_setup	 = levant_city }
 	etra1919 = { rank = city 	town_setup	 = baghdad_city }
 	etra1886 = { rank = city 	town_setup	 = baghdad_city }		
 	etra1833 = { rank = town 	town_setup = levant_town }	
-	etra1808 = { rank = town 	town_setup = levant_town }	
+	etra1808 = { rank = town 	town_setup = levant_town }
+	etra2255 = { rank = town 	town_setup = levant_town }
+	etra2218 = { rank = city town_setup = tabriz_city }
+	etra2205 = { rank = city town_setup = levant_city }
+	etra2205 = { rank = town town_setup = anatolian_town }
+	
 }
 building_manager = {
 	caravanserai = { tag = A330 level = 1 location = etra743 }

@@ -976,18 +976,18 @@ d009_monuments = {
 
 }
 
-d009_topostatus = {
-	tag = "topostatus"
+# d009_topostatus = {
+	# tag = "topostatus"
 
-	#ALHAMBRA OF GRANADA
-	illustration_image = {
-		texture_file = "gfx/interface/illustrations/location/castile/monuments/alhambra_of_granada_metadata_os2654x440_d850x50.dds"
-		priority = 201
-		scope = location
+	# #ALHAMBRA OF GRANADA
+	# illustration_image = {
+		# texture_file = "gfx/interface/illustrations/location/castile/monuments/alhambra_of_granada_metadata_os2654x440_d850x50.dds"
+		# priority = 201
+		# scope = location
 
-		trigger = {
-			has_local_dlc = "d009_across_the_pillars"
-			this = location:granada
-		}
-	}
-}
+		# trigger = {
+			# has_local_dlc = "d009_across_the_pillars"
+			# this = location:granada
+		# }
+	# }
+# }
