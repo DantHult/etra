@@ -33482,16 +33482,16 @@ adune119 = {
 	}
 	# from vanilla qumisha
 	etra2160 = {
-		define_pop = { type = clergy size = 0.003 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.650 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.662 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.003 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.650 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.662 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2161 = {
-		define_pop = { type = nobles size = 0.111 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.209 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = burghers size = 2.505 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.318 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.773 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.111 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.209 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = burghers size = 2.505 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.318 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.773 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2162 = {
 		define_pop = { type = nobles size = 0.112 culture = high_astanun_culture religion = manyfold }
@@ -33505,12 +33505,12 @@ adune119 = {
 		define_pop = { type = peasants size = 3.351 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2164 = {
-		define_pop = { type = clergy size = 0.095 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.823 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.095 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.823 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2165 = {
-		define_pop = { type = clergy size = 0.102 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.427 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.102 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.427 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2166 = {
 		define_pop = { type = clergy size = 0.115 culture = pahhuar_culture religion = manyfold }
@@ -33526,12 +33526,12 @@ adune119 = {
 		define_pop = { type = peasants size = 9.51 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2169 = {
-		define_pop = { type = clergy size = 0.101 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.332 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.101 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.332 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2170 = {
-		define_pop = { type = clergy size = 0.058 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.788 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.058 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.788 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2171 = {
 		define_pop = { type = nobles size = 0.088 culture = ekuniman_culture religion = manyfold }
@@ -33563,8 +33563,8 @@ adune119 = {
 	}
 	etra2176 = { }
 	etra2177 = {
-		define_pop = { type = clergy size = 0.064 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.302 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.064 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.302 culture = high_astanun_culture religion = manyfold }
 	}
 	# etra2178 = { }
 	etra2179 = {
@@ -33594,19 +33594,19 @@ adune119 = {
 		define_pop = { type = peasants size = 1.206 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2184 = {
-		define_pop = { type = clergy size = 0.098 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.044 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.098 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.044 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2185 = {
 		define_pop = { type = clergy size = 0.048 culture = high_astanun_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.922 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2186 = {
-		define_pop = { type = nobles size = 0.111 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.208 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = burghers size = 2.499 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.3 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.766 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.111 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.208 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = burghers size = 2.499 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.3 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.766 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2187 = {
 		define_pop = { type = clergy size = 0.072 culture = pahhuar_culture religion = manyfold }
@@ -33622,12 +33622,12 @@ adune119 = {
 		define_pop = { type = peasants size = 6.495 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2190 = {
-		define_pop = { type = clergy size = 0.039 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.244 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.039 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.244 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2191 = {
-		define_pop = { type = clergy size = 0.046 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.759 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.046 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.759 culture = high_astanun_culture religion = manyfold }
 	}
 	# from vanilla gardez
 	etra2192 = {
@@ -33645,8 +33645,8 @@ adune119 = {
 		define_pop = { type = peasants size = 5.061 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2195 = {
-		define_pop = { type = clergy size = 0.089 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.337 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.089 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.337 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2196 = {
 		define_pop = { type = clergy size = 0.103 culture = high_astanun_culture religion = manyfold }
@@ -33686,14 +33686,14 @@ adune119 = {
 		define_pop = { type = clergy size = 0.168 culture = high_astanun_culture religion = manyfold }
 		define_pop = { type = burghers size = 2.013 culture = high_astanun_culture religion = manyfold }
 		define_pop = { type = peasants size = 6.687 culture = high_astanun_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.229 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.229 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2203 = {
-		define_pop = { type = nobles size = 0.084 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.158 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = burghers size = 1.896 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.295 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.098 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.084 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.158 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.896 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 6.295 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.098 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2204 = {
 		define_pop = { type = clergy size = 0.111 culture = high_astanun_culture religion = manyfold }
@@ -33714,8 +33714,8 @@ adune119 = {
 		define_pop = { type = peasants size = 2.912 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2207 = {
-		define_pop = { type = clergy size = 0.057 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.725 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.057 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.725 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2208 = {
 		define_pop = { type = clergy size = 0.073 culture = high_astanun_culture religion = manyfold }
@@ -33756,19 +33756,19 @@ adune119 = {
 		define_pop = { type = peasants size = 2.788 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2216 = {
-		define_pop = { type = nobles size = 0.11 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.207 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = burghers size = 2.484 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.249 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.75 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.11 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.207 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = burghers size = 2.484 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.249 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.75 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2217 = {
 		define_pop = { type = clergy size = 0.099 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = peasants size = 8.17 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2218 = {
-		define_pop = { type = clergy size = 0.101 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.315 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.101 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.315 culture = high_astanun_culture religion = manyfold }
 	}
 	# from vanilla gardez
 	etra2219 = {
@@ -33829,8 +33829,8 @@ adune119 = {
 		define_pop = { type = peasants size = 3.638 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2229 = {
-		define_pop = { type = clergy size = 0.103 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.474 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.103 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.474 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2230 = {
 		define_pop = { type = clergy size = 0.117 culture = pahhuar_culture religion = manyfold }
@@ -33889,8 +33889,8 @@ adune119 = {
 		define_pop = { type = peasants size = 3.561 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2241 = {
-		define_pop = { type = clergy size = 0.042 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.443 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.042 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.443 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2242 = {
 		define_pop = { type = clergy size = 0.076 culture = pahhuar_culture religion = manyfold }
@@ -33906,11 +33906,11 @@ adune119 = {
 	}
 	# from vanilla incheh_borun
 	etra2245 = {
-		define_pop = { type = clergy size = 0.009 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.109 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.345 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.184 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 0.296 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.009 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.109 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.345 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.184 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.296 culture = high_astanun_culture religion = manyfold }
 	}
 	# from vanilla siah_cheshmeh
 	etra2246 = {
@@ -33933,24 +33933,24 @@ adune119 = {
 		define_pop = { type = peasants size = 2.53 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2249 = {
-		define_pop = { type = clergy size = 0.06 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.904 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.06 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.904 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2250 = {
 		define_pop = { type = clergy size = 0.121 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = peasants size = 9.97 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2251 = {
-		define_pop = { type = clergy size = 0.103 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.461 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.103 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.461 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2252 = {
-		define_pop = { type = clergy size = 0.059 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.824 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.059 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.824 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2253 = {
-		define_pop = { type = clergy size = 0.07 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.733 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.07 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.733 culture = high_astanun_culture religion = manyfold }
 	}
 	# from vanilla gardez
 	etra2254 = {
@@ -33960,12 +33960,12 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.058 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2255 = {
-		define_pop = { type = clergy size = 0.051 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.237 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.051 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.237 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2256 = {
-		define_pop = { type = clergy size = 0.039 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.203 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.039 culture = high_astanun_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.203 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2257 = {
 		define_pop = { type = nobles size = 0.12 culture = pahhuar_culture religion = manyfold }
