@@ -31096,7 +31096,7 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra1749 = {
-		define_pop = { type = peasants size = 5.934 culture = kurnai_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 5.934 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla masyaf
 	etra1750 = {
@@ -31365,7 +31365,7 @@ adune119 = {
 	etra1801 = { }
 	# from vanilla chenini
 	etra1802 = {
-		define_pop = { type = peasants size = 4.553 culture = malpa_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 4.553 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1803 = { 
 		define_pop = {	type = clergy	size = 0.009	culture = takkev_culture	religion = tajjev_rites }
@@ -31373,15 +31373,15 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra1804 = {
-		define_pop = { type = peasants size = 5.272 culture = noongar_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 5.272 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra1805 = {
-		define_pop = { type = peasants size = 6.025 culture = noongar_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 6.025 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra1806 = {
-		define_pop = { type = peasants size = 4.682 culture = noongar_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 4.682 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1807 = { }
 	# Adnkhala region pops: abashvan / archonian / nephion / coastal hyriovari, religion manyfold
@@ -31856,7 +31856,7 @@ adune119 = {
 	}
 	# from vanilla smara
 	etra1879 = {
-		define_pop = { type = tribesmen size = 2.519 culture = baradha_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 2.519 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1880 = {
 		define_pop = { type = clergy size = 0.100 culture = abashvan_culture religion = manyfold }
@@ -31984,10 +31984,10 @@ adune119 = {
 
 	# from vanilla figuig
 	etra1899 = {
-		define_pop = { type = clergy size = 0.007 culture = kurnai_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.017 culture = kurnai_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 2.716 culture = kurnai_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 6.339 culture = kurnai_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.007 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.017 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 2.716 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 6.339 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1900 = {
 		define_pop = { type = clergy size = 0.062 culture = nephion_tieflings_culture religion = manyfold }
@@ -32194,10 +32194,10 @@ adune119 = {
 
 	# from vanilla figuig
 	etra1934 = {
-		define_pop = { type = clergy size = 0.008 culture = wirangu_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.019 culture = wirangu_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 3.138 culture = wirangu_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 7.323 culture = wirangu_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.008 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.019 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 3.138 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 7.323 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1935 = {
 		define_pop = { type = clergy size = 0.048 culture = ekuniman_culture religion = manyfold }
@@ -32283,7 +32283,7 @@ adune119 = {
 
 	# from vanilla smara
 	etra1951 = {
-		define_pop = { type = tribesmen size = 3.798 culture = wurundjeri_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 3.798 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1952 = {
 		define_pop = { type = clergy size = 0.046 culture = ekuniman_culture religion = manyfold }
@@ -32300,7 +32300,7 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra1954 = {
-		define_pop = { type = peasants size = 4.626 culture = jaitmatang_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 4.626 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1955 = {
 		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
@@ -32317,9 +32317,9 @@ adune119 = {
 
 	# from vanilla assa
 	etra1957 = {
-		define_pop = { type = clergy size = 0.006 culture = nari_nari_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 6.381 culture = nari_nari_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 0.710 culture = nari_nari_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 6.381 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 0.710 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1958 = {
 		define_pop = { type = clergy size = 0.028 culture = ekuniman_culture religion = manyfold }
@@ -32494,18 +32494,18 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra1987 = {
-		define_pop = { type = peasants size = 5.128 culture = gumbaynggirr_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 5.128 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla figuig
 	etra1988 = {
-		define_pop = { type = clergy size = 0.006 culture = barunggam_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.014 culture = barunggam_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 2.201 culture = barunggam_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 5.137 culture = barunggam_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.014 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 2.201 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 5.137 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla smara
 	etra1989 = {
-		define_pop = { type = tribesmen size = 3.689 culture = bundjalung_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 3.689 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra1990 = {
 		define_pop = { type = clergy size = 0.041 culture = ekuniman_culture religion = manyfold }
@@ -32560,7 +32560,7 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra2000 = {
-		define_pop = { type = peasants size = 5.516 culture = wangan_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 5.516 culture = takkev_culture religion = tajjev_rites }
 	}
 	# gs_prov_121 repeats vanilla aqmecit (northern Crimea steppe)
 	etra2001 = {
@@ -32592,7 +32592,7 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra2004 = {
-		define_pop = { type = peasants size = 6.142 culture = yangga_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 6.142 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2005 = {
 		define_pop = { type = clergy size = 0.056 culture = pahhuar_culture religion = manyfold }
@@ -32607,15 +32607,15 @@ adune119 = {
 	}
 	# from vanilla bechar
 	etra2007 = {
-		define_pop = { type = clergy size = 0.002 culture = bindal_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.006 culture = bindal_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 3.284 culture = bindal_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 7.664 culture = bindal_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.002 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 3.284 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 7.664 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2008 = { }
 	# from vanilla smara
 	etra2009 = {
-		define_pop = { type = tribesmen size = 3.150 culture = bidjara_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 3.150 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2010 = {
 		define_pop = { type = clergy size = 0.037 culture = ekuniman_culture religion = manyfold }
@@ -32668,10 +32668,10 @@ adune119 = {
 
 	# from vanilla figuig
 	etra2017 = {
-		define_pop = { type = clergy size = 0.008 culture = yagalingu_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.019 culture = yagalingu_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 3.121 culture = yagalingu_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 7.284 culture = yagalingu_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.008 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.019 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 3.121 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 7.284 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2018 = { }
 	etra2019 = {
@@ -32681,7 +32681,7 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra2020 = {
-		define_pop = { type = peasants size = 3.839 culture = yuwi_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 3.839 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2021 = {
 		define_pop = { type = clergy size = 0.045 culture = ekuniman_culture religion = manyfold }
@@ -32731,7 +32731,7 @@ adune119 = {
 	etra2029 = { }
 	# from vanilla smara
 	etra2030 = {
-		define_pop = { type = tribesmen size = 2.456 culture = mayi_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 2.456 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2031 = {
 		define_pop = { type = clergy size = 0.021 culture = ekuniman_culture religion = manyfold }
@@ -32787,7 +32787,7 @@ adune119 = {
 	}
 	# from vanilla smara
 	etra2039 = {
-		define_pop = { type = tribesmen size = 4.194 culture = ganggalida_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 4.194 culture = takkev_culture religion = tajjev_rites }
 	}
 	# gs_prov_122 repeats vanilla vosporo (southern Crimea coast)
 	etra2040 = {
@@ -32828,10 +32828,10 @@ adune119 = {
 	}
 	# from vanilla figuig
 	etra2046 = {
-		define_pop = { type = clergy size = 0.006 culture = yanda_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.014 culture = yanda_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 2.217 culture = yanda_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 5.173 culture = yanda_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.014 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 2.217 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 5.173 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2047 = {
 		define_pop = { type = clergy size = 0.021 culture = ekuniman_culture religion = manyfold }
@@ -32867,7 +32867,7 @@ adune119 = {
 	}
 	# from vanilla smara
 	etra2052 = {
-		define_pop = { type = tribesmen size = 3.156 culture = warluwarra_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 3.156 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2053 = {
 		define_pop = { type = clergy size = 0.044 culture = ekuniman_culture religion = manyfold }
@@ -32910,11 +32910,11 @@ adune119 = {
 
 	# from vanilla chenini
 	etra2060 = {
-		define_pop = { type = peasants size = 4.110 culture = yangman_culture religion = dreamtime_religion }
+		define_pop = { type = peasants size = 4.110 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla smara
 	etra2061 = {
-		define_pop = { type = tribesmen size = 3.938 culture = yangman_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 3.938 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2062 = {
 		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
@@ -32971,7 +32971,7 @@ adune119 = {
 	}
 	# from vanilla smara
 	etra2070 = {
-		define_pop = { type = tribesmen size = 3.754 culture = karangpurru_culture religion = dreamtime_religion }
+		define_pop = { type = tribesmen size = 3.754 culture = takkev_culture religion = tajjev_rites }
 	}
 	# gs_prov_120 from vanilla kezlev (northern Crimea steppe)
 	etra2071 = {
@@ -33112,7 +33112,7 @@ adune119 = {
 
 	# from vanilla smara
 	etra2092 = {
-		define_pop = { type = tribesmen size = 3.140 culture = ngalakan_culture religion = bantu_religion }
+		define_pop = { type = tribesmen size = 3.140 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2093 = {
 		define_pop = { type = clergy size = 0.058 culture = nephion_tieflings_culture religion = manyfold }
@@ -33136,10 +33136,10 @@ adune119 = {
 	}
 	# from vanilla figuig
 	etra2096 = {
-		define_pop = { type = clergy size = 0.006 culture = wiradjuri_culture religion = dreamtime_religion }
-		define_pop = { type = clergy size = 0.015 culture = wiradjuri_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 2.361 culture = wiradjuri_culture religion = dreamtime_religion }
-		define_pop = { type = tribesmen size = 5.509 culture = wiradjuri_culture religion = dreamtime_religion }
+		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = clergy size = 0.015 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 2.361 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 5.509 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2097 = {
 		define_pop = { type = clergy size = 0.045 culture = abashvan_culture religion = manyfold }
@@ -33209,19 +33209,19 @@ adune119 = {
 	etra2108 = { }
 	# from vanilla chenini
 	etra2109 = {
-		define_pop = { type = peasants size = 3.835 culture = maori_culture religion = tapu_religion }
+		define_pop = { type = peasants size = 3.835 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2110 = {
-		define_pop = { type = peasants size = 5.768 culture = maori_culture religion = tapu_religion }
+		define_pop = { type = peasants size = 5.768 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2111 = {
-		define_pop = { type = peasants size = 4.873 culture = maori_culture religion = tapu_religion }
+		define_pop = { type = peasants size = 4.873 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2112 = {
-		define_pop = { type = peasants size = 5.750 culture = tumbuka_culture religion = bantu_religion }
+		define_pop = { type = peasants size = 5.750 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2113 = {
 		define_pop = { type = clergy size = 0.045 culture = abashvan_culture religion = manyfold }
@@ -33239,15 +33239,15 @@ adune119 = {
 
 	# from vanilla chenini
 	etra2115 = {
-		define_pop = { type = peasants size = 3.816 culture = chewa_culture religion = bantu_religion }
+		define_pop = { type = peasants size = 3.816 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2116 = {
-		define_pop = { type = peasants size = 4.958 culture = gula_iro_culture religion = bua_religion }
+		define_pop = { type = peasants size = 4.958 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2117 = {
-		define_pop = { type = peasants size = 5.644 culture = sara_culture religion = sao_religion }
+		define_pop = { type = peasants size = 5.644 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2118 = {
 		define_pop = { type = clergy size = 0.058 culture = nephion_tieflings_culture religion = manyfold }
@@ -33323,7 +33323,7 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra2130 = {
-		define_pop = { type = peasants size = 4.982 culture = gbaya_culture religion = adamawa_religion }
+		define_pop = { type = peasants size = 4.982 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2131 = {
 		define_pop = { type = clergy size = 0.022 culture = ekuniman_culture religion = manyfold }
@@ -33333,12 +33333,12 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra2132 = {
-		define_pop = { type = peasants size = 3.453 culture = gbaya_culture religion = adamawa_religion }
+		define_pop = { type = peasants size = 3.453 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2133 = { }
 	# from vanilla chenini
 	etra2134 = {
-		define_pop = { type = peasants size = 5.623 culture = gbaya_culture religion = adamawa_religion }
+		define_pop = { type = peasants size = 5.623 culture = takkev_culture religion = tajjev_rites }
 	}
 	# gs_prov_104 from vanilla kalay (northern Crimea steppe)
 	etra2135 = {
@@ -33349,19 +33349,19 @@ adune119 = {
 	}
 	# from vanilla chenini
 	etra2136 = {
-		define_pop = { type = peasants size = 3.487 culture = ngbandi_culture religion = ngbandi_religion }
+		define_pop = { type = peasants size = 3.487 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2137 = {
-		define_pop = { type = peasants size = 5.910 culture = zande_culture religion = mbori_religion }
+		define_pop = { type = peasants size = 5.910 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2138 = {
-		define_pop = { type = peasants size = 5.426 culture = madi_culture religion = ori_religion }
+		define_pop = { type = peasants size = 5.426 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2139 = {
-		define_pop = { type = peasants size = 5.870 culture = zande_culture religion = mbori_religion }
+		define_pop = { type = peasants size = 5.870 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2140 = {
 		define_pop = { type = clergy size = 0.048 culture = abashvan_culture religion = manyfold }
@@ -33372,7 +33372,7 @@ adune119 = {
 
 	# from vanilla chenini
 	etra2141 = {
-		define_pop = { type = peasants size = 3.727 culture = madi_culture religion = ori_religion }
+		define_pop = { type = peasants size = 3.727 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2142 = {
 		define_pop = { type = clergy size = 0.066 culture = nephion_tieflings_culture religion = manyfold }
@@ -33382,7 +33382,7 @@ adune119 = {
 
 	# from vanilla chenini
 	etra2143 = {
-		define_pop = { type = peasants size = 4.038 culture = gbaya_culture religion = adamawa_religion }
+		define_pop = { type = peasants size = 4.038 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2144 = {
 		define_pop = { type = clergy size = 0.094 culture = nephion_tieflings_culture religion = manyfold }
@@ -33410,9 +33410,9 @@ adune119 = {
 
 	# from vanilla ghat
 	etra2148 = {
-		define_pop = { type = clergy size = 0.004 culture = bassa_culture religion = bantu_religion }
-		define_pop = { type = tribesmen size = 0.004 culture = bassa_culture religion = bantu_religion }
-		define_pop = { type = tribesmen size = 0.759 culture = bassa_culture religion = bantu_religion }
+		define_pop = { type = clergy size = 0.004 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 0.004 culture = takkev_culture religion = tajjev_rites }
+		define_pop = { type = tribesmen size = 0.759 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2149 = {
 		define_pop = { type = clergy size = 0.030 culture = nephion_tieflings_culture religion = manyfold }
@@ -33424,11 +33424,11 @@ adune119 = {
 
 	# from vanilla chenini
 	etra2150 = {
-		define_pop = { type = peasants size = 4.020 culture = bassa_culture religion = bantu_religion }
+		define_pop = { type = peasants size = 4.020 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
 	etra2151 = {
-		define_pop = { type = peasants size = 3.802 culture = bassa_culture religion = bantu_religion }
+		define_pop = { type = peasants size = 3.802 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2152 = {
 		define_pop = { type = clergy size = 0.104 culture = nephion_tieflings_culture religion = manyfold }
