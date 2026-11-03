@@ -7017,3 +7017,130 @@ PIR = {
 		}
 	}
 }
+
+A412 = {
+	# Mortemarum Imperium
+	pattern = "pattern_solid.dds"
+	color1 =  RGB { 38 49 76 }
+	color2 = RGB { 113 179 201 }
+	colored_emblem = {
+		texture = "ce_cross_cantoned.dds"
+		color1 = color2
+		color2 = color2
+		instance = {
+			position = {
+				0.5
+				0.5
+			}
+			scale = {
+				1
+				1
+			}
+		}
+	}
+	colored_emblem = {
+		texture = "ce_skull_anchor_surcouf.dds"
+		color1 = color2
+		color2 = color2
+		instance = {
+			position = {
+				0.21
+				0.22
+			}
+			scale = {
+				-0.475
+				0.4
+			}
+		}
+		instance = {
+			position = {
+				0.79
+				0.22
+			}
+			scale = {
+				0.475
+				0.4
+			}
+		}
+		instance = {
+			position = {
+				0.21
+				0.78
+			}
+			scale = {
+				-0.475
+				0.4
+			}
+		}
+		instance = {
+			position = {
+				0.79
+				0.78
+			}
+			scale = {
+				0.475
+				0.4
+			}
+		}
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color1
+		color2 = color1
+		instance = {
+			position = {
+				0.5
+				0.5
+			}
+			scale = {
+				0.625
+				0.625
+			}
+		}
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = {
+			position = {
+				0.5
+				0.5
+			}
+			scale = {
+				0.58
+				0.58
+			}
+		}
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color1
+		color2 = color1
+		instance = {
+			position = {
+				0.5
+				0.5
+			}
+			scale = {
+				0.5
+				0.5
+			}
+		}
+	}
+	colored_emblem = {
+		texture = "ce_got_greyjoy_squid.dds"
+		color1 = color2
+		color2 = color1
+		instance = {
+			position = {
+				0.5
+				0.55
+			}
+			scale = {
+				0.4
+				0.4
+			}
+		}
+	}
+}
