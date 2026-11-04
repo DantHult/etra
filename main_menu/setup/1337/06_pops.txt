@@ -27149,109 +27149,36 @@ adune119 = {
 		define_pop = {	type = peasants	size = 5.834	culture = infernling_culture	religion = manyfold }
 		define_pop = {	type = peasants	size = 2.442	culture = sioran_culture	religion = manyfold }
 	}
-	etra1015 = {
-		define_pop = {	type = clergy	size = 0.158	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 2.993	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 5.851	culture = keluj_culture	religion = manyfold }
-	}
-	etra1016 = {
-		define_pop = {	type = clergy	size = 0.051	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 23.988	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.486	culture = infernling_culture	religion = manyfold }
-	}
+	etra1015 = { }
+	etra1016 = { }
 	# from vanilla safed
-	etra1017 = {
-		define_pop = {	type = clergy	size = 0.005	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 20.335	culture = khyresh_culture	religion = manyfold }
-	}
+	etra1017 = { }
 	# from vanilla idlib
-	etra1018 = {
-		define_pop = {	type = clergy	size = 0.004	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = clergy	size = 0.004	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 5.447	culture = khyresh_culture	religion = manyfold }
-	}
-	etra1019 = {
-		define_pop = {	type = clergy	size = 0.010	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 8.165	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 15.166	culture = keluj_culture	religion = manyfold }
-	}
+	etra1018 = { }
+	etra1019 = { }
 	# from vanilla qastal
-	etra1020 = {
-		define_pop = {	type = clergy	size = 0.005	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 15.734	culture = khyresh_culture	religion = manyfold }
-	}
+	etra1020 = { }
 	# from vanilla al_bab
-	etra1021 = {
-		define_pop = {	type = clergy	size = 0.039	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 17.866	culture = khyresh_culture	religion = manyfold }
-	}
-	etra1022 = {
-		define_pop = {	type = clergy	size = 0.051	culture = sioran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 16.642	culture = sioran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 5.725	culture = infernling_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.364	culture = infernling_culture	religion = manyfold }
-	}
+	etra1021 = { }
+	etra1022 = { }
 	# from vanilla baalbek
-	etra1023 = {
-		define_pop = {	type = clergy	size = 0.014	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 32.821	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 9.377	culture = khyresh_culture	religion = manyfold }
-	}
-	etra1024 = {
-		define_pop = {	type = clergy	size = 0.010	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 5.892	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 10.943	culture = keluj_culture	religion = manyfold }
-	}
-	etra1025 = {
-		define_pop = {	type = clergy	size = 0.071	culture = ebaran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 4.676	culture = shurari_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 26.500	culture = ebaran_culture	religion = manyfold }
-	}
+	etra1023 = { }
+	etra1024 = { }
+	etra1025 = { }
 	# from vanilla kafartab
-	etra1026 = {
-		define_pop = {	type = clergy	size = 0.009	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 4.921	culture = khyresh_culture	religion = manyfold }
-	}
-	etra1027 = {
-		define_pop = {	type = nobles	size = 0.008	culture = sioran_culture	religion = manyfold }
-		define_pop = {	type = clergy	size = 0.008	culture = sioran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 7.360	culture = sioran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 1.038	culture = infernling_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.259	culture = infernling_culture	religion = manyfold }
-	}
-	etra1028 = {
-		define_pop = {	type = clergy	size = 0.627	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.627	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 11.285	culture = keluj_culture	religion = manyfold }
-	}
-	etra1029 = {
-		define_pop = {	type = clergy	size = 0.008	culture = vocera_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 11.371	culture = vocera_culture	religion = manyfold }
-	}
+	etra1026 = { }
+	etra1027 = { }
+	etra1028 = { }
+	etra1029 = { }
 	etra1030 = { }
 	# from vanilla sughar
-	etra1031 = {
-		define_pop = {	type = clergy	size = 0.008	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 6.773	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 2.084	culture = khyresh_culture	religion = manyfold }
-	}
+	etra1031 = { }
 	etra1032 = {
 	}
-	etra1033 = {
-		define_pop = {	type = clergy	size = 0.008	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 26.848	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.268	culture = infernling_culture	religion = manyfold }
-	}
+	etra1033 = { }
 	etra1034 = { }
-	etra1035 = {
-		define_pop = {	type = clergy	size = 0.006	culture = ebaran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 7.502	culture = ebaran_culture	religion = manyfold }
-	}
-	etra1036 = {
-		define_pop = {	type = clergy	size = 0.175	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 3.325	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 6.500	culture = keluj_culture	religion = manyfold }
-	}
+	etra1035 = { }
+	etra1036 = { }
 	etra1037 = {
 		define_pop = {	type = clergy	size = 0.010	culture = keluj_culture	religion = manyfold }
 		define_pop = {	type = peasants	size = 4.681	culture = ayarena_culture	religion = manyfold }
@@ -27264,83 +27191,35 @@ adune119 = {
 		define_pop = {	type = peasants	size = 8.257	culture = besban_culture	religion = manyfold }
 		define_pop = {	type = peasants	size = 0.916	culture = infernling_culture	religion = manyfold }
 	}
-	etra1041 = {
-		define_pop = {	type = clergy	size = 0.006	culture = ebaran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 1.954	culture = ebaran_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 0.206	culture = nakh_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 0.137	culture = nakh_culture	religion = vainakh_paganism }
-	}
+	etra1041 = { }
 	etra1042 = { }
 	etra1043 = { }
 	etra1044 = { }
 	etra1045 = { }
 	etra1046 = { }
-	etra1047 = {
-		define_pop = {	type = clergy	size = 0.009	culture = yemeni_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.764	culture = takkev_culture	religion = tajjev_rites }
-		define_pop = {	type = peasants	size = 0.889	culture = yemeni_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 2.239	culture = takkev_culture	religion = tajjev_rites }
-		define_pop = {	type = peasants	size = 0.229	culture = yemeni_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 1.075	culture = takkev_culture	religion = tajjev_rites }
-		define_pop = {	type = tribesmen	size = 1.563	culture = yemeni_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 5.122	culture = takkev_culture	religion = tajjev_rites }
-		define_pop = {	type = tribesmen	size = 0.382	culture = yemeni_culture	religion = manyfold }
-	}
+	etra1047 = { }
 	# from vanilla shoubak
-	etra1048 = {
-		define_pop = {	type = peasants	size = 7.142	culture = khyresh_culture	religion = manyfold }
-	}
+	etra1048 = { }
 	etra1049 = { }
 	# from vanilla deir_ez_zor
-	etra1050 = {
-		define_pop = {	type = clergy	size = 0.009	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 6.165	culture = khyresh_culture	religion = manyfold }
-	}
+	etra1050 = { }
 	etra1051 = { }
-	etra1052 = {
-		define_pop = {	type = clergy	size = 0.008	culture = anerrian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 15.023	culture = anerrian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 1.516	culture = infernling_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.251	culture = infernling_culture	religion = manyfold }
-	}
+	etra1052 = { }
 	etra1053 = { }
 	etra1054 = { }
 	etra1055 = { }
 	etra1056 = { }
 	etra1057 = { }
 	etra1058 = { }
-	etra1059 = {
-		define_pop = {	type = clergy	size = 0.006	culture = ebaran_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 17.221	culture = ebaran_culture	religion = manyfold }
-	}
+	etra1059 = { }
 	# from vanilla bosra
-	etra1060 = {
-		define_pop = {	type = clergy	size = 0.005	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 1.021	culture = khyresh_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 7.661	culture = khyresh_culture	religion = manyfold }
-	}
-	etra1061 = {
-		define_pop = {	type = clergy	size = 0.007	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 5.157	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 6.311	culture = keluj_culture	religion = manyfold }
-	}
+	etra1060 = { }
+	etra1061 = { }
 	etra1062 = { }
 	etra1063 = { }
-	etra1064 = {
-		define_pop = {	type = clergy	size = 0.005	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 11.648	culture = keluj_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 21.633	culture = keluj_culture	religion = manyfold }
-	}
+	etra1064 = { }
 	etra1065 = { }
-	etra1066 = {
-		define_pop = {	type = nobles	size = 0.011	culture = anerrian_culture	religion = manyfold }
-		define_pop = {	type = clergy	size = 0.077	culture = anerrian_culture	religion = manyfold }
-		define_pop = {	type = burghers	size = 1.585	culture = anerrian_culture	religion = manyfold }
-		define_pop = {	type = burghers	size = 0.222	culture = infernling_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 11.540	culture = anerrian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.393	culture = infernling_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 1.180	culture = infernling_culture	religion = manyfold }
-	}
+	etra1066 = { }
 	etra1067 = { }
 	etra1068 = { }
 	etra1069 = {
@@ -27376,10 +27255,7 @@ adune119 = {
 		define_pop = {	type = tribesmen	size = 32.794	culture = besban_culture	religion = manyfold }
 
 	}
-	etra1075 = {
-		define_pop = {	type = peasants	size = 10.502	culture = ayarena_culture	religion = manyfold }
-		define_pop = {	type = tribesmen	size = 4.501	culture = keluj_culture	religion = manyfold }
-	}
+	etra1075 = { }
 	etra1076 = {
 		define_pop = {	type = clergy	size = 0.008	culture = sioran_culture	religion = manyfold }
 		define_pop = {	type = peasants	size = 27.794	culture = sioran_culture	religion = manyfold }
@@ -28824,13 +28700,7 @@ adune119 = {
 		define_pop = {	type = peasants	size = 0.114	culture = infernling_culture	religion = manyfold }
 		define_pop = {	type = peasants	size = 0.515	culture = infernling_culture	religion = manyfold }
 	}
-	etra1323 = {
-		define_pop = {	type = nobles	size = 0.008	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = clergy	size = 0.051	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 14.175	culture = selorian_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 0.320	culture = infernling_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 1.607	culture = infernling_culture	religion = manyfold }
-	}
+	etra1323 = { }
 	etra1324 = {
 		define_pop = {	type = clergy	size = 0.018	culture = ayarena_culture	religion = manyfold }
 		define_pop = {	type = peasants	size = 30.213	culture = ayarena_culture	religion = manyfold }
@@ -31095,9 +30965,7 @@ adune119 = {
 		define_pop = {	type = peasants	size = 14.641	culture = khyresh_culture	religion = manyfold }
 	}
 	# from vanilla chenini
-	etra1749 = {
-		define_pop = { type = peasants size = 5.934 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1749 = { }
 	# from vanilla masyaf
 	etra1750 = {
 		define_pop = {	type = clergy	size = 0.007	culture = khyresh_culture	religion = manyfold }
@@ -31364,25 +31232,17 @@ adune119 = {
 	}
 	etra1801 = { }
 	# from vanilla chenini
-	etra1802 = {
-		define_pop = { type = peasants size = 4.553 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1802 = { }
 	etra1803 = { 
 		define_pop = {	type = clergy	size = 0.009	culture = takkev_culture	religion = tajjev_rites }
 		define_pop = {	type = tribesmen	size = 14.086	culture = takkev_culture	religion = tajjev_rites }		
 	}
 	# from vanilla chenini
-	etra1804 = {
-		define_pop = { type = peasants size = 5.272 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1804 = { }
 	# from vanilla chenini
-	etra1805 = {
-		define_pop = { type = peasants size = 6.025 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1805 = { }
 	# from vanilla chenini
-	etra1806 = {
-		define_pop = { type = peasants size = 4.682 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1806 = { }
 	etra1807 = { }
 	# Adnkhala region pops: abashvan / archonian / nephion / coastal hyriovari, religion manyfold
 	etra1808 = {
@@ -31983,12 +31843,7 @@ adune119 = {
 	}
 
 	# from vanilla figuig
-	etra1899 = {
-		define_pop = { type = clergy size = 0.007 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = clergy size = 0.017 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 2.716 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 6.339 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1899 = { }
 	etra1900 = {
 		define_pop = { type = clergy size = 0.062 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 6.216 culture = nephion_tieflings_culture religion = manyfold }
@@ -32303,9 +32158,7 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.916 culture = mavisan_culture religion = manyfold }
 	}
 	# from vanilla chenini
-	etra1954 = {
-		define_pop = { type = peasants size = 4.626 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1954 = { }
 	etra1955 = {
 		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
 		define_pop = { type = peasants size = 17.554 culture = abashvan_culture religion = manyfold }
@@ -32497,9 +32350,7 @@ adune119 = {
 		define_pop = { type = tribesmen size = 2.153 culture = mavisan_culture religion = manyfold }
 	}
 	# from vanilla chenini
-	etra1987 = {
-		define_pop = { type = peasants size = 5.128 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra1987 = { }
 	# from vanilla figuig
 	etra1988 = {
 		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
@@ -32563,9 +32414,7 @@ adune119 = {
 		define_pop = { type = peasants size = 3.504 culture = pahhuar_culture religion = manyfold }
 	}
 	# from vanilla chenini
-	etra2000 = {
-		define_pop = { type = peasants size = 5.516 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2000 = { }
 	# gs_prov_121 repeats vanilla aqmecit (northern Crimea steppe)
 	etra2001 = {
 		define_pop = { type = clergy size = 0.007 culture = mavisan_culture religion = manyfold }
@@ -32595,9 +32444,7 @@ adune119 = {
 		define_pop = { type = peasants size = 0.097 culture = mavisan_culture religion = manyfold }
 	}
 	# from vanilla chenini
-	etra2004 = {
-		define_pop = { type = peasants size = 6.142 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2004 = { }
 	etra2005 = {
 		define_pop = { type = clergy size = 0.056 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = peasants size = 9.969 culture = pahhuar_culture religion = manyfold }
@@ -32671,12 +32518,7 @@ adune119 = {
 	}
 
 	# from vanilla figuig
-	etra2017 = {
-		define_pop = { type = clergy size = 0.008 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = clergy size = 0.019 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 3.121 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 7.284 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2017 = { }
 	etra2018 = { }
 	etra2019 = {
 		define_pop = { type = clergy size = 0.044 culture = ekuniman_culture religion = manyfold }
@@ -32831,12 +32673,7 @@ adune119 = {
 		define_pop = { type = peasants size = 3.491 culture = pahhuar_culture religion = manyfold }
 	}
 	# from vanilla figuig
-	etra2046 = {
-		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = clergy size = 0.014 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 2.217 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 5.173 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2046 = { }
 	etra2047 = {
 		define_pop = { type = clergy size = 0.021 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.667 culture = ekuniman_culture religion = manyfold }
@@ -33141,12 +32978,7 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.660 culture = ekuniman_culture religion = manyfold }
 	}
 	# from vanilla figuig
-	etra2096 = {
-		define_pop = { type = clergy size = 0.006 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = clergy size = 0.015 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 2.361 culture = takkev_culture religion = tajjev_rites }
-		define_pop = { type = tribesmen size = 5.509 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2096 = { }
 	etra2097 = {
 		define_pop = { type = clergy size = 0.045 culture = abashvan_culture religion = manyfold }
 		define_pop = { type = peasants size = 4.038 culture = abashvan_culture religion = manyfold }
@@ -33223,13 +33055,9 @@ adune119 = {
 		define_pop = {	type = peasants	size = 8.500	culture = novus_moran_culture	religion = imperial_creeds }
 	}
 	# from vanilla chenini
-	etra2109 = {
-		define_pop = { type = peasants size = 3.835 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2109 = { }
 	# from vanilla chenini
-	etra2110 = {
-		define_pop = { type = peasants size = 5.768 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2110 = { }
 	# from vanilla chenini
 	etra2111 = {
 		define_pop = { type = peasants size = 4.873 culture = takkev_culture religion = tajjev_rites }
@@ -33253,17 +33081,13 @@ adune119 = {
 	}
 
 	# from vanilla chenini
-	etra2115 = {
-		define_pop = { type = peasants size = 3.816 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2115 = { }
 	# from vanilla chenini
 	etra2116 = {
 		define_pop = { type = peasants size = 4.958 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
-	etra2117 = {
-		define_pop = { type = peasants size = 5.644 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2117 = { }
 	etra2118 = {
 		define_pop = { type = clergy size = 0.058 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 5.797 culture = nephion_tieflings_culture religion = manyfold }
@@ -33352,9 +33176,7 @@ adune119 = {
 	}
 	etra2133 = { }
 	# from vanilla chenini
-	etra2134 = {
-		define_pop = { type = peasants size = 5.623 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2134 = { }
 	# gs_prov_104 from vanilla kalay (northern Crimea steppe)
 	etra2135 = {
 		define_pop = { type = clergy size = 0.006 culture = mavisan_culture religion = manyfold }
@@ -33363,21 +33185,15 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.201 culture = mavisan_culture religion = manyfold }
 	}
 	# from vanilla chenini
-	etra2136 = {
-		define_pop = { type = peasants size = 3.487 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2136 = { }
 	# from vanilla chenini
 	etra2137 = {
 		define_pop = { type = peasants size = 5.910 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
-	etra2138 = {
-		define_pop = { type = peasants size = 5.426 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2138 = { }
 	# from vanilla chenini
-	etra2139 = {
-		define_pop = { type = peasants size = 5.870 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2139 = { }
 	etra2140 = {
 		define_pop = { type = clergy size = 0.048 culture = abashvan_culture religion = manyfold }
 		define_pop = { type = peasants size = 6.928 culture = abashvan_culture religion = manyfold }
@@ -33386,9 +33202,7 @@ adune119 = {
 	}
 
 	# from vanilla chenini
-	etra2141 = {
-		define_pop = { type = peasants size = 3.727 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2141 = { }
 	etra2142 = {
 		define_pop = { type = clergy size = 0.066 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 9.992 culture = nephion_tieflings_culture religion = manyfold }
@@ -33396,9 +33210,7 @@ adune119 = {
 	}
 
 	# from vanilla chenini
-	etra2143 = {
-		define_pop = { type = peasants size = 4.038 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2143 = { }
 	etra2144 = {
 		define_pop = { type = clergy size = 0.094 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 14.105 culture = nephion_tieflings_culture religion = manyfold }
@@ -33442,9 +33254,7 @@ adune119 = {
 		define_pop = { type = peasants size = 4.020 culture = takkev_culture religion = tajjev_rites }
 	}
 	# from vanilla chenini
-	etra2151 = {
-		define_pop = { type = peasants size = 3.802 culture = takkev_culture religion = tajjev_rites }
-	}
+	etra2151 = { }
 	etra2152 = {
 		define_pop = { type = clergy size = 0.104 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 15.644 culture = nephion_tieflings_culture religion = manyfold }
@@ -34223,13 +34033,6 @@ adune140 = {
 	define_pop = {	type = peasants	size = 7.045	culture = keluj_culture	religion = manyfold }
 	define_pop = {	type = tribesmen	size = 8.620	culture = keluj_culture	religion = manyfold }
 }
-adune108 = {
-	define_pop = {	type = nobles	size = 0.034	culture = shurari_culture	religion = manyfold }
-	define_pop = {	type = clergy	size = 0.008	culture = shurari_culture	religion = manyfold }
-	define_pop = {	type = burghers	size = 0.430	culture = shurari_culture	religion = manyfold }
-	define_pop = {	type = peasants	size = 22.357	culture = shurari_culture	religion = manyfold }
-
-
-}
+adune108 = { }
 }
 
