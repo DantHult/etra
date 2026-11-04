@@ -2464,62 +2464,74 @@ A379 = { #Iboros placeholder - central plains
 	color = rgb { 0 102 51 }
 	culture_definition = selorian_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A380 = { #Iboros placeholder - forest marches
 	color = rgb { 128 64 0 }
 	culture_definition = andaean_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A381 = { #Iboros placeholder - crossroads
 	color = rgb { 180 30 60 }
 	culture_definition = vocera_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A382 = { #Iboros placeholder - bundeli heartland
 	color = rgb { 255 153 51 }
 	culture_definition = anerrian_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A383 = { #Iboros placeholder - deep interior
 	color = rgb { 34 89 34 }
 	culture_definition = sioran_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A384 = { #Iboros placeholder - northern frontier
 	color = rgb { 70 130 180 }
 	culture_definition = besban_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A385 = { #Iboros placeholder - western hills
 	color = rgb { 139 69 19 }
 	culture_definition = ebaran_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A386 = { #Iboros placeholder - southern lowlands
 	color = rgb { 160 90 40 }
 	culture_definition = selorian_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A387 = { #Iboros placeholder - eastern marches
 	color = rgb { 210 180 140 }
 	culture_definition = andaean_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 
 A388 = { #Iboros placeholder
 	color = rgb { 55 95 160 }
 	culture_definition = vocera_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A389 = { #Iboros placeholder
 	color = rgb { 46 125 110 }
 	culture_definition = anerrian_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A390 = { #Iboros placeholder
 	color = rgb { 95 55 20 }
 	culture_definition = sioran_culture
 	religion_definition = manyfold
+	is_historic = yes
 }
 A391 = { #Iboros placeholder
 	color = rgb { 200 75 95 }
