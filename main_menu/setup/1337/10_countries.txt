@@ -7110,7 +7110,7 @@ countries = {
 				ruler = random
 				type = monarchy
 				heir_selection = cognatic_primogeniture
-			
+				laws = { education_masses_law = none }
 			}
 
 			country_rank = rank_duchy
@@ -7154,7 +7154,7 @@ countries = {
 				ruler = random
 				type = monarchy
 				heir_selection = cognatic_primogeniture
-			
+				laws = { education_masses_law = none }
 			}
 
 			country_rank = rank_duchy
@@ -7659,7 +7659,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1008
 		}
@@ -7669,7 +7669,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_county
 			capital = etra1088
 		}
@@ -7679,7 +7679,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1173
 		}
@@ -7689,7 +7689,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1172
 		}
@@ -7699,7 +7699,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1198
 		}
@@ -7708,7 +7708,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1185
 		}
@@ -7718,7 +7718,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1372
 		}
@@ -7728,7 +7728,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_duchy
 			capital = etra1404
 		}
@@ -7738,7 +7738,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_county
 			capital = etra1482
 		}
@@ -7748,7 +7748,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_county
 			capital = etra1160
 		}
@@ -7758,7 +7758,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_county
 			capital = etra1320
 		}
@@ -7768,7 +7768,7 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = { ruler = random laws = { education_masses_law = none } }
 			country_rank = rank_county
 			capital = etra1343
 		}
@@ -7983,6 +7983,7 @@ countries = {
 				type = tribe
 				heir_selection = tribal_oldest_male
 				ruler = random
+				laws = { education_masses_law = none }
 			}
 			country_rank = rank_kingdom
 			capital = etra1513
