@@ -8038,36 +8038,9 @@ countries = {
 			government = { ruler = random }
 			country_rank = rank_kingdom
 		}
-		A415 = { # Placeholder
-			own_control_core = { 
-			
-			}
-			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
-		}	
 		A416 = { # Placeholder
 			own_control_core = { 
 				etra1958 etra1949 etra2090 etra1995 etra2027 etra2068 etra2047 etra2129 etra2156 etra1980
-			}
-			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
-		}
-		A417 = { # Placeholder
-			own_control_core = { 
-				
-			}
-			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
-		}
-		A418 = { # Placeholder
-			own_control_core = { 
-
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
