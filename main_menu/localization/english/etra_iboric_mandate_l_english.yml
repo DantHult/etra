@@ -26,3 +26,5 @@
  diplomatic_status_iboric_mandate_name: "The Golden Bull Throne"
  diplomatic_status_iboric_mandate_tooltip: "#T Iboric Mandate#!\nThis [country|e] is a member of the [GetUniqueInternationalOrganization('iboric_mandate').GetName]."
  iboric_mandate_list_who_tt: "$WHO$ is in the [GetUniqueInternationalOrganization('iboric_mandate').GetName] with $LIST$"
+
+ io_opinion_iboric_mandate: "Fellow member of the $iboric_mandate$"
