@@ -18079,11 +18079,25 @@ welfen_dynasty = {
 	}			
 }
 
-welser_dynasty = {
-	pattern = "pattern_solid.dds"
-	 sub = {
-        parent = "THE_WELSER" 
-    }	
+welser_dynasty = { # Per pale argent and gules, a lily counterchanged
+	pattern = "pattern_vertical_split_01.dds"
+	color1 = "white"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_fleur_de_lis_long.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.46 } scale = { 0.8 0.8 } }
+		mask = { 1 }
+	}
+	colored_emblem = {
+		texture = "ce_fleur_de_lis_long.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.5 0.46 } scale = { 0.8 0.8 } }
+		mask = { 2 }
+	}
 }
 
 werdenberg_dynasty = {
