@@ -1769,17 +1769,7 @@ unused_continent = {
 				placeholder_ee_prov_15 = { etra1929}
 				placeholder_ee_prov_16 = { }
 				placeholder_ee_prov_17 = { etra2176 }
-				placeholder_ee_prov_18 = {
-					# etra2260 etra2261 etra2262 etra2263 etra2264 etra2265 etra2266 etra2267 etra2268 etra2269 etra2270 etra2271
-					# etra2272 etra2273 etra2274 etra2275 etra2276 etra2277 etra2278 etra2279 etra2280 etra2281 etra2282 etra2283
-					# etra2284 etra2285 etra2286 etra2287 etra2288 etra2289 etra2290 etra2291 etra2292 etra2293 etra2294 etra2295
-					# etra2296 etra2297 etra2298 etra2299 etra2300 etra2301 etra2302 etra2303 etra2304 etra2305 etra2306 etra2307
-					# etra2308 etra2309 etra2310 etra2311 etra2312 etra2313 etra2314 etra2315 etra2316 etra2317 etra2318 etra2319
-					# etra2320 etra2321 etra2322 etra2323 etra2324 etra2325 etra2326 etra2327 etra2328 etra2329 etra2330 etra2331
-					# etra2332 etra2333 etra2334 etra2335 etra2336 etra2337 etra2338 etra2339 etra2340 etra2341 etra2342 etra2343
-					# etra2344 etra2345 etra2346 etra2347 etra2348 etra2349 etra2350 etra2351 etra2352 etra2353 etra2354 etra2355
-					# etra2356 etra2357 etra2358 etra2359
-				}
+				placeholder_ee_prov_18 = { # etra2260 etra2261 etra2262 etra2263 etra2264 etra2265 etra2266 etra2267 etra2268 etra2269 etra2270 etra2271 etra2272 etra2273 etra2274 etra2275 etra2276 etra2277 etra2278 etra2279 etra2280 etra2281 etra2282 etra2283 etra2284 etra2285 etra2286 etra2287 etra2288 etra2289 etra2290 etra2291 etra2292 etra2293 etra2294 etra2295 etra2296 etra2297 etra2298 etra2299 etra2300 etra2301 etra2302 etra2303 etra2304 etra2305 etra2306 etra2307 etra2308 etra2309 etra2310 etra2311 etra2312 etra2313 etra2314 etra2315 etra2316 etra2317 etra2318 etra2319 etra2320 etra2321 etra2322 etra2323 etra2324 etra2325 etra2326 etra2327 etra2328 etra2329 etra2330 etra2331 etra2332 etra2333 etra2334 etra2335 etra2336 etra2337 etra2338 etra2339 etra2340 etra2341 etra2342 etra2343 etra2344 etra2345 etra2346 etra2347 etra2348 etra2349 etra2350 etra2351 etra2352 etra2353 etra2354 etra2355 etra2356 etra2357 etra2358 etra2359}
 				placeholder_ee_sea_prov = { etra_sea207}
 
 			}

@@ -3461,10 +3461,10 @@ etra2101 = { topography = mountains vegetation = forest climate = cold_arid  raw
 etra2102 = { topography = flatland vegetation = woods climate = continental raw_material = wheat culture = pahhuar_culture religion = manyfold }
 etra2103 = { topography = mountains vegetation = forest climate = continental raw_material = iron culture = ekuniman_culture religion = manyfold }
 etra2104 = { topography = mountains vegetation = grasslands climate = continental raw_material = livestock culture = ekuniman_culture religion = manyfold }
-etra2105 = { topography = inland_sea climate = mediterranean natural_harbor_suitability = 0 raw_material = wheat }
+etra2105 = { topography = hills climate = mediterranean vegetation = grasslands  natural_harbor_suitability = 0.10 raw_material = iron }
 etra2106 = { topography = hills vegetation = forest climate = continental raw_material = stone culture = ekuniman_culture religion = manyfold }
 etra2107 = { topography = wetlands vegetation = farmland climate = mediterranean raw_material = rice culture = nephion_tieflings_culture religion = manyfold }
-etra2108 = { topography = wetlands vegetation = forest climate = mediterranean natural_harbor_suitability = 0 raw_material = wheat }
+etra2108 = { topography = flatland vegetation = farmland climate = mediterranean natural_harbor_suitability = 1 raw_material = wheat }
 etra2109 = { topography = flatland vegetation = desert climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish  }
 etra2110 = { topography = flatland vegetation = desert climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish  }
 etra2111 = { topography = flatland vegetation = desert climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish }
