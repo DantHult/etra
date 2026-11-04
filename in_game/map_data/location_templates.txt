@@ -1596,8 +1596,8 @@ etra196 = { topography = hills vegetation = grasslands climate = continental rel
 etra197 = { topography = hills vegetation = woods climate = continental religion = manyfold culture = wetsuweten_culture raw_material = lead  }
 etra198 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = wetsuweten_culture raw_material = livestock  }
 etra199 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = wetsuweten_culture raw_material = stone  }
-etra200 = { topography = mountains vegetation = grasslands climate = continental }
-etra201 = { topography = mountains vegetation = grasslands climate = continental  }
+etra200 = { topography = mountains vegetation = grasslands climate = continental raw_material = livestock}
+etra201 = { topography = mountains vegetation = grasslands climate = continental raw_material = legumes}
 etra202 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = wetsuweten_culture raw_material = stone  }
 etra203 = { topography = hills vegetation = woods climate = continental religion = manyfold culture = wetsuweten_culture raw_material = lumber  }
 etra204 = { topography = hills vegetation = grasslands climate = subtropical religion = manyfold culture = wetsuweten_culture raw_material = copper  }
@@ -2396,7 +2396,7 @@ etra1036 = { topography = mountain_wasteland vegetation = sparse climate = conti
 etra1037 = { topography = hills vegetation = grasslands climate = mediterranean religion = sunni culture = algerian raw_material = wool}  # ikjan
 etra1038 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid }
 etra1039 = { topography = mountain_wasteland vegetation = forest climate = arctic }
-etra1040 = { topography = flatland vegetation = grasslands climate = mediterranean raw_material = olives natural_harbor_suitability = 0}
+etra1040 = { topography = flatland vegetation = grasslands climate = mediterranean raw_material = olives natural_harbor_suitability = 0 culture = besban_culture religion = manyfold}
 etra1041 = { topography = mountain_wasteland vegetation = woods climate = continental }
 etra1042 = { topography = mountain_wasteland vegetation = forest climate = arctic }
 etra1043 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid }
@@ -2425,7 +2425,7 @@ etra1065 = { topography = mountain_wasteland vegetation = forest climate = arcti
 etra1066 = { topography = mountain_wasteland vegetation = woods climate = continental }
 etra1067 = { topography = mountain_wasteland vegetation = desert climate = arid }
 etra1068 = { topography = mountain_wasteland vegetation = sparse climate = arctic }
-etra1069 = { topography = flatland vegetation = grasslands climate = mediterranean raw_material = olives natural_harbor_suitability = 0}
+etra1069 = { topography = flatland vegetation = grasslands climate = mediterranean raw_material = olives natural_harbor_suitability = 0 culture = besban_culture religion = manyfold}
 etra1070 = { topography = mountain_wasteland vegetation = sparse climate = arctic }
 etra1071 =  { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = telugu raw_material = wool natural_harbor_suitability = 0}
 etra1072 =  { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = telugu raw_material = wool natural_harbor_suitability = 0}
@@ -2603,11 +2603,11 @@ etra1243 = { topography = flatland vegetation = grasslands climate = mediterrane
 etra1244 = { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = telugu raw_material = wool  }
 etra1245 = { topography = hills vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = fish }  # santander
 etra1246 = { topography = flatland vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = wool  }  # cuellar
-etra1247 = { topography = flatland vegetation = woods climate = mediterranean raw_material = wheat  }  # eastern_central_system2
+etra1247 = { topography = flatland vegetation = woods climate = mediterranean raw_material = wheat culture = selorian_culture religion = manyfold}  # eastern_central_system2
 etra1248 = { topography = flatland vegetation = grasslands climate = oceanic religion = hindu culture = telugu raw_material = wheat  }
 etra1249 = { topography = wetlands vegetation = farmland climate = mediterranean religion = hindu culture = telugu raw_material = silk natural_harbor_suitability = 0.60 }
 etra1250 = { topography = hills vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = wheat  }  # sepulveda
-etra1251 = { topography = hills vegetation = woods climate = mediterranean raw_material = olives  }  # eastern_central_system3
+etra1251 = { topography = hills vegetation = woods climate = mediterranean raw_material = olives culture = selorian_culture religion = manyfold}  # eastern_central_system3
 etra1252 = { topography = plateau vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = wheat  }  # palencia
 etra1253 = { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = telugu raw_material = marble  }
 etra1254 = { topography = flatland vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = wheat  }  # palencia
@@ -2631,7 +2631,7 @@ etra1271 = { topography = flatland vegetation = grasslands climate = mediterrane
 etra1272 =  { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = telugu raw_material = wheat  }
 etra1273 = { topography = plateau vegetation = farmland climate = mediterranean religion = catholic culture = castilian raw_material = wheat  }  # tordesillas
 etra1274 = { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = telugu raw_material = wheat  }
-etra1275 = { topography = flatland vegetation = woods climate = mediterranean raw_material = wheat  }  # eastern_central_system1
+etra1275 = { topography = flatland vegetation = woods climate = mediterranean raw_material = wheat culture = anerrian_culture religion = manyfold}  # eastern_central_system1
 etra1276 = { topography = wetlands vegetation = farmland climate = mediterranean religion = hindu culture = telugu raw_material = sugar  }
 etra1277 = { topography = plateau vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = stone  }  # briviesca
 etra1278 = { topography = hills vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = beeswax  }  # adrada
@@ -2681,7 +2681,7 @@ etra1321 = { topography = plateau vegetation = grasslands climate = mediterranea
 etra1322 =  { topography = flatland vegetation = grasslands climate = mediterranean religion = hindu culture = marathi_culture raw_material = beeswax  }
 etra1323 = { topography = mountain_wasteland vegetation = grasslands climate = continental }  # cuenca
 etra1324 = { topography = flatland vegetation = grasslands climate = mediterranean religion = catholic culture = corsican raw_material = sugar  natural_harbor_suitability = 0.25 }
-etra1325 = { topography = hills vegetation = woods climate = continental raw_material = wheat  }  # bejar_mountains
+etra1325 = { topography = hills vegetation = woods climate = continental raw_material = wheat culture = selorian_culture religion = manyfold}  # bejar_mountains
 etra1326 = { topography = plateau vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = stone  }  # el_escorial
 etra1327 = { topography = hills vegetation = woods climate = continental religion = catholic culture = leonese raw_material = livestock  }  # cangas
 etra1328 = { topography = plateau vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = wool  }  # almodovar_del_campo
@@ -2700,7 +2700,7 @@ etra1340 = { topography = hills vegetation = sparse climate = continental religi
 etra1341 = { topography = plateau vegetation = sparse climate = mediterranean religion = catholic culture = castilian raw_material = saltpeter  }  # alcazar_de_san_juan
 etra1342 = { topography = hills vegetation = grasslands climate = continental religion = catholic culture = sardinian raw_material = tin  }
 etra1343 = { topography = plateau vegetation = sparse climate = mediterranean religion = catholic culture = castilian raw_material = silver  }  # guadalajara
-etra1344 = { topography = hills vegetation = sparse climate = continental raw_material = gems  }  # leon_mountains
+etra1344 = { topography = hills vegetation = sparse climate = continental raw_material = gems culture = selorian_culture religion = manyfold}  # leon_mountains
 etra1345 = { topography = plateau vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = beeswax  }  # iniesta
 etra1346 = { topography = plateau vegetation = grasslands climate = continental religion = catholic culture = leonese raw_material = livestock  }  # alcanices
 etra1347 = { topography = plateau vegetation = sparse climate = continental religion = catholic culture = leonese raw_material = wheat  }  # salamanca
@@ -2711,7 +2711,7 @@ etra1351 = { topography = hills vegetation = grasslands climate = mediterranean 
 etra1352 = { topography = plateau vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = iron  }  # madrid
 etra1353 = { topography = wetlands vegetation = grasslands climate = mediterranean religion = catholic culture = sicilian raw_material = wheat }
 etra1354 = { topography = plateau vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = livestock  }  # alarcon
-etra1355 = { topography = hills vegetation = sparse climate = continental raw_material = legumes  }  # ancares_range
+etra1355 = { topography = hills vegetation = sparse climate = continental raw_material = legumes culture = selorian_culture religion = manyfold}  # ancares_range
 etra1356 = { topography = plateau vegetation = sparse climate = continental religion = catholic culture = leonese raw_material = wheat  }  # astorga
 etra1357 = { topography = plateau vegetation = sparse climate = mediterranean religion = catholic culture = castilian raw_material = livestock  }  # lezuza
 etra1358 = { topography = plateau vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = wool  }  # malagon
@@ -2725,7 +2725,7 @@ etra1365 = { topography = plateau vegetation = woods climate = mediterranean rel
 etra1366 = { topography = plateau vegetation = sparse climate = continental religion = catholic culture = castilian raw_material = wheat  }  # alba_de_tormes
 etra1367 = { topography = plateau vegetation = sparse climate = continental religion = catholic culture = leonese raw_material = sand  }  # puebla_de_sanabria
 etra1368 = { topography = plateau vegetation = grasslands climate = continental religion = catholic culture = leonese raw_material = legumes  }  # benavente
-etra1369 = { topography = mountains vegetation = sparse climate = mediterranean raw_material = iron  }  # south_western_pyrenees2
+etra1369 = { topography = mountains vegetation = sparse climate = mediterranean raw_material = iron culture = sioran_culture religion = manyfold}  # south_western_pyrenees2
 etra1370 = { topography = flatland vegetation = sparse climate = mediterranean religion = catholic culture = castilian raw_material = wheat  }  # illescas
 etra1371 = { topography = hills vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = mercury  modifier = almaden_base  }  # almaden
 etra1372 = { topography = plateau vegetation = woods climate = mediterranean religion = catholic culture = castilian raw_material = livestock  }  # alarcon
@@ -2757,7 +2757,7 @@ etra1397 = { topography = hills vegetation = woods climate = mediterranean relig
 etra1398 = { topography = plateau vegetation = forest climate = mediterranean religion = catholic culture = neapolitan raw_material = wine }
 etra1399 = { topography = hills vegetation = grasslands climate = cold_arid religion = catholic culture = sicilian raw_material = saffron  }
 etra1400 = { topography = hills vegetation = sparse climate = continental religion = catholic culture = sicilian raw_material = saffron  }
-etra1401 = { topography = hills vegetation = woods climate = mediterranean raw_material = wool  }  # west_cantabrian_mountains
+etra1401 = { topography = hills vegetation = woods climate = mediterranean raw_material = wool culture = selorian_culture religion = manyfold}  # west_cantabrian_mountains
 etra1402 = { topography = plateau vegetation = sparse climate = mediterranean religion = catholic culture = castilian raw_material = horses  }  # san_clemente
 etra1403 = { topography = flatland vegetation = farmland climate = mediterranean religion = catholic culture = neapolitan raw_material = millet  }
 etra1404 = { topography = plateau vegetation = sparse climate = continental religion = catholic culture = leonese raw_material = wheat  }  # astorga
@@ -2796,7 +2796,7 @@ etra1436 = { topography = hills vegetation = sparse climate = continental religi
 etra1437 = { topography = hills vegetation = farmland climate = mediterranean religion = catholic culture = neapolitan raw_material = wheat  natural_harbor_suitability = 0.25 }
 etra1438 = { topography = hills vegetation = desert climate = cold_arid religion = catholic culture = neapolitan raw_material = salt  }
 etra1439 = { topography = hills vegetation = sparse climate = cold_arid religion = catholic culture = median raw_material = fruit  }
-etra1440 = { topography = flatland vegetation = sparse climate = continental raw_material = wheat  }  # cabrera_range
+etra1440 = { topography = flatland vegetation = sparse climate = continental raw_material = wheat culture = vocera_culture religion = manyfold}  # cabrera_range
 etra1441 = { topography = mountains vegetation = sparse climate = cold_arid religion = catholic culture = median raw_material = mercury  }
 etra1442 = { topography = hills vegetation = grasslands climate = mediterranean religion = catholic culture = median raw_material = wine natural_harbor_suitability = 0}
 etra1443 = { topography = mountains vegetation = sparse climate = cold_arid religion = catholic culture = median raw_material = wool  }
@@ -3292,7 +3292,7 @@ etra1932 = { topography = mountains vegetation = sparse climate = continental re
 etra1933 = { topography = mountains vegetation = woods climate = cold_arid religion = manyfold culture = nephion_tieflings_culture raw_material = lumber  }
 etra1934 = { topography = hills vegetation = sparse climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish  }
 etra1935 = { topography = hills vegetation = woods climate = continental religion = manyfold culture = ekuniman_culture raw_material = iron  }
-etra1936 = { topography = mountain_wasteland vegetation = forest climate = continental culture = ekuniman_culture religion = manyfold }
+etra1936 = { topography = mountain_wasteland vegetation = forest climate = continental culture = ekuniman_culture religion = manyfold raw_material = iron}
 etra1937 = { topography = hills vegetation = sparse climate = continental religion = manyfold culture = ekuniman_culture raw_material = wild_game  }
 etra1938 = { topography = flatland vegetation = farmland climate = mediterranean religion = dreamtime_religion culture = wirangu_culture raw_material = wild_game natural_harbor_suitability = 0 }
 etra1939 = { topography = mountains vegetation = sparse climate = continental religion = manyfold culture = ekuniman_culture raw_material = wheat  }
@@ -3442,7 +3442,7 @@ etra2082 = { topography = flatland_wasteland vegetation = farmland climate = med
 etra2083 = { topography = hills vegetation = forest climate = continental raw_material = fruit culture = pahhuar_culture religion = manyfold }
 etra2084 = { topography = flatland vegetation = farmland climate = mediterranean  raw_material = cotton culture = abashvan_culture religion = manyfold }
 etra2085 = { topography = hills vegetation = sparse climate = cold_arid  raw_material = stone culture = nephion_tieflings_culture religion = manyfold }
-etra2086 = { topography = flatland vegetation = sparse climate = arid raw_material = sand natural_harbor_suitability = 0 }
+etra2086 = { topography = flatland vegetation = sparse climate = arid raw_material = sand natural_harbor_suitability = 0 culture = khyresh_culture religion = manyfold}
 etra2087 = { topography = mountains vegetation = forest climate = continental raw_material = wool culture = ekuniman_culture religion = manyfold }
 etra2088 = { topography = flatland vegetation = woods climate = oceanic raw_material = silk culture = pahhuar_culture religion = manyfold natural_harbor_suitability = 0 }
 etra2089 = { topography = plateau vegetation = woods climate = continental raw_material = livestock culture = ekuniman_culture religion = manyfold }
@@ -3461,10 +3461,10 @@ etra2101 = { topography = mountains vegetation = forest climate = cold_arid  raw
 etra2102 = { topography = flatland vegetation = woods climate = continental raw_material = wheat culture = pahhuar_culture religion = manyfold }
 etra2103 = { topography = mountains vegetation = forest climate = continental raw_material = iron culture = ekuniman_culture religion = manyfold }
 etra2104 = { topography = mountains vegetation = grasslands climate = continental raw_material = livestock culture = ekuniman_culture religion = manyfold }
-etra2105 = { topography = inland_sea climate = mediterranean natural_harbor_suitability = 0 raw_material = wheat }
+etra2105 = { topography = inland_sea climate = mediterranean natural_harbor_suitability = 0 raw_material = wheat culture = hyriovari_culture religion = manyfold}
 etra2106 = { topography = hills vegetation = forest climate = continental raw_material = stone culture = ekuniman_culture religion = manyfold }
 etra2107 = { topography = wetlands vegetation = farmland climate = mediterranean raw_material = rice culture = nephion_tieflings_culture religion = manyfold }
-etra2108 = { topography = wetlands vegetation = forest climate = mediterranean natural_harbor_suitability = 0 raw_material = wheat }
+etra2108 = { topography = wetlands vegetation = forest climate = mediterranean natural_harbor_suitability = 0 raw_material = wheat culture = hyriovari_culture religion = manyfold}
 etra2109 = { topography = flatland vegetation = desert climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish  }
 etra2110 = { topography = flatland vegetation = desert climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish  }
 etra2111 = { topography = flatland vegetation = desert climate = arid religion = tajjev_rites culture = takkev_culture raw_material = fish }
@@ -3516,7 +3516,7 @@ etra2156 = { topography = hills vegetation = sparse climate = cold_arid religion
 etra2157 = { topography = wetlands vegetation = farmland climate = cold_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice  }
 etra2158 = { topography = flatland vegetation = sparse climate = cold_arid religion = kalge_religion culture = tunjur_culture raw_material = livestock  }
 etra2159 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = ekuniman_culture raw_material = livestock  }
-etra2160 = { topography = hills vegetation = desert climate = cold_arid culture = high_astanun_culture }
+etra2160 = { topography = hills vegetation = desert climate = cold_arid culture = high_astanun_culture religion = manyfold raw_material = fruit}
 etra2161 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = high_astanun_culture raw_material = fish natural_harbor_suitability = 0.75 }
 etra2162 = { topography = mountains vegetation = sparse climate = cold_semi_arid religion = manyfold culture = high_astanun_culture raw_material = lead }
 etra2163 = { topography = plateau vegetation = sparse climate = hot_semi_arid religion = manyfold culture = high_astanun_culture raw_material = saffron }
@@ -3797,11 +3797,11 @@ adune102 = { topography = flatland vegetation = grasslands climate = oceanic rel
 adune103 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = salt_sordrenic_culture raw_material = lumber }
 adune105 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = salt  natural_harbor_suitability = 0.50 }
 adune106 = { topography = flatland vegetation = farmland climate = mediterranean religion = catholic culture = catalan raw_material = saffron natural_harbor_suitability = 0.80 } # benabarre
-adune107 = { topography = flatland vegetation = grasslands climate = oceanic raw_material = fish natural_harbor_suitability = 0 }
+adune107 = { topography = flatland vegetation = grasslands climate = oceanic raw_material = fish natural_harbor_suitability = 0 culture = besban_culture religion = manyfold}
 adune108 = { topography = mountain_wasteland vegetation = sparse climate = cold_arid }
 adune109 = { topography = flatland vegetation = grasslands climate = cold_semi_arid religion = manyfold culture = pahhuar_culture raw_material = wheat natural_harbor_suitability = 0 }
 adune11 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = varian_culture raw_material = clay }
-adune110 = { topography = flatland vegetation = grasslands climate = oceanic }
+adune110 = { topography = flatland vegetation = grasslands climate = oceanic raw_material = wild_game}
 adune111 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = clay  natural_harbor_suitability = 1.00 }
 adune112 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = salt_sordrenic_culture raw_material = fruit }
 adune113 = { topography = flatland_wasteland vegetation = sparse climate = arid }
@@ -3817,15 +3817,15 @@ adune126 = { topography = flatland vegetation = grasslands climate = mediterrane
 adune127 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = stone  natural_harbor_suitability = 0.20 }
 adune129 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = wool  natural_harbor_suitability = 0.20 }
 adune13 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = varian_culture raw_material = millet }
-adune130 = { topography = flatland vegetation = grasslands climate = mediterranean raw_material = fish natural_harbor_suitability = 0 }
+adune130 = { topography = flatland vegetation = grasslands climate = mediterranean raw_material = fish natural_harbor_suitability = 0 culture = besban_culture religion = manyfold}
 adune131 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = salt_sordrenic_culture raw_material = clay }
 adune132 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = fruit  natural_harbor_suitability = 0.20 }
-adune133 = { topography = flatland vegetation = grasslands climate = oceanic raw_material = horses  }
+adune133 = { topography = flatland vegetation = grasslands climate = oceanic raw_material = horses culture = anerrian_culture religion = manyfold}
 adune134 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = copper  natural_harbor_suitability = 0.50 }
 adune135 = { topography = hills vegetation = farmland climate = mediterranean religion = catholic culture = aragonese raw_material = silk natural_harbor_suitability = 0 } # sos
 adune139 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = beeswax  natural_harbor_suitability = 0.20 }
 adune14 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = varian_culture raw_material = copper }
-adune140 = { topography = hills vegetation = sparse climate = continental raw_material = salt  }
+adune140 = { topography = hills vegetation = sparse climate = continental raw_material = salt culture = keluj_culture religion = manyfold}
 adune141 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = wine  natural_harbor_suitability = 0.20 }
 adune142 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = olives  natural_harbor_suitability = 0.20 }
 adune145 = { topography = plateau vegetation = grasslands climate = mediterranean religion = catholic culture = castilian raw_material = iron  }  # toledo
@@ -3836,7 +3836,7 @@ adune15 = { topography = flatland vegetation = grasslands climate = oceanic reli
 adune154 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = salt_sordrenic_culture raw_material = copper }
 adune155 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = salt_sordrenic_culture raw_material = pearls natural_harbor_suitability = 0.25 }
 adune157 = { topography = hills vegetation = woods climate = mediterranean  raw_material = wine culture = abashvan_culture religion = manyfold }
-adune158 = { topography = plateau vegetation = desert climate = arid }
+adune158 = { topography = plateau vegetation = desert climate = arid culture = takkev_culture religion = tajjev_rites raw_material = fruit}
 adune159 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = beeswax  natural_harbor_suitability = 0.20 }
 adune16 = { topography = flatland vegetation = grasslands climate = oceanic religion = manyfold culture = varian_culture raw_material = medicaments }
 adune161 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = salt_sordrenic_culture raw_material = wine  natural_harbor_suitability = 0.20 }

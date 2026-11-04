@@ -18,7 +18,7 @@ countries = {
 		A01 = {	#Morium Imperium
 			country_rank = rank_empire
 			own_control_core = {
-				eternalcity1 eternalcity2 eternalcity3 godhand1 godhand2 godhand3 godhand4 godhand5 godhand6 godhand7 godhand8 testprovince250
+				eternalcity1 eternalcity2 eternalcity3 godhand1 godhand2 godhand3 godhand4 godhand5 godhand6 godhand7 godhand8
 				godhand9 godhand10 godhand11 godhand12 godhand13 godhand14 godhand15 godhand16 godhand17 godhand18 godhand19
 				godhand20 godhand21 godhand22 godhand23 godhand24 godhand25 godhand26 godhand27 godhand28 godhand29 godhand30
 				godhand31 godhand32 godhand33 godhand34 godhand35 godhand36 godhand37 godhand38 godhand39 godhand40 godhand41
@@ -6456,7 +6456,7 @@ countries = {
 		A325 = {	
 			own_control_core = {
 				etra66 etra38 etra72 etra68 etra67 etra304 etra69 etra176 etra175 etra223 etra168 etra169 etra70 etra177 etra178 etra181 etra198
-				etra179 etra192 etra193 etra202 etra194 etra207 etra208 etra120 etra118 etra117 etra211 etra209 etra180 etra205 etra119 etra206 etra210 etra200 etra1808 etra1809 etra1813 etra1812 etra1810 etra1816 etra1814 etra1815 etra1811 etra1819 etra1818 etra1817 etra1821 etra1820 etra1822 etra1823 etra1827 etra1830 etra1828 etra1829 etra1833 etra1832 etra1831 etra1834 etra12075 etra1825 etra1826 etra1824 etra2018
+				etra179 etra192 etra193 etra202 etra194 etra207 etra208 etra120 etra118 etra117 etra211 etra209 etra180 etra205 etra119 etra206 etra210 etra1808 etra1809 etra1813 etra1812 etra1810 etra1816 etra1814 etra1815 etra1811 etra1819 etra1818 etra1817 etra1821 etra1820 etra1822 etra1823 etra1827 etra1830 etra1828 etra1829 etra1833 etra1832 etra1831 etra1834 etra1825 etra1826 etra1824 etra2018
 			}
 			starting_technology_level = 3
 
@@ -7119,7 +7119,7 @@ countries = {
 		}	
 		A354 = {
 			own_control_core = {
-				etra166 etra507 etra463 etra186 etra786 etra191 etra167 etra660 etra190 etra187 etra172 etra203 etra204 etra184 etra224 etra225 etra221 etra189 etra196 etra199 etra220 etra195 etra201 etra2008
+				etra166 etra507 etra463 etra186 etra786 etra191 etra167 etra660 etra190 etra187 etra172 etra203 etra204 etra184 etra224 etra225 etra221 etra189 etra196 etra199 etra220 etra195 etra2008
 			}
 			starting_technology_level = 3
 
@@ -7430,7 +7430,7 @@ countries = {
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
 			government = {
-				ruler = A370_caiyndor_marcellian
+				ruler = A370_caiyndor_geoffrey
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 			
@@ -7555,9 +7555,9 @@ countries = {
 		}
 		A378 = { #Iborros Empire
 			own_control_core = {
-				etra1164 etra1153 etra1138 etra1097 etra1086 etra1168 etra1156 etra1153 etra1169 etra1012 etra1173 etra1153 etra1133 etra1076 etra1115 etra1109 etra1125 etra1120 etra1098 etra1116 etra1096 etra1161 etra1147 etra1158 etra1180 etra1179 etra1135 etra1152 etra1175 adune106 adune135 etra1146 etra1487 etra1572 etra1494 etra1181 etra1142 etra1518 etra1497 etra1591 etra1663 etra1553 etra1670 etra1567 etra1536 etra1521 etra1542 etra1574 etra1486 etra1507 etra1523 etra1579 etra1582 etra1508 etra1535 etra1564 etra1566 etra1492 etra1504 etra1541 etra1576 etra1562 etra1549 etra1489 etra1570 etra1249 etra1208 etra1136 etra1134 etra1162 etra1209 etra1171 etra1211 etra1149 etra1185 etra1230 etra1210 etra1256 etra1228 etra1202 etra1244 etra1187 etra1272 etra1237 etra1282 etra1232 etra1243 etra1217 etra1276 etra1214 etra1223 etra1236 etra1246 etra1247 etra1279 etra1275 etra1250 etra1221 etra1235 etra1231 etra1251 etra1155 etra1151 etra1178 etra1172 etra1137 etra1260 etra1268 etra1159 etra1226 etra1239 etra1241 etra1262  etra1245 etra1268 etra1252 etra1215 etra1154  etra1284 etra1261 etra1240 etra1322 etra1253 etra1305 etra1222 etra1378 etra1233 etra1321 etra1307  	etra1197 etra1207 etra1312 etra1434 etra1361 etra1316 etra1314 etra1325 etra1347 etra1366 etra1448 etra1329 etra1339 etra1344 etra1373 etra1377 etra1332  etra1340 etra1205 etra1219 etra1327 etra1355  etra1435 etra1356 etra1454 etra1456 adune147 etra1337 adune114
+				etra1164 etra1138 etra1097 etra1086 etra1168 etra1156 etra1169 etra1012 etra1173 etra1153 etra1133 etra1076 etra1115 etra1109 etra1125 etra1120 etra1098 etra1116 etra1096 etra1161 etra1147 etra1158 etra1180 etra1179 etra1135 etra1152 etra1175 adune106 adune135 etra1146 etra1487 etra1572 etra1494 etra1181 etra1142 etra1518 etra1497 etra1591 etra1663 etra1553 etra1670 etra1567 etra1536 etra1521 etra1542 etra1574 etra1486 etra1507 etra1523 etra1579 etra1582 etra1508 etra1535 etra1564 etra1566 etra1492 etra1504 etra1541 etra1576 etra1562 etra1549 etra1489 etra1570 etra1249 etra1208 etra1136 etra1134 etra1162 etra1209 etra1171 etra1211 etra1149 etra1185 etra1230 etra1210 etra1256 etra1228 etra1202 etra1244 etra1187 etra1272 etra1237 etra1282 etra1232 etra1243 etra1217 etra1276 etra1214 etra1223 etra1236 etra1246 etra1247 etra1279 etra1275 etra1250 etra1221 etra1235 etra1231 etra1251 etra1155 etra1151 etra1178 etra1172 etra1137 etra1260 etra1159 etra1226 etra1239 etra1241 etra1262  etra1245 etra1268 etra1252 etra1215 etra1154  etra1284 etra1261 etra1240 etra1322 etra1253 etra1305 etra1222 etra1378 etra1233 etra1321 etra1307  	etra1197 etra1207 etra1312 etra1434 etra1361 etra1316 etra1314 etra1325 etra1347 etra1366 etra1448 etra1329 etra1339 etra1344 etra1373 etra1377 etra1332  etra1340 etra1205 etra1219 etra1327 etra1355  etra1435 etra1356 etra1454 etra1456 adune147 etra1337 adune114
 				etra1242 etra1286 etra1287 etra1285 etra1283 etra1218 etra1257 etra1298 etra1212 etra1303 etra1308 etra1306 etra1304 etra1381 etra1311 etra1376 etra1333 etra1372 etra1288 etra1290 etra1291 etra1295 etra1292 etra1294 etra1300 etra1206 etra1296 etra1297 etra1299 etra1289 etra1301 etra1302 etra1318 etra1040 etra1069 etra1013 etra1110 etra1010 etra1008 etra1118 
-				etra1357 etra1309 etra1334 etra1310 etra1225 etra1293 etra1088 etra1114 etra1103 etra1080 etra1107 etra1108 etra1124 etra1119 etra1106 etra1123 etra1094 etra1079 etra1117 etra1350 etra1315 etra1440 etra1346 etra11413 etra1348 etra1330 etra1319 etra1360
+				etra1357 etra1309 etra1334 etra1310 etra1225 etra1293 etra1088 etra1114 etra1103 etra1080 etra1107 etra1108 etra1124 etra1119 etra1106 etra1123 etra1094 etra1079 etra1117 etra1350 etra1315 etra1440 etra1346 etra1348 etra1330 etra1319 etra1360
 				etra1037 etra1074 etra1093 etra1092 etra1413 etra1452 etra1342 etra1363 etra1353 etra1423 etra1418 etra1430  etra1445 etra1480 etra1386 etra1451 etra1447 etra1432 adune121 etra1324 etra1186 etra1192 etra988 etra1141 etra1281 etra1265 etra1196 etra1190 etra1199 etra1213 etra1167 etra1266 etra1248 etra1267 etra1271 etra1201 etra1200 etra1184 etra1183 etra1259 etra1270 etra1006 etra1188 etra1195 etra1189 etra1193 etra1264 etra1166 etra1254 etra1269 etra1216 etra1150 etra1280 etra1139 etra1263 etra1238 etra1234 etra1191 etra1224 etra1089 etra1091 etra1131 etra1128 etra1278 etra1258 etra1229 etra1277 etra1274 etra1140 etra1194 etra1203 etra1143 etra1273 etra1220 etra1163 etra1174 etra1145 etra1198 etra1255 etra1204 etra1170 etra1227 adune133 	etra983 etra984 etra986 etra985 etra1011 etra990  etra991 etra1407 etra989 etra995 etra1007 etra987 etra993 etra996 etra1003 adune123 etra1081 etra1082 etra1072 etra1071 etra1077 etra1105 etra1099 etra1132  etra1100 etra1127 etra1113 etra1101 etra1078 etra1111 etra1130 etra1087 etra1121 etra1085 etra1083 etra1126 etra1090 etra1084 etra1095 etra1129 etra1104 etra1122 etra1102 etra1368 etra1367 etra1380 etra1404 etra1463 etra1470 etra1382 etra1472 etra1468 etra1396 etra1458 etra1433 etra1476 etra1370 etra1384 etra1393 etra1403 etra1457 etra1406 etra1375 etra1394   etra1401 etra1391 etra1475 etra1482   etra999 etra1000 etra1462 etra1002 etra1001 etra1005 etra1112 adune130 adune107 
 				etra1320 etra1343 etra1317 etra1331 etra1351 etra1359 etra1365 etra1352 etra1326 etra1362 etra1369 etra1176 etra1160 etra1148 etra1165 etra1157 etra1177 etra1345 etra1371 etra1358 etra1338 etra1349 etra992 etra997 etra994 etra1004 etra998 etra1374 etra1341  etra1336 etra1354 etra1364 etra1402 etra1313 etra1328 etra1335 etra1144 etra1379 adune145 etra1483 etra1014 etra1397
 			
@@ -7774,7 +7774,7 @@ countries = {
 		}
 		A391 = { #Iboros placeholder
 			own_control_core = { #Suneroś
-				etra1415 etra1398 etra1437 etra1460 etra1453 etra1427 etra1420 etra1410 etrta1421 etra1411 etra1478 etra1421 etra1412 etra1428 etra1461 etra1425 etra1399 etra1444 etra1417 etra1388 etra1390 etra1422  etra1466 etra1465 etra1426
+				etra1415 etra1398 etra1437 etra1460 etra1453 etra1427 etra1420 etra1410 etra1411 etra1478 etra1421 etra1412 etra1428 etra1461 etra1425 etra1399 etra1444 etra1417 etra1388 etra1390 etra1422  etra1466 etra1465 etra1426
 			}
 			include = "expl_western_aduna"
 			include = "expl_northern_narkara"
@@ -7808,7 +7808,7 @@ countries = {
 		}
 		A394 = { #Iboros placeholder
 			own_control_core = {
-				etra1488 etra1522  etra1611 etra1481 etra1603 etra1528 etra1613  etra1493 etra1610 etra1505
+				etra1488 etra1522  etra1611 etra1481 etra1603 etra1528  etra1493 etra1610 etra1505
 			}
 			include = "expl_northern_narkara"
 			include = "india_limited_monarchy"
@@ -7963,7 +7963,7 @@ countries = {
 		}
 		A408 = { #Crater placeholder
 			own_control_core = {
-				etra1009 etra1017 etra1018 etra1023 etra1026 etra1031 adune110 etra1060 etra1485 etra1592 etra1593 etra1594 etra1595 etra1596 etra1597 etra1598 etra1599 etra1606 etra1608 etra1609 etra1612 etra1616 etra1618 etra1619 etra1620 etra1621 etra1622 etra1623 etra1624 etra1625 etra1626 etra1627 etra1628 etra1629 etra1630 etra1631 etra1632 etra1633 etra1634 etra1635 etra1636 etra1637 etra1638 etra1639 etra1640 etra1641 etra1642 etra1643 etra1644 etra1646 etra1647 etra1648 etra1649 etra1650 etra1651 etra1652 etra1653 etra1654 etra1655 etra1656 etra1657 etra1658 etra1659 etra1660 etra1661 etra1662 etra1664 etra1665 etra1666 etra1667 etra1668 etra1669 etra1672 etra1673 etra1674 etra1675 etra1676 etra1677 etra1679 etra1680 etra1681 etra1682 etra1683 etra1684 etra1685 etra1686 etra1687 etra1688 etra1689 etra1690 etra1691 etra1692 etra1693 etra1694 etra1695 etra1696 etra1697 etra1698 etra1699 etra1700 etra1701 etra1702 etra1703 etra1704 etra1705 etra1706 etra1707 etra1708 etra1709 etra1710 etra1711 etra1712 etra1713 etra1714 etra1715 etra1716 etra1717 etra1718 etra1719 etra1720 etra1721 etra1722 etra1723 etra1724 etra1725 etra1726 etra1727 etra1728 etra1729 etra1730 etra1731 etra1732 etra1733 etra1734 etra1735 etra1736 etra1737 etra1738 etra1739 etra1740 etra1741 etra1742 etra1743 etra1744 etra1745 etra1746 etra1747 etra1748 etra1750 etra1751 etra1752 etra1753 etra1754 etra1755 etra1756 etra1757 etra1758 etra1759 etra1760 etra1761 etra1762 etra1763 etra1764 etra1765 etra1766 etra1767 etra1768 etra1769 etra1770 etra1771 etra1772 etra1773 etra1774 etra1775 etra1776 etra1777 etra1778 etra1779 etra1780 etra1781 etra1782 etra1788 etra1789 etra1790 etra1791 etra1792 etra1793 etra1794 etra1795 etra1796 etra1797 etra1798 etra1799 etra1800 etra1879 etra2070 etra2029 etra2009 etra1957 etra2052 etra1988 etra1934 etra1951 etra2039 etra2086 etra2092 etra2060 etra2020 etra2030 etra1989 etra2007 etra2061
+				etra1009 etra1485 etra1592 etra1593 etra1594 etra1595 etra1596 etra1597 etra1598 etra1599 etra1606 etra1608 etra1609 etra1612 etra1616 etra1618 etra1619 etra1620 etra1621 etra1622 etra1623 etra1624 etra1625 etra1626 etra1627 etra1628 etra1629 etra1630 etra1631 etra1632 etra1633 etra1634 etra1635 etra1636 etra1637 etra1638 etra1639 etra1640 etra1641 etra1642 etra1643 etra1644 etra1646 etra1647 etra1648 etra1649 etra1650 etra1651 etra1652 etra1653 etra1654 etra1655 etra1656 etra1657 etra1658 etra1659 etra1660 etra1661 etra1662 etra1664 etra1665 etra1666 etra1667 etra1668 etra1669 etra1672 etra1673 etra1674 etra1675 etra1676 etra1677 etra1679 etra1680 etra1681 etra1682 etra1683 etra1684 etra1685 etra1686 etra1687 etra1688 etra1689 etra1690 etra1691 etra1692 etra1693 etra1694 etra1695 etra1696 etra1697 etra1698 etra1699 etra1700 etra1701 etra1702 etra1703 etra1704 etra1705 etra1706 etra1707 etra1708 etra1709 etra1710 etra1711 etra1712 etra1713 etra1714 etra1715 etra1716 etra1717 etra1718 etra1719 etra1720 etra1721 etra1722 etra1723 etra1724 etra1725 etra1726 etra1727 etra1728 etra1729 etra1730 etra1731 etra1732 etra1733 etra1734 etra1735 etra1736 etra1737 etra1738 etra1739 etra1740 etra1741 etra1742 etra1743 etra1744 etra1745 etra1746 etra1747 etra1748 etra1750 etra1751 etra1752 etra1753 etra1754 etra1755 etra1756 etra1757 etra1758 etra1759 etra1760 etra1761 etra1762 etra1763 etra1764 etra1765 etra1766 etra1767 etra1768 etra1769 etra1770 etra1771 etra1772 etra1773 etra1774 etra1775 etra1776 etra1777 etra1778 etra1779 etra1780 etra1781 etra1782 etra1788 etra1789 etra1790 etra1791 etra1792 etra1793 etra1794 etra1795 etra1796 etra1797 etra1798 etra1799 etra1800 etra1879 etra2070 etra2029 etra2009 etra1957 etra2052 etra1988 etra1934 etra1951 etra2039 etra2086 etra2092 etra2060 etra2020 etra2030 etra1989 etra2007 etra2061
 				etra2130 etra2116 etra2111
 			}
 			include = "expl_western_aduna"
@@ -7991,7 +7991,7 @@ countries = {
 			own_control_core = { 
 				etra2089 etra1997 etra1999 etra2025 etra2095 etra2087 etra1992 etra1990 etra2006 etra2010 etra2051 etra2080
 				etra2019 etra2073 etra1996 etra2104 etra2024  etra1893 etra2022 etra1895 etra2021 etra2045 etra2056 etra1945
-				etra2053 etra2054 etra2079 etra2099 etra1946 etra1896 etra1943 etra2069 etra2094 etra2106 etra1887 etra2063 etra1978 etra2067 etra2038 etra1073 etra1985 etra2034 etra2015 etra2074 etra1974 etra1964 etra1944 etra1942 etra1932 etra1941 etra2066 etra1963 etra1966 etra1973 etra1968  etra1975  etra1970 etra1967 etra1965 etra1962 etra2011 etra1972 etra1952 etra2075 etra1860 etra1931 etra2081 etra1865 etra1930 etra1936  etra2159 etra2075 etra1860 etra2081 etra1931 etea1930 etra1941 etra1942 etra1936 etra1865 etra1930 	etra1878 etra2145 etra2146 etra1976 etra2072 etra1959 etra1928 etra2042 etra1969 etra2131 etra2026 etra2102 etra2083 etra1982 etra2048 etra1994 etra2043 adune109 etra2257 etra2230 etra2242 etra2189 etra2231 etra2214 etra2167
+				etra2053 etra2054 etra2079 etra2099 etra1946 etra1896 etra1943 etra2069 etra2094 etra2106 etra1887 etra2063 etra1978 etra2067 etra2038 etra1073 etra1985 etra2034 etra2015 etra2074 etra1974 etra1964 etra1944 etra1932 etra2066 etra1963 etra1966 etra1973 etra1968  etra1975  etra1970 etra1967 etra1965 etra1962 etra2011 etra1972 etra1952  etra2159 etra2075 etra1860 etra2081 etra1931 etra1941 etra1942 etra1936 etra1865 etra1930 	etra1878 etra2145 etra2146 etra1976 etra2072 etra1959 etra1928 etra2042 etra1969 etra2131 etra2026 etra2102 etra2083 etra1982 etra2048 etra1994 etra2043 adune109 etra2257 etra2230 etra2242 etra2189 etra2231 etra2214 etra2167
 				etra2205 etra2206 etra2250 etra2225 etra2201 etra2215 etra2223 etra2181 etra2175 etra2212 etra2235 etra2224 etra2187 etra2188 etra2168 etra2217 etra2166 etra2244 etra2183 etra2222 etra2171
 			}
 			include = "expl_western_aduna"
@@ -8001,7 +8001,7 @@ countries = {
 		}
 		A411 = { # Archonia
 			own_control_core = { 
-					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra1856 etra1853 etra1869 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1846 etra1847 etra1872 etra1873 etra1870 etra1838 etra1868 etra1839 etra2153 etra1871 etra2062 etra1858 etra1881 etra1874 etra1848 etra2127 etra1889 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 etra1851 etra1849 etra2097 etra1850 etra2113 adune157 etra1889 etra1881 etra1856 etra1853 etra1869 etra2153 etra1871 etra1870 etra2062 etra1858 etra1872 etra1846 etra1847 
+					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1838 etra1868 etra1839 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 adune157 etra1889 etra1856 etra1853 etra1869 etra2153 etra1871 etra1872 etra1846 etra1847 
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8020,7 +8020,7 @@ countries = {
 		A413 = { 
 			own_control_core = { 
 				etra1886 etra1882 etra2119 etra1926 etra1927 etra2114 etra1877 etra1876 etra1885 etra2028 etra2142 etra2124 etra2128 
-				etra1891 etra2107 etra2144 etra1890 etra2155 etra1905 etra1875 etra2157 etra1857 etra1888 etra2091 etra1884 etra2100 etra1914 etra1892 etra2152 etra1906 etra1907 etra1915 etra2084 etra1950 etra1913 etra1921 etra1919 etra2122 etra1883 etra1866 etra1864 etra1955 etra1880 etra1917 etra1918 etra1916 etra1922 etra1920 etra1923 etra19124 etra1912 etra1911 etra1910 etra1908 etra1904 etra1981 etra1979 etra1924 etra1947 etra2103 etra1858 etra1874 etra1848  etra1873     etra1881  etra2062 etra1870    etra2127 etra2097 etra1851 etra2113 etra1850 etra1849 				etra2085  etra2013 etra1983 etra2059 etra2036 etra1900 etra2118 etra2154 etra1998 etra1901 etra2093 etra1933 etra2041 etra2057 etra2125 etra2149  etra1933 etra1960 etra2078 etra2033 etra2076 etra2016 etra2050 etra1971 etra1956 etra1898 etra2101 
+				etra1891 etra2107 etra2144 etra1890 etra2155 etra1905 etra1875 etra2157 etra1857 etra1888 etra2091 etra1884 etra2100 etra1914 etra1892 etra2152 etra1906 etra1907 etra1915 etra1911 etra1910 etra1908 etra1904 etra1981 etra1979 etra1947 etra2103 etra1858 etra1874 etra1848  etra1873     etra1881  etra2062 etra1870    etra2127 etra2097 etra1851 etra2113 etra1850 etra1849 				etra2085  etra2013 etra1983 etra2059 etra2036 etra1900 etra2118 etra2154 etra1998 etra1901 etra2093 etra2041 etra2057 etra2125 etra2149  etra1933 etra1960 etra2078 etra2033 etra2076 etra2016 etra2050 etra1971 etra1956 etra1898 etra2101 
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8030,7 +8030,7 @@ countries = {
 		}
 		A414 = { # Placeholder
 			own_control_core = { 
-				etra1935 etra1937 etra1897 etra2044 etra1897 etra1984 etra1902 etra1977 etra2031 etra1940 etra1939 
+				etra1935 etra1937 etra2044 etra1897 etra1984 etra1902 etra1977 etra2031 etra1940 etra1939 
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8084,7 +8084,7 @@ countries = {
 		}
 		A420 = { # Placeholder
 			own_control_core = { 
-				etra2203 etra2251 etra2249 etra2191 etra2229 etra2160 etra2164 etra2170 etra2218 etra2177 etra2170 etra2252 etra2182 etra2209 etra2193 etra2202 etra2245 etra2255 etra2207 etra2207 etra2195 etra2241 etra2216 etra2190 etra2184 etra2169 etra2161 etra2256 etra2253 etra2186 etra2165
+				etra2203 etra2251 etra2249 etra2191 etra2229 etra2160 etra2164 etra2218 etra2177 etra2170 etra2252 etra2182 etra2209 etra2193 etra2202 etra2245 etra2255 etra2207 etra2195 etra2241 etra2216 etra2190 etra2184 etra2169 etra2161 etra2256 etra2253 etra2186 etra2165
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
