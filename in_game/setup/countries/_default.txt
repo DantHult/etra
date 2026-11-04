@@ -2653,25 +2653,9 @@ A414 = { # Placeholder
 	culture_definition = abashvan_culture
 	religion_definition = manyfold
 }
-A415 = { # Placeholder
-	color = rgb { 15 120 140 }
-	culture_definition = novus_moran_culture
-	religion_definition = manyfold
-}
 A416 = { # Placeholder
 	color = rgb { 130 16 50 }
 	culture_definition = abashvan_culture
-	religion_definition = manyfold
-}
-A417 = { # Placeholder
-	color = rgb { 130 16 50 }
-	culture_definition = novus_moran_culture
-	religion_definition = manyfold
-}
-
-A418 = { # Placeholder
-	color = rgb { 200 130 50 }
-	culture_definition = novus_moran_culture
 	religion_definition = manyfold
 }
 A419 = { # Placeholder
