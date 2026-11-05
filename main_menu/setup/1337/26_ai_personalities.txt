@@ -5,7 +5,7 @@ countries = {
 		A01 = { ai_personality = ai_aggressive }
 		A330 = { ai_personality = ai_aggressive }
 		A321 = { ai_personality = ai_aggressive } 
-
+		A412 = { ai_personality = ai_aggressive } 
 
 		# Expansionist: nations with clear territorial ambitions but follow casus belli
 		A304 = { ai_personality = ai_expansionist } 
