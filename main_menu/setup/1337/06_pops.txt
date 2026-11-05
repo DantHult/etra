@@ -31906,7 +31906,9 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.704 culture = nephion_tieflings_culture religion = manyfold }
 	}
 
-	etra1909 = { }
+	etra1909 = { 
+		define_pop = {	type = peasants	size = 14.435	culture = hyriovari_culture	religion = manyfold }		
+	}
 	etra1910 = {
 		define_pop = { type = clergy size = 0.064 culture = nephion_tieflings_culture religion = manyfold }
 		define_pop = { type = peasants size = 8.494 culture = nephion_tieflings_culture religion = manyfold }
@@ -32574,7 +32576,9 @@ adune119 = {
 		define_pop = { type = tribesmen size = 3.008 culture = abashvan_culture religion = manyfold }
 	}
 
-	etra2029 = { }
+	etra2029 = { 
+		define_pop = { type = tribesmen size = 8.754 culture = takkev_culture religion = tajjev_rites }
+	}
 	# from vanilla smara
 	etra2030 = {
 		define_pop = { type = tribesmen size = 2.456 culture = takkev_culture religion = tajjev_rites }
@@ -34034,5 +34038,8 @@ adune140 = {
 	define_pop = {	type = tribesmen	size = 8.620	culture = keluj_culture	religion = manyfold }
 }
 adune108 = { }
+adune110 = {
+	define_pop = { type = tribesmen size = 2.754 culture = takkev_culture religion = tajjev_rites }
+}
 }
 
