@@ -7,3 +7,7 @@
 INJECT:monarchy = {
 	heir_selection = vexvec_matrilineal_primogeniture
 }
+
+INJECT:republic = {
+	heir_selection = dread_fleet_elective
+}

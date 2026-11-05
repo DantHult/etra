@@ -1,0 +1,136 @@
+﻿# The EU4 power-struggle meter (war_power_struggle_mechanic) does not exist in EU5.
+# These three interactions are that meter's buttons: test the ruler, test the heir, encourage a coup.
+# form_dreadwater_nation changed tag to V99. That would replace the Drowned Fleet, so only the rank step remains.
+
+a412_test_the_ruler_decision = {
+	decision_category = government_decisions
+
+	potential = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		has_ruler = yes
+	}
+
+	allow = {
+		has_ruler = yes
+		NOT = { has_variable = a412_test_ruler_cooldown }
+	}
+
+	ai_will_do = { value = 0 }
+
+	option = {
+		name = a412_test_the_ruler_decision.a
+		ai_chance = { value = 100 }
+		effect = {
+			set_variable = { name = a412_test_ruler_cooldown value = yes days = 3650 }
+			ruler ?= { save_scope_as = a412_ruler }
+			random_list = {
+				1 = {
+					kill_character = {
+						target = scope:a412_ruler
+						reason = execution
+					}
+				}
+				1 = { scope:a412_ruler = { add_adm = 10 } }
+				1 = { scope:a412_ruler = { add_dip = 10 } }
+				1 = { scope:a412_ruler = { add_mil = 10 } }
+			}
+		}
+	}
+}
+
+a412_test_the_heir_decision = {
+	decision_category = government_decisions
+
+	potential = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+	}
+
+	allow = {
+		has_heir = yes
+		heir ?= { age_in_years >= 6 }
+		NOT = { has_variable = a412_test_heir_cooldown }
+	}
+
+	ai_will_do = { value = 0 }
+
+	option = {
+		name = a412_test_the_heir_decision.a
+		ai_chance = { value = 100 }
+		effect = {
+			set_variable = { name = a412_test_heir_cooldown value = yes days = 3650 }
+			heir ?= { save_scope_as = a412_heir }
+			random_list = {
+				1 = {
+					kill_character = {
+						target = scope:a412_heir
+						reason = execution
+					}
+				}
+				1 = { scope:a412_heir = { add_adm = 10 } }
+				1 = { scope:a412_heir = { add_dip = 10 } }
+				1 = { scope:a412_heir = { add_mil = 10 } }
+			}
+		}
+	}
+}
+
+a412_encourage_a_coup_decision = {
+	decision_category = government_decisions
+
+	potential = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+	}
+
+	allow = {
+		has_ruler = yes
+		NOT = { has_variable = a412_coup_cooldown }
+	}
+
+	ai_will_do = { value = 0 }
+
+	option = {
+		name = a412_encourage_a_coup_decision.a
+		ai_chance = { value = 100 }
+		effect = {
+			set_variable = { name = a412_coup_cooldown value = yes days = 3650 }
+			capital = {
+				change_prosperity = prosperity_severe_penalty
+				change_control = control_severe_penalty
+			}
+			create_rebel = {
+				category = pretender
+				name = a412_captain_pretender
+			}
+		}
+	}
+}
+
+a412_drowned_empire_decision = {
+	decision_category = government_decisions
+
+	potential = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		country_rank_level < 4
+	}
+
+	allow = {
+		at_war = no
+		num_of_ports >= 30
+		country_rank_level < 4
+	}
+
+	ai_will_do = { value = 50 }
+
+	option = {
+		name = a412_drowned_empire_decision.a
+		ai_chance = { value = 100 }
+		effect = {
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+			add_prestige = prestige_severe_bonus
+		}
+	}
+}

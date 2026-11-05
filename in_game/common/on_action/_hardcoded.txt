@@ -5800,6 +5800,9 @@ on_truce_broken = {
 
 # Fires after lobby when a game has started
 on_game_started_after_lobby = {
+	on_actions = {
+		a412_dread_fleet_start
+	}
 }
 
 # root = original country which gets targeted by the revolt, scope:target = rebel country which declares the war, scope:war = the revolt, scope:rebel is the rebel

@@ -1,0 +1,104 @@
+﻿# A412 national ideas, from V19_ideas. Magnitudes follow EU5 advance scale.
+# EU4 infantry fire, privateer efficiency, loot, fleet engagement width, and admiral maneuver cap
+# have no same-named modifier here; the closest naval and infantry modifiers are used instead.
+
+#Age of Traditions#
+A412_dread_fleet_traditions = {
+	age = age_1_traditions
+	icon = royal_navy
+	potential = {
+		has_or_had_tag = A412
+	}
+	army_heavy_infantry_power = 0.10
+	army_light_infantry_power = 0.10
+	navy_maintenance_efficiency = 0.15
+	requires = feudalism_advance
+}
+
+A412_undead_vigor = {
+	age = age_1_traditions
+	icon = royal_navy
+	potential = {
+		has_or_had_tag = A412
+	}
+	naval_morale_modifier = 0.05
+	naval_damage_taken = -0.05
+	requires = A412_dread_fleet_traditions
+}
+
+A412_pirates_of_the_ocean = {
+	age = age_1_traditions
+	icon = markets_for_salt
+	potential = {
+		has_or_had_tag = A412
+	}
+	privateer_durability = 0.05
+	ship_capture_chance = 0.05
+	requires = A412_undead_vigor
+}
+
+#Age of Renaissance#
+A412_raised_hulks = {
+	age = age_2_renaissance
+	icon = offensive_army
+	potential = {
+		has_or_had_tag = A412
+	}
+	naval_damage_done = 0.10
+	army_artillery_build_cost_modifier = -0.10
+	requires = renaissance_thought
+}
+
+A412_fleet_of_terror = {
+	age = age_2_renaissance
+	icon = royal_navy
+	potential = {
+		has_or_had_tag = A412
+	}
+	navy_initiative = 0.10
+	naval_morale_modifier = 0.05
+	requires = A412_raised_hulks
+}
+
+#Age of Discovery#
+A412_sailing_expertise = {
+	age = age_3_discovery
+	icon = royal_navy
+	potential = {
+		has_or_had_tag = A412
+	}
+	navy_movement_speed = 0.10
+	exploration_mission_speed_modifier = 0.10
+	requires = study_institutions_advance
+}
+
+A412_cove_harbors = {
+	age = age_3_discovery
+	icon = markets_for_salt
+	potential = {
+		has_or_had_tag = A412
+	}
+	global_merchant_power = 0.10
+	requires = A412_sailing_expertise
+}
+
+#Age of Absolutism#
+A412_gale_of_ethes = {
+	age = age_5_absolutism
+	icon = royal_navy
+	potential = {
+		has_or_had_tag = A412
+	}
+	navy_movement_speed = 0.15
+	requires = naval_doctrines_advance
+}
+
+A412_dread_fleet_ambition = {
+	age = age_5_absolutism
+	icon = glorious_arms
+	potential = {
+		has_or_had_tag = A412
+	}
+	global_navy_levy_size_modifier = 0.25
+	requires = A412_gale_of_ethes
+}

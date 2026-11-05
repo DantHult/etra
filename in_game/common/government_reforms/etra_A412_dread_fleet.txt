@@ -1,0 +1,72 @@
+﻿# A412 Drowned Fleet. Adapted from the EU4 dread_fleet_reform (V19), not a second pirate republic.
+# Succession is death-only and admiral-weighted (has_term_election = no, force_admiral_leader).
+# Coastal market centers take the pirate_coast_haven bonuses. There is no EU5 government-power meter,
+# marine fraction, man-of-war quota, or disembark-speed modifier.
+
+dread_fleet_reform = {
+	unique = yes
+	major = yes
+	government = republic
+
+	potential = {
+		has_or_had_tag = A412
+	}
+
+	allow = {
+		tag = A412
+	}
+
+	locked = {
+		tag = A412
+	}
+
+	societal_values = {
+		naval_focus
+		belligerent_focus
+		mercantilism_focus
+	}
+
+	country_modifier = {
+		can_hire_privateers = yes
+		can_be_target_of_anti_piracy_cb = yes
+		auto_slave_raid = yes
+		privateer_durability = 0.05
+		global_navy_levy_size_modifier = 0.50
+		global_sailors_modifier = 0.50
+		naval_morale_modifier = 0.10
+		naval_damage_done = 0.10
+		global_merchant_power = 0.10
+		naval_range = 50
+		exploration_mission_speed_modifier = 0.10
+		monthly_republican_tradition = -0.04
+		antagonism_taking_land_giving_modifier = 0.50
+		global_crown_estate_power = -0.10
+		monthly_towards_naval = societal_value_monthly_move
+		monthly_towards_belligerent = societal_value_minor_monthly_move
+		monthly_towards_mercantilism = societal_value_minor_monthly_move
+		government_reform_slots = 1
+	}
+
+	location_modifier = {
+		potential_trigger = {
+			is_coastal = yes
+			is_market_center = yes
+		}
+		local_crown_estate_power = 0.20
+		local_raw_material_output = 0.25
+		local_manpower_modifier = 0.25
+		local_sailors_modifier = 0.25
+		local_army_levy_size_modifier = 0.10
+	}
+
+	on_activate = {
+		change_heir_selection = heir_selection:dread_fleet_elective
+		unlock_policy_effect = { type = state_piracy_policy }
+	}
+
+	on_deactivate = {
+		add_stability = stability_severe_penalty
+	}
+
+	years = 2
+}

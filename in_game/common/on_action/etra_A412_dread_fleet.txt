@@ -1,0 +1,66 @@
+﻿# Startup for A412. State piracy is unlocked here because the law's allow list
+# does not know this reform until the policy variable is set.
+
+a412_dread_fleet_start = {
+	effect = {
+		c:A412 ?= {
+			unlock_policy_effect = { type = state_piracy_policy }
+			if = {
+				limit = {
+					NOT = { has_policy = state_piracy_policy }
+				}
+				add_policy = policy:state_piracy_policy
+			}
+			ruler ?= {
+				if = {
+					limit = {
+						mil >= 50
+						NOT = { has_trait = conqueror }
+					}
+					add_trait = conqueror
+				}
+				if = {
+					limit = {
+						NOT = { has_trait = malevolent }
+						NOT = { has_trait = benevolent }
+						NOT = { has_trait = kind_hearted }
+						NOT = { has_trait = just }
+					}
+					add_trait = malevolent
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = a412_dread_fleet_intro_done }
+				}
+				set_variable = a412_dread_fleet_intro_done
+				trigger_event_non_silently = flavor_a412.1
+			}
+			if = {
+				limit = {
+					NOT = { has_estate_privilege = estate_privilege:privateer_contracts }
+				}
+				grant_estate_privilege = estate_privilege:privateer_contracts
+			}
+		}
+	}
+}
+
+yearly_flavor_a412_pulse = {
+	trigger = {
+		tag = A412
+	}
+	random_events = {
+		chance_to_happen = 30
+		50 = 0
+		6 = flavor_a412.100
+		6 = flavor_a412.101
+		6 = flavor_a412.102
+		6 = flavor_a412.103
+		6 = flavor_a412.104
+		6 = flavor_a412.105
+		6 = flavor_a412.106
+		6 = flavor_a412.107
+		6 = flavor_a412.108
+	}
+}

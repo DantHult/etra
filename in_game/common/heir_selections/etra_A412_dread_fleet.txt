@@ -1,0 +1,66 @@
+﻿# Death-only election. Admirals outrank other candidates, which is the EU5 form of force_admiral_leader.
+# Term length is the ruler's life (EU4 has_term_election = no). Captains and harbor estates may stand.
+
+dread_fleet_elective = {
+	use_election = yes
+	term_duration = 0
+	max_possible_candidates = 3
+
+	allowed_estates = { nobles_estate burghers_estate }
+
+	potential = {
+		has_reform = government_reform:dread_fleet_reform
+	}
+
+	locked = {
+		has_reform = government_reform:dread_fleet_reform
+	}
+
+	heir_is_allowed = {
+	}
+
+	calc = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = root.dip
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = root.mil
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = character_age
+			}
+			if = {
+				limit = {
+					is_admiral = yes
+				}
+				add = {
+					desc = "HEIR_SELECTION_ADMIRAL_DESC"
+					value = 100
+				}
+			}
+			if = {
+				limit = {
+					has_trait_category = admiral
+				}
+				add = {
+					desc = "HEIR_SELECTION_ADMIRAL_TRAIT_DESC"
+					value = 100
+				}
+			}
+			if = {
+				limit = { modifier:blocked_from_being_ruler = yes }
+				add = {
+					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+					value = -1000
+				}
+			}
+		}
+	}
+}

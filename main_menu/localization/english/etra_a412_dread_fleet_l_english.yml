@@ -1,0 +1,97 @@
+﻿l_english:
+ dread_fleet_reform: "Drowned Fleet"
+ dread_fleet_reform_desc: "The Drowned Fleet is a republic that does not vote while its Sea-Imperator still stands. Novus Moran captains, raised crews, and harbor factors share the plunder and contest the command. Coastal market centers are held cheaply and worked hard. Taking land inland is costly, and republican tradition decays, because the council exists to serve the fleet."
+
+ dread_fleet_elective: "Admiral's Election"
+ dread_fleet_elective_desc: "When the Sea-Imperator dies, the captains and the harbor estates elect a successor. Admirals are preferred. There is no fixed term while a ruler lives."
+
+ A412_dread_fleet_traditions: "Drowned Traditions"
+ A412_dread_fleet_traditions_desc: "The stolen Moran fleet did not forget how to fight, and the dead do not forget a hull. Infantry hits harder, and the navy costs less to keep at sea."
+ A412_undead_vigor: "Unresting Crews"
+ A412_undead_vigor_desc: "Raised oarsmen do not tire, and the ships they keep are harder to break. The Drowned Fleet's hulls hold together when a living navy would already be taking water."
+ A412_pirates_of_the_ocean: "Pirates of the Typhrean Sea"
+ A412_pirates_of_the_ocean_desc: "Every coast that answers to another flag is a prize. Privateers last longer in a fight, and enemy ships are taken rather than sunk when the captains can manage it."
+ A412_raised_hulks: "Raised Hulks"
+ A412_raised_hulks_desc: "Wrecks are hauled up, given cannon, and sent back out. The fleet's guns hit harder, and artillery is cheaper to build, because the dead timber was already paid for by someone else."
+ A412_fleet_of_terror: "Fleet of Terror"
+ A412_fleet_of_terror_desc: "The Drowned Fleet is seen in numbers that living admirals call unfair. It seizes the first move at sea, and the crews do not flinch when the line closes."
+ A412_sailing_expertise: "Centuries of Sailing"
+ A412_sailing_expertise_desc: "Novus Moran navigators have died and been raised on the same water. The fleet is faster, and expeditions along an unknown coast finish sooner."
+ A412_cove_harbors: "Cove Harbors"
+ A412_cove_harbors_desc: "Small harbors, some of them no more than a cove and a gallows, extend the fleet's reach. Merchants who pay the Drowned Fleet find their goods moving under its protection."
+ A412_gale_of_ethes: "Gale of Ethes"
+ A412_gale_of_ethes_desc: "The wind off Ethes answers the fleet. Squadrons cross the Typhrean water faster than a chase can be organized against them."
+ A412_dread_fleet_ambition: "Drowned Ambition"
+ A412_dread_fleet_ambition_desc: "The Sea-Imperator does not keep a navy of a size the harbors can comfortably feed. The levy of ships grows with the claim on every coast in reach."
+
+ flavor_a412.1.title: "Black Sails off Ethes"
+ flavor_a412.1.desc: "The Drowned Fleet is not another nest of coastal thieves. The Sea-Imperator took the Moran navy when the crusade peace was signed, and the captains who would not accept that peace came with the ships. From Ethes, the dead crews look at every harbor market in Typhrea and call it already theirs."
+ flavor_a412.1.a: "Unfurl the black sails."
+ flavor_a412.1.a.tt: "Gain cores on coastal market centers in Typhrea that we do not own."
+
+ flavor_a412.100.title: "Tomes from the Wreck"
+ flavor_a412.100.desc: "A dredged hull has given up a chest of books. The pages are salt-stiff and the script is wrong, but the captains say the formulae in them are newer than anything the Moran colleges still teach."
+ flavor_a412.100.a: "Send it back to the deep."
+ flavor_a412.100.b: "Read the tomes."
+
+ flavor_a412.101.title: "Ledgers or Letters of Marque"
+ flavor_a412.101.desc: "Harbor factors in the Drowned Fleet have found that a stamped manifest sometimes pays better than a boarding action. The captains want the matter settled before the next season: trade under our own law, or privateering under the black sail."
+ flavor_a412.101.a: "Take the honest coin."
+ flavor_a412.101.b: "Privateer."
+
+ flavor_a412.102.title: "The Split Hull"
+ flavor_a412.102.desc: "A warship older than the peace has come up in two pieces. One half still has crew that can be raised or ransomed into service. The other is cargo, and the cables will not hold both."
+ flavor_a412.102.a: "Save the crew."
+ flavor_a412.102.b: "Save the cargo."
+
+ flavor_a412.103.title: "Something at the Harbor"
+ flavor_a412.103.desc: "A creature of the deep has taken hold of [target_location.GetName]. The Sea-Imperator claims such things as subjects. The harbor would prefer they stayed subjects somewhere else."
+ flavor_a412.103.a: "Drive it off."
+ flavor_a412.103.b: "Let it feed."
+
+ flavor_a412.104.title: "A Harbor Worth the Name"
+ flavor_a412.104.desc: "[target_location.GetName] can take a fleet, or it can remain a beach with ambitions. Coin and timber would make it a dock. The factors would rather spend that coin teaching merchants which flag to fear."
+ flavor_a412.104.a: "Build the dock."
+ flavor_a412.104.b: "Drill the merchants."
+
+ flavor_a412.105.title: "This Season's War"
+ flavor_a412.105.desc: "The captains want a plain order. Is the Drowned Fleet fighting at sea this season, or going ashore to take the harbors the ships cannot hold by themselves?"
+ flavor_a412.105.a: "The sea."
+ flavor_a412.105.b: "The beaches."
+
+ flavor_a412.106.title: "A Brawl on the Strand"
+ flavor_a412.106.desc: "What began as a division of prize money in [target_location.GetName] is now crews in the streets. They will listen to the Sea-Imperator in person, to a council, or to nobody."
+ flavor_a412.106.a: "Go down and face them."
+ flavor_a412.106.b: "Call a captains' council."
+ flavor_a412.106.c: "Let them riot."
+
+ flavor_a412.107.title: "Who Commands"
+ flavor_a412.107.desc: "A captain with a following says the Drowned Fleet is only a fleet, and that fleets replace commanders who lose their grip. The challenge is public. Ignoring it will not make it private."
+ flavor_a412.107.a: "I still command."
+ flavor_a412.107.b: "The command is yours."
+ flavor_a412.107.c: "We settle it between us."
+
+ flavor_a412.108.title: "A Republic without a Vote"
+ flavor_a412.108.desc: "The captains have counted the years since the last election and found only the Sea-Imperator's continued existence. They are willing to be reminded who rules, to hold a vote by the simple method of a vacant chair, or to forget the question if the treasury helps them forget."
+ flavor_a412.108.a: "I still command."
+ flavor_a412.108.b: "Hold the election."
+ flavor_a412.108.c: "Pay them to forget."
+
+ a412_crew_riot: "Drowned Crews"
+ a412_captain_pretender: "Rival Captain"
+
+ a412_test_the_ruler_decision: "Test the Sea-Imperator"
+ a412_test_the_ruler_decision_desc: "Rival captains put the Sea-Imperator to a trial. The ruler may come out of it abler, or not come out at all. The captains do this no more than once a decade."
+ a412_test_the_ruler_decision.a: "Stand the trial."
+
+ a412_test_the_heir_decision: "Test the Heir"
+ a412_test_the_heir_decision_desc: "The next commander is tried by the same captains, once old enough to stand on a deck. The heir may improve, or the succession may suddenly be open."
+ a412_test_the_heir_decision.a: "Send the heir to the trial."
+
+ a412_encourage_a_coup_decision: "Encourage a Coup"
+ a412_encourage_a_coup_decision_desc: "Let a rival captain raise a following in the capital. The harbor will suffer, and a pretender will be in the open, where the fleet can see the challenge instead of whispering it."
+ a412_encourage_a_coup_decision.a: "Let the challenge land."
+
+ a412_drowned_empire_decision: "Claim the Drowned Empire"
+ a412_drowned_empire_decision_desc: "Thirty ports fly the black sail. The Drowned Fleet does not take a new name. It takes the rank its harbors already assume, and the Sea-Imperator stops pretending this is a kingdom of one island."
+ a412_drowned_empire_decision.a: "Raise the rank."

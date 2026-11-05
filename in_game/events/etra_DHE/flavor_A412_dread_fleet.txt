@@ -1,0 +1,513 @@
+﻿namespace = flavor_a412
+
+# Opening of the Drowned Fleet. EU4 war_unique_intro_events.37 handed navy tradition,
+# mercantilism, and a claim on every coastal center of trade in the world.
+# Cores are the EU5 conquest claim, and they stop at Typhrea.
+
+flavor_a412.1 = {
+	type = country_event
+	title = flavor_a412.1.title
+	desc = flavor_a412.1.desc
+	fire_only_once = yes
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = flavor_a412.1.a
+		historical_option = yes
+		ai_chance = { value = 100 }
+		add_navy_tradition = navy_tradition_extreme_bonus
+		change_societal_value = {
+			type = mercantilism_vs_free_trade
+			value = societal_value_minor_move_to_left
+		}
+		custom_tooltip = flavor_a412.1.a.tt
+		hidden_effect = {
+			region:typhrea_region = {
+				every_location_in_region = {
+					limit = {
+						is_coastal = yes
+						is_market_center = yes
+						exists = owner
+						NOT = { owner = root }
+					}
+					add_core = root
+				}
+			}
+		}
+	}
+}
+
+# Dredged tomes. vampire_events.100
+flavor_a412.100 = {
+	type = country_event
+	title = flavor_a412.100.title
+	desc = flavor_a412.100.desc
+	fire_only_once = no
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		NOT = { has_variable = a412_tomes_cooldown }
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_a412.100.a
+		ai_chance = { value = 50 }
+		add_prestige = prestige_mild_bonus
+		set_variable = { name = a412_tomes_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.100.b
+		ai_chance = { value = 50 }
+		add_stability = stability_severe_penalty
+		change_societal_value = {
+			type = traditionalist_vs_innovative
+			value = societal_value_minor_move_to_right
+		}
+		set_variable = { name = a412_tomes_cooldown value = yes days = 1825 }
+	}
+}
+
+# Trade or privateering. vampire_events.101
+flavor_a412.101 = {
+	type = country_event
+	title = flavor_a412.101.title
+	desc = flavor_a412.101.desc
+	fire_only_once = no
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		NOT = { has_variable = a412_smuggler_cooldown }
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = flavor_a412.101.a
+		ai_chance = { value = 50 }
+		change_societal_value = {
+			type = mercantilism_vs_free_trade
+			value = societal_value_minor_move_to_left
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		set_variable = { name = a412_smuggler_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.101.b
+		ai_chance = { value = 50 }
+		add_navy_tradition = navy_tradition_mild_bonus
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_mild_bonus }
+		set_variable = { name = a412_smuggler_cooldown value = yes days = 1825 }
+	}
+}
+
+# Crew or cargo. vampire_events.102. EU5 has no script effect that mints an admiral from a wreck.
+flavor_a412.102 = {
+	type = country_event
+	title = flavor_a412.102.title
+	desc = flavor_a412.102.desc
+	fire_only_once = no
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		has_ports = yes
+		NOT = { has_variable = a412_wreck_cooldown }
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = flavor_a412.102.a
+		ai_chance = { value = 50 }
+		add_sailors = { value = root.monthly_sailors multiply = 12 }
+		add_navy_tradition = navy_tradition_mild_bonus
+		set_variable = { name = a412_wreck_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.102.b
+		ai_chance = { value = 50 }
+		change_gold_effect = { scale = 2 }
+		add_navy_tradition = navy_tradition_mild_bonus
+		set_variable = { name = a412_wreck_cooldown value = yes days = 1825 }
+	}
+}
+
+# A thing from the deep at a harbor. vampire_events.103
+flavor_a412.103 = {
+	type = country_event
+	title = flavor_a412.103.title
+	desc = flavor_a412.103.desc
+	fire_only_once = no
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		any_owned_location = { is_coastal = yes }
+		NOT = { has_variable = a412_kraken_cooldown }
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_government_estate_effect = yes
+		random_owned_location = {
+			limit = { is_coastal = yes }
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_a412.103.a
+		trigger = {
+			monthly_sailors > 0
+			monthly_manpower > 0
+		}
+		ai_chance = { value = 50 }
+		add_sailors = { value = root.monthly_sailors multiply = -6 }
+		add_manpower = { value = root.monthly_manpower multiply = -3 }
+		add_prestige = prestige_mild_bonus
+		set_variable = { name = a412_kraken_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.103.b
+		ai_chance = { value = 50 }
+		scope:target_location = {
+			change_prosperity = prosperity_severe_penalty
+		}
+		set_variable = { name = a412_kraken_cooldown value = yes days = 1825 }
+	}
+}
+
+# Spend on the harbor, or on the merchants. vampire_events.104
+# EU5 markets are not tiered centers of trade; a dock is the harbor upgrade.
+flavor_a412.104 = {
+	type = country_event
+	title = flavor_a412.104.title
+	desc = flavor_a412.104.desc
+	fire_only_once = no
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		any_owned_location = {
+			is_coastal = yes
+			NOT = { has_building = building_type:dock }
+		}
+		NOT = { has_variable = a412_dock_cooldown }
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+		random_owned_location = {
+			limit = {
+				is_coastal = yes
+				NOT = { has_building = building_type:dock }
+			}
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_a412.104.a
+		ai_chance = { value = 50 }
+		change_gold_effect = { scale = -4 }
+		scope:target_location = {
+			construct_building = {
+				building_type = building_type:dock
+				owner = root
+				cost_multiplier = 0
+				cost_multiplier_reason = "game_concept_event"
+			}
+		}
+		set_variable = { name = a412_dock_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.104.b
+		ai_chance = { value = 50 }
+		change_societal_value = {
+			type = mercantilism_vs_free_trade
+			value = societal_value_minor_move_to_left
+		}
+		set_variable = { name = a412_dock_cooldown value = yes days = 1825 }
+	}
+}
+
+# Sea or land this season. vampire_events.105
+flavor_a412.105 = {
+	type = country_event
+	title = flavor_a412.105.title
+	desc = flavor_a412.105.desc
+	fire_only_once = no
+	outcome = neutral
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		NOT = { has_variable = a412_season_cooldown }
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+	}
+
+	option = {
+		name = flavor_a412.105.a
+		ai_chance = { value = 60 }
+		add_government_power = 5
+		add_navy_tradition = navy_tradition_extreme_bonus
+		add_army_tradition = army_tradition_severe_penalty
+		set_variable = { name = a412_season_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.105.b
+		ai_chance = { value = 40 }
+		add_navy_tradition = navy_tradition_severe_penalty
+		add_army_tradition = army_tradition_extreme_bonus
+		set_variable = { name = a412_season_cooldown value = yes days = 1825 }
+	}
+}
+
+# Crews in the streets. vampire_events.106
+flavor_a412.106 = {
+	type = country_event
+	title = flavor_a412.106.title
+	desc = flavor_a412.106.desc
+	fire_only_once = no
+	outcome = bad
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		has_ruler = yes
+		NOT = { has_variable = a412_brawl_cooldown }
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+		ruler ?= { save_scope_as = a412_ruler }
+		random_owned_location = {
+			save_scope_as = target_location
+		}
+	}
+
+	option = {
+		name = flavor_a412.106.a
+		ai_chance = { value = 40 }
+		random_list = {
+			1 = {
+				kill_character = {
+					target = scope:a412_ruler
+					reason = execution
+				}
+			}
+			9 = {}
+		}
+		set_variable = { name = a412_brawl_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.106.b
+		ai_chance = { value = 40 }
+		add_stability = stability_severe_penalty
+		set_variable = { name = a412_brawl_cooldown value = yes days = 1825 }
+	}
+
+	option = {
+		name = flavor_a412.106.c
+		ai_chance = { value = 20 }
+		create_rebel = {
+			category = estate
+			estate = burghers_estate
+			name = a412_crew_riot
+		}
+		set_variable = { name = a412_brawl_cooldown value = yes days = 1825 }
+	}
+}
+
+# Who commands. vampire_events.107
+flavor_a412.107 = {
+	type = country_event
+	title = flavor_a412.107.title
+	desc = flavor_a412.107.desc
+	fire_only_once = no
+	outcome = bad
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		has_ruler = yes
+		NOT = { has_variable = a412_command_cooldown }
+	}
+
+	illustration_tags = {
+		10 = armed
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+		ruler ?= { save_scope_as = a412_ruler }
+	}
+
+	option = {
+		name = flavor_a412.107.a
+		ai_chance = { value = 40 }
+		add_government_power = -10
+		set_variable = { name = a412_command_cooldown value = yes days = 3650 }
+	}
+
+	option = {
+		name = flavor_a412.107.b
+		ai_chance = { value = 20 }
+		kill_character = {
+			target = scope:a412_ruler
+			reason = execution
+		}
+		set_variable = { name = a412_command_cooldown value = yes days = 3650 }
+	}
+
+	option = {
+		name = flavor_a412.107.c
+		ai_chance = { value = 40 }
+		random_list = {
+			1 = {
+				scope:a412_ruler = {
+					if = {
+						limit = { mil >= 80 }
+						add_mil = 5
+					}
+					else = {
+						add_mil = 10
+					}
+				}
+			}
+			1 = {
+				kill_character = {
+					target = scope:a412_ruler
+					reason = execution
+				}
+			}
+		}
+		add_prestige = prestige_mild_bonus
+		add_government_power = 5
+		set_variable = { name = a412_command_cooldown value = yes days = 3650 }
+	}
+}
+
+# The council wants a vote. vampire_events.108
+flavor_a412.108 = {
+	type = country_event
+	title = flavor_a412.108.title
+	desc = flavor_a412.108.desc
+	fire_only_once = no
+	outcome = bad
+
+	trigger = {
+		tag = A412
+		has_reform = government_reform:dread_fleet_reform
+		has_ruler = yes
+		NOT = { has_variable = a412_election_cooldown }
+	}
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+		ruler ?= { save_scope_as = a412_ruler }
+	}
+
+	option = {
+		name = flavor_a412.108.a
+		ai_chance = { value = 40 }
+		add_government_power = -20
+		set_variable = { name = a412_election_cooldown value = yes days = 3650 }
+	}
+
+	option = {
+		name = flavor_a412.108.b
+		ai_chance = { value = 30 }
+		kill_character = {
+			target = scope:a412_ruler
+			reason = execution
+		}
+		add_government_power = 10
+		set_variable = { name = a412_election_cooldown value = yes days = 3650 }
+	}
+
+	option = {
+		name = flavor_a412.108.c
+		ai_chance = { value = 30 }
+		change_gold_effect = { scale = -6 }
+		set_variable = { name = a412_election_cooldown value = yes days = 3650 }
+	}
+}
