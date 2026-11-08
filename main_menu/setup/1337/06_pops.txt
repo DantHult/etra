@@ -25876,10 +25876,24 @@ aita103 = {
 		define_pop = { type = peasants size = 20.316 culture = zilaanian_culture religion = manyfold }
 		define_pop = { type = peasants size = 2.256 culture = telanian_culture religion = manyfold }
 	}
-	# etra200 from vanilla khornabuji (majority zilaanian_culture) — impassable, no pops
-	etra200 = { }
-	# etra201 from vanilla kldekari (majority zilaanian_culture)
-	etra201 = { }
+	# cynoar_area representative mix: equal-weight shares of 34 popped locations, scaled to the median size
+	etra200 = {
+		define_pop = { type = nobles size = 0.002 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.025 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.167 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = peasants size = 23.312 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.448 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = slaves size = 0.321 culture = hyriovari_culture religion = manyfold }
+	}
+	# alar_area representative mix: equal-weight shares of 24 popped locations, scaled to the median size
+	etra201 = {
+		define_pop = { type = clergy size = 0.009 culture = zilaanian_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.603 culture = zilaanian_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.788 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.172 culture = telanian_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.242 culture = mavisan_culture religion = maw_of_ur_khal }
+		define_pop = { type = tribesmen size = 0.020 culture = mavisan_culture religion = manyfold }
+	}
 	# etra203 from vanilla kutaisi (majority zilaanian_culture)
 	etra203 = {
 		define_pop = { type = clergy size = 0.006 culture = zilaanian_culture religion = manyfold }
@@ -32465,7 +32479,15 @@ adune119 = {
 		define_pop = { type = tribesmen size = 3.284 culture = takkev_culture religion = tajjev_rites }
 		define_pop = { type = tribesmen size = 7.664 culture = takkev_culture religion = tajjev_rites }
 	}
-	etra2008 = { }
+	# alar_area representative mix: equal-weight shares of 24 popped locations, scaled to the median size
+	etra2008 = {
+		define_pop = { type = clergy size = 0.009 culture = zilaanian_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.603 culture = zilaanian_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.788 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.172 culture = telanian_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.242 culture = mavisan_culture religion = maw_of_ur_khal }
+		define_pop = { type = tribesmen size = 0.020 culture = mavisan_culture religion = manyfold }
+	}
 	# from vanilla smara
 	etra2009 = {
 		define_pop = { type = tribesmen size = 3.150 culture = takkev_culture religion = tajjev_rites }
@@ -32521,7 +32543,15 @@ adune119 = {
 
 	# from vanilla figuig
 	etra2017 = { }
-	etra2018 = { }
+	# cynoar_area representative mix: equal-weight shares of 34 popped locations, scaled to the median size
+	etra2018 = {
+		define_pop = { type = nobles size = 0.002 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.025 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.167 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = peasants size = 23.312 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.448 culture = hyriovari_culture religion = manyfold }
+		define_pop = { type = slaves size = 0.321 culture = hyriovari_culture religion = manyfold }
+	}
 	etra2019 = {
 		define_pop = { type = clergy size = 0.044 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 8.837 culture = ekuniman_culture religion = manyfold }
