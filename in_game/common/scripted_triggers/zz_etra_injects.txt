@@ -11,12 +11,12 @@
 						has_game_rule = western_exploration_only
 					}
 					#this != c:PAP
-					not = { has_preference_tag = "warfare" }
+					not = { has_preference_tag = "land" }
 					OR = {
 						capital.continent = continent:europe
 						and = {
 							is_subject = yes
-							overlord = {
+							overlord ?= {
 								capital.continent = continent:europe
 							}
 						}
@@ -25,6 +25,17 @@
 			}
 		}
 	}
+}
+
+
+REPLACE:can_adopt_religion_of_country = {
+	owner ?= $country$
+	religion != $country$.religion
+	OR = {
+		is_religious_figure = no
+		#religious_figure != religious_figure:cardinal
+	}
+	#NOT = { owner = religion:catholic.religious_head }
 }
 
 REPLACE:can_country_have_tusi = {
@@ -44,3 +55,16 @@ REPLACE:can_country_have_tusi = {
 	# }
 }
 
+REPLACE:work_of_art_is_imperial_regalia = {
+	OR = {
+		# this = work_of_art:imperial_crown_hre
+		# this = work_of_art:imperial_orb_hre
+		# this = work_of_art:saint_stephans_purse
+		# this = work_of_art:coronation_gospel_hre
+		# this = work_of_art:kusanagi_no_tsurugi
+		# this = work_of_art:yata_no_kagami
+		# this = work_of_art:yasakani_no_magatama
+		# this = work_of_art:preah_khan_reach
+		# this = work_of_art:preah_lompeng_chey
+	}
+}

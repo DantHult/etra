@@ -1,7 +1,7 @@
 ﻿starting_technology_level = 3
 government = {
 	type = republic
-	heir_selection = abbot_elective
+	heir_selection = pirate_elective
 	
 	#Societal Values
 	centralization_vs_decentralization = 60
@@ -50,7 +50,7 @@ government = {
 
 	laws = {
 		censorship = limited_censorship
-		republican_foundation_law = republicanism_policy
+		republican_foundation_law = authoritarianism_policy
 		education_masses_law = basic_religious_education
 		administrative_system = central_councils
 		cultural_traditions_law = civil_society

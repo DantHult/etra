@@ -399,6 +399,7 @@ coa_def_pirates_trigger = {
 	scope:actor ?= {
 		scope_type = country
 		has_reform = government_reform:pirate_brethren_reform
+		NOT = { has_or_had_tag = A412 }
 	}
 }
 

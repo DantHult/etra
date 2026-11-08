@@ -2,7 +2,7 @@
 	polygyny = {
 		potential = {
 			OR = {
-				is_country_religion_pagan = yes
+				#is_country_religion_pagan = yes
 				#religion = religion:hindu
 				culture = { has_culture_group = culture_group:ratfolk_group }
 			}
@@ -48,3 +48,73 @@ INJECT:legal_code_law = {
 
 }
 
+INJECT:economical_policies_law = {
+	agrarian_constitution = {
+		unique = yes
+		potential = {
+			always = NO
+			# country_exists = c:TEU
+			# this = c:TEU
+		}
+		country_modifier = {
+			global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+			global_distance_from_capital_speed_propagation = 0.1
+			global_pop_assimilation_speed_modifier = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	promote_chinese_traditions = {
+		unique = yes
+		potential = {
+			always = NO
+			# OR = {
+				# is_subject_of = c:CHI
+				# capital ?= { sub_continent = sub_continent:east_asia }
+				# capital ?= { sub_continent = sub_continent:south_east_asia }
+			# }
+			# NOR = {
+				# tag = CHI
+				# culture = { has_culture_group = culture_group:chinese_group }
+			# }
+		}
+		country_modifier = {
+			monthly_towards_sinicized = societal_value_monthly_move
+			cultural_tradition_modifier = -0.1
+			global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+	limit_chinese_traditions = {
+		unique = yes
+		potential = {
+			always = NO
+			# OR = {
+				# is_subject_of = c:CHI
+				# capital ?= { sub_continent = sub_continent:east_asia }
+				# capital ?= { sub_continent = sub_continent:south_east_asia }
+			# }
+			#NOT = { culture = { has_culture_group = culture_group:chinese_group } }
+			#NOT = { tag = CHI }
+		}
+		country_modifier = {
+			monthly_towards_unsinicized = societal_value_monthly_move
+			cultural_influence_modifier = 0.05
+			monthly_legitimacy = 0.03
+			monthly_republican_tradition = 0.02
+			monthly_devotion = 0.03
+			monthly_tribal_cohesion = 0.03
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+
+
+}

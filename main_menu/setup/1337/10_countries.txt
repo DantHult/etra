@@ -27,7 +27,7 @@ countries = {
 				godhand64 godhand65 godhand66 godhand67 godhand68 godhand69 godhand70 godhand71 godhand72 godhand73 godhand74
 				godhand75 godhand76 godhand77 godhand78 godhand79 godhand80 godhand81 godhand82 godhand83 godhand87 godhand88
 				godhand94 testprovince192 testprovince200 testprovince79 testprovince208 testprovince199 testprovince103
-				testprovince169 testprovince209
+				testprovince169 testprovince209 testprovince250
 			}
 
 			own_control_integrated = {
@@ -6456,7 +6456,8 @@ countries = {
 		A325 = {	
 			own_control_core = {
 				etra66 etra38 etra72 etra68 etra67 etra304 etra69 etra176 etra175 etra223 etra168 etra169 etra70 etra177 etra178 etra181 etra198
-				etra179 etra192 etra193 etra202 etra194 etra207 etra208 etra120 etra118 etra117 etra211 etra209 etra180 etra205 etra119 etra206 etra210 etra1808 etra1809 etra1813 etra1812 etra1810 etra1816 etra1814 etra1815 etra1811 etra1819 etra1818 etra1817 etra1821 etra1820 etra1822 etra1823 etra1827 etra1830 etra1828 etra1829 etra1833 etra1832 etra1831 etra1834 etra1825 etra1826 etra1824 etra2018
+				etra179 etra192 etra193 etra202 etra194 etra207 etra208 etra120 etra118 etra117 etra211 etra209 etra180 etra205 etra119 etra206 etra210 etra1808 etra1809 etra1813 etra1812 etra1810 etra1816 etra1814 etra1815 etra1811 etra1819 etra1818 etra1817 etra1821 etra1820 etra1822 etra1823 etra1827 etra1830 etra1828 etra1829 etra1833 etra1832 etra1831 etra1834 etra1825 etra1826 etra1824 etra2018 etra200 etra71 etra80 etra78
+				 etra37 etra36 etra34 etra35 etra33 etra32 etra73 etra31
 			}
 			starting_technology_level = 3
 
@@ -6500,9 +6501,8 @@ countries = {
 			capital = etra11
 		}	
 		A327 = {	
-			own_control_core = {
-				etra37 etra35 etra34 etra78 etra43 etra42 etra33 etra32 etra31 etra61 etra36
-				etra77 etra85 etra79 etra80 etra71
+			own_control_core = {        
+				etra77 etra85 etra79  
 			}
 			starting_technology_level = 3
 
@@ -6522,7 +6522,7 @@ countries = {
 		}	
 		A328 = {	
 			own_control_core = {
-				etra20 etra21 etra25 etra24 etra26 etra27 etra64 etra14 etra62 etra63 etra23 etra13 etra22 etra30 etra29
+				etra20 etra21 etra25 etra24 etra26 etra27 etra64 etra14 etra62 etra63 etra23 etra13 etra22 etra30 etra29 etra43 etra42 etra61
 				
 			}
 			starting_technology_level = 3
@@ -7193,7 +7193,7 @@ countries = {
 			own_control_core = {
 				etra41 etra39 etra52 etra51 etra50 etra48 etra47 etra49 etra54 etra55 etra60 etra59 etra56 etra57 etra58 etra53 etra76 etra75 etra44 etra74
 				
-				etra46 etra65 etra73
+				etra46 etra65 
 			}
 			starting_technology_level = 3
 
@@ -8034,18 +8034,24 @@ countries = {
 				etra1935 etra1937 etra2044 etra1897 etra1984 etra1902 etra1977 etra2031 etra1940 etra1939 
 			}
 			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
+			include = "maithya_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+			}
+			country_rank = rank_county
 		}
 		A416 = { # Placeholder
 			own_control_core = { 
 				etra1958 etra1949 etra2090 etra1995 etra2027 etra2068 etra2047 etra2129 etra2156 etra1980
 			}
 			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
+			include = "maithya_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+			}
+			country_rank = rank_county
 		}
 		A419 = { # Placeholder
 			own_control_core = { 
@@ -8070,27 +8076,38 @@ countries = {
 
 			}
 			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
+			include = "maithya_tribe_no_coast"
+
+
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+			}
+			country_rank = rank_duchy
 		}
 		A422 = { # Placeholder
 			own_control_core = { etra2226 etra2233 etra2200 etra2240 etra2197 etra2199 etra2221 etra2259 etra2213 
 
 			}
 			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
+			include = "maithya_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+			}
+			country_rank = rank_county
 		}
 		A423 = { # Placeholder
 			own_control_core = { etra2162 etra2163 etra2210 etra2173 etra2185 etra2196 etra2204 etra2239
 
 			}
 			include = "expl_western_aduna"
-			include = "eternalist_monarchy"
-			government = { ruler = random }
-			country_rank = rank_kingdom
+			include = "maithya_tribe_no_coast"
+			government = {
+				type = tribe
+				heir_selection = tribal_oldest_male
+			}
+			country_rank = rank_county
 		}
 	}#
 
