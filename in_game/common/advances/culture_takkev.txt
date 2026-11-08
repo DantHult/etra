@@ -43,10 +43,34 @@ takkev_cavalry_advance = {
 	requires = unlock_cavalry_advance
 }
 
+takkev_highland_council = {
+	age = age_2_renaissance
+	icon = the_constitution
+	potential = {
+		culture = culture:takkev_culture
+	}
+	global_separatism = -0.05
+	peasants_estate_target_satisfaction = small_permanent_target_satisfaction
+
+	requires = correct_box_advance_renaissance
+}
+
 
 ############################
 # age_3_discovery
 ############################
+
+takkev_veiled_cavalry = {
+	age = age_3_discovery
+	icon = glorious_arms
+	unlock_unit = a_takkev_veiled_cavalry
+
+	potential = {
+		culture = culture:takkev_culture
+	}
+
+	requires = takkev_cavalry_advance
+}
 
 ############################
 # age_4_reformation

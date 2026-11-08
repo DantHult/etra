@@ -29,3 +29,24 @@ a_takkev_cavalry = {
 
 	gfx_tags = { medium_tag }
 }
+
+a_takkev_veiled_cavalry = {
+	is_special = yes
+	category = army_light_cavalry
+	copy_from = a_takkev_cavalry
+	buildable = yes
+	age = "age_3_discovery"
+
+	country_potential = {
+		culture = culture:takkev_culture
+	}
+
+	combat = {
+		desert = 0.20
+		arid = 0.10
+		hills = 0.20
+		coastal = -0.10
+	}
+
+	gfx_tags = { medium_tag }
+}
