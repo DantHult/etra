@@ -31921,7 +31921,7 @@ adune119 = {
 	}
 
 	etra1909 = { 
-		define_pop = {	type = peasants	size = 14.435	culture = hyriovari_culture	religion = manyfold }		
+		define_pop = {	type = peasants	size = 33.617	culture = hyriovari_culture	religion = manyfold }		
 	}
 	etra1910 = {
 		define_pop = { type = clergy size = 0.064 culture = nephion_tieflings_culture religion = manyfold }
@@ -32021,7 +32021,7 @@ adune119 = {
 	}
 
 	etra1925 = {
-		define_pop = {	type = peasants	size = 4.435	culture = hyriovari_culture	religion = manyfold }		
+		define_pop = {	type = peasants	size = 10.328	culture = hyriovari_culture	religion = manyfold }		
 	}
 	etra1926 = {
 		define_pop = { type = clergy size = 0.065 culture = nephion_tieflings_culture religion = manyfold }
@@ -32085,7 +32085,7 @@ adune119 = {
 		define_pop = { type = tribesmen size = 2.478 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1938 = {
-		define_pop = {	type = peasants	size = 8.184	culture = hyriovari_culture religion = manyfold }
+		define_pop = {	type = peasants	size = 19.059	culture = hyriovari_culture religion = manyfold }
 	}
 	etra1939 = {
 		define_pop = { type = clergy size = 0.022 culture = ekuniman_culture religion = manyfold }
@@ -32728,7 +32728,7 @@ adune119 = {
 	}
 
 	etra2049 = { 
-		define_pop = {	type = peasants	size = 7.032	culture = hyriovari_culture	religion = manyfold }	
+		define_pop = {	type = peasants	size = 16.376	culture = hyriovari_culture	religion = manyfold }	
 	}
 	etra2050 = {
 		define_pop = { type = clergy size = 0.044 culture = nephion_tieflings_culture religion = manyfold }
@@ -33064,7 +33064,7 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.909 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2105 = {
-		define_pop = {	type = peasants	size = 6.372	culture = hyriovari_culture	religion = manyfold }
+		define_pop = {	type = peasants	size = 14.839	culture = hyriovari_culture	religion = manyfold }
 	}
 	etra2106 = {
 		define_pop = { type = clergy size = 0.043 culture = ekuniman_culture religion = manyfold }
@@ -33081,12 +33081,12 @@ adune119 = {
 	}
 
 	etra2108 = {
-		define_pop = {	type = nobles	size = 0.017	culture = novus_moran_culture	religion = manyfold }
-		define_pop = {	type = clergy	size = 0.080	culture = hyriovari_culture	religion = manyfold }
-		define_pop = {	type = burghers	size = 1.726	culture = hyriovari_culture	religion = manyfold }
-		define_pop = {	type = burghers	size = 0.191	culture = novus_moran_culture	religion = imperial_creeds }
-		define_pop = {	type = peasants	size = 16.177	culture = hyriovari_culture	religion = manyfold }
-		define_pop = {	type = peasants	size = 8.500	culture = novus_moran_culture	religion = imperial_creeds }
+		define_pop = {	type = nobles	size = 0.040	culture = novus_moran_culture	religion = manyfold }
+		define_pop = {	type = clergy	size = 0.186	culture = hyriovari_culture	religion = manyfold }
+		define_pop = {	type = burghers	size = 4.020	culture = hyriovari_culture	religion = manyfold }
+		define_pop = {	type = burghers	size = 0.445	culture = novus_moran_culture	religion = imperial_creeds }
+		define_pop = {	type = peasants	size = 37.675	culture = hyriovari_culture	religion = manyfold }
+		define_pop = {	type = peasants	size = 19.795	culture = novus_moran_culture	religion = imperial_creeds }
 	}
 	# from vanilla chenini
 	etra2109 = { }

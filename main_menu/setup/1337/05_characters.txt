@@ -1825,4 +1825,24 @@ character_db={
 			size = 1
 		}
 	}
+	A412_eurynor = {
+		first_name = { name = name_eurynor }
+		culture = novus_moran_culture
+		religion = imperial_creeds
+		estate = nobles_estate
+		adm = 43 dip = 56 mil = 87
+		female = no
+		birth_date = 1066.12.10
+		birth = godhand64
+		fertility = -00
+		tag = A412	
+		health_trait = one_eyed
+		ruler_trait = malevolent
+		timed_modifier = {
+			modifier = "is_undead_modifier"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
+	}
 }

@@ -133,6 +133,8 @@ locations = {
 	etra939 = 	{ rank = town	town_setup = polish_town }	
 	etra314 = 	{ rank = town	town_setup = polish_town }	
 	etra791 = 	{ rank = town	town_setup = polish_town }	
+	etra2108 = { rank = town 			town_setup = greek_town_port }
+	
 	
 	#Jasskadia
 	etra394 = 	{ rank = city	town_setup = british_town }	
@@ -284,4 +286,7 @@ building_manager = {
 	monastery 	= { tag = A181 level = 1 location = ardraine140 }
 	monastery 	= { tag = A375 level = 1 location = adune59 }
 	
+	#typhrea
+	pirate_stronghold = {  tag = A412 level = 1 location = etra2108 }
+	pirate_tavern = {  tag = A412 level = 1 location = etra2108 }
 }

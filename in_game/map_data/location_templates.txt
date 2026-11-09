@@ -3265,7 +3265,7 @@ etra1905 = { topography = wetlands vegetation = grasslands climate = mediterrane
 etra1906 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = nephion_tieflings_culture raw_material = cotton  }
 etra1907 = { topography = flatland vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = livestock  }
 etra1908 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = wool  }
-etra1909 = { topography = flatland vegetation = woods climate = mediterranean religion = dreamtime_religion culture = ngargad_culture raw_material = millet natural_harbor_suitability = 0 }
+etra1909 = { topography = hills vegetation = woods climate = mediterranean religion = dreamtime_religion culture = ngargad_culture raw_material = olives natural_harbor_suitability = 0.5 }
 etra1910 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = wool  }
 etra1911 = { topography = flatland vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = wheat  }
 etra1912 = { topography = flatland vegetation = woods climate = continental religion = manyfold culture = abashvan_culture raw_material = lumber  }
@@ -3294,7 +3294,7 @@ etra1934 = { topography = hills vegetation = sparse climate = arid religion = ta
 etra1935 = { topography = hills vegetation = woods climate = continental religion = manyfold culture = ekuniman_culture raw_material = iron  }
 etra1936 = { topography = mountain_wasteland vegetation = forest climate = continental culture = ekuniman_culture religion = manyfold raw_material = iron}
 etra1937 = { topography = hills vegetation = sparse climate = continental religion = manyfold culture = ekuniman_culture raw_material = wild_game  }
-etra1938 = { topography = flatland vegetation = farmland climate = mediterranean religion = dreamtime_religion culture = wirangu_culture raw_material = wild_game natural_harbor_suitability = 0 }
+etra1938 = { topography = flatland vegetation = farmland climate = mediterranean religion = dreamtime_religion culture = wirangu_culture raw_material = cotton natural_harbor_suitability = 0.5 }
 etra1939 = { topography = mountains vegetation = sparse climate = continental religion = manyfold culture = ekuniman_culture raw_material = wheat  }
 etra1940 = { topography = plateau vegetation = forest climate = continental religion = manyfold culture = ekuniman_culture raw_material = livestock  }
 etra1941 = { topography = hills vegetation = forest climate = continental religion = manyfold culture = ekuniman_culture raw_material = stone  }
@@ -3456,7 +3456,7 @@ etra2096 = { topography = hills vegetation = sparse climate = arid religion = ta
 etra2097 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = stone natural_harbor_suitability = 0 }
 etra2098 = { topography = flatland vegetation = woods climate = continental religion = manyfold culture = pahhuar_culture raw_material = fish natural_harbor_suitability = 0 }
 etra2099 = { topography = plateau vegetation = forest climate = continental religion = manyfold culture = ekuniman_culture raw_material = fish  }
-etra2100 = { topography = flatland vegetation = sparse climate = mediterranean  raw_material = wheat culture = abashvan_culture religion = manyfold }
+etra2100 = { topography = flatland vegetation = sparse climate = mediterranean  raw_material = sugar culture = abashvan_culture religion = manyfold }
 etra2101 = { topography = mountains vegetation = forest climate = cold_arid  raw_material = lumber culture = nephion_tieflings_culture religion = manyfold }
 etra2102 = { topography = flatland vegetation = woods climate = continental raw_material = wheat culture = pahhuar_culture religion = manyfold }
 etra2103 = { topography = mountains vegetation = forest climate = continental raw_material = iron culture = ekuniman_culture religion = manyfold }

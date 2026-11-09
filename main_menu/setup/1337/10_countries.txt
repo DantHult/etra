@@ -8010,13 +8010,14 @@ countries = {
 			country_rank = rank_kingdom
 		}	
 		A412 = { # Undead Pirates
+			type = navy
 			own_control_core = { 
 					etra1925 etra1909 etra2049 etra1938 etra2108 etra2105
 			}
 			include = "expl_western_aduna"
 			include = "drowned_fleet_republic"
-			government = { ruler = random }
-			country_rank = rank_kingdom
+			government = { ruler = A412_eurynor }
+			country_rank = rank_duchy
 		}
 		A413 = { 
 			own_control_core = { 

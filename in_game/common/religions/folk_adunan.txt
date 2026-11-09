@@ -63,3 +63,25 @@ faith_saurethii = {
 	}
 
 }
+
+
+imperial_creeds = { 
+	color = map_guasave
+	group = folk_adunan
+	language = moran_language
+	
+	definition_modifier = {
+		monthly_religious_influence = 0.1
+		global_clergy_max_literacy = 25
+		
+		can_have_monasteries = yes
+		maximum_religious_influence = 200
+
+	}
+	
+	opinions = {
+
+	}
+	
+	tags = { hellenism_gfx folk_european_gfx pagan_gfx }
+}
