@@ -82,8 +82,8 @@ a_moran_crossbowmen = {
 
 
 a_moran_handgonners = {
-	category = army_heavy_infantry
-	copy_from = a_age_2_renaissance_undead_heavy_infantry
+	category = army_light_infantry
+	copy_from = a_age_2_renaissance_undead_light_infantry
 	
 	morale_damage_done = 0.10
 	build_time_modifier = 0.25
