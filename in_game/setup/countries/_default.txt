@@ -2641,7 +2641,7 @@ A411 = { # Archonia
 A412 = { # Roman Undead Pirates
 	color = rgb { 22 117 178 }
 	culture_definition = novus_moran_culture
-	religion_definition = manyfold
+	religion_definition = imperial_creeds
 }
 A413 = { # Tieflings
 	color = rgb { 125 10 10 }
