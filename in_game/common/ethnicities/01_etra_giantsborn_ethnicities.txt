@@ -267,3 +267,13 @@ giantsborn_ethnicity = {
 	}
 
 }
+
+# Pahhuar copies west_asian_anatolian_ethnicity with no visual overrides.
+# Ekuniman copies Pahhuar, so the two stay identical until edited by hand.
+pahhuar_ethnicity = {
+	template = "west_asian_anatolian_ethnicity"
+}
+
+ekuniman_ethnicity = {
+	template = "pahhuar_ethnicity"
+}
