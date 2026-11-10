@@ -52,7 +52,7 @@ pahhuar_culture = {
 	
 	color = rgb { 150 25 25 }
 	
-	tags = { giantsborn_gfx persian_gfx persianate_gfx middle_east_gfx  }
+	tags = { pahhuar_gfx persian_gfx persianate_gfx middle_east_gfx  }
 
 	culture_groups = {
 		astanun_group
@@ -68,7 +68,7 @@ ekuniman_culture = {
 	
 	color = rgb { 155 200 240 }
 	
-	tags = { giantsborn_gfx persian_gfx persianate_gfx middle_east_gfx  }
+	tags = { ekuniman_gfx persian_gfx persianate_gfx middle_east_gfx  }
 
 	culture_groups = {
 		astanun_group

@@ -8,6 +8,22 @@ giantsborn_gfx = {
 	}
 }
 
+pahhuar_gfx = {
+	priority = 5000 #kindred
+	culture_tag = pahhuar_gfx
+	ethnicities = {
+		10 = pahhuar_ethnicity
+	}
+}
+
+ekuniman_gfx = {
+	priority = 5000 #kindred
+	culture_tag = ekuniman_gfx
+	ethnicities = {
+		10 = ekuniman_ethnicity
+	}
+}
+
 elf_gfx = {
 	priority = 5000 #kindred
 	culture_tag = elf_gfx
