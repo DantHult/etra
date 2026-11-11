@@ -192,4 +192,16 @@ dynasty_manager = {
 			name_chrysion
 		}
 	}
+
+	# Issarsiya. The houses are the two lines. Later diarchs are generated, not scripted.
+	talhalla_dynasty = {
+		name = { name = talhalla_dynasty }
+		home = etra2089
+		dynasty_name_type = default
+	}
+	zarita_dynasty = {
+		name = { name = zarita_dynasty }
+		home = etra1997
+		dynasty_name_type = default
+	}
 }

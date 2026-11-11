@@ -1,0 +1,4 @@
+# Available to monarchies the same way Vexvec's law is. potential and locked keep it on A410.
+INJECT:monarchy = {
+	heir_selection = issarsiya_seasonal_diarchy
+}
