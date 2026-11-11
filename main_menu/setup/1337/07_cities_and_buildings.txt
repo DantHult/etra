@@ -197,15 +197,9 @@ locations = {
 	etra2205 = { rank = city town_setup = levant_city }
 	etra2257 = { rank = town town_setup = anatolian_town }
 
-	# Issarsiya frost heartland. Inland cold setups already used on etra743 and the Russian towns.
+	# Issarsiya frost heartland. One city and one town, as in the nine-location capitals alkanbren and freehold5.
 	etra2038 = { rank = city town_setup = russian_city }
-	etra1073 = { rank = town town_setup = russian_town }
-	etra1996 = { rank = town town_setup = russian_town }
 	etra2019 = { rank = town town_setup = russian_town }
-	etra2053 = { rank = town town_setup = russian_town }
-	etra2054 = { rank = town town_setup = russian_town }
-	etra2079 = { rank = town town_setup = russian_town }
-	etra2087 = { rank = town town_setup = russian_town }
 	
 }
 building_manager = {
