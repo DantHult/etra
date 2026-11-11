@@ -195,7 +195,7 @@ locations = {
 	etra2255 = { rank = town 	town_setup = levant_town }
 	etra2218 = { rank = city town_setup = tabriz_city }
 	etra2205 = { rank = city town_setup = levant_city }
-	etra2205 = { rank = town town_setup = anatolian_town }
+	etra2257 = { rank = town town_setup = anatolian_town }
 	
 }
 building_manager = {

@@ -1432,7 +1432,11 @@ asia = {
 				astanu_area_1_prov_10 = { etra2022 etra1932 etra1034 }
 				astanu_area_1_prov_13 = { etra1985 etra2034 etra2015 etra2011 etra2159 }
 				astanu_area_1_prov_15 = { etra2099 etra1946 etra2074 etra1964 etra1967 etra1974 }
-				astanu_area_1_prov_18 = { etra1970 etra1952 etra1975 }
+				
+				astanu_area_1_prov_20 = { etra2005 etra2098 etra1961 etra2035 }
+				astanu_area_1_prov_8 = { etra2058 etra2023  etra711 }			
+				astanu_area_1_prov_9 = { etra2088 etra1993 etra2032 }			
+				
 			}
 			astanu_area_2 = {
 				astanu_area_1_prov_16 = { etra1944 etra1962 }
@@ -1443,20 +1447,13 @@ asia = {
 				astanu_area_1_prov_26 = { etra1947  etra2103 etra2129 }
 				astanu_area_1_prov_22 = { etra2072 etra1928 etra2042 etra2131  }	
 				astanu_area_1_prov_12 = { etra1942 etra1931 etra1930 etra1941 etra1054 }
-				astanu_area_1_prov_21 = { etra1972 etra1878 etra1969 etra2145 etra2146 }	
+				
 				astanu_area_1_prov_24 = { etra1958 etra1949  etra2090 etra1995 }	
 				astanu_area_1_prov_17 = { etra2066 etra1976 etra1959 etra1940 etra1939 etra1039 }
 				astanu_area_2_prov_1 = {  etra2219 etra2254 etra2192 etra2234 etra2174  etra2220  }		
 				astanu_area_2_prov_2 = { etra2225 etra2246 etra2172 etra2201 }
 				astanu_area_2_prov_3 = { etra2232 etra2237 etra2180}
 				astanu_area_2_impassables = { etra1043 }
-			}
-			astanu_area_3 = {
-				astanu_area_1_prov_20 = { etra2005 etra2098 etra1961 etra2035 }
-				astanu_area_1_prov_8 = { etra2058 etra2023  etra711 }			
-				astanu_area_1_prov_9 = { etra2088 etra1993 etra2032 }			
-				astanu_area_1_prov_11 = { etra2026 etra2102 etra2083 }	
-								
 			}
 			astivan_area = {
 					astivan_prov_2 = { etra2203 etra2249 etra2191 etra2171 }
@@ -1469,6 +1466,9 @@ asia = {
 					astivan_impassables = { etra1046 }
 			}
 			goron_area = {
+				astanu_area_1_prov_11 = { etra2026 etra2102 etra2083 }	
+				astanu_area_1_prov_18 = { etra1970 etra1952 etra1975 }
+				astanu_area_1_prov_21 = { etra1972 etra1878 etra1969 etra2145 etra2146 }
 				goron_prov_2 = { etra2205 etra2167 etra2242 etra2214 etra2231 etra1044 }
 				goron_prov_3 = { etra2166 etra2217 etra2212 etra2175 }
 				goron_prov_4 = {  etra2224 etra2168 etra2183 etra2235 }
