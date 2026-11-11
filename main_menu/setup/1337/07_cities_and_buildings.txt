@@ -200,6 +200,9 @@ locations = {
 	# Issarsiya frost heartland. One city and one town, as in the nine-location capitals alkanbren and freehold5.
 	etra2038 = { rank = city town_setup = russian_city }
 	etra2019 = { rank = town town_setup = russian_town }
+
+	# Issarsiya fire seat. Kemiru stays a levant_city. Sishune is the one feeder town.
+	etra2214 = { rank = town town_setup = levant_town }
 	
 }
 building_manager = {
@@ -298,4 +301,7 @@ building_manager = {
 	castle = { tag = A410 level = 1 location = etra2038 }
 	marketplace = { tag = A410 level = 1 location = etra2038 }
 	sergeantry = { tag = A410 level = 1 location = etra2038 }
+
+	# Issarsiya fire seat. Castle only. levant_city already supplies the urban package.
+	castle = { tag = A410 level = 1 location = etra2205 }
 }

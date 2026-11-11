@@ -33610,8 +33610,10 @@ adune119 = {
 		define_pop = { type = clergy size = 0.097 culture = high_astanun_culture religion = manyfold }
 		define_pop = { type = peasants size = 8 culture = high_astanun_culture religion = manyfold }
 	}
+	# Fire seat feeder town. One burgher row so the town is not only peasants.
 	etra2214 = {
 		define_pop = { type = clergy size = 0.343 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.900 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = peasants size = 28.263 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2215 = {

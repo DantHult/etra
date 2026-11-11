@@ -270,4 +270,10 @@ road_network = {
 	etra1996 = etra2054
 	etra2054 = etra2053
 	etra2053 = etra2079
+
+	# Issarsiya fire seat. Links follow city-locator spacing inside Tursa. Mikhol stays unlinked.
+	etra2205 = etra2167
+	etra2167 = etra2214
+	etra2214 = etra2231
+	etra2214 = etra2242
 }
