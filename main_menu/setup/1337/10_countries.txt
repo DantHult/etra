@@ -8013,7 +8013,6 @@ countries = {
 					#Nobles
 					elaborate_court_ceremonies
 					noble_sponsored_navy
-					ghazi_privilege
 
 					#Clergy
 					clergy_literacy_rights
@@ -8033,12 +8032,6 @@ countries = {
 					partial_yield
 					peasants_free_peasantry
 
-					#Dhimmi
-					dhimmi_land_rights
-					dhimmi_administrative_posts
-					dhimmi_abrahamic_communities
-					dhimmi_pact_of_umar
-
 					#Tribes
 					tribes_land_rights
 					tribes_pasture_access
@@ -8049,7 +8042,8 @@ countries = {
 			country_rank = rank_kingdom
 			accepted_cultures = {
 				pahhaur_culture
-			}	
+			}
+			capital = etra1966			
 		}
 		A411 = { # Archonia
 			own_control_core = { 
@@ -8079,7 +8073,6 @@ countries = {
 			include = "eternalist_monarchy"
 			government = { ruler = random }
 			country_rank = rank_kingdom
-			capital = etra2107
 		}
 		A414 = { # Placeholder
 			own_control_core = { 
