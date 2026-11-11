@@ -11,11 +11,14 @@ l_english:
  issarsiya_diarchy.1.title: "The Season Turns"
  issarsiya_diarchy.1.desc: "The throne of [ROOT.GetName] passes with the season. [issarsiya_incoming.GetName] now rules, and [issarsiya_outgoing.GetName] remains co-ruler."
  issarsiya_diarchy.1.a: "The other line keeps its seat."
+ issarsiya_diarchy.1.entry: "$issarsiya_diarchy.1.title$"
 
  issarsiya_diarchy.2.title: "A Line Takes the Throne"
  issarsiya_diarchy.2.desc: "[issarsiya_dead.GetName] is dead. [issarsiya_successor.GetName] fills that line and takes the throne, for the season is already theirs. The other line stays."
  issarsiya_diarchy.2.a: "The diarchy holds."
+ issarsiya_diarchy.2.entry: "$issarsiya_diarchy.2.title$"
 
  issarsiya_diarchy.3.title: "A Line Is Filled"
  issarsiya_diarchy.3.desc: "[issarsiya_dead.GetName] is dead. [issarsiya_successor.GetName] fills that line and stands as co-ruler. The season is not theirs, so the other line keeps the throne."
  issarsiya_diarchy.3.a: "The diarchy holds."
+ issarsiya_diarchy.3.entry: "$issarsiya_diarchy.3.title$"

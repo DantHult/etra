@@ -190,6 +190,7 @@
 	text = { localization_key = country_history_A26 trigger = { tag = A26 } } # Legio I Elyriicorum
 	text = { localization_key = country_history_A51 trigger = { tag = A51 } } # lhonntaur
 	text = { localization_key = country_history_A163 trigger = { tag = A163 } } # Bourfort
+	text = { localization_key = country_history_A410 trigger = { tag = A410 } } # Issarsiya
 	text = { localization_key = country_history_A332 trigger = { tag = A332 } } # Arinera
 	text = { localization_key = country_history_A325 trigger = { tag = A325 } } # Naiha
 	# Generic Cultures
