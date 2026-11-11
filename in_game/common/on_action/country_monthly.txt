@@ -17,6 +17,7 @@ monthly_country_pulse = {
 		wor_on_wallenstein_prison_timeout
 		on_fraticide_underage_succession_waiting
 		verminus_wars_monthly_start_check
+		issarsiya_diarchy_monthly
 	}
 	
 	random_events = {
@@ -294,5 +295,123 @@ on_fraticide_underage_succession_waiting = {
 		else = {
 			trigger_event_silently = succession.5
 		}
+	}
+}
+
+# A410 only. The pulse is the monthly tick: 1 March (month 3) and 1 September (month 9).
+# current_month runs 1 through 12. Swap only when the sitting ruler is the wrong line.
+issarsiya_diarchy_monthly = {
+	trigger = {
+		tag = A410
+		has_ruler = yes
+		ruler = { has_variable = issarsiya_diarch_line }
+		OR = {
+			AND = {
+				current_month = 3
+				ruler = { var:issarsiya_diarch_line = 1 }
+				OR = {
+					AND = {
+						has_variable = issarsiya_fire_diarch
+						var:issarsiya_fire_diarch = { is_alive = yes }
+					}
+					AND = {
+						has_heir = yes
+						heir = {
+							is_alive = yes
+							has_variable = issarsiya_diarch_line
+							var:issarsiya_diarch_line = 2
+						}
+					}
+				}
+			}
+			AND = {
+				current_month = 9
+				ruler = { var:issarsiya_diarch_line = 2 }
+				OR = {
+					AND = {
+						has_variable = issarsiya_frost_diarch
+						var:issarsiya_frost_diarch = { is_alive = yes }
+					}
+					AND = {
+						has_heir = yes
+						heir = {
+							is_alive = yes
+							has_variable = issarsiya_diarch_line
+							var:issarsiya_diarch_line = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = { ruler = { var:issarsiya_diarch_line = 1 } }
+			if = {
+				limit = { NOT = { has_variable = issarsiya_frost_diarch } }
+				set_variable = { name = issarsiya_frost_diarch value = ruler }
+			}
+			else_if = {
+				limit = { NOT = { var:issarsiya_frost_diarch = ruler } }
+				set_variable = { name = issarsiya_frost_diarch value = ruler }
+			}
+		}
+		if = {
+			limit = { ruler = { var:issarsiya_diarch_line = 2 } }
+			if = {
+				limit = { NOT = { has_variable = issarsiya_fire_diarch } }
+				set_variable = { name = issarsiya_fire_diarch value = ruler }
+			}
+			else_if = {
+				limit = { NOT = { var:issarsiya_fire_diarch = ruler } }
+				set_variable = { name = issarsiya_fire_diarch value = ruler }
+			}
+		}
+		if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					is_alive = yes
+					has_variable = issarsiya_diarch_line
+					var:issarsiya_diarch_line = 2
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = issarsiya_fire_diarch } }
+				set_variable = { name = issarsiya_fire_diarch value = heir }
+			}
+			else_if = {
+				limit = { var:issarsiya_fire_diarch = { is_alive = no } }
+				set_variable = { name = issarsiya_fire_diarch value = heir }
+			}
+		}
+		if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					is_alive = yes
+					has_variable = issarsiya_diarch_line
+					var:issarsiya_diarch_line = 1
+				}
+			}
+			if = {
+				limit = { NOT = { has_variable = issarsiya_frost_diarch } }
+				set_variable = { name = issarsiya_frost_diarch value = heir }
+			}
+			else_if = {
+				limit = { var:issarsiya_frost_diarch = { is_alive = no } }
+				set_variable = { name = issarsiya_frost_diarch value = heir }
+			}
+		}
+		ruler = { save_scope_as = issarsiya_outgoing }
+		if = {
+			limit = { current_month = 3 }
+			var:issarsiya_fire_diarch = { save_scope_as = issarsiya_incoming }
+		}
+		else = {
+			var:issarsiya_frost_diarch = { save_scope_as = issarsiya_incoming }
+		}
+		issarsiya_reseat_lines_effect = yes
+		trigger_event_non_silently = issarsiya_diarchy.1
 	}
 }

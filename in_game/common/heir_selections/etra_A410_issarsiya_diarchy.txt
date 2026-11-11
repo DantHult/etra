@@ -1,0 +1,71 @@
+# A410 only. Cognatic primogeniture stays on the shared eternalist_monarchy package.
+# A living diarch of the line that is not ruling scores; everyone else is unsuited,
+# so a child cannot become heir and replace the diarchy.
+
+issarsiya_seasonal_diarchy = {
+	use_election = no
+	term_duration = 0 # until the ruler dies; the season swap is a monthly pulse, not a term
+	max_possible_candidates = 0
+	allow_female = yes
+	allow_male = yes
+	allow_children = yes
+	ignore_ruler = yes
+	allow_foreign_ruler = no
+	all_in_country = yes
+
+	allowed_estates = { nobles_estate crown_estate }
+
+	heir_is_allowed = {
+	}
+
+	potential = {
+		tag = A410
+	}
+
+	locked = {
+		tag = A410
+	}
+
+	calc = {
+		if = {
+			limit = {
+				exists = root
+				is_alive = yes
+				is_ruler = no
+				has_variable = issarsiya_diarch_line
+				owner = {
+					OR = {
+						has_ruler = no
+						ruler = { NOT = { has_variable = issarsiya_diarch_line } }
+						ruler = { NOT = { var:issarsiya_diarch_line = root.var:issarsiya_diarch_line } }
+					}
+				}
+			}
+			add = {
+				desc = "issarsiya_diarch_partner_desc"
+				value = 1000
+			}
+		}
+		if = {
+			limit = {
+				exists = root
+				NOT = { has_variable = issarsiya_diarch_line }
+			}
+			add = {
+				desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+				value = -1000
+			}
+		}
+		if = {
+			limit = { NOT = { exists = root } }
+			add = {
+				desc = "issarsiya_diarch_partner_desc"
+				value = 1000
+			}
+			add = {
+				desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+				value = -1000
+			}
+		}
+	}
+}

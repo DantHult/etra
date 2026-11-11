@@ -1,0 +1,54 @@
+# root is not a country. Stamp the two 1337 diarchs once the history is loaded.
+on_game_start = {
+	on_actions = {
+		issarsiya_diarchy_setup
+	}
+}
+
+issarsiya_diarchy_setup = {
+	trigger = {
+		country_exists = c:A410
+		character:A410_talhalla = { is_alive = yes }
+		character:A410_zarita = { is_alive = yes }
+	}
+	effect = {
+		c:A410 = {
+			issarsiya_setup_starting_diarchs_effect = yes
+		}
+	}
+}
+
+# root = country, scope:target = the character who died
+issarsiya_diarch_death = {
+	trigger = {
+		tag = A410
+		scope:target = { has_variable = issarsiya_diarch_line }
+	}
+	effect = {
+		scope:target = { save_scope_as = issarsiya_dead }
+		issarsiya_on_dead_diarch_effect = yes
+	}
+}
+
+# root = country; scope:old_ruler has already been succeeded
+issarsiya_ruler_death = {
+	trigger = {
+		tag = A410
+		scope:old_ruler = { has_variable = issarsiya_diarch_line }
+	}
+	effect = {
+		scope:old_ruler = { save_scope_as = issarsiya_dead }
+		issarsiya_on_dead_diarch_effect = yes
+	}
+}
+
+issarsiya_ruler_death_delayed = {
+	trigger = {
+		tag = A410
+		scope:old_ruler = { has_variable = issarsiya_diarch_line }
+	}
+	effect = {
+		scope:old_ruler = { save_scope_as = issarsiya_dead }
+		issarsiya_on_dead_diarch_effect = yes
+	}
+}

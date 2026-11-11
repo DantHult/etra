@@ -1,0 +1,258 @@
+# Issarsiya seasonal diarchy.
+# issarsiya_diarch_line = 1 is Talhalla (frost): September through February.
+# issarsiya_diarch_line = 2 is Zarita (fire): March through August.
+# current_month is 1 (January) through 12 (December).
+#
+# set_new_ruler does not kill the outgoing ruler. A monarchy abdication
+# (flavor_tur.123) calls it and then still changes the living former ruler,
+# and Genoa's election.3 calls it while the unelected candidates stay alive.
+# There is no resurrect effect. If the old ruler is alive but no longer in
+# the country, move_country brings him back, then he is set as heir.
+
+issarsiya_setup_starting_diarchs_effect = {
+	character:A410_talhalla = {
+		set_variable = { name = issarsiya_diarch_line value = 1 }
+	}
+	character:A410_zarita = {
+		set_variable = { name = issarsiya_diarch_line value = 2 }
+	}
+	set_variable = { name = issarsiya_frost_diarch value = character:A410_talhalla }
+	set_variable = { name = issarsiya_fire_diarch value = character:A410_zarita }
+	if = {
+		limit = {
+			character:A410_talhalla = { is_alive = yes is_ruler = yes }
+			character:A410_zarita = { is_alive = yes is_ruler = no }
+		}
+		set_as_designated_heir = {
+			target = character:A410_zarita
+			reason = corruler
+		}
+	}
+}
+
+# scope:issarsiya_ruler_candidate and scope:issarsiya_heir_candidate when they exist
+issarsiya_seat_diarchs_effect = {
+	if = {
+		limit = {
+			exists = scope:issarsiya_ruler_candidate
+			scope:issarsiya_ruler_candidate = { is_alive = yes }
+			NOT = { ruler = scope:issarsiya_ruler_candidate }
+		}
+		if = {
+			limit = { has_ruler = yes }
+			ruler = { save_scope_as = issarsiya_outgoing }
+		}
+		scope:issarsiya_ruler_candidate = {
+			if = {
+				limit = { NOT = { owner = root } }
+				move_country = root
+			}
+		}
+		set_new_ruler = scope:issarsiya_ruler_candidate
+		if = {
+			limit = {
+				exists = scope:issarsiya_outgoing
+				scope:issarsiya_outgoing = { is_alive = yes }
+			}
+			scope:issarsiya_outgoing = {
+				if = {
+					limit = { NOT = { owner = root } }
+					move_country = root
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:issarsiya_heir_candidate
+			scope:issarsiya_heir_candidate = { is_alive = yes }
+			NOT = { ruler = scope:issarsiya_heir_candidate }
+			OR = {
+				NOT = { exists = scope:issarsiya_ruler_candidate }
+				NOT = { scope:issarsiya_heir_candidate = scope:issarsiya_ruler_candidate }
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_heir = no
+					NOT = { heir = scope:issarsiya_heir_candidate }
+				}
+			}
+			scope:issarsiya_heir_candidate = {
+				if = {
+					limit = { NOT = { owner = root } }
+					move_country = root
+				}
+			}
+			set_as_designated_heir = {
+				target = scope:issarsiya_heir_candidate
+				reason = corruler
+			}
+		}
+	}
+}
+
+issarsiya_reseat_lines_effect = {
+	if = {
+		limit = {
+			current_month >= 3
+			current_month <= 8
+		}
+		if = {
+			limit = {
+				has_variable = issarsiya_fire_diarch
+				var:issarsiya_fire_diarch = { is_alive = yes }
+			}
+			var:issarsiya_fire_diarch = { save_scope_as = issarsiya_ruler_candidate }
+		}
+		if = {
+			limit = {
+				has_variable = issarsiya_frost_diarch
+				var:issarsiya_frost_diarch = { is_alive = yes }
+			}
+			var:issarsiya_frost_diarch = { save_scope_as = issarsiya_heir_candidate }
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				has_variable = issarsiya_frost_diarch
+				var:issarsiya_frost_diarch = { is_alive = yes }
+			}
+			var:issarsiya_frost_diarch = { save_scope_as = issarsiya_ruler_candidate }
+		}
+		if = {
+			limit = {
+				has_variable = issarsiya_fire_diarch
+				var:issarsiya_fire_diarch = { is_alive = yes }
+			}
+			var:issarsiya_fire_diarch = { save_scope_as = issarsiya_heir_candidate }
+		}
+	}
+	issarsiya_seat_diarchs_effect = yes
+}
+
+# scope:issarsiya_dead is the diarch who died. Fills that line once, then seats both lines for the month.
+issarsiya_on_dead_diarch_effect = {
+	if = {
+		limit = {
+			exists = scope:issarsiya_dead
+			scope:issarsiya_dead = { has_variable = issarsiya_diarch_line }
+		}
+		scope:issarsiya_dead = {
+			if = {
+				limit = { var:issarsiya_diarch_line = 1 }
+				root = { set_variable = { name = issarsiya_dead_line value = 1 } }
+			}
+			else = {
+				root = { set_variable = { name = issarsiya_dead_line value = 2 } }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:issarsiya_dead = { has_variable = issarsiya_slot_filled } }
+			}
+			if = {
+				limit = {
+					has_variable = issarsiya_frost_diarch
+					var:issarsiya_frost_diarch = scope:issarsiya_dead
+				}
+				remove_variable = issarsiya_frost_diarch
+			}
+			if = {
+				limit = {
+					has_variable = issarsiya_fire_diarch
+					var:issarsiya_fire_diarch = scope:issarsiya_dead
+				}
+				remove_variable = issarsiya_fire_diarch
+			}
+			scope:issarsiya_dead = {
+				ordered_child = {
+					limit = {
+						is_alive = yes
+						OR = {
+							owner = root
+							is_ruler = no
+						}
+						OR = {
+							NOT = { has_variable = issarsiya_diarch_line }
+							var:issarsiya_diarch_line = root.var:issarsiya_dead_line
+						}
+					}
+					order_by = character_age
+					max = 1
+					check_range_bounds = no
+					save_scope_as = issarsiya_successor
+				}
+			}
+			if = {
+				limit = { NOT = { exists = scope:issarsiya_successor } }
+				create_character = {
+					age = 30
+					female = no
+					dynasty = scope:issarsiya_dead.dynasty
+					father = scope:issarsiya_dead
+					culture = scope:issarsiya_dead.culture
+					religion = scope:issarsiya_dead.religion
+					estate = estate_type:nobles_estate
+					adm = { 40 70 }
+					dip = { 40 70 }
+					mil = { 40 70 }
+					save_scope_as = issarsiya_successor
+				}
+			}
+			if = {
+				limit = { exists = scope:issarsiya_successor }
+				scope:issarsiya_successor = {
+					if = {
+						limit = { root = { var:issarsiya_dead_line = 1 } }
+						set_variable = { name = issarsiya_diarch_line value = 1 }
+					}
+					else = {
+						set_variable = { name = issarsiya_diarch_line value = 2 }
+					}
+					if = {
+						limit = { NOT = { owner = root } }
+						move_country = root
+					}
+				}
+				if = {
+					limit = { var:issarsiya_dead_line = 1 }
+					set_variable = { name = issarsiya_frost_diarch value = scope:issarsiya_successor }
+				}
+				else = {
+					set_variable = { name = issarsiya_fire_diarch value = scope:issarsiya_successor }
+				}
+				scope:issarsiya_dead = { set_variable = issarsiya_slot_filled }
+				set_local_variable = issarsiya_announce
+			}
+		}
+		issarsiya_reseat_lines_effect = yes
+		if = {
+			limit = { has_local_variable = issarsiya_announce }
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							var:issarsiya_dead_line = 1
+							OR = {
+								current_month <= 2
+								current_month >= 9
+							}
+						}
+						AND = {
+							var:issarsiya_dead_line = 2
+							current_month >= 3
+							current_month <= 8
+						}
+					}
+				}
+				trigger_event_non_silently = issarsiya_diarchy.2
+			}
+			else = {
+				trigger_event_non_silently = issarsiya_diarchy.3
+			}
+		}
+	}
+}

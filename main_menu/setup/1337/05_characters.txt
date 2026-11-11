@@ -1825,6 +1825,38 @@ character_db={
 			size = 1
 		}
 	}
+	# Sitting diarchs in January 1337. Adults of the two lines, not the cataclysm twins.
+	# Line 1 is Talhalla (frost). Line 2 is Zarita (fire). The variables are stamped at game start.
+	A410_talhalla = {
+		first_name = { name = name_talhalla }
+		last_name = { name = talhalla_dynasty }
+		culture = ekuniman_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 64 dip = 48 mil = 71
+		female = no
+		birth_date = 1288.11.2
+		birth = etra2089
+		dynasty = talhalla_dynasty
+		fertility = 55
+		tag = A410
+		ruler_trait = bold_fighter
+	}
+	A410_zarita = {
+		first_name = { name = name_zarita }
+		last_name = { name = zarita_dynasty }
+		culture = pahhuar_culture
+		religion = manyfold
+		estate = nobles_estate
+		adm = 57 dip = 73 mil = 60
+		female = no
+		birth_date = 1295.4.18
+		birth = etra1997
+		dynasty = zarita_dynasty
+		fertility = 60
+		tag = A410
+		ruler_trait = lawgiver
+	}
 	A412_eurynor = {
 		first_name = { name = name_eurynor }
 		culture = novus_moran_culture

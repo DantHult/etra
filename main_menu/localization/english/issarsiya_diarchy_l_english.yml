@@ -1,0 +1,21 @@
+l_english:
+ name_talhalla: "Talhalla"
+ name_zarita: "Zarita"
+ talhalla_dynasty: "Talhalla"
+ zarita_dynasty: "Zarita"
+
+ issarsiya_seasonal_diarchy: "Seasonal Diarchy"
+ issarsiya_seasonal_diarchy_desc: "Issarsiya keeps two living rulers. Zarita's line rules from March through August. Talhalla's line rules from September through February. The one who is not ruler is the co-ruler heir. When a diarch dies, only that line is filled, and the new diarch takes the throne only during that line's season."
+ issarsiya_diarch_partner_desc: "Co-ruler of the other line"
+
+ issarsiya_diarchy.1.title: "The Season Turns"
+ issarsiya_diarchy.1.desc: "The throne of [ROOT.GetName] passes with the season. [issarsiya_incoming.GetName] now rules, and [issarsiya_outgoing.GetName] remains co-ruler."
+ issarsiya_diarchy.1.a: "The other line keeps its seat."
+
+ issarsiya_diarchy.2.title: "A Line Takes the Throne"
+ issarsiya_diarchy.2.desc: "[issarsiya_dead.GetName] is dead. [issarsiya_successor.GetName] fills that line and takes the throne, for the season is already theirs. The other line stays."
+ issarsiya_diarchy.2.a: "The diarchy holds."
+
+ issarsiya_diarchy.3.title: "A Line Is Filled"
+ issarsiya_diarchy.3.desc: "[issarsiya_dead.GetName] is dead. [issarsiya_successor.GetName] fills that line and stands as co-ruler. The season is not theirs, so the other line keeps the throne."
+ issarsiya_diarchy.3.a: "The diarchy holds."
