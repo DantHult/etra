@@ -304,7 +304,9 @@ building_manager = {
 	castle = { tag = A410 level = 1 location = etra2038 }
 	marketplace = { tag = A410 level = 1 location = etra2038 }
 	sergeantry = { tag = A410 level = 1 location = etra2038 }
+	issarsiya_diarchy_seat = { tag = A410 level = 1 location = etra2038 }
 
 	# Issarsiya fire seat. Castle only. levant_city already supplies the urban package.
 	castle = { tag = A410 level = 1 location = etra2205 }
+	issarsiya_diarchy_seat = { tag = A410 level = 1 location = etra2205 }
 }

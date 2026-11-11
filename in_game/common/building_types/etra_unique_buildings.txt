@@ -66,6 +66,47 @@ the_amphitheatrum = {
 	
 }
 
+# One seat of the diarchy, used at both Issarsiyan courts.
+issarsiya_diarchy_seat = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+
+	employment_size = normal_noble_employment
+
+	category = government_category
+
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+
+	location_potential = {
+		OR = {
+			this = location:etra2038
+			this = location:etra2205
+		}
+	}
+
+	country_potential = {
+		has_or_had_tag = A410
+	}
+
+	can_destroy = {
+		always = yes
+	}
+
+	expensive = yes
+
+	build_time = government_build_time
+
+	construction_demand = local_governor_construction
+
+	modifier = {
+		local_proximity_source = 80
+	}
+}
+
 
 ruined_ringed_wall = {
 	is_special = yes
