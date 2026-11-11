@@ -8047,7 +8047,8 @@ countries = {
 			
 			}
 			country_rank = rank_kingdom
-			capital = etra2038
+			# Town capital. Smaller than the frost seat and the fire seat.
+			capital = etra1966
 			accepted_cultures = {
 				pahhaur_culture
 			}	

@@ -203,6 +203,9 @@ locations = {
 
 	# Issarsiya fire seat. Kemiru stays a levant_city. Sishune is the one feeder town.
 	etra2214 = { rank = town town_setup = levant_town }
+
+	# Issarsiya country capital. A town, smaller than the frost and fire seats.
+	etra1966 = { rank = town town_setup = russian_town }
 	
 }
 building_manager = {
