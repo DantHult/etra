@@ -261,4 +261,13 @@ road_network = {
 	adune99 = freehold13
 	freehold67 = freehold68
 	testprovince168 = commonweal13
+
+	# Frostheart. Links follow city-locator spacing inside the province.
+	etra2038 = etra1073
+	etra2038 = etra2087
+	etra2087 = etra2019
+	etra2038 = etra1996
+	etra1996 = etra2054
+	etra2054 = etra2053
+	etra2053 = etra2079
 }

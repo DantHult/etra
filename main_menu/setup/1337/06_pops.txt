@@ -27256,10 +27256,10 @@ adune119 = {
 		define_pop = {	type = peasants	size = 0.746	culture = infernling_culture	religion = manyfold }
 	}
 	etra1073 = {
-		define_pop = { type = clergy size = 0.027 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.671 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.048 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.420 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.400 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 1.317 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.689 culture = ekuniman_culture religion = manyfold }
 	}
 	etra1074 = {
 		define_pop = {	type = nobles	size = 0.022	culture = ayarena_culture	religion = manyfold }
@@ -32408,8 +32408,9 @@ adune119 = {
 		define_pop = { type = tribesmen size = 1.380 culture = ekuniman_culture religion = manyfold }
 	}
 	etra1996 = {
-		define_pop = { type = clergy size = 0.040 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.912 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.070 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.860 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.400 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.391 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1997 = {
@@ -32553,8 +32554,9 @@ adune119 = {
 		define_pop = { type = slaves size = 0.321 culture = hyriovari_culture religion = manyfold }
 	}
 	etra2019 = {
-		define_pop = { type = clergy size = 0.044 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.837 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.074 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.920 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 13.200 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.787 culture = pahhuar_culture religion = manyfold }
 	}
 	# from vanilla chenini
@@ -32659,11 +32661,14 @@ adune119 = {
 		define_pop = { type = peasants size = 2.647 culture = archonian_culture religion = manyfold }
 	}
 
+	# Frost heartland capital of Issarsiya. Scale follows Palakhikra, a kingdom capital.
 	etra2038 = {
-		define_pop = { type = clergy size = 0.028 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.788 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.124 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.248 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 2.360 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 24.180 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.060 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 1.351 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.732 culture = ekuniman_culture religion = manyfold }
 	}
 	# from vanilla smara
 	etra2039 = {
@@ -32747,15 +32752,16 @@ adune119 = {
 		define_pop = { type = tribesmen size = 3.156 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2053 = {
-		define_pop = { type = clergy size = 0.044 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.720 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.072 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.900 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 13.050 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.737 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2054 = {
-		define_pop = { type = clergy size = 0.027 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.745 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.048 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.430 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.520 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 1.338 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.716 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2055 = { }
 	etra2056 = {
@@ -32909,8 +32915,9 @@ adune119 = {
 	}
 
 	etra2079 = {
-		define_pop = { type = clergy size = 0.042 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.359 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.068 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.840 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.600 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.582 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2080 = {
@@ -32955,10 +32962,10 @@ adune119 = {
 		define_pop = { type = tribesmen size = 2.638 culture = khyresh_culture religion = manyfold }
 	}
 	etra2087 = {
-		define_pop = { type = clergy size = 0.026 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.471 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.046 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.410 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.180 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 1.261 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.617 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2088 = {
 		define_pop = { type = nobles size = 0.040 culture = pahhuar_culture religion = manyfold }
