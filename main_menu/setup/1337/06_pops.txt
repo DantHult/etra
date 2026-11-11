@@ -32240,8 +32240,13 @@ adune119 = {
 		define_pop = { type = peasants size = 8.930 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 3.827 culture = pahhuar_culture religion = manyfold }
 	}
+	# Country capital of Issarsiya. A thin court. The culture split is unchanged.
 	etra1966 = {
+		define_pop = { type = nobles size = 0.028 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.012 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = clergy size = 0.049 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.421 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.179 culture = pahhuar_culture religion = manyfold }
 		define_pop = { type = peasants size = 9.673 culture = ekuniman_culture religion = manyfold }
 		define_pop = { type = peasants size = 4.146 culture = pahhuar_culture religion = manyfold }
 	}

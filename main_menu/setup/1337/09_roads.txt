@@ -276,4 +276,10 @@ road_network = {
 	etra2167 = etra2214
 	etra2214 = etra2231
 	etra2214 = etra2242
+
+	# Issarsiya country capital. Links follow city-locator spacing. The mountain wasteland stays unlinked.
+	etra1966 = etra1963
+	etra1963 = etra1968
+	etra1966 = etra1973
+	etra1966 = etra1965
 }
