@@ -7988,7 +7988,7 @@ countries = {
 			country_rank = rank_kingdom
 			capital = etra1513
 		}
-		A410 = { # placeholder
+		A410 = { # Issarsiya
 			own_control_core = { 
 				etra2089 etra1997 etra1999 etra2025 etra2095 etra2087 etra1992 etra1990 etra2006 etra2010 etra2051 etra2080
 				etra2019 etra2073 etra1996 etra2104 etra2024  etra1893 etra2022 etra1895 etra2021 etra2045 etra2056 etra1945
@@ -7997,7 +7997,12 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = {
+				ruler = A410_talhalla
+				heir = A410_zarita
+				designated_heir_reason = corruler
+				heir_selection = issarsiya_seasonal_diarchy
+			}
 			country_rank = rank_kingdom
 		}
 		A411 = { # Archonia

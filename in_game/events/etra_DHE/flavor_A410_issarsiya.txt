@@ -1,0 +1,76 @@
+namespace = issarsiya_diarchy
+
+# Fired from the monthly country pulse after the lines have been seated.
+issarsiya_diarchy.1 = {
+	type = country_event
+	title = issarsiya_diarchy.1.title
+	desc = issarsiya_diarchy.1.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = A410
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = issarsiya_diarchy.1.a
+	}
+}
+
+# The dead line's season: the new diarch is ruler. The other line stays heir.
+issarsiya_diarchy.2 = {
+	type = country_event
+	title = issarsiya_diarchy.2.title
+	desc = issarsiya_diarchy.2.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = A410
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = issarsiya_diarchy.2.a
+	}
+}
+
+# Not their season: the new diarch is only the co-ruler heir.
+issarsiya_diarchy.3 = {
+	type = country_event
+	title = issarsiya_diarchy.3.title
+	desc = issarsiya_diarchy.3.desc
+	outcome = neutral
+
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		tag = A410
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = issarsiya_diarchy.3.a
+	}
+}
