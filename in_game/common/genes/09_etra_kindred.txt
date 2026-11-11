@@ -125,13 +125,27 @@
 			boy = male
 			girl = male
 		}
-		dark_skin_hue = { # snow elf (snelf)
+		dark_skin_hue = { # deep elves/pale elves
 			index = 10
 			male = {
 				skin_hsv_shift_curve = {
 					curve = {
 						{ 0.0 	{ 0.57 0.28 0.0 } }
 						{ 1.0   { 0.57 0.34 0.0 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+		red_giantsborn_skin_hue = { #orange/redish
+			index = 11
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.0 -2.0 1.0 } }
+						{ 1.0   { 0.0 -2.0 -1.0 } }
 					}
 				}
 			}

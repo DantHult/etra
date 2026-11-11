@@ -7999,6 +7999,9 @@ countries = {
 			include = "eternalist_monarchy"
 			government = { ruler = random }
 			country_rank = rank_kingdom
+			accepted_cultures = {
+				pahhaur_culture
+			}
 		}
 		A411 = { # Archonia
 			own_control_core = { 
