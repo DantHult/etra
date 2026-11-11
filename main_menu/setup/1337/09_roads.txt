@@ -261,4 +261,25 @@ road_network = {
 	adune99 = freehold13
 	freehold67 = freehold68
 	testprovince168 = commonweal13
+
+	# Issarsiya frost heartland. Links follow city-locator spacing inside the province.
+	etra2038 = etra1073
+	etra2038 = etra2087
+	etra2087 = etra2019
+	etra2038 = etra1996
+	etra1996 = etra2054
+	etra2054 = etra2053
+	etra2053 = etra2079
+
+	# Issarsiya fire seat. Links follow city-locator spacing inside Tursa. Mikhol stays unlinked.
+	etra2205 = etra2167
+	etra2167 = etra2214
+	etra2214 = etra2231
+	etra2214 = etra2242
+
+	# Issarsiya country capital. Links follow city-locator spacing. The mountain wasteland stays unlinked.
+	etra1966 = etra1963
+	etra1963 = etra1968
+	etra1966 = etra1973
+	etra1966 = etra1965
 }
