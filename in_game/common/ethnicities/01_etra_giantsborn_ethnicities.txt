@@ -268,10 +268,22 @@ giantsborn_ethnicity = {
 
 }
 
-# Pahhuar copies west_asian_anatolian_ethnicity with no visual overrides.
-# Ekuniman copies Pahhuar, so the two stay identical until edited by hand.
+# template copies morph genes only. Color genes are not inherited, so a bare
+# template leaves skin_color empty and the skin shader has no range to sample.
+# The band and hue below are the existing base values from ethnicity_template,
+# not a new palette. Ekuniman still templates Pahhuar.
 pahhuar_ethnicity = {
 	template = "west_asian_anatolian_ethnicity"
+	skin_color_hue = {
+		100 = { name = human_skin_hue		 range = { 0.0 1.0 } }
+	}
+	skin_color = {
+		10 = {
+			# x y
+			0.25 0.2 # top left
+			0.75 0.5 # bottom right
+		}
+	}
 }
 
 ekuniman_ethnicity = {
