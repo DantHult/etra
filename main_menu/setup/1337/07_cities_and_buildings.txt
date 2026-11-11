@@ -196,6 +196,10 @@ locations = {
 	etra2218 = { rank = city town_setup = tabriz_city }
 	etra2205 = { rank = city town_setup = levant_city }
 	etra2257 = { rank = town town_setup = anatolian_town }
+
+	# Issarsiya frost heartland. One city and one town, as in the nine-location capitals alkanbren and freehold5.
+	etra2038 = { rank = city town_setup = russian_city }
+	etra2019 = { rank = town town_setup = russian_town }
 	
 }
 building_manager = {
@@ -289,4 +293,9 @@ building_manager = {
 	#typhrea
 	pirate_stronghold = {  tag = A412 level = 1 location = etra2108 }
 	pirate_tavern = {  tag = A412 level = 1 location = etra2108 }
+
+	# Issarsiya frost capital. Same capital fields as etra370 and freehold5.
+	castle = { tag = A410 level = 1 location = etra2038 }
+	marketplace = { tag = A410 level = 1 location = etra2038 }
+	sergeantry = { tag = A410 level = 1 location = etra2038 }
 }
