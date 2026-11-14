@@ -47,7 +47,7 @@ borili_giantsborn_culture = {
 }
 
 
-pahhuar_culture = {
+pahhuar_culture = { #fire giants
 	language = astanun_language
 	
 	color = rgb { 150 25 25 }
@@ -63,7 +63,7 @@ pahhuar_culture = {
 	}
 }
 
-ekuniman_culture = {
+ekuniman_culture = { #Frost Giants
 	language = astanun_language
 	
 	color = rgb { 155 200 240 }

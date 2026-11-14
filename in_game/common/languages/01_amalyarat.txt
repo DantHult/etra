@@ -1,6 +1,6 @@
 ﻿amalyarat_language = {
 	color = map_tuareg
-	
+	family = tawledtic_language_family
 	male_names = {
 		name_abd_al_aziz Abd_al-Haqq Abd_al-Wahid name_abdullah Abu_Bakr Abul_Fadl Abu_Hammu Abu_Tashufin name_abu.name_john Abu_Zayyan name_ahmad Al-Fadl name_ali Faris name_abraham Khalid name_muhammad 
 		name_omar name_osman name_john name_james name_joseph name_zechariah name_massin name_aghilas name_udaden
@@ -24,7 +24,7 @@
 
 adnkhalan_language = {
 	color = map_arabic
-
+	family = tawledtic_language_family
 
 	male_names = {
 		name_abd_al_aziz name_abu_bakr name_arif name_abd_al_gafur name_abd_al_jalil name_abd_al_qadir name_abd_al_wahhab name_abdullah
@@ -76,4 +76,38 @@ adnkhalan_language = {
 
 	}
 }
+
+khyreshi_language = {
+	family = tawledtic_language_family
+	color = color_language_coptic
+	
+	male_names = {
+		Abanoub Abraam Awel name_adam name_adelphus Aleksanaros Androus name_anthony name_aaron name_ashraf 
+		Wasile Beniamin Bishoi Boutros Chael Khristophoros Danyal Daueid Evanderos 
+		Ezra Gabri_el Gerges Hanri name_elias Isac Ioseb Istafanus Jerjer Khail Kosma 
+		Krystafer Ksystous Lot Lukianous Lukious Maurikious Matta Mikail Mikhael 
+		Mina Mouses Myronous Pamin Roufos Sarabion Tadros Thaodoros Touma Yakobas 
+		Yared Yeshak Youssef Zaia
+	}	
+	female_names = {
+		name_anastasia name_anna Demiana name_diana Elpis name_eve Hanna Herewekka Hrakhel name_iris name_irene 
+		name_elizabeth Kattrin Khroustina Lea Leksandria Loukia Mariam name_marine Marta Maysoon 
+		Paisi Piama Piamun Potamina Roufina name_samiya Sappeira name_sara name_sophia Talida Virina
+	}
+	dynasty_names = {
+		Bassily Boutros Ghali Ebeid Fanous El_Gohary Habib Hinein name_isaac Kellini Shukrallah Stino 
+		Wahba name_khalil
+	}
+	lowborn = {
+		Botros Salib Tadros Tedros Fakhri Fanous Lawandy Mina 
+		Mourice Moussa Pishay Pishoy Ramsis Tafida Wisa
+	}
+	
+	# to override the default adjective and noun database for cultural works
+	#adjective = {
+	#}
+	#noun = {
+	#}
+}
+
 

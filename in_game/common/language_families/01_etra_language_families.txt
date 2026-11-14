@@ -10,3 +10,6 @@ armonorican_language_family = { #Psuedo
 	color = map_celtic_language_family
 }
 
+tawledtic_language_family = {
+	color = map_semitic_language_family
+}

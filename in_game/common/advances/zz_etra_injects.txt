@@ -1,0 +1,26 @@
+﻿REPLACE:unlock_galleass_advance = {
+	age = age_4_reformation
+	icon = ship_building_advance
+	potential = {
+	#	NOT = { culture = { has_culture_group = culture_group:italian_group } }
+	}
+	unlock_unit = n_galleass
+
+}
+
+REPLACE:west_african_caravan_stop_advance = {
+	potential = {
+		OR = {
+			culture = { has_culture_group = culture_group:adnkhalan_group }
+			culture = { has_culture_group = culture_group:astanun_group }
+			culture = { has_culture_group = culture_group:amalyarat_group }
+			#culture = { has_culture_group = culture_group:iranian_group }
+			#culture = { has_culture_group = culture_group:amazigh_group }
+			#culture = { has_culture_group = culture_group:maghrebi_group }
+		}
+	}
+	age = age_1_traditions
+	icon = west_african_caravan_stop_advance
+
+	unlock_building = caravan_stop
+}

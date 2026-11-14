@@ -3,7 +3,7 @@
 	
 	color = RGB { 0 165 240 }
 	
-	tags = { andalusi_gfx maghrebi_gfx middle_east_gfx  }
+	tags = { andalusi_gfx maghrebi_gfx middle_east_gfx afrasian_gfx }
 	use_patronym = yes	
 	culture_groups = {
 		amalyarat_group
@@ -38,7 +38,7 @@ takkev_culture = { #Highlanders
 }
 
 khyresh_culture = { 
-	language = amalyarat_language
+	language = khyreshi_language
 	
 	color = RGB { 190 170 90 }
 	
