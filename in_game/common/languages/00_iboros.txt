@@ -128,6 +128,42 @@
 
 	dialects = {
 		ayarenan_dialect = {
+			male_names = {
+				name_Adelfonso name_Aemilius name_Aetius name_Airmanagildo name_Alamiro name_Albinus name_Amikeh name_Anastasius
+				name_Anikius name_Annius name_Antonineh name_Apringius name_Arkadius name_Aurelius name_Kastoro name_Abitus
+				name_Awgusteh name_Awrehli name_Ayliyaneh name_AntO_ni name_Belisarius name_Kostantzu name_Krabiele name_Kallistus
+				name_Karus name_Kassius name_Karolu name_Kezeus name_Klaudius name_Klementius name_Kristolu name_Konstans
+				name_Konstantius name_Kornelius name_Dekimus name_Dekius name_Diakorik name_Diokletian name_Diyodoreh name_Domineh
+				name_Domitius name_Donateh name_Drusus name_Kaesar name_Ennodius name_Eugenius name_Fabianus name_Fabius
+				name_Fabrikius name_Faustus name_Flabianus name_Florian name_Friedenando name_Gabinius name_Gaiserikus name_Gaius
+				name_Galerius name_Gelimer name_Germanikus name_Gordian name_Grakkhus name_Gratian name_Hadrian name_Hannibal
+				name_Hilderikius name_Honorius name_Hunerikus name_Joannes name_Jobian name_Julian name_Julius name_Kaekilius
+				name_Leo name_Leontius name_Liberius name_Likinius name_Luqi name_Magnus name_Makrineh name_Malarik name_Markellinus
+				name_Markellus name_Markian name_Markus name_Marius name_Martinus name_Maximian name_Maximinus name_Methaqseh
+				name_Nepotian name_Nerba name_Numerian name_Oktabianus name_Oktabius name_Otho name_Paulinus name_Paulus
+				name_Petronius name_Philip name_Plawteh name_Pompay name_Pompeius name_Pontianus name_Priskus name_Probus
+				name_Publius name_Qwinteh name_Rikulfo name_Romanus name_Ruphus name_Rutilius name_Sabinianus name_Saturninus
+				name_Saxomero name_Sempronis name_Septimius name_SamuE_li name_Sergius name_Seberinus name_Seberus name_Sextus
+				name_Symmakhus name_Takitus name_Theodorikho name_Theodosius name_Thrasamund name_Tiberius name_Titus name_Urbanus
+				name_Balens name_Balentinian name_Balerian name_Balerius name_Benantius name_Bespasian name_Biktor name_Biktorinus
+				name_Bigilius name_Bitalianus name_Bibildus name_Bolusianus name_Bibianu name_BirgI_liu name_Balerianu
+			}
+			female_names = {
+				name_Aelia name_Agripina name_Amalafrida name_Amalfrida name_Amalina name_Antoniya name_Aquilia name_Aurelia
+				name_Kaekilia name_Kandida name_Kassia name_Kaderina name_Klaudia name_Klementia name_Konstantia name_Konstantina
+				name_Kornelia name_Krispina name_Dominika name_Domitiana name_Domna name_Domnina name_Drusilla name_Elduara
+				name_Kallina name_Erkheswintha name_Fausta name_Faustina name_Flakilla name_Flabia name_Fortunata name_Froiliuba
+				name_Frontina name_Galeria name_Gordiana name_Hadriana name_Helbia name_Hilara name_Honoria name_Hortensia
+				name_Izabel name_Julia name_Juliana name_Junia name_Justa name_Justina name_Justiniana name_Kaesaris name_Likinia
+				name_Feliktu name_Libia name_Libilla name_Lukilla name_Magnia name_Magnilla name_Markella name_Markia name_Markiana
+				name_Marina name_Martina name_Matrona name_Maxima name_Maximiana name_Messalina name_Minukia name_Modia name_Mustela
+				name_Oktabia name_Palatina name_Paula name_Paulina name_Petronella name_Petronia name_Pheliqula name_Plakidia
+				name_Plautia name_Plautilla name_Pompeia name_Poppaea name_Praeiekta name_Publia name_Pulkheria name_Qualatrudia
+				name_Rustikiana name_Sabina name_Sallustia name_Salonina name_Salbianella name_Skantilla name_Serena name_Sergia
+				name_Sebera name_Seberina name_Silbia name_Spadusa name_Sulpikia name_Tarsilla name_Theodananda name_Titiana
+				name_Ulpia name_Baleria name_Berina name_Biktoria name_Bigilantia name_Bibiana name_Yuhliya name_Kostantza
+				name_KristI_na name_Katilina
+			}
 			location_prefix = "location_prefix_maltese"
 		}
 		selorian_dialect = {

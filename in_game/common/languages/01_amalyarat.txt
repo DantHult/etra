@@ -2,13 +2,58 @@
 	color = map_tuareg
 	family = tawledtic_language_family
 	male_names = {
-		name_abd_al_aziz Abd_al-Haqq Abd_al-Wahid name_abdullah Abu_Bakr Abul_Fadl Abu_Hammu Abu_Tashufin name_abu.name_john Abu_Zayyan name_ahmad Al-Fadl name_ali Faris name_abraham Khalid name_muhammad 
-		name_omar name_osman name_john name_james name_joseph name_zechariah name_massin name_aghilas name_udaden
+		name_Abakada name_Abazza name_Abbas name_Abdul name_Abdul-Azeem name_Abdul-Haleem name_Abdul-Kareem name_Abdul-Rahman 
+		name_Abdullah name_Abidin name_Abu_Bakr name_Adal name_Adam name_Aderbal name_Adergazuz name_Adherbal name_Admer 
+		name_Adrir name_Adum name_Afaghis name_Afalawas name_Afalku name_Afer name_Afulay name_Agafay name_Agama name_Agdada 
+		name_Agdun name_Agellid name_Aggur name_Aghali name_Aghecher name_Aghilas name_Agwillul name_Ahamatu name_Aheyyad 
+		name_Ahmad name_Ajdir name_Ajeddig name_Akaday name_Akateiaji name_Akli name_Akorakor name_Aksel name_Aksil 
+		name_Akutla name_Akzer name_Al_a_addin name_al-Athir name_Ali name_Alyamas name_Amawal name_Amayas name_Amaz_uz_ 
+		name_Ambay name_Amdegh name_Amellal name_Amennay name_Ameska name_Amessan name_Amin name_Amma name_Ammuc name_Amray 
+		name_Amri name_Amud name_Anaba name_Annaber name_Antalas name_Anwa name_Aras name_Asad name_Asaru name_Asirem 
+		name_Aszellay name_Atissi name_Awdia name_Awgustin name_Awinagh name_Awlagh name_Awzal name_Aylal name_Ayt_ere 
+		name_Az_ar name_Az_regh name_Azenkwed name_Azim name_Azrur name_Badda name_Badis name_Bagay name_Barakat name_Batin 
+		name_Beddis name_Berkan name_Bezz_i name_Br_ir_uc name_Bukkus name_Buwayh name_Buxtuc name_Capussa name_Cucung 
+		name_Dali name_Fahd name_Fath name_Fella name_Firhun name_Firmus name_Frawsen name_Galussa name_Gauda name_Gaya 
+		name_Ghani name_Ghanim name_Ghaysan name_Ghumer name_Gildun name_Gulusa name_H_emmu name_Haidar name_Hamad name_Hashim 
+		name_Hiba name_Hiempsal name_Himmi name_Hotha name_Hussamaddin name_Ibrahim name_Iccaam name_Ifni name_Ifser 
+		name_Ighlaf name_Igider name_Igmi name_Iher name_Iken name_Ilyas name_Immeghar name_Immel name_Irgen name_Is_mail 
+		name_Isalcas name_Ishaq name_Isli name_Issam name_It_ij name_Itber name_Itri name_Ixfensen name_Ixzi name_Izri 
+		name_Jaffar name_Jamal name_Jibril name_Kadidu name_Kamal name_Karidenna name_Kawsen name_Kenan name_Keraja 
+		name_Khalid name_Khanchla name_Khenchela name_Khidr name_Kussil name_Lacumaces name_Laweye name_Lewnis name_Luki 
+		name_Madidu name_Magsen name_Mahtar name_Malik name_Marwan name_Masgaba name_Masgava name_Masinissa name_Masmud 
+		name_Masnsen name_Massinissa name_Massiva name_Massnsen name_Mastan name_Mastanabal name_Matiya name_Maysar 
+		name_Maziba name_Mazigh name_Medjan name_Mellal name_Mennad name_Menzu name_Meq_wran name_Mez_yan name_Mezwar 
+		name_Micipsa name_Misagenes name_Misibsen name_Mu_izz name_Muh_end name_Muhammad name_Mukhtar name_Mula name_Murad 
+		name_Musa name_Mustafa name_Muzaffaraddin name_N_Guna name_Nasr name_Nazar name_Nizar name_Niptasan name_Nizamaddin 
+		name_Ptolemee name_Qutaiba name_Rashid name_Sa_id name_Salah name_Salla name_Salomon name_Sammer name_Seghada 
+		name_Sekla name_Shamsaddin name_Sifaks name_Sifal name_Sinbad name_Sisso name_Stembanos name_Suggut name_T_ar_iq 
+		name_Tabat name_Tacfin name_Taffounnout name_Tahir name_Takfarinas name_Talakakin name_Tanan name_Tariq name_Tegama 
+		name_Thabitah name_Thakiya name_Tifan name_Tifawt name_Tiljad name_Ugdada name_Ugwistan name_Umar name_Uqess_un 
+		name_Uregh name_Urtilian name_Urz_ig name_Uzmir name_Uzza name_Wahab name_Watt_as name_Wattas name_Xamida name_Yabdas 
+		name_Yaghmurasen name_Yahya name_Yattuy name_Yeften name_Yeh_lem name_Yiliyen name_Yuba name_Yugerten name_Yugurthen 
+		name_Youkhanna name_Yunes name_Yusuf name_Yuva name_Z_effun name_Zafir name_Zalelsan name_Zayar name_Zer_wal 
+		name_Zigza name_Ziri name_Zubeyr
 	}	
 	female_names = {
-		Fatimah Randa Tabassum Dema Dimah Dinara Dua Durra Durriyya Edza Eleonorka Faghissa Fahriya Fariza Fedada 
-		Tazenkwedt Tazirit Tazrurt Tella Temzi Tfit Tigmi Tikinas Tilelli Timmi Tinhinan Tintadefi 
-		Tintifawin Tinzert Tisent Tislit Titbirt Titrit Tizemt Tiziri Triya Tudert Tuhrict Tureght Dihya Tajeddigt Tidir Tifawt
+		name_Aaliyah name_Aamina name_Aamira name_Aaqila name_Aarifa name_Aazzi name_Adelah name_Adiba name_Adilah name_Adilia 
+		name_Adiva name_Adjan name_Aeesha name_Aesha name_Aisha name_Amira name_Badeea name_Badia name_Badra name_Bahac 
+		name_Bahiyya name_Bajila name_Bakka name_Baraah name_Barakah name_Baria name_Bashira name_Basilie name_Basima 
+		name_Basimah name_Bghnat name_Bibya name_Bilqis name_Cala name_Canh_a name_Cantara name_D_r_ifa name_Daisha name_Dalal 
+		name_Dasin name_Dema name_Dimah name_Dinara name_Dua name_Durra name_Durriyya name_Edza name_Eleonorka name_Faghissa 
+		name_Fahriya name_Fariza name_Fedada name_Fer_r_udja name_Gedduda name_Ghida name_Ghnima name_Guraya name_Gwejda 
+		name_H_edda name_Hadiya name_Hawwa name_Hemu name_Herru name_Iija name_Iiju name_IttU_ name_Izza name_Jaida name_Jdira 
+		name_Jeddjiga name_Kahina name_Kamila name_Kanimana name_Kella name_Kenwa name_Kisa name_Kulla name_Kwella name_Lalla 
+		name_Laysa name_Lem_an name_Lemta name_Lumsi name_Lunja name_Lwiza name_Lyaqut name_Mamma name_Massa name_Meghighda 
+		name_Melek name_Menna name_Menza name_Mernissa name_Monica name_Myassa name_Najiba name_R_uza name_Ra_isa name_Rahima 
+		name_Randja name_Rula name_Sadiqa name_Salaama name_Sekkura name_Siddiqa name_Silya name_Siman name_T_awes name_T_item 
+		name_Tadefi name_Tadla name_Tadmut name_Tafrara name_Tafsut name_Tagwillult name_Taheyyatt name_Takama name_Taklit 
+		name_Talalit name_Taljat name_Tament name_Tamimunt name_Tamrust name_Tanaszart name_Tanebdatt name_Tanefzawit 
+		name_Tanest name_Taninna name_Tarifa name_Tariwelt name_Tasa name_Tasa_fut name_Taszellayt name_Tatbirt name_Tati 
+		name_Taweckint name_Tawenza name_Tawnat name_Tawzalt name_Tayri name_Tayyurt name_Tazdayt name_Tazenkwedt name_Tazirit 
+		name_Tazrurt name_Tella name_Temzi name_Tfit name_Tigmi name_Tikinas name_Tilelli name_Timmi name_Tinhinan 
+		name_Tintadefi name_Tintifawin name_Tinzert name_Tisent name_Tislit name_Titbirt name_Titrit name_Tizemt name_Tiziri 
+		name_Triya name_Tudert name_Tuh_r_ict name_Tureght name_Ultafa name_Wenza name_Wnissa name_Wrina name_Z_diant 
+		name_Z_ergha name_Zaghwa name_Zahida name_Zamba name_Zibba name_Zilgum name_Zubayda name_Zunagha name_Zwina name_Zwira
 	}
 	dynasty_names = {
 		Marinid Zayyanid Hafsid Wattasid Saadi Alaouite Banu_Ifran Hammadid Aftasid Almohad Banu_Ghaniya Banu_Isam Midrarid
