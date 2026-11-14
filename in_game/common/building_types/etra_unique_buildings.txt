@@ -68,23 +68,53 @@ the_amphitheatrum = {
 
 # One seat of the diarchy, used at both Issarsiyan courts.
 issarsiya_diarchy_seat = {
+	audio_tier = 3
+	is_special = yes	
 	is_foreign = no
 	pop_type = nobles
 	max_levels = 1
+	important_for_UI = yes
 
-	employment_size = normal_noble_employment
+	employment_size = large_noble_employment
 
 	category = government_category
 
-	rural_settlement = no
-	town = no
+	rural_settlement = yes
+	town = yes
 	city = yes
 	megalopolis = yes
+	expensive = yes
+
+	automation_build_allowed = no
+	ai_forbid_shutdown = yes
+	forbidden_for_estates = yes
+	important_for_AI = yes
+	ai_ignore_maintenance = yes
+	AI_ignore_available_worker_flag = yes
+
+	allow = {
+		always = no
+	}
 
 	location_potential = {
 		OR = {
 			this = location:etra2038
 			this = location:etra2205
+		}
+	}
+	
+	unique_production_methods = {
+		kings_manor_maintenance = {
+			icon_type = building_type
+			icon = kings_manor
+			tools = 0.1
+			masonry = 0.2
+			weaponry = 0.1
+			paper = 0.5
+			furniture = 0.25
+			fine_cloth = 0.25
+
+			category = building_maintenance
 		}
 	}
 
@@ -93,10 +123,15 @@ issarsiya_diarchy_seat = {
 	}
 
 	can_destroy = {
-		always = yes
+		NOT = { owner = { has_or_had_tag = A410 } }
 	}
 
-	expensive = yes
+	remove_if = {
+		NOT = {
+			owner = { has_or_had_tag = A410 }
+		}
+	}
+
 
 	build_time = government_build_time
 
@@ -104,6 +139,8 @@ issarsiya_diarchy_seat = {
 
 	modifier = {
 		local_proximity_source = 80
+		local_nobles_estate_power = 0.5
+		local_monthly_prosperity = 0.001
 	}
 }
 

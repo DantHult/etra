@@ -17,6 +17,29 @@ A410_the_rise_of_the_diarchy = {
 
 #Age of Renaissance#
 
+A410_court_poetry = {
+	age = age_2_renaissance
+	potential = {
+		has_or_had_tag = A410
+	}
+	icon = krs_kurdish_warrior_poets
+	global_nobles_max_literacy = 3
+	cultural_tradition_modifier = 0.1
+	requires = patron_of_art
+}
+
+A410_antahsum_and_nuntarriyasha = {
+	requires = grant_privilege_cost_modifier_renaissance_advance
+	age = age_2_renaissance
+	potential = {
+		has_or_had_tag = A410
+	}
+	icon = grand_banquets
+	monthly_legitimacy = 0.1
+	monthly_republican_tradition = 0.1
+	monthly_devotion = 0.1
+}
+
 
 #Age of Discovery# 
 

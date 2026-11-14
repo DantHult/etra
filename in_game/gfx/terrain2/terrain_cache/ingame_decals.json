@@ -9999,6 +9999,202 @@
 		"decal_tags":	[],
 		"decal_transform":	{
 			"position":	{
+				"x":	37025,
+				"y":	20784
+			},
+			"rotation":	-257.98388,
+			"scale":	{
+				"x":	0.4,
+				"y":	0.37
+			}
+		},
+		"decal_params":	{
+			"strength":	0.3,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1884,
+			"groundlevel":	13107
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37047,
+				"y":	21355
+			},
+			"rotation":	90.62826,
+			"scale":	{
+				"x":	0.26859,
+				"y":	0.23638
+			}
+		},
+		"decal_params":	{
+			"strength":	0.3,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1886,
+			"groundlevel":	13107
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	38160,
+				"y":	21486
+			},
+			"rotation":	8.55379,
+			"scale":	{
+				"x":	0.35,
+				"y":	0.25
+			}
+		},
+		"decal_params":	{
+			"strength":	0.2,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1891,
+			"groundlevel":	13107
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37453,
+				"y":	21112
+			},
+			"rotation":	-4.61596,
+			"scale":	{
+				"x":	0.35,
+				"y":	0.25
+			}
+		},
+		"decal_params":	{
+			"strength":	0.25,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1892,
+			"groundlevel":	13107
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_02",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37307,
+				"y":	21498
+			},
+			"rotation":	-20.43139,
+			"scale":	{
+				"x":	0.24,
+				"y":	0.2
+			}
+		},
+		"decal_params":	{
+			"strength":	0.15,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1897,
+			"groundlevel":	0
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37265,
+				"y":	21659
+			},
+			"rotation":	-17.1816,
+			"scale":	{
+				"x":	0.35,
+				"y":	0.25
+			}
+		},
+		"decal_params":	{
+			"strength":	0.26,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1898,
+			"groundlevel":	13107
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37324,
+				"y":	21106
+			},
+			"rotation":	-28.65125,
+			"scale":	{
+				"x":	0.15331,
+				"y":	0.12695
+			}
+		},
+		"decal_params":	{
+			"strength":	0.26,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	1902,
+			"groundlevel":	13107
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"mountain_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
 				"x":	33266,
 				"y":	19315
 			},
@@ -10699,8 +10895,92 @@
 		"decal_tags":	[],
 		"decal_transform":	{
 			"position":	{
-				"x":	67521,
-				"y":	17373
+				"x":	40112,
+				"y":	22696
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.06,
+				"y":	0.06
+			}
+		},
+		"decal_params":	{
+			"strength":	0.05,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2572,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40063,
+				"y":	22645
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.03
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2573,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40016,
+				"y":	22519
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.03
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2574,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	53585,
+				"y":	26321
 			},
 			"rotation":	72.37494,
 			"scale":	{
@@ -10716,6 +10996,426 @@
 			"curvatureblendmode":	"addsub",
 			"curvature_strength":	1,
 			"depth_priority":	2575,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40046,
+				"y":	22624
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.03
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2576,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40030,
+				"y":	22499
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.02,
+				"y":	0.02
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2577,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40028,
+				"y":	22487
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.02,
+				"y":	0.02
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2578,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40035,
+				"y":	22471
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.02,
+				"y":	0.02
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2579,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40024,
+				"y":	22411
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.03
+			}
+		},
+		"decal_params":	{
+			"strength":	0.04,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2580,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40045,
+				"y":	22226
+			},
+			"rotation":	72.37494,
+			"scale":	{
+				"x":	0.04,
+				"y":	0.04
+			}
+		},
+		"decal_params":	{
+			"strength":	0.04,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2581,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	40092,
+				"y":	22177
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.04
+			}
+		},
+		"decal_params":	{
+			"strength":	0.03,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2582,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	36885,
+				"y":	22042
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.05,
+				"y":	0.05
+			}
+		},
+		"decal_params":	{
+			"strength":	0.05,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2612,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37046,
+				"y":	21777
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.2,
+				"y":	0.2
+			}
+		},
+		"decal_params":	{
+			"strength":	0.15,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2613,
+			"groundlevel":	32767
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	37007,
+				"y":	21649
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.08,
+				"y":	0.08
+			}
+		},
+		"decal_params":	{
+			"strength":	0.1,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2614,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	36731,
+				"y":	21924
+			},
+			"rotation":	-99.43036,
+			"scale":	{
+				"x":	0.22453,
+				"y":	0.22474
+			}
+		},
+		"decal_params":	{
+			"strength":	0.4,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"max",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2636,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	34803,
+				"y":	24956
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.05,
+				"y":	0.05
+			}
+		},
+		"decal_params":	{
+			"strength":	0.04,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2639,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	35630,
+				"y":	23191
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.05,
+				"y":	0.05
+			}
+		},
+		"decal_params":	{
+			"strength":	0.04,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2649,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	34187,
+				"y":	23618
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.03
+			}
+		},
+		"decal_params":	{
+			"strength":	0.04,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2650,
+			"groundlevel":	6553
+		},
+		"decal_size":	{
+			"x":	1024,
+			"y":	1024
+		}
+	}, {
+		"decal_name":	"volcano_01",
+		"decal_tags":	[],
+		"decal_transform":	{
+			"position":	{
+				"x":	34296,
+				"y":	23450
+			},
+			"rotation":	28.22867,
+			"scale":	{
+				"x":	0.03,
+				"y":	0.03
+			}
+		},
+		"decal_params":	{
+			"strength":	0.08,
+			"fade_margin":	0,
+			"heightblendmode":	"add",
+			"materialblendmode":	"min",
+			"curvatureblendmode":	"addsub",
+			"curvature_strength":	1,
+			"depth_priority":	2651,
 			"groundlevel":	6553
 		},
 		"decal_size":	{

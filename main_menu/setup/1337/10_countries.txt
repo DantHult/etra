@@ -7773,14 +7773,14 @@ countries = {
 			capital = etra1343
 		}
 		A391 = { #Iboros placeholder
-			own_control_core = { #Suneroś
+			own_control_core = { #Afana
 				etra1415 etra1398 etra1437 etra1460 etra1453 etra1427 etra1420 etra1410 etra1411 etra1478 etra1421 etra1412 etra1428 etra1461 etra1425 etra1399 etra1444 etra1417 etra1388 etra1390 etra1422  etra1466 etra1465 etra1426
 			}
 			include = "expl_western_aduna"
 			include = "expl_northern_narkara"
 			include = "india_limited_monarchy"
 			government = { ruler = random }
-			country_rank = rank_county
+			country_rank = rank_duchy
 		}
 		A392 = { #Iboros placeholder
 			own_control_core = {
@@ -8043,7 +8043,7 @@ countries = {
 			# Town capital. Smaller than the frost seat and the fire seat.
 			capital = etra1966
 			accepted_cultures = {
-				pahhaur_culture
+				pahhuar_culture
 			}
 			capital = etra1966			
 		}
@@ -8107,7 +8107,7 @@ countries = {
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
 			government = { ruler = random }
-			country_rank = rank_kingdom
+			country_rank = rank_duchy
 		}
 		A420 = { # Placeholder
 			own_control_core = { 

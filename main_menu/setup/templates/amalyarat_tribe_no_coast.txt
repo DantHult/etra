@@ -40,9 +40,11 @@ government = {
 		peasants_allowed_weapons_privilege
 		peasants_free_peasantry
 
-	
+		#Tribes
 		tribes_tribal_levies
 		tribes_allow_gatherings
+		local_tribal_strongholds
+		desert_power
 	}
 
 	laws = {

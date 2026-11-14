@@ -1,285 +1,2662 @@
-
 road_network = {
- 	eternalcity1 = eternalcity3
-	eternalcity1 = godhand35
-	eternalcity1 = eternalcity2
-	godhand42 = eternalcity2
-	godhand42 = godhand38	
-	eternalcity1 = godhand36
-	godhand69 = eternalcity3
-	godhand69 = godhand64
-	godhand79 = godhand64
-	godhand79 = godhand78
-	
-	godhand36 = godhand46
-	godhand46 = godhand47
-	godhand47 = godhand49
-	godhand49 = godhand50
-	godhand35 = godhand34
-	godhand34 = godhand32
-	godhand32 = godhand30
-	godhand30 = godhand31
-	godhand31 = godhand33
-	godhand33 = godhand37
-	godhand37 = godhand38
-	godhand40 = godhand38
-	godhand40 = godhand82
-	godhand84 = godhand82
-	godhand84 = godhand85
-	godhand91 = godhand85
-	godhand91 = testprovince211
-	godhand96 = testprovince211
-	godhand96 = testprovince213
-	godhand101 = testprovince213
-	
-	freehold13 = testprovince222
-	freehold15 = testprovince222
-	freehold15 = freehold60
-	freehold67 = freehold60
-	freehold67 = testprovince210
-	freehold77 = testprovince210	
-	freehold77 = testprovince230	
-	freehold83 = testprovince230	
-	freehold83 = testprovince206
-	freehold86 = testprovince206
-	freehold86 = freehold87
-	freehold76 = freehold87
-	freehold76 = freehold75
-	freehold74 = freehold75
-	freehold74 = freehold73
-	freehold71 = freehold73
-	freehold71 = freehold50
-	freehold25 = testprovince186
-	freehold25 = freehold36
-	testprovince232 = freehold36
-	testprovince232 = freehold40
-	testprovince217 = freehold40
-	testprovince217 = freehold53
-	freehold74 = freehold53
-	
-	godhand91 = freehold1
-	godhand7 = godhand50
-	godhand7 = testprovince79
-	godhand6 = testprovince79
-	godhand6 = godhand4
-	godhand6 = godhand14
-	godhand13 = godhand14
-	godhand13 = testprovince200
-	godhand11 = testprovince200
-	godhand11 = godhand12
-	godhand11 = godhand20
-	godhand12 = godhand20
-	godhand22 = godhand20
-	godhand22 = godhand25
-	godhand26 = godhand25
-	godhand24 = godhand26
-	godhand24 = godhand60
-	godhand59 = godhand60
-	godhand59 = godhand56
-	godhand55 = godhand56
-	godhand55 = godhand80
-	godhand78 = godhand80
-	godhand78 = godhand77
-	godhand76 = godhand77
-	godhand76 = godhand105
-	godhand104 = godhand105
-	godhand104 = godhand103
-	testprovince214 = godhand103
-	testprovince214 = godhand101
-	testprovince215 = godhand101
-	testprovince215 = freehold30
-	freehold31 = freehold30
-	freehold31 = freehold48
-	freehold49 = freehold48
-	freehold49 = freehold50
-	freehold72 = freehold50
-	freehold72 = freehold101
-	freehold102 = freehold101
-	freehold103 = freehold106
-	freehold107 = freehold106
-	freehold107 = freehold113
-	freehold120 = freehold113
-	
-	
-	
-	
-	
-	
-	freehold5 = freehold4
-	freehold4 = freehold3
-	freehold3 = testprovince237
-	freehold3 = freehold1
-	freehold5 = freehold6
-	freehold6 = freehold8
-	freehold10 = freehold8	
-	freehold10 = freehold11	
-	freehold11 = testprovince243	
-	testprovince243 = testprovince242	
-	testprovince242 = freehold13	
-	
-	ardraine207 = ardraine149 
-	ardraine207 = ardraine150
-	ardraine207 = ardraine156
-	ardraine207 = commonweal13 
-	ardraine207 = ardraine160
-	ardraine207 = ardraine209
-	freehold68 = freehold69
-	freehold69 = freehold66 
-	freehold66 = aita4
-	aita4 = ardraine174
-	ardraine174 = ardraine178 
-	ardraine178 = aita49
-	
-	torrent86 = torrent100 
-	torrent86 = ardraine211
-	torrent86 = torrent98
-	ardraine223 = torrent97 
-	torrent97 = torrent275 
-	torrent275 = ardraine153
-	ardraine153 = commonweal2 
-	commonweal2 = torrent56 
-	torrent60 = torrent56
-	torrent60 = torrent85
-	torrent85 = commonweal3
-	commonweal3 = torrent219
-	torrent219 = torrent295 
-	torrent295 = torrent216 
-	torrent216 = torrent222
-	torrent222 = torrent156
-	ardraine211 = adune3 
-	adune3 = torrent302 
-	torrent302 = torrent203
-	torrent203 = torrent221
-	torrent221 = ardraine223
-	torrent100 = adune2
-	adune2 = torrent271
-	torrent271 = torrent263 
-	torrent263 = torrent222
-	torrent98 = adune4
-	adune4 = torrent274
-	torrent274 = torrent93
-	torrent93 = commonweal3
-	adune99 = adune102
-	adune102 = adune82
-	adune82 = testprovince105 
-	testprovince105 = adune79
-	adune79 = testprovince175
-	testprovince175 = testprovince153
-	testprovince153 = adune141
-	adune79 = testprovince40 
-	testprovince40 = testprovince125
-	testprovince125 = testprovince111
-	testprovince111 = testprovince72
-	testprovince72 = testprovince84
-	testprovince84 = ardraine59
-	ardraine59 = ardraine22 
-	ardraine22 = testprovince143
-	ardraine22 = ardraine93
-	ardraine93 = adune46
-	adune46 = adune60
-	adune60 = testprovince163
-	testprovince163 = ardraine56
-	ardraine56 = testprovince147 
-	testprovince147 = ardraine55
-	ardraine55 = testprovince159 
-	testprovince159 = ardraine38
-	ardraine38 = testprovince64
-	testprovince64 = testprovince1 
-	testprovince1 = ardraine41 
-	ardraine41 = ardraine15
-	ardraine15 = ardraine7 
-	ardraine7 = beuzerte
-	beuzerte = ardraine3
-	ardraine3 = ardraine10
-	ardraine10 = ardraine6 
-	ardraine6 = testprovince6
-	testprovince6 = ardraine238
-	ardraine238 = ardraine239
-	ardraine101 = testprovince10
-	testprovince10 = ardraine26
-	ardraine26 = ardraine192
-	ardraine192 = testprovince152
-	testprovince152 = ardraine172
-	ardraine172 = ardraine43
-	ardraine43 = ardraine111
-	ardraine111 = testprovince166
-	testprovince166 = testprovince168
-	aita49 = ardraine50
-	ardraine50 = adune24
-	adune24 = ardraine94
-	ardraine94 = testprovince58
-	testprovince58 = ardraine179
-	testprovince160 = ardraine179
-	testprovince160 = ardraine119
-	ardraine119 = testprovince131
-	testprovince131 = ardraine139
-	ardraine139 = ardraine177 
-	ardraine177 = torrent2
-	torrent2 = ardraine142 
-	ardraine142 = ardraine160
-	ardraine156 = ardraine157
-	ardraine157 = commonweal42
-	commonweal42 = commonweal41
-	commonweal41 = ardraine175
-	ardraine175 = torrent275
-	freehold119 = freehold121
-	freehold121 = etra2
-	etra2 = etra3
-	etra3 = etra4
-	etra4 = etra19
-	etra19 = etra8
-	etra8 = etra11
-	commonweal3 = ardraine222
-	ardraine222 = torrent85
-	ardraine222 = torrent87
-	torrent87 = torrent90
-	torrent90 = torrent108
-	torrent108 = torrent140
-	torrent140 = torrent139
-	torrent139 = adune13 
-	adune13 = adune12
-	adune12 = adune11
-	adune11 = adune15
-	adune15 = torrent112
-	torrent112 = ardraine237
-	ardraine237 = torrent80
-	torrent80 = commonweal19
-	commonweal19 = torrent67
-	torrent67 = ardraine220
-	ardraine220 = torrent52
-	torrent52 = torrent7
-	torrent7 = ardraine161
-	ardraine161 = ardraine119
-	ardraine22 = testprovince176
-	testprovince176 = testprovince170
-	testprovince170 = ardraine107
-	ardraine107 = testprovince158
-	testprovince158 = commonweal66 
-	commonweal66 = testprovince184
-	testprovince184 = testprovince101
-	testprovince101 = ardraine179
-	adune99 = freehold13
-	freehold67 = freehold68
-	testprovince168 = commonweal13
-
-	# Issarsiya frost heartland. Links follow city-locator spacing inside the province.
-	etra2038 = etra1073
-	etra2038 = etra2087
-	etra2087 = etra2019
-	etra2038 = etra1996
-	etra1996 = etra2054
-	etra2054 = etra2053
-	etra2053 = etra2079
-
-	# Issarsiya fire seat. Links follow city-locator spacing inside Tursa. Mikhol stays unlinked.
-	etra2205 = etra2167
-	etra2167 = etra2214
-	etra2214 = etra2231
-	etra2214 = etra2242
-
-	# Issarsiya country capital. Links follow city-locator spacing. The mountain wasteland stays unlinked.
-	etra1966 = etra1963
-	etra1963 = etra1968
-	etra1966 = etra1973
-	etra1966 = etra1965
+	roads = {{
+		from = eternalcity1
+		to = eternalcity3
+		type = gravel_road
+	}}
+	roads = {{
+		from = eternalcity1
+		to = godhand35
+		type = gravel_road
+	}}
+	roads = {{
+		from = eternalcity1
+		to = eternalcity2
+		type = gravel_road
+	}}
+	roads = {{
+		from = eternalcity2
+		to = godhand42
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand38
+		to = godhand42
+		type = gravel_road
+	}}
+	roads = {{
+		from = eternalcity1
+		to = godhand36
+		type = gravel_road
+	}}
+	roads = {{
+		from = eternalcity3
+		to = godhand69
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand69
+		to = godhand64
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand79
+		to = godhand64
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand79
+		to = godhand78
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand36
+		to = godhand46
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand46
+		to = godhand47
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand49
+		to = godhand47
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand50
+		to = godhand49
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand35
+		to = godhand34
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand32
+		to = godhand34
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand30
+		to = godhand32
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand30
+		to = godhand31
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand31
+		to = godhand33
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand33
+		to = godhand37
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand37
+		to = godhand38
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand38
+		to = godhand40
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand40
+		to = godhand82
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand82
+		to = godhand84
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand84
+		to = godhand85
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand85
+		to = godhand91
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince211
+		to = godhand91
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand96
+		to = testprovince211
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand96
+		to = testprovince213
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand101
+		to = testprovince213
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince222
+		to = freehold13
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold15
+		to = testprovince222
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold15
+		to = freehold60
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold60
+		to = freehold67
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold67
+		to = testprovince210
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince210
+		to = freehold77
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold77
+		to = testprovince230
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold83
+		to = testprovince230
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold83
+		to = testprovince206
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince206
+		to = freehold86
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold86
+		to = freehold87
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold76
+		to = freehold87
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold75
+		to = freehold76
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold75
+		to = freehold74
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold74
+		to = freehold73
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold73
+		to = freehold71
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold71
+		to = freehold50
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince186
+		to = freehold25
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold25
+		to = freehold36
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold36
+		to = testprovince232
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold40
+		to = testprovince232
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold40
+		to = testprovince217
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold53
+		to = testprovince217
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold53
+		to = freehold74
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand91
+		to = freehold1
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand7
+		to = godhand50
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand7
+		to = testprovince79
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince79
+		to = godhand6
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand4
+		to = godhand6
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand6
+		to = godhand14
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand14
+		to = godhand13
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand13
+		to = testprovince200
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand11
+		to = testprovince200
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand12
+		to = godhand11
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand11
+		to = godhand20
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand12
+		to = godhand20
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand20
+		to = godhand22
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand22
+		to = godhand25
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand25
+		to = godhand26
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand24
+		to = godhand26
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand24
+		to = godhand60
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand59
+		to = godhand60
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand59
+		to = godhand56
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand56
+		to = godhand55
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand55
+		to = godhand80
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand80
+		to = godhand78
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand78
+		to = godhand77
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand77
+		to = godhand76
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand76
+		to = godhand105
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand105
+		to = godhand104
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand104
+		to = godhand103
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand103
+		to = testprovince214
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand101
+		to = testprovince214
+		type = gravel_road
+	}}
+	roads = {{
+		from = godhand101
+		to = testprovince215
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince215
+		to = freehold30
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold30
+		to = freehold31
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold31
+		to = freehold48
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold48
+		to = freehold49
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold49
+		to = freehold50
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold72
+		to = freehold50
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold72
+		to = freehold101
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold101
+		to = freehold102
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold103
+		to = freehold106
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold106
+		to = freehold107
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold107
+		to = freehold113
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold113
+		to = freehold120
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold4
+		to = freehold5
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold3
+		to = freehold4
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold3
+		to = testprovince237
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold3
+		to = freehold1
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold5
+		to = freehold6
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold6
+		to = freehold8
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold8
+		to = freehold10
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold10
+		to = freehold11
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince243
+		to = freehold11
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince243
+		to = testprovince242
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold13
+		to = testprovince242
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine149
+		to = ardraine207
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine150
+		to = ardraine207
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine156
+		to = ardraine207
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal13
+		to = ardraine207
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine160
+		to = ardraine207
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine209
+		to = ardraine207
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold69
+		to = freehold68
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold66
+		to = freehold69
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita4
+		to = freehold66
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine174
+		to = aita4
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine178
+		to = ardraine174
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita49
+		to = ardraine178
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent86
+		to = torrent100
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent86
+		to = ardraine211
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent86
+		to = torrent98
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine223
+		to = torrent97
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent97
+		to = torrent275
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent275
+		to = ardraine153
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine153
+		to = commonweal2
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal2
+		to = torrent56
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent56
+		to = torrent60
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent60
+		to = torrent85
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent85
+		to = commonweal3
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal3
+		to = torrent219
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent219
+		to = torrent295
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent295
+		to = torrent216
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent222
+		to = torrent216
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent156
+		to = torrent222
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine211
+		to = adune3
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune3
+		to = torrent302
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent203
+		to = torrent302
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent221
+		to = torrent203
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine223
+		to = torrent221
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent100
+		to = adune2
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune2
+		to = torrent271
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent263
+		to = torrent271
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent222
+		to = torrent263
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent98
+		to = adune4
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune4
+		to = torrent274
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent274
+		to = torrent93
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent93
+		to = commonweal3
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune99
+		to = adune102
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune82
+		to = adune102
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince105
+		to = adune82
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince105
+		to = adune79
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune79
+		to = testprovince175
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince175
+		to = testprovince153
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince153
+		to = adune141
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune79
+		to = testprovince40
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince40
+		to = testprovince125
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince125
+		to = testprovince111
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince72
+		to = testprovince111
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince72
+		to = testprovince84
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine59
+		to = testprovince84
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine59
+		to = ardraine22
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince143
+		to = ardraine22
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine93
+		to = ardraine22
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune46
+		to = ardraine93
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune60
+		to = adune46
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince163
+		to = adune60
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine56
+		to = testprovince163
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince147
+		to = ardraine56
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine55
+		to = testprovince147
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince159
+		to = ardraine55
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine38
+		to = testprovince159
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince64
+		to = ardraine38
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince1
+		to = testprovince64
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince1
+		to = ardraine41
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine15
+		to = ardraine41
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine7
+		to = ardraine15
+		type = gravel_road
+	}}
+	roads = {{
+		from = beuzerte
+		to = ardraine7
+		type = gravel_road
+	}}
+	roads = {{
+		from = beuzerte
+		to = ardraine3
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine3
+		to = ardraine10
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine6
+		to = ardraine10
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine6
+		to = testprovince6
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine238
+		to = testprovince6
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine238
+		to = ardraine239
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince10
+		to = ardraine101
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince10
+		to = ardraine26
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine192
+		to = ardraine26
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine192
+		to = testprovince152
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine172
+		to = testprovince152
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine43
+		to = ardraine172
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine111
+		to = ardraine43
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine111
+		to = testprovince166
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince166
+		to = testprovince168
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita49
+		to = ardraine50
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine50
+		to = adune24
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine94
+		to = adune24
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine94
+		to = testprovince58
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine179
+		to = testprovince58
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine179
+		to = testprovince160
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince160
+		to = ardraine119
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince131
+		to = ardraine119
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine139
+		to = testprovince131
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine139
+		to = ardraine177
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine177
+		to = torrent2
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine142
+		to = torrent2
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine142
+		to = ardraine160
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine156
+		to = ardraine157
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal42
+		to = ardraine157
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal41
+		to = commonweal42
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal41
+		to = ardraine175
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent275
+		to = ardraine175
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold119
+		to = freehold121
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold121
+		to = etra2
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2
+		to = etra3
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra4
+		to = etra3
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra19
+		to = etra4
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra19
+		to = etra8
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra8
+		to = etra11
+		type = gravel_road
+	}}
+	roads = {{
+		from = commonweal3
+		to = ardraine222
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent85
+		to = ardraine222
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent87
+		to = ardraine222
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent87
+		to = torrent90
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent90
+		to = torrent108
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent108
+		to = torrent140
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent140
+		to = torrent139
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune13
+		to = torrent139
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune13
+		to = adune12
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune12
+		to = adune11
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune15
+		to = adune11
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent112
+		to = adune15
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent112
+		to = ardraine237
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine237
+		to = torrent80
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent80
+		to = commonweal19
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent67
+		to = commonweal19
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine220
+		to = torrent67
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine220
+		to = torrent52
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent7
+		to = torrent52
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent7
+		to = ardraine161
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine119
+		to = ardraine161
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine22
+		to = testprovince176
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince176
+		to = testprovince170
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince170
+		to = ardraine107
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine107
+		to = testprovince158
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince158
+		to = commonweal66
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince184
+		to = commonweal66
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince184
+		to = testprovince101
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine179
+		to = testprovince101
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold13
+		to = adune99
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold67
+		to = freehold68
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince168
+		to = commonweal13
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1073
+		to = etra2038
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2087
+		to = etra2038
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2087
+		to = etra2019
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1996
+		to = etra2038
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2054
+		to = etra1996
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2054
+		to = etra2053
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2053
+		to = etra2079
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2205
+		to = etra2167
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2167
+		to = etra2214
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2214
+		to = etra2231
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2242
+		to = etra2214
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1966
+		to = etra1963
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1963
+		to = etra1968
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1966
+		to = etra1973
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1965
+		to = etra1966
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra12
+		to = etra11
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra13
+		to = etra12
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra14
+		to = etra13
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra14
+		to = etra63
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra26
+		to = etra63
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra24
+		to = etra26
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra14
+		to = etra64
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra64
+		to = etra23
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra23
+		to = etra62
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra41
+		to = etra62
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra23
+		to = etra61
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra41
+		to = etra61
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra41
+		to = etra31
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra32
+		to = etra31
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra33
+		to = etra32
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra35
+		to = etra33
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra35
+		to = etra37
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra38
+		to = etra37
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra38
+		to = etra66
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra66
+		to = etra304
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra66
+		to = etra67
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra67
+		to = etra304
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra67
+		to = etra69
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra69
+		to = etra120
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra120
+		to = etra119
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra119
+		to = etra118
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra118
+		to = etra117
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra117
+		to = etra1808
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1808
+		to = etra1809
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra117
+		to = etra1813
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1813
+		to = etra1812
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1812
+		to = etra1810
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1812
+		to = etra1815
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1815
+		to = etra1811
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1813
+		to = etra1814
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1814
+		to = etra1818
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1818
+		to = etra1821
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1821
+		to = etra1820
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1809
+		to = etra1810
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1810
+		to = etra1811
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1811
+		to = etra1820
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1820
+		to = etra1825
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1825
+		to = etra1828
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1828
+		to = etra1829
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1829
+		to = etra1833
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1829
+		to = etra1832
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1832
+		to = etra1835
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1835
+		to = etra1836
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1836
+		to = etra1837
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1837
+		to = etra1838
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1838
+		to = etra2120
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1840
+		to = etra2120
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1840
+		to = etra1841
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1841
+		to = etra1842
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1842
+		to = etra2082
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2082
+		to = etra1844
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1844
+		to = etra1845
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1845
+		to = etra1846
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1846
+		to = etra1847
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1847
+		to = etra2097
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1850
+		to = etra2097
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1850
+		to = etra1927
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1927
+		to = etra2119
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1886
+		to = etra2119
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2157
+		to = etra1886
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2142
+		to = etra2157
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1891
+		to = etra2142
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2107
+		to = etra1891
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1866
+		to = etra1919
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1867
+		to = etra1866
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1837
+		to = etra1867
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1918
+		to = etra1919
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1916
+		to = etra1918
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1892
+		to = etra1916
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1892
+		to = etra2144
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2107
+		to = etra2144
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1950
+		to = etra1916
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1892
+		to = etra1950
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1963
+		to = etra2066
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2066
+		to = etra1940
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1937
+		to = etra1940
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1923
+		to = etra1937
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1922
+		to = etra1923
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1922
+		to = etra1919
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2054
+		to = etra2038
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2054
+		to = etra2079
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2079
+		to = etra2099
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2099
+		to = etra2074
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2074
+		to = etra1967
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1967
+		to = etra1965
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1966
+		to = etra1968
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1968
+		to = etra1972
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1972
+		to = etra1878
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1878
+		to = etra2145
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2145
+		to = etra2250
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2206
+		to = etra2250
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2231
+		to = etra2206
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2205
+		to = etra2242
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2242
+		to = etra2230
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2230
+		to = etra2043
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1994
+		to = etra2043
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2083
+		to = etra1994
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2026
+		to = etra2083
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2011
+		to = etra2026
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2034
+		to = etra2011
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2034
+		to = etra2159
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2054
+		to = etra2159
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1808
+		to = etra1813
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1813
+		to = etra1816
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1816
+		to = etra2006
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1990
+		to = etra2006
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1990
+		to = etra2069
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2069
+		to = etra2094
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2094
+		to = etra2019
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2242
+		to = etra2189
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2168
+		to = etra2189
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2224
+		to = etra2168
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2224
+		to = etra2235
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2212
+		to = etra2235
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2212
+		to = etra2175
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2249
+		to = etra2175
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2249
+		to = etra2191
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2191
+		to = etra2229
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2255
+		to = etra2229
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2249
+		to = etra2160
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2160
+		to = etra2218
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2218
+		to = etra2177
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2177
+		to = etra2252
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2252
+		to = etra2207
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2207
+		to = etra2195
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2195
+		to = etra2216
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2216
+		to = etra2184
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2184
+		to = etra2161
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2161
+		to = etra2256
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2256
+		to = etra2253
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra2253
+		to = etra2186
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra10
+		to = etra11
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra16
+		to = etra10
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra16
+		to = etra85
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra85
+		to = etra79
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra80
+		to = etra79
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra36
+		to = etra80
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra36
+		to = etra37
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold102
+		to = freehold100
+		type = gravel_road
+	}}
+	roads = {{
+		from = freehold100
+		to = freehold99
+		type = gravel_road
+	}}
+	roads = {{
+		from = testprovince236
+		to = freehold100
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita75
+		to = testprovince236
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita74
+		to = aita75
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita57
+		to = aita74
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita74
+		to = aita58
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita60
+		to = aita58
+		type = gravel_road
+	}}
+	roads = {{
+		from = aita60
+		to = torrent283
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent332
+		to = torrent283
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent282
+		to = torrent332
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent270
+		to = torrent282
+		type = gravel_road
+	}}
+	roads = {{
+		from = dis2
+		to = ardraine186
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine186
+		to = torrent270
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent26
+		to = ardraine186
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent28
+		to = torrent26
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent28
+		to = torrent29
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent126
+		to = torrent29
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent130
+		to = torrent126
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent130
+		to = torrent129
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent129
+		to = torrent128
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent128
+		to = torrent137
+		type = gravel_road
+	}}
+	roads = {{
+		from = torrent279
+		to = torrent137
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine228
+		to = torrent279
+		type = gravel_road
+	}}
+	roads = {{
+		from = ardraine228
+		to = adune16
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune16
+		to = adune8
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune8
+		to = adune11
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune10
+		to = adune11
+		type = gravel_road
+	}}
+	roads = {{
+		from = adune8
+		to = adune10
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1598
+		to = etra1797
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1711
+		to = etra1733
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1707
+		to = etra1733
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1700
+		to = etra1707
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1764
+		to = etra1700
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1635
+		to = etra1764
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1657
+		to = etra1635
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1676
+		to = etra1657
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1609
+		to = etra1676
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1651
+		to = etra1609
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1632
+		to = etra1651
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1675
+		to = etra1632
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1674
+		to = etra1675
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1626
+		to = etra1674
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1626
+		to = etra1634
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1653
+		to = etra1634
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1703
+		to = etra1653
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1770
+		to = etra1703
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1736
+		to = etra1770
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1745
+		to = etra1736
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1775
+		to = etra1745
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1775
+		to = etra1730
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1797
+		to = etra1730
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1711
+		to = etra1727
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1727
+		to = etra1688
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1752
+		to = etra1688
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1752
+		to = etra1757
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1720
+		to = etra1757
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1720
+		to = etra1774
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1774
+		to = etra1724
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1724
+		to = etra1691
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1691
+		to = etra1682
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1714
+		to = etra1682
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1714
+		to = etra1779
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1719
+		to = etra1779
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1719
+		to = etra1616
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1616
+		to = etra1795
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1795
+		to = etra1673
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1627
+		to = etra1673
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1627
+		to = etra1652
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1652
+		to = etra1712
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1712
+		to = etra1760
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1747
+		to = etra1760
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1747
+		to = etra1683
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1683
+		to = etra1726
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1726
+		to = etra1732
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1723
+		to = etra1732
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1796
+		to = etra1598
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1599
+		to = etra1598
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1597
+		to = etra1599
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1650
+		to = etra1597
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1643
+		to = etra1650
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1648
+		to = etra1643
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1654
+		to = etra1643
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1606
+		to = etra1654
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1636
+		to = etra1629
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1606
+		to = etra1636
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1629
+		to = etra1410
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1420
+		to = etra1410
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1427
+		to = etra1420
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1453
+		to = etra1427
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1437
+		to = etra1453
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1415
+		to = etra1437
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1412
+		to = etra1415
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1465
+		to = etra1412
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1426
+		to = etra1465
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1442
+		to = etra1426
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1442
+		to = etra1450
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1395
+		to = etra1450
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1459
+		to = etra1395
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1424
+		to = etra1459
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1424
+		to = etra1324
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1324
+		to = etra1330
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1350
+		to = etra1330
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1124
+		to = etra1350
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1108
+		to = etra1124
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1107
+		to = etra1108
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1080
+		to = etra1107
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1088
+		to = etra1080
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1088
+		to = etra1118
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1010
+		to = etra1118
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1008
+		to = etra1010
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1108
+		to = etra1117
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1117
+		to = etra1094
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1074
+		to = etra1094
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1074
+		to = etra1037
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1037
+		to = etra1470
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1404
+		to = etra1470
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1404
+		to = etra1368
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1090
+		to = etra1368
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1095
+		to = etra1090
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1129
+		to = etra1095
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1001
+		to = etra1129
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra1000
+		to = etra1001
+		type = gravel_road
+	}}
+	roads = {{
+		from = etra998
+		to = etra1000
+		type = gravel_road
+	}}
 }

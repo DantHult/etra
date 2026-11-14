@@ -1,8 +1,6 @@
 ﻿discovered_regions = {
 	godhand_region
 	sordren_region
-	ardraine_region
-	south_torrent_region
 	typhrea_region
 	iboros_region
 	the_crater_region
@@ -13,7 +11,8 @@
 
 
 discovered_areas = {
-	
+	daqueland_area
+	pwascions_area
 }
 discovered_provinces = {
 
