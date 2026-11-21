@@ -8049,7 +8049,7 @@ countries = {
 		}
 		A411 = { # Archonia
 			own_control_core = { 
-					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1838 etra1868 etra1839 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 adune157 etra1889 etra1856 etra1853 etra1869 etra2153 etra1871 etra1872 etra1846 etra1847 
+					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1838 etra1868 etra1839 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 adune157 etra1889 etra1856 etra1853 etra1869 etra2153 etra1871  etra1846 etra1847 
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8073,8 +8073,12 @@ countries = {
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
-			government = { ruler = random }
+			government = {
+				ruler = random
+				reforms = { a413_vessel_of_the_pact }
+			}
 			country_rank = rank_kingdom
+			capital = etra2107
 		}
 		A414 = { # Placeholder
 			own_control_core = { 
@@ -8156,6 +8160,40 @@ countries = {
 			}
 			country_rank = rank_county
 		}
+		A424 = {	#Risanea
+			type = building
+			starting_technology_level = 3
+			include = "catholic_republic_not_present"
+
+			capital = crelzerte
+			government = {
+				type = republic
+				heir_selection = bank_selection
+				reforms = {	banking_country }
+
+				centralization_vs_decentralization = 20
+				aristocracy_vs_plutocracy = 70
+				serfdom_vs_free_subjects = 70
+				traditionalist_vs_innovative = 30
+				spiritualist_vs_humanist = 20
+				mercantilism_vs_free_trade = -40
+				belligerent_vs_conciliatory = 0
+				quality_vs_quantity = -20
+				offensive_vs_defensive = 30
+				land_vs_naval = 40
+				capital_economy_vs_traditional_economy = -50
+				individualism_vs_communalism = -50
+				outward_vs_inward = -90
+				laws = {
+					marriage_law = monogamous_marriage
+					heir_religion_law = heir_same_religion
+				}
+			}
+
+			country_rank = rank_county
+
+			include = "expl_western_aduna"
+		}		
 	}#
 
 	

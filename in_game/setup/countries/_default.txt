@@ -2646,7 +2646,7 @@ A412 = { # Roman Undead Pirates
 A413 = { # Tieflings
 	color = rgb { 125 10 10 }
 	culture_definition = nephion_tieflings_culture
-	religion_definition = manyfold
+	religion_definition = infernal_compact
 }
 A414 = { # Placeholder
 	color = rgb { 15 140 15 }
@@ -2681,5 +2681,13 @@ A422 = { # Placeholder
 A423 = { # Placeholder
 	color = rgb { 160 110 30 }
 	culture_definition = high_astanun_culture
+	religion_definition = manyfold
+}
+
+
+A424 = { #Risanea
+	color = rgb { 185 115 51 }
+
+	culture_definition = risanea_culture
 	religion_definition = manyfold
 }

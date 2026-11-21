@@ -500,7 +500,8 @@ textured_emblem_texture_lists = {
 		# Spain
 		special_selection = {
 			trigger = {
-				coa_def_SPA_ensign_trigger = yes
+				always = no
+				#coa_def_SPA_ensign_trigger = yes
 			}
 			2500 = "te_border_cas.dds"
 			1000 = "te_border_por_castles.dds"
@@ -532,8 +533,9 @@ textured_emblem_texture_lists = {
 		special_selection = {
 			trigger = {
 				OR = {
-					coa_def_ENG_ensign_trigger = yes
-					coa_def_plantagenet_trigger = yes
+					always = no
+					#coa_def_ENG_ensign_trigger = yes
+					#coa_def_plantagenet_trigger = yes
 				}
 			}
 			5000 = "te_border_eng.dds"
@@ -542,8 +544,9 @@ textured_emblem_texture_lists = {
 		special_selection = {
 			trigger = {
 				OR = {
-					coa_def_ARA_ensign_trigger = yes
-					coa_def_aragon_dynasty_trigger = yes
+					always = no
+					#coa_def_ARA_ensign_trigger = yes
+					#coa_def_aragon_dynasty_trigger = yes
 				}
 			}
 			5000 = "te_border_escutcheons_aragon.dds" # Transparent
@@ -553,8 +556,9 @@ textured_emblem_texture_lists = {
 		special_selection = {
 			trigger = {
 				OR = {
-					coa_def_NAV_ensign_trigger = yes
-					coa_def_navarre_trigger = yes
+					always = no
+					# coa_def_NAV_ensign_trigger = yes
+					# coa_def_navarre_trigger = yes
 				}
 			}
 			5000 = "te_border_nav.dds"
@@ -567,8 +571,9 @@ textured_emblem_texture_lists = {
 		special_selection = {
 			trigger = {
 				OR = {
-					coa_def_FRA_ensign_trigger = yes
-					coa_def_capetian_semy_trigger = yes
+					always = no
+					# coa_def_FRA_ensign_trigger = yes
+					# coa_def_capetian_semy_trigger = yes
 				}
 			}
 			50000 = "te_border_fra_semy.dds"
@@ -581,7 +586,8 @@ textured_emblem_texture_lists = {
 		# Regional & Misc
 		special_selection = {
 			trigger = {
-				coa_def_iberian_trigger = yes
+				always = no
+				#coa_def_iberian_trigger = yes
 			}
 			500 = "te_border_cauldrons.dds"
 			500 = "te_border_or_vair.dds"
@@ -648,8 +654,9 @@ textured_emblem_texture_lists = {
 		special_selection = {
 			trigger = {
 				OR = {
-					coa_def_CAS_ensign_trigger = yes
-					coa_def_castile_dynasty_trigger = yes
+					always = no
+					#coa_def_CAS_ensign_trigger = yes
+					#coa_def_castile_dynasty_trigger = yes
 				}
 			}
 			5000 = "te_border_cas.dds"

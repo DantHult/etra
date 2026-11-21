@@ -2716,7 +2716,7 @@ etra2062 = { topography = flatland vegetation = grasslands climate = hot_semi_ar
 etra1871 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = iron}
 etra1870 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = wheat}
 etra1873 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = fruit}
-etra1872 = { topography = hills vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = livestock}
+etra1872 = { topography = dune_wasteland vegetation = desert climate = arid }
 etra2153 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = olives}
 etra1852 = { topography = hills vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = wool}
 etra1845 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = wheat natural_harbor_suitability = 0.00}

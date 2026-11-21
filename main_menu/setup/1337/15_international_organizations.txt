@@ -10,7 +10,7 @@ international_organization_manager = {
 		type = hre
 		creation_date = 1100.2.2
 
-		map_color = hsv360 { 40 50 70 }
+		map_color = RGB { 15 40 80 }
 
 		members = { 
 			A47 A49 A44 A45 A46  A50 A48 
