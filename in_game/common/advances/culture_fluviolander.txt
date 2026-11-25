@@ -4,7 +4,7 @@ the_great_rivers = {
 	age = age_1_traditions
 	
 	potential = { 
-		culture = culture:fluviolander
+		culture ?= culture:fluviolander
 	}
 
 	icon = river_trade

@@ -190,10 +190,10 @@ color_lists = {
             trigger = {
 				scope:actor ?= {
 					OR = {
-						culture.language = language:north_italian_language
-						culture.language = language:south_italian_language
-						culture.language = language:greek_language
-						culture = culture:irish
+						culture.language ?= language:north_italian_language
+						culture.language ?= language:south_italian_language
+						culture.language ?= language:greek_language
+						culture ?= culture:irish
 					}	
 				}
             }
@@ -202,7 +202,7 @@ color_lists = {
 		special_selection = {
             trigger = {
 				scope:actor ?= {
-					culture = culture:venetian
+					culture ?= culture:venetian
 				}
             }
 			500 = "blue"
@@ -211,9 +211,9 @@ color_lists = {
             trigger = {
 				scope:actor ?= {
 					OR = {
-						culture.language = language:spanish_language
-						culture.language = language:portuguese_language
-						culture.language = language:greek_language
+						culture.language ?= language:spanish_language
+						culture.language ?= language:portuguese_language
+						culture.language ?= language:greek_language
 					}	
 				}
             }

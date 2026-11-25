@@ -553,7 +553,7 @@
 	text = {
 		localization_key = rank_japanese_court
 		trigger = {
-			culture = { has_culture_group = culture_group:japanese_group }
+			culture ?= { has_culture_group = culture_group:japanese_group }
 			OR = {
 				has_reform = government_reform:japanese_imperial_family
 				tag = YMT
@@ -564,7 +564,7 @@
 	text = {
 		localization_key = rank_japanese_shogunate
 		trigger = {
-			culture = { has_culture_group = culture_group:japanese_group }
+			culture ?= { has_culture_group = culture_group:japanese_group }
 			has_reform = government_reform:shogunate
 		}
 	}
@@ -1228,7 +1228,7 @@
 	text = {
 		localization_key = rank_japanese_daimyo
 		trigger = {
-			culture = { has_culture_group = culture_group:japanese_group }
+			culture ?= { has_culture_group = culture_group:japanese_group }
 			has_reform = government_reform:daimyo
 		}
 	}
@@ -1236,7 +1236,7 @@
 	text = {
 		localization_key = rank_japanese_clan
 		trigger = {
-			culture = { has_culture_group = culture_group:japanese_group }
+			culture ?= { has_culture_group = culture_group:japanese_group }
 			has_reform = government_reform:japanese_clan
 		}
 	}
@@ -1821,7 +1821,7 @@
 		localization_key = rank_duchy_principality
 		trigger = {
 			OR = {
-				culture = culture:welsh
+				culture ?= culture:welsh
 				tag = WLS
 				tag = CAT
 				tag = ANR

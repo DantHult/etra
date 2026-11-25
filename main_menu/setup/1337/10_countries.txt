@@ -6431,7 +6431,7 @@ countries = {
 		A324 = {	
 			own_control_core = {
 				etra765 etra768 etra659 etra661 etra158 etra656 etra654 etra655 etra764 etra462 etra712 etra950 etra952
-				etra967 etra711 etra2058 etra2023 etra2005  etra2098 etra2035 etra1961 etra2088 etra2032 etra1993
+				etra967
 			}
 
 			own_control_integrated = {
@@ -7996,8 +7996,7 @@ countries = {
 				etra2205 etra2206 etra2250 etra2225 etra2201 etra2215 etra2223 etra2181 etra2175 etra2212 etra2235 etra2224 etra2187 etra2188 etra2168 etra2217 etra2166 etra2244 etra2183 etra2222 etra2171 etra2008
 				etra2005 etra2098 etra1961 etra2035 
 				etra2058 etra2023  etra711 		
-				etra2088 etra1993 etra2032 			
-				etra2026 etra2102 etra2083 					
+				etra2088 etra1993 etra2032
 			}
 			include = "expl_western_aduna"
 			include = "maithyan_eternalist_monarchy"

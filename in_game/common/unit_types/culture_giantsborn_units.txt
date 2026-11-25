@@ -26,7 +26,7 @@ a_giantsborn_footmen = {
 	}
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:giantsborn_group }
+		culture ?= { has_culture_group = culture_group:giantsborn_group }
 		government_type != government_type:steppe_horde
 	}
 
@@ -58,7 +58,7 @@ a_giantsborn_archers = {
 	upgrades_to = a_giantsborn_crossbowmen
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:giantsborn_group }
+		culture ?= { has_culture_group = culture_group:giantsborn_group }
 		government_type != government_type:steppe_horde
 	}
 
@@ -126,7 +126,7 @@ a_giantsborn_horsemen = {
 	upgrades_to = a_giantsborn_cavalrymen
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:giantsborn_group }
+		culture ?= { has_culture_group = culture_group:giantsborn_group }
 	}
 
 	mercenaries_per_location = {

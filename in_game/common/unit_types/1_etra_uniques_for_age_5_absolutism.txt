@@ -61,7 +61,7 @@ a_moran_militiamen = {
 	levy = yes
 	gfx_tags = { musket_tag light_tag }
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 

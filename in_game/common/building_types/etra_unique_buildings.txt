@@ -36,7 +36,7 @@ the_amphitheatrum = {
 	build_time = large_cultural_building_time
 
 
-	construction_demand = large_cultural_building_time
+	construction_demand = theater_construction
 
 
 	modifier = {
@@ -204,7 +204,7 @@ repaired_ring_wall = {
 
 
 	country_potential = {
-		culture = { has_culture_group = culture_group:ringed_citizen_group }
+		culture ?= { has_culture_group = culture_group:ringed_citizen_group }
 	}
 	allow = {
 		OR = {

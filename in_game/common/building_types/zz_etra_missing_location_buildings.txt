@@ -1,0 +1,616 @@
+﻿# Vanilla and DLC buildings that check for real-world locations missing from
+# Etra's map. Each block is an exact copy of the vanilla definition except that
+# `this = location:<missing>` is swapped for `always = no`, which clears
+# "Invalid right side during comparison 'location'" without changing behaviour:
+# on Etra's map those comparisons can never be true.
+# Named zz_ so it loads after the vanilla and DLC files it replaces.
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:hexamilion_wall = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = 1 
+	employment_size = castle_employment
+	
+	category = defense_category
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	expensive = yes
+	
+	build_time = small_fort_building
+	
+	country_potential = {
+		has_unlocked_building_trigger = {
+			type = hexamilion_wall
+		}
+	}
+	location_potential = {
+		always = no # was: this = location:corinth (not on Etra's map)
+	}
+	possible_production_methods = {
+		basic_castle_maintenance
+	}
+	construction_demand = hexamilion_wall_construction
+	
+
+	modifier = {
+		local_distance_from_capital_speed_propagation = 0.5
+		local_garrison_size = 0.1
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		pure_tooltip_entry = pte_no_propagating_zone_of_control            # propagating_zone_of_control = no
+	}
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:ablaq_palace = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 5
+	startup_ramp_target = rural_startup_ramp_target
+
+	category = government_category
+	
+	employment_size = generic_burgher_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	
+
+	build_time = generic_event_building
+	country_potential = {
+		custom_tooltip = {
+			text = unlocked_ablaq_palace_tt
+			has_variable = enable_ablaq_palace_variable
+		}
+	}
+	location_potential = {
+		counts_as_capital = yes
+		always = no # was: this = location:cairo (not on Etra's map)
+	}
+
+	allow = {
+		is_capital = yes
+	}
+
+	construction_demand = guild_construction
+	possible_production_methods = {
+		ablaq_palace_maintenance
+	}
+
+	capital_country_modifier = {
+		monthly_legitimacy = 0.02
+		global_silk_output_modifier = 0.025
+	}
+	
+	modifier = {
+		local_cloth_output_modifier = 0.05
+	}
+	custom_tags = { unique_palace }
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:friesland_admiralty = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = dock_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	expensive = yes
+	build_time = large_port_building_time
+	country_potential = {
+		always = no
+	}
+	
+	location_potential = {
+		always = no # was: this = location:harlingen (not on Etra's map)
+		is_capital = no
+	}
+
+	modifier = {
+		local_sailors = 0.01
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.01
+	}
+	
+	possible_production_methods = {
+		port_building_maintenance
+	}
+
+	construction_demand = port_building_construction
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:west_friesland_admiralty = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = dock_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	expensive = yes
+	build_time = large_port_building_time
+	
+	
+	country_potential = {
+		always = no
+	}
+	
+	location_potential = {
+		always = no # was: this = location:hoorn (not on Etra's map)
+		is_capital = no
+	}
+
+	modifier = {
+		local_sailors = 0.01
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.01
+	}
+	
+	possible_production_methods = {
+		port_building_maintenance
+	}
+
+	construction_demand = port_building_construction
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:rotterdam_admiralty = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = dock_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	expensive = yes
+	build_time = large_port_building_time
+	
+	country_potential = {
+		always = no
+	}
+	location_potential = {
+		always = no # was: this = location:rotterdam (not on Etra's map)
+		is_capital = no
+	}
+
+	modifier = {
+		local_sailors = 0.01
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.01
+	}
+	
+	possible_production_methods = {
+		port_building_maintenance
+	}
+
+	construction_demand = port_building_construction
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:zeeland_admiralty = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = dock_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	expensive = yes
+	build_time = large_port_building_time
+	
+	country_potential = {
+		always = no
+	}
+	
+	
+	location_potential = {
+		always = no # was: this = location:middelburg (not on Etra's map)
+		is_capital = no
+	}
+
+	modifier = {
+		local_sailors = 0.01
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.01
+	}
+	
+	possible_production_methods = {
+		port_building_maintenance
+	}
+
+	construction_demand = port_building_construction
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:amsterdam_admiralty = {
+	audio_tier = 5
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = dock_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	expensive = yes
+	build_time = large_port_building_time
+	
+	country_potential = {
+		always = no
+	}
+	
+	
+	location_potential = {
+		always = no # was: this = location:amsterdam (not on Etra's map)
+		is_capital = no
+	}
+
+	modifier = {
+		local_sailors = 0.01
+		can_build_ships_in_this_location = yes
+		local_repair_speed = 0.01
+	}
+	
+	possible_production_methods = {
+		port_building_maintenance
+	}
+
+	construction_demand = port_building_construction
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:walls_of_ston = {
+	audio_tier = 3
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = 1 
+	employment_size = castle_employment
+	
+	category = defense_category
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	expensive = yes
+	
+	build_time = small_fort_building
+	
+	country_potential = {
+		has_variable = has_unlocked_walls_of_ston
+	}
+	location_potential = {
+		always = no # was: this = location:dubrovnik (not on Etra's map)
+	}
+	possible_production_methods = {
+		basic_castle_maintenance
+	}
+	construction_demand = castle_construction
+	
+
+	modifier = {
+		minimum_fort_level = 1
+		local_defensive = 0.5
+		local_garrison_size = 0.25
+	}
+	
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:kastellet = {
+	audio_tier = 3
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = 1 
+	employment_size = castle_employment
+	
+	category = defense_category
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+    country_potential = { always = no }
+    allow = { always = no }
+
+	expensive = yes
+	
+	build_time = small_fort_building
+	
+	location_potential = {
+		always = no # was: this = location:kobenhavn (not on Etra's map)
+	}
+	possible_production_methods = {
+		basic_castle_maintenance
+	}
+	construction_demand = castle_construction
+	
+
+	modifier = {
+		local_defensive = 0.33
+		local_garrison_size = 0.25
+	}
+	
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:kronborg = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = 1 
+	employment_size = castle_employment
+	
+	category = defense_category
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+    country_potential = { always = no }
+    allow = { always = no }
+
+	expensive = yes
+	
+	build_time = small_fort_building
+	
+	location_potential = {
+		always = no # was: this = location:helsingor (not on Etra's map)
+	}
+	possible_production_methods = {
+		basic_castle_maintenance
+	}
+	construction_demand = castle_construction
+	
+
+	modifier = {
+		local_merchant_power = 2
+		building_owner_maritime_presence = 0.1
+		local_defensive = 0.1
+	}
+	
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:castel_sant_angelo = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = 1 
+	employment_size = castle_employment
+	
+	category = defense_category
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+    country_potential = { always = no }
+    allow = { always = no }
+
+	expensive = yes
+	
+	build_time = small_fort_building
+	
+	location_potential = {
+		always = no # was: this = location:rome (not on Etra's map)
+	}
+	possible_production_methods = {
+		basic_castle_maintenance
+	}
+	construction_demand = castle_construction
+	
+
+	modifier = {
+		local_defensive = 0.2
+		local_garrison_size = 0.2
+	}
+	
+
+}
+
+# from in_game/common/building_types/event_only_buildings.txt
+REPLACE:cas_royal_mint_of_segovia = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = trade_category
+	employment_size = generic_burgher_employment
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		always = no
+	}
+
+	location_potential = {
+		always = no # was: this = location:segovia (not on Etra's map)
+	}
+
+	allow = {
+		always = no
+	}
+
+	build_time = generic_town_build_time
+
+	modifier = {
+		local_crown_estate_power = 0.1
+	}
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = bank_construction
+}
+
+# from dlc/D009_across_the_pillars/in_game/common/building_types/d009_unique_buildings.txt
+TRY_REPLACE:madinat_al_zahra = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	employment_size = huge_noble_employment
+	max_levels = 1
+	category = cultural_category
+	town = yes
+	city = yes
+	megalopolis = yes
+	expensive = yes
+
+	build_time = cultural_building_time
+
+	country_potential = {
+		has_dlc = "d009_across_the_pillars"
+		has_unlocked_building_trigger = {
+			type = madinat_al_zahra
+		}
+	}
+
+	location_potential = {
+		always = no # was: this = location:cordoba (not on Etra's map)
+	}
+	
+	modifier = {
+		local_monthly_prosperity = 0.001
+		local_crown_estate_power = 1
+	}
+
+	capital_country_modifier = {
+		monthly_prestige = 0.1
+		monthly_political_influence = 0.05
+	}
+	
+	possible_production_methods = {
+		early_capital_building_maintenance
+	}
+	construction_demand = early_capital_building_construction
+}
+
+# from dlc/D009_across_the_pillars/in_game/common/building_types/d009_golden_century_buildings.txt
+TRY_REPLACE:library_cordoba = {
+	audio_tier = 5
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+
+	employment_size = huge_religious_building_employment
+
+	category = cultural_category
+	graphical_tags = { large_religious }
+
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	build_time = religious_building_time
+
+	expensive = yes
+
+	country_potential = {
+		has_dlc = "d009_across_the_pillars"
+		has_unlocked_building_trigger = { type = library_cordoba }
+	}
+	location_potential = {
+		always = no # was: this = location:cordoba (not on Etra's map)
+	}
+	allow = {
+		trigger_if = {
+			limit = { 
+				always = no # was: this = location:cordoba (not on Etra's map) 
+				has_building = building_type:library
+			}
+			NOT = { has_building = building_type:library }
+		}
+	}
+
+	modifier = {
+		local_cultural_influence = 1
+		local_max_literacy = 10
+		local_monthly_literacy = 0.25
+		local_pop_promotion_speed = 0.01
+		local_institution_growth_modifier = 0.33
+	}
+
+	unique_production_methods = {
+		etra_library_cordoba_maintenance = { # renamed: REPLACE re-registers inline methods, so the DLC name would be a duplicate
+			icon_type = building_type
+			icon = library_cordoba
+			paper = 2
+			books = 4
+
+			category = building_maintenance
+		}
+	}
+
+	construction_demand = town_building_construction
+}

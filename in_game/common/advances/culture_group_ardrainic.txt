@@ -37,10 +37,10 @@ ardrainien_manor_economy = {
 	icon = scholasticism
 	potential = {
 		or = {
-			culture = culture:ardrainien_culture
-			culture = culture:chevallois_culture
-			culture = culture:sittadellian_culture
-			culture = culture:aloisoise_culture
+			culture ?= culture:ardrainien_culture
+			culture ?= culture:chevallois_culture
+			culture ?= culture:sittadellian_culture
+			culture ?= culture:aloisoise_culture
 			
 		}
 	}

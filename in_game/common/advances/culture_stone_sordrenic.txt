@@ -6,7 +6,7 @@ stone_sordrenic_tradition = {
 	icon = glorious_arms
 	potential = {
 		OR = {
-			culture = culture:stone_sordrenic_culture
+			culture ?= culture:stone_sordrenic_culture
 			has_or_had_tag = A42
 		}
 	}

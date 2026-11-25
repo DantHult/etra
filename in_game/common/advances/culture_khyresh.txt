@@ -7,7 +7,7 @@ khyresh_the_crater_garden = {
 	icon = agriculture_advance
 
 	potential = {
-		culture = culture:khyresh_culture
+		culture ?= culture:khyresh_culture
 	}
 
 	global_fruit_output_modifier = 0.1
@@ -21,7 +21,7 @@ khyresh_the_crater_civilization = {
 	icon = city_building_advance
 
 	potential = {
-		culture = culture:khyresh_culture
+		culture ?= culture:khyresh_culture
 	}
 
 	global_monthly_development = 0.001

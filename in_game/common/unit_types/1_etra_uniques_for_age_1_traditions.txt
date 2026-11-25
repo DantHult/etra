@@ -278,7 +278,7 @@ a_legionary = {
 
 	buildable = yes
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 
@@ -304,7 +304,7 @@ a_bone_legion_age_1 = {
 	buildable = yes
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 
@@ -329,7 +329,7 @@ a_triarii_levy = {
 	buildable = no
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 	gfx_tags = {  sword_tag heavy_tag }
@@ -345,7 +345,7 @@ a_accensi_levy = {
 	gfx_tags = { light_tag }
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 }

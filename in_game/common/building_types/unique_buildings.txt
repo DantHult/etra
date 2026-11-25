@@ -21,7 +21,7 @@
 		dominant_culture = culture:maori_culture
 	}
 	country_potential = {
-		culture = culture:maori_culture
+		culture ?= culture:maori_culture
 	}
 	
 	allow = {		
@@ -1445,7 +1445,7 @@ brethren_marsh = {
 	}
 	
 	country_potential = {	
-		culture = culture:basque		#else always shown for all .
+		culture ?= culture:basque		#else always shown for all .
 	}
 
 	build_time = medium_port_building_time
@@ -3786,7 +3786,7 @@ alhambra = {
 	country_potential = {
 		OR = {
 			tag = GRA
-			culture = culture:andalusi
+			culture ?= culture:andalusi
 		}
 	}
 
@@ -4264,7 +4264,7 @@ khmer_baray = {
 	country_potential = {
 		OR = {
 			tag = KHM
-			culture = culture:khmer_culture
+			culture ?= culture:khmer_culture
 		}
 	}
 	build_time = huge_unique_build_time

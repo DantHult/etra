@@ -22,7 +22,7 @@ etra_has_any_racial_trait = {
 }
 
 character_is_etra_kindred = {
-	culture = {
+	culture ?= {
 		OR = {
 			has_culture_group = culture_group:undead_group
 			has_culture_group = culture_group:human_group

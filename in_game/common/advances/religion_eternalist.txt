@@ -115,7 +115,7 @@ eternalist_cultural_legacy = {
 		religion = religion:manyfold
 	}
 	cultural_influence_modifier = 0.1
-	requires = blend_of_influences
+	requires = eternalist_missionary_zeal
 }
 
 ############################

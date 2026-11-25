@@ -121,7 +121,7 @@ a_moran_men_at_arms_levy = {
 	levy = yes
 	
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 

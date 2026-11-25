@@ -57,7 +57,7 @@ a_moran_matchlock_levy = {
 	category = army_light_infantry
 	copy_from = a_age_3_discovery_undead_light_infantry
 	country_potential = {
-		culture = { has_culture_group = culture_group:moran_group }
+		culture ?= { has_culture_group = culture_group:moran_group }
 		culture = { has_culture_group = culture_group:undead_group }
 	}
 

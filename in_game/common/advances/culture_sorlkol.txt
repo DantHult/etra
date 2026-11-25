@@ -18,7 +18,7 @@ sorlkol_warrior_monks = {
 # Yak butter economy - unlocks butter workshop
 sorlkol_butter_economy = {
 	age = age_1_traditions
-	potential = { culture = { has_culture_group = culture_group:aitan_group } }
+	potential = { culture ?= { has_culture_group = culture_group:aitan_group } }
 	requires = agriculture_advance
 	icon = arduous_terrain
 

@@ -16,7 +16,7 @@ freeholder_land_of_promise = {
 
 freeholder_frontier_warriors = {
 	potential = {
-		culture = { has_culture_group = culture_group:freeholder_group }
+		culture ?= { has_culture_group = culture_group:freeholder_group }
 	}
 	age = age_1_traditions
 	icon = glorious_arms

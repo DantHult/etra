@@ -2,7 +2,7 @@
 	age = age_1_traditions
 	icon = a_central_power
 	potential = {
-		culture = culture:bonwesforian_culture
+		culture ?= culture:bonwesforian_culture
 	}
 	
 	requires = written_alphabet

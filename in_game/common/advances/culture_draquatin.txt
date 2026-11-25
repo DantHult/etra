@@ -15,7 +15,7 @@ draquatin_sail_tradition = {
 draquatin_construction_speed = {
 	age = age_1_traditions
 	potential = {
-		culture = culture:draquatin_culture
+		culture ?= culture:draquatin_culture
 	}
 	icon = defenses_of_novgorod
 	global_construction_speed = 0.08
