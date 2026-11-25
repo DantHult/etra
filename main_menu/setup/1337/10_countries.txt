@@ -8049,7 +8049,7 @@ countries = {
 		}
 		A411 = { # Archonia
 			own_control_core = { 
-					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1838 etra1868 etra1839 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 adune157 etra1889 etra1856 etra1853 etra1869 etra2153 etra1871  etra1846 etra1847 
+					etra1842 etra2147 etra2126 etra2082 etra1843 etra2012 etra1840 etra2120 etra2065 etra1854 etra1855 etra2037 etra1894 etra1844 etra2140 etra1845 etra1852 etra1838 etra1868 etra1839 etra1841 etra1835 etra1836 etra1862 etra1837 etra1867 etra1863 etra1861 etra1859 adune157 etra1889 etra1856  etra1869 etra2153 etra1871  etra1846 etra1847  etra1858 etra2062 etra2100 etra1914 etra1873
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8069,7 +8069,7 @@ countries = {
 		A413 = { 
 			own_control_core = { 
 				etra1886 etra1882 etra2119 etra1926 etra1927 etra2114 etra1877 etra1876 etra1885 etra2028 etra2142 etra2124 etra2128 
-				etra1891 etra2107 etra2144 etra1890 etra2155 etra1905 etra1875 etra2157 etra1857 etra1888 etra2091 etra1884 etra2100 etra1914 etra1892 etra2152 etra1906 etra1907 etra1915 etra1911 etra1910 etra1908 etra1904 etra1981 etra1979 etra1947 etra2103 etra1858 etra1874 etra1848  etra1873     etra1881  etra2062 etra1870    etra2127 etra2097 etra1851 etra2113 etra1850 etra1849 				etra2085  etra2013 etra1983 etra2059 etra2036 etra1900 etra2118 etra2154 etra1998 etra1901 etra2093 etra2041 etra2057 etra2125 etra2149  etra1933 etra1960 etra2078 etra2033 etra2076 etra2016 etra2050 etra1971 etra1956 etra1898 etra2101 
+				etra1891 etra2107 etra2144 etra1890 etra2155 etra1905 etra1875 etra2157 etra1857 etra1888 etra2091 etra1884   etra1892 etra2152 etra1906 etra1907 etra1915 etra1911 etra1910 etra1908 etra1904 etra1981 etra1979 etra1947 etra2103  etra1874 etra1848      etra1881   etra1870    etra2127 etra2097 etra1851 etra2113 etra1850 etra1849 				etra2085  etra2013 etra1983 etra2059 etra2036 etra1900 etra2118 etra2154 etra1998 etra1901 etra2093 etra2041 etra2057 etra2125 etra2149  etra1933 etra1960 etra2078 etra2033 etra2076 etra2016 etra2050 etra1971 etra1956 etra1898 etra2101 
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
@@ -8104,9 +8104,9 @@ countries = {
 			}
 			country_rank = rank_county
 		}
-		A419 = { # Placeholder
+		A419 = { # Dassael
 			own_control_core = { 
-				etra1864 etra1922 etra1919 etra1866 etra1955 etra2122 etra1883 etra1917 etra1918 etra1916 etra1950 etra1880 etra2084 etra1913 etra1921 etra1920 etra1923 etra1924 etra1912
+				etra1864 etra1922 etra1919 etra1866 etra1955 etra2122 etra1883 etra1917 etra1918 etra1916 etra1950 etra1880 etra2084 etra1913 etra1921 etra1920 etra1923 etra1924 etra1912 etra1853
 			}
 			include = "expl_western_aduna"
 			include = "eternalist_monarchy"
