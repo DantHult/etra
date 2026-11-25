@@ -2706,7 +2706,7 @@ etra2065 = { topography = hills vegetation = woods climate = mediterranean relig
 adune157 = { topography = hills vegetation = woods climate = mediterranean religion = manyfold culture = abashvan_culture raw_material = wine}
 etra2120 = { topography = flatland vegetation = farmland climate = mediterranean religion = manyfold culture = abashvan_culture raw_material = fruit natural_harbor_suitability = 0.00}
 etra1883 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = livestock}
-etra1881 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = fruit}
+etra1881 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = abashvan_culture raw_material = fruit}
 etra1889 = { topography = flatland vegetation = grasslands climate = arid religion = manyfold culture = abashvan_culture raw_material = cotton}
 etra2122 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = wheat}
 etra1866 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = fish}
@@ -2720,49 +2720,49 @@ etra1873 = { topography = hills vegetation = sparse climate = arid religion = ma
 etra1847 = { topography = hills vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = livestock natural_harbor_suitability = 0.00}
 etra1914 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
 etra1856 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = legumes}
-etra1874 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = wheat}
-etra1857 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = fiber_crops}
-etra1848 = { topography = flatland vegetation = woods climate = arid religion = manyfold culture = abashvan_culture raw_material = livestock}
+etra1874 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = abashvan_culture raw_material = wheat}
+etra1857 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = abashvan_culture raw_material = fiber_crops}
+etra1848 = { topography = flatland vegetation = woods climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = livestock}
 etra1853 = { topography = flatland vegetation = woods climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = cotton}
 etra1858 = { topography = flatland vegetation = grasslands climate = mediterranean religion = manyfold culture = abashvan_culture raw_material = legumes}
-etra1870 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = wheat}
+etra1870 = { topography = flatland vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = wheat}
 etra1872 = { topography = dune_wasteland vegetation = desert climate = arid}
-etra1851 = { topography = plateau vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = wool}
-etra1850 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = horses natural_harbor_suitability = 0.00}
-etra1849 = { topography = hills vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = livestock}
-etra2097 = { topography = plateau vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = stone natural_harbor_suitability = 0.00}
-etra2113 = { topography = plateau vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = fish}
-etra2127 = { topography = hills vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = salt}
-etra1875 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = wool}
-etra1904 = { topography = plateau vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = horses}
-etra1979 = { topography = mountains vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = silver}
-etra1981 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra2101 = { topography = mountains vegetation = forest climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra2128 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra2124 = { topography = hills vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = fruit}
-etra1886 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = fruit}
-etra1882 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = millet}
-etra1926 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wheat natural_harbor_suitability = 0.00}
-etra1927 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = pearls natural_harbor_suitability = 0.00}
-etra2119 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = sugar}
-etra1877 = { topography = wetlands vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = sugar}
-etra2114 = { topography = wetlands vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = fruit}
-etra1891 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = cotton}
-etra2028 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = livestock}
-etra2142 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice}
-etra1876 = { topography = wetlands vegetation = sparse climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = wheat}
-etra2157 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice}
-etra2091 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
-etra1888 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = millet}
-etra1885 = { topography = flatland vegetation = sparse climate = arid religion = manyfold culture = abashvan_culture raw_material = cotton}
-etra1884 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = legumes}
-etra1892 = { topography = wetlands vegetation = farmland climate = arid religion = manyfold culture = nephion_tieflings_culture raw_material = fish}
-etra2107 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice}
-etra1890 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = fiber_crops}
-etra1905 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = legumes}
-etra2152 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice}
-etra2144 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = rice}
-etra2155 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = fish}
+etra1851 = { topography = plateau vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = wool}
+etra1850 = { topography = flatland vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = horses natural_harbor_suitability = 0.00}
+etra1849 = { topography = hills vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = livestock}
+etra2097 = { topography = plateau vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = stone natural_harbor_suitability = 0.00}
+etra2113 = { topography = plateau vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = fish}
+etra2127 = { topography = hills vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = salt}
+etra1875 = { topography = flatland vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = wool}
+etra1904 = { topography = plateau vegetation = grasslands climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = horses}
+etra1979 = { topography = mountains vegetation = grasslands climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = silver}
+etra1981 = { topography = mountains vegetation = woods climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra2101 = { topography = mountains vegetation = forest climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra2128 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra2124 = { topography = hills vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fruit}
+etra1886 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fruit}
+etra1882 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = millet}
+etra1926 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wheat natural_harbor_suitability = 0.00}
+etra1927 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = pearls natural_harbor_suitability = 0.00}
+etra2119 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = sugar}
+etra1877 = { topography = wetlands vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = sugar}
+etra2114 = { topography = wetlands vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = fruit}
+etra1891 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = cotton}
+etra2028 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = abashvan_culture raw_material = livestock}
+etra2142 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = rice}
+etra1876 = { topography = wetlands vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = abashvan_culture raw_material = wheat}
+etra2157 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = rice}
+etra2091 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
+etra1888 = { topography = flatland vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = millet}
+etra1885 = { topography = flatland vegetation = sparse climate = arid religion = codes_of_ammu culture = abashvan_culture raw_material = cotton}
+etra1884 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = legumes}
+etra1892 = { topography = wetlands vegetation = farmland climate = arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fish}
+etra2107 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = rice}
+etra1890 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fiber_crops}
+etra1905 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = legumes}
+etra2152 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = rice}
+etra2144 = { topography = wetlands vegetation = farmland climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = rice}
+etra2155 = { topography = wetlands vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fish}
 etra1950 = { topography = flatland vegetation = farmland climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = rice}
 etra1913 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = olives}
 etra2084 = { topography = flatland vegetation = farmland climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = cotton}
@@ -2773,39 +2773,39 @@ etra1922 = { topography = hills vegetation = woods climate = continental religio
 etra1923 = { topography = hills vegetation = woods climate = continental religion = manyfold culture = abashvan_culture raw_material = lumber}
 etra1920 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = wheat}
 etra1919 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = olives}
-etra1915 = { topography = flatland vegetation = woods climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra1906 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = cotton}
-etra1907 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = livestock}
-etra1908 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
+etra1915 = { topography = flatland vegetation = woods climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra1906 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = cotton}
+etra1907 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = livestock}
+etra1908 = { topography = hills vegetation = grasslands climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
 etra1924 = { topography = flatland vegetation = woods climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = salt}
 etra1912 = { topography = flatland vegetation = woods climate = hot_semi_arid religion = manyfold culture = abashvan_culture raw_material = lumber}
-etra1911 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wheat}
-etra1910 = { topography = hills vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
-etra2013 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wheat natural_harbor_suitability = 0.00}
-etra2059 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = livestock natural_harbor_suitability = 0.00}
-etra2036 = { topography = flatland vegetation = grasslands climate = arid religion = manyfold culture = nephion_tieflings_culture raw_material = cotton natural_harbor_suitability = 0.00}
-etra1960 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
-etra2118 = { topography = wetlands vegetation = woods climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = fish}
-etra1900 = { topography = wetlands vegetation = grasslands climate = arid religion = manyfold culture = nephion_tieflings_culture raw_material = livestock natural_harbor_suitability = 0.00}
-etra2093 = { topography = wetlands vegetation = grasslands climate = arid religion = manyfold culture = nephion_tieflings_culture raw_material = wheat natural_harbor_suitability = 0.00}
-etra2154 = { topography = hills vegetation = woods climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra1898 = { topography = hills vegetation = woods climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = fruit}
-etra2050 = { topography = hills vegetation = woods climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
-etra1956 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = fruit}
-etra1998 = { topography = hills vegetation = woods climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = iron}
-etra2041 = { topography = mountains vegetation = sparse climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = iron}
-etra2016 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = stone}
-etra2076 = { topography = plateau vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
-etra2033 = { topography = mountains vegetation = sparse climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = horses}
-etra2057 = { topography = mountains vegetation = sparse climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = livestock}
-etra2085 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = stone}
-etra2078 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = stone}
-etra1901 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = copper}
-etra1983 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = manyfold culture = nephion_tieflings_culture raw_material = wool}
-etra2125 = { topography = flatland vegetation = sparse climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra2149 = { topography = hills vegetation = sparse climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = fiber_crops}
-etra1933 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = lumber}
-etra1971 = { topography = mountains vegetation = grasslands climate = continental religion = manyfold culture = nephion_tieflings_culture raw_material = livestock}
+etra1911 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wheat}
+etra1910 = { topography = hills vegetation = grasslands climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
+etra2013 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wheat natural_harbor_suitability = 0.00}
+etra2059 = { topography = flatland vegetation = grasslands climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = livestock natural_harbor_suitability = 0.00}
+etra2036 = { topography = flatland vegetation = grasslands climate = arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = cotton natural_harbor_suitability = 0.00}
+etra1960 = { topography = flatland vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
+etra2118 = { topography = wetlands vegetation = woods climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fish}
+etra1900 = { topography = wetlands vegetation = grasslands climate = arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = livestock natural_harbor_suitability = 0.00}
+etra2093 = { topography = wetlands vegetation = grasslands climate = arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wheat natural_harbor_suitability = 0.00}
+etra2154 = { topography = hills vegetation = woods climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra1898 = { topography = hills vegetation = woods climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fruit}
+etra2050 = { topography = hills vegetation = woods climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
+etra1956 = { topography = mountains vegetation = woods climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fruit}
+etra1998 = { topography = hills vegetation = woods climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = iron}
+etra2041 = { topography = mountains vegetation = sparse climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = iron}
+etra2016 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = stone}
+etra2076 = { topography = plateau vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
+etra2033 = { topography = mountains vegetation = sparse climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = horses}
+etra2057 = { topography = mountains vegetation = sparse climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = livestock}
+etra2085 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = stone}
+etra2078 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = stone}
+etra1901 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = copper}
+etra1983 = { topography = hills vegetation = sparse climate = hot_semi_arid religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = wool}
+etra2125 = { topography = flatland vegetation = sparse climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra2149 = { topography = hills vegetation = sparse climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = fiber_crops}
+etra1933 = { topography = mountains vegetation = woods climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = lumber}
+etra1971 = { topography = mountains vegetation = grasslands climate = continental religion = codes_of_ammu culture = nephion_tieflings_culture raw_material = livestock}
 etra_sea132 = { topography = narrows climate = mediterranean}
 etra_sea101 = { topography = inland_sea climate = mediterranean}
 etra_sea151 = { topography = inland_sea climate = mediterranean}
@@ -2904,8 +2904,8 @@ etra2027 = { topography = mountains vegetation = woods climate = cold_semi_arid 
 etra2068 = { topography = mountains vegetation = sparse climate = continental religion = manyfold culture = high_astanun_culture raw_material = livestock}
 etra2047 = { topography = mountains vegetation = sparse climate = cold_semi_arid religion = manyfold culture = high_astanun_culture raw_material = fiber_crops}
 etra2156 = { topography = hills vegetation = sparse climate = cold_semi_arid religion = manyfold culture = high_astanun_culture raw_material = beeswax}
-etra1947 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = ekuniman_culture raw_material = fruit}
-etra2103 = { topography = mountains vegetation = forest climate = continental religion = manyfold culture = ekuniman_culture raw_material = iron}
+etra1947 = { topography = mountains vegetation = woods climate = continental religion = codes_of_ammu culture = ekuniman_culture raw_material = fruit}
+etra2103 = { topography = mountains vegetation = forest climate = continental religion = codes_of_ammu culture = ekuniman_culture raw_material = iron}
 etra2129 = { topography = flatland vegetation = forest climate = cold_semi_arid religion = manyfold culture = high_astanun_culture raw_material = lumber}
 etra2072 = { topography = plateau vegetation = sparse climate = continental religion = manyfold culture = ekuniman_culture raw_material = wild_game}
 etra1928 = { topography = mountains vegetation = woods climate = continental religion = manyfold culture = ekuniman_culture raw_material = fiber_crops}

@@ -31530,35 +31530,55 @@ etra1845 = {
 	}
 
 	etra1848 = {
-		define_pop = { type = clergy size = 0.065 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.931 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.321 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.610 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.604 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.055 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.890 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.041 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.498 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.823 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.391 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.219 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.391 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.213 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1849 = {
-		define_pop = { type = clergy size = 0.032 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.905 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.627 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.278 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.275 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.005 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.027 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.436 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.469 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.244 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.383 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.192 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.086 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.191 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.084 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1850 = {
-		define_pop = { type = clergy size = 0.047 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.280 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.397 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.883 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.879 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.007 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.040 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.642 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.638 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.360 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.037 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.282 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.601 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.282 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.597 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1851 = {
-		define_pop = { type = clergy size = 0.046 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.139 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.318 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.821 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.817 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.007 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.039 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.621 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.518 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.348 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.970 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.273 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.548 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.273 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.544 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1852 = {
@@ -31594,10 +31614,14 @@ etra1845 = {
 	}
 
 	etra1857 = {
-		define_pop = { type = clergy size = 0.070 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 10.647 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.662 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.166 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.060 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.597 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 9.050 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.399 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.263 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.325 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.841 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1858 = {
@@ -31679,10 +31703,14 @@ etra1845 = {
 	}
 
 	etra1870 = {
-		define_pop = { type = clergy size = 0.107 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 11.789 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.602 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.187 culture = archonian_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.016 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.091 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.768 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.021 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.990 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.612 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.778 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.409 culture = archonian_culture religion = codes_of_ammu }
 	}
 
 etra1871 = {
@@ -31708,31 +31736,46 @@ etra1871 = {
 	}
 
 	etra1874 = {
-		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 12.509 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.005 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.504 culture = archonian_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.017 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.096 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.876 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.633 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.051 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.954 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.826 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.678 culture = archonian_culture religion = codes_of_ammu }
 	}
 
 	etra1875 = {
-		define_pop = { type = clergy size = 0.070 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.525 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.060 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.129 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 6.396 culture = nephion_tieflings_culture religion = codes_of_ammu }
 
 	}
 
 	etra1876 = {
-		define_pop = { type = clergy size = 0.098 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 17.302 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.325 culture = archonian_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.015 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.083 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.595 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 14.707 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.649 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.676 culture = archonian_culture religion = codes_of_ammu }
 	}
 
 	etra1877 = {
-		define_pop = { type = nobles size = 0.045 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.145 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = burghers size = 1.242 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 0.532 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 20.604 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 9.696 culture = archonian_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.007 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.038 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = clergy size = 0.022 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.123 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.186 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.056 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.080 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.452 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 3.091 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 17.513 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.454 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.242 culture = archonian_culture religion = codes_of_ammu }
 	}
 
 	etra1878 = {
@@ -31752,17 +31795,25 @@ etra1871 = {
 	}
 
 	etra1881 = {
-		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 12.460 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.978 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.482 culture = archonian_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.017 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.096 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.869 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.591 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.047 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.931 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.822 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.660 culture = archonian_culture religion = codes_of_ammu }
 	}
 
 	etra1882 = {
-		define_pop = { type = clergy size = 0.042 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 14.948 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.328 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.052 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.036 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.242 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.706 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.349 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.979 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.308 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.744 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1883 = {
@@ -31771,23 +31822,34 @@ etra1871 = {
 	}
 
 	etra1884 = {
-		define_pop = { type = clergy size = 0.068 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.851 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.165 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.119 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.058 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.328 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.523 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.625 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.540 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.318 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.801 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1885 = {
-		define_pop = { type = peasants size = 4.624 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.694 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.930 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1886 = {
-		define_pop = { type = nobles size = 0.047 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.153 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 1.305 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 0.559 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 27.654 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 14.190 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.007 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.040 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = clergy size = 0.023 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.130 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.196 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = burghers size = 1.109 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.084 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.475 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 4.148 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 23.506 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.128 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.062 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1887 = {
@@ -31796,8 +31858,10 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.511 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1888 = {
-		define_pop = { type = clergy size = 0.075 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.323 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.011 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.064 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.348 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.975 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1889 = {
@@ -31807,27 +31871,42 @@ etra1871 = {
 	}
 
 	etra1890 = {
-		define_pop = { type = clergy size = 0.097 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 14.548 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.846 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.015 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.082 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.182 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.366 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.027 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.819 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1891 = {
-		define_pop = { type = nobles size = 0.041 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.133 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 1.136 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 0.487 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 18.838 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.865 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.035 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = clergy size = 0.020 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.113 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.170 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.966 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.073 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.414 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.826 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 16.012 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.330 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.535 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1892 = {
-		define_pop = { type = nobles size = 0.039 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.125 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 1.067 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 0.457 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 17.698 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.328 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.033 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = clergy size = 0.019 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.106 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.160 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.907 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.069 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.388 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.655 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 15.043 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.249 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.079 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1893 = {
@@ -31859,28 +31938,42 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.971 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1898 = {
-		define_pop = { type = clergy size = 0.043 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.023 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.364 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.083 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.037 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.753 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.270 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.355 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.009 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.312 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.771 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla figuig
 	etra1899 = { }
 	etra1900 = {
-		define_pop = { type = clergy size = 0.062 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.216 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.001 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.857 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.643 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 3.023 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.009 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.053 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.932 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.284 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.450 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.551 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.129 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.728 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.096 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.547 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.453 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.570 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1901 = {
-		define_pop = { type = clergy size = 0.031 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 13.681 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.732 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.527 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.005 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.026 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.052 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 11.629 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.260 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.472 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.229 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.298 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1902 = {
@@ -31898,52 +31991,77 @@ etra1871 = {
 		define_pop = { type = slaves size = 1.830 culture = mavisan_culture religion = manyfold }
 	}
 	etra1904 = {
-		define_pop = { type = clergy size = 0.038 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.452 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.095 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.846 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.032 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.668 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.784 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.314 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.781 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.277 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.569 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1905 = {
-		define_pop = { type = clergy size = 0.101 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 15.149 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.129 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.015 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.086 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.272 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.877 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.069 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 6.060 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1906 = {
-		define_pop = { type = clergy size = 0.109 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 16.342 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.690 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.016 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.093 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.451 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 13.891 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.153 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 6.537 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1907 = {
-		define_pop = { type = clergy size = 0.090 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 11.919 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.609 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.390 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.013 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.077 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.788 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.131 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.841 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.768 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.358 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.032 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1908 = {
-		define_pop = { type = clergy size = 0.064 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.495 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.998 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.704 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.054 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.274 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.221 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.600 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.398 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.256 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.448 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1909 = { 
 		define_pop = {	type = peasants	size = 33.617	culture = hyriovari_culture	religion = manyfold }		
 	}
 	etra1910 = {
-		define_pop = { type = clergy size = 0.064 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 8.494 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.997 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.703 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.054 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.274 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.220 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.600 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.397 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.255 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.448 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1911 = {
-		define_pop = { type = clergy size = 0.085 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 12.772 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.010 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.013 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.072 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.916 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 10.856 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.901 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.109 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1912 = {
@@ -31966,9 +32084,12 @@ etra1871 = {
 	}
 
 	etra1915 = {
-		define_pop = { type = clergy size = 0.099 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 14.834 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.981 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.015 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.084 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.225 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 12.609 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.047 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.934 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1916 = {
@@ -32034,19 +32155,29 @@ etra1871 = {
 		define_pop = {	type = peasants	size = 10.328	culture = hyriovari_culture	religion = manyfold }		
 	}
 	etra1926 = {
-		define_pop = { type = clergy size = 0.065 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 9.763 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.594 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.055 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.464 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.299 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.689 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.905 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra1927 = {
-		define_pop = { type = clergy	size = 0.006	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = peasants	size = 9.722	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = nobles	size = 0.024	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = peasants	size = 2.243	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = nobles	size = 0.006	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = slaves	size = 1.499	culture = syriac_culture	religion = nestorianism }
-		define_pop = { type = slaves	size = 1.499	culture = mandean_culture	religion = mandeaism }
+		define_pop = { type = clergy	size = 0.001	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = clergy	size = 0.005	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = peasants	size = 1.458	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = peasants	size = 8.264	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = nobles	size = 0.004	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = nobles	size = 0.020	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = peasants	size = 0.336	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = peasants	size = 1.907	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = nobles	size = 0.001	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = nobles	size = 0.005	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = slaves	size = 0.225	culture = syriac_culture	religion = nestorianism }
+		define_pop = { type = slaves	size = 1.274	culture = syriac_culture	religion = codes_of_ammu }
+		define_pop = { type = slaves	size = 0.225	culture = mandean_culture	religion = mandeaism }
+		define_pop = { type = slaves	size = 1.274	culture = mandean_culture	religion = codes_of_ammu }
 	}
 
 	etra1928 = {
@@ -32073,10 +32204,14 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 1.325 culture = ekuniman_culture religion = manyfold }
 	}
 	etra1933 = {
-		define_pop = { type = clergy size = 0.024 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.445 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.180 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.189 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.020 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.367 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.078 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.177 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.003 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.178 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.011 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla figuig
@@ -32155,10 +32290,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.336 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1947 = {
-		define_pop = { type = clergy size = 0.026 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.588 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.294 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.659 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.022 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.688 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.900 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.194 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.100 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.249 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.410 culture = ekuniman_culture religion = codes_of_ammu }
 	}
 	# gs_prov_121 from vanilla or_qapi (northern Crimea steppe)
 	etra1948 = {
@@ -32208,10 +32347,14 @@ etra1871 = {
 	}
 
 	etra1956 = {
-		define_pop = { type = clergy size = 0.023 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.709 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.275 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.123 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.003 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.020 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.406 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.303 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.191 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.084 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.168 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.955 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla assa
@@ -32235,12 +32378,18 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.775 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1960 = {
-		define_pop = { type = clergy size = 0.041 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.054 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.957 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.559 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.419 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.972 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.035 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.608 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.446 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.294 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.663 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.084 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.475 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.063 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.356 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.296 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.676 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1961 = {
@@ -32302,10 +32451,14 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 1.460 culture = ekuniman_culture religion = manyfold }
 	}
 	etra1971 = {
-		define_pop = { type = clergy size = 0.026 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.581 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.246 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.255 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.022 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.387 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.194 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.187 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.059 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.188 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.067 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1972 = {
@@ -32351,10 +32504,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 4.016 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1979 = {
-		define_pop = { type = clergy size = 0.026 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 13.105 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.461 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.288 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.022 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.966 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 11.139 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.219 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.242 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.193 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.095 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1980 = {
@@ -32367,10 +32524,14 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 1.026 culture = high_astanun_culture religion = manyfold }
 	}
 	etra1981 = {
-		define_pop = { type = clergy size = 0.023 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 22.675 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.259 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.110 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.003 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.020 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 3.401 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 19.274 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.189 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.070 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.166 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.944 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1982 = {
@@ -32381,10 +32542,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 11.667 culture = ekuniman_culture religion = manyfold }
 	}
 	etra1983 = {
-		define_pop = { type = clergy size = 0.028 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.284 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.546 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.362 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.024 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.493 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.791 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.232 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.314 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.204 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.158 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1984 = {
@@ -32465,10 +32630,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.771 culture = pahhuar_culture religion = manyfold }
 	}
 	etra1998 = {
-		define_pop = { type = clergy size = 0.040 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.709 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.216 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.953 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.034 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.706 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.003 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.332 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.884 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.293 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.660 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra1999 = {
@@ -32558,14 +32727,22 @@ etra1871 = {
 	}
 
 	etra2013 = {
-		define_pop = { type = nobles size = 0.028 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = clergy size = 0.089 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 0.759 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = burghers size = 0.325 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 10.739 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.184 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.481 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.111 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = nobles size = 0.024 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = clergy size = 0.013 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.076 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.114 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.645 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = burghers size = 0.049 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = burghers size = 0.276 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.611 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 9.128 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.778 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.406 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.222 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.259 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.167 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.944 culture = pahhuar_culture religion = codes_of_ammu }
 	}
 
 	# gs_prov_120 from vanilla kalay (northern Crimea steppe)
@@ -32582,10 +32759,14 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 2.146 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2016 = {
-		define_pop = { type = clergy size = 0.028 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.305 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.555 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.371 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.024 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.496 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.809 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.233 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.322 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.206 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.165 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla figuig
@@ -32651,10 +32832,14 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 1.308 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2028 = {
-		define_pop = { type = clergy size = 0.113 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 17.649 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.412 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 3.008 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.017 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.096 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.647 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 15.002 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.662 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.750 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.451 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.557 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2029 = { 
@@ -32680,10 +32865,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 1.498 culture = telanian_culture religion = manyfold }
 	}
 	etra2033 = {
-		define_pop = { type = clergy size = 0.017 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 22.033 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.956 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 0.843 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.003 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.014 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 3.305 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 18.728 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.293 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.663 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.126 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.717 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2034 = {
@@ -32699,9 +32888,12 @@ etra1871 = {
 		define_pop = { type = peasants size = 2.166 culture = telanian_culture religion = manyfold }
 	}
 	etra2036 = {
-		define_pop = { type = clergy size = 0.061 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.106 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.948 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.009 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.052 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.916 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.190 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.442 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.506 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2037 = {
@@ -32732,10 +32924,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 4.720 culture = mavisan_culture religion = manyfold }
 	}
 	etra2041 = {
-		define_pop = { type = clergy size = 0.017 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.002 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.942 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 0.830 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.003 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.014 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.300 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.702 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.141 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.801 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.124 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.706 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2042 = {
@@ -32790,10 +32986,14 @@ etra1871 = {
 		define_pop = {	type = peasants	size = 16.376	culture = hyriovari_culture	religion = manyfold }	
 	}
 	etra2050 = {
-		define_pop = { type = clergy size = 0.044 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.161 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.429 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.141 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.007 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.037 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.774 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.387 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.364 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.065 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.321 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.820 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2051 = {
@@ -32824,12 +33024,18 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.538 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2057 = {
-		define_pop = { type = clergy	size = 0.146	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = peasants	size = 12.963	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = nobles	size = 0.259	culture = nephion_tieflings_culture	religion = manyfold }
-		define_pop = { type = tribesmen	size = 13.681	culture = kurdish_culture	religion = manyfold }
-		define_pop = { type = tribesmen	size = 5.032	culture = nephion_tieflings_culture	religion = yazidism }
-		define_pop = { type = tribesmen	size = 4.144	culture = lur_culture	religion = manyfold }	
+		define_pop = { type = clergy	size = 0.022	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = clergy	size = 0.124	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = peasants	size = 1.944	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = peasants	size = 11.019	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = nobles	size = 0.039	culture = nephion_tieflings_culture	religion = manyfold }
+		define_pop = { type = nobles	size = 0.220	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = tribesmen	size = 2.052	culture = kurdish_culture	religion = manyfold }
+		define_pop = { type = tribesmen	size = 11.629	culture = kurdish_culture	religion = codes_of_ammu }
+		define_pop = { type = tribesmen	size = 0.755	culture = nephion_tieflings_culture	religion = yazidism }
+		define_pop = { type = tribesmen	size = 4.277	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = tribesmen	size = 0.622	culture = lur_culture	religion = manyfold }	
+		define_pop = { type = tribesmen	size = 3.522	culture = lur_culture	religion = codes_of_ammu }	
 	}
 
 	etra2058 = {
@@ -32839,9 +33045,12 @@ etra1871 = {
 		define_pop = { type = peasants size = 1.951 culture = telanian_culture religion = manyfold }
 	}
 	etra2059 = {
-		define_pop = { type = clergy size = 0.061 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.066 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.928 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.009 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.052 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.910 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.156 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.439 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.489 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla chenini
@@ -32943,10 +33152,14 @@ etra1871 = {
 	}
 
 	etra2076 = {
-		define_pop = { type = clergy size = 0.028 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 13.325 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.565 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.379 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.024 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.999 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 11.326 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.235 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.330 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.207 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.172 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# gs_prov_122 repeats vanilla kaffa (southern Crimea coast)
@@ -32963,10 +33176,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 0.097 culture = mavisan_culture religion = manyfold }
 	}
 	etra2078 = {
-		define_pop = { type = clergy size = 0.031 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 13.591 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.690 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.490 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.005 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.026 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.039 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 11.552 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.253 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.437 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.223 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.267 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2079 = {
@@ -33006,10 +33223,14 @@ etra1871 = {
 	}
 
 	etra2085 = {
-		define_pop = { type = clergy size = 0.028 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 13.299 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.552 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.368 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.024 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.995 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 11.304 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.233 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.319 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.205 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.163 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla smara
@@ -33046,10 +33267,14 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 1.158 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2091 = {
-		define_pop = { type = clergy size = 0.070 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 9.048 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.258 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.166 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.060 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.357 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 7.691 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.639 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.619 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.325 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.841 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla smara
@@ -33057,12 +33282,18 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 3.140 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2093 = {
-		define_pop = { type = clergy size = 0.058 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.799 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.800 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.800 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.600 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.820 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.009 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.049 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.870 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.929 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.420 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.380 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.120 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.680 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.090 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.510 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.423 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.397 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2094 = {
@@ -33079,11 +33310,16 @@ etra1871 = {
 	# from vanilla figuig
 	etra2096 = { }
 	etra2097 = {
-		define_pop = { type = clergy size = 0.045 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.038 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.262 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.777 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.773 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.007 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.038 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.606 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.432 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.339 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.923 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.267 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.510 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.266 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.507 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2098 = {
@@ -33105,10 +33341,14 @@ etra1871 = {
 	}
 
 	etra2101 = {
-		define_pop = { type = clergy size = 0.022 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.574 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.211 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.068 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.003 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.019 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.386 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.188 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.182 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.029 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.160 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 0.908 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2102 = {
@@ -33117,10 +33357,14 @@ etra1871 = {
 		define_pop = { type = peasants size = 7.630 culture = ekuniman_culture religion = manyfold }
 	}
 	etra2103 = {
-		define_pop = { type = clergy size = 0.027 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.734 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.335 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.712 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.023 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.710 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.024 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.200 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.135 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.257 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.455 culture = ekuniman_culture religion = codes_of_ammu }
 	}
 	etra2104 = {
 		define_pop = { type = clergy size = 0.030 culture = ekuniman_culture religion = manyfold }
@@ -33137,11 +33381,16 @@ etra1871 = {
 		define_pop = { type = peasants size = 3.709 culture = pahhuar_culture religion = manyfold }
 	}
 	etra2107 = {
-		define_pop = { type = nobles	size = 9.130	culture = iraqi_culture	religion = manyfold }
-		define_pop = { type = clergy	size = 11.053	culture = iraqi_culture	religion = manyfold }
-		define_pop = { type = burghers	size = 36.463	culture = iraqi_culture	religion = manyfold }
-		define_pop = { type = peasants	size = 78.637	culture = iraqi_culture	religion = manyfold }
-		define_pop = { type = slaves	size = 16.908	culture = circassian_culture	religion = manyfold }
+		define_pop = { type = nobles	size = 1.369	culture = iraqi_culture	religion = manyfold }
+		define_pop = { type = nobles	size = 7.761	culture = iraqi_culture	religion = codes_of_ammu }
+		define_pop = { type = clergy	size = 1.658	culture = iraqi_culture	religion = manyfold }
+		define_pop = { type = clergy	size = 9.395	culture = iraqi_culture	religion = codes_of_ammu }
+		define_pop = { type = burghers	size = 5.469	culture = iraqi_culture	religion = manyfold }
+		define_pop = { type = burghers	size = 30.994	culture = iraqi_culture	religion = codes_of_ammu }
+		define_pop = { type = peasants	size = 11.796	culture = iraqi_culture	religion = manyfold }
+		define_pop = { type = peasants	size = 66.841	culture = iraqi_culture	religion = codes_of_ammu }
+		define_pop = { type = slaves	size = 2.536	culture = circassian_culture	religion = manyfold }
+		define_pop = { type = slaves	size = 14.372	culture = circassian_culture	religion = codes_of_ammu }
 	}
 
 	etra2108 = {
@@ -33165,17 +33414,25 @@ etra1871 = {
 		define_pop = { type = peasants size = 5.750 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2113 = {
-		define_pop = { type = clergy size = 0.045 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.091 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.291 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.800 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.796 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.007 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.038 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.614 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.477 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.344 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.947 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.270 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.530 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.269 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.527 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2114 = {
-		define_pop = { type = clergy size = 0.127 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 22.435 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.609 culture = archonian_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.019 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.108 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 3.365 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 19.070 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.841 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.768 culture = archonian_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla chenini
@@ -33187,18 +33444,27 @@ etra1871 = {
 	# from vanilla chenini
 	etra2117 = { }
 	etra2118 = {
-		define_pop = { type = clergy size = 0.058 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 5.797 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.799 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.800 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.600 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.819 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.009 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.049 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.870 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.927 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.420 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.379 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.120 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.680 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.090 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.510 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.423 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.396 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2119 = {
-	define_pop = { type = nobles	size = 1.735	culture = nephion_tieflings_culture	religion = manyfold }
-	define_pop = { type = clergy	size = 1.817	culture = nephion_tieflings_culture	religion = manyfold }
-	define_pop = { type = peasants	size = 15.736	culture = nephion_tieflings_culture	religion = manyfold }
+	define_pop = { type = nobles	size = 0.260	culture = nephion_tieflings_culture	religion = manyfold }
+	define_pop = { type = nobles	size = 1.475	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+	define_pop = { type = clergy	size = 0.273	culture = nephion_tieflings_culture	religion = manyfold }
+	define_pop = { type = clergy	size = 1.544	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+	define_pop = { type = peasants	size = 2.360	culture = nephion_tieflings_culture	religion = manyfold }
+	define_pop = { type = peasants	size = 13.376	culture = nephion_tieflings_culture	religion = codes_of_ammu }
 	}
 
 	etra2121 = { }
@@ -33210,19 +33476,29 @@ etra1871 = {
 
 	etra2123 = { }
 	etra2124 = {
-		define_pop = { type = clergy size = 0.038 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 24.482 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.109 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.859 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.032 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 3.672 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 20.810 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.316 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.793 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.279 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.580 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2125 = {
-		define_pop = { type = clergy size = 0.044 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.381 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.115 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.604 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.453 culture = pahhuar_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.130 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.007 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.037 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.657 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.724 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.317 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.798 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.091 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.513 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.068 culture = pahhuar_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.385 culture = pahhuar_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.319 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.811 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2126 = {
@@ -33232,18 +33508,27 @@ etra1871 = {
 	}
 
 	etra2127 = {
-		define_pop = { type = clergy size = 0.035 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.193 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.788 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.405 culture = archonian_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.402 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.005 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.030 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.479 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.714 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.268 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.520 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.211 culture = archonian_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.194 culture = archonian_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.210 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.192 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2128 = {
-		define_pop = { type = clergy size = 0.056 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 26.567 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 3.090 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 2.724 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.008 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.048 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 3.985 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 22.582 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.463 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.627 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.409 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 2.315 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2129 = {
@@ -33299,22 +33584,33 @@ etra1871 = {
 	# from vanilla chenini
 	etra2141 = { }
 	etra2142 = {
-		define_pop = { type = clergy	size = 0.004	culture = nephion_tieflings_culture	religion = sunni }
-		define_pop = { type = peasants	size = 15.629	culture = nephion_tieflings_culture	religion = sunni }
-		define_pop = { type = nobles	size = 0.037	culture = nephion_tieflings_culture	religion = sunni }
-		define_pop = { type = peasants	size = 7.268	culture = nephion_tieflings_culture	religion = shia }
-		define_pop = { type = nobles	size = 0.017	culture = nephion_tieflings_culture	religion = shia }
-		define_pop = { type = tribesmen	size = 1.507	culture = nephion_tieflings_culture	religion = sunni }
-		define_pop = { type = nobles	size = 0.219	culture = nephion_tieflings_culture	religion = sunni }
-		define_pop = { type = slaves	size = 2.589	culture = high_astanun_culture	religion = nestorianism }
+		define_pop = { type = clergy	size = 0.001	culture = nephion_tieflings_culture	religion = sunni }
+		define_pop = { type = clergy	size = 0.003	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = peasants	size = 2.344	culture = nephion_tieflings_culture	religion = sunni }
+		define_pop = { type = peasants	size = 13.285	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = nobles	size = 0.006	culture = nephion_tieflings_culture	religion = sunni }
+		define_pop = { type = nobles	size = 0.031	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = peasants	size = 1.090	culture = nephion_tieflings_culture	religion = shia }
+		define_pop = { type = peasants	size = 6.178	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = nobles	size = 0.003	culture = nephion_tieflings_culture	religion = shia }
+		define_pop = { type = nobles	size = 0.014	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = tribesmen	size = 0.226	culture = nephion_tieflings_culture	religion = sunni }
+		define_pop = { type = tribesmen	size = 1.281	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = nobles	size = 0.033	culture = nephion_tieflings_culture	religion = sunni }
+		define_pop = { type = nobles	size = 0.186	culture = nephion_tieflings_culture	religion = codes_of_ammu }
+		define_pop = { type = slaves	size = 0.388	culture = high_astanun_culture	religion = nestorianism }
+		define_pop = { type = slaves	size = 2.201	culture = high_astanun_culture	religion = codes_of_ammu }
 	}
 
 	# from vanilla chenini
 	etra2143 = { }
 	etra2144 = {
-		define_pop = { type = clergy size = 0.094 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 14.105 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 6.638 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.014 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.080 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.116 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 11.989 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.996 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 5.642 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2145 = {
@@ -33342,11 +33638,16 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 0.759 culture = takkev_culture religion = tajjev_rites }
 	}
 	etra2149 = {
-		define_pop = { type = clergy size = 0.030 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.958 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 1.428 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = peasants size = 0.408 culture = ekuniman_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.438 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.004 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.026 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.444 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 2.514 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.214 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.214 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.061 culture = ekuniman_culture religion = manyfold }
+		define_pop = { type = peasants size = 0.347 culture = ekuniman_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.216 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.222 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	# from vanilla chenini
@@ -33356,9 +33657,12 @@ etra1871 = {
 	# from vanilla chenini
 	etra2151 = { }
 	etra2152 = {
-		define_pop = { type = clergy size = 0.104 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 15.644 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.362 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.016 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.088 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.347 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 13.297 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.104 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 6.258 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2153 = {
@@ -33368,16 +33672,23 @@ etra1871 = {
 	}
 
 	etra2154 = {
-		define_pop = { type = clergy size = 0.038 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.468 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 2.103 culture = abashvan_culture religion = manyfold }
-		define_pop = { type = tribesmen size = 1.853 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.006 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.032 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.670 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 3.798 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.315 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 1.788 culture = abashvan_culture religion = codes_of_ammu }
+		define_pop = { type = tribesmen size = 0.278 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = tribesmen size = 1.575 culture = nephion_tieflings_culture religion = codes_of_ammu }
 	}
 
 	etra2155 = {
-		define_pop = { type = clergy size = 0.104 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 15.696 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 7.386 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.016 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.088 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 2.354 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 13.342 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.108 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 6.278 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	etra2156 = {
@@ -33390,9 +33701,12 @@ etra1871 = {
 		define_pop = { type = tribesmen size = 1.573 culture = high_astanun_culture religion = manyfold }
 	}
 	etra2157 = {
-		define_pop = { type = clergy size = 0.070 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 10.579 culture = nephion_tieflings_culture religion = manyfold }
-		define_pop = { type = peasants size = 4.978 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.010 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = clergy size = 0.060 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 1.587 culture = nephion_tieflings_culture religion = manyfold }
+		define_pop = { type = peasants size = 8.992 culture = nephion_tieflings_culture religion = codes_of_ammu }
+		define_pop = { type = peasants size = 0.747 culture = abashvan_culture religion = manyfold }
+		define_pop = { type = peasants size = 4.231 culture = abashvan_culture religion = codes_of_ammu }
 	}
 
 	# gs_prov_104 from vanilla kezlev (northern Crimea steppe)
