@@ -24,7 +24,7 @@ is_religion_pagan = { #For Religons
 			group = religion_group:folk_se_asian_group
 			group = religion_group:folk_south_american_group
 			group = religion_group:folk_adunan
-			group = religion_group:the_forgotten_ones
+			group = religion_group:dark_worship
 		}
 	}
 }

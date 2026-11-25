@@ -34,22 +34,6 @@ green_pact_religion = {
 	tags = { folk_european_gfx pagan_gfx }
 }
 
-maw_of_ur_khal = {
-	color = rgb { 91 38 35 }
-	group = the_forgotten_ones
-
-	definition_modifier = {
-		global_burghers_estate_power = -0.1
-		global_hostile_attrition = 0.5
-		land_morale_modifier = 0.03
-	}
-
-	opinions = {
-
-	}
-
-	tags = { folk_european_gfx pagan_gfx }
-}
 
 
 faith_saurethii = {

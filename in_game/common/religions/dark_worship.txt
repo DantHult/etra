@@ -1,0 +1,32 @@
+﻿maw_of_ur_khal = {
+	color = rgb { 91 38 35 }
+	group = dark_worship
+
+	definition_modifier = {
+		global_burghers_estate_power = -0.1
+		global_hostile_attrition = 0.5
+		land_morale_modifier = 0.03
+	}
+
+	opinions = {
+
+	}
+
+	tags = { folk_european_gfx pagan_gfx }
+}
+
+codes_of_ammu = {
+	color = rgb { 80 0 10 }
+	group = dark_worship
+
+	definition_modifier = {
+		land_morale_modifier = 0.1
+		any_pop_can_be_slave = yes
+	}
+
+	opinions = {
+
+	}
+
+	tags = {  }
+}
