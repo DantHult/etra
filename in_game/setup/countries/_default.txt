@@ -2646,7 +2646,7 @@ A412 = { # Roman Undead Pirates
 A413 = { # Tieflings
 	color = rgb { 125 10 10 }
 	culture_definition = nephion_tieflings_culture
-	religion_definition = infernal_compact
+	religion_definition = codes_of_ammu
 }
 A414 = { # Placeholder
 	color = rgb { 15 140 15 }
