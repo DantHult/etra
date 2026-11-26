@@ -1,0 +1,6 @@
+﻿# etra: in_game/events/debug/000_johan_debug.txt emptied - it is vanilla developer debug events for real-world places, which is not on Etra's map.
+# Its hard-coded keys logged "Invalid ... key" errors on every launch.
+# Nothing active refers to its contents.
+
+namespace = johan
+namespace = james

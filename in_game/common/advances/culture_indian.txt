@@ -87,8 +87,8 @@ advanced_paik_system_advance = {
 				culture = { has_culture_group = culture_group:indian_group }
 				original_capital ?= {
 					OR = {
-						area = area:bengal_area
-						area = area:assam_area
+						always = no # was: area = area:bengal_area (not on Etra's map)
+						always = no # was: area = area:assam_area (not on Etra's map)
 					}
 				}
 			}

@@ -326,11 +326,7 @@ religion_flavor_pulse_orthodox = {
 		10 = patriarch_events.4
 		10 = patriarch_events.5
 
-		10 = miaphysite_flavor.20
-		10 = miaphysite_flavor.30
-		10 = miaphysite_flavor.31
-		10 = miaphysite_flavor.32
-		10 = miaphysite_flavor.33
+		# etra: miaphysite_flavor.20/.30-.33 removed - events/religion/miaphsyite_flavor.txt is emptied (real-world places)
 
 		chance_to_happen = 50
 	}
@@ -409,19 +405,7 @@ religion_flavor_pulse_dharmic = {
 		10 = brahmins_estate_events.9
 		10 = brahmins_estate_events.10
 
-		200 = sikhism.1		# Guru Nanak
-		200 = sikhism.2		# Guru Angad
-		200 = sikhism.3		# Guru Amar Das
-		200 = sikhism.4		# Guru Ram Das
-		200 = sikhism.5		# Guru Arjan
-		200 = sikhism.6		# Guru Hargobind
-		200 = sikhism.7		# Guru Har Rai
-		200 = sikhism.8		# Guru Har Krishan
-		200 = sikhism.9		# Guru Tegh Bahadur
-		200 = sikhism.10	# Guru Gobind Singh
-		200 = sikhism.11	# Guru Granth Sahib
-		10 = sikhism.12		# sikhism spreading
-		200 = sikhism.13	# Restoring the guruship
+		# etra: sikhism.1-.13 removed - events/religion/sikhism.txt is emptied (the Sikh Gurus in real-world Punjab)
 
 		chance_to_happen = 50
 	}

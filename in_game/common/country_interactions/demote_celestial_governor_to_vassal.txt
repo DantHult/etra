@@ -1,0 +1,57 @@
+﻿# etra: vanilla demote_celestial_governor_to_vassal switched off - it needs international_organization:middle_kingdom, which is not on Etra's map.
+# Exact copy of the vanilla file except the blocks marked 'etra: switched off'.
+
+demote_celestial_governor_to_vassal = { 
+	type = diplomacy
+	category = CATEGORY_CHINA_ACTIONS
+	
+	potential = { always = no } # etra: switched off, needed international_organization:middle_kingdom (not on Etra's map); vanilla block was 10 lines
+	
+	allow = {
+		international_organization:middle_kingdom = {
+			var:celestial_authority > 5
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		default_sort = will
+		column = {
+			data = country_diplomacy_info_subject
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:middle_kingdom 
+			international_organization:middle_kingdom = {
+				country_has_special_status = {
+					type = special_status:celestial_governor
+					country = root
+				}
+			}
+		}
+        enabled = {
+		}
+	}
+
+	effect = {
+		scope:recipient = {	#Subject that receives this interaction
+			add_opinion = { 
+				target = scope:actor 
+				modifier = opinion_demoted_to_member 
+			}
+		}		
+		scope:actor = {	#Emperor	
+			add_prestige = prestige_mild_penalty
+		}
+		change_celestial_authority = { value = celestial_authority_weak_penalty }
+		international_organization:middle_kingdom = {
+			international_organization_remove_special_status = {
+				type = special_status:celestial_governor
+				country = scope:recipient
+			}
+		}
+	}
+	ai_will_do = {
+	}	
+}	

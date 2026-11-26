@@ -1,0 +1,5 @@
+﻿# etra: in_game/events/religion/miaphsyite_flavor.txt emptied - it is Miaphysite flavour for real-world places, which is not on Etra's map.
+# Its hard-coded keys logged "Invalid ... key" errors on every launch.
+# Nothing active refers to its contents.
+
+namespace = miaphysite_flavor

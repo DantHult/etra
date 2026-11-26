@@ -1,0 +1,5 @@
+﻿# etra: in_game/events/religion/sikhism.txt emptied - it is the Sikh Gurus in real-world Punjab, which is not on Etra's map.
+# Its hard-coded keys logged "Invalid ... key" errors on every launch.
+# Nothing active refers to its contents.
+
+namespace = sikhism

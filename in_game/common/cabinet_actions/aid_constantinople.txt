@@ -1,0 +1,41 @@
+﻿# etra: vanilla aid_constantinople switched off - it needs location:constantinople, which is not on Etra's map.
+# Exact copy of the vanilla file except the blocks marked 'etra: switched off'.
+
+aid_constantinople = {
+	ability = adm
+	allow_multiple = no
+	icon = develop_province
+	potential = { # etra: switched off, needed location:constantinople (not on Etra's map); vanilla block was 7 lines
+		always = no
+		has_variable = byz_unlocked_constantinople_cabinet_action # kept from vanilla so the variable still counts as used
+	}
+	allow = { always = no } # etra: switched off, needed location:constantinople (not on Etra's map); vanilla block was 7 lines
+	
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target
+		name = "byz_aid_constantinople_action_select_province"
+		none_available_msg_key = "byz_aid_constantinople_action_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = primary_culture_percentage
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			any_location_in_province = {
+				is_capital = yes
+			}
+		}
+	}
+	
+	location_modifier = {
+		local_monthly_development = 0.005
+		local_population_growth = 0.0005
+		local_pop_promotion_speed = 0.005
+	}
+}

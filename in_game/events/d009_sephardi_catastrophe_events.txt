@@ -1,0 +1,20 @@
+﻿# etra: dlc/D009_across_the_pillars/in_game/events/d009_sephardi_catastrophe_events.txt emptied - it is Sephardi flavour for real-world Iberia, which is not on Etra's map.
+# Its hard-coded keys logged "Invalid ... key" errors on every launch.
+# Events still called by active on_actions are kept as hidden stubs that never fire.
+
+namespace = d009_sephardi_catastrophe
+
+d009_sephardi_catastrophe.2 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}
+
+d009_sephardi_catastrophe.8 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}
+
+d009_sephardi_catastrophe.9 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}

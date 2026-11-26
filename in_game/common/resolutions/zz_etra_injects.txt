@@ -296,7 +296,7 @@
 							not = { exists = scope:previewed_vote }
 							NOT = {
 								AND = {
-									this = international_organization:catholic_church
+									always = no # etra: was 'this = international_organization:catholic_church' - no Catholic Church on Etra's map
 									resolution_is_active = resolution:policy_vote
 								}
 							}

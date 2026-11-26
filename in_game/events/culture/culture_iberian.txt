@@ -1,0 +1,5 @@
+﻿# etra: in_game/events/culture/culture_iberian.txt emptied - it is Iberian culture flavour for real-world places, which is not on Etra's map.
+# Its hard-coded keys logged "Invalid ... key" errors on every launch.
+# Nothing active refers to its contents.
+
+namespace = iberian_culture

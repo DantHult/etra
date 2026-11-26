@@ -136,3 +136,52 @@ REPLACE:local_tribal_strongholds = {
 		global_tribes_estate_power = 0.5
 	}
 }
+
+# from dlc/D009_across_the_pillars/in_game/common/estate_privileges/d009_peasants_estate.txt
+# Exact copy except the valencia_area checks; Valencia is not on Etra's map, so they could
+# never be true and logged "Invalid right side during comparison 'area'" on every check.
+# TRY_REPLACE so the mod still loads without Across the Pillars.
+TRY_REPLACE:val_tribunal_de_les_aigues = {
+	estate = peasants_estate
+
+	potential = {
+		has_dlc = "d009_across_the_pillars"
+		OR = {
+			has_or_had_tag = CAT
+			has_or_had_tag = ARA
+			is_aragonese_catalan_spain = yes
+		}
+		culture = culture:catalan
+		any_owned_location = { always = no } # was: area = area:valencia_area (not on Etra's map)
+	}
+
+	location_modifier = {
+		potential_trigger = {
+			always = no # was: area = area:valencia_area (not on Etra's map)
+		}
+		local_max_rgo_size_modifier = 0.10
+	}
+
+	country_modifier = {
+		global_peasants_estate_power = 0.25
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+	}
+}
+
+# from estate_privileges/clergy_estate.txt: lat_protector_of_the_constantinople_patriarchate switched off - it needs location:constantinople, which is not on Etra's map.
+# Exact copy except the blocks marked 'etra: switched off'.
+REPLACE:lat_protector_of_the_constantinople_patriarchate = {
+	estate = clergy_estate
+
+	potential = { always = no } # etra: switched off, needed location:constantinople (not on Etra's map); vanilla block was 10 lines
+	allow = { always = no } # etra: switched off, needed location:constantinople (not on Etra's map); vanilla block was 7 lines
+
+	country_modifier = {
+		clergy_estate_target_satisfaction = large_privilege_target_satisfaction
+		monthly_religious_influence = 0.2
+		global_clergy_estate_power = 0.25
+		propose_curia_action_cost_modifier = -0.10
+		tolerance_own = 1
+		diplomatic_reputation = diplomatic_reputation_mild_bonus
+	}
+}

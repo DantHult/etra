@@ -1,0 +1,16 @@
+﻿# etra: vanilla gaituguiliu_policy switched off - it needs international_organization:middle_kingdom, which is not on Etra's map.
+# Exact copy of the vanilla file except the blocks marked 'etra: switched off'.
+
+gaituguiliu_policy = {
+	ability = adm
+	
+	allow_multiple = no
+	
+	potential = { always = no } # etra: switched off, needed international_organization:middle_kingdom (not on Etra's map); vanilla block was 8 lines
+
+	country_modifier = {
+		global_pop_assimilation_speed_modifier = 0.1
+		monthly_celestial_authority = 0.01
+		annexation_speed_modifier = 0.2
+	}
+}

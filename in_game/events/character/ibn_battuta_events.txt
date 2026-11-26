@@ -1,0 +1,5 @@
+﻿# etra: in_game/events/character/ibn_battuta_events.txt emptied - it is Ibn Battuta's real-world journey, which is not on Etra's map.
+# Its hard-coded keys logged "Invalid ... key" errors on every launch.
+# Nothing active refers to its contents.
+
+namespace = ibn_battuta_events
