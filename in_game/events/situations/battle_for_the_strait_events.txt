@@ -1,0 +1,40 @@
+﻿# etra: D009 Battle for the Strait events emptied - the situation is switched off (see
+# common/situations/battle_for_the_strait.txt) and these events need real-world places.
+# Kept as hidden stubs that never fire: only the events Etra's generic actions still call.
+# .21 also holds the original setters (from .2, .6 and .22) of three variables read elsewhere,
+# so those variables still count as set.
+
+namespace = battle_for_the_strait_events
+
+battle_for_the_strait_events.21 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+	immediate = { # etra: never runs; setters kept from .2, .6 and .22 so the variables still count as set
+		set_global_variable = {
+			name = battle_for_the_strait_winner_country
+			value = root
+		}
+		set_variable = orders_sent_overseas
+		set_variable = gra_shadhili_invited
+	}
+}
+
+battle_for_the_strait_events.30 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}
+
+battle_for_the_strait_events.31 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}
+
+battle_for_the_strait_events.32 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}
+
+battle_for_the_strait_events.61 = {
+	type = country_event outcome = neutral title = empty_text desc = empty_text hidden = yes
+	trigger = { always = no }
+}

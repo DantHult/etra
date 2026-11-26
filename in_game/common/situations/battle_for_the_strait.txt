@@ -1,0 +1,60 @@
+﻿# etra: D009 Battle for the Strait switched off - it needs Castile, Granada, Morocco and the
+# Iberian and Maghreb areas, none of which are on Etra's map. Its hard-coded keys logged errors
+# on every launch. This stub keeps the keys other files use (the situation, its two variables
+# and its outcomes) so nothing dangles; it can never start or be seen.
+
+battle_for_the_strait = {
+	content_priority = 1000
+	is_content_highlighted = yes
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_battle_for_the_strait
+
+	can_start = { always = no } # etra: switched off
+	visible = { always = no } # etra: switched off
+
+	outcome = {
+		name = "battle_for_the_strait_castilian_supremacy"
+		desc = "battle_for_the_strait_castilian_supremacy_desc"
+		trigger = { always = no }
+	}
+	outcome = {
+		name = "battle_for_the_strait_moroccan_supremacy"
+		desc = "battle_for_the_strait_moroccan_supremacy_desc"
+		trigger = { always = no }
+	}
+	outcome = {
+		name = "battle_for_the_strait_granadan_sovereignty_preserved"
+		desc = "battle_for_the_strait_granadan_sovereignty_preserved_desc"
+		trigger = { always = no }
+	}
+	outcome = {
+		name = "battle_for_the_strait_neutral_outcome"
+		trigger = { always = no }
+	}
+
+	variables = { # etra: display fields only; monthly_change needed real-world tags and areas
+		influence_over_granada = {
+			format = "INFLUENCE_OVER_GRANADA_DISPLAY"
+			change_format = "VARIABLE_CHANGE_FORMAT"
+			positive_name = moroccan_influence_over_granada
+			negative_name = castilian_influence_over_granada
+			min = -100
+			max = 100
+			start = -33
+		}
+		granadan_sovereignty = {
+			format = "BFTS_SOVEREIGNTY_DISPLAY"
+			change_format = "VARIABLE_CHANGE_FORMAT"
+			min = 0
+			max = 100
+			start = 50
+		}
+	}
+
+	on_start = { # etra: never runs; kept so the variable still counts as set
+		set_variable = {
+			name = GRA_years_subject_under_CAS_variable
+			value = 15
+		}
+	}
+}
