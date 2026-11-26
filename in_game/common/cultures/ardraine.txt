@@ -24,6 +24,19 @@ wyrmwealth_culture = { #Created for the Wyrmwealth building-based tag
 	}
 }
 
+risanea_culture = { #Created for the Risanea building-based tag
+	language = draquatin_dialect
+
+	color = draquatin_color
+
+	tags = { occitan_gfx french_gfx west_mediterranean_gfx mediterranean_gfx western_european_gfx european_gfx  }
+
+	culture_groups = {
+		human_group
+		ardrainic_group
+	}
+}
+
 
 ardrainien_culture = { #Haute Ardrainic, think Francien. Centered around the old capital
 	language = ardrainic_language
