@@ -1,0 +1,15 @@
+﻿# Issarsiya seasonal diarchy. Character scope, root = the country.
+# A living man who can fill line $LINE$: in the country or not ruling elsewhere,
+# and not already a diarch of the other line.
+issarsiya_can_fill_line_trigger = {
+	is_alive = yes
+	is_female = no
+	OR = {
+		owner = root
+		is_ruler = no
+	}
+	OR = {
+		NOT = { has_variable = issarsiya_diarch_line }
+		var:issarsiya_diarch_line = $LINE$
+	}
+}

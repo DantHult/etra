@@ -2,6 +2,7 @@
 # issarsiya_diarch_line = 1 is Talhalla (frost): September through February.
 # issarsiya_diarch_line = 2 is Zarita (fire): March through August.
 # current_month is 1 (January) through 12 (December).
+# Only men are diarchs, and a line is never left empty (issarsiya_fill_line_effect).
 #
 # set_new_ruler does not kill the outgoing ruler. A monarchy abdication
 # (flavor_tur.123) calls it and then still changes the living former ruler,
@@ -10,11 +11,21 @@
 # the country, move_country brings him back, then he is set as heir.
 
 issarsiya_setup_starting_diarchs_effect = {
+	# The starting ruler traits are added here, not in setup. At the bookmark a
+	# ruler has no trait slots yet, so a setup ruler_trait is dropped (error.log).
 	character:A410_talhalla = {
 		set_variable = { name = issarsiya_diarch_line value = 1 }
+		if = {
+			limit = { NOT = { has_trait = bold_fighter } }
+			add_trait = trait:bold_fighter
+		}
 	}
 	character:A410_zarita = {
 		set_variable = { name = issarsiya_diarch_line value = 2 }
+		if = {
+			limit = { NOT = { has_trait = lawgiver } }
+			add_trait = trait:lawgiver
+		}
 	}
 	set_variable = { name = issarsiya_frost_diarch value = character:A410_talhalla }
 	set_variable = { name = issarsiya_fire_diarch value = character:A410_zarita }
@@ -133,6 +144,181 @@ issarsiya_reseat_lines_effect = {
 	issarsiya_seat_diarchs_effect = yes
 }
 
+# Monthly. Seats the diarch whose season it is whenever someone else holds the
+# throne, so a missed March or September is caught the next month. The season
+# event fires only when the swap took and the outgoing ruler was a diarch.
+issarsiya_monthly_swap_effect = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					current_month >= 3
+					current_month <= 8
+					has_variable = issarsiya_fire_diarch
+					var:issarsiya_fire_diarch = { is_alive = yes }
+					NOT = { ruler = var:issarsiya_fire_diarch }
+				}
+				AND = {
+					OR = {
+						current_month <= 2
+						current_month >= 9
+					}
+					has_variable = issarsiya_frost_diarch
+					var:issarsiya_frost_diarch = { is_alive = yes }
+					NOT = { ruler = var:issarsiya_frost_diarch }
+				}
+			}
+		}
+		ruler = { save_scope_as = issarsiya_outgoing }
+		if = {
+			limit = {
+				current_month >= 3
+				current_month <= 8
+			}
+			var:issarsiya_fire_diarch = { save_scope_as = issarsiya_incoming }
+		}
+		else = {
+			var:issarsiya_frost_diarch = { save_scope_as = issarsiya_incoming }
+		}
+		issarsiya_reseat_lines_effect = yes
+		if = {
+			limit = {
+				ruler = scope:issarsiya_incoming
+				scope:issarsiya_outgoing = {
+					is_alive = yes
+					has_variable = issarsiya_diarch_line
+				}
+			}
+			trigger_event_non_silently = issarsiya_diarchy.1
+		}
+	}
+}
+
+# Fills line $LINE$ and saves the new diarch as scope:issarsiya_successor.
+# Order: the eldest living son of scope:issarsiya_dead (when that scope exists),
+# then the eldest living man of the line's house, then a new kinsman of the house.
+# The successor takes the line's culture, so a son of a foreign mother does not
+# trigger the foreign-ruler event at every swap. Root is the country.
+issarsiya_fill_line_effect = {
+	if = {
+		limit = { exists = scope:issarsiya_successor }
+		clear_saved_scope = issarsiya_successor
+	}
+	if = {
+		limit = { exists = scope:issarsiya_dead }
+		scope:issarsiya_dead = {
+			ordered_child = {
+				limit = { issarsiya_can_fill_line_trigger = { LINE = $LINE$ } }
+				order_by = character_age
+				max = 1
+				check_range_bounds = no
+				save_scope_as = issarsiya_successor
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { exists = scope:issarsiya_successor } }
+		dynasty:$DYNASTY$ = {
+			ordered_character_in_dynasty = {
+				limit = { issarsiya_can_fill_line_trigger = { LINE = $LINE$ } }
+				order_by = character_age
+				max = 1
+				check_range_bounds = no
+				save_scope_as = issarsiya_successor
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { exists = scope:issarsiya_successor } }
+		create_character = {
+			age = 30
+			female = no
+			dynasty = dynasty:$DYNASTY$
+			culture = culture:$CULTURE$
+			religion = root.religion
+			estate = estate_type:nobles_estate
+			adm = { 40 70 }
+			dip = { 40 70 }
+			mil = { 40 70 }
+			save_scope_as = issarsiya_successor
+		}
+	}
+	if = {
+		limit = { exists = scope:issarsiya_successor }
+		scope:issarsiya_successor = {
+			set_variable = { name = issarsiya_diarch_line value = $LINE$ }
+			if = {
+				limit = { NOT = { culture = culture:$CULTURE$ } }
+				change_character_culture = culture:$CULTURE$
+			}
+			if = {
+				limit = { NOT = { owner = root } }
+				move_country = root
+			}
+		}
+		set_variable = { name = $VAR$ value = scope:issarsiya_successor }
+	}
+}
+
+# Monthly backstop for one line. The death hooks fill a line the day a diarch
+# dies. This catches the rest: a released or re-formed Issarsiya, or a hook that
+# did not run. It first re-points the line at a living ruler or heir of that line
+# and only fills the line when no one is left.
+issarsiya_ensure_line_effect = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_variable = $VAR$ }
+				var:$VAR$ = { is_alive = no }
+			}
+		}
+		if = {
+			limit = {
+				has_ruler = yes
+				ruler = {
+					has_variable = issarsiya_diarch_line
+					var:issarsiya_diarch_line = $LINE$
+				}
+			}
+			set_variable = { name = $VAR$ value = ruler }
+		}
+		else_if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					is_alive = yes
+					has_variable = issarsiya_diarch_line
+					var:issarsiya_diarch_line = $LINE$
+				}
+			}
+			set_variable = { name = $VAR$ value = heir }
+		}
+		else = {
+			if = {
+				limit = { exists = scope:issarsiya_dead }
+				clear_saved_scope = issarsiya_dead
+			}
+			if = {
+				limit = { has_variable = $VAR$ }
+				var:$VAR$ = {
+					save_scope_as = issarsiya_dead
+					set_variable = issarsiya_slot_filled
+				}
+			}
+			issarsiya_fill_line_effect = { LINE = $LINE$ VAR = $VAR$ CULTURE = $CULTURE$ DYNASTY = $DYNASTY$ }
+			if = {
+				limit = { exists = scope:issarsiya_dead }
+				clear_saved_scope = issarsiya_dead
+			}
+		}
+	}
+}
+
+issarsiya_ensure_lines_effect = {
+	issarsiya_ensure_line_effect = { LINE = 1 VAR = issarsiya_frost_diarch CULTURE = ekuniman_culture DYNASTY = talhalla_dynasty }
+	issarsiya_ensure_line_effect = { LINE = 2 VAR = issarsiya_fire_diarch CULTURE = pahhuar_culture DYNASTY = zarita_dynasty }
+}
+
 # scope:issarsiya_dead is the diarch who died. Fills that line once, then seats both lines for the month.
 issarsiya_on_dead_diarch_effect = {
 	if = {
@@ -167,63 +353,15 @@ issarsiya_on_dead_diarch_effect = {
 				}
 				remove_variable = issarsiya_fire_diarch
 			}
-			scope:issarsiya_dead = {
-				ordered_child = {
-					limit = {
-						is_alive = yes
-						OR = {
-							owner = root
-							is_ruler = no
-						}
-						OR = {
-							NOT = { has_variable = issarsiya_diarch_line }
-							var:issarsiya_diarch_line = root.var:issarsiya_dead_line
-						}
-					}
-					order_by = character_age
-					max = 1
-					check_range_bounds = no
-					save_scope_as = issarsiya_successor
-				}
-			}
 			if = {
-				limit = { NOT = { exists = scope:issarsiya_successor } }
-				create_character = {
-					age = 30
-					female = no
-					dynasty = scope:issarsiya_dead.dynasty
-					father = scope:issarsiya_dead
-					culture = scope:issarsiya_dead.culture
-					religion = scope:issarsiya_dead.religion
-					estate = estate_type:nobles_estate
-					adm = { 40 70 }
-					dip = { 40 70 }
-					mil = { 40 70 }
-					save_scope_as = issarsiya_successor
-				}
+				limit = { var:issarsiya_dead_line = 1 }
+				issarsiya_fill_line_effect = { LINE = 1 VAR = issarsiya_frost_diarch CULTURE = ekuniman_culture DYNASTY = talhalla_dynasty }
+			}
+			else = {
+				issarsiya_fill_line_effect = { LINE = 2 VAR = issarsiya_fire_diarch CULTURE = pahhuar_culture DYNASTY = zarita_dynasty }
 			}
 			if = {
 				limit = { exists = scope:issarsiya_successor }
-				scope:issarsiya_successor = {
-					if = {
-						limit = { root = { var:issarsiya_dead_line = 1 } }
-						set_variable = { name = issarsiya_diarch_line value = 1 }
-					}
-					else = {
-						set_variable = { name = issarsiya_diarch_line value = 2 }
-					}
-					if = {
-						limit = { NOT = { owner = root } }
-						move_country = root
-					}
-				}
-				if = {
-					limit = { var:issarsiya_dead_line = 1 }
-					set_variable = { name = issarsiya_frost_diarch value = scope:issarsiya_successor }
-				}
-				else = {
-					set_variable = { name = issarsiya_fire_diarch value = scope:issarsiya_successor }
-				}
 				scope:issarsiya_dead = { set_variable = issarsiya_slot_filled }
 				set_local_variable = issarsiya_announce
 			}
@@ -253,6 +391,63 @@ issarsiya_on_dead_diarch_effect = {
 			else = {
 				trigger_event_non_silently = issarsiya_diarchy.3
 			}
+		}
+	}
+}
+
+# Vanilla gives a ruler trait after 1, 10 and 25 years of rule (YEARS_OF_RULING_*
+# in 00_defines), and a ruler with none takes ruler_has_no_ruler_traits (-0.1
+# monthly legitimacy). A diarch holds the throne six months at a time, so if the
+# engine restarts its count at each swap, no diarch ever reaches a year. This
+# counts every adult month as diarch, ruling or co-ruling, and tops ruler traits
+# up to the same schedule. It adds a trait only while the diarch has fewer than
+# the schedule allows, so it never stacks on traits the engine grants itself.
+issarsiya_diarch_traits_effect = {
+	if = {
+		limit = {
+			has_variable = issarsiya_frost_diarch
+			var:issarsiya_frost_diarch = { is_alive = yes }
+		}
+		var:issarsiya_frost_diarch = { issarsiya_diarch_trait_month_effect = yes }
+	}
+	if = {
+		limit = {
+			has_variable = issarsiya_fire_diarch
+			var:issarsiya_fire_diarch = { is_alive = yes }
+		}
+		var:issarsiya_fire_diarch = { issarsiya_diarch_trait_month_effect = yes }
+	}
+}
+
+# Character scope: one diarch.
+issarsiya_diarch_trait_month_effect = {
+	if = {
+		limit = { is_adult = yes }
+		if = {
+			limit = { has_variable = issarsiya_diarch_months }
+			change_variable = { name = issarsiya_diarch_months add = 1 }
+		}
+		else = {
+			set_variable = { name = issarsiya_diarch_months value = 1 }
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						var:issarsiya_diarch_months >= 12
+						num_of_traits_of_category = { type = ruler value < 1 }
+					}
+					AND = {
+						var:issarsiya_diarch_months >= 120
+						num_of_traits_of_category = { type = ruler value < 2 }
+					}
+					AND = {
+						var:issarsiya_diarch_months >= 300
+						num_of_traits_of_category = { type = ruler value < 3 }
+					}
+				}
+			}
+			add_random_trait_from_category = ruler
 		}
 	}
 }

@@ -8017,7 +8017,6 @@ countries = {
 					clergy_literacy_rights
 					clergy_enforced_unity
 					embellish_great_works_of_faith
-					clergy_literacy_rights
 					clergy_land_rights
 
 					#Burghers
@@ -8044,7 +8043,6 @@ countries = {
 			accepted_cultures = {
 				pahhuar_culture
 			}
-			capital = etra1966			
 		}
 		A411 = { # Archonia
 			own_control_core = { 

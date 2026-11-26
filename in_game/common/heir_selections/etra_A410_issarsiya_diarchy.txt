@@ -1,12 +1,12 @@
 # A410 only. Cognatic primogeniture stays on the shared eternalist_monarchy package.
 # A living diarch of the line that is not ruling scores; everyone else is unsuited,
-# so a child cannot become heir and replace the diarchy.
+# so a child cannot become heir and replace the diarchy. Only men are diarchs.
 
 issarsiya_seasonal_diarchy = {
 	use_election = no
 	term_duration = 0 # until the ruler dies; the season swap is a monthly pulse, not a term
 	max_possible_candidates = 0
-	allow_female = yes
+	allow_female = no
 	allow_male = yes
 	allow_children = yes
 	ignore_ruler = yes
@@ -19,11 +19,11 @@ issarsiya_seasonal_diarchy = {
 	}
 
 	potential = {
-		tag = A410
+		has_or_had_tag = A410
 	}
 
 	locked = {
-		tag = A410
+		has_or_had_tag = A410
 	}
 
 	calc = {

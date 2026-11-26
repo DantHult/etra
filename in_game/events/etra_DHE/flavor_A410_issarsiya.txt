@@ -1,11 +1,13 @@
 namespace = issarsiya_diarchy
 
 # Fired from the monthly country pulse after the lines have been seated.
+# Twice a year, so it does not pause the game.
 issarsiya_diarchy.1 = {
 	type = country_event
 	title = issarsiya_diarchy.1.title
 	desc = issarsiya_diarchy.1.desc
 	outcome = neutral
+	interface_lock = no
 
 	illustration_tags = {
 		10 = regular
@@ -13,7 +15,7 @@ issarsiya_diarchy.1 = {
 	}
 
 	trigger = {
-		tag = A410
+		has_or_had_tag = A410
 	}
 
 	immediate = {
@@ -38,7 +40,7 @@ issarsiya_diarchy.2 = {
 	}
 
 	trigger = {
-		tag = A410
+		has_or_had_tag = A410
 	}
 
 	immediate = {
@@ -63,7 +65,7 @@ issarsiya_diarchy.3 = {
 	}
 
 	trigger = {
-		tag = A410
+		has_or_had_tag = A410
 	}
 
 	immediate = {

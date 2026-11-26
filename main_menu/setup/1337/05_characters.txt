@@ -1827,6 +1827,8 @@ character_db={
 	}
 	# Sitting diarchs in January 1337. Adults of the two lines, not the cataclysm twins.
 	# Line 1 is Talhalla (frost). Line 2 is Zarita (fire). The variables are stamped at game start.
+	# Their ruler traits (bold_fighter, lawgiver) are added by issarsiya_setup_starting_diarchs_effect.
+	# A setup ruler_trait is dropped at the bookmark, since a new ruler has no trait slots yet.
 	A410_talhalla = {
 		first_name = { name = name_talhalla }
 		last_name = { name = talhalla_dynasty }
@@ -1840,7 +1842,6 @@ character_db={
 		dynasty = talhalla_dynasty
 		fertility = 55
 		tag = A410
-		ruler_trait = bold_fighter
 	}
 	A410_zarita = {
 		first_name = { name = name_zarita }
@@ -1855,7 +1856,6 @@ character_db={
 		dynasty = zarita_dynasty
 		fertility = 60
 		tag = A410
-		ruler_trait = lawgiver
 	}
 	A412_eurynor = {
 		first_name = { name = name_eurynor }

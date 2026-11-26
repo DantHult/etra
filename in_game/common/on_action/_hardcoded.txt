@@ -3388,6 +3388,14 @@ on_new_ruler = {
 			limit = {
 				has_game_rule = ai_personalities_random_per_ruler
 				is_ai = yes
+				# Issarsiya's seasonal swap is not a new reign: the old diarch lives on as co-ruler.
+				NAND = {
+					scope:old_ruler ?= {
+						is_alive = yes
+						has_variable = issarsiya_diarch_line
+					}
+					scope:new_ruler ?= { has_variable = issarsiya_diarch_line }
+				}
 			}
 			random_list = {
 				1 = { set_personality = ai_personality:ai_aggressive }

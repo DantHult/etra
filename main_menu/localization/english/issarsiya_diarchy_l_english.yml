@@ -5,11 +5,11 @@
  zarita_dynasty: "Zarita"
 
  issarsiya_seasonal_diarchy: "Seasonal Diarchy"
- issarsiya_seasonal_diarchy_desc: "Issarsiya keeps two living rulers. Zarita's line rules from March through August. Talhalla's line rules from September through February. The one who is not ruler is the co-ruler heir. When a diarch dies, only that line is filled, and the new diarch takes the throne only during that line's season."
+ issarsiya_seasonal_diarchy_desc: "Issarsiya keeps two living rulers. Zarita's line rules from March through August. Talhalla's line rules from September through February. The one who is not ruler is the co-ruler heir. Only men may be diarchs. When a diarch dies, only that line is filled, by his eldest son or else the eldest man of his house, and the new diarch takes the throne only during that line's season. A line is never left empty."
  issarsiya_diarch_partner_desc: "Co-ruler of the other line"
 
  issarsiya_diarchy.1.title: "The Season Turns"
- issarsiya_diarchy.1.desc: "The throne of [ROOT.GetName] passes with the season. [issarsiya_incoming.GetName] now rules, and [issarsiya_outgoing.GetName] remains co-ruler."
+ issarsiya_diarchy.1.desc: "The throne of [ROOT.GetCountry.GetName] passes with the season. [issarsiya_incoming.GetName] now rules, and [issarsiya_outgoing.GetName] remains co-ruler."
  issarsiya_diarchy.1.a: "The other line keeps its seat."
  issarsiya_diarchy.1.entry: "$issarsiya_diarchy.1.title$"
 
