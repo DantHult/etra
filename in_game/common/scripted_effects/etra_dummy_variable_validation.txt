@@ -179,6 +179,7 @@ etra_dummy_variable_validation = {
 		set_variable = posolsky_prikaz_established
 		set_variable = potential_enemy_list
 		set_variable = preserved_clan_autonomy
+		set_variable = previous_weights
 		set_variable = prikazi
 		set_variable = privilegium_maius_accepted
 		set_variable = privilegium_maius_granted
@@ -460,7 +461,6 @@ etra_dummy_variable_validation = {
 		set_variable = witchcraft_decision
 		set_variable = wokou_nation_list
 		set_variable = yorkist_tradition
-		if = { limit = { has_variable = amount_of_migration } }
 		if = { limit = { has_variable = castilian_civil_war_over } }
 		if = { limit = { has_variable = ccw_is_rebel_country } }
 		if = { limit = { has_variable = ccw_pretender_promises_100yw_support } }

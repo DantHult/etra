@@ -9,7 +9,7 @@
 		#yearly_flavor_kor_pulse         # kor_has_mongol_aristocrats flag
 		#yearly_flavor_ira_pulse         # has_advance = ira_the_qizilbash
 		#yearly_flavor_nav_pulse         # owns location:olite
-		yearly_flavor_kni_pulse         # owns location:malta (guards expensive HRE IO check)
+		#yearly_flavor_kni_pulse         # owns location:malta (guards expensive HRE IO check)
 		yearly_flavor_tak_a378_pulse    # A378 House Izem destruction
 		yearly_flavor_tak_exile_host_pulse # owns etra1513 after Izem fall / founding host
 		yearly_flavor_tak_a409_pulse    # A409 Massin death check
@@ -20,9 +20,9 @@
 	# Tag-locked events — mutually exclusive, so first_valid_on_action pays at most one tag
 	# check per non-matching country instead of evaluating all three event triggers.
 	first_valid_on_action = {
-		yearly_flavor_sic_pulse
-		yearly_flavor_nap_pulse
-		yearly_flavor_hab_tir_pulse
+		#yearly_flavor_sic_pulse
+		#yearly_flavor_nap_pulse
+		#yearly_flavor_hab_tir_pulse
 	}
 	random_on_action = {
 	}
@@ -43,6 +43,8 @@
 		joint_ruling.100 #The Term has Expired
 
 		imperial_examination_events.7 #Examination System
+
+		market_decline.1 #Withering market centers
 
 		#Rebelions
 		#rebel.1 #Rome - Cola di Rienzo
@@ -560,7 +562,7 @@
 		#10 = flavor_teu.101
 
 
-		50 = grand_embassy.1
+		#50 = grand_embassy.1 # etra: vanilla moved the Grand Embassy into expeditions
 
 		#Border Reivers
 		# 100 = flavor_sco.1102
@@ -722,7 +724,7 @@
 		# 10 = culture_greek.29
 		# 5 = culture_greek.30
 
-		10 = flavor_ser.110 #Novo Brdo Grows - moved from events = {}
+		#10 = flavor_ser.110 #Novo Brdo Grows - moved from events = {}
 
 		chance_to_happen = 100
 	}
@@ -843,20 +845,20 @@ on_integrated_in_union_removal = {
 # event trigger) for every country that cannot possibly satisfy the condition.
 
 # Mutually exclusive tag events (used via first_valid_on_action)
-yearly_flavor_sic_pulse = {
-	trigger = { tag = SIC }
-	events = { flavor_nap.108 }
-}
+# yearly_flavor_sic_pulse = {
+	# trigger = { tag = SIC }
+	# events = { flavor_nap.108 }
+# }
 
-yearly_flavor_nap_pulse = {
-	trigger = { tag = NAP }
-	events = { flavor_nap.119 }
-}
+# yearly_flavor_nap_pulse = {
+	# trigger = { tag = NAP }
+	# events = { flavor_nap.119 }
+# }
 
-yearly_flavor_hab_tir_pulse = {
-	trigger = { tag = TIR }
-	events = { flavor_hab_tir.3 } #A Husband for Margarete von Görz — guards expensive dynasty loops
-}
+# yearly_flavor_hab_tir_pulse = {
+	# trigger = { tag = TIR }
+	# events = { flavor_hab_tir.3 } #A Husband for Margarete von Görz — guards expensive dynasty loops
+# }
 
 # Location/flag/advance-gated events (used via on_actions = {})
 # yearly_flavor_ven_pulse = {
@@ -866,25 +868,25 @@ yearly_flavor_hab_tir_pulse = {
 	# events = { flavor_ven.24 }
 # }
 
-yearly_flavor_kor_pulse = {
-	trigger = { kor_has_mongol_aristocrats = yes }
-	events = { flavor_kor.3 } #New Mongol aristocrat joins the court
-}
+# yearly_flavor_kor_pulse = {
+	# trigger = { kor_has_mongol_aristocrats = yes }
+	# events = { flavor_kor.3 } #New Mongol aristocrat joins the court
+# }
 
-yearly_flavor_ira_pulse = {
-	trigger = { has_advance = ira_the_qizilbash }
-	events = { flavor_ira.25 } #Qizilbash Upgrade
-}
+# yearly_flavor_ira_pulse = {
+	# trigger = { has_advance = ira_the_qizilbash }
+	# events = { flavor_ira.25 } #Qizilbash Upgrade
+# }
 
-yearly_flavor_nav_pulse = {
-	trigger = { owns = location:olite }
-	events = { flavor_nav.60 }
-}
+# yearly_flavor_nav_pulse = {
+	# trigger = { owns = location:olite }
+	# events = { flavor_nav.60 }
+# }
 
-yearly_flavor_kni_pulse = {
-	trigger = { owns = location:malta }
-	events = { flavor_kni.100 } #Guard prevents expensive HRE IO leader check for 299+ countries
-}
+# yearly_flavor_kni_pulse = {
+	# trigger = { owns = location:malta }
+	# events = { flavor_kni.100 } #Guard prevents expensive HRE IO leader check for 299+ countries
+# }
 
 yearly_flavor_tak_a378_pulse = {
 	trigger = { tag = A378 }
@@ -916,33 +918,33 @@ yearly_flavor_tak_a409_pulse = {
 	}
 }
 
-yearly_flavor_pol_union_pulse = {
-	trigger = { in_union_with = c:POL }
-	events = { flavor_pol.38 }
-}
+# yearly_flavor_pol_union_pulse = {
+	# trigger = { in_union_with = c:POL }
+	# events = { flavor_pol.38 }
+# }
 
-yearly_flavor_cop_pulse = {
-	trigger = { current_year >= 1520 } #Copernicus window; full trigger handles upper bound + character
-	events = { flavor_pol.1201 }
-}
+# yearly_flavor_cop_pulse = {
+	# trigger = { current_year >= 1520 } #Copernicus window; full trigger handles upper bound + character
+	# events = { flavor_pol.1201 }
+# }
 
 # Each Catholic country accumulates antagonism toward a non-Christian holder of Rome every year.
 # This produces the "ever-growing" pressure on infidel Rome owners described in design intent.
-yearly_infidel_holds_rome_pulse = {
-	trigger = {
-		exists = religion
-		religion = religion:catholic
-		location:rome = {
-			owner = {
-				NOT = { religion.group = religion_group:christian }
-				is_real_country = yes
-			}
-		}
-	}
-	effect = {
-		add_antagonism = {
-			target = location:rome.owner
-			modifier = antagonism_infidel_holds_rome
-		}
-	}
-}
+# yearly_infidel_holds_rome_pulse = {
+	# trigger = {
+		# exists = religion
+		# religion = religion:catholic
+		# location:rome = {
+			# owner = {
+				# NOT = { religion.group = religion_group:christian }
+				# is_real_country = yes
+			# }
+		# }
+	# }
+	# effect = {
+		# add_antagonism = {
+			# target = location:rome.owner
+			# modifier = antagonism_infidel_holds_rome
+		# }
+	# }
+# }

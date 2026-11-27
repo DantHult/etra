@@ -1,0 +1,4 @@
+﻿# Etra override of vanilla migrations.txt (1.4.9). Its Maghreb areas don't exist on the Etra map.
+# Kept as an empty stub because vanilla events/culture/culture_maghrebi.txt still calls it.
+maghrebi_location_conversion = {
+}

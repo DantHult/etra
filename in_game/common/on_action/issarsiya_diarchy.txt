@@ -1,4 +1,4 @@
-# root is not a country. Stamp the two 1337 diarchs once the history is loaded.
+﻿# root is not a country. Stamp the two 1337 diarchs once the history is loaded.
 on_game_start = {
 	on_actions = {
 		issarsiya_diarchy_setup

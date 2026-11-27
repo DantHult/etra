@@ -522,7 +522,7 @@ weather_monthly_pulse = {
 					# }
 				# }
 
-			}
+			# }
 		}
 		
 		
@@ -732,12 +732,12 @@ weather_monthly_pulse = {
 						# location = location:atlantic_azores_current3
 					# }
 				# }
-			}
+			# }
 		}
 		
 		#Sandstorms
 		#Sahara
-		random_list = {#Average of one per 1 year
+		# random_list = {#Average of one per 1 year
 			# 11 =  {} 
 			# 1 = {
 				# random_list = {
@@ -891,9 +891,9 @@ weather_monthly_pulse = {
 					# }
 				# }
 			# }
-		}
+		# }
 		#Caspian 
-		random_list = {#Average of one per 1 year
+		# random_list = {#Average of one per 1 year
 			# 11 =  {} 
 			# 1 = {
 				# random_list = {
@@ -943,9 +943,9 @@ weather_monthly_pulse = {
 					# }
 				# }
 			# }
-		}
+		# }
 		#Gobi 
-		random_list = {#Average of one per 1 year
+		# random_list = {#Average of one per 1 year
 			# 11 =  {} 
 			# 1 = {
 				# random_list = {
@@ -997,9 +997,9 @@ weather_monthly_pulse = {
 					# }
 				# }
 			# }
-		}
+		# }
 		#Persia 
-		random_list = {#Average of one per 3 year
+		# random_list = {#Average of one per 3 year
 			# 35 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1029,9 +1029,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#Australia 
-		random_list = {#Average of one per 1 year
+		# random_list = {#Average of one per 1 year
 			# 11 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1122,9 +1122,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#Kalahari 
-		random_list = {#Average of one per 4 year
+		# random_list = {#Average of one per 4 year
 			# 47 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1164,9 +1164,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#North America 
-		random_list = {#Average of one per 3 year
+		# random_list = {#Average of one per 3 year
 			# 35 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1241,9 +1241,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#South America 
-		random_list = {#Average of one per 3 year
+		# random_list = {#Average of one per 3 year
 			# 35 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1295,11 +1295,11 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#-----------
 		#Tornadoes
 		#Europe
-		random_list = {#Average of one per 100 years
+		# random_list = {#Average of one per 100 years
 			# 1200 =  {} 
 			# 1 = {
 				
@@ -1417,9 +1417,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#North America
-		random_list = {#Average of 7 per 1 year
+		# random_list = {#Average of 7 per 1 year
 			# 1 =  {} 
 			# 1 = {
 				# #Get a random province in the north american East
@@ -1477,10 +1477,10 @@ weather_monthly_pulse = {
 					# location = scope:tornado_end_location_scope
 				# }	
 			# }
-		}
+		# }
 		#-----------
 		#South Africa Cyclones
-		random_list = {#Average of one per 1 year
+		# random_list = {#Average of one per 1 year
 			# 11 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1551,9 +1551,9 @@ weather_monthly_pulse = {
 			# }
 				# }
 			# }
-		}
+		# }
 		#Arabia Cyclones
-		random_list = {#Aprox one per 1 year
+		# random_list = {#Aprox one per 1 year
 			# 96 =  {} #Current total of 100
 			# 1 =  {
 				# start_weather_system = { 
@@ -1604,9 +1604,9 @@ weather_monthly_pulse = {
 					# location = location:red_sea2
 				# }
 			# }
-		}
+		# }
 		#China Sea Cyclones
-		random_list = {#Average of one per 1 year
+		# random_list = {#Average of one per 1 year
 			# 11 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1811,9 +1811,9 @@ weather_monthly_pulse = {
 					# }
 				# }
 			# }
-		}
+		# }
 		#South Indian Sea Cyclones
-		random_list = {#Average of one per 3 years
+		# random_list = {#Average of one per 3 years
 			# 35 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1897,9 +1897,9 @@ weather_monthly_pulse = {
 					# }				
 				# }
 			# }
-		}
+		# }
 		#North Australia Sea Cyclones
-		random_list = {#Average of one per 2 years
+		# random_list = {#Average of one per 2 years
 			# 23 =  {} 
 			# 1 = {
 				# random_list = {
@@ -1990,9 +1990,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#East Australia Sea Cyclones
-		random_list = {#Average of one per 2 years
+		# random_list = {#Average of one per 2 years
 			# 23 =  {} 
 			# 1 = {
 				# random_list = {
@@ -2125,9 +2125,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#West Mexico Sea Cyclones
-		random_list = {#Average of one per 2 years
+		# random_list = {#Average of one per 2 years
 			# 23 =  {} 
 			# 1 = {
 				# random_list = {
@@ -2206,9 +2206,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#East India Sea Cyclones
-		random_list = {#Average of one per 2 years
+		# random_list = {#Average of one per 2 years
 			# 23 =  {} 
 			# 1 = {
 				# random_list = {
@@ -2262,9 +2262,9 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 		#West India Sea Cyclones
-		random_list = {#Average of one per 4 years
+		# random_list = {#Average of one per 4 years
 			# 47 = {} 
 			# 1 = {
 				# random_list = {
@@ -2318,6 +2318,6 @@ weather_monthly_pulse = {
 					
 				# }
 			# }
-		}
+		# }
 	}
 }

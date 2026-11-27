@@ -72,9 +72,9 @@
 		10 = confucian_events.13
 
 		# tag:CHI specific
-		250 = flavor_chi.12
-		100000 = flavor_chi.13
-		50 = flavor_chi.14
+		#250 = flavor_chi.12
+		#100000 = flavor_chi.13
+		#50 = flavor_chi.14
 
 		chance_to_happen = 50
 	}
@@ -97,7 +97,7 @@ religion_flavor_pulse_muslim = {
 	}
 	random_events = {
 		10 = muslim_flavor.1
-		10 = muslim_flavor.4
+		#10 = muslim_flavor.4 # etra: vanilla removed this event
 		10 = muslim_flavor.7
 		10 = muslim_flavor.8
 		10 = muslim_flavor.9
@@ -147,7 +147,7 @@ religion_flavor_pulse_muslim = {
 		10 = muslim_school_opinion_events.2
 		10 = muslim_school_opinion_events.3
 
-		100 = flavor_gra.1
+		#100 = flavor_gra.1
 
 		chance_to_happen = 50
 	}
@@ -158,7 +158,7 @@ religion_flavor_pulse_catholic = {
 		religion = religion:catholic
 	}
 	events = {
-		flavor_pap.1502	# End of the Basilica work
+		#flavor_pap.1502	# End of the Basilica work
 	}
 	random_events = {
 		10 = catholic_flavor.1

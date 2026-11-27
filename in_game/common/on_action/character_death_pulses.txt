@@ -135,21 +135,21 @@ on_character_death = {
 				# years = 1
 			# }
 		# }
-		if = {
-			limit = {
-				scope:target = { 
-					has_variable = is_chinese_expedition_expedition_leader
-					has_global_variable = chinese_treasure_voyage_running
-					owner ?= global_var:chinese_treasure_voyage_running
-				}
-			}
-			scope:target = { save_scope_as = chinese_expedition_expedition_leader }
-			global_var:chinese_treasure_voyage_running = {
-				trigger_event_non_silently = {
-					id = flavor_chi.2021
-				}
-			}
-		}
+		# if = {
+			# limit = {
+				# scope:target = { 
+					# has_variable = is_chinese_expedition_expedition_leader
+					# has_global_variable = chinese_treasure_voyage_running
+					# owner ?= global_var:chinese_treasure_voyage_running
+				# }
+			# }
+			# scope:target = { save_scope_as = chinese_expedition_expedition_leader }
+			# global_var:chinese_treasure_voyage_running = {
+				# trigger_event_non_silently = {
+					# id = flavor_chi.2021
+				# }
+			# }
+		# }
 		# if = {
 			# limit = {
 				# scope:target ?= { has_variable = wali_songo }
@@ -308,4 +308,8 @@ on_timurid_ruler_death = {
 			#trigger_event_silently = flavor_tim_governor.9
 		}
 	}
+}
+
+# Etra: kept as an empty stub because vanilla scripted_effects/tunis_effects.txt still calls it.
+on_hafsid_governor_death = {
 }
