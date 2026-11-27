@@ -7171,3 +7171,104 @@ A412 = {
 		}
 	}
 }
+A421 = {
+    pattern = "pattern_solid.dds"
+    color1 = "white"
+    colored_emblem = {
+        texture = "ce_etra_palmette.dds"
+        color1 = RGB { 50 165 165 }
+        color2 = RGB { 40 76 113 } 
+		color3 = RGB { 40 76 113 } 
+        instance = {    position = { 0.5 0.5 }    scale = { 1.2 1.1 }}
+    }
+
+}
+A413 = {
+    pattern = "pattern_solid.dds"
+    color1 = rgb { 112 4 4 } # Crimson flag field, visible through transparency.
+
+    colored_emblem = {
+        texture = "ce_etra_tiefling_border.dds"
+        color1 = rgb { 224 174 22 } # Blue marker: antique gold.
+        color2 = rgb { 188 0 6 }    # Green marker: red skin and robes.
+        color3 = rgb { 0 0 0 }     # Magenta marker: black disc and outlines.
+        instance = {
+            position = { 0.5 0.5 }
+            scale = { 1.0 1.0 }
+        }
+    }
+
+    colored_emblem = {
+        texture = "ce_etra_tiefling_center.dds"
+        color1 = rgb { 224 174 22 } # Blue marker: antique gold.
+        color2 = rgb { 188 0 6 }    # Green marker: red skin and robes.
+        color3 = rgb { 0 0 0 }     # Magenta marker: black disc and outlines.
+        instance = {
+            position = { 0.5 0.5 }
+            scale = { 1.0 1.0 }
+        }
+    }
+
+    # Independent purple preserves the four-color artwork with three-slot masks.
+    # Draw this layer after the center layer; keep its transform unchanged.
+    colored_emblem = {
+        texture = "ce_etra_tiefling_tablet.dds"
+        color1 = rgb { 75 7 88 } # Blue marker: purple tablet surface.
+        color2 = rgb { 75 7 88 }
+        color3 = rgb { 75 7 88 }
+        instance = {
+            position = { 0.5 0.5 }
+            scale = { 1.0 1.0 }
+        }
+    }
+}
+
+A416 = {
+    pattern = "pattern_solid.dds"
+    color1 = "pink"
+    colored_emblem = {
+        texture = "ce_etra_palmette.dds"
+        color1 = RGB { 50 165 165 }
+        color2 = orange
+		color3 = white
+        instance = {    position = { 0.5 0.5 }    scale = { 1.2 1.1 }}
+    }
+
+}
+A414 = {
+    pattern = "pattern_solid.dds"
+    color1 = "blue"
+    colored_emblem = {
+        texture = "ce_etra_palmette.dds"
+        color1 = saffron
+        color2 = white
+		color3 = red_dark
+        instance = {    position = { 0.5 0.5 }    scale = { 1.2 1.1 }}
+    }
+
+}
+
+A423 = {
+    pattern = "pattern_solid.dds"
+    color1 = rgb { 90 180 200 }
+    colored_emblem = {
+        texture = "ce_etra_palmette.dds"
+        color1 = ivory
+        color2 = saffron
+		color3 = pink
+        instance = {    position = { 0.5 0.5 }    scale = { 1.2 1.1 }}
+    }
+
+}
+A422 = {
+    pattern = "pattern_solid.dds"
+    color1 = "black_secondary"
+    colored_emblem = {
+        texture = "ce_etra_palmette.dds"
+        color1 = RGB { 50 165 165 }
+        color2 = ivory
+		color3 = red
+        instance = {    position = { 0.5 0.5 }    scale = { 1.2 1.1 }}
+    }
+
+}

@@ -1,0 +1,41 @@
+﻿# Neo-Assyrian Tiefling Magocracy flag for Etra.
+# Full-canvas 3:2 colored-emblem masks; all layers must use identical transforms.
+A413 = {
+    pattern = "pattern_solid.dds"
+    color1 = rgb { 112 4 4 } # Crimson flag field, visible through transparency.
+
+    colored_emblem = {
+        texture = "ce_etra_tiefling_border.dds"
+        color1 = rgb { 224 174 22 } # Blue marker: antique gold.
+        color2 = rgb { 188 0 6 }    # Green marker: red skin and robes.
+        color3 = rgb { 0 0 0 }     # Magenta marker: black disc and outlines.
+        instance = {
+            position = { 0.5 0.5 }
+            scale = { 1.0 1.0 }
+        }
+    }
+
+    colored_emblem = {
+        texture = "ce_etra_tiefling_center.dds"
+        color1 = rgb { 224 174 22 } # Blue marker: antique gold.
+        color2 = rgb { 188 0 6 }    # Green marker: red skin and robes.
+        color3 = rgb { 0 0 0 }     # Magenta marker: black disc and outlines.
+        instance = {
+            position = { 0.5 0.5 }
+            scale = { 1.0 1.0 }
+        }
+    }
+
+    # Independent purple preserves the four-color artwork with three-slot masks.
+    # Draw this layer after the center layer; keep its transform unchanged.
+    colored_emblem = {
+        texture = "ce_etra_tiefling_tablet.dds"
+        color1 = rgb { 75 7 88 } # Blue marker: purple tablet surface.
+        color2 = rgb { 75 7 88 }
+        color3 = rgb { 75 7 88 }
+        instance = {
+            position = { 0.5 0.5 }
+            scale = { 1.0 1.0 }
+        }
+    }
+}
