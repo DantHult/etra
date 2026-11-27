@@ -3893,6 +3893,7 @@ on_religion_changed = {
 			limit = {
 				is_member_of_international_organization = international_organization:hre
 				is_emperor = no
+				is_rebel_country = no
 			}
 			if = {
 				#prince in the HRE becomes heretic
@@ -4045,17 +4046,6 @@ on_religion_changed = {
 				interaction_target:target_religion = scope:old_religion
 			}
 			stop_cabinet_action = {}
-		}
-		#Set religious school
-		if = {
-			limit = {
-				religion = { has_religious_schools = yes }
-			}
-			religion = {
-				random_religious_school_in_religion = {
-					root = { set_religious_school = prev }
-				}
-			}
 		}
 	}
 	events = {	

@@ -76,7 +76,7 @@
 		#100000 = flavor_chi.13
 		#50 = flavor_chi.14
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 	first_valid_on_action = {
 		religion_flavor_pulse_catholic
@@ -149,7 +149,7 @@ religion_flavor_pulse_muslim = {
 
 		#100 = flavor_gra.1
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -186,7 +186,7 @@ religion_flavor_pulse_catholic = {
 		10 = pilgrimage_events.4
 		10 = pilgrimage_events.5
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -293,7 +293,7 @@ religion_flavor_pulse_protestant = {
 		10 = church_aspects.32
 		10 = church_aspects.33
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -328,7 +328,7 @@ religion_flavor_pulse_orthodox = {
 
 		# etra: miaphysite_flavor.20/.30-.33 removed - events/religion/miaphsyite_flavor.txt is emptied (real-world places)
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -365,7 +365,7 @@ religion_flavor_pulse_buddhist = {
 		10 = buddhism_events.1204
 		10 = buddhism_events.1300
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -407,7 +407,7 @@ religion_flavor_pulse_dharmic = {
 
 		# etra: sikhism.1-.13 removed - events/religion/sikhism.txt is emptied (the Sikh Gurus in real-world Punjab)
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -438,7 +438,7 @@ religion_flavor_pulse_nahuatl = {
 		10 = nahuatl_events.29
 		10 = nahuatl_events.30
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -484,7 +484,7 @@ religion_flavor_pulse_hellenism = {
 		25 = hellenism_religion.36
 
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 
@@ -502,7 +502,7 @@ religion_flavor_pulse_shinto = {
 		10 = ikko_ikki.7
 		10 = ikko_ikki.8
 
-		chance_to_happen = 50
+		chance_to_happen = 25
 	}
 }
 

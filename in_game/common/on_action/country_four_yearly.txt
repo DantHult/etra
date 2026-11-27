@@ -16,7 +16,7 @@
 		#flavor_chk.32
 	}
 
-	# effect = {
+	effect = {
 		# if = {
 			# limit = {
 				# NOT = { has_global_variable = albanian_migration_cooldown }
@@ -41,13 +41,13 @@
 		# }
 	
 
-		# random = {
-			# chance = 85
-			# add_cooldown = {
-				# type = ai_spam_protection
-				# years = 4	#4 years as it gets updated on four yearly pulse
-			# }
-		# }
+		random = {
+			chance = 85
+			add_cooldown = {
+				type = ai_spam_protection
+				days = { 1 1460 }
+			}
+		}
 		
 		# random = {
 			# chance = 50
@@ -77,7 +77,7 @@
 			# }
 			# 100 = {}
 		# }
-	# }
+	}
 	
 	random_events = {
 	
@@ -189,6 +189,8 @@
 		# 50 = flavor_mei.1004
 
 		# 10 = flavor_ira.47
+
+		chance_to_happen = 25
 	}
 }
 

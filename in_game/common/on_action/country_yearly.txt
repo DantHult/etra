@@ -727,7 +727,7 @@
 
 		#10 = flavor_ser.110 #Novo Brdo Grows - moved from events = {}
 
-		chance_to_happen = 100
+		chance_to_happen = 50
 	}
 
 	effect = {
@@ -828,7 +828,7 @@ earthquake_yearly_pulse = {
 		# 250 = earthquake_events.89
 		# 250 = earthquake_events.93
 
-		chance_to_happen = 100
+		chance_to_happen = 50
 	}
 }
 
