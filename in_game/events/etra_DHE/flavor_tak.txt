@@ -151,6 +151,8 @@ flavor_tak.3 = {
 			name = tajjev_exiles_arrived
 			value = 1
 		}
+		# Country copy marks the host; flavor_tak.4 and yearly_flavor_tak_exile_host_pulse check it.
+		set_variable = tajjev_exiles_arrived
 		remove_global_variable = tajjev_exile_pending
 	}
 
@@ -193,9 +195,7 @@ flavor_tak.4 = {
 	option = {
 		name = flavor_tak.4.a
 		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_mild_bonus }
-		scope:target_character = {
-			add_prestige = prestige_mild_bonus
-		}
+		add_prestige = prestige_mild_bonus
 	}
 }
 
@@ -401,7 +401,6 @@ flavor_tak.8 = {
 					this != scope:target_country
 					culture ?= culture:takkev_culture
 				}
-				set_variable = { name = had_tak_rise_event value = 1 months = 1 }
 				trigger_event_silently = flavor_tak.81
 			}
 		}
@@ -438,6 +437,14 @@ flavor_tak.81 = {
 		scope:target_country = {
 			annex_country = { country = root reason = MilitaryConquest transfer = yes }
 		}
+		# A human who joins an AI Tajjev takes it over instead of losing their country (mirrors flavor_tim.81)
+		if = {
+			limit = {
+				is_ai = no
+				scope:target_country = { is_ai = yes }
+			}
+			change_player = scope:target_country
+		}
 	}
 	option = {
 		name = flavor_tak.81.b
@@ -448,6 +455,15 @@ flavor_tak.81 = {
 				target = root
 			}
 		}
+	}
+	option = {
+		name = flavor_tak.8.b
+		high_risk_option = yes
+		trigger = {
+			is_ai = no
+			scope:target_country = { is_ai = yes }
+		}
+		change_player = scope:target_country
 	}
 }
 
@@ -464,18 +480,14 @@ flavor_tak.9 = {
 		10 = regular
 	}
 
+	# Fired from on_ruler_death_delayed when Massin dies (mirrors flavor_tim.1).
 	trigger = {
-		tag = A409
-		has_global_variable = tajjev_character
-		global_var:tajjev_character = {
-			is_alive = no
-		}
-		is_situation_active = situation:rise_of_tajjev
+		scope:old_ruler ?= character:A378_massin
 	}
 
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
-		global_var:tajjev_character = {
+		character:A378_massin = {
 			save_scope_as = target_character
 		}
 	}

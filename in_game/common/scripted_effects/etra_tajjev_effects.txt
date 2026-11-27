@@ -64,3 +64,25 @@ remove_all_tajjev_cbs = {
 		}
 	}
 }
+
+# Same as remove_all_tajjev_cbs, but always acts on A409 instead of ROOT.
+# Use it where ROOT is not Tajjev: the situation's on_ended and rise_of_tajjev.5 (mirrors remove_all_timmy_cbs_tim).
+remove_all_tajjev_cbs_a409 = {
+	if = {
+		limit = {
+			country_exists = c:A409
+			c:A409 = {
+				NOT = { has_reform = government_reform:tajjev_empire }
+			}
+		}
+		custom_tooltip = {
+			text = remove_all_tajjev_cbs_tt
+			c:A409 = {
+				every_casus_belli_target = {
+					limit = { c:A409 = { has_casus_belli_of_type_on = { target = PREV type = casus_belli:cb_tajjev_conquests } } }
+					c:A409 = { remove_casus_belli = { target = PREV type = casus_belli:cb_tajjev_conquests } }
+				}
+			}
+		}
+	}
+}

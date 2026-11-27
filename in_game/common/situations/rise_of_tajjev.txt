@@ -164,7 +164,7 @@
 		remove_variable = roj_conquest_ambition
 		c:A409 ?= {
 			remove_country_modifier = rise_of_tajjev_impact
-			remove_all_tajjev_cbs = yes
+			remove_all_tajjev_cbs_a409 = yes
 			clear_tajjev_variables = yes
 			every_owned_location = {
 				limit = { has_location_modifier = roj_tajjev_core_region }

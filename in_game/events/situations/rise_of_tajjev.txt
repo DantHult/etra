@@ -114,7 +114,7 @@ rise_of_tajjev.5 = {
 				reason = execution
 			}
 		}
-		remove_all_tajjev_cbs = yes
+		remove_all_tajjev_cbs_a409 = yes
 	}
 	after = {
 		clear_tajjev_variables = yes
@@ -149,7 +149,7 @@ rise_of_tajjev.7 = {
 	}
 }
 
-# Campaign against Iborros (Timur China retarget)
+# Campaign against Iborros (mirrors rise_of_timur.12)
 rise_of_tajjev.12 = {
 	type = country_event
 	category = situation_event

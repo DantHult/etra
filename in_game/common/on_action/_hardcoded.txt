@@ -5785,6 +5785,7 @@ on_road_built = {
 on_ruler_death_delayed = {
 	events = {
 		horde_civil_war.2
+		flavor_tak.9 #Death of Massin, founder of Tajjev
 	}
 
 	on_actions = {

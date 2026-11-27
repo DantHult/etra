@@ -72,14 +72,23 @@
 				}
 			}
 		}
+		custom_tooltip = roj_declare_conquest_ambition_at
+		if = {
+			limit = {
+				scope:actor = {
+					ruler ?= { has_character_modifier = tajjev_wants_to_play }
+				}
+			}
+			custom_tooltip = roj_declare_conquest_ambition_bt
+		}
 	}
 
 	ai_will_do = {
 		if = {
 			limit = {
 				NOT = { scope:recipient = { has_variable = roj_conquest_ambition } }
-				OR = {
-					scope:target ?= region:amalyarat_region
+				trigger_if = {
+					limit = { has_game_rule = historical_ai_choices }
 					scope:target ?= region:iboros_region
 				}
 			}
@@ -221,6 +230,18 @@ roj_plan_invasion = {
 					}
 				}
 			}
+			else = {
+				custom_tooltip = roj_plan_invasion_tt
+				if = {
+					limit = {
+						scope:recipient = { has_variable = roj_conquest_ambition }
+					}
+					custom_tooltip = roj_plan_invasion_bt
+				}
+				else = {
+					custom_tooltip = roj_plan_invasion_at
+				}
+			}
 		}
 	}
 	ai_will_do = {
@@ -247,6 +268,10 @@ roj_plan_invasion = {
 				value = "scope:actor.opinion(scope:target)"
 				multiply = -1
 			}
+			add = {
+				value = "scope:actor.antagonism(scope:actor)"
+				divide = -10
+			}
 			multiply = "scope:actor.relative_military_strength(scope:target)"
 			if = {
 				limit = {
@@ -260,6 +285,8 @@ roj_plan_invasion = {
 
 roj_select_core_region = {
 	type = situation
+	ai_tick = monthly
+	ai_tick_frequency = 6
 	potential = {
 		scope:actor = {
 			tag = A409
@@ -304,6 +331,16 @@ roj_select_core_region = {
 		column = {
 			data = population
 		}
+		interaction_source_list = {
+			every_region = {
+				limit = {
+					scope:actor = {
+						has_presence_in = prev
+					}
+				}
+				add_to_list = source
+			}
+		}
 		visible = {
 			any_location_in_region = {
 				owner ?= scope:actor
@@ -337,15 +374,20 @@ roj_select_core_region = {
 								modifier = roj_tajjev_core_region
 								years = -1
 								mode = add_and_extend
+								show_modifiers = no
 							}
 						}
 					}
 				}
 			}
 		}
+		else = {
+			custom_tooltip = roj_select_core_region_tt
+		}
 	}
 
 	ai_will_do = {
+		add = 25
 		add = {
 			if = {
 				limit = { exists = scope:target scope:target = region:amalyarat_region }

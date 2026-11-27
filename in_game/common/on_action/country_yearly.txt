@@ -12,7 +12,7 @@
 		#yearly_flavor_kni_pulse         # owns location:malta (guards expensive HRE IO check)
 		yearly_flavor_tak_a378_pulse    # A378 House Izem destruction
 		yearly_flavor_tak_exile_host_pulse # owns etra1513 after Izem fall / founding host
-		yearly_flavor_tak_a409_pulse    # A409 Massin death check
+		yearly_flavor_tak_a409_pulse    # A409 embassy to Iborros (Massin's death fires from on_ruler_death_delayed)
 		yearly_hre_circle_leader_pulse # Circle Leaders for the HRE
 		#yearly_flavor_pol_union_pulse   # in_union_with = c:POL
 		#yearly_flavor_cop_pulse         # Copernicus date window (>= 1520)
@@ -914,7 +914,6 @@ yearly_flavor_tak_exile_host_pulse = {
 yearly_flavor_tak_a409_pulse = {
 	trigger = { tag = A409 }
 	events = {
-		flavor_tak.9
 		flavor_tak.5
 	}
 }
