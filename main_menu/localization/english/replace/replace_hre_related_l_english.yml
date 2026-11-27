@@ -477,3 +477,19 @@
  imperial_circles.80.title: "The Position Changes Everything"
  imperial_circles.80.desc: "We have been elected to the position of Junilarian. As Junilarian, we cannot simultaneously hold the role of Circle Leader — the two offices demand undivided loyalty. We relinquish our circle leadership so another may step forward."
  imperial_circles.80.a: "The Empire must come first."
+ # Holy Commonweal versions of newer vanilla HRE strings that still said "Holy Roman Empire" (2026-11-26 audit)
+ OPEN_HRE: "Open The $hre$"
+ OPEN_HRE_DIPLOMACY: "Open $hre$ Diplomacy"
+ HRE_LEFT_CLICK: "Open the $hre$ Panel"
+ war_goal_take_capital_liberate_hre_member: "Commonweal Liberation"
+ hre_ruler_not_blocked_tt: "The [ruler|e] is not barred from ruling the [GetUniqueInternationalOrganization('hre').GetName]"
+ hre_heir_not_blocked_tt: "The [heir|e] is not barred from ruling the [GetUniqueInternationalOrganization('hre').GetName]"
+ IMPERIAL_CIRCLE_TT_FLAVOR: "Commonweal Circles are geographic subdivisions of the $hre$, each governed by a Circle Leader who coordinates the princes' interests and levies before the Imperial Diet."
+ SUBTAB_IO_IMPERIAL_CIRCLES_TT_TEXT: "View the Commonweal Circles that subdivide the $hre$."
+ STATIC_MODIFIER_DESC_fc_hre_privileges: "The $emperor$ of the $hre$ has granted us special custom and tax privileges."
+ hre_court_assembly_desc: "From the days of the Junil, the $hre_court_assembly$ is an ancient and primitive style of assembly within the [GetUniqueInternationalOrganization('hre').GetName]. Due to the lack of codified processes, discussing law implementations with the [GetUniqueInternationalOrganization('hre').GetLeaderTitle] tend to be not as efficient as they could be.\n\n$BULLET_WITH_TAB$ Greatly increases voting power for the [ShowSpecialStatusName('emperor')], [ShowSpecialStatusNamePlural('elector')], and [ShowSpecialStatusNamePlural('archbishop_elector')]\n$BULLET_WITH_TAB$ Significantly reduces [ShowSpecialStatusNamePlural('free_city')], [ShowSpecialStatusNamePlural('imperial_prelate')], [ShowSpecialStatusNamePlural('primas_germaniae')], and [ShowSpecialStatusNamePlural('legatus_natus')] influence\n$BULLET_WITH_TAB$ [ShowSpecialStatusNamePlural('imperial_peasant_republic')] have standard power"
+
+ # hre.910 / hre.911 (member subjugated by a power outside the Edorrinic faiths), restored 2026-11-26
+ hre.910.desc: "[enslaved_hre_member.GetName], a Prince of the [GetUniqueInternationalOrganization('hre').GetName], has been subjugated by [foreign_overlord.GetName] — a foreign power outside the Commonweal and outside the [ShowReligionGroupName('adunan')].\n\nAs [GetUniqueInternationalOrganization('hre').GetLeaderTitle], it is within your right and your duty to challenge this. The [GetUniqueInternationalOrganization('hre').GetName] stands ready."
+ hre.910.a.tt: "Every member of the [GetUniqueInternationalOrganization('hre').GetName] who follows the [ShowReligionGroupName('adunan')] gains [ShowBiasValue('antagonism_hre_member_under_infidel_domination')|+=0] [antagonism|e] toward [foreign_overlord.GetName]"
+ hre.911.a: "A dark day for the Commonweal."

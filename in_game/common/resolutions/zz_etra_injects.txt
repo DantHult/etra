@@ -342,7 +342,7 @@
 	}
 	propose_effect = {
 		hidden_effect = {
-			council_of_trent_proposal_effect = yes
+			#council_of_trent_proposal_effect = yes # etra: no Catholic Church on Etra's map
 			call_parliament_for_law_change = yes
 			if = {
 				limit = { exists = scope:recipient }
@@ -478,7 +478,7 @@
 					}
 				}
 				#Catholic Church vote
-				council_of_trent_pass_effect = yes
+				#council_of_trent_pass_effect = yes # etra: no Catholic Church on Etra's map
 			}
 		}
 		else = {
@@ -631,7 +631,7 @@
 				# is_member_of_international_organization = international_organization:catholic_church
 			# }
 		# }
-		trigger_else_if = {
+		trigger_if = { # etra: was trigger_else_if, orphaned when the Catholic trigger_if above was commented out
 			limit = {
 				exists = scope:recipient
 				scope:recipient = {

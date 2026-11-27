@@ -1,0 +1,67 @@
+﻿# Etra overrides of single vanilla parliament issues (copied from vanilla 1.4.9).
+# Re-check against vanilla 10_hre_issues.txt after game updates.
+
+REPLACE:hre_establish_perpetual_diet = {
+	type = international_organization
+	special_status = free_city
+	chance = 100
+	selectable_for = {
+		is_leader_of_international_organization = scope:recipient
+	}
+	potential = {
+		international_organization_has_unlocked_parliament_issue_trigger = { type = hre_establish_perpetual_diet }
+	}
+	on_debate_passed = {
+		international_organization_lock_parliament_issue_effect = { type = hre_establish_perpetual_diet }
+		custom_tooltip = {
+			text = hre_establish_perpetual_diet_tt
+			if = {
+				limit = { exists = parliament_seat }
+				set_variable = { name = hre_diet_location value = parliament_seat }
+				parliament_seat ?= {
+					set_variable = { name = diet_location value = yes }
+					trigger_event_silently = { id = hre.6 }
+				}
+			}
+			else = {
+				random_international_organization_owned_location = {
+					limit = {
+						root = { has_location = prev }
+						is_capital = yes
+						OR = {
+							AND = {
+								owner = { is_elector = yes }
+								development = 20
+							}
+							development = 30
+							# etra: vanilla also accepted location:regensburg / augsburg / ulm, which do not exist on Etra's map
+						}
+					}
+					set_variable = { name = diet_location value = yes }
+					trigger_event_silently = { id = hre.6 }
+				}
+			}
+		}
+	}
+	on_debate_failed = {
+		hre_parliament_debate_failed_effect = yes
+	}
+	wants_this_parliament_issue_bias = {
+		if = {
+			limit = { scope:recipient = { international_organization_has_leader = yes } }
+			# Negative base Value --> Need some positive values for acceptance
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = -150
+			}
+			# Default precalculated modifier (Opinion, IA, Dynasty, etc.)
+			add = hre_default_opinion_check
+		}
+		else = {
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 0
+			}
+		}
+	}
+}

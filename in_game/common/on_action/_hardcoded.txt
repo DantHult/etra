@@ -85,9 +85,42 @@
 		# }
 		
 		# HRE
-		international_organization:hre.leader_country ?= {
-			set_variable = { name = hre_current_emperor_flg value = 1 }
-			hre_junilarian_set_invested_year_effect = yes
+		international_organization:hre ?= {
+			if = {
+				limit = {
+					NOT = { has_variable = hre_setup_fanning_out_ai_requests }
+				}
+				every_international_organization_member = {
+					hre_set_ai_diplo_action_cooldown = yes
+				}
+				set_variable = hre_setup_fanning_out_ai_requests
+			}
+			every_international_organization_owned_location = {
+				limit = {
+					is_capital = yes
+					owner = {
+						NOT = { is_member_of_international_organization = international_organization:hre }
+					}
+				}
+				owner = {
+					international_organization:hre = {
+						add_country_to_international_organization_no_update = prev
+					}
+				}
+			}
+			leader_country ?= {
+				set_variable = { name = hre_current_emperor_flg value = 1 }
+				hre_junilarian_set_invested_year_effect = yes
+			}
+			# Retroactive fix: imperial_circles_law was missing its default policy from hre_setup_hre_variables
+			if = {
+				limit = {
+					hre_has_enabled_all_imperial_laws = yes
+					NOT = { international_organization_has_policy = policy:no_imperial_circles }
+					NOT = { international_organization_has_policy = policy:imperial_circles_established }
+				}
+				add_policy_to_international_organization = policy:no_imperial_circles
+			}
 		}
 		etra_schedule_commonweal_pulse_once = yes
 
@@ -1506,7 +1539,7 @@ on_winning_war = {
 		#hre emperor wins defensive war
 		if = {
 			limit = {
-				scope:winner = international_organization:hre.leader_country
+				international_organization:hre.leader_country ?= scope:winner
 				scope:loser = {
 					NOT = {
 						is_member_of_international_organization = international_organization:hre
@@ -2382,7 +2415,7 @@ on_accepted_call_to_arms = {
 		#Emperor coming to the defense of a HRE member
 		if = {
 			limit = {
-				scope:recipient = international_organization:hre.leader_country
+				international_organization:hre.leader_country ?= scope:recipient
 				scope:war = {
 					not = {
 						is_an_attacker = scope:actor
@@ -2412,7 +2445,7 @@ on_rejected_call_to_arms = {
 		if = {
 			limit = {
 				exists = scope:war
-				scope:recipient = international_organization:hre.leader_country
+				international_organization:hre.leader_country ?= scope:recipient
 				scope:war = {
 					not = {
 						is_an_attacker = scope:actor
@@ -4026,7 +4059,7 @@ on_religion_changed = {
 		}
 	}
 	events = {	
-		legatusnatus.4
+		#legatusnatus.4 # etra: checks c:PAP (no Papal States in Etra) and Legatus Natus is disabled, so it only logged errors
 	}
 }
 
@@ -4765,6 +4798,18 @@ on_international_organization_changed_leader = {
 				remove_variable = junilarian_renewal_election_active
 			}
 			hre_junilarian_set_invested_year_effect = yes
+			# etra: vanilla's hre_election converts the new Emperor to Catholicism (or the other imperial faiths); Etra's imperial faith is Manyfold
+			if = {
+				limit = {
+					scope:target = { international_organization_has_policy = policy:hre_religion_eternalist }
+				}
+				ruler_or_heir_if_regent ?= {
+					if = {
+						limit = { NOT = { religion = religion:manyfold } }
+						change_character_religion = religion:manyfold
+					}
+				}
+			}
 			if = {
 				limit = {
 					exists = scope:old_ruler

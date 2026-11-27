@@ -1859,3 +1859,193 @@ hre_junilarian_renewal_election_effect = {
 	}
 	international_organization_chooses_new_leader = this
 }
+
+#############################################
+# Restored from vanilla 1.4.9: these effects were missing from Etra's older copy of this file,
+# and vanilla files that still load call them (imperial circles, foreign leagues, high kingship, patriarchates).
+#############################################
+
+transfer_leadership_to_union_senior_partner = {
+	save_scope_as = league_io
+	if = {
+		limit = {
+			international_organization_has_leader = yes
+			leader_country ?= {
+				exists = union
+				NOT = {
+					union = {
+						country_has_special_status = {
+							type = special_status:senior_partner
+							country = prev
+						}
+					}
+				}
+				any_union_partner = {
+					union = {
+						country_has_special_status = {
+							type = special_status:senior_partner
+							country = prev
+						}
+					}
+					at_war = no
+				}
+			}
+		}
+		leader_country = {
+			random_union_partner = {
+				limit = {
+					union = {
+						country_has_special_status = {
+							type = special_status:senior_partner
+							country = prev
+						}
+					}
+					at_war = no
+				}
+				save_scope_as = league_senior_partner
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:league_senior_partner = { is_member_of_international_organization = scope:league_io } }
+			}
+			add_country_to_international_organization = scope:league_senior_partner
+		}
+		set_leader_country = scope:league_senior_partner
+	}
+}
+
+hre_set_ai_diplo_action_cooldown = {
+	if = {
+		limit = { is_ai = yes }
+		hidden_effect = {
+			add_cooldown = {
+				type = hre_did_diplo_request_already
+				days = { 1 3650 }
+			}
+		}
+	}
+}
+
+hre_imperial_circle_set_ai_diplo_action_cooldown = {
+	if = {
+		limit = { is_ai = yes }
+		hidden_effect = {
+			add_cooldown = {
+				type = hre_did_diplo_imperial_circle_request_already
+				days = { 1 3650 }
+			}
+		}
+	}
+}
+
+hre_grant_elector_role = {
+	international_organization:hre = {
+		if = {
+			limit = { 
+				special_status_can_be_bestowed = {
+					type = special_status:elector
+					country = $country$
+				}
+				num_countries_with_special_status = {
+					type = special_status:elector
+					value < "max_countries_with_special_status(special_status:elector)"
+				}
+			}
+			international_organization_add_special_status = {
+				type = special_status:elector
+				country = $country$
+			}
+			if = {
+				limit = { exists = leader_country }
+				$country$ = {
+					add_opinion = { target = international_organization:hre.leader_country modifier = opinion_granted_electorship }
+				}
+			}
+		}
+		if = {
+			limit = { 
+				special_status_can_be_bestowed = {
+					type = special_status:archbishop_elector
+					country = $country$
+				}
+				num_countries_with_special_status = {
+					type = special_status:archbishop_elector
+					value < "max_countries_with_special_status(special_status:archbishop_elector)"
+				}
+			}
+			international_organization_add_special_status = {
+				type = special_status:archbishop_elector
+				country = $country$
+			}
+			if = {
+				limit = { exists = leader_country }
+				$country$ = {
+					add_opinion = { target = international_organization:hre.leader_country modifier = opinion_granted_electorship }
+				}
+			}
+		}
+	}
+}
+
+hre_transfer_elector_role = {
+	international_organization:hre = {
+		if = {
+			limit = {
+				country_has_special_status = { type = special_status:elector country = $from$ }
+				special_status_can_be_bestowed = {
+					type = special_status:elector
+					country = $to$
+				}
+			}
+			international_organization_remove_special_status = {
+				type = special_status:elector
+				country = $from$
+			}
+			international_organization_add_special_status = {
+				type = special_status:elector
+				country = $to$
+			}
+			if = {
+				limit = { exists = leader_country }
+				$to$ = {
+					add_opinion = { target = international_organization:hre.leader_country modifier = opinion_granted_electorship }
+				}
+			}
+		}
+	}
+}
+
+apply_independent_patriarchate_default_policies = {
+	if = {
+		limit = { var:religion ?= religion:miaphysite }
+		add_policy_to_international_organization = policy:composite_nature
+		add_policy_to_international_organization = policy:accept_person_tenet
+		add_policy_to_international_organization = policy:accept_prosopon_tenet
+	}
+	else_if = {
+		limit = { var:religion ?= religion:nestorianism }
+		add_policy_to_international_organization = policy:separate_nature
+		add_policy_to_international_organization = policy:deny_person_tenet
+		add_policy_to_international_organization = policy:deny_prosopon_tenet
+	}
+	else = {
+		add_policy_to_international_organization = policy:dual_nature
+		add_policy_to_international_organization = policy:accept_person_tenet
+		add_policy_to_international_organization = policy:accept_prosopon_tenet
+	}
+	add_policy_to_international_organization = policy:high_christology
+	add_policy_to_international_organization = policy:local_traditions_and_rites
+	add_policy_to_international_organization = policy:accept_essence_tenet
+	add_policy_to_international_organization = policy:allow_christological_debates_tenet
+	add_policy_to_international_organization = policy:allow_double_sabbath_tenet
+	add_policy_to_international_organization = policy:independent_acting_patriarchs_tenet
+	add_policy_to_international_organization = policy:independent_authorities_tenet
+}
+
+remove_high_kingship_reclamation_cb_effect = {
+	if = {
+		limit = { has_casus_belli_of_type = casus_belli:cb_high_kingship_reclamation }
+		remove_all_casus_belli_of_type = casus_belli:cb_high_kingship_reclamation
+	}
+}
