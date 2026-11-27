@@ -22,7 +22,7 @@
 		monthly_pretender_rebel_growth = 0.01
 		global_crown_estate_power = -0.2
 		global_estate_target_satisfaction = huge_permanent_target_satisfaction_penalty
-		monthly_legitimacy = 0.25
+		monthly_legitimacy = -0.25
 	}
 	
 	on_start = {

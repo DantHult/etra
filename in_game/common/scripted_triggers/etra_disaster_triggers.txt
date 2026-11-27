@@ -1,13 +1,36 @@
 ﻿moran_civil_war_end_trigger = {
+	# Mirrors vanilla byzantine_succession_crisis_end_trigger, with Moran's own stability/government power route
 	OR = {
+		custom_tooltip = {
+			text = no_pretender_rebel_active_tt
+			NOT = {
+				any_rebel = {
+					rebel_category = pretender
+				}
+			}
+		}
 		AND = {
 			stability >= 75
 			government_power >= 75
 		}
+		custom_tooltip = {
+			text = pretender_enforced_claim_tt
+			has_variable = pretender_given_throne_variable
+		}
 		AND = {
-			had_disaster_for_years = {
-				disaster_type = disaster_type:moran_civil_war
-				years >= 10
+			custom_tooltip = {
+				text = pretender_is_cold_tt
+				NOT = {
+					any_character = {
+						has_variable = scope_pretender_var
+					}
+				}
+			}
+			NOT = {
+				any_current_war = {
+					is_civil_war_for = root
+					attacker_leader ?= { rebel_category = pretender }
+				}
 			}
 		}
 	}
